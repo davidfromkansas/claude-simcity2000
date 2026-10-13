@@ -10,6 +10,8 @@
 #   sc key KEY...         press keys (xdotool names)
 #   sc type TEXT          type text
 #   sc save               save city (Alt+S) and print key numbers
+#   sc pause / sc paused   make sure game is paused / report it
+#   sc run llama|cheetah SECS   run the clock then pause
 #   sc log TYPE TEXT      add an entry to the dashboard activity feed
 export DISPLAY=:99
 mkdir -p /tmp/sc
@@ -34,6 +36,15 @@ case $cmd in
   type) xdotool type --window "$W" --delay 60 "$*";;
   save) "$0" menu 25 7 45 103; sleep 1.5; "$0" click 279 261; sleep 2; "$0" click 320 228; sleep 0.5; python3 -I "$(dirname "$0")/publish.py" metrics
         python3 -I -c "import sys,json;sys.path.insert(0,'$(dirname "$0")');import sc2parse as p;m=p.parse('/opt/sc2k/game/CLAUDE.SC2');print(m['date'],'pop',m['population'],'cash',m['money'],'bonds',m['bonds'],'RCI',m['demand'])";;
+  paused) import -window "$W" /tmp/sc/st.png
+        n=$(convert /tmp/sc/st.png -crop 80x8+86+54 -fx "g>0.6&&r<0.4?1:0" -format "%[fx:mean*640]" info:)
+        [ "${n%.*}" -gt 3 ] && echo yes || echo no;;
+  pause) "$0" key Escape; [ "$("$0" paused)" = yes ] || { "$0" menu 67 7 75 23; "$0" key Escape; };;
+  run) # run SPEED(llama|cheetah) SECONDS, then pause and close any budget window
+        case $1 in llama) y=55;; cheetah) y=71;; *) y=39;; esac
+        "$0" menu 67 7 75 $y; "$0" key Escape; sleep "$2"; "$0" pause; sleep 0.3
+        import -window "$W" /tmp/sc/st.png
+        if [ "$(convert /tmp/sc/st.png -crop 1x1+457+123 -format '%[pixel:p{0,0}]' info:)" != "$(convert /tmp/sc/st.png -crop 1x1+600+400 -format '%[pixel:p{0,0}]' info:)" ]; then :; fi;;
   log) python3 -I "$(dirname "$0")/publish.py" log "$@";;
   *) echo "unknown"; exit 1;;
 esac
