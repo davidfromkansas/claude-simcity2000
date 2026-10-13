@@ -1,0 +1,32 @@
+#!/bin/bash
+# Tiny control helper for the game.  Usage:
+#   sc snap [file]        screenshot (default /tmp/sc/now.png)
+#   sc click X Y [btn]    click at game pixel (640x480)
+#   sc drag X1 Y1 X2 Y2   left-drag
+#   sc menu MX MY IX IY   open menu at MX,MY and pick item at IX,IY
+#   sc peek MX MY         screenshot an open menu without choosing
+#   sc key KEY...         press keys (xdotool names)
+#   sc type TEXT          type text
+#   sc save               save city (Alt+S) and print key numbers
+#   sc log TYPE TEXT      add an entry to the dashboard activity feed
+export DISPLAY=:99
+mkdir -p /tmp/sc
+W=$(xdotool search --name DOSBox | head -1)
+cmd=$1; shift
+case $cmd in
+  snap) f=${1:-/tmp/sc/now.png}; import -window "$W" "$f"; echo "$f";;
+  click) xdotool mousemove --window "$W" "$1" "$2"; sleep 0.15; xdotool click --window "$W" "${3:-1}";;
+  drag) xdotool mousemove --window "$W" "$1" "$2"; sleep 0.15; xdotool mousedown 1; sleep 0.1
+        xdotool mousemove --window "$W" "$3" "$4"; sleep 0.2; xdotool mouseup 1;;
+  menu) xdotool mousemove --window "$W" "$1" "$2"; xdotool mousedown 1; sleep 0.5
+        xdotool mousemove --window "$W" "$3" "$4"; sleep 0.4; xdotool mouseup 1;;
+  peek) xdotool mousemove --window "$W" "$1" "$2"; xdotool mousedown 1; sleep 0.5; import -window "$W" /tmp/sc/now.png
+        xdotool mousemove --window "$W" 630 470; sleep 0.2; xdotool mouseup 1; echo /tmp/sc/now.png;;
+  move) xdotool mousemove --window "$W" "$1" "$2";;
+  key) for k in "$@"; do xdotool key --window "$W" "$k"; sleep 0.1; done;;
+  type) xdotool type --window "$W" --delay 60 "$*";;
+  save) xdotool key --window "$W" alt+s; sleep 1.5; python3 -I "$(dirname "$0")/publish.py" metrics
+        python3 -I -c "import sys,json;sys.path.insert(0,'$(dirname "$0")');import sc2parse as p;m=p.parse('/opt/sc2k/game/CLAUDE.SC2');print(m['date'],'pop',m['population'],'cash',m['money'],'bonds',m['bonds'],'RCI',m['demand'])";;
+  log) python3 -I "$(dirname "$0")/publish.py" log "$@";;
+  *) echo "unknown"; exit 1;;
+esac
