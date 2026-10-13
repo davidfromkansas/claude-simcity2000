@@ -48,10 +48,12 @@ A small Python program that can:
 - Pull out: **year, population, cash, number of bonds, yearly income vs. expenses**.
 - Write a log row every year (`progress.csv`) so we can track the goal.
 
-### 4. Connect Claude
-- A loop: pause game → screenshot + latest numbers → Claude decides the next few actions → do them → unpause → repeat.
-- Use the Claude API with vision/computer-use so Claude can see the screen.
-- Keep a short "city notes" memory (what's built where, current strategy) so Claude doesn't forget between steps.
+### 4. Connect Claude (uses your Claude subscription, no API key)
+- **Claude Code itself plays the game** in this session — no separate API key or API billing.
+- Small helper commands do the work: `./sc snap` (save a screenshot), `./sc click x y`, `./sc key F`, `./sc stats` (read the save file).
+- Claude runs a helper, opens the screenshot to look at it, decides, and runs the next helper. Repeat.
+- `/loop` keeps Claude playing turn after turn without you typing "continue".
+- Claude keeps a `city-notes.md` file (what's built where, current strategy, last good save) so it can pick up where it left off if the chat gets long or a new session starts.
 
 ### 5. Play the game (strategy Claude follows)
 
@@ -98,7 +100,7 @@ A small Python program that can:
 
 - **Misreading the screen** → fixed by using the save file for numbers.
 - **Mis-clicks** (small icons, old 640×480 screen) → map exact menu positions once and reuse them.
-- **Cost / time** → pause the game while Claude thinks; let years run at fast speed when nothing needs doing.
+- **Subscription usage limits** → each screenshot uses some of your plan. To save usage: shrink screenshots, use save-file numbers instead of screenshots when possible, and let years run at fast speed when nothing needs doing. If you hit your limit, the game is saved and Claude continues later from `city-notes.md`.
 
 ## Suggested order of work
 
