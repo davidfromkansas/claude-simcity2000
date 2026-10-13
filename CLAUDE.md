@@ -16,6 +16,23 @@ years of positive budget with zero bonds. NEVER issue a bond.
 4. `bot/sc log <type> "<what and why>"` for every decision (types: build, zone, budget, strategy, fix, milestone).
 5. Update `city-notes.md` with layout and strategy.
 
+## Lessons learned (important)
+- Alt-key shortcuts do NOT work. Use menus: `sc menu 67 7 75 55` (Llama), `75 71` (Cheetah), `75 23` (Pause), then `sc key Escape`.
+- Toolbar buttons with options need a long press: `sc tool BX BY IX IY` (e.g. power lines `22 82 55 90`, gas plant via `22 82 60 105` then click 199 255;
+  road `22 105 55 113`; light res `22 128 75 135`; light com `47 128 100 135`; light ind `68 128 120 135`; water pump `47 82 85 105`; pipes `47 82 85 90`).
+- Query a tile: shift+click.
+- Use `bot/tile.py` for tile->screen. Calibrate after every scroll/zoom by placing one road tile, saving, and reading its (x,y) from the save
+  (`python3 -I tile.py cal X Y SX SY STEP`, STEP 8 at zoom 3). +x goes down-left, +y goes down-right on screen.
+- ALWAYS verify a build by saving and printing a tile map from the save (XBLD/XZON); screenshots are misleading.
+- Zones must touch the road directly. Never put power lines between a zone and its road. Power lines must touch side-by-side (diagonal does not connect).
+- A budget window pops up every January and blocks clicks; close it with `sc click 457 123`.
+- Clicking to dismiss dialogs can place a tile with the current tool: dismiss the "Game Saved" box by clicking the box itself (320 228).
+
+## Current layout (city refounded Jan 2000 on a flat map)
+- Gas plant x57-60 y7-10. Main road y=11 x60-100. Side road x=80 y3-10.
+- Zones rows y8-10 and y12-14: industry x62-69, commercial x70-79, residential x81-99.
+- Power lines y=7 and y=15 (x61-99), x=61 y7-15.
+
 ## Screen map (640x480)
 Menu bar y=7: File 25, Speed 67, Options 120, Disasters 185, Windows 252, Newspaper 320.
 Toolbar is the left column (x 10-80).
