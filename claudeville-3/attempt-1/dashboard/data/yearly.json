@@ -224,5 +224,72 @@
    "jammed": 1,
    "bonds": 0
   }
+ },
+ {
+  "year": 2007,
+  "tone": "setback",
+  "title": "Too few jobs, first loan",
+  "moves": [
+   "Factory rows y39-41",
+   "Homes y29-34",
+   "$10,000 bond at 5%"
+  ],
+  "happened": "Population 1,350 -> 1,450 but abandoned buildings rose to 94 and 38% had no job. Shops were over-built. Income was only about $57 a year, so took a $10,000 bond at 5%.",
+  "watching": "Jobs from the new factory rows; homes in y29-34.",
+  "start": {
+   "date": "Jan 2007",
+   "population": 1350,
+   "money": 951,
+   "unemployment": 31,
+   "watered_pct": 48,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 1,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2008",
+   "population": 1450,
+   "money": 538,
+   "unemployment": 38,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 3,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "Borrowed and built",
+  "moves": [
+   "10 river pumps",
+   "South factory district (streets y=49, y=56)"
+  ],
+  "happened": "Population 1,450 -> 2,430. The $10,000 bond paid for new homes, a whole factory district to the south and 10 river pumps. Unemployment fell from 38% to 28%.",
+  "watching": "Jobs in the new factory district; shops are still over-built.",
+  "start": {
+   "date": "Jan 2008",
+   "population": 1450,
+   "money": 538,
+   "unemployment": 38,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 3,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2009",
+   "population": 2430,
+   "money": 6317,
+   "unemployment": 28,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 82,
+   "jammed": 1,
+   "bonds": 1
+  }
  }
 ]
