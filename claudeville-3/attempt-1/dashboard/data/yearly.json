@@ -387,5 +387,112 @@
    "jammed": 2,
    "bonds": 1
   }
+ },
+ {
+  "year": 2012,
+  "tone": "steady",
+  "title": "Ran unattended",
+  "moves": [],
+  "happened": "A bug in Claude's pause check let the game run on its own from early 2012 to early 2015. No changes were made in this year. Population kept climbing (5,310 -> 6,070 by Feb 2015) while water fell to 24% and the coal plant ran out of capacity.",
+  "watching": "Water and power once Claude is back in control.",
+  "start": {
+   "date": "Feb 2012",
+   "population": 5310,
+   "money": 2918,
+   "unemployment": 12,
+   "watered_pct": 81,
+   "powered_pct": 100,
+   "abandoned": 84,
+   "jammed": 2,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2013",
+   "population": 5790,
+   "money": 2611,
+   "unemployment": 16,
+   "watered_pct": 52,
+   "powered_pct": 96,
+   "abandoned": 118,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "steady",
+  "title": "Ran unattended",
+  "moves": [],
+  "happened": "A bug in Claude's pause check let the game run on its own from early 2012 to early 2015. No changes were made in this year. Population kept climbing (5,310 -> 6,070 by Feb 2015) while water fell to 24% and the coal plant ran out of capacity.",
+  "watching": "Water and power once Claude is back in control.",
+  "start": {
+   "date": "Jan 2013",
+   "population": 5790,
+   "money": 2611,
+   "unemployment": 16,
+   "watered_pct": 52,
+   "powered_pct": 96,
+   "abandoned": 118,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": null
+ },
+ {
+  "year": 2014,
+  "tone": "setback",
+  "title": "Water and power ran out",
+  "moves": [
+   "Second bond, tax 6%",
+   "Second coal plant",
+   "7 river pumps",
+   "East district (dense homes)"
+  ],
+  "happened": "Found the game had been running unattended. By Jan 2015: 6,070 people, water 24%, power plant maxed out, 160 abandoned buildings. Fixed the pause check, took a second $10,000 bond (4%), raised tax 3% -> 6%.",
+  "watching": "New east district of dense homes.",
+  "start": null,
+  "end": {
+   "date": "Feb 2015",
+   "population": 6070,
+   "money": 2014,
+   "unemployment": 19,
+   "watered_pct": 24,
+   "powered_pct": 90,
+   "abandoned": 160,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "steady",
+  "title": "Building out the east",
+  "moves": [
+   "Dense shops y37-41 (east)"
+  ],
+  "happened": "Population 6,070 -> 6,530. Dense homes in the east district started to rise slowly. Shop demand stayed maxed, with only 69 shop tiles in the whole city.",
+  "watching": "Shops in the new east commercial rows; traffic (12 jammed tiles).",
+  "start": {
+   "date": "Feb 2015",
+   "population": 6070,
+   "money": 2014,
+   "unemployment": 19,
+   "watered_pct": 24,
+   "powered_pct": 90,
+   "abandoned": 160,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2016",
+   "population": 6530,
+   "money": 3025,
+   "unemployment": 16,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 135,
+   "jammed": 12,
+   "bonds": 2
+  }
  }
 ]
