@@ -201,5 +201,39 @@
    "jammed": 27,
    "bonds": 4
   }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "19,000 people, ahead of pace",
+  "moves": [
+   "Fifth bond, tax 7%",
+   "Fourth coal plant",
+   "8 east-lake pumps"
+  ],
+  "happened": "Population 14,660 -> 19,020 (+30%), unemployment 3%. A fourth coal plant and east-lake pumps kept power and water up.",
+  "watching": "Water spare capacity (13%) and power (23%).",
+  "start": {
+   "date": "Jan 2006",
+   "population": 14660,
+   "money": 2868,
+   "unemployment": 5,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 75,
+   "jammed": 27,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Jan 2007",
+   "population": 19020,
+   "money": 7921,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 13,
+   "bonds": 5
+  }
  }
 ]
