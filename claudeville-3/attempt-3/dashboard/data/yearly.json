@@ -63,5 +63,72 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "3,190 people",
+  "moves": [
+   "North-south pipe x=74"
+  ],
+  "happened": "Population 1,000 -> 3,190. Found the south pipe rows had never connected to the pumps; one north-south pipe fixed water to 98%.",
+  "watching": "Room: the first block is filling.",
+  "start": {
+   "date": "Jan 2002",
+   "population": 1000,
+   "money": 5014,
+   "unemployment": 1,
+   "watered_pct": 44,
+   "powered_pct": 100,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2003",
+   "population": 3190,
+   "money": 4593,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 12,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "5,150 people",
+  "moves": [
+   "Second bond",
+   "Block 2 (y56-90)",
+   "Second coal plant",
+   "11 pumps"
+  ],
+  "happened": "Population 3,190 -> 5,150, every building powered. Shop demand fell to -2,000 while factory demand stayed maxed.",
+  "watching": "Water spare 14%; services due now (5,000 people).",
+  "start": {
+   "date": "Jan 2003",
+   "population": 3190,
+   "money": 4593,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 12,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2004",
+   "population": 5150,
+   "money": 2317,
+   "unemployment": 10,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 0,
+   "bonds": 2
+  }
  }
 ]
