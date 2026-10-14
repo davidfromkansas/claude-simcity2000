@@ -26,7 +26,14 @@ case $cmd in
         # A "Select" pop-up (bridge / raised wires / causeway) means the drag hit water: cancel it with "None".
         import -window "$W" /tmp/sc/dlg.png
         if [ "$(convert /tmp/sc/dlg.png -format '%[pixel:p{285,240}]%[pixel:p{355,240}]%[pixel:p{320,200}]%[pixel:p{285,300}]%[pixel:p{355,300}]' info:)" = "$(printf 'srgb(186,186,186)%.0s' 1 2 3 4 5)" ]; then
-          xdotool mousemove --window "$W" 346 185; xdotool mousedown 1; sleep 0.15; xdotool mouseup 1; echo "WARNING: drag hit water, pop-up cancelled" >&2; fi;;
+          if [ "$(convert /tmp/sc/dlg.png -format '%[pixel:p{185,240}]%[pixel:p{455,240}]' info:)" = "srgb(186,186,186)srgb(186,186,186)" ]; then nx=446; else nx=346; fi
+          xdotool mousemove --window "$W" $nx 185; xdotool mousedown 1; sleep 0.15; xdotool mouseup 1; echo "WARNING: drag hit water, pop-up cancelled" >&2; fi;;
+  nodlg)
+        # A "Select" pop-up (bridge / raised wires / causeway) means the drag hit water: cancel it with "None".
+        import -window "$W" /tmp/sc/dlg.png
+        if [ "$(convert /tmp/sc/dlg.png -format '%[pixel:p{285,240}]%[pixel:p{355,240}]%[pixel:p{320,200}]%[pixel:p{285,300}]%[pixel:p{355,300}]' info:)" = "$(printf 'srgb(186,186,186)%.0s' 1 2 3 4 5)" ]; then
+          if [ "$(convert /tmp/sc/dlg.png -format '%[pixel:p{185,240}]%[pixel:p{455,240}]' info:)" = "srgb(186,186,186)srgb(186,186,186)" ]; then nx=446; else nx=346; fi
+          xdotool mousemove --window "$W" $nx 185; xdotool mousedown 1; sleep 0.15; xdotool mouseup 1; echo "WARNING: drag hit water, pop-up cancelled" >&2; fi;;
   menu) xdotool mousemove --window "$W" "$1" "$2"; xdotool mousedown 1; sleep 0.5
         xdotool mousemove --window "$W" "$3" "$4"; sleep 0.4; xdotool mouseup 1;;
   tool) xdotool mousemove --window "$W" "$1" "$2"; xdotool mousedown 1; sleep 1.3

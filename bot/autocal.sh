@@ -5,8 +5,8 @@ cd "$(dirname "$0")"
 roads() { python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;c=p.chunks(p.SAVE);b=c['XBLD'];print(' '.join(str(i) for i in range(16384) if 0x1d<=b[i]<=0x2b))"; }
 ./sc key Escape; ./sc save >/dev/null; before=$(roads)
 ./sc tool 22 105 55 113; sleep 0.3
-for pt in "330 250" "450 360" "200 360" "470 150" "200 160" "560 260" "130 260"; do
-  set -- $pt; ./sc click $1 $2; sleep 0.3; ./sc save >/dev/null
+for pt in "330 250" "450 360" "200 360" "470 150" "200 160" "560 260" "130 260" "400 300" "260 300" "400 200" "260 200" "520 400" "150 400" "520 100" "150 100" "330 400" "330 110" "580 350" "580 150"; do
+  set -- $pt; ./sc click $1 $2; sleep 0.4; ./sc nodlg 2>/dev/null; ./sc save >/dev/null
   r=$(python3 -I - "$before" "$1" "$2" <<'PY'
 import sys, struct, json; sys.path.insert(0,'.'); import sc2parse as p
 before=set(map(int,sys.argv[1].split())); c=p.chunks(p.SAVE); b=c['XBLD']
