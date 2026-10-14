@@ -487,5 +487,137 @@
    "jammed": 0,
    "bonds": 8
   }
+ },
+ {
+  "year": 2015,
+  "tone": "steady",
+  "title": "27,560 people",
+  "moves": [
+   "Sixth coal plant",
+   "2 schools + hospital"
+  ],
+  "happened": "Population 25,870 -> 27,560. Sixth coal plant, first schools and a hospital.",
+  "watching": "Home demand weakening.",
+  "start": {
+   "date": "Feb 2015",
+   "population": 25870,
+   "money": 6929,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 92,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 27560,
+   "money": 8949,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 117,
+   "jammed": 0,
+   "bonds": 9
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "setback",
+  "title": "Demand turns negative",
+  "moves": [
+   "Second neighbor link (east)",
+   "Home tax 12% -> 9%"
+  ],
+  "happened": "Population about 27,560 -> 28,600. Demand for homes, shops and factories all fell to zero or below; unemployment rose to 9-10%. Added a second neighbor link and cut home tax to 9%.",
+  "watching": "Factory demand: trade.",
+  "start": {
+   "date": "Feb 2016",
+   "population": 27560,
+   "money": 8949,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 117,
+   "jammed": 0,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Mar 2017",
+   "population": 28750,
+   "money": 3101,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 160,
+   "jammed": 18,
+   "bonds": 9
+  }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "Seaport",
+  "moves": [
+   "Tenth bond",
+   "Seaport",
+   "Factory tax 5% -> 3%"
+  ],
+  "happened": "Population 28,600 -> 29,420. Tenth bond for a seaport on the river; factory demand rose from 0 to +1,250 and unemployment fell from 10% to 7%.",
+  "watching": "Factory land near the seaport.",
+  "start": {
+   "date": "Mar 2017",
+   "population": 28750,
+   "money": 3101,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 160,
+   "jammed": 18,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Mar 2018",
+   "population": 28090,
+   "money": 1185,
+   "unemployment": 10,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 275,
+   "jammed": 17,
+   "bonds": 9
+  }
+ },
+ {
+  "year": 2018,
+  "tone": "good",
+  "title": "Past 30,000",
+  "moves": [
+   "Factory land by the seaport"
+  ],
+  "happened": "Population about 29,000 -> 30,300 by May 2019, factory demand +1,500. Zoned factories next to the seaport.",
+  "watching": "Jobs and cash ($1,135).",
+  "start": {
+   "date": "Mar 2018",
+   "population": 28090,
+   "money": 1185,
+   "unemployment": 10,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 275,
+   "jammed": 17,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Mar 2019",
+   "population": 28950,
+   "money": 4430,
+   "unemployment": 8,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 209,
+   "jammed": 3,
+   "bonds": 10
+  }
  }
 ]

@@ -18,7 +18,7 @@ for y in range(y0, y1 + 1):
         elif t == 0xDC: ch = "W"
         elif t in (0x8A, 0x8B): ch = "A"
         elif t >= 0xC0: ch = "P"
-        elif zz: ch = "rRcCiI"[zz - 1] if t < 0x70 else "hHsSfF"[zz - 1]
+        elif zz: ch = ("rRcCiIAPMS"[zz - 1] if t < 0x70 else "hHsSfFAPMS"[zz - 1]) if zz <= 10 else "?"
         elif t: ch = "#"
         elif ter[i]: ch = "^"
         else: ch = "."
