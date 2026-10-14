@@ -65,5 +65,134 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "5,930 people",
+  "moves": [],
+  "happened": "Population 2,650 -> 5,930. Water spare capacity hit zero by January.",
+  "watching": "Water.",
+  "start": {
+   "date": "Jan 2002",
+   "population": 2650,
+   "money": 4051,
+   "unemployment": 4,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 7,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2003",
+   "population": 5930,
+   "money": 180,
+   "unemployment": 2,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 19,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "10,000 reached",
+  "moves": [
+   "Third bond",
+   "43-pump field",
+   "Block 3 east"
+  ],
+  "happened": "Third bond: a 43-pump field wired with its own power lines, and block 3 east. Population passed 10,000 by spring 2004.",
+  "watching": "Power capacity.",
+  "start": {
+   "date": "Jan 2003",
+   "population": 5930,
+   "money": 180,
+   "unemployment": 2,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 19,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Mar 2004",
+   "population": 10920,
+   "money": 787,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 45,
+   "jammed": 0,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "12,970 people",
+  "moves": [
+   "Home tax 5% -> 8%",
+   "Fourth bond"
+  ],
+  "happened": "Growth continued but power ran out (Power Plant Needed) and loan payments ($999) passed tax income ($699).",
+  "watching": "Power and budget.",
+  "start": {
+   "date": "Mar 2004",
+   "population": 10920,
+   "money": 787,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 45,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 12970,
+   "money": 10129,
+   "unemployment": 7,
+   "watered_pct": 0,
+   "powered_pct": 92,
+   "abandoned": 96,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "14,040 people",
+  "moves": [
+   "Third coal plant"
+  ],
+  "happened": "The game ran unpaused through 2005 after the budget window (fixed). Third coal plant built in Feb 2006.",
+  "watching": "Power spare; block 4.",
+  "start": {
+   "date": "Feb 2005",
+   "population": 12970,
+   "money": 10129,
+   "unemployment": 7,
+   "watered_pct": 0,
+   "powered_pct": 92,
+   "abandoned": 96,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2006",
+   "population": 14040,
+   "money": 9504,
+   "unemployment": 6,
+   "watered_pct": 0,
+   "powered_pct": 89,
+   "abandoned": 108,
+   "jammed": 0,
+   "bonds": 4
+  }
  }
 ]

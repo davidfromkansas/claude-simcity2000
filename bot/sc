@@ -51,8 +51,9 @@ case $cmd in
         convert /tmp/sc/sv.png -crop 1x1+320+228 -format "%[fx:abs(r-g)<0.05&&abs(g-b)<0.05&&r>0.55?1:0]" info: | grep -q 1 && "$0" click 320 228; sleep 0.5; python3 -I "$(dirname "$0")/publish.py" metrics
         python3 -I -c "import sys,json;sys.path.insert(0,'$(dirname "$0")');import sc2parse as p;m=p.parse(p.SAVE);h=m['health'];print(m['date'],'pop',m['population'],'cash',m['money'],'bonds',m['bonds'],'RCI',m['demand'],'| water',str(h['watered_pct'])+'%','power',str(h['powered_pct'])+'%','abandoned',h['abandoned'],'jammed',h['jammed_road_tiles'],'unemp',m['graphs']['unemployment'][:1],'tax',m['tax']['res'])";;
   paused) import -window "$W" /tmp/sc/st.png
-        n=$(convert /tmp/sc/st.png -crop 46x7+383+42 -fx "g>0.6&&r<0.4?1:0" -format "%[fx:mean*640]" info:)
-        [ "${n%.*}" -gt 3 ] && echo yes || echo no;;
+        # count the exact green of the "*PAUSED*" label anywhere in the top strip (the tool panel can sit anywhere there)
+        n=$(convert /tmp/sc/st.png -crop 555x45+85+28 txt:- | grep -c "#00AA04")
+        [ "$n" -gt 8 ] && echo yes || echo no;;
   pause) "$0" key Escape; [ "$("$0" paused)" = yes ] || { "$0" menu 67 7 75 23; "$0" key Escape; };;
   run) # run SPEED(llama|cheetah) SECONDS, then pause and close any budget window
         case $1 in llama) y=55;; cheetah) y=71;; *) y=39;; esac

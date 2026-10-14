@@ -59,3 +59,7 @@ Toolbar is the left column (x 10-80).
 - Homes must be within ~10-15 road tiles of jobs. Use thin alternating bands (homes/shops/factories/shops/homes)
   with cross streets every 10 tiles. Far-apart districts fail (attempt 1).
 - Options > Auto-Goto is stored in the save and was ON in the base map: turn it off after loading.
+- Speed-ups agreed with the user (Oct 2026): DOSBox frameskip=3; build each block from one scripted plan and check the
+  map from the save afterwards; render timelapses only while the game is paused. Keep checking the city every 3-4
+  game months (do NOT skip to yearly checks) and keep the normal camera recalibration.
+- `sc paused` looks for the green *PAUSED* label anywhere in the top strip, so the tool panel can sit anywhere there.
