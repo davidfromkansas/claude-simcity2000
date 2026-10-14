@@ -87,7 +87,7 @@ def main():
     for k in TYPES:
         demand_on = all(h["demand"][k] > 0 for h in span)
         grew = hist[-1]["n"][k]["built"] > base["n"][k]["built"]
-        if demand_on and not grew and hist[-1]["n"][k]["empty"] > 0:
+        if demand_on and not grew and hist[-1]["n"][k]["empty"] >= 10:     # a few odd empty tiles = land is full, not a stall
             alarms += 1
             print("STALL %s: demand positive for %d days but no new buildings (%d built, %d empty tiles)"
                   % (NAME[k], day - base["day"], hist[-1]["n"][k]["built"], hist[-1]["n"][k]["empty"]))

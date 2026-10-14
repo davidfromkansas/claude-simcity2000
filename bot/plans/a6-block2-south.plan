@@ -1,0 +1,28 @@
+# Block 2, south half (y77-90): shops x78-83 and factories y77-82, homes y84-89, fire station,
+# 6 more pumps x=72 y51-56.
+road 76 76 76 90
+road 77 83 108 83
+road 77 90 108 90
+road 84 77 84 89
+road 92 77 92 89
+road 100 77 100 89
+road 108 77 108 89
+line 77 77 77 89
+line 85 77 85 89
+line 93 77 93 89
+line 101 77 101 89
+zone c 78 77 83 82
+zone i 86 77 91 82
+zone i 94 77 99 82
+zone i 102 77 107 82
+zone r 78 84 83 89
+zone r 86 84 91 89
+zone r 94 84 99 89
+zone r 102 84 107 89
+fire 94 77
+pipe 74 76 74 87
+pipe 75 79 107 79
+pipe 75 86 107 86
+line 73 51 73 56
+pump 72 51 72 56
+pipe 72 53 74 53
