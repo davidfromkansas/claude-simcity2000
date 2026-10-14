@@ -32,5 +32,38 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "2,650 people",
+  "moves": [
+   "Second bond",
+   "Block 2 with coal plant, police, pumps"
+  ],
+  "happened": "Population 900 -> 2,650 with full demand for homes and shops. Built block 2 ahead of demand with a second bond.",
+  "watching": "Water spare capacity; money ($886 left).",
+  "start": {
+   "date": "Jan 2001",
+   "population": 900,
+   "money": 4502,
+   "unemployment": 3,
+   "watered_pct": 86,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2002",
+   "population": 2650,
+   "money": 4051,
+   "unemployment": 4,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 7,
+   "jammed": 0,
+   "bonds": 1
+  }
  }
 ]
