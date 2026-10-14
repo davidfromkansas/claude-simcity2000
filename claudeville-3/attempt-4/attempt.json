@@ -1,5 +1,9 @@
 {
  "attempt": 4,
- "status": "playing",
- "started": "2026-10-14"
+ "status": "failed",
+ "started": "2026-10-14",
+ "ended": "Nov 2021",
+ "peak": 30860,
+ "reason": "Stalled at ~30,000: low land value meant low tax income, and 10 loans cost more than all taxes",
+ "timelapse": "recording-timelapse/timelapse.mp4"
 }
