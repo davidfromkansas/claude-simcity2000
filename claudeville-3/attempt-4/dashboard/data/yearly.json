@@ -619,5 +619,37 @@
    "jammed": 3,
    "bonds": 10
   }
+ },
+ {
+  "year": 2019,
+  "tone": "setback",
+  "title": "Out of money",
+  "moves": [
+   "Factory land by the seaport"
+  ],
+  "happened": "Population about 29,400 -> 30,860 then flat. Ten loans cost $3,800 a year against $2,627 of tax income; cash went negative, so the new factory land by the seaport couldn't get the road it needed. Attempt ended Nov 2021.",
+  "watching": "Attempt 5: a high-value city.",
+  "start": {
+   "date": "Mar 2019",
+   "population": 28950,
+   "money": 4430,
+   "unemployment": 8,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 209,
+   "jammed": 3,
+   "bonds": 10
+  },
+  "end": {
+   "date": "Feb 2020",
+   "population": 29420,
+   "money": 2356,
+   "unemployment": 7,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 192,
+   "jammed": 0,
+   "bonds": 10
+  }
  }
 ]
