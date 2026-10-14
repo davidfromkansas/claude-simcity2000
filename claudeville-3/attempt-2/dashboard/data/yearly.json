@@ -460,5 +460,37 @@
    "jammed": 3,
    "bonds": 9
   }
+ },
+ {
+  "year": 2015,
+  "tone": "setback",
+  "title": "Bankrupt",
+  "moves": [
+   "Road on old power column x=101 (y20-54)"
+  ],
+  "happened": "Population 28,560 -> 29,940 but 30% unemployed. Clearing a column of buildings for a new north-south road used all the cash and cut power and water again (70% / 21% of buildings). The year ended with a negative balance and ten loans. Attempt ended.",
+  "watching": "Attempt 3.",
+  "start": {
+   "date": "Jan 2015",
+   "population": 32560,
+   "money": 3589,
+   "unemployment": 23,
+   "watered_pct": 94,
+   "powered_pct": 96,
+   "abandoned": 1061,
+   "jammed": 3,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Jan 2016",
+   "population": 28560,
+   "money": 6014,
+   "unemployment": 33,
+   "watered_pct": 84,
+   "powered_pct": 96,
+   "abandoned": 1331,
+   "jammed": 63,
+   "bonds": 10
+  }
  }
 ]

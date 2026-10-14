@@ -1,5 +1,9 @@
 {
  "attempt": 2,
- "status": "playing",
- "started": "2026-10-14"
+ "status": "failed",
+ "started": "2026-10-14",
+ "ended": "Jan 2017",
+ "peak": 35690,
+ "reason": "Peaked at 35,690 (2011), then traffic jams, broken power wiring and 10 loans; bankrupt in 2017",
+ "timelapse": "recording-timelapse/timelapse.mp4"
 }

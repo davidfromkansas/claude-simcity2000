@@ -7,7 +7,8 @@
  },
  {
   "attempt": 2,
-  "status": "playing",
-  "reason": ""
+  "status": "failed",
+  "reason": "Peaked at 35,690 in 2011; traffic jams, broken power wiring and 10 loans; bankrupt in 2017",
+  "timelapse": "recording-timelapse/timelapse.mp4"
  }
 ]
