@@ -67,5 +67,72 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2002,
+  "tone": "setback",
+  "title": "Power ran out",
+  "moves": [
+   "Second coal plant"
+  ],
+  "happened": "Population 5,140 -> 6,630 but the one coal plant hit its limit at the end of the year; the water pumps lost power and water dropped to zero (133 abandoned buildings).",
+  "watching": "Power and water spare capacity.",
+  "start": {
+   "date": "Jan 2002",
+   "population": 5140,
+   "money": 4535,
+   "unemployment": 0,
+   "watered_pct": 79,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2003",
+   "population": 6630,
+   "money": 6347,
+   "unemployment": 13,
+   "watered_pct": 0,
+   "powered_pct": 86,
+   "abandoned": 133,
+   "jammed": 1,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "steady",
+  "title": "Recovered",
+  "moves": [
+   "Third bond, tax 5%",
+   "18 riverbank pumps",
+   "Third coal plant",
+   "Factories in the south block's middle bands"
+  ],
+  "happened": "Second coal plant brought power and water back within two months. Population 6,630 -> 7,740. Water spare capacity was back at 0% by December.",
+  "watching": "Water; jobs (15% unemployed).",
+  "start": {
+   "date": "Jan 2003",
+   "population": 6630,
+   "money": 6347,
+   "unemployment": 13,
+   "watered_pct": 0,
+   "powered_pct": 86,
+   "abandoned": 133,
+   "jammed": 1,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2004",
+   "population": 7740,
+   "money": 1931,
+   "unemployment": 15,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 135,
+   "jammed": 1,
+   "bonds": 2
+  }
  }
 ]
