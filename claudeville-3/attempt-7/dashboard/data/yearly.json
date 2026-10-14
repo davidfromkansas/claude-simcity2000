@@ -63,5 +63,38 @@
    "jammed": 0,
    "bonds": 0
   }
+ },
+ {
+  "year": 2009,
+  "tone": "steady",
+  "title": "Slow but debt-free",
+  "moves": [
+   "Dense homes north",
+   "Factory blocks east"
+  ],
+  "happened": "No loans. Savings were reinvested in dense homes and factories as demand allowed. 3,850 people by January 2010, far behind the pace needed.",
+  "watching": "Growth rate",
+  "start": {
+   "date": "Feb 2009",
+   "population": 3220,
+   "money": 891,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 3810,
+   "money": 1226,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 7,
+   "jammed": 0,
+   "bonds": 0
+  }
  }
 ]
