@@ -194,5 +194,71 @@
    "jammed": 0,
    "bonds": 4
   }
+ },
+ {
+  "year": 2006,
+  "tone": "steady",
+  "title": "14,880 people",
+  "moves": [
+   "Block 3 south + fire station"
+  ],
+  "happened": "Population 14,040 -> 14,880. Built block 3 south with a second fire station.",
+  "watching": "Power and water spare near 15%.",
+  "start": {
+   "date": "Feb 2006",
+   "population": 14040,
+   "money": 9504,
+   "unemployment": 6,
+   "watered_pct": 0,
+   "powered_pct": 89,
+   "abandoned": 108,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 14880,
+   "money": 4925,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 68,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "good",
+  "title": "16,070 people",
+  "moves": [
+   "Fifth bond",
+   "Fourth coal plant",
+   "33 pumps"
+  ],
+  "happened": "Population 14,880 -> 16,070. Fifth bond for a fourth coal plant and 33 more pumps (spare water 52%, power 34%).",
+  "watching": "Block 4 when cash allows.",
+  "start": {
+   "date": "Feb 2007",
+   "population": 14880,
+   "money": 4925,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 68,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 16070,
+   "money": 260,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 0,
+   "bonds": 4
+  }
  }
 ]
