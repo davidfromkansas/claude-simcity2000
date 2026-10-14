@@ -22,5 +22,10 @@
   "status": "failed",
   "reason": "Stalled at ~30,000 in 2021: low land value, low tax income, 10 loans costing more than all taxes",
   "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 5,
+  "status": "playing",
+  "reason": ""
  }
 ]
