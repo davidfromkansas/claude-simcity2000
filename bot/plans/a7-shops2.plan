@@ -1,0 +1,6 @@
+# shop strip x94-99 y35-38 (shop demand at max for years)
+line 93 34 93 38
+road 93 39 100 39
+road 100 35 100 38
+zone c 94 35 99 38
+pipe 92 36 99 36

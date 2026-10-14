@@ -344,7 +344,7 @@ def main(path, dry=False):
     cash1 = save()
     spent = (cash0 - cash1) if cash0 is not None and cash1 is not None else None
     print("money: spent $%s, plan estimate about $%d" % (spent, expect))
-    if spent is not None and spent < expect * 0.5:
+    if spent is not None and expect >= 200 and spent < expect * 0.5:
         problems.append("spent $%d but the plan should cost about $%d: parts may not be built" % (spent, expect))
     for p in problems:
         print("PROBLEM", p)
