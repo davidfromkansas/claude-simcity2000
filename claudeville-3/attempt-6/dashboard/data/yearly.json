@@ -1,0 +1,35 @@
+[
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "A healthy start",
+  "moves": [
+   "Block 1 built and checked",
+   "Taxes 7/5/4, gambling and parking fines"
+  ],
+  "happened": "Attempt 4's first block rebuilt with a checked setup: trade link, pumps on the pipes, power to every zone. 800 people by January.",
+  "watching": "Water spare capacity",
+  "start": {
+   "date": "Feb 2001",
+   "population": 800,
+   "money": 4833,
+   "unemployment": 4,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Apr 2002",
+   "population": 2410,
+   "money": 3750,
+   "unemployment": 10,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 24,
+   "jammed": 0,
+   "bonds": 1
+  }
+ }
+]
