@@ -235,5 +235,39 @@
    "jammed": 13,
    "bonds": 5
   }
+ },
+ {
+  "year": 2007,
+  "tone": "good",
+  "title": "25,000 people",
+  "moves": [
+   "Sixth bond",
+   "South block y91-124",
+   "24 pumps"
+  ],
+  "happened": "Population 19,020 -> 25,670 (+35%), unemployment 3%. The south block filled quickly. But power was at 6% spare and only 47% of buildings had water by January.",
+  "watching": "Water: 44% of buildings have water.",
+  "start": {
+   "date": "Jan 2007",
+   "population": 19020,
+   "money": 7921,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 13,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Jan 2008",
+   "population": 25670,
+   "money": 4294,
+   "unemployment": 3,
+   "watered_pct": 47,
+   "powered_pct": 90,
+   "abandoned": 99,
+   "jammed": 32,
+   "bonds": 6
+  }
  }
 ]
