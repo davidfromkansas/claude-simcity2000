@@ -269,5 +269,40 @@
    "jammed": 32,
    "bonds": 6
   }
+ },
+ {
+  "year": 2008,
+  "tone": "setback",
+  "title": "Power and water wiring problems",
+  "moves": [
+   "Seventh bond",
+   "Fifth coal plant (northeast)",
+   "42 pumps and pump-field rewiring",
+   "Sixth coal plant (southwest)"
+  ],
+  "happened": "Population 25,670 -> 28,920 (+13%), slower. Most pumps had no power because of broken power-line junctions; fixing them took water from 47% to 99% of buildings. Power lines drawn over zones get replaced by buildings, which cut off the south; a sixth coal plant there brought power back to 97%.",
+  "watching": "Growth in the south block now that it has power.",
+  "start": {
+   "date": "Jan 2008",
+   "population": 25670,
+   "money": 4294,
+   "unemployment": 3,
+   "watered_pct": 47,
+   "powered_pct": 90,
+   "abandoned": 99,
+   "jammed": 32,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Jan 2009",
+   "population": 28920,
+   "money": 5824,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 83,
+   "abandoned": 216,
+   "jammed": 0,
+   "bonds": 7
+  }
  }
 ]
