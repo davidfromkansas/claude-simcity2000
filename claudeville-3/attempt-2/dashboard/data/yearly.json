@@ -134,5 +134,39 @@
    "jammed": 1,
    "bonds": 2
   }
+ },
+ {
+  "year": 2004,
+  "tone": "milestone",
+  "title": "10,000 people, on pace",
+  "moves": [
+   "32 pumps",
+   "Third coal plant",
+   "Factories in the south middle bands"
+  ],
+  "happened": "Population 7,740 -> 10,670, right on the straight-line pace to 100,000. Water spare capacity kept running out; 32 more pumps and a third coal plant kept up. Unemployment 9-15%.",
+  "watching": "Room to grow: the starter blocks are nearly full.",
+  "start": {
+   "date": "Jan 2004",
+   "population": 7740,
+   "money": 1931,
+   "unemployment": 15,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 135,
+   "jammed": 1,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2005",
+   "population": 10670,
+   "money": 2969,
+   "unemployment": 11,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 137,
+   "jammed": 5,
+   "bonds": 3
+  }
  }
 ]
