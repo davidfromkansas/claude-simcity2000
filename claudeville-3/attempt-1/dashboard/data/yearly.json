@@ -323,5 +323,69 @@
    "jammed": 1,
    "bonds": 1
   }
+ },
+ {
+  "year": 2010,
+  "tone": "steady",
+  "title": "Slower than needed",
+  "moves": [
+   "North housing district"
+  ],
+  "happened": "Population 3,120 -> 3,680. The new north homes started filling, but abandoned buildings kept rising (153) and 28% had no job.",
+  "watching": "Why so many buildings empty out.",
+  "start": {
+   "date": "Jan 2010",
+   "population": 3120,
+   "money": 5909,
+   "unemployment": 28,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 144,
+   "jammed": 1,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2011",
+   "population": 3680,
+   "money": 3976,
+   "unemployment": 28,
+   "watered_pct": 94,
+   "powered_pct": 100,
+   "abandoned": 153,
+   "jammed": 1,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "good",
+  "title": "Found the real bottleneck: roads",
+  "moves": [
+   "Connector roads x=88 and x=102"
+  ],
+  "happened": "Only one north-south road (the west avenue) meant the east blocks were about 60 road tiles from jobs, too far for commuters. Two connector roads (x=88, x=102) fixed it: population 3,680 -> 5,310 (+44%), unemployment 28% -> 12%, abandoned 153 -> 84.",
+  "watching": "Water (81%) and more connectors.",
+  "start": {
+   "date": "Jan 2011",
+   "population": 3680,
+   "money": 3976,
+   "unemployment": 28,
+   "watered_pct": 94,
+   "powered_pct": 100,
+   "abandoned": 153,
+   "jammed": 1,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 5310,
+   "money": 2918,
+   "unemployment": 12,
+   "watered_pct": 81,
+   "powered_pct": 100,
+   "abandoned": 84,
+   "jammed": 2,
+   "bonds": 1
+  }
  }
 ]
