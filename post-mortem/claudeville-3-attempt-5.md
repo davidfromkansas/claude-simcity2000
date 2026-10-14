@@ -45,6 +45,22 @@ It was built in 2010, but by then cash was gone and land value was 6.
    abandoned, which dragged land value down to 6.
 4. **Bulldozer drags hit the wrong tiles.** One drag destroyed the fire station and two road tiles.
 
+## Control failures vs strategy failures
+
+**Control failures (the agent could not carry out its own plan, which should not happen):**
+- The neighbor link was never built (road one tile short of the edge) and went unnoticed for 10 years.
+- Pumps left one tile short of the pipes.
+- A bulldozer drag destroyed the fire station and two road tiles.
+- Five years of guessing instead of checking tiles when growth stalled.
+
+**Strategy failures:** parks placed between power lines and homes (wrong idea of how power spreads),
+and far too much shop land.
+
+**Controller fixes made before attempt 6:** `bot/audit.py` (city check every step: link, power reach, pumps
+and pipes, road access), `bot/build.py` (builds from a plan, checks every tile and the money, repairs damage
+outside the plan, safe tile-by-tile bulldozer) and `bot/stall.py` (stall alarm with tile diagnosis).
+`bot/test_audit.py` recreates attempt 5's three big mistakes and confirms the check catches each one.
+
 ## What changes next time
 
 - **Day-one checklist, verified from the save before the game runs:** neighbor link built ($1,000

@@ -66,3 +66,19 @@ Toolbar is the left column (x 10-80).
 - Attempt 5 lessons: the neighbor link only exists if $1,000 was charged and a road tile sits ON the map edge (y=0);
   parks do not carry power, so never put them between a power line and a zone; bulldozer drags can destroy
   neighbouring buildings, so bulldoze tile by tile. If a zone with demand does not grow for 6 months, query tiles at once.
+
+## Controller (built Oct 2026 after attempt 5) - use these, not hand-typed clicks
+- `bot/build.py PLAN` builds from a plan file (road/line/pipe/zone/pump/park/coal/gas/fire/police/link/bulldoze/dezone),
+  then checks EVERY planned tile in the save, re-places gaps tile by tile, checks the cash charged (link must cost $1,000),
+  and reports + repairs any tile OUTSIDE the plan that changed. Bulldoze is tile by tile (2 clicks: rubble, then clear).
+  Plans live in `bot/plans/*.plan`. A build is not done until it prints "BUILD: checked".
+- `bot/audit.py` city check from the save (neighbor link, power reach through lines/buildings, pumps joined to pipes,
+  road access, spare capacity). Any FAIL = fix before running the game. `bot/test_audit.py` proves it catches attempt 5's mistakes.
+- `bot/stall.py` stall alarm: demand but no growth for 6 game months -> diagnosis of sample tiles.
+- `bot/step.sh [secs]` = run ~3-4 months + save + health + audit + stall. Use it for every check step.
+
+## Post-mortem rule (from the user)
+Every post-mortem must split causes into CONTROL failures (the agent could not carry out its own plan: misplaced or
+missing tiles, unnoticed broken links, accidents) and STRATEGY failures (the plan itself was wrong). Control failures
+should not happen: call each one out plainly, and fix the controller (new check or tool) BEFORE the next attempt.
+Only strategy lapses are acceptable reasons to fail.
