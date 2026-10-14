@@ -17,7 +17,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sc2parse  # noqa: E402
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DOCS = os.path.normpath(os.path.join(REPO, "docs", sc2parse.RUN.get("docs", ".")))
+# Dashboard folder: run.json "dashboard" (repo-relative) or the older docs/<docs> layout.
+DOCS = os.path.normpath(os.path.join(REPO, sc2parse.RUN["dashboard"]) if "dashboard" in sc2parse.RUN
+                        else os.path.join(REPO, "docs", sc2parse.RUN.get("docs", ".")))
+# Finished video parts go here (repo-relative); default is the dashboard's recordings/.
+VIDS = os.path.normpath(os.path.join(REPO, sc2parse.RUN.get("recordings", os.path.relpath(os.path.join(DOCS, "recordings"), REPO))))
 DATA = os.path.join(DOCS, "data")
 SAVE = sc2parse.SAVE
 REC = sc2parse.RUN.get("rec", "/opt/sc2k/rec")
@@ -65,6 +69,8 @@ def flat(m):
         "colleges": s["colleges"]["count"],
         "watered_pct": m["health"]["watered_pct"], "powered_pct": m["health"]["powered_pct"],
         "abandoned": m["health"]["abandoned"], "jammed": m["health"]["jammed_road_tiles"],
+        "rail": s["rail"]["count"], "subway": s["subway"]["count"], "arco_pop": m["arco_population"],
+        "zoned_res": m["zoned_tiles"]["res"], "zoned_com": m["zoned_tiles"]["com"], "zoned_ind": m["zoned_tiles"]["ind"],
     }
 
 
@@ -107,12 +113,14 @@ def recordings():
     names = {r["file"] for r in listed}
     for f in parts[:-1]:
         src = os.path.join(REC, f)
-        if "recordings/" + f in names or os.path.getsize(src) < 10000:
+        rel = os.path.relpath(os.path.join(VIDS, f), DOCS)
+        if rel in names or os.path.getsize(src) < 10000:
             continue
         if os.path.getsize(src) > 90e6:   # GitHub file limit is 100 MB
             continue
-        shutil.copy(src, os.path.join(DOCS, "recordings", f))
-        listed.append({"file": "recordings/" + f, "t": now(), "mb": round(os.path.getsize(src) / 1e6, 1)})
+        os.makedirs(VIDS, exist_ok=True)
+        shutil.copy(src, os.path.join(VIDS, f))
+        listed.append({"file": rel, "t": now(), "mb": round(os.path.getsize(src) / 1e6, 1)})
     dump("recordings.json", listed)
 
 
@@ -121,7 +129,7 @@ def push(msg):
     with open(LOCK, "w") as lk:
         fcntl.flock(lk, fcntl.LOCK_EX)
         git = lambda *a: subprocess.run(["git", "-C", REPO, *a], capture_output=True, text=True)
-        git("add", os.path.join(REPO, "docs"))
+        git("add", DOCS, VIDS)
         if git("diff", "--cached", "--quiet").returncode == 0:
             return
         git("commit", "-q", "-m", msg)
@@ -147,7 +155,7 @@ def once():
 
 
 if __name__ == "__main__":
-    for sub in ("data", "shots", "recordings"):
+    for sub in ("data", "shots"):
         os.makedirs(os.path.join(DOCS, sub), exist_ok=True)
     cmd = sys.argv[1] if len(sys.argv) > 1 else "once"
     if cmd == "log":

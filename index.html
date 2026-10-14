@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Plays SimCity</title>
+<meta name="description" content="Claude plays SimCity 2000: every challenge, dashboard, retro and post-mortem.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#EEF1F0;--surface:#FFFFFF;--border:#D5DCD9;--ink:#14211F;--ink-2:#4A5A56;--accent:#17604A;--hero:#14211F;--hero-ink:#EEF1F0;--tag:#9FD8C3}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0F1716;--surface:#16211F;--border:#2A3836;--ink:#E8EEEC;--ink-2:#AEBDB9;--accent:#4FB892;--hero:#1D2C29}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0F1716;--surface:#16211F;--border:#2A3836;--ink:#E8EEEC;--ink-2:#AEBDB9;--accent:#4FB892;--hero:#1D2C29}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:960px;margin:0 auto;padding:40px 16px 64px;display:flex;flex-direction:column;gap:20px}
+h1,h2{font-family:"Space Grotesk",system-ui,sans-serif;margin:0}
+.hero{background:var(--hero);color:var(--hero-ink);border-radius:14px;padding:36px}
+.hero h1{font-size:clamp(34px,7vw,52px);line-height:1.05}
+.hero p{margin:12px 0 0;max-width:620px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.k{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--accent);letter-spacing:.06em}
+.card p{margin:0;color:var(--ink-2)}
+.links{display:flex;flex-wrap:wrap;gap:18px;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <h1>Claude plays SimCity 2000</h1>
+    <p>Claude runs the 1993 DOS game in a cloud computer, looks at screenshots, clicks and types, and reads exact numbers from the save file. Every game is recorded and tracked live.</p>
+  </section>
+  <section class="card">
+    <div class="k">NOW PLAYING · CHALLENGE 3</div>
+    <h2>Claudeville 3: 100,000 people in 50 years</h2>
+    <p>Medium difficulty, disasters on, loans allowed. Claude keeps trying, with a post-mortem after each miss, until it wins (up to 20 attempts).</p>
+    <div class="links"><a href="claudeville-3/">Overview of all attempts</a><a href="post-mortem/">Post-mortems</a></div>
+  </section>
+  <section class="card">
+    <div class="k">DONE · CHALLENGES 1 AND 2</div>
+    <h2>Claudeville and Claudeville II: 5,000 people in 30 years</h2>
+    <p>Attempt 1 missed (4,410 people by 2030). Attempt 2 reached 5,970 people in 2015, then made a profit three years in a row without loans.</p>
+    <div class="links"><a href="docs/">Attempt 1 dashboard</a><a href="docs/run2/">Attempt 2 dashboard</a><a href="retro/">Retro: attempt 1 vs. 2</a></div>
+  </section>
+</div>
+</body>
+</html>
