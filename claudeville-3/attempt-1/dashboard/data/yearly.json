@@ -1,0 +1,69 @@
+[
+ {
+  "year": 2000,
+  "tone": "setback",
+  "title": "Founded, but almost nothing grew",
+  "moves": [
+   "Avenue and 4 streets",
+   "Zones: homes, shops, factories",
+   "Coal plant + power line",
+   "4 water pumps + pipes"
+  ],
+  "happened": "Built a full starter town on the flat map: avenue, 4 streets, homes, shops, factories, coal plant, 4 river pumps. But empty zones don't carry power, so only one edge of each zone had electricity and the city stayed at about 20 people.",
+  "watching": "Whether the new power lines through the zones get buildings going.",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 10000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2001",
+   "population": 20,
+   "money": 2227,
+   "unemployment": 25,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2001,
+  "tone": "setback",
+  "title": "Found the power problem",
+  "moves": [
+   "Power lines through all zones"
+  ],
+  "happened": "Population stuck at 30 with 42% unemployment. Found that only zone tiles touching a power line were powered. Added two power lines through every zone row (x=84, x=92), linked to the plant.",
+  "watching": "Growth now that every block has power.",
+  "start": {
+   "date": "Jan 2001",
+   "population": 20,
+   "money": 2227,
+   "unemployment": 25,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2002",
+   "population": 30,
+   "money": 2080,
+   "unemployment": 42,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 3,
+   "jammed": 0,
+   "bonds": 0
+  }
+ }
+]
