@@ -1,1 +1,13 @@
-[{"attempt": 1, "status": "playing", "reason": ""}]
+[
+ {
+  "attempt": 1,
+  "status": "failed",
+  "reason": "Homes too far from jobs (commutes failed); stopped in year 22 at 9,190 people with $40,000 of loans",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 2,
+  "status": "playing",
+  "reason": ""
+ }
+]

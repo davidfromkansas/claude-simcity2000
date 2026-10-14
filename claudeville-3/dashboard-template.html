@@ -338,7 +338,7 @@ async function refresh() {
     get("data/recordings.json", []), get("data/latest.json", null), get("data/yearly.json", []), get("../attempt.json", {})]);
   const disasters = act.filter(a => a.type === "disaster");
   if (rows.length) { const m = rows[rows.length - 1]; kpis(m, rows, disasters); health(m); drawCharts(rows); }
-  disasterLine(disasters); years(yr); feed(act); vids(rec, info.timelapse ? { file: info.timelapse } : null);
+  disasterLine(disasters); years(yr); feed(act); vids(rec, info.timelapse ? { file: "../" + info.timelapse } : null);
   const st = info.status || "playing";
   const cls = { playing: "p-run", success: "p-good", failed: "p-bad" }[st] || "p-steady";
   $("status").className = "pill " + cls;
