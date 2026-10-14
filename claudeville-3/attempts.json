@@ -28,5 +28,10 @@
   "status": "failed",
   "reason": "Stuck near 6,700 people in 2012: the neighbor road link was missing for 10 years, homes had no power for 2 years, too much shop land",
   "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 6,
+  "status": "playing",
+  "reason": ""
  }
 ]
