@@ -1,0 +1,67 @@
+[
+ {
+  "year": 2000,
+  "tone": "setback",
+  "title": "Slow start: power not linked",
+  "moves": [
+   "$10,000 bond, tax 4%",
+   "First block with un-zoned power columns",
+   "Coal plant, 12 pumps",
+   "Power link along y=56"
+  ],
+  "happened": "Built the full first block on day one, but only one of the four power columns touched the coal plant, so most zones had no power for a year (120 people by January). Linked the columns in February.",
+  "watching": "Growth now that every zone has power.",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 10000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2001",
+   "population": 120,
+   "money": 5540,
+   "unemployment": 13,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "1,000 people",
+  "moves": [],
+  "happened": "Population 120 -> 1,000 with 1% unemployment once power reached every block.",
+  "watching": "Water: only 44% of buildings have water yet.",
+  "start": {
+   "date": "Jan 2001",
+   "population": 120,
+   "money": 5540,
+   "unemployment": 13,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2002",
+   "population": 1000,
+   "money": 5014,
+   "unemployment": 1,
+   "watered_pct": 44,
+   "powered_pct": 100,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  }
+ }
+]
