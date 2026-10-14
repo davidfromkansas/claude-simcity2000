@@ -33,5 +33,39 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "5,000 people in two years",
+  "moves": [
+   "Second $10,000 bond",
+   "Second block (y56-89)",
+   "11 riverbank pumps"
+  ],
+  "happened": "Population 1,650 -> 5,140 with almost no unemployment. Took a second $10,000 bond and built a second block of bands to the south.",
+  "watching": "Water spare capacity; power plant capacity.",
+  "start": {
+   "date": "Jan 2001",
+   "population": 1650,
+   "money": 6600,
+   "unemployment": 7,
+   "watered_pct": 89,
+   "powered_pct": 100,
+   "abandoned": 6,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2002",
+   "population": 5140,
+   "money": 4535,
+   "unemployment": 0,
+   "watered_pct": 79,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  }
  }
 ]
