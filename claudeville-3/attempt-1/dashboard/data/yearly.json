@@ -162,5 +162,67 @@
    "jammed": 0,
    "bonds": 0
   }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "Neighbor link brings jobs",
+  "moves": [],
+  "happened": "Population passed 1,000 (640 -> 1,010). Shop and factory demand flipped from negative to full after the neighbor link.",
+  "watching": "Water: pumps are starting to fall behind.",
+  "start": {
+   "date": "Jan 2005",
+   "population": 640,
+   "money": 1946,
+   "unemployment": 38,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 45,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2006",
+   "population": 1010,
+   "money": 920,
+   "unemployment": 31,
+   "watered_pct": 85,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "steady",
+  "title": "Growing, but water runs short",
+  "moves": [
+   "4 more water pumps (east lake + river)"
+  ],
+  "happened": "Population 1,010 -> 1,350. Water coverage dropped to 48% and 64 buildings stood abandoned, many at the far east end. Cash only about $950: income is tiny at this size.",
+  "watching": "Abandoned buildings once water is back.",
+  "start": {
+   "date": "Jan 2006",
+   "population": 1010,
+   "money": 920,
+   "unemployment": 31,
+   "watered_pct": 85,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2007",
+   "population": 1350,
+   "money": 951,
+   "unemployment": 31,
+   "watered_pct": 48,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 1,
+   "bonds": 0
+  }
  }
 ]
