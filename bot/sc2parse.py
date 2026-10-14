@@ -63,6 +63,15 @@ def parse(path):
     xplt = c.get("XPLT", b"")
     xtrf = c.get("XTRF", b"")
     avg = lambda b: round(sum(b) / len(b), 1) if b else 0
+    zoned, dev = [0, 0, 0], [0, 0, 0]
+    xz, xb = c.get("XZON", b""), c.get("XBLD", b"")
+    for i in range(len(xz)):
+        zt = xz[i] & 15
+        if 1 <= zt <= 6:
+            k = (zt - 1) // 2          # 0 res, 1 com, 2 ind
+            zoned[k] += 1
+            if xb[i] >= 0x70:          # a building stands on the tile
+                dev[k] += 1
     name = c.get("CNAM", b"\x00")[1:].split(b"\x00")[0].decode("latin1")
     return {
         "city": name,
@@ -74,7 +83,10 @@ def parse(path):
         "bonds": g(0x930),          # bonds currently floated
         "population": g(0x102C) + g(0x1020),
         "arco_population": g(0x1020),
-        "res_tiles": g(0x5F8), "com_tiles": g(0x600), "ind_tiles": g(0x608),
+        # Developed tiles per zone type, counted from the zone + building maps.
+        # (MISC 0x5F8.. turned out to count only dense residential, so it is not used.)
+        "res_tiles": dev[0], "com_tiles": dev[1], "ind_tiles": dev[2],
+        "zoned_tiles": {"res": zoned[0], "com": zoned[1], "ind": zoned[2]},
         "demand": {"res": g(0x718), "com": g(0x71C), "ind": g(0x720)},
         "tax": {"res": g(0x780), "com": g(0x7EC), "ind": g(0x858)},
         "taxed_pop": {"res": g(0x77C), "com": g(0x7E8), "ind": g(0x854)},
