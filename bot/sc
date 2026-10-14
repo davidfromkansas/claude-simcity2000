@@ -45,6 +45,8 @@ case $cmd in
         "$0" menu 67 7 75 $y; "$0" key Escape; sleep "$2"; "$0" pause; sleep 0.3
         import -window "$W" /tmp/sc/st.png
         if [ "$(convert /tmp/sc/st.png -crop 1x1+457+123 -format '%[pixel:p{0,0}]' info:)" != "$(convert /tmp/sc/st.png -crop 1x1+600+400 -format '%[pixel:p{0,0}]' info:)" ]; then :; fi;;
+  query) xdotool mousemove --window "$W" "$1" "$2"; xdotool keydown shift; sleep 0.2; xdotool mousedown 1; sleep 0.2
+        xdotool mouseup 1; xdotool keyup shift; sleep 0.8; import -window "$W" /tmp/sc/now.png; echo /tmp/sc/now.png;;
   log) python3 -I "$(dirname "$0")/publish.py" log "$@";;
   *) echo "unknown"; exit 1;;
 esac
