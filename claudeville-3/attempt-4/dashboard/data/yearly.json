@@ -354,5 +354,71 @@
    "jammed": 2,
    "bonds": 6
   }
+ },
+ {
+  "year": 2011,
+  "tone": "good",
+  "title": "23,760 people",
+  "moves": [
+   "Seventh bond",
+   "Fifth coal plant + 34 pumps"
+  ],
+  "happened": "Population 21,670 -> 23,760. Seventh bond for a fifth coal plant and 34 more pumps.",
+  "watching": "Budget: loan payments slightly above tax income.",
+  "start": {
+   "date": "Feb 2011",
+   "population": 21670,
+   "money": 2511,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 2,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 23760,
+   "money": 4265,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 36,
+   "jammed": 0,
+   "bonds": 7
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "steady",
+  "title": "Land full at 24,000",
+  "moves": [
+   "Taxes 12/7/5%",
+   "Ordinances"
+  ],
+  "happened": "Population 23,760 -> 24,240: no land left. Raised taxes (homes 12%, shops 7%, factories 5%) and turned on gambling, parking fines and a volunteer fire department.",
+  "watching": "Block 5 southeast.",
+  "start": {
+   "date": "Feb 2012",
+   "population": 23760,
+   "money": 4265,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 36,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": {
+   "date": "Feb 2013",
+   "population": 24240,
+   "money": 3722,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 46,
+   "jammed": 0,
+   "bonds": 7
+  }
  }
 ]
