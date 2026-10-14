@@ -260,5 +260,99 @@
    "jammed": 0,
    "bonds": 4
   }
+ },
+ {
+  "year": 2008,
+  "tone": "steady",
+  "title": "17,600 people",
+  "moves": [],
+  "happened": "Population 16,070 -> 17,610. The city ran out of land; cash fell to $2,110.",
+  "watching": "Money for the next block.",
+  "start": {
+   "date": "Feb 2008",
+   "population": 16070,
+   "money": 260,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 17610,
+   "money": 2110,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 50,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Block 4",
+  "moves": [
+   "Sixth bond",
+   "Taxes 10/4/4%",
+   "Block 4 south"
+  ],
+  "happened": "Population 17,610 -> 18,650. Sixth bond and a home-tax rise to 10% paid for block 4, with every band zoned so new homes have jobs next door, plus a fire and police station.",
+  "watching": "Power spare ~20%.",
+  "start": {
+   "date": "Feb 2009",
+   "population": 17610,
+   "money": 2110,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 50,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 18650,
+   "money": 3386,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "good",
+  "title": "21,670 people",
+  "moves": [],
+  "happened": "Population 18,650 -> 21,670, unemployment 1-2%. Block 4 filled fast.",
+  "watching": "Power and water spare falling (10-16%).",
+  "start": {
+   "date": "Feb 2010",
+   "population": 18650,
+   "money": 3386,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 21670,
+   "money": 2511,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 2,
+   "bonds": 6
+  }
  }
 ]
