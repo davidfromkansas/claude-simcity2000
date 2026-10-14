@@ -130,5 +130,39 @@
    "jammed": 0,
    "bonds": 2
   }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "8,260 people",
+  "moves": [
+   "Tax 4% -> 6%",
+   "Factories in block 2 middle bands",
+   "11 pumps"
+  ],
+  "happened": "Population 5,150 -> 8,260, unemployment 2%. Cash went slightly negative (tax income $659 vs loan payments $700).",
+  "watching": "Services (first fire and police) and room to grow.",
+  "start": {
+   "date": "Jan 2004",
+   "population": 5150,
+   "money": 2317,
+   "unemployment": 10,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2005",
+   "population": 8260,
+   "money": -109,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  }
  }
 ]
