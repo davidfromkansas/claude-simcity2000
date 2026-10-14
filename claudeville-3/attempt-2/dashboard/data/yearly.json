@@ -168,5 +168,38 @@
    "jammed": 5,
    "bonds": 3
   }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "+37%: 14,660 people",
+  "moves": [
+   "Fourth bond, tax 6%",
+   "East block x107-126"
+  ],
+  "happened": "The east block filled fast: population 10,670 -> 14,660, unemployment 5%, abandoned buildings halved (137 -> 75). Power spare fell to 18% and traffic jams appeared (27 tiles).",
+  "watching": "Power, water and traffic.",
+  "start": {
+   "date": "Jan 2005",
+   "population": 10670,
+   "money": 2969,
+   "unemployment": 11,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 137,
+   "jammed": 5,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Jan 2006",
+   "population": 14660,
+   "money": 2868,
+   "unemployment": 5,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 75,
+   "jammed": 27,
+   "bonds": 4
+  }
  }
 ]
