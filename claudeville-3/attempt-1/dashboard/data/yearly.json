@@ -65,5 +65,102 @@
    "jammed": 0,
    "bonds": 0
   }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Growth finally starts",
+  "moves": [
+   "Power line to the pumps"
+  ],
+  "happened": "With power lines through the zones, population rose from 30 to 170. The pumps had no power, so water was 0%; ran a power line to them.",
+  "watching": "Water and job numbers.",
+  "start": {
+   "date": "Jan 2002",
+   "population": 30,
+   "money": 2080,
+   "unemployment": 42,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 3,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2003",
+   "population": 200,
+   "money": 2045,
+   "unemployment": 19,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "steady",
+  "title": "Slow climb",
+  "moves": [
+   "More power lines through zones (x=80, 88, 96)"
+  ],
+  "happened": "Population 200 -> 480. Water reached 94%. Buildings only appear next to a power line or another building, so growth spreads slowly.",
+  "watching": "Unemployment and abandoned factories.",
+  "start": {
+   "date": "Jan 2003",
+   "population": 200,
+   "money": 2045,
+   "unemployment": 19,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2004",
+   "population": 480,
+   "money": 2058,
+   "unemployment": 26,
+   "watered_pct": 94,
+   "powered_pct": 100,
+   "abandoned": 20,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "setback",
+  "title": "Jobs collapse",
+  "moves": [
+   "Neighbor road link ($1,000)",
+   "Tax 7% -> 3%"
+  ],
+  "happened": "Population 480 -> 640 but 45 buildings abandoned and 38% unemployment: shops and factories had no outside trade.",
+  "watching": "Whether the neighbor link brings jobs back.",
+  "start": {
+   "date": "Jan 2004",
+   "population": 480,
+   "money": 2058,
+   "unemployment": 26,
+   "watered_pct": 94,
+   "powered_pct": 100,
+   "abandoned": 20,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2005",
+   "population": 640,
+   "money": 1946,
+   "unemployment": 38,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 45,
+   "jammed": 0,
+   "bonds": 0
+  }
  }
 ]
