@@ -31,7 +31,8 @@
  },
  {
   "attempt": 6,
-  "status": "playing",
-  "reason": ""
+  "status": "failed",
+  "reason": "Stuck near 11,500 in 2013: every setup check passed, but three loans cost more than the city earned in tax",
+  "timelapse": "recording-timelapse/timelapse.mp4"
  }
 ]

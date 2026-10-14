@@ -1,5 +1,9 @@
 {
  "attempt": 6,
- "status": "playing",
- "started": "2026-10-14"
+ "status": "failed",
+ "started": "2026-10-14",
+ "ended": "Mar 2013",
+ "peak": 11620,
+ "reason": "Stuck near 11,500: loans cost more than taxes brought in",
+ "timelapse": "recording-timelapse/timelapse.mp4"
 }

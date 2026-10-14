@@ -1,0 +1,23 @@
+# Attempt 7 block 1 (no loans, ~$8,200): neighbor link, coal plant, dense homes y21-26,
+# factories y28-33, pumps beside the river, pipe main.
+link 76 0
+road 76 1 76 34
+road 77 20 92 20
+road 77 27 92 27
+road 77 34 92 34
+road 84 21 84 33
+road 92 21 92 33
+line 77 21 77 38
+line 85 21 85 33
+coal 78 35
+zone R 78 21 83 26
+zone R 86 21 91 26
+zone i 78 28 83 33
+zone i 86 28 91 33
+line 73 21 76 21
+line 73 22 73 27
+pump 72 22 72 27
+pipe 72 23 74 23
+pipe 74 23 74 33
+pipe 75 23 91 23
+pipe 75 30 91 30
