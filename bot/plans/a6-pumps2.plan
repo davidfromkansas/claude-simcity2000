@@ -1,0 +1,4 @@
+# 7 more pumps beside the river, powered from line x=73, joined to the pipe main at row 37
+line 73 34 73 40
+pump 72 34 72 40
+pipe 72 37 74 37

@@ -248,11 +248,12 @@ def snapshot(c):
 
 def main(path, dry=False):
     steps = parse(path)
-    final = {}                      # each tile is checked against the LAST step that touches it
+    final = {}                      # each tile is checked against the LAST surface step that touches it
+    under = {}                      # pipes are underground, so they are checked on their own
     for s in steps:
         for p in s["tiles"]:
-            final[p] = s
-    plan_tiles = set(final)
+            (under if s["kind"] == "pipe" else final)[p] = s
+    plan_tiles = set(final) | set(under)
     print("plan: %d steps, %d tiles" % (len(steps), len(plan_tiles)))
     if dry:
         return 0
@@ -290,7 +291,7 @@ def main(path, dry=False):
     for rnd in (1, 2, 3):
         cash = save()
         c = City()
-        gaps = [(s, x, y) for (x, y), s in final.items() if not done(c, s, x, y)]
+        gaps = [(s, x, y) for d in (final, under) for (x, y), s in d.items() if not done(c, s, x, y)]
         if not gaps:
             break
         print("round %d: %d planned tiles missing" % (rnd, len(gaps)))
