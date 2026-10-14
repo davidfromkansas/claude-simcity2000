@@ -15,6 +15,10 @@ years of positive budget with zero bonds. NEVER issue a bond.
 3. `bot/sc save` after every turn (prints date/pop/cash/bonds) and copy the save to `saves/`.
 4. `bot/sc log <type> "<what and why>"` for every decision (types: build, zone, budget, strategy, fix, milestone).
 5. Update `city-notes.md` with layout and strategy.
+6. Every January (the yearly check), write that year's journal entry for the dashboard's "Year by year" section:
+   `python3 -I bot/yearlog.py add YEAR TONE "title" "what happened" "watching next" "move 1" "move 2" ...`
+   TONE is good | setback | milestone | steady. Leave out moves for a year with no changes and say why in "what happened".
+   Numbers (population, cash, unemployment, water, power, abandoned, loans) are filled in from the save data automatically.
 
 ## Lessons learned (important)
 - Alt-key shortcuts do NOT work. Use menus: `sc menu 67 7 75 55` (Llama), `75 71` (Cheetah), `75 23` (Pause), then `sc key Escape`.

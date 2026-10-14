@@ -75,6 +75,22 @@ button.primary{background:var(--accent);border-color:var(--accent);color:#fff;mi
 .chart .box{position:relative;height:220px}
 .legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--text-2);margin-bottom:6px}
 .legend span::before{content:"";display:inline-block;width:10px;height:3px;border-radius:2px;background:var(--c);margin-right:5px;vertical-align:middle}
+.years{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.years>li{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:16px 0;border-top:1px solid var(--border);min-width:0}
+.years>li:first-child{border-top:0}
+.yr{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.yr .delta{display:block;font-size:13px;font-weight:600;margin-top:4px}
+.yr .delta.up{color:var(--good)} .yr .delta.down{color:var(--bad)}
+.tone{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:4px;padding:2px 7px;margin-top:8px;border:1px solid currentColor}
+.tone.good{color:var(--good)} .tone.setback{color:var(--bad)} .tone.milestone{color:var(--warn)} .tone.steady{color:var(--muted)}
+.ybody{min-width:0}
+.ybody h3{margin:0 0 4px;font-size:17px}
+.ystats{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;margin-bottom:8px}
+.ybody .lbl{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:8px 0 2px}
+.ybody ul{margin:0;padding-left:18px}
+.ybody p{margin:0}
+.ynote{font-size:13px;color:var(--muted);margin:0 0 6px}
+@media (max-width:560px){.years>li{grid-template-columns:1fr;gap:6px}}
 .feed{max-height:560px;overflow:auto;margin:0;padding:0;list-style:none}
 .feed li{padding:10px 0;border-top:1px solid var(--border)}
 .feed li:first-child{border-top:0}
@@ -123,11 +139,17 @@ a{color:var(--accent)}
     </div>
   </section>
 
+  <section class="card">
+    <h2>Year by year</h2>
+    <p class="ynote">One entry per game year: what Claude did, what happened by the next January, and what it watched next. Numbers come from the save file. Entries for 2000–2017 were written after the run from the yearly data and the decision log.</p>
+    <ol class="years" id="years"></ol>
+  </section>
+
   <section class="grid charts" id="charts"></section>
 
   <section class="grid two">
     <div class="card">
-      <h2>Claude's activity feed</h2>
+      <h2>Every move (detailed log)</h2>
       <ul class="feed" id="feed"></ul>
     </div>
     <div class="card">
@@ -297,6 +319,21 @@ function feed(items) {
   $("feed").innerHTML = items.length ? items.slice().reverse().map(a => `<li><div class="when">${esc(a.date || "")} · pop ${fmt(a.population)} · ${money(a.money || 0)} · ${new Date(a.t).toLocaleString()}</div>
     <div><span class="tag">${esc(a.type)}</span>${esc(a.text)}</div></li>`).join("") : `<li class="empty">No moves yet.</li>`;
 }
+function years(list) {
+  const esc = s => String(s).replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+  if (!list.length) { $("years").innerHTML = `<li class="empty">The first yearly entry appears after the first January check.</li>`; return; }
+  $("years").innerHTML = list.map(e => {
+    const a = e.start || {}, b = e.end || {};
+    const d = (b.population ?? 0) - (a.population ?? 0), cash = (b.money ?? 0) - (a.money ?? 0);
+    const stats = e.end ? `${fmt(a.population)} → ${fmt(b.population)} people · cash ${cash >= 0 ? "+" : "−"}${money(Math.abs(cash))} · unemployed ${b.unemployment}% · water ${b.watered_pct}% · power ${b.powered_pct}% · abandoned ${b.abandoned} · loans ${b.bonds}` : "Year in progress";
+    const moves = e.moves && e.moves.length ? `<ul>${e.moves.map(m => `<li>${esc(m)}</li>`).join("")}</ul>` : `<p>No changes.</p>`;
+    return `<li><div class="yr">${e.year}${e.end ? `<span class="delta ${d >= 0 ? "up" : "down"}">${d >= 0 ? "+" : "−"}${fmt(Math.abs(d))} people</span>` : ""}<span class="tone ${esc(e.tone)}">${esc(e.tone)}</span></div>
+      <div class="ybody"><h3>${esc(e.title)}</h3><div class="ystats">${stats}</div>
+      <div class="lbl">Moves</div>${moves}
+      <div class="lbl">What happened</div><p>${esc(e.happened)}</p>
+      <div class="lbl">Watching next</div><p>${esc(e.watching)}</p></div></li>`;
+  }).join("");
+}
 function recs(list) {
   $("recs").innerHTML = list.length ? list.slice().reverse().map(r => `<div style="margin-bottom:12px"><video controls preload="none" src="${r.file}"></video>
     <div class="meta">${new Date(r.t).toLocaleString()} · ${r.mb} MB · <a href="${r.file}" download>Download</a></div></div>`).join("")
@@ -315,7 +352,7 @@ function allMetrics(L) {
 }
 
 async function refresh() {
-  const [rows, s, act, rec, L] = await Promise.all([get("metrics.json", []), get("shots.json", []), get("activity.json", []), get("recordings.json", []), get("latest.json", null)]);
+  const [rows, s, act, rec, L, yr] = await Promise.all([get("metrics.json", []), get("shots.json", []), get("activity.json", []), get("recordings.json", []), get("latest.json", null), get("yearly.json", [])]);
   if (rows.length) {
     const m = Object.assign({}, rows[rows.length - 1], { founded: L?.founded ?? Math.floor(rows[0].gy), founded_year: L?.founded ?? Math.floor(rows[0].gy) });
     kpis(m, rows); goals(m, rows); drawCharts(rows);
@@ -323,7 +360,7 @@ async function refresh() {
   const grew = s.length !== shots.length; shots = s;
   $("scrub").max = Math.max(0, shots.length - 1);
   if (grew && followLive && !timer) showShot(shots.length - 1);
-  feed(act); recs(rec); allMetrics(L);
+  feed(act); years(yr); recs(rec); allMetrics(L);
   const last = L?.updated ? new Date(L.updated) : null;
   const fresh = last && (Date.now() - last) < 15 * 60e3;
   $("liveDot").className = "dot" + (fresh ? " on" : "");
