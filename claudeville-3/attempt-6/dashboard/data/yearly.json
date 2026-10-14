@@ -31,5 +31,61 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "Block 2",
+  "moves": [
+   "Loan #2",
+   "Block 2 north",
+   "7 pumps"
+  ],
+  "happened": "Home land filled up around 4,500 people. Loan #2 paid for block 2 north with a second coal plant; growth restarted.",
+  "watching": "Water keeps running short",
+  "start": {
+   "date": "Mar 2004",
+   "population": 4490,
+   "money": 2570,
+   "unemployment": 14,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Mar 2005",
+   "population": 6020,
+   "money": 3064,
+   "unemployment": 7,
+   "watered_pct": 91,
+   "powered_pct": 100,
+   "abandoned": 48,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "Past 6,000",
+  "moves": [
+   "6 more pumps"
+  ],
+  "happened": "Steady growth to about 6,900 with all checks passing. Water was the only limit.",
+  "watching": "Factory demand at maximum; shop demand negative",
+  "start": {
+   "date": "Mar 2005",
+   "population": 6020,
+   "money": 3064,
+   "unemployment": 7,
+   "watered_pct": 91,
+   "powered_pct": 100,
+   "abandoned": 48,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": null
  }
 ]
