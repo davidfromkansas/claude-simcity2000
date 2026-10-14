@@ -233,8 +233,9 @@ function state(v, good, warn, higherIsBetter) {
 }
 function health(m) {
   const items = [
-    ["Water", m.watered_pct + "%", state(m.watered_pct, 90, 70, true)],
-    ["Power", m.powered_pct + "%", state(m.powered_pct, 95, 85, true)],
+    ["Water spare capacity", m.water_pct + "%", state(m.water_pct, 30, 15, true)],
+    ["Power spare capacity", m.power_pct + "%", state(m.power_pct, 30, 15, true)],
+    ["Buildings with water / power", m.watered_pct + "% / " + m.powered_pct + "%", state(Math.min(m.watered_pct, m.powered_pct), 90, 75, true)],
     ["Unemployment", m.unemployment + "%", state(m.unemployment, 8, 15, false)],
     ["Crime (average)", m.crime, state(m.crime, 20, 50, false)],
     ["Fire stations", fmt(m.fire), m.population < 2000 ? ["Good", "p-good"] : state(m.fire, Math.max(1, Math.round(m.population / 15000)), 1, true)],
@@ -289,7 +290,7 @@ function lineChart(id, rows, series, opts = {}) {
 const CHARTS = [
   ["c_cash", "Cash", "City treasury.", [["money", "Cash", "--s1"]], { money: true }],
   ["c_zones", "Built land", "Tiles with buildings, by zone type.", [["res_tiles", "Homes", "--s1"], ["com_tiles", "Shops", "--s3"], ["ind_tiles", "Factories", "--s2"]]],
-  ["c_health", "Water and power", "% of buildings with water and power.", [["watered_pct", "Water %", "--s3"], ["powered_pct", "Power %", "--s1"]], { max: 100 }],
+  ["c_health", "Water and power to spare", "Spare capacity left in the water and power systems (game graphs). Near 0 means shortage.", [["water_pct", "Water spare %", "--s3"], ["power_pct", "Power spare %", "--s1"]], { max: 100 }],
   ["c_trouble", "Trouble signs", "Abandoned buildings, jammed roads, unemployment %.", [["abandoned", "Abandoned", "--s2"], ["jammed", "Jammed roads", "--s3"], ["unemployment", "Unemployment %", "--s1"]]],
   ["c_qol", "Quality of life", "City averages (lower is better).", [["crime", "Crime", "--s2"], ["pollution", "Pollution", "--s3"], ["traffic", "Traffic", "--s1"]]],
   ["c_svc", "Public services", "Police, fire stations, schools.", [["police", "Police", "--s3"], ["fire", "Fire", "--s2"], ["schools", "Schools", "--s1"]], { stepped: true }],

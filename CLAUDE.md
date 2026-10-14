@@ -53,3 +53,9 @@ years of positive budget with zero bonds. NEVER issue a bond.
 ## Screen map (640x480)
 Menu bar y=7: File 25, Speed 67, Options 120, Disasters 185, Windows 252, Newspaper 320.
 Toolbar is the left column (x 10-80).
+- The save's graphs `water_pct` and `power_pct` are SPARE capacity (%), not coverage. Near 0 = shortage
+  (attempt 1's 2018 water collapse showed 0-19%). Keep both above ~25%. `watered_pct`/`powered_pct`
+  (buildings on pipes/lines) stay ~100% even during a shortage.
+- Homes must be within ~10-15 road tiles of jobs. Use thin alternating bands (homes/shops/factories/shops/homes)
+  with cross streets every 10 tiles. Far-apart districts fail (attempt 1).
+- Options > Auto-Goto is stored in the save and was ON in the base map: turn it off after loading.
