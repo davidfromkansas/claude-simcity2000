@@ -417,5 +417,48 @@
    "jammed": 31,
    "bonds": 9
   }
+ },
+ {
+  "year": 2013,
+  "tone": "setback",
+  "title": "Stalled",
+  "moves": [],
+  "happened": "Population about 31,700 -> 33,100. The new factory land filled but unemployment kept rising.",
+  "watching": "Services: the city had almost none.",
+  "start": {
+   "date": "Jan 2013",
+   "population": 31720,
+   "money": 7539,
+   "unemployment": 18,
+   "watered_pct": 96,
+   "powered_pct": 96,
+   "abandoned": 709,
+   "jammed": 31,
+   "bonds": 9
+  },
+  "end": null
+ },
+ {
+  "year": 2014,
+  "tone": "setback",
+  "title": "All demand negative",
+  "moves": [
+   "Tenth bond, tax 7%",
+   "Police, fire station, hospital"
+  ],
+  "happened": "Population 33,100 -> 32,560. Demand for homes, shops and factories all turned negative, 1,061 buildings abandoned, 23% unemployed. Newspaper: 'Citizens Request Protection', 'Traffic Toxic'.",
+  "watching": "Effect of new police, fire and hospital.",
+  "start": null,
+  "end": {
+   "date": "Jan 2015",
+   "population": 32560,
+   "money": 3589,
+   "unemployment": 23,
+   "watered_pct": 94,
+   "powered_pct": 96,
+   "abandoned": 1061,
+   "jammed": 3,
+   "bonds": 9
+  }
  }
 ]
