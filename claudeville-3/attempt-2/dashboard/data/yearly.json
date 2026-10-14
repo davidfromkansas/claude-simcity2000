@@ -304,5 +304,52 @@
    "jammed": 0,
    "bonds": 7
   }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "30,000 people",
+  "moves": [
+   "Sixth coal plant"
+  ],
+  "happened": "With power back in the south block the city passed 30,000 by spring.",
+  "watching": "Power capacity and shop demand.",
+  "start": {
+   "date": "Jan 2009",
+   "population": 28920,
+   "money": 5824,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 83,
+   "abandoned": 216,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": null
+ },
+ {
+  "year": 2010,
+  "tone": "good",
+  "title": "35,690 people, budget positive",
+  "moves": [
+   "Eighth bond",
+   "North district: dense shops + homes",
+   "Seventh coal plant",
+   "Fire and police stations"
+  ],
+  "happened": "Population about 30,650 -> 35,690. Tax income (,330) now covers bond payments (,299) with room to spare. Home demand fell to almost zero while shop and factory demand stayed maxed; power spare down to 10%.",
+  "watching": "Shops in the new north district; power; first police and fire stations.",
+  "start": null,
+  "end": {
+   "date": "Jan 2011",
+   "population": 35690,
+   "money": 3160,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 96,
+   "abandoned": 166,
+   "jammed": 30,
+   "bonds": 7
+  }
  }
 ]

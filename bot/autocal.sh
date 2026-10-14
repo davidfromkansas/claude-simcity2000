@@ -17,6 +17,9 @@ sx,sy=float(sys.argv[2]),float(sys.argv[3])
 json.dump({"s":8.0,"ox":sx-8*(y-x),"oy":sy-4*(x+y),"alt":a},open('/tmp/sc/cal.json','w')); print(x,y)
 PY
 )
-  if [ -n "$r" ]; then ./sc click 22 58; sleep 0.2; ./sc click $1 $2; sleep 0.2; echo "view calibrated on tile $r (screen $1,$2)"; exit 0; fi
+  if [ -n "$r" ]; then
+    for k in 1 2 3; do ./sc click 22 58; sleep 0.4; ./sc click $1 $2; sleep 0.5; ./sc save >/dev/null
+      python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];x,y=map(int,'$r'.split());sys.exit(0 if not 0x1d<=b[y*128+x]<=0x2b else 1)" && break; done
+    echo "view calibrated on tile $r (screen $1,$2)"; exit 0; fi
 done
 echo "autocal failed"; exit 1
