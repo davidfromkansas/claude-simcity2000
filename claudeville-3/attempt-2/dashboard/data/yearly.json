@@ -351,5 +351,71 @@
    "jammed": 30,
    "bonds": 7
   }
+ },
+ {
+  "year": 2011,
+  "tone": "setback",
+  "title": "First decline",
+  "moves": [
+   "Feeder power line to the north"
+  ],
+  "happened": "Population 35,690 -> 34,450. Home demand turned negative; 403 abandoned, mostly homes. North district had no power until a feeder line was run along the map edge.",
+  "watching": "Jobs: every factory tile is built.",
+  "start": {
+   "date": "Jan 2011",
+   "population": 35690,
+   "money": 3160,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 96,
+   "abandoned": 166,
+   "jammed": 30,
+   "bonds": 7
+  },
+  "end": {
+   "date": "Jan 2012",
+   "population": 34450,
+   "money": 2992,
+   "unemployment": 9,
+   "watered_pct": 98,
+   "powered_pct": 96,
+   "abandoned": 403,
+   "jammed": 56,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "setback",
+  "title": "Jobs shortage",
+  "moves": [
+   "Ninth bond, tax 8%",
+   "Eighth coal plant",
+   "Factory land: north strip + river strip"
+  ],
+  "happened": "Population 34,450 -> 31,720, unemployment 18%, 709 abandoned (643 of them homes). Every factory tile was built, so new factory land was zoned in the north strip and between the river and the avenue. Ninth bond, tax 8%. The southeast corner stayed unpowered despite an eighth coal plant.",
+  "watching": "Whether the new factory land brings jobs.",
+  "start": {
+   "date": "Jan 2012",
+   "population": 34450,
+   "money": 2992,
+   "unemployment": 9,
+   "watered_pct": 98,
+   "powered_pct": 96,
+   "abandoned": 403,
+   "jammed": 56,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Jan 2013",
+   "population": 31720,
+   "money": 7539,
+   "unemployment": 18,
+   "watered_pct": 96,
+   "powered_pct": 96,
+   "abandoned": 709,
+   "jammed": 31,
+   "bonds": 9
+  }
  }
 ]
