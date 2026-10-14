@@ -331,5 +331,40 @@
    "jammed": 3,
    "bonds": 5
   }
+ },
+ {
+  "year": 2010,
+  "tone": "setback",
+  "title": "Stalled at 17,580",
+  "moves": [
+   "Separate tax rates",
+   "Sixth bond",
+   "Block 4 shops + factories",
+   "Power line x=78"
+  ],
+  "happened": "Population 17,350 -> 17,580. Factory and shop demand turned negative after tax went to 8%, and the new southern homes had no jobs nearby (block 4's middle bands were never zoned). Fix: separate taxes (homes 10%, shops 6%, factories 5%) and zone the middle bands.",
+  "watching": "Whether jobs and southern homes fill.",
+  "start": {
+   "date": "Jan 2010",
+   "population": 17350,
+   "money": 258,
+   "unemployment": 5,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 97,
+   "jammed": 3,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Jan 2011",
+   "population": 17580,
+   "money": -81,
+   "unemployment": 8,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 145,
+   "jammed": 10,
+   "bonds": 5
+  }
  }
 ]
