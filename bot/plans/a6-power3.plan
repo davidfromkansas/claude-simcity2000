@@ -1,0 +1,7 @@
+# third coal plant on the river strip (far from homes), wired along y=61 to the x=77 power column;
+# 6 more pumps x=72 y57-62
+coal 60 60
+line 64 61 77 61
+line 73 57 73 62
+pump 72 57 72 62
+pipe 72 59 74 59

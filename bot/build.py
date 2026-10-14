@@ -1,6 +1,6 @@
 """Build from a plan file, then check every tile against the save, retry gaps, and check the money.
 
-usage: python3 -I build.py PLAN [--dry]
+usage: python3 -I build.py PLAN [--dry] [--allow-water]
 
 Plan lines (tile coordinates; '#' starts a comment):
   road X0 Y0 X1 Y1        straight road
@@ -255,6 +255,13 @@ def main(path, dry=False):
             (under if s["kind"] == "pipe" else final)[p] = s
     plan_tiles = set(final) | set(under)
     print("plan: %d steps, %d tiles" % (len(steps), len(plan_tiles)))
+    # preflight: the plan must not put buildings, zones or parks on water (roads/lines/pipes would need bridges)
+    c0 = City()
+    wet = sorted(p for p, s in final.items() if c0.bit[p[1] * N + p[0]] & 4 and s["kind"] not in ("bulldoze", "bulldoze!", "dezone"))
+    if wet:
+        print("PLAN ERROR: %d planned tiles are water, e.g. %s - change the plan" % (len(wet), wet[:6]))
+        if "--allow-water" not in sys.argv:
+            return 2
     if dry:
         return 0
     sc("pause")

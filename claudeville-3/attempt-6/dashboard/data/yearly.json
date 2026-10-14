@@ -86,6 +86,105 @@
    "jammed": 0,
    "bonds": 2
   },
+  "end": {
+   "date": "May 2006",
+   "population": 7610,
+   "money": 1806,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 45,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "steady",
+  "title": "Paying for growth",
+  "moves": [
+   "Taxes 9/5/5"
+  ],
+  "happened": "Home tax raised to 9% and factory tax to 5% (both at maximum demand) to cut a $500/yr loss.",
+  "watching": "Cash; land filling up",
+  "start": {
+   "date": "Feb 2007",
+   "population": 8250,
+   "money": 1262,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 42,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 8480,
+   "money": 894,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "Block 2 south",
+  "moves": [
+   "Loan #3",
+   "Block 2 south",
+   "6 pumps"
+  ],
+  "happened": "Land was full again. Loan #3 paid for block 2 south: homes, factories, fire station, pumps. A pond moved the fire station.",
+  "watching": "Money still tight",
+  "start": {
+   "date": "Feb 2008",
+   "population": 8480,
+   "money": 894,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 8920,
+   "money": 5998,
+   "unemployment": 5,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 52,
+   "jammed": 0,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Nearly 10,000",
+  "moves": [
+   "Third coal plant",
+   "6 pumps"
+  ],
+  "happened": "Population reached 9,950 with every check passing. A third coal plant and six pumps added for the next stage.",
+  "watching": "Power and water margins",
+  "start": {
+   "date": "Feb 2009",
+   "population": 8920,
+   "money": 5998,
+   "unemployment": 5,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 52,
+   "jammed": 0,
+   "bonds": 3
+  },
   "end": null
  }
 ]
