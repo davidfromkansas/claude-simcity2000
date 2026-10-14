@@ -1,0 +1,36 @@
+[
+ {
+  "year": 2000,
+  "tone": "good",
+  "title": "Clean start",
+  "moves": [
+   "$10,000 bond, separate taxes 5/4/3%",
+   "Block 1 + neighbor link",
+   "Coal plant, 12 pumps, fire station"
+  ],
+  "happened": "Built block 1 on day one with every power column linked, wired pumps, a pipe main and a fire station. 900 people by January, all buildings powered.",
+  "watching": "Shop demand is negative (too many shops for now).",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 10000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2001",
+   "population": 900,
+   "money": 4502,
+   "unemployment": 3,
+   "watered_pct": 86,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  }
+ }
+]
