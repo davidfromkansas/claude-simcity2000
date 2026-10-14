@@ -291,5 +291,37 @@
    "jammed": 1,
    "bonds": 1
   }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Fast growth",
+  "moves": [
+   "North housing district (y3-16)"
+  ],
+  "happened": "Population 2,430 -> 3,120 (+28%). Abandoned buildings rose to 144: mostly small shops and factories turning over. Homes are almost full.",
+  "watching": "Whether the new north housing district fills.",
+  "start": {
+   "date": "Jan 2009",
+   "population": 2430,
+   "money": 6317,
+   "unemployment": 28,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 82,
+   "jammed": 1,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2010",
+   "population": 3120,
+   "money": 5909,
+   "unemployment": 28,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 144,
+   "jammed": 1,
+   "bonds": 1
+  }
  }
 ]
