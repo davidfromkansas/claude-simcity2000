@@ -63,3 +63,6 @@ Toolbar is the left column (x 10-80).
   map from the save afterwards; render timelapses only while the game is paused. Keep checking the city every 3-4
   game months (do NOT skip to yearly checks) and keep the normal camera recalibration.
 - `sc paused` looks for the green *PAUSED* label anywhere in the top strip, so the tool panel can sit anywhere there.
+- Attempt 5 lessons: the neighbor link only exists if $1,000 was charged and a road tile sits ON the map edge (y=0);
+  parks do not carry power, so never put them between a power line and a zone; bulldozer drags can destroy
+  neighbouring buildings, so bulldoze tile by tile. If a zone with demand does not grow for 6 months, query tiles at once.
