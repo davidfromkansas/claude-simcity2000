@@ -267,5 +267,69 @@
    "jammed": 4,
    "bonds": 4
   }
+ },
+ {
+  "year": 2008,
+  "tone": "steady",
+  "title": "16,430 people",
+  "moves": [
+   "Fifth bond",
+   "Fourth coal plant",
+   "Block 4 south"
+  ],
+  "happened": "Population 15,030 -> 16,430 (+9%), slower: the city was full and cash was gone. Tax at 8% roughly balanced the loans.",
+  "watching": "New south block; power spare 12%.",
+  "start": {
+   "date": "Jan 2008",
+   "population": 15030,
+   "money": 402,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 65,
+   "jammed": 4,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Jan 2009",
+   "population": 16430,
+   "money": 270,
+   "unemployment": 4,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 76,
+   "jammed": 10,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "steady",
+  "title": "17,350 people",
+  "moves": [],
+  "happened": "Population 16,430 -> 17,350 (+6%). The new south block is filling slowly. Budget is about even at 8% tax with five loans.",
+  "watching": "Growth of block 4.",
+  "start": {
+   "date": "Jan 2009",
+   "population": 16430,
+   "money": 270,
+   "unemployment": 4,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 76,
+   "jammed": 10,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Jan 2010",
+   "population": 17350,
+   "money": 258,
+   "unemployment": 5,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 97,
+   "jammed": 3,
+   "bonds": 5
+  }
  }
 ]
