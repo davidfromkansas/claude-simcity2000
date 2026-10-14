@@ -95,7 +95,10 @@ def parse(path):
         "founded": g(0x0C),
         "difficulty": g(0x1C),
         "money": g(0x14),
-        "bonds": g(0x930),          # bonds currently floated
+        # 0x930 is the average bond interest rate (x1,000,000), not a count: 50000 after one 5% bond,
+        # 45000 after a second at 4%. The count of $10,000 bonds is kept by hand in run.json "bonds".
+        "bonds": RUN.get("bonds", 1) if g(0x930) else 0,
+        "bond_raw": g(0x930),
         "population": g(0x102C) + g(0x1020),
         "arco_population": g(0x1020),
         # Developed tiles per zone type, counted from the zone + building maps.

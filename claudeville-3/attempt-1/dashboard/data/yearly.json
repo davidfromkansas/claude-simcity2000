@@ -529,5 +529,38 @@
    "jammed": 8,
    "bonds": 2
   }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "Second neighbor link pays off",
+  "moves": [
+   "7 pumps at the east lake",
+   "Factory rows y64-69"
+  ],
+  "happened": "Population 7,420 -> 9,050 (+22%). The east neighbor link and the new factories helped; water fell to 53% again as the city grew.",
+  "watching": "Water; unemployment stuck at 17% while factory demand stays maxed.",
+  "start": {
+   "date": "Jan 2017",
+   "population": 7420,
+   "money": 1247,
+   "unemployment": 17,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 163,
+   "jammed": 8,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2018",
+   "population": 9050,
+   "money": 7144,
+   "unemployment": 17,
+   "watered_pct": 53,
+   "powered_pct": 100,
+   "abandoned": 193,
+   "jammed": 13,
+   "bonds": 3
+  }
  }
 ]

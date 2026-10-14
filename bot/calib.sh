@@ -17,4 +17,5 @@ import json; s=float(sys.argv[4]); sx,sy=float(sys.argv[2]),float(sys.argv[3])
 json.dump({"s":s,"ox":sx-s*(y-x),"oy":sy-s/2*(x+y),"alt":a},open('/tmp/sc/cal.json','w'))
 print('calibrated on tile',x,y,'alt',a)
 PY
+[ $? -eq 0 ] || exit 1
 ./sc click 22 58; sleep 0.2; ./sc click $1 $2; sleep 0.2

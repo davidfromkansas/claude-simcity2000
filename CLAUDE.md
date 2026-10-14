@@ -1,5 +1,10 @@
 # Claude plays SimCity 2000
 
+CURRENT CHALLENGE: Claudeville 3 — 100,000 people by Jan 2050, Medium, disasters on, loans allowed, same flat map
+(saves/claudeville-3-base.SC2). Up to 20 attempts; post-mortem after each miss. Active attempt is in bot/run.json
+(save, dashboard, recordings). Folder: claudeville-3/attempt-N/. Overview list: claudeville-3/attempts.json.
+(The goal text below is from challenges 1-2.)
+
 Goal: 5,000 residents within 30 game years (founded Jan 2000 → by 2030), then 3 consecutive
 years of positive budget with zero bonds. NEVER issue a bond.
 
@@ -31,6 +36,14 @@ years of positive budget with zero bonds. NEVER issue a bond.
 - Zones must touch the road directly. Never put power lines between a zone and its road. Power lines must touch side-by-side (diagonal does not connect).
 - A budget window pops up every January and blocks clicks; close it with `sc click 457 123`.
 - Clicking to dismiss dialogs can place a tile with the current tool: dismiss the "Game Saved" box by clicking the box itself (320 228).
+
+## Lessons from Claudeville 3
+- EMPTY ZONES DO NOT CARRY POWER. Only power lines and built buildings do. Run power lines across zone bands every ~4-8 tiles.
+- Water pumps need power too.
+- Without a neighbor road link, commercial/industrial demand stays negative. Build it early ($1,000, prompt appears when a road reaches the map edge; the edge tile needs a drag from the tile next to it).
+- Tool info panel can block clicks; it was dragged to the top right (382-555, 32-56). Keep targets out of it.
+- `bot/center.sh X Y` scrolls to any tile; then verify with `bot/calib.sh SX SY 8` on empty land.
+- `sc save` now only clicks the 'Game Saved' box if it is really there (stray clicks used to place roads).
 
 ## Current layout (city refounded Jan 2000 on a flat map)
 - Gas plant x57-60 y7-10. Main road y=11 x60-100. Side road x=80 y3-10.
