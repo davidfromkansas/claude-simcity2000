@@ -494,5 +494,40 @@
    "jammed": 12,
    "bonds": 2
   }
+ },
+ {
+  "year": 2016,
+  "tone": "steady",
+  "title": "Slow year, money gone",
+  "moves": [
+   "Factory rows y57-62",
+   "Third $10,000 bond",
+   "Fire and police stations",
+   "Second neighbor link (east edge)"
+  ],
+  "happened": "Population 6,530 -> 7,420 (+14%). Factory land was full while factory demand stayed maxed; 17% unemployed. Cash ran down to almost zero.",
+  "watching": "Jobs from new factories; whether the bonds can be carried.",
+  "start": {
+   "date": "Jan 2016",
+   "population": 6530,
+   "money": 3025,
+   "unemployment": 16,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 135,
+   "jammed": 12,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2017",
+   "population": 7420,
+   "money": 1247,
+   "unemployment": 17,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 163,
+   "jammed": 8,
+   "bonds": 2
+  }
  }
 ]
