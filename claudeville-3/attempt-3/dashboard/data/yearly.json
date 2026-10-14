@@ -164,5 +164,40 @@
    "jammed": 0,
    "bonds": 2
   }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "10,580 people",
+  "moves": [
+   "Third bond",
+   "Fire + police stations",
+   "Block 3 east",
+   "16-pump field with its own power line"
+  ],
+  "happened": "Population 8,260 -> 10,580, unemployment 3%, every building powered. Built block 3 east and the first fire and police stations.",
+  "watching": "Power spare 14%: third plant; school and hospital due.",
+  "start": {
+   "date": "Jan 2005",
+   "population": 8260,
+   "money": -109,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2006",
+   "population": 10580,
+   "money": 2551,
+   "unemployment": 3,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 41,
+   "jammed": 2,
+   "bonds": 3
+  }
  }
 ]
