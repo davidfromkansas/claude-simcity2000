@@ -562,5 +562,38 @@
    "jammed": 13,
    "bonds": 3
   }
+ },
+ {
+  "year": 2018,
+  "tone": "setback",
+  "title": "Drying up",
+  "moves": [
+   "25 riverbank pumps",
+   "Factory rows y64-69"
+  ],
+  "happened": "Population fell 9,050 -> 8,880. 298 buildings abandoned and 24% unemployed. The newspaper reported a water shortage; Claude's own water number (buildings on pipes) had hidden it.",
+  "watching": "The game's water graph after 25 new riverbank pumps.",
+  "start": {
+   "date": "Jan 2018",
+   "population": 9050,
+   "money": 7144,
+   "unemployment": 17,
+   "watered_pct": 53,
+   "powered_pct": 100,
+   "abandoned": 193,
+   "jammed": 13,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Jan 2019",
+   "population": 8880,
+   "money": 4263,
+   "unemployment": 24,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 298,
+   "jammed": 15,
+   "bonds": 3
+  }
  }
 ]
