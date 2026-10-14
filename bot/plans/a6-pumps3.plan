@@ -1,0 +1,4 @@
+# 6 more pumps south along the river
+line 73 45 73 50
+pump 72 45 72 50
+pipe 72 48 74 48

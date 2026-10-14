@@ -311,7 +311,11 @@ def main(path, dry=False):
         p = (i % N, i // N)
         if p in plan_tiles:
             continue
-        if snap0[0][i] != snap1[0][i] or snap0[1][i] != snap1[1][i] or snap0[2][i] != snap1[2][i]:
+        o, n = snap0[0][i], snap1[0][i]
+        if (is_road(o) and is_road(n)) or (is_line(o) and is_line(n)):
+            continue                # the game redraws road/line pieces to join new neighbours
+        # zone type (low bits) and pipe present/absent matter; pipe-piece shapes and corner bits do not
+        if o != n or (snap0[1][i] & 15) != (snap1[1][i] & 15) or bool(snap0[2][i]) != bool(snap1[2][i]):
             hurt.append((p, snap0[0][i], snap1[0][i]))
     for (x, y), old, new in hurt:
         what = "road" if is_road(old) else "line" if is_line(old) else None
