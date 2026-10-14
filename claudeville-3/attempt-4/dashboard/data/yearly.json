@@ -420,5 +420,72 @@
    "jammed": 0,
    "bonds": 7
   }
+ },
+ {
+  "year": 2013,
+  "tone": "steady",
+  "title": "24,870 people",
+  "moves": [
+   "Eighth bond",
+   "Block 5 southeast"
+  ],
+  "happened": "Population 24,240 -> 24,870. Block 5 filled slowly; homes average only ~22 people per tile, so 100,000 needs dense housing.",
+  "watching": "Dense housing test in block 5.",
+  "start": {
+   "date": "Feb 2013",
+   "population": 24240,
+   "money": 3722,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 46,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 24870,
+   "money": 7761,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 61,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "steady",
+  "title": "Going dense",
+  "moves": [
+   "Dense housing test",
+   "Ninth bond",
+   "North dense district"
+  ],
+  "happened": "Population 24,870 -> 25,870. Dense housing grew on test lots in block 5, so the empty north strip was built as a dense district (ninth bond).",
+  "watching": "Dense district growth; budget.",
+  "start": {
+   "date": "Feb 2014",
+   "population": 24870,
+   "money": 7761,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 61,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2015",
+   "population": 25870,
+   "money": 6929,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 92,
+   "jammed": 0,
+   "bonds": 8
+  }
  }
 ]
