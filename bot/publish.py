@@ -17,10 +17,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sc2parse  # noqa: E402
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DOCS = os.path.join(REPO, "docs")
+DOCS = os.path.normpath(os.path.join(REPO, "docs", sc2parse.RUN.get("docs", ".")))
 DATA = os.path.join(DOCS, "data")
-SAVE = "/opt/sc2k/game/CLAUDE.SC2"
-REC = "/opt/sc2k/rec"
+SAVE = sc2parse.SAVE
+REC = sc2parse.RUN.get("rec", "/opt/sc2k/rec")
 BRANCH = "claude/dreamy-ritchie-bw5sjl"
 LOCK = "/tmp/sc/git.lock"
 INTERVAL = 300
@@ -63,6 +63,8 @@ def flat(m):
         "police": s["police"]["count"], "fire": s["fire"]["count"],
         "schools": s["schools"]["count"], "hospitals": s["health"]["count"],
         "colleges": s["colleges"]["count"],
+        "watered_pct": m["health"]["watered_pct"], "powered_pct": m["health"]["powered_pct"],
+        "abandoned": m["health"]["abandoned"], "jammed": m["health"]["jammed_road_tiles"],
     }
 
 
@@ -119,7 +121,7 @@ def push(msg):
     with open(LOCK, "w") as lk:
         fcntl.flock(lk, fcntl.LOCK_EX)
         git = lambda *a: subprocess.run(["git", "-C", REPO, *a], capture_output=True, text=True)
-        git("add", "docs")
+        git("add", os.path.join(REPO, "docs"))
         if git("diff", "--cached", "--quiet").returncode == 0:
             return
         git("commit", "-q", "-m", msg)
@@ -145,7 +147,8 @@ def once():
 
 
 if __name__ == "__main__":
-    os.makedirs(DATA, exist_ok=True)
+    for sub in ("data", "shots", "recordings"):
+        os.makedirs(os.path.join(DOCS, sub), exist_ok=True)
     cmd = sys.argv[1] if len(sys.argv) > 1 else "once"
     if cmd == "log":
         log(sys.argv[2], " ".join(sys.argv[3:]))

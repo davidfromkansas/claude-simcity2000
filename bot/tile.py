@@ -6,7 +6,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 CAL = "/tmp/sc/cal.json"
 def load():
     return json.load(open(CAL))
-SAVE = "/opt/sc2k/game/CLAUDE.SC2"
+import sc2parse
+SAVE = sc2parse.SAVE
 def alt(x, y):
     try:
         import struct, sc2parse

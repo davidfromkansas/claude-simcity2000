@@ -17,3 +17,10 @@ Hilly map. 7 game years with zero growth: power links broken and power lines pla
 - Neighbor connection: road x=75 to north edge (Villa). Police station x81-83 y16-18.
 - Tax: 7% -> 5% (2025) -> 3% (2029). Dense residential rows 0-2 (north) and 16-18 (east of x=80).
 - Jan 2030: pop 4,410 -> MISSED the 5,000-by-2030 goal. Jan 2031: 4,610, cash $7.0k, no bonds.
+
+## Attempt 2 (Claudeville II) — BOTH GOALS MET
+- Same map as attempt 1, west plain. Coal plant + 10 pumps + road grid + neighbor link + 5% tax on day one.
+- Yearly health check (water %, power %, abandoned, jammed roads) caught every problem within 1 year:
+  2001 pipe gap; 2003 too much industry -> north housing district; 2005 jobs short -> east factory strip;
+  2008 strip unpowered across road; 2010 long commutes -> east lake road; 2013 jobs short -> rezone abandoned homes to industry.
+- Jan 2015: 5,970 people (goal 1, 15 years in). 2015/2016/2017 cash +$353/+$362/+$372 (goal 2). Bonds: 0 all game.

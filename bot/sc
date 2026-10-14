@@ -22,7 +22,12 @@ case $cmd in
   click) xdotool mousemove --window "$W" "$1" "$2"; sleep 0.2; xdotool mousedown "${3:-1}"; sleep 0.15; xdotool mouseup "${3:-1}";;
   drag) xdotool mousemove --window "$W" "$1" "$2"; sleep 0.2; xdotool mousedown 1; sleep 0.2
         for i in 1 2 3 4 5 6 7 8; do xdotool mousemove --window "$W" $(( $1 + ($3-$1)*i/8 )) $(( $2 + ($4-$2)*i/8 )); sleep 0.08; done
-        sleep 0.2; xdotool mouseup 1;;
+        sleep 0.2; xdotool mouseup 1; sleep 0.4
+        # A "Select" pop-up (bridge / raised wires / causeway) means the drag hit water: cancel it.
+        import -window "$W" /tmp/sc/dlg.png
+        g=$(convert /tmp/sc/dlg.png -crop 30x8+300+178 -colorspace gray -format "%[fx:mean*255] %[fx:standard_deviation*255]" info:)
+        set -- $g; if [ "${1%.*}" -gt 170 ] && [ "${2%.*}" -lt 25 ] && convert /tmp/sc/dlg.png -crop 1x1+346+185 -format "%[fx:r>0.6]" info: | grep -q 1; then
+          xdotool mousemove --window "$W" 346 185; xdotool mousedown 1; sleep 0.15; xdotool mouseup 1; echo "WARNING: drag hit water, pop-up cancelled" >&2; fi;;
   menu) xdotool mousemove --window "$W" "$1" "$2"; xdotool mousedown 1; sleep 0.5
         xdotool mousemove --window "$W" "$3" "$4"; sleep 0.4; xdotool mouseup 1;;
   tool) xdotool mousemove --window "$W" "$1" "$2"; xdotool mousedown 1; sleep 1.3
@@ -35,7 +40,7 @@ case $cmd in
   key) for k in "$@"; do xdotool key --window "$W" "$k"; sleep 0.1; done;;
   type) xdotool type --window "$W" --delay 60 "$*";;
   save) "$0" menu 25 7 45 103; sleep 1.5; "$0" click 279 261; sleep 2; "$0" click 320 228; sleep 0.5; python3 -I "$(dirname "$0")/publish.py" metrics
-        python3 -I -c "import sys,json;sys.path.insert(0,'$(dirname "$0")');import sc2parse as p;m=p.parse('/opt/sc2k/game/CLAUDE.SC2');print(m['date'],'pop',m['population'],'cash',m['money'],'bonds',m['bonds'],'RCI',m['demand'])";;
+        python3 -I -c "import sys,json;sys.path.insert(0,'$(dirname "$0")');import sc2parse as p;m=p.parse(p.SAVE);h=m['health'];print(m['date'],'pop',m['population'],'cash',m['money'],'bonds',m['bonds'],'RCI',m['demand'],'| water',str(h['watered_pct'])+'%','power',str(h['powered_pct'])+'%','abandoned',h['abandoned'],'jammed',h['jammed_road_tiles'],'unemp',m['graphs']['unemployment'][:1],'tax',m['tax']['res'])";;
   paused) import -window "$W" /tmp/sc/st.png
         n=$(convert /tmp/sc/st.png -crop 80x8+86+54 -fx "g>0.6&&r<0.4?1:0" -format "%[fx:mean*640]" info:)
         [ "${n%.*}" -gt 3 ] && echo yes || echo no;;
@@ -47,6 +52,9 @@ case $cmd in
         if [ "$(convert /tmp/sc/st.png -crop 1x1+457+123 -format '%[pixel:p{0,0}]' info:)" != "$(convert /tmp/sc/st.png -crop 1x1+600+400 -format '%[pixel:p{0,0}]' info:)" ]; then :; fi;;
   query) xdotool mousemove --window "$W" "$1" "$2"; xdotool keydown shift; sleep 0.2; xdotool mousedown 1; sleep 0.2
         xdotool mouseup 1; xdotool keyup shift; sleep 0.8; import -window "$W" /tmp/sc/now.png; echo /tmp/sc/now.png;;
+  goto) # goto X Y : center view on tile X,Y (must be on screen now) and recalibrate
+        "$0" click 68 230; sleep 0.2; "$0" click $(python3 -I "$(dirname "$0")/tile.py" "$1" "$2"); sleep 0.6
+        python3 -I "$(dirname "$0")/tile.py" cal "$1" "$2" 324 240 8 >/dev/null; echo "centered on $1,$2";;
   log) python3 -I "$(dirname "$0")/publish.py" log "$@";;
   *) echo "unknown"; exit 1;;
 esac

@@ -224,13 +224,12 @@ function goals(m, rows) {
 // ---- charts ----
 const CHARTS = [
   ["pop", "Population growth", "Total residents. Dashed line is the 5,000 goal.", [["population", "Population"]], true],
-  ["zones", "Developed land", "Tiles with buildings, by zone type. Measured from saved games in 2001, 2010 and 2031 (dots).", [["res_tiles", "Residential"], ["com_tiles", "Commercial"], ["ind_tiles", "Industrial"]]],
+  ["zones", "Developed land", "Tiles with buildings, by zone type.", [["res_tiles", "Residential"], ["com_tiles", "Commercial"], ["ind_tiles", "Industrial"]]],
   ["cash", "Finances: cash on hand", "City treasury in dollars.", [["money", "Cash"]]],
   ["tax", "Finances: property tax", "One city-wide rate (SimCity 2000 taxes all zones the same).", [["tax_r", "Property tax %"]], false, true],
   ["qol", "Quality of life", "City-wide averages (lower is better).", [["crime", "Crime"], ["pollution", "Pollution"], ["traffic", "Traffic"]]],
   ["well", "Wellbeing", "Life expectancy (years), education (EQ), share of people working (%).", [["life_exp", "Life expectancy"], ["edu", "Education EQ"], ["workforce", "Workforce %"]]],
   ["prop", "Property", "Average land value (higher is better).", [["land_value", "Land value"]]],
-  ["infra", "Infrastructure", "Share of buildings with power and water (%).", [["power_pct", "Power %"], ["water_pct", "Water %"]]],
   ["health", "City health (lessons from attempt 1)", "% of buildings with water and power. Water was the hidden cause of attempt 1's 12-year stall.", [["watered_pct", "Water %"], ["powered_pct", "Power %"]]],
   ["trouble", "Trouble signs", "Abandoned buildings and jammed road tiles (both should stay near 0).", [["abandoned", "Abandoned"], ["jammed", "Jammed roads"]]],
   ["svc", "Public services", "Number of stations and schools.", [["police", "Police"], ["fire", "Fire"], ["schools", "Schools"]]],
@@ -247,7 +246,7 @@ function drawCharts(rows) {
   CHARTS.forEach(([id, title, desc, series, goalLine, stepped]) => {
     const datasets = series.map(([k, label], i) => ({
       label, data: rows.map(r => ({ x: r.gy, y: r[k] })), borderColor: colors[i], backgroundColor: colors[i],
-      borderWidth: 2, pointRadius: id === "zones" ? 4 : 0, pointHoverRadius: 5, pointHoverBorderColor: surf, pointHoverBorderWidth: 2,
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 5, pointHoverBorderColor: surf, pointHoverBorderWidth: 2,
       tension: stepped ? 0 : .25, stepped: stepped ? "before" : false, spanGaps: true,
     }));
     if (goalLine) datasets.push({ label: "Goal", data: rows.length ? [{ x: rows[0].gy, y: GOAL_POP }, { x: Math.max(rows[rows.length - 1].gy, rows[0].gy + 1), y: GOAL_POP }] : [],

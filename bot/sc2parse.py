@@ -3,6 +3,7 @@
 Format notes: https://github.com/dfloer/SC2k-docs/blob/master/sc2%20file%20spec.md
 """
 import json
+import os
 import struct
 import sys
 
@@ -12,6 +13,9 @@ GRAPHS = ["city_size", "residents", "commerce", "industry", "traffic", "pollutio
 SERVICES = {"police": 0x998, "fire": 0xA04, "health": 0xA70, "schools": 0xADC,
             "colleges": 0xB48, "roads": 0xBB4, "highways": 0xC20, "bridges": 0xC8C,
             "rail": 0xCF8, "subway": 0xD64, "tunnel": 0xDD0}
+_RUN = os.path.join(os.path.dirname(os.path.abspath(__file__)), "run.json")
+RUN = json.load(open(_RUN)) if os.path.exists(_RUN) else {"save": "/opt/sc2k/game/CLAUDE.SC2", "docs": "."}
+SAVE = RUN["save"]   # the save file of the city being played now
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
@@ -72,6 +76,17 @@ def parse(path):
             zoned[k] += 1
             if xb[i] >= 0x70:          # a building stands on the tile
                 dev[k] += 1
+    # City health: what actually stalled attempt 1 (water, power, abandonment, traffic jams).
+    bits = c.get("XBIT", b"")
+    blds = [i for i in range(len(xb)) if 0x70 <= xb[i] < 0xC0]
+    nb = max(1, len(blds))
+    health = {
+        "buildings": len(blds),
+        "watered_pct": round(100 * sum(1 for i in blds if bits[i] & 16) / nb),
+        "powered_pct": round(100 * sum(1 for i in blds if bits[i] & 64) / nb),
+        "abandoned": sum(1 for t in xb if t in (0x8A, 0x8B)),
+        "jammed_road_tiles": sum(1 for v in c.get("XTRF", b"") if v >= 240),
+    }
     name = c.get("CNAM", b"\x00")[1:].split(b"\x00")[0].decode("latin1")
     return {
         "city": name,
@@ -100,9 +115,10 @@ def parse(path):
         "speed": g(0xFEC),
         "no_disasters": g(0x1000),
         "services": services,
+        "health": health,
         "graphs": graphs,
     }
 
 
 if __name__ == "__main__":
-    print(json.dumps(parse(sys.argv[1]), indent=1))
+    print(json.dumps(parse(sys.argv[1] if len(sys.argv) > 1 else SAVE), indent=1))
