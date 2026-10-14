@@ -13,6 +13,12 @@
  },
  {
   "attempt": 3,
+  "status": "failed",
+  "reason": "Destroyed by an earthquake and fire in 2011 at 18,410 people (one fire station, no cash reserve)",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 4,
   "status": "playing",
   "reason": ""
  }

@@ -366,5 +366,27 @@
    "jammed": 10,
    "bonds": 5
   }
+ },
+ {
+  "year": 2011,
+  "tone": "setback",
+  "title": "Earthquake destroys the city",
+  "moves": [
+   "Earthquake: firefighters dispatched"
+  ],
+  "happened": "In May an earthquake started fires that burned almost the whole city (about 3,500 tiles, most roads). With one fire station, six loans and no tax base left, the attempt ended.",
+  "watching": "Attempt 4: fire stations in every block, cash reserve.",
+  "start": {
+   "date": "Jan 2011",
+   "population": 17580,
+   "money": -81,
+   "unemployment": 8,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 145,
+   "jammed": 10,
+   "bonds": 5
+  },
+  "end": null
  }
 ]

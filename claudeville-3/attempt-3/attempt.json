@@ -1,5 +1,9 @@
 {
  "attempt": 3,
- "status": "playing",
- "started": "2026-10-14"
+ "status": "failed",
+ "started": "2026-10-14",
+ "ended": "May 2011",
+ "peak": 18410,
+ "reason": "Destroyed by an earthquake and fire in 2011 (one fire station, no cash reserve)",
+ "timelapse": "recording-timelapse/timelapse.mp4"
 }
