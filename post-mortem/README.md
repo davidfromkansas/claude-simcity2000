@@ -11,4 +11,4 @@ One post-mortem per failed attempt. Each one is also kept in its attempt folder
 | Claudeville 3 | 4 | Missed: stalled at ~30,000 in 2021, debt above tax income | [claudeville-3-attempt-4.md](claudeville-3-attempt-4.md) |
 | Claudeville 3 | 5 | Missed: stuck near 6,700 in 2012; no neighbor link for 10 years | [claudeville-3-attempt-5.md](claudeville-3-attempt-5.md) |
 | Claudeville 3 | 6 | Missed: stuck near 11,500 in 2013; loans cost more than taxes | [claudeville-3-attempt-6.md](claudeville-3-attempt-6.md) |
-| Claudeville 3 | 7 | playing | — |
+| Claudeville 3 | 7 | Missed: debt-free but only 3,850 people by 2010; growth from savings too slow | [claudeville-3-attempt-7.md](claudeville-3-attempt-7.md) |

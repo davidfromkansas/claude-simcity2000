@@ -18,4 +18,4 @@ Each attempt folder holds:
 | 4 | missed | 30,860 | Low land value; loans cost more than taxes |
 | 5 | missed | 6,760 | No neighbor road link for 10 years; homes unpowered 2 years |
 | 6 | missed | 11,620 | Clean setup, but loans cost more than taxes |
-| 7 | playing | – | – |
+| 7 | missed | 3,850 | No loans: safe budget, growth far too slow |
