@@ -63,5 +63,39 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Back to growing",
+  "moves": [
+   "East factory blocks",
+   "Riverbank pumps",
+   "North dense homes"
+  ],
+  "happened": "Jobs blocks fixed 17-22% unemployment; riverbank pumps fixed water; north homes took the city to 5,000 by January 2010.",
+  "watching": "Home demand at max for two years",
+  "start": {
+   "date": "Feb 2009",
+   "population": 4240,
+   "money": 3151,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 19,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 5000,
+   "money": 3142,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 12,
+   "jammed": 0,
+   "bonds": 1
+  }
  }
 ]
