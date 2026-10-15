@@ -13,7 +13,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from citymap import City, ZONES, is_road, is_building, nbrs, N
+from citymap import City, ZONES, is_road, is_rail, is_building, nbrs, N
 
 
 def box(reg):
@@ -87,6 +87,22 @@ def audit(path=None, city=None):
         far += [p for p in reg if not near_road(p[0], p[1], 3)]
     if far:
         add("WARN", "%d zone tiles more than 3 tiles from a road, e.g. (%d,%d)" % (len(far), *far[0]))
+
+    # 6. demand caps (Prima guide ch.16): homes stop near 15,000 people without stadium/zoo/marina;
+    #    factories need a rail/highway link or a seaport; shops need road links or an airport (from ~20,000)
+    pop = c.misc.get("population", 0)
+    dem = c.misc.get("demand", {})
+    count = lambda code: sum(1 for x, y in c.tiles() if c.t(x, y) == code)
+    lifters = count(0xD7) // 16 + count(0xDA) // 16 + count(0xF8) // 9
+    rail_link = any(is_rail(c.t(x, y)) for x, y in c.tiles() if x in (0, N - 1) or y in (0, N - 1))
+    seaport = any(c.zone(x, y) == 9 for x, y in c.tiles())
+    airport = any(c.zone(x, y) == 8 for x, y in c.tiles())
+    if pop > 10000 and lifters * 15000 + 15000 < pop + 5000:
+        add("WARN", "home cap: %d stadium/zoo/marina for %d people - build one before ~%d" % (lifters, pop, 15000 * (lifters + 1)))
+    if pop > 3000 and not (rail_link or seaport):
+        add("WARN", "factory cap: no rail link off the map edge and no seaport")
+    if pop > 18000 and not airport:
+        add("WARN", "shop cap: no airport (helps from ~20,000 people)")
 
     # 5. capacity and service
     g = c.misc["graphs"]

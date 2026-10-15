@@ -82,3 +82,14 @@ Every post-mortem must split causes into CONTROL failures (the agent could not c
 missing tiles, unnoticed broken links, accidents) and STRATEGY failures (the plan itself was wrong). Control failures
 should not happen: call each one out plainly, and fix the controller (new check or tool) BEFORE the next attempt.
 Only strategy lapses are acceptable reasons to fail.
+
+## Research findings (Oct 2026, claudeville-3/research/README.md) - plan around these
+- Demand caps: homes stall near 15,000 residents until stadium/zoo/marina (more = higher cap); factories need a RAIL or
+  highway link off the map edge or a seaport (road link does not count); shops need road links and an airport (~20k+).
+- Tax ~= 1.29 x population x rate per year (~$0.10/person at 7%). A $10k bond (~$400-600/yr) pays back only if it adds 5,500+ people.
+- Dense homes 30-40 people/tile vs light 10-18. Buildings must reach the other zone types within ~33 road tiles (trips).
+- Tools (lab-tested on our map): rail `47 105 85 113` (link prompt $1,500); seaport zone `68 105 100 112` ($150/tile, works on
+  our river); airport `68 105 100 128`; zoo `68 155 100 196` ($3,000, 4x4); stadium `68 155 100 212` ($5,000, 4x4, then a
+  "Pick a team" dialog: Football 212,212 then Done 440,187); marina `68 155 100 227` ($1,000, 3x3, must straddle the shore).
+  All are `build.py` step kinds. Tile codes: rail 0x2D.., seaport zone 9, stadium 0xD7, zoo 0xDA, marina 0xF8.
+- Recorder: `bot/record.sh` writes crash-safe fragmented MP4s; stop with `touch /tmp/sc/rec.stop; pkill -INT -f x11grab`.
