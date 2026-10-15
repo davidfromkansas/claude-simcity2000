@@ -1,0 +1,5 @@
+# 6 pumps on the riverbank (x71, y28-33), powered by a line at x72 (touches the pumps above), piped to the main
+line 72 28 72 33
+line 72 33 73 33
+pump 71 28 71 33
+pipe 71 30 74 30
