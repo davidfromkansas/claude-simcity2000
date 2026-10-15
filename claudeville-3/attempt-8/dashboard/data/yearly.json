@@ -97,5 +97,39 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2013,
+  "tone": "setback",
+  "title": "Stalled near 8,000",
+  "moves": [
+   "South block (loan #2)",
+   "First marina",
+   "Second coal plant and pumps"
+  ],
+  "happened": "The south block, marina and second power plant took the city to 8,230 in mid-2013, then growth stopped: water short again, cash under $1,000, loans costing more than property tax.",
+  "watching": "Money and water",
+  "start": {
+   "date": "Feb 2013",
+   "population": 7910,
+   "money": 1321,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 14,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 7590,
+   "money": 923,
+   "unemployment": 10,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 38,
+   "jammed": 0,
+   "bonds": 2
+  }
  }
 ]
