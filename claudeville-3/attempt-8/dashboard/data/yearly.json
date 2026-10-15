@@ -1,0 +1,67 @@
+[
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "Checked start",
+  "moves": [
+   "Loan #1",
+   "Block 1 with rail link"
+  ],
+  "happened": "Day one built from one plan with road and rail links; every check passed before the clock ran. 960 people by December.",
+  "watching": "Jobs vs homes balance",
+  "start": {
+   "date": "Feb 2001",
+   "population": 370,
+   "money": 8530,
+   "unemployment": 2,
+   "watered_pct": 86,
+   "powered_pct": 100,
+   "abandoned": 4,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2002",
+   "population": 1170,
+   "money": 8165,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 8,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "steady",
+  "title": "Jobs needed",
+  "moves": [
+   "Jobs block south"
+  ],
+  "happened": "2,440 people. Home land is filling and unemployment rose to 13% while shop and factory demand sat at maximum.",
+  "watching": "Unemployment",
+  "start": {
+   "date": "Jan 2003",
+   "population": 2040,
+   "money": 7891,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 2190,
+   "money": 7682,
+   "unemployment": 13,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 29,
+   "jammed": 0,
+   "bonds": 1
+  }
+ }
+]
