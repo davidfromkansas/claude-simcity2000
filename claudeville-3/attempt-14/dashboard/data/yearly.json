@@ -247,6 +247,71 @@
    "jammed": 6,
    "bonds": 5
   },
+  "end": {
+   "date": "Feb 2009",
+   "population": 18260,
+   "money": -920,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 89,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Approaching 20,000",
+  "moves": [],
+  "happened": "18,900 by December; factory stall; cash below zero.",
+  "watching": "Shop cap",
+  "start": {
+   "date": "Feb 2009",
+   "population": 18260,
+   "money": -920,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 89,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 19250,
+   "money": -2547,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "milestone",
+  "title": "20,000, airport",
+  "moves": [
+   "Loan #7",
+   "Airport",
+   "Loan #8",
+   "Job land"
+  ],
+  "happened": "Loan #7: airport and pumps; loan #8: factory and shop land. 20,360 by December, unemployment 5%.",
+  "watching": "Debt",
+  "start": {
+   "date": "Feb 2010",
+   "population": 19250,
+   "money": -2547,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 6
+  },
   "end": null
  }
 ]
