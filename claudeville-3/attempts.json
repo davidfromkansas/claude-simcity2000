@@ -52,5 +52,10 @@
   "status": "failed",
   "reason": "Stuck near 7,500 by 2022: demand at max but no money for more land; a power plant burned down with no fire station",
   "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 10,
+  "status": "playing",
+  "reason": ""
  }
 ]
