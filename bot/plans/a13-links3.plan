@@ -1,0 +1,8 @@
+# Jul 2008 (loan #7): ~20,000 ceiling for the third attempt running: home demand negative, unemployment 13%,
+# factory demand at max with 83 empty factory tiles. The designers' book: trade capacity must grow with the
+# amount of industry (rail/highway links, seaports) and commerce needs road links/airport. Test: a RAIL link
+# and a ROAD link off the SOUTH edge (a third neighbour), plus the 6 south riverbank pumps (water 8%).
+rail 88 98 88 126
+raillink 88 127
+road 106 98 106 126
+link 106 127
