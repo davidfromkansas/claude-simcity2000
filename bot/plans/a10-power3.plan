@@ -1,0 +1,4 @@
+# third coal plant on the river strip (spare power 11%), wired along y=61 to the x=77 column; first marina
+coal 60 60
+line 64 61 77 61
+marina 68 34
