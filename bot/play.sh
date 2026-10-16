@@ -26,6 +26,10 @@ for ((i=1;i<=n;i++)); do
   echo "$out" | grep -q "^PACE: behind" && [ -z "$PACE_OK" ] && reason="$reason; behind the strategy pace (act, then PACE_OK=1 to run on)"
   [ -n "$prev_rubble" ] && [ -n "$rubble" ] && [ "$rubble" -gt "$prev_rubble" ] && reason="$reason; new rubble ($prev_rubble -> $rubble): fire or disaster"
   prev_rubble=$rubble
+  # jobs first (attempt 19 rule, from attempts 15-18: dense homes outran jobs, demand stayed negative, nothing upgraded)
+  unemp=$(echo "$out" | sed -n 's/.*unemp \[\([0-9]*\)\].*/\1/p' | tail -1)
+  resd=$(echo "$out" | sed -n "s/.*'res': \(-\?[0-9]*\).*/\1/p" | tail -1)
+  [ -n "$unemp" ] && [ -n "$resd" ] && [ "$unemp" -ge 9 ] && [ "$resd" -lt 0 ] && [ -z "$JOBS_OK" ] && reason="$reason; JOBS: unemployment ${unemp}% with home demand $resd - add job land before more homes (JOBS_OK=1 to run on)"
   if [ -n "$reason" ]; then echo "PLAY STOPPED after step $i: $reason"; exit 1; fi
   python3 -I taxctl.py | grep -v "no change"     # rates follow demand when run.json has "taxctl": true
 done

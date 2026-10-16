@@ -66,7 +66,9 @@ def screen(x, y):
 
 
 def vis(*xy):
-    sh("./vis.sh", *xy)
+    out = sh("./vis.sh", *xy)
+    if "AUTOCAL ZOOM" in out:   # attempt 19: half-scale build after the zoom-in failed
+        print(out.strip()); print("BUILD: stopped - wrong zoom"); sys.exit(3)
 
 
 def tool(name):

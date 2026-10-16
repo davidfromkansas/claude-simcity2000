@@ -57,14 +57,19 @@ def main():
     MAX = run.get("taxmax", MAX)         # attempt 14: a ceiling per attempt (12% factory tax broke attempt 13)
     global MIN
     MIN = run.get("taxmin", MIN)         # attempt 17: homes sat at 4% all of attempt 16 while unemployment, not tax, held them back
-    moves = decide(m, state)
+    if sys.argv[1:2] == ["set"]:          # taxctl.py set R C I : set rates directly (start of an attempt)
+        want = dict(zip(("res", "com", "ind"), map(int, sys.argv[2:5])))
+        moves = {k: want[k] - m["tax"][k] for k in want if want[k] != m["tax"][k]}
+    else:
+        moves = decide(m, state)
     json.dump(state, open(STATE, "w"))
     if not moves:
         print("TAXCTL: no change (taxes %s)" % m["tax"])
         return
     sc("click", 47, 297); subprocess.run(["sleep", "1.2"]); sc("click", 437, 165); subprocess.run(["sleep", "1"])
     for k, d in moves.items():
-        sc("click", ARROW_X[k], UP_Y if d > 0 else DOWN_Y); subprocess.run(["sleep", "0.3"])
+        for _ in range(abs(d)):
+            sc("click", ARROW_X[k], UP_Y if d > 0 else DOWN_Y); subprocess.run(["sleep", "0.3"])
     sc("click", 430, 307); subprocess.run(["sleep", "0.6"])
     sc("click", 459, 123); subprocess.run(["sleep", "0.5"])
     sc("pause")

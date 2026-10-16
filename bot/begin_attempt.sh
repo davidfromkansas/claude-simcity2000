@@ -6,6 +6,7 @@ set -e
 cd "$(dirname "$0")"
 n=$1; [ -n "$n" ] || { echo "usage: begin_attempt.sh N"; exit 1; }
 python3 -I new_attempt.py "$n"
+rm -f "/opt/sc2k/game/C3A$n.SC2"   # attempt 19 restart: an "Overwrite?" prompt threw every later click off
 if ! pgrep -x dosbox >/dev/null; then
   bash start.sh; sleep 6
   sleep 25                                   # splash screen, then the title menu
