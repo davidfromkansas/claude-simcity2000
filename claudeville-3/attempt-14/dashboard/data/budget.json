@@ -58,5 +58,35 @@
   },
   "est_property_tax": 269,
   "budget_shot": "budget/2003.png"
+ },
+ {
+  "year": 2004,
+  "date": "Feb 2004",
+  "cash": -88,
+  "loans": 3,
+  "cash_change": 9,
+  "population": 7770,
+  "tax": {
+   "res": 6,
+   "com": 4,
+   "ind": 4
+  },
+  "est_property_tax": 512,
+  "budget_shot": "budget/2004.png"
+ },
+ {
+  "year": 2005,
+  "date": "Feb 2005",
+  "cash": -906,
+  "loans": 3,
+  "cash_change": -818,
+  "population": 10580,
+  "tax": {
+   "res": 6,
+   "com": 5,
+   "ind": 6
+  },
+  "est_property_tax": 798,
+  "budget_shot": "budget/2005.png"
  }
 ]
