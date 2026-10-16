@@ -1,0 +1,100 @@
+[
+ {
+  "year": 2000,
+  "tone": "steady",
+  "title": "Dense day one",
+  "moves": [
+   "Loan #1",
+   "Dense day one"
+  ],
+  "happened": "Day one with dense homes ($17,204). 550 by Feb 2001.",
+  "watching": "Pace",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 20000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2001",
+   "population": 550,
+   "money": 2221,
+   "unemployment": 3,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 2,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "Same pace as light",
+  "moves": [
+   "-"
+  ],
+  "happened": "1,930 by December - the same as the light-zoned attempts.",
+  "watching": "Shops",
+  "start": {
+   "date": "Feb 2001",
+   "population": 550,
+   "money": 2221,
+   "unemployment": 3,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 2,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Mar 2002",
+   "population": 2540,
+   "money": 1377,
+   "unemployment": 7,
+   "watered_pct": 92,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Dense blocks fill fast",
+  "moves": [
+   "Loan #2",
+   "Dense blocks 3+4"
+  ],
+  "happened": "Loan #2: dense blocks 3+4; the coal plant did not fit the cash and power ran out in early 2003. 6,960 by March 2003.",
+  "watching": "Power",
+  "start": {
+   "date": "Mar 2002",
+   "population": 2540,
+   "money": 1377,
+   "unemployment": 7,
+   "watered_pct": 92,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Mar 2003",
+   "population": 6960,
+   "money": 525,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 86,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  }
+ }
+]
