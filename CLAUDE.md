@@ -93,3 +93,6 @@ Only strategy lapses are acceptable reasons to fail.
   "Pick a team" dialog: Football 212,212 then Done 440,187); marina `68 155 100 227` ($1,000, 3x3, must straddle the shore).
   All are `build.py` step kinds. Tile codes: rail 0x2D.., seaport zone 9, stadium 0xD7, zoo 0xDA, marina 0xF8.
 - Recorder: `bot/record.sh` writes crash-safe fragmented MP4s; stop with `touch /tmp/sc/rec.stop; pkill -INT -f x11grab`.
+- Official manual read in full (claudeville-3/research/manual-notes.md): start small and profitable, copy a compact
+  module; homes ~= shops + factories (more factories while small); 6x6 squares between roads; power lines consume
+  power; pumps on fresh-water banks give 2-3x; industry leads a small city (rail link, seaport); shops near the centre.

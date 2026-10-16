@@ -1,5 +1,9 @@
 {
  "attempt": 8,
- "status": "playing",
- "started": "2026-10-15"
+ "status": "failed",
+ "started": "2026-10-15",
+ "ended": "Feb 2014",
+ "peak": 8230,
+ "reason": "Stalled near 8,000: slow dense growth, loans did not pay back",
+ "timelapse": "recording-timelapse/timelapse.mp4"
 }
