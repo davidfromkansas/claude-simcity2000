@@ -399,5 +399,70 @@
    "jammed": 0,
    "bonds": 10
   }
+ },
+ {
+  "year": 2013,
+  "tone": "steady",
+  "title": "35,450",
+  "moves": [
+   "Lake pumps",
+   "Home tax 9% ceiling"
+  ],
+  "happened": "Water fixed with 5 more lake pumps; all demand bars drifted to zero or below.",
+  "watching": "The plateau",
+  "start": {
+   "date": "Feb 2013",
+   "population": 34350,
+   "money": 3066,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 107,
+   "jammed": 0,
+   "bonds": 10
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 35740,
+   "money": 2159,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 138,
+   "jammed": 0,
+   "bonds": 10
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "steady",
+  "title": "36,210 - record for Claudeville 3",
+  "moves": [
+   "No builds: tax controller only"
+  ],
+  "happened": "Flat year: shops -900, factories -250, homes ~+100. Bond payments $4,500 vs taxes $3,900.",
+  "watching": "Land value and crime",
+  "start": {
+   "date": "Feb 2014",
+   "population": 35740,
+   "money": 2159,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 138,
+   "jammed": 0,
+   "bonds": 10
+  },
+  "end": {
+   "date": "Feb 2015",
+   "population": 35980,
+   "money": 1714,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 158,
+   "jammed": 0,
+   "bonds": 10
+  }
  }
 ]
