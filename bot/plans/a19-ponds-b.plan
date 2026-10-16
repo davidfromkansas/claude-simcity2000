@@ -1,0 +1,3 @@
+# pond district fix: lines x77/x88 across road y122 to the homes y123-125
+line 77 122 77 125
+line 88 122 88 122

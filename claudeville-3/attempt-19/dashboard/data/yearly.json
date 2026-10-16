@@ -625,5 +625,38 @@
    "jammed": 10,
    "bonds": 12
   }
+ },
+ {
+  "year": 2020,
+  "tone": "good",
+  "title": "43,190",
+  "moves": [
+   "Loan #13: south district + zoo",
+   "5 riverbank pumps"
+  ],
+  "happened": "Loan #13: south district with zoo #2; water and power kept tight. A calibration test road on the map edge cost $1,000 (fixed in autocal).",
+  "watching": "Power and shop land",
+  "start": {
+   "date": "Mar 2020",
+   "population": 42220,
+   "money": 800,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 40,
+   "jammed": 10,
+   "bonds": 12
+  },
+  "end": {
+   "date": "Mar 2021",
+   "population": 44040,
+   "money": 942,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 2,
+   "bonds": 13
+  }
  }
 ]
