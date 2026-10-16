@@ -132,5 +132,167 @@
    "jammed": 0,
    "bonds": 3
   }
+ },
+ {
+  "year": 2004,
+  "tone": "milestone",
+  "title": "10,000 passed",
+  "moves": [
+   "Loan #4",
+   "District 5 + west factories + coal",
+   "Taxes 8/8/8"
+  ],
+  "happened": "10,230 by June. Loan #4: district 5, west factory strip, third coal plant. Taxes 8/8/8 in November.",
+  "watching": "Water",
+  "start": {
+   "date": "Feb 2004",
+   "population": 8560,
+   "money": 979,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 36,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 12850,
+   "money": -267,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "Zoo and pumps",
+  "moves": [
+   "Loan #5",
+   "16 pumps",
+   "Zoo + district 6"
+  ],
+  "happened": "Water hit 2% in July; loan #5 (an exception) paid for 16 pumps, the zoo and district 6. 14,520 by December.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2005",
+   "population": 12850,
+   "money": -267,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2006",
+   "population": 14930,
+   "money": 1234,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 140,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "setback",
+  "title": "Unemployment climbs",
+  "moves": [],
+  "happened": "16,840; power fell to 5% while I had the low-capacity stop overridden; home and shop demand turned negative.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2006",
+   "population": 14930,
+   "money": 1234,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 140,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 16850,
+   "money": 501,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 192,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "setback",
+  "title": "Power cut",
+  "moves": [
+   "Loan #6",
+   "Coal plant #4",
+   "Factory tax 10"
+  ],
+  "happened": "53 buildings lost power in July; loan #6 paid for a fourth coal plant. Unemployment 13-16%.",
+  "watching": "Jobs",
+  "start": {
+   "date": "Feb 2007",
+   "population": 16850,
+   "money": 501,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 192,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 16670,
+   "money": 5791,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 358,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "setback",
+  "title": "Flat at 16,800",
+  "moves": [],
+  "happened": "Unemployment 17-19%, 380-417 abandoned buildings, no changes.",
+  "watching": "Jobs",
+  "start": {
+   "date": "Feb 2008",
+   "population": 16670,
+   "money": 5791,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 358,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 17400,
+   "money": 5023,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 379,
+   "jammed": 0,
+   "bonds": 6
+  }
  }
 ]
