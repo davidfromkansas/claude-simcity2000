@@ -1,4 +1,4 @@
-# Reflection on attempts 1-12 (all weighted equally)
+# Reflection on attempts 1-13 (all weighted equally)
 
 Updated before every new attempt (process rule). Each attempt gets its own entry; then the patterns
 that repeat across attempts; then what that means for the next strategy.
@@ -19,6 +19,7 @@ that repeat across attempts; then what that means for the next strategy.
 | 10 | 890 | 3,160 | 11,220 | 13,380 | 14,190 (2018) | 5 | 5-7% | 200 | 657 | 18 |
 | 11 | 2,770 | 10,330 | 16,270 | 17,830 | 20,790 (2020) | 7 | 4-8% | 599 | 1,010 | 19 |
 | 12 | 3,190 | 14,520 | 18,900 | 21,120 | 21,130 (2015) | 6 | 4-8% | 913 | 1,169 | 17 |
+| 13 | 3,430 | 14,520 | 17,370 | - | 20,070 (2008) | 7 | 4-6% (factories to 12%) | 873 | 1,177 | 17 |
 
 ## What each attempt teaches
 
@@ -71,8 +72,14 @@ that repeat across attempts; then what that means for the next strategy.
    below zero. It spent ~$60,700 - the six loans - for 21,000 people: **~$2.90 per person**, which
    cannot reach 100,000 on the tax a growing city earns. *Lesson: the money model is the problem now:
    income per person (tax rate) and cost per person (density, layout) both have to move.*
+13. **Attempt 13 (20,070):** attempt 12's start plus an east road link and a tax controller: 17,790 by
+   2006, the best year 6 of all. The controller pushed factory tax to 12% while factory demand read
+   maximum; factory demand then went negative, unemployment rose to 26% and the city shrank to 16,650.
+   South rail + road links made no visible difference. Shops ended 30-45% abandoned (the 170-tile east
+   shop block was too much); homes next to the coal plants about half abandoned. *Lesson: factory tax
+   is a demand lever, not free money; keep shops near ~1/3 of homes; homes away from plants.*
 
-## Patterns across all twelve
+## Patterns across all thirteen
 
 1. **Population follows home land zoned early (~20 people per home tile).** The three fast attempts had
    565-650 home tiles by 2005; every other attempt had under 370 and never passed 12,000 by 2010.
@@ -108,6 +115,11 @@ that repeat across attempts; then what that means for the next strategy.
    loans at ~$400 a year each, no attempt has been able to fund growth past ~21,000 except 2 and 4,
    which borrowed 10 times and then failed on debt. Rates were left low while demand bars sat at
    maximum for years (9, 11, 12) - money left on the table.
+13. **Low taxes went furthest.** The two biggest cities (2: 35,690; 4: 30,860) ran homes at 4-5% and
+   factories at 3-4% while growing. Every attempt that pushed rates to 7%+ before ~20,000 (6, 9, 10, 11,
+   12, 13) topped out between 7,800 and 21,000. Attempt 13 shows it directly: factory tax 9 -> 12 and
+   factory demand fell from maximum to negative within two years. Attempt 11's 8% home test held for
+   one year only. The debt that killed 2 and 4 came later, at 30,000+.
 
 ## What this means for attempt 10
 Combine attempt 4's fast start (big early zoning, low tax, early loans) with attempt 9's tax lesson,
@@ -132,3 +144,10 @@ Keep attempt 12's start (best ever). Change the money model: a tax controller ra
 while its demand is at maximum (up to 12%) and lowers it when demand turns negative; power and water are
 built at 30% spare from cash, not at 10% from loans; a second road link on the east edge lifts the shop
 cap; district 6 is zoned dense to test people per tile (cost per person). See `attempt-13/strategy.md`.
+
+## What this means for attempt 14
+Go back to the low-tax growth of attempts 2 and 4 on top of attempt 13's start (the best first six
+years): taxes 4-5% everywhere until ~30,000 (controller capped at 6%), loans as needed for land and
+plants (2 and 4 used ten), shops held near a third of home tiles, an airport at ~20,000 and a stadium at
+~25,000, and the first target simply to beat 35,690. Debt gets handled at 30,000+ by raising homes
+first. See `attempt-14/strategy.md`.

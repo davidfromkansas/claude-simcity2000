@@ -51,6 +51,8 @@ def main():
         return
     m = p.parse(p.SAVE)
     state = json.load(open(STATE)) if os.path.exists(STATE) else {}
+    global MAX
+    MAX = run.get("taxmax", MAX)         # attempt 14: a ceiling per attempt (12% factory tax broke attempt 13)
     moves = decide(m, state)
     json.dump(state, open(STATE, "w"))
     if not moves:
