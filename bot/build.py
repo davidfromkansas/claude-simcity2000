@@ -308,10 +308,10 @@ def main(path, dry=False):
     plan_tiles = set(final) | set(under)
     print("plan: %d steps, %d tiles" % (len(steps), len(plan_tiles)))
     # preflight (attempt 19): a park placed over a planned line or road cut power to a whole factory strip
-    links = {p for s in steps if s["kind"] in ("line", "road", "rail") for p in s["tiles"]}
+    links = {p for s in steps if s["kind"] in ("line", "road", "rail", "police", "fire", "coal", "gas", "stadium", "zoo") for p in s["tiles"]}
     clash = sorted(p for s in steps if s["kind"] == "park" for p in s["tiles"] if p in links)
     if clash:
-        print("PLAN ERROR: park on a planned line/road/rail at %s" % clash[:8]); print("BUILD: refused"); sys.exit(2)
+        print("PLAN ERROR: park on a planned line/road/rail/building at %s" % clash[:8]); print("BUILD: refused"); sys.exit(2)
     # preflight: the plan must not put buildings, zones or parks on water (roads/lines/pipes would need bridges)
     c0 = City()
     wet = sorted(p for p, s in final.items() if c0.bit[p[1] * N + p[0]] & 4 and s["kind"] not in ("bulldoze", "bulldoze!", "dezone", "marina"))

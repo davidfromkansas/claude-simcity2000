@@ -24,7 +24,7 @@ pipe 107 51 114 51
 zone R 86 36 91 40
 park 88 38 89 39
 zone R 94 36 99 40
-park 96 38 97 39
+park 96 39 97 40
 line 101 30 109 30
 road 76 56 76 76
 road 77 62 108 62
@@ -61,4 +61,4 @@ pipe 75 65 107 65
 pipe 75 72 107 72
 line 77 56 77 56
 pipe 75 38 99 38
-police 94 36
+# police 94 36 dropped (attempt 19: clashed with the park, homes grew there first)
