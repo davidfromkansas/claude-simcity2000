@@ -222,6 +222,83 @@
    "jammed": 0,
    "bonds": 6
   },
-  "end": null
+  "end": {
+   "date": "Feb 2008",
+   "population": 23680,
+   "money": 205,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 40,
+   "jammed": 0,
+   "bonds": 7
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "25,970 people",
+  "moves": [
+   "Factory row y70-72",
+   "Factory tax ceiling 10%"
+  ],
+  "happened": "Dense factories fill in months; home demand turned positive late in the year.",
+  "watching": "Stadium and factory land",
+  "start": {
+   "date": "Feb 2008",
+   "population": 23680,
+   "money": 205,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 40,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 26720,
+   "money": 2085,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 47,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "steady",
+  "title": "28,510 - stadium, airport, lake pumps",
+  "moves": [
+   "Loan #8: stadium + east district",
+   "Lake pumps",
+   "Loan #9: airport"
+  ],
+  "happened": "Loan #8 paid for the stadium and an east district around a pond; water fell to 3% and 7 lake pumps fixed it; shops stalled for six months so loan #9 bought the airport.",
+  "watching": "Shop land, money",
+  "start": {
+   "date": "Feb 2009",
+   "population": 26720,
+   "money": 2085,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 47,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 28430,
+   "money": 3748,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 47,
+   "jammed": 8,
+   "bonds": 9
+  }
  }
 ]
