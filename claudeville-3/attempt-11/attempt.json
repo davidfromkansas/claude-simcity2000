@@ -1,5 +1,9 @@
 {
  "attempt": 11,
- "status": "playing",
- "started": "2026-10-16"
+ "status": "failed",
+ "started": "2026-10-16",
+ "ended": "Feb 2020",
+ "peak": 20790,
+ "reason": "Stopped at 20,790 in 2020: seaport 9 years late, factory land fell behind, 7 loans outgrew taxes",
+ "timelapse": "recording-timelapse/timelapse.mp4"
 }

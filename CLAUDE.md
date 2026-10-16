@@ -78,6 +78,10 @@ Toolbar is the left column (x 10-80).
 - `bot/step.sh [secs]` = run ~3-4 months + save + health + audit + stall + pace. Use it for every check step.
 - `bot/pace.py` (after attempt 10): compares population and zoned home tiles with the attempt's `pace.json`
   target curve; `play.sh` stops when the city is under 70% of it (act, then `PACE_OK=1 bash play.sh N` to run on).
+  It also prints a LAND line: `play.sh` stops when a zone type has demand >= 1500 but < 30 empty tiles (LAND_OK=1),
+  and when spare water or power is under 10% (LOW_OK=1). Both added after attempt 11.
+- Attempt 11 findings: the game refuses a second loan at founding (credit rating); the SEAPORT at x53-57 y57-62
+  lifted the factory cap at once; homes held at 8% tax when jobs existed; stalls at 11-18k track unemployment.
 
 ## Post-mortem rule (from the user)
 Every post-mortem must split causes into CONTROL failures (the agent could not carry out its own plan: misplaced or

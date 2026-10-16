@@ -383,5 +383,257 @@
    "jammed": 0,
    "bonds": 5
   }
+ },
+ {
+  "year": 2012,
+  "tone": "setback",
+  "title": "Factory strip, still stuck",
+  "moves": [
+   "Loan #6",
+   "West factory strip",
+   "Fourth coal plant"
+  ],
+  "happened": "Loan #6 paid for a west factory strip (196 tiles) and a fourth coal plant; factory tax 9. Population stayed at 16,000: new factories filled only partly.",
+  "watching": "Unemployment",
+  "start": {
+   "date": "Feb 2012",
+   "population": 16070,
+   "money": -1199,
+   "unemployment": 10,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 178,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2013",
+   "population": 16040,
+   "money": 1703,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 229,
+   "jammed": 6,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "setback",
+  "title": "Industry cap",
+  "moves": [],
+  "happened": "No changes (cash under $2,000). 137 empty factory tiles stayed empty with factory demand at maximum; unemployment 15%.",
+  "watching": "Seaport",
+  "start": {
+   "date": "Feb 2013",
+   "population": 16040,
+   "money": 1703,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 229,
+   "jammed": 6,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 15920,
+   "money": 306,
+   "unemployment": 15,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 254,
+   "jammed": 12,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "good",
+  "title": "Seaport",
+  "moves": [
+   "Loan #7",
+   "Seaport (22 tiles)"
+  ],
+  "happened": "Loan #7 (over the limit, on purpose) paid for the first seaport in February. Factories began filling again; 17,180 by December.",
+  "watching": "Factory land",
+  "start": {
+   "date": "Feb 2014",
+   "population": 15920,
+   "money": 306,
+   "unemployment": 15,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 254,
+   "jammed": 12,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2015",
+   "population": 17340,
+   "money": 5464,
+   "unemployment": 10,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 207,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "good",
+  "title": "Factories fill",
+  "moves": [],
+  "happened": "17,830: factories 524 -> 606, unemployment 15% -> 9%.",
+  "watching": "More factory land",
+  "start": {
+   "date": "Feb 2015",
+   "population": 17340,
+   "money": 5464,
+   "unemployment": 10,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 207,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 17970,
+   "money": 3800,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 171,
+   "jammed": 0,
+   "bonds": 7
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "good",
+  "title": "Factories and pumps",
+  "moves": [
+   "108 factory tiles",
+   "6 riverbank pumps"
+  ],
+  "happened": "108 more factory tiles and 6 pumps; 18,950 by December.",
+  "watching": "Water",
+  "start": {
+   "date": "Feb 2016",
+   "population": 17970,
+   "money": 3800,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 171,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": {
+   "date": "Feb 2017",
+   "population": 19120,
+   "money": 54,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 163,
+   "jammed": 0,
+   "bonds": 7
+  }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "Unemployment down",
+  "moves": [],
+  "happened": "19,940; unemployment down to 5%, home demand back above zero.",
+  "watching": "Cash below zero",
+  "start": {
+   "date": "Feb 2017",
+   "population": 19120,
+   "money": 54,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 163,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": {
+   "date": "Feb 2018",
+   "population": 20260,
+   "money": -1423,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 96,
+   "jammed": 0,
+   "bonds": 7
+  }
+ },
+ {
+  "year": 2018,
+  "tone": "milestone",
+  "title": "20,000 passed",
+  "moves": [
+   "Taxes 8/8/9"
+  ],
+  "happened": "20,450; cash -$1,423 with 7 loans. Taxes raised to 8/8/9 in December as a test.",
+  "watching": "Does demand hold at 8%?",
+  "start": {
+   "date": "Feb 2018",
+   "population": 20260,
+   "money": -1423,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 96,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": {
+   "date": "Feb 2019",
+   "population": 20360,
+   "money": -2812,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 7
+  }
+ },
+ {
+  "year": 2019,
+  "tone": "setback",
+  "title": "Taxes hold, debt wins",
+  "moves": [],
+  "happened": "Home demand stayed positive at 8% but cash fell to -$3,721: loan payments are bigger than all tax income. Attempt stopped Feb 2020.",
+  "watching": "Next attempt",
+  "start": {
+   "date": "Feb 2019",
+   "population": 20360,
+   "money": -2812,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": {
+   "date": "Feb 2020",
+   "population": 20790,
+   "money": -3721,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 82,
+   "jammed": 0,
+   "bonds": 7
+  }
  }
 ]

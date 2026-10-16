@@ -1,4 +1,4 @@
-# Reflection on attempts 1-10 (all weighted equally)
+# Reflection on attempts 1-11 (all weighted equally)
 
 Updated before every new attempt (process rule). Each attempt gets its own entry; then the patterns
 that repeat across attempts; then what that means for the next strategy.
@@ -17,6 +17,7 @@ that repeat across attempts; then what that means for the next strategy.
 | 8 | 1,750 | 2,360 | 5,480 | - | 8,230 (2013) | 2 | 7% | 97 | 193 | 26 |
 | 9 | 1,760 | 3,260 | 6,360 | 7,750 | 7,830 (2016) | 3 | 5-10% | 178 | 341 | 19 |
 | 10 | 890 | 3,160 | 11,220 | 13,380 | 14,190 (2018) | 5 | 5-7% | 200 | 657 | 18 |
+| 11 | 2,770 | 10,330 | 16,270 | 17,830 | 20,790 (2020) | 7 | 4-8% | 599 | 1,010 | 19 |
 
 ## What each attempt teaches
 
@@ -55,8 +56,15 @@ that repeat across attempts; then what that means for the next strategy.
    while 1 in 8 buildings stood abandoned; no seaport, zoo or stadium. *Lesson: the plan must be checked
    against its own pace (now `pace.py`); idle cash with demand at maximum is wasted time; size the debt to
    the population.*
+11. **Attempt 11 (20,790):** attempt 10's layout built up front (288 home tiles on day one, 683 by 2003)
+   gave the second-fastest start (10,330 by 2005). Then stuck at 16,000 for five years: water short
+   18 months, factory land ran out (1,112 home vs 489 factory tiles), then the industry cap held 137
+   factory tiles empty. The **seaport** (2014) broke it: factories filled, unemployment 15% -> 4%. A tax
+   test showed home demand stays positive at **8%** when jobs exist. Seven loans (~$3,000 a year) still
+   outgrew all tax (~$2,100). *Lesson: seaport early, factory land in step with homes, taxes ~8% once
+   the city works, and no more than ~4 loans.*
 
-## Patterns across all ten
+## Patterns across all eleven
 
 1. **Population follows home land zoned early (~20 people per home tile).** The three fast attempts had
    565-650 home tiles by 2005; every other attempt had under 370 and never passed 12,000 by 2010.
@@ -71,7 +79,8 @@ that repeat across attempts; then what that means for the next strategy.
 5. **Demand at maximum is a signal to raise taxes**, not only to build (attempt 9: max demand held at 10%).
    Attempts 2 and 4 kept taxes at 5-8% while carrying 7-10 loans. But attempts 6 and 10 both saw home
    demand drop to zero once homes went to 7% at ~11,000 people: raise shop and factory rates first,
-   homes last.
+   homes last. *Attempt 11's test (2018) points the other way: at 8% home demand held while jobs were
+   available; the earlier drops line up with job shortages (factory land full or capped), not tax.*
 6. **Control is solved since attempt 6:** checked plans, audit, stall alarm, play loop that stops at alarms.
    Remaining control risk: batches that run past alarms (fixed in 9), calibration side effects (fixed).
 7. **Fire is the recurring disaster:** attempt 3 (city), attempt 9 (power plant). Coverage from day one.
@@ -81,7 +90,11 @@ that repeat across attempts; then what that means for the next strategy.
    per person a year at 7%.
 10. **Factory land beyond the trade capacity is wasted.** Factory demand reads maximum all game (4, 9, 10)
    while factories stand abandoned; more factory land did not add jobs. A seaport or second link raises
-   the cap; nobody built one.
+   the cap. Attempt 11 confirmed it: after the seaport, factories went 524 -> 606 and unemployment
+   15% -> 4%. A rail link alone was not enough.
+11. **Every stall at 11,000-18,000 (3, 6, 10, 11) came with rising unemployment.** Homes empty when jobs
+   run out (no factory land, or the industry cap), and home demand turns negative. Jobs, not taxes or
+   home land, set the ceiling in that range.
 
 ## What this means for attempt 10
 Combine attempt 4's fast start (big early zoning, low tax, early loans) with attempt 9's tax lesson,
@@ -94,3 +107,9 @@ not over five years - using attempt 10's proven, audited layout (blocks 1-3 in J
 2002), with a pace file the play loop enforces. Debt is capped by population, home tax rises last, and
 the cheap unlocks (seaport, zoo) come before the demand stalls rather than after. See
 `attempt-11/strategy.md`.
+
+## What this means for attempt 12
+Keep attempt 11's start (it works). Fix what stopped it, in order of cost: the seaport in the first
+years (~$3,200, location proven), factory land zoned with every home block (LAND check now stops the
+loop), taxes up to ~8% once the city has ~5,000 people and jobs, at most 4 loans, the zoo by ~12,000.
+See `attempt-12/strategy.md`.

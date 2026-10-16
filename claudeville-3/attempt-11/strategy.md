@@ -26,6 +26,9 @@ day one and the rest 1-2 years late. Attempt 11 builds attempt 10's whole audite
    $5,000 while home demand is at maximum and land is short.
 3. **Debt sized to the city** (2, 4, 6, 10): at most 2 loans until 8,000 people, then at most
    1 + population / 8,000. Repay the oldest when cash > $15,000.
+   *Changed Dec 2006:* the game refused a second loan at founding, and the cap blocked land the city
+   needed. New rule: a loan is taken only to buy land (with power and water) for 5,500+ people
+   (~250 home tiles + jobs), the payback point from the research.
 4. **Taxes** (2, 4, 6, 9, 10): start 4/4/4. Raise shops and factories first when their demand is at
    maximum; raise homes last and only while home demand stays at maximum; cut any rate whose demand
    has been below zero for a year.

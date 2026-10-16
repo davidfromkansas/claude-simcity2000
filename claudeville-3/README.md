@@ -22,3 +22,4 @@ Each attempt folder holds:
 | 8 | missed | 8,230 | Research plan: checks all passed, but slow dense growth and loans |
 | 9 | missed | 7,830 | Manual's method: land filled faster than money; plant burned |
 | 10 | missed | 14,190 | Attempt 4's fast start, but blocks smaller and later than planned; 5 loans outgrew taxes |
+| 11 | missed | 20,790 | Big day one worked; seaport 9 years late, factory land short, 7 loans outgrew taxes |

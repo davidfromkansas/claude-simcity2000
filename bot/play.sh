@@ -3,7 +3,9 @@
 # problem is handled within one step instead of after a whole batch (attempt 9 lost 18 months of power
 # after a plant burned down mid-batch).
 # Stops on: an audit FAIL, buildings without power, new rubble (fire/disaster), the game not paused,
-# or the city behind its strategy's pace (pace.py, added after attempt 10).
+# the city behind its strategy's pace (pace.py, added after attempt 10), or spare water/power under
+# 10% (attempt 11 ran 18 months short of water while only a WARN line said so), or a zone type with
+# high demand and no empty land (attempt 11 ran out of factory land unnoticed).
 cd "$(dirname "$0")"
 n=${1:-6}; secs=${2:-1.5}; prev_rubble=""
 for ((i=1;i<=n;i++)); do
@@ -14,6 +16,8 @@ for ((i=1;i<=n;i++)); do
   echo "$out" | grep -q "^FAIL" && reason="audit FAIL"
   echo "$out" | grep -q "buildings without power" && reason="buildings without power"
   echo "$out" | grep -q "^paused: no" && reason="game was not paused"
+  echo "$out" | grep -q "WARN spare \(water\|power\) only [0-9]%" && [ -z "$LOW_OK" ] && reason="spare water or power under 10% (build more; LOW_OK=1 to run on)"
+  echo "$out" | grep -q "^LAND short" && [ -z "$LAND_OK" ] && reason="a zone type with high demand has no empty land (LAND line; LAND_OK=1 to run on)"
   echo "$out" | grep -q "^PACE: behind" && [ -z "$PACE_OK" ] && reason="behind the strategy pace (act, then PACE_OK=1 to run on)"
   [ -n "$prev_rubble" ] && [ -n "$rubble" ] && [ "$rubble" -gt "$prev_rubble" ] && reason="new rubble ($prev_rubble -> $rubble): fire or disaster"
   prev_rubble=$rubble
