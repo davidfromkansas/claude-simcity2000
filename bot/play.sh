@@ -16,13 +16,13 @@ for ((i=1;i<=n;i++)); do
   echo "$out" | grep -v -e "^paused: yes" -e "^AUDIT: passed" -e "stall check: OK"
   rubble=$(echo "$out" | sed -n 's/.*rubble \([0-9]*\).*/\1/p' | head -1)
   reason=""
-  echo "$out" | grep -q "^FAIL" && reason="audit FAIL"
-  echo "$out" | grep -q "buildings without power" && reason="buildings without power"
-  echo "$out" | grep -q "^paused: no" && reason="game was not paused"
-  echo "$out" | grep -q "WARN spare \(water\|power\) only [0-9]%" && reason="spare water or power under 10% (build more; no override: attempt 12 hid a power shortage with one)"
-  echo "$out" | grep -q "^LAND short" && [ -z "$LAND_OK" ] && reason="a zone type with high demand has no empty land (LAND line; LAND_OK=1 to run on)"
-  echo "$out" | grep -q "^PACE: behind" && [ -z "$PACE_OK" ] && reason="behind the strategy pace (act, then PACE_OK=1 to run on)"
-  [ -n "$prev_rubble" ] && [ -n "$rubble" ] && [ "$rubble" -gt "$prev_rubble" ] && reason="new rubble ($prev_rubble -> $rubble): fire or disaster"
+  echo "$out" | grep -q "^FAIL" && reason="$reason; audit FAIL"
+  echo "$out" | grep -q "buildings without power" && reason="$reason; buildings without power"
+  echo "$out" | grep -q "^paused: no" && reason="$reason; game was not paused"
+  echo "$out" | grep -q "WARN spare \(water\|power\) only [0-9]%" && reason="$reason; spare water or power under 10% (build more; no override: attempt 12 hid a power shortage with one)"
+  echo "$out" | grep -q "^LAND short" && [ -z "$LAND_OK" ] && reason="$reason; a zone type with high demand has no empty land (LAND line; LAND_OK=1 to run on)"
+  echo "$out" | grep -q "^PACE: behind" && [ -z "$PACE_OK" ] && reason="$reason; behind the strategy pace (act, then PACE_OK=1 to run on)"
+  [ -n "$prev_rubble" ] && [ -n "$rubble" ] && [ "$rubble" -gt "$prev_rubble" ] && reason="$reason; new rubble ($prev_rubble -> $rubble): fire or disaster"
   prev_rubble=$rubble
   if [ -n "$reason" ]; then echo "PLAY STOPPED after step $i: $reason"; exit 1; fi
   python3 -I taxctl.py | grep -v "no change"     # rates follow demand when run.json has "taxctl": true
