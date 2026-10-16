@@ -1,4 +1,4 @@
-# Reflection on attempts 1-14 (all weighted equally)
+# Reflection on attempts 1-15 (all weighted equally)
 
 Updated before every new attempt (process rule). Each attempt gets its own entry; then the patterns
 that repeat across attempts; then what that means for the next strategy.
@@ -21,6 +21,7 @@ that repeat across attempts; then what that means for the next strategy.
 | 12 | 3,190 | 14,520 | 18,900 | 21,120 | 21,130 (2015) | 6 | 4-8% | 913 | 1,169 | 17 |
 | 13 | 3,430 | 14,520 | 17,370 | - | 20,070 (2008) | 7 | 4-6% (factories to 12%) | 873 | 1,177 | 17 |
 | 14 | 3,610 | 12,130 | 20,360 | - | 23,580 (2013) | 9 | 5-6% | 738 | 1,202 | 19 |
+| 15 | 4,330 | 13,240 | 17,750 | - | 18,260 (2011) | 6 | 4-7% | 568 (dense) | 827 (dense) | 27 |
 
 ## What each attempt teaches
 
@@ -84,8 +85,12 @@ that repeat across attempts; then what that means for the next strategy.
    but after 2005 it grew only ~1,500 people a year and each step needed a loan: ~$3.80 per person.
    *Lesson: low taxes buy stability, not speed; with light homes at ~18 people per tile the money runs
    out near 20,000-25,000 whatever the tax rate.*
+15. **Attempt 15 (18,260):** every home zone dense: **26.8 people per home tile** (all light attempts
+   17-20), the same city on ~40% less home land - and the same ~18,000 ceiling, with factory land empty at
+   maximum demand even after a second seaport. *Lesson (from the research that followed): the stuck
+   factory land failed the game's trip test.*
 
-## Patterns across all fourteen
+## Patterns across all fifteen
 
 1. **Population follows home land zoned early (~20 people per home tile).** The three fast attempts had
    565-650 home tiles by 2005; every other attempt had under 370 and never passed 12,000 by 2010.
@@ -129,7 +134,14 @@ that repeat across attempts; then what that means for the next strategy.
 14. **People per home tile never moved.** Every attempt with light homes sat at 17-20 people per tile
    (2, 3, 4, 6, 9-14); the dense-only attempts 7 and 8 reached 26-31 but on tiny cities. Since roads,
    power lines, pipes and plants are paid per tile, density is the one lever on cost per person that no
-   big attempt has used.
+   big attempt has used. Attempt 15 used it: 27 people per tile.
+15. **The ~20,000 ceiling of attempts 10-15 was the trip test, not caps, taxes or money alone.** An empty
+   zone only grows after a random road trip of ~33 tiles reaches a destination zone (factories need homes)
+   or the map edge. `trips.py` on the stalled saves of 11, 13, 14 and 15: stuck factory land 22-33% trip
+   success, home/shop land 65-100%. Every stuck area was a factory-only district (the west strip by the
+   river, the south factory rows) - zoned there because it was empty land, and abandoned factories and
+   rising unemployment followed. Attempts 2 and 4, the biggest cities, used thin mixed bands (attempt 1's
+   lesson). The industry cap (10,000 workers per crane or link) was never reached.
 
 ## What this means for attempt 10
 Combine attempt 4's fast start (big early zoning, low tax, early loans) with attempt 9's tax lesson,
@@ -166,3 +178,8 @@ first. See `attempt-14/strategy.md`.
 Same proven layout and start, but **every home zone dense** from day one, so the same roads, lines, pipes
 and plants house more people. Taxes moderate (6%, factories <= 7%), the airport at ~20,000, police for
 land value. Success test: people per home tile above 25 by 2008. See `attempt-15/strategy.md`.
+
+## What this means for attempt 16
+Keep attempt 15's start and dense homes; **never zone factory-only land**: every factory cell sits next to
+home cells (mixed district grids), checked with `trips.py` after each build and at every step (the loop
+stops on weak trips). With factories filling, jobs keep pace with dense homes. See `attempt-16/strategy.md`.

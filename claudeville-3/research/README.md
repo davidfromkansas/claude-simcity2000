@@ -92,3 +92,17 @@ There is no published year-by-year timeline of a 100,000 city in SimCity 2000. T
 The main finding is that our seven attempts failed for one shared reason, and it was not that our play was too slow. In each one the city hit a game rule we had not planned for. The residential cap explains the decline after 35,700. The missing industrial trade link explains the factories that died while demand stood at maximum. The tax formula explains why loans could never be paid off. Light zoning on low-value land explains why our tiles held half the people they could. Each of these was fixable with a few thousand dollars spent at the right moment.
 
 So the next attempt should be planned around milestones, not around simply growing as fast as possible. Each population threshold (10,000, 15,000, 20,000, then every 15,000) has a known unlock that must be built before the city reaches it. Every bond must be tied to one of those unlocks. And density, which comes from dense zoning, water, trees, parks and corner lots, is what lets 100,000 people fit on the land and the budget we have.
+
+
+## Trips: why factory land stalled at ~20,000 (Oct 2026, after attempt 15)
+The reverse-engineered growth code (sc2kfix, `hooks/hook_tilegrowthorplacement.cpp`; dfloer spec; PPP p.400)
+shows an empty zone tile only develops after a **successful trip**: from a road within reach (3 tiles straight
+or short diagonals) a random walk of 100 steps (3 per road tile, ~33 road tiles) must pass a destination zone
+(empty zones count) or reach a map-edge connection. Only then does demand matter (build chance ~37% per pass
+at a maximum bar). Failed trips mean no growth at any demand. Our `bot/trips.py` (Monte Carlo of that walk,
+factories -> homes) on the stalled saves of attempts 11, 13, 14 and 15: home and shop land 65-100% trip
+success; **the stuck factory land 22-33%**, all in factory-only areas (the west strip by the river x54-74
+y64-75, south factory rows). The industry cap was not binding: ~7,400 factory workers vs 10,000 per crane/
+rail link. **Rule: every factory cell must have homes within a few road tiles (mixed cells), never a
+factory-only district; check new land with trips.py.** Land value only gates dense upgrades (1x1 needs 32,
+2x2 needs 96, 3x3 needs 192). Tax per year = rate x population / 75.

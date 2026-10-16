@@ -83,6 +83,9 @@ Toolbar is the left column (x 10-80).
 - `bot/taxctl.py` (after attempt 12): when run.json has "taxctl": true, play.sh adjusts each zone's tax every step
   (+1 while demand >= 1800 up to 12%, -1 after two checks <= -300 down to 5%, from 3,000 people) and logs it.
   play.sh refuses to start on an audit FAIL; the low water/power stop has no override; build.py restores lost zones.
+- TRIPS (after attempt 15): an empty zone only grows if a random road trip (~33 road tiles) from it reaches a
+  destination zone (factories -> homes) or the map edge. Factory-only districts fail (22-33%) - that was the ~20,000
+  ceiling of attempts 10-15. `bot/trips.py` checks it; play.sh stops on 'TRIPS: weak'. Mix factory cells with homes.
 - Attempt 11 findings: the game refuses a second loan at founding (credit rating); the SEAPORT at x53-57 y57-62
   lifted the factory cap at once; homes held at 8% tax when jobs existed; stalls at 11-18k track unemployment.
 

@@ -21,6 +21,7 @@ for ((i=1;i<=n;i++)); do
   echo "$out" | grep -q "^paused: no" && reason="$reason; game was not paused"
   echo "$out" | grep -q "WARN spare \(water\|power\) only [0-9]%" && reason="$reason; spare water or power under 10% (build more; no override: attempt 12 hid a power shortage with one)"
   echo "$out" | grep -q "^LAND short" && [ -z "$LAND_OK" ] && reason="$reason; a zone type with high demand has no empty land (LAND line; LAND_OK=1 to run on)"
+  echo "$out" | grep -q "^TRIPS: weak" && [ -z "$TRIPS_OK" ] && reason="$reason; empty zone land where the game's trips fail (TRIPS line: zone it next to homes instead)"
   echo "$out" | grep -q "^PACE: behind" && [ -z "$PACE_OK" ] && reason="$reason; behind the strategy pace (act, then PACE_OK=1 to run on)"
   [ -n "$prev_rubble" ] && [ -n "$rubble" ] && [ "$rubble" -gt "$prev_rubble" ] && reason="$reason; new rubble ($prev_rubble -> $rubble): fire or disaster"
   prev_rubble=$rubble

@@ -14,6 +14,7 @@ print('spare water/power',g['water_pct'][:1],g['power_pct'][:1],'unpowered',sum(
 python3 -I audit.py | grep -v "^OK"
 python3 -I stall.py
 python3 -I pace.py
+python3 -I trips.py | grep "^TRIPS"
 echo "paused: $(./sc paused)"
 } 2>&1 | grep -v -e xdo -e "Can't open display" | tee $out
 shot=$(python3 -I record_step.py $out | sed -n 's/^BUDGET_SHOT //p')
