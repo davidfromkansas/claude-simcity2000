@@ -65,5 +65,29 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Power, water, land",
+  "moves": [
+   "Loan #2",
+   "Second coal plant",
+   "East homes and factories"
+  ],
+  "happened": "Lower taxes and new land took the city from 4,000 to 5,800. Power and water ran out; loan #2 paid for a second coal plant, riverbank pumps and more land.",
+  "watching": "Growth after the new plant",
+  "start": {
+   "date": "Feb 2009",
+   "population": 5560,
+   "money": 1188,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 23,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": null
  }
 ]
