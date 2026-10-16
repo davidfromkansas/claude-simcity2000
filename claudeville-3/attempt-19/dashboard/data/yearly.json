@@ -1,0 +1,125 @@
+[
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "Restart and a dense start",
+  "moves": [
+   "Day one: dense homes + parks, coal plant, 12 pumps, road and rail links",
+   "Loan #2 (Feb 2001): blocks 3-4 and a factory strip"
+  ],
+  "happened": "Restarted on Jan 2000 after a half-scale build. Dense homes with a park in every home cell grew slowly at first, then fast.",
+  "watching": "Water and power as homes fill",
+  "start": {
+   "date": "Feb 2001",
+   "population": 590,
+   "money": 1521,
+   "unemployment": 9,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 7,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2002",
+   "population": 3420,
+   "money": 497,
+   "unemployment": 3,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 13,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Fastest growth yet",
+  "moves": [
+   "Loan #3: coal plant + 19 north pumps",
+   "Loan #4: district 5 with police"
+  ],
+  "happened": "590 -> 8,010 people in 2002. Water and power ran out in July.",
+  "watching": "Shop land",
+  "start": {
+   "date": "Feb 2002",
+   "population": 3420,
+   "money": 497,
+   "unemployment": 3,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 13,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2003",
+   "population": 9020,
+   "money": 6541,
+   "unemployment": 4,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 4,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "10,000 passed in May",
+  "moves": [
+   "Finance ordinances + City Beautification",
+   "Zoo (110,56)"
+  ],
+  "happened": "Home demand fell to zero at 10,500, so the zoo came early.",
+  "watching": "Power spare and shop land",
+  "start": {
+   "date": "Feb 2003",
+   "population": 9020,
+   "money": 6541,
+   "unemployment": 4,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 4,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 13540,
+   "money": 2372,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 23,
+   "jammed": 1,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "steady",
+  "title": "13,540 by February",
+  "moves": [
+   "Loan #5: second coal plant",
+   "North district, mostly jobs",
+   "Shop/factory tax ceiling raised to 9%"
+  ],
+  "happened": "Power down to 9% spare and shops out of land while home demand is negative: jobs first.",
+  "watching": "Home demand after the new jobs",
+  "start": {
+   "date": "Feb 2004",
+   "population": 13540,
+   "money": 2372,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 23,
+   "jammed": 1,
+   "bonds": 4
+  },
+  "end": null
+ }
+]
