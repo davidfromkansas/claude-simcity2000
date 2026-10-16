@@ -37,7 +37,9 @@ def decide(m, state):
         d, r = m["demand"][k], m["tax"][k]
         neg = state.get(k, 0) + 1 if d <= -300 else 0
         state[k] = neg
-        if d >= 1000 and r < MAX:
+        if r < MIN:                      # raise to the floor (attempt 17: homes 6% minimum)
+            moves[k] = 1
+        elif d >= 1000 and r < MAX:
             moves[k] = 1
         elif neg >= 2 and r > MIN:
             moves[k] = -1
