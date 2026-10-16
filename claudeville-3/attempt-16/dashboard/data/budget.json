@@ -208,5 +208,20 @@
   },
   "est_property_tax": 1660,
   "budget_shot": "budget/2013.png"
+ },
+ {
+  "year": 2014,
+  "date": "Feb 2014",
+  "cash": -1979,
+  "loans": 9,
+  "cash_change": -7547,
+  "population": 24870,
+  "tax": {
+   "res": 4,
+   "com": 7,
+   "ind": 7
+  },
+  "est_property_tax": 1723,
+  "budget_shot": "budget/2014.png"
  }
 ]

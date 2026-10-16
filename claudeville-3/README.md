@@ -27,3 +27,4 @@ Each attempt folder holds:
 | 13 | missed | 20,070 | Best year 6 (17,790); factory tax at 12% collapsed industry, too many shops, 7 loans |
 | 14 | missed | 23,580 | Low taxes: healthy but slow (~1,500/yr), 9 loans, ~$3.80 per person |
 | 15 | missed | 18,260 | Dense homes: 27 people per tile; factories stalled, jobs capped the city |
+| 16 | missed | 24,870 | Trip fix (factories next to homes) passed 18,000; nine loans, too few jobs |
