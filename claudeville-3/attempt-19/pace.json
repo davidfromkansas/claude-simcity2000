@@ -44,6 +44,7 @@
   "15000": "set run.json taxmin to 7 (homes 7%)",
   "13000": "zoo (a14-zoo) before 15,000",
   "20000": "airport (a19-airport) and the second seaport (a15-seaport2)",
-  "25000": "stadium (a17-stadium) before 30,000"
+  "25000": "stadium (a17-stadium) before 30,000",
+  "24000": "airport + second seaport (deferred at 21,000: cash \\$68, budget -\\$600/yr)"
  }
 }
