@@ -1,0 +1,4 @@
+# Jul 2010 (loan #7): 19,650 people, shop demand 1,781 with no shop land, "no airport" shop cap warning since
+# 20,000 is near. Airport 6x4 south of district 6 on road y83; power down line x109 across road y83.
+line 109 83 109 89
+airport 110 84 115 87
