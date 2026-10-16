@@ -120,6 +120,108 @@
    "jammed": 1,
    "bonds": 4
   },
+  "end": {
+   "date": "Feb 2005",
+   "population": 16240,
+   "money": 2884,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 17,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "17,900 people",
+  "moves": [
+   "14 south riverbank pumps",
+   "Home tax rise to 7% skipped (home demand negative)"
+  ],
+  "happened": "Steady growth, factory demand at maximum all year; water fixed with 14 south pumps.",
+  "watching": "Shop and factory land",
+  "start": {
+   "date": "Feb 2005",
+   "population": 16240,
+   "money": 2884,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 17,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2006",
+   "population": 18380,
+   "money": 68,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 19,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "21,110 - best year 6",
+  "moves": [
+   "Loan #6: seaport + dense east jobs",
+   "East homes and edge roads",
+   "Home tax 7%"
+  ],
+  "happened": "Seaport and a dense east job strip; trips were weak until homes went across the road. Four neighbour deals cost $3,900 by accident. Cash fell to $68.",
+  "watching": "Budget: loans cost more than taxes",
+  "start": {
+   "date": "Feb 2006",
+   "population": 18380,
+   "money": 68,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 19,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 21390,
+   "money": -721,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 42,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "steady",
+  "title": "23,030, money tight",
+  "moves": [
+   "Loan #7: coal plant + west factories/homes",
+   "Four big parks",
+   "East rows to dense shops",
+   "Factory row y70-72"
+  ],
+  "happened": "Cash went negative in February; loan #7 paid for a third coal plant and dense factories by the seaport. Home demand hovers just below zero.",
+  "watching": "Whether more jobs lift home demand",
+  "start": {
+   "date": "Feb 2007",
+   "population": 21390,
+   "money": -721,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 42,
+   "jammed": 0,
+   "bonds": 6
+  },
   "end": null
  }
 ]
