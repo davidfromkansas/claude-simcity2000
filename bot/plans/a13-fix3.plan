@@ -1,0 +1,2 @@
+# power for the south pumps: their lines end at x84; continue district 5's line column x85 across road y97
+line 85 97 85 103
