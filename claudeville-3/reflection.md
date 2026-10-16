@@ -1,4 +1,4 @@
-# Reflection on attempts 1-13 (all weighted equally)
+# Reflection on attempts 1-14 (all weighted equally)
 
 Updated before every new attempt (process rule). Each attempt gets its own entry; then the patterns
 that repeat across attempts; then what that means for the next strategy.
@@ -20,6 +20,7 @@ that repeat across attempts; then what that means for the next strategy.
 | 11 | 2,770 | 10,330 | 16,270 | 17,830 | 20,790 (2020) | 7 | 4-8% | 599 | 1,010 | 19 |
 | 12 | 3,190 | 14,520 | 18,900 | 21,120 | 21,130 (2015) | 6 | 4-8% | 913 | 1,169 | 17 |
 | 13 | 3,430 | 14,520 | 17,370 | - | 20,070 (2008) | 7 | 4-6% (factories to 12%) | 873 | 1,177 | 17 |
+| 14 | 3,610 | 12,130 | 20,360 | - | 23,580 (2013) | 9 | 5-6% | 738 | 1,202 | 19 |
 
 ## What each attempt teaches
 
@@ -78,8 +79,13 @@ that repeat across attempts; then what that means for the next strategy.
    South rail + road links made no visible difference. Shops ended 30-45% abandoned (the 170-tile east
    shop block was too much); homes next to the coal plants about half abandoned. *Lesson: factory tax
    is a demand lever, not free money; keep shops near ~1/3 of homes; homes away from plants.*
+14. **Attempt 14 (23,580):** attempt 13's start with low taxes (5-6%), the airport at ~20,000 and nine
+   loans. It never collapsed (unemployment 4-7% throughout) and the airport visibly opened shop demand,
+   but after 2005 it grew only ~1,500 people a year and each step needed a loan: ~$3.80 per person.
+   *Lesson: low taxes buy stability, not speed; with light homes at ~18 people per tile the money runs
+   out near 20,000-25,000 whatever the tax rate.*
 
-## Patterns across all thirteen
+## Patterns across all fourteen
 
 1. **Population follows home land zoned early (~20 people per home tile).** The three fast attempts had
    565-650 home tiles by 2005; every other attempt had under 370 and never passed 12,000 by 2010.
@@ -120,6 +126,10 @@ that repeat across attempts; then what that means for the next strategy.
    12, 13) topped out between 7,800 and 21,000. Attempt 13 shows it directly: factory tax 9 -> 12 and
    factory demand fell from maximum to negative within two years. Attempt 11's 8% home test held for
    one year only. The debt that killed 2 and 4 came later, at 30,000+.
+14. **People per home tile never moved.** Every attempt with light homes sat at 17-20 people per tile
+   (2, 3, 4, 6, 9-14); the dense-only attempts 7 and 8 reached 26-31 but on tiny cities. Since roads,
+   power lines, pipes and plants are paid per tile, density is the one lever on cost per person that no
+   big attempt has used.
 
 ## What this means for attempt 10
 Combine attempt 4's fast start (big early zoning, low tax, early loans) with attempt 9's tax lesson,
@@ -151,3 +161,8 @@ years): taxes 4-5% everywhere until ~30,000 (controller capped at 6%), loans as 
 plants (2 and 4 used ten), shops held near a third of home tiles, an airport at ~20,000 and a stadium at
 ~25,000, and the first target simply to beat 35,690. Debt gets handled at 30,000+ by raising homes
 first. See `attempt-14/strategy.md`.
+
+## What this means for attempt 15
+Same proven layout and start, but **every home zone dense** from day one, so the same roads, lines, pipes
+and plants house more people. Taxes moderate (6%, factories <= 7%), the airport at ~20,000, police for
+land value. Success test: people per home tile above 25 by 2008. See `attempt-15/strategy.md`.

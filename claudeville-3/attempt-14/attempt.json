@@ -1,5 +1,9 @@
 {
  "attempt": 14,
- "status": "playing",
- "started": "2026-10-16"
+ "status": "failed",
+ "started": "2026-10-16",
+ "ended": "Jul 2013",
+ "peak": 23580,
+ "reason": "Never collapsed (unemployment 4-7%) but grew ~1,500/yr after 2005; 9 loans, ~$3.80 per person",
+ "timelapse": "recording-timelapse/timelapse.mp4"
 }
