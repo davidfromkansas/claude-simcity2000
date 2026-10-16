@@ -1,0 +1,4 @@
+# Dec 2010: factory land short (29 empty, demand 2,000), unemployment 16%: the empty north home cell x86-91 y1-6 becomes factories (homes y8-13 next to it)
+zone i 87 1 91 6
+zone i 86 1 86 3
+zone i 86 5 86 6
