@@ -5,7 +5,7 @@ factories at max for years at 6-8%), and every attempt ran out of money. Tax inc
 1.29 x population x rate, so the rate is the only lever on income per person.
 
 Rule, per zone (homes, shops, factories), once the city has 3,000+ people:
-  demand >= 1800                    -> rate + 1 (up to MAX)
+  demand >= 1000                    -> rate + 1 (up to MAX)  (1800 in attempt 13 until Dec 2006: homes sat at 6% with demand 500-1500 while the budget ran -$818/yr)
   demand <= -300 at two checks in a row -> rate - 1 (down to MIN)
 One step per zone per check. Changes are made in the game's tax window, verified from the save, and
 logged to the dashboard. Enabled per attempt with "taxctl": true in run.json; play.sh runs it each step.
@@ -37,7 +37,7 @@ def decide(m, state):
         d, r = m["demand"][k], m["tax"][k]
         neg = state.get(k, 0) + 1 if d <= -300 else 0
         state[k] = neg
-        if d >= 1800 and r < MAX:
+        if d >= 1000 and r < MAX:
             moves[k] = 1
         elif neg >= 2 and r > MIN:
             moves[k] = -1
