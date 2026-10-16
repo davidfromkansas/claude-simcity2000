@@ -1,0 +1,4 @@
+# power for the east factory strip via the built block-2 factories (empty zones do not carry power); join the water main
+line 108 45 109 45
+pipe 74 33 74 39
+pipe 75 38 99 38

@@ -21,6 +21,50 @@
    "jammed": 0,
    "bonds": 1
   },
-  "end": null
+  "end": {
+   "date": "Feb 2003",
+   "population": 1660,
+   "money": 8260,
+   "unemployment": 2,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "Growing on schedule's heels",
+  "moves": [
+   "Loan #3",
+   "Block 3",
+   "Pump field"
+  ],
+  "happened": "Block 3, a 19-pump field and a home row took the city from 3,060 to 6,100; all three demand bars reached maximum.",
+  "watching": "Land vs demand",
+  "start": {
+   "date": "Feb 2006",
+   "population": 4830,
+   "money": 9303,
+   "unemployment": 5,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 6360,
+   "money": 8097,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 34,
+   "jammed": 0,
+   "bonds": 3
+  }
  }
 ]
