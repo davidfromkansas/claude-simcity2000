@@ -27,7 +27,7 @@ zone i 78 91 83 96
 zone i 86 91 91 96
 zone R 94 91 99 96
 zone i 102 91 107 96
-fire 102 77
+# fire 102 77 dropped in attempt 18: shops had grown there (block 2 fire stations cover the area)
 pipe 74 75 74 94
 pipe 75 80 91 80
 pipe 99 80 107 80
