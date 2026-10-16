@@ -106,3 +106,24 @@ y64-75, south factory rows). The industry cap was not binding: ~7,400 factory wo
 rail link. **Rule: every factory cell must have homes within a few road tiles (mixed cells), never a
 factory-only district; check new land with trips.py.** Land value only gates dense upgrades (1x1 needs 32,
 2x2 needs 96, 3x3 needs 192). Tax per year = rate x population / 75.
+
+
+## Land value, building size and money (Oct 2026, after attempt 18)
+From the sc2kfix source, the DOS executable's population table, PPP and a regression on our own saves:
+- **Building levels**: 1x1 (weight 1, ~19 displayed people), small 2x2 (8, ~140), large 2x2 (12, ~200), 3x3 tower
+  (36, ~700). Dense home zones upgrade at land value **32** (small 2x2), **96** (large 2x2), **192** (tower); light
+  zones never upgrade. Shops/factories use the same weights for jobs. Each upgrade roll succeeds with chance
+  `3*(demand+2000)/(level+1)/32768`, **only after a successful trip**: with home demand around -1,300 (our 17-18
+  plateau) almost nothing upgrades.
+- **Land value** (monthly scan, per 2x2 tiles, 0-255): per tile in each 4x4 block **trees/small park +20, big park
+  +40, water +12, hill +12, empty +4, pipe +4, rubble -20**; then lowered by pollution (~-0.57 per unit), crime
+  (~-0.36) and distance from the city centre (~-0.37 per tile). Our homes sit at ~77-81; shoreline cells ~165; we had
+  almost no trees or parks in housing blocks.
+- **Recreation caps**: zoo/stadium +16,000 home cap each, marina +9,000, **big park +3,000** (cheap).
+- **Money**: tax = rate x population / 75; land value does not affect tax. Running costs are small; **loan interest
+  dominates**. Ordinances: sales/income tax +1% revenue for -1% demand; gambling +2% shop revenue.
+- **Power** ($/tile powered): coal 5.7, oil 8.6, gas 11.4, nuclear 8.4, **microwave 4.9 (on our map from 2028)**;
+  plants last 50 years.
+- **Ranked changes**: 1) jobs first so home demand stays positive (upgrades need it); 2) waterfront tower districts
+  near the centre with trees/parks in every block, no industry/plants nearby; 3) big parks, marinas, zoos for the
+  caps; 4) no more loans than needed; 5) less pollution near homes (buses, microwave in 2028).

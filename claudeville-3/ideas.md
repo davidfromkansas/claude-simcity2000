@@ -33,3 +33,11 @@ Every new strategy picks from here, not only from the last post-mortem. Mark eac
 
 ## Risk
 20. **Fire stations near every plant and dense district**; avoid a disaster wiping a grown city. *partly*
+
+## From the land-value research (after attempt 18)
+21. **Trees inside every home block** (2-4 tiles of each 4x4 area): the cheapest land value there is. *untried*
+22. **Big parks** for +3,000 home cap and +40 land value per tile. *untried*
+23. **Keep home demand positive** (jobs first) - upgrades to 2x2/3x3 are rolled on demand+2000. *untried as a rule*
+24. **Waterfront tower district** near the centre: dense homes on the river bank + trees, no industry within ~10
+    tiles. *untried*
+25. **Microwave plant in 2028** (this map's tech year). *untried*
