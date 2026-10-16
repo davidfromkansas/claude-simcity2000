@@ -1,0 +1,92 @@
+[
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "Fast start",
+  "moves": [
+   "Loan #2"
+  ],
+  "happened": "1,850 by December; loan #2 allowed in December.",
+  "watching": "Shop land",
+  "start": {
+   "date": "Feb 2001",
+   "population": 500,
+   "money": 3661,
+   "unemployment": 3,
+   "watered_pct": 82,
+   "powered_pct": 100,
+   "abandoned": 3,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Apr 2002",
+   "population": 2360,
+   "money": 811,
+   "unemployment": 7,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 14,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Blocks 3 + 4",
+  "moves": [
+   "Blocks 3 + 4",
+   "Coal #2"
+  ],
+  "happened": "Blocks 3+4 and coal #2; growth to 6,130 by mid-2003.",
+  "watching": "Water",
+  "start": {
+   "date": "Apr 2002",
+   "population": 2360,
+   "money": 811,
+   "unemployment": 7,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 14,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2003",
+   "population": 4880,
+   "money": -97,
+   "unemployment": 4,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 23,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "Seaport and links",
+  "moves": [
+   "Loan #3",
+   "Seaport + pumps",
+   "East block",
+   "East road link"
+  ],
+  "happened": "7,300 by December; water ran out; loan #3 for the seaport, 19 pumps, the east block and the east road link.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2003",
+   "population": 4880,
+   "money": -97,
+   "unemployment": 4,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 23,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": null
+ }
+]
