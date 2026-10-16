@@ -87,6 +87,72 @@
    "jammed": 0,
    "bonds": 1
   },
+  "end": {
+   "date": "Feb 2004",
+   "population": 7770,
+   "money": -88,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "10,000 passed",
+  "moves": [],
+  "happened": "Growth to 10,580 by early 2005.",
+  "watching": "Land",
+  "start": {
+   "date": "Feb 2004",
+   "population": 7770,
+   "money": -88,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 10580,
+   "money": -906,
+   "unemployment": 5,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 71,
+   "jammed": 0,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "District 5, power, zoo",
+  "moves": [
+   "Loan #4",
+   "District 5",
+   "Loan #5",
+   "Coal plant",
+   "Zoo"
+  ],
+  "happened": "Loan #4: district 5 + gas plant; loan #5: coal plant, 16 pumps, zoo. 12,130 by December.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2005",
+   "population": 10580,
+   "money": -906,
+   "unemployment": 5,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 71,
+   "jammed": 0,
+   "bonds": 3
+  },
   "end": null
  }
 ]
