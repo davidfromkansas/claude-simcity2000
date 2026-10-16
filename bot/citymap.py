@@ -1,7 +1,7 @@
 """Tile classes for a SimCity 2000 save, shared by audit.py, build.py and stall.py.
 
 XBLD codes: 0x01-0x04 rubble, 0x05-0x0D trees/parks, 0x0E-0x1C power lines, 0x1D-0x2B roads,
-0x43-0x46 road/power crossings, 0x70+ buildings, 0xC9-0xD2 power plants, 0xD3 fire station, 0xDC pump.
+0x43-0x46 road/power crossings, 0x70+ buildings, 0xC9-0xD1 power plants, 0xD2 police, 0xD3 fire station, 0xDC pump.
 XZON low nibble: 1/2 light/dense homes, 3/4 shops, 5/6 factories.
 """
 import os
@@ -36,7 +36,7 @@ def is_rubble(t):
 
 
 def is_plant(t):
-    return 0xC9 <= t <= 0xD2
+    return 0xC9 <= t <= 0xD1          # 0xD2 is a police station, 0xD3 a fire station
 
 
 def is_building(t):

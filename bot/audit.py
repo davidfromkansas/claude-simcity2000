@@ -36,7 +36,7 @@ def audit(path=None, city=None):
 
     # 2. power reaches every zone area
     reach = c.power_reach()
-    plants = sum(1 for x, y in c.tiles() if 0xC9 <= c.t(x, y) <= 0xD2)
+    plants = sum(1 for x, y in c.tiles() if 0xC9 <= c.t(x, y) <= 0xD1)
     if not plants:
         add("FAIL", "no power plant")
     regions = c.zone_regions()
