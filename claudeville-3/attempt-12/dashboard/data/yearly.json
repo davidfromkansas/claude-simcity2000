@@ -62,5 +62,75 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Loan #2 a year early",
+  "moves": [
+   "Loan #2",
+   "Blocks 3 + 4",
+   "Coal plant #2 + 5 pumps"
+  ],
+  "happened": "Loan #2 allowed in April: blocks 3 + 4 and a second coal plant before any shortage. 4,620 by Feb 2003.",
+  "watching": "Water, shop land",
+  "start": {
+   "date": "Apr 2002",
+   "population": 2440,
+   "money": 3077,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 10,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2003",
+   "population": 4620,
+   "money": 31,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "milestone",
+  "title": "On the curve",
+  "moves": [
+   "Loan #3",
+   "Seaport",
+   "19 riverbank pumps",
+   "East shop block",
+   "Taxes 7/7/7"
+  ],
+  "happened": "6,090 by July, on the target curve for the first time in any attempt. Loan #3: seaport, 19 pumps, east shop block. Taxes 7/7/7.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2003",
+   "population": 4620,
+   "money": 31,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 8560,
+   "money": 979,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 36,
+   "jammed": 0,
+   "bonds": 3
+  }
  }
 ]
