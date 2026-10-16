@@ -153,6 +153,100 @@
    "jammed": 0,
    "bonds": 3
   },
+  "end": {
+   "date": "Feb 2006",
+   "population": 12640,
+   "money": 790,
+   "unemployment": 4,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "Steady growth",
+  "moves": [],
+  "happened": "14,780 by December; unemployment 5%.",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2006",
+   "population": 12640,
+   "money": 790,
+   "unemployment": 4,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 15260,
+   "money": -723,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 79,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "good",
+  "title": "Steady growth",
+  "moves": [],
+  "happened": "16,800 by December; cash below zero.",
+  "watching": "Land, cash",
+  "start": {
+   "date": "Feb 2007",
+   "population": 15260,
+   "money": -723,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 79,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 17080,
+   "money": -2050,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 6,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "18,000",
+  "moves": [
+   "Loan #6",
+   "District 6",
+   "Coal plant"
+  ],
+  "happened": "18,040 by December. Loan #6: district 6 (dense homes) and a coal plant.",
+  "watching": "Airport",
+  "start": {
+   "date": "Feb 2008",
+   "population": 17080,
+   "money": -2050,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 6,
+   "bonds": 5
+  },
   "end": null
  }
 ]
