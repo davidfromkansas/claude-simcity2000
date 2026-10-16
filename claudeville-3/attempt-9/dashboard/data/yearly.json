@@ -1,0 +1,35 @@
+[
+ {
+  "year": 2001,
+  "tone": "steady",
+  "title": "Module 1",
+  "moves": [
+   "Module 1",
+   "Sales tax and parking fines"
+  ],
+  "happened": "Module 1 built from one checked plan; 850 people by December. Homes filled, factories partly abandoned as factory demand turned negative.",
+  "watching": "Home demand at max",
+  "start": {
+   "date": "Feb 2001",
+   "population": 350,
+   "money": 9069,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2002",
+   "population": 910,
+   "money": 8699,
+   "unemployment": 13,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 17,
+   "jammed": 0,
+   "bonds": 1
+  }
+ }
+]
