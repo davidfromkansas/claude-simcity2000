@@ -561,5 +561,69 @@
    "jammed": 0,
    "bonds": 12
   }
+ },
+ {
+  "year": 2018,
+  "tone": "good",
+  "title": "39,540",
+  "moves": [
+   "5 lake pumps"
+  ],
+  "happened": "Growth back at ~+2,500 a year after the south-east district; water kept short with 5 more lake pumps.",
+  "watching": "Shop land and the home cap",
+  "start": {
+   "date": "Feb 2018",
+   "population": 37460,
+   "money": 5057,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 56,
+   "jammed": 0,
+   "bonds": 12
+  },
+  "end": {
+   "date": "Feb 2019",
+   "population": 40650,
+   "money": 2471,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 63,
+   "jammed": 0,
+   "bonds": 12
+  }
+ },
+ {
+  "year": 2019,
+  "tone": "good",
+  "title": "41,270 -> 42,220",
+  "moves": [
+   "No builds"
+  ],
+  "happened": "Steady growth; budget about -$1,700 a year with 12 loans.",
+  "watching": "Shops and the home cap",
+  "start": {
+   "date": "Feb 2019",
+   "population": 40650,
+   "money": 2471,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 63,
+   "jammed": 0,
+   "bonds": 12
+  },
+  "end": {
+   "date": "Mar 2020",
+   "population": 42220,
+   "money": 800,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 40,
+   "jammed": 10,
+   "bonds": 12
+  }
  }
 ]
