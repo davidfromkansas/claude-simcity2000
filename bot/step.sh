@@ -13,6 +13,7 @@ import sys;sys.path.insert(0,'.');import sc2parse as p;m=p.parse(p.SAVE);g=m['gr
 print('spare water/power',g['water_pct'][:1],g['power_pct'][:1],'unpowered',sum(1 for i in range(16384) if 0x70<=b[i]<0xC0 and not bt[i]&64),'dry',sum(1 for i in range(16384) if 0x70<=b[i]<0xC0 and not bt[i]&16),'rubble',sum(1 for v in b if 1<=v<=4))"
 python3 -I audit.py | grep -v "^OK"
 python3 -I stall.py
+python3 -I pace.py
 echo "paused: $(./sc paused)"
 } 2>&1 | grep -v -e xdo -e "Can't open display" | tee $out
 shot=$(python3 -I record_step.py $out | sed -n 's/^BUDGET_SHOT //p')

@@ -14,3 +14,4 @@ One post-mortem per failed attempt. Each one is also kept in its attempt folder
 | Claudeville 3 | 7 | Missed: debt-free but only 3,850 people by 2010; growth from savings too slow | [claudeville-3-attempt-7.md](claudeville-3-attempt-7.md) |
 | Claudeville 3 | 8 | Missed: stalled near 8,000 in 2014; dense-only zoning slow, loan #2 did not pay back | [claudeville-3-attempt-8.md](claudeville-3-attempt-8.md) |
 | Claudeville 3 | 9 | Missed: stuck near 7,500 by 2022; land filled faster than money; plant burned (no fire station) | [claudeville-3-attempt-9.md](claudeville-3-attempt-9.md) |
+| Claudeville 3 | 10 | Missed: stalled near 14,000 by 2018; too little land early, then loans outgrew taxes | [claudeville-3-attempt-10.md](claudeville-3-attempt-10.md) |

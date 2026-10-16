@@ -1,0 +1,16 @@
+# Attempt 10 block 5 (Dec 2012, loan #5): east edge. Shops x117-121 y21-54 (demand at max, shops were
+# only 135 tiles), homes x123-125 y21-54 next to them, road x122, power column x116 fed from the
+# built factories across road x115, line x126 for the homes joined along y56; pipes extended east.
+road 116 20 122 20
+road 122 21 122 55
+road 116 55 122 55
+line 115 30 116 30
+line 116 21 116 56
+line 117 56 126 56
+line 126 21 126 55
+zone c 117 21 121 54
+zone r 123 21 125 54
+pipe 115 23 125 23
+pipe 115 30 125 30
+pipe 115 38 125 38
+pipe 115 51 125 51

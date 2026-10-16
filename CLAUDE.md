@@ -75,7 +75,9 @@ Toolbar is the left column (x 10-80).
 - `bot/audit.py` city check from the save (neighbor link, power reach through lines/buildings, pumps joined to pipes,
   road access, spare capacity). Any FAIL = fix before running the game. `bot/test_audit.py` proves it catches attempt 5's mistakes.
 - `bot/stall.py` stall alarm: demand but no growth for 6 game months -> diagnosis of sample tiles.
-- `bot/step.sh [secs]` = run ~3-4 months + save + health + audit + stall. Use it for every check step.
+- `bot/step.sh [secs]` = run ~3-4 months + save + health + audit + stall + pace. Use it for every check step.
+- `bot/pace.py` (after attempt 10): compares population and zoned home tiles with the attempt's `pace.json`
+  target curve; `play.sh` stops when the city is under 70% of it (act, then `PACE_OK=1 bash play.sh N` to run on).
 
 ## Post-mortem rule (from the user)
 Every post-mortem must split causes into CONTROL failures (the agent could not carry out its own plan: misplaced or

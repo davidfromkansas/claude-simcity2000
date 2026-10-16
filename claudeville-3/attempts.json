@@ -55,7 +55,8 @@
  },
  {
   "attempt": 10,
-  "status": "playing",
-  "reason": ""
+  "status": "failed",
+  "reason": "Stalled near 14,000 by 2018: too little land in the first five years, then loan payments outgrew tax income",
+  "timelapse": "recording-timelapse/timelapse.mp4"
  }
 ]
