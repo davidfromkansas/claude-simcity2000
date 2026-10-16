@@ -31,5 +31,39 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2006,
+  "tone": "steady",
+  "title": "Lower taxes, more land",
+  "moves": [
+   "Taxes 5/5/4",
+   "Factory squares east",
+   "South homes"
+  ],
+  "happened": "Taxes cut to 5/5/4 (attempt 2 began at 4%). Factory and home land filled up, so new factory squares, an east factory strip and south homes were zoned.",
+  "watching": "Land filling vs demand",
+  "start": {
+   "date": "Feb 2006",
+   "population": 3240,
+   "money": 3798,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 32,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 4060,
+   "money": 3600,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 26,
+   "jammed": 0,
+   "bonds": 1
+  }
  }
 ]

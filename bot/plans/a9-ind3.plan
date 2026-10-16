@@ -1,0 +1,9 @@
+# factory strip east (x110-114, y21-40): factory land full, demand at max
+road 109 20 115 20
+road 109 41 115 41
+road 115 21 115 40
+line 108 30 109 30
+line 109 21 109 40
+zone i 110 21 114 40
+pipe 108 23 114 23
+pipe 108 38 114 38
