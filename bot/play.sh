@@ -15,7 +15,6 @@ for ((i=1;i<=n;i++)); do
   echo "$out" | grep -q "buildings without power" && reason="buildings without power"
   echo "$out" | grep -q "^paused: no" && reason="game was not paused"
   echo "$out" | grep -q "^PACE: behind" && [ -z "$PACE_OK" ] && reason="behind the strategy pace (act, then PACE_OK=1 to run on)"
-  echo "$out" | grep -q "^PACE: behind" && [ -z "$PACE_OK" ] && reason="behind the strategy pace (see PACE line; set PACE_OK=1 to run on after acting)"
   [ -n "$prev_rubble" ] && [ -n "$rubble" ] && [ "$rubble" -gt "$prev_rubble" ] && reason="new rubble ($prev_rubble -> $rubble): fire or disaster"
   prev_rubble=$rubble
   if [ -n "$reason" ]; then echo "PLAY STOPPED after step $i: $reason"; exit 1; fi

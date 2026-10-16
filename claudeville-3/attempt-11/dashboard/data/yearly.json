@@ -32,5 +32,190 @@
    "jammed": 0,
    "bonds": 1
   }
+ },
+ {
+  "year": 2001,
+  "tone": "steady",
+  "title": "Jobs first",
+  "moves": [
+   "Factory tax 4 -> 3"
+  ],
+  "happened": "Day one's land filled slowly at first: factories and shops came before homes. 1,510 people by Feb 2002.",
+  "watching": "Second loan",
+  "start": {
+   "date": "Feb 2001",
+   "population": 480,
+   "money": 3662,
+   "unemployment": 3,
+   "watered_pct": 82,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2002",
+   "population": 1510,
+   "money": 3063,
+   "unemployment": 14,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 24,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Growth picks up",
+  "moves": [],
+  "happened": "2,970 people by Feb 2003 with no changes: the day-one land kept filling.",
+  "watching": "Credit rating for loan #2",
+  "start": {
+   "date": "Feb 2002",
+   "population": 1510,
+   "money": 3063,
+   "unemployment": 14,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 24,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2003",
+   "population": 2970,
+   "money": 2524,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 11,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "Blocks 3 and 4",
+  "moves": [
+   "Loan #2",
+   "Blocks 3 + 4",
+   "Gas plant + 5 pumps",
+   "Shop/factory tax 4 -> 6"
+  ],
+  "happened": "Loan #2 (now allowed) paid for blocks 3 and 4: 683 home tiles zoned. Power and water ran out by December; a gas plant and 5 pumps were all the cash allowed.",
+  "watching": "Power and water",
+  "start": {
+   "date": "Feb 2003",
+   "population": 2970,
+   "money": 2524,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 11,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 5660,
+   "money": 312,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "Out of power, then a boom",
+  "moves": [
+   "Loan #3",
+   "Coal plant + 19 pumps"
+  ],
+  "happened": "Shortage again by July (51 unpowered); loan #3 paid for a coal plant and 19 pumps. Population 8,340 by December.",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2004",
+   "population": 5660,
+   "money": 312,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 8850,
+   "money": 2806,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 30,
+   "jammed": 0,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "10,000 passed",
+  "moves": [],
+  "happened": "No changes: the land filled. 10,330 by September; all three demand bars at maximum.",
+  "watching": "Land running out",
+  "start": {
+   "date": "Feb 2005",
+   "population": 8850,
+   "money": 2806,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 30,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2006",
+   "population": 10840,
+   "money": 1987,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 3,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "milestone",
+  "title": "11,500 and full",
+  "moves": [
+   "Loan #4",
+   "District 5: 252 home tiles",
+   "Third coal plant",
+   "Taxes 5/7/7"
+  ],
+  "happened": "Land full by December (21 empty home tiles). Loan #4 for district 5 and a third coal plant; taxes 5/7/7.",
+  "watching": "Zoo before 15,000",
+  "start": {
+   "date": "Feb 2006",
+   "population": 10840,
+   "money": 1987,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 3,
+   "bonds": 3
+  },
+  "end": null
  }
 ]

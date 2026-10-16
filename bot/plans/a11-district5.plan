@@ -1,0 +1,37 @@
+# Attempt 11 district 5 (Dec 2006, loan #4): south of road y76, same 8-column pitch as block 4.
+# Cells (6x6): rows A y77-82 / B y84-89 / C y91-96; columns 1 x78-83 / 2 x86-91 / 3 x94-99 / 4 x102-107.
+# Homes 1A 2A 1B 2B 4B 3C 4C; shops 4A 3B; factories 1C 2C; 3A left empty (pond). Fire station in 4A.
+# River at x76-77 y93-96: west road stops at y90, line x77 at y92.
+# Third power plant (coal) next to the other two.
+road 76 77 76 90
+road 77 83 108 83
+road 77 90 108 90
+road 77 97 108 97
+road 84 77 84 96
+road 92 77 92 96
+road 100 77 100 96
+road 108 77 108 96
+line 77 77 77 92
+line 85 77 85 96
+line 93 77 93 96
+line 101 77 101 96
+zone r 78 77 83 82
+zone r 86 77 91 82
+zone c 102 77 107 82
+zone r 78 84 83 89
+zone r 86 84 91 89
+zone c 94 84 99 89
+zone r 102 84 107 89
+zone i 78 91 83 96
+zone i 86 91 91 96
+zone r 94 91 99 96
+zone r 102 91 107 96
+fire 102 77
+pipe 74 75 74 94
+pipe 75 80 91 80
+pipe 99 80 107 80
+pipe 107 81 107 86
+pipe 75 87 107 87
+pipe 78 94 107 94
+pipe 107 88 107 93
+coal 60 60

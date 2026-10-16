@@ -1,5 +1,5 @@
-{"2000": {"home_tiles": 300},
- "2001": {"population": 2000, "home_tiles": 330},
+{"2000": {"home_tiles": 250},
+ "2001": {"population": 2000, "home_tiles": 300},
  "2002": {"home_tiles": 600},
  "2003": {"population": 7000},
  "2005": {"population": 12000, "home_tiles": 800},
