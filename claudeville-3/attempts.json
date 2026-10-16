@@ -70,5 +70,10 @@
   "status": "failed",
   "reason": "Fastest start (12,030 by 2004), then flat at ~21,000 from 2012: jobs capped (no airport), out of land and money at ~$2.90 per person",
   "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 13,
+  "status": "playing",
+  "reason": ""
  }
 ]
