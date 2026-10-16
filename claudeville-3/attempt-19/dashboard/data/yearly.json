@@ -528,5 +528,38 @@
    "jammed": 0,
    "bonds": 11
   }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "Growth restarts: 36,410",
+  "moves": [
+   "Loan #12: SE district + east homes",
+   "Second seaport"
+  ],
+  "happened": "Loan #12 paid for a south-east checkerboard district and east-edge homes; second seaport.",
+  "watching": "Water",
+  "start": {
+   "date": "Feb 2017",
+   "population": 35390,
+   "money": 5228,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 11
+  },
+  "end": {
+   "date": "Feb 2018",
+   "population": 37460,
+   "money": 5057,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 56,
+   "jammed": 0,
+   "bonds": 12
+  }
  }
 ]
