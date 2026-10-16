@@ -66,5 +66,37 @@
    "jammed": 0,
    "bonds": 3
   }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Past 10,000",
+  "moves": [
+   "Block 4"
+  ],
+  "happened": "Block 4 from cash took the city past 10,000 in May 2009 with all demand at maximum. Cash ran out by 2010: interest about twice property tax.",
+  "watching": "Tax income vs interest",
+  "start": {
+   "date": "Feb 2009",
+   "population": 9630,
+   "money": 1355,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 49,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 11220,
+   "money": 445,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 47,
+   "jammed": 0,
+   "bonds": 3
+  }
  }
 ]
