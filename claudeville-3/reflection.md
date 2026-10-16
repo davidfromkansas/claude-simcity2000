@@ -1,4 +1,4 @@
-# Reflection on attempts 1-15 (all weighted equally)
+# Reflection on attempts 1-16 (all weighted equally)
 
 Updated before every new attempt (process rule). Each attempt gets its own entry; then the patterns
 that repeat across attempts; then what that means for the next strategy.
@@ -22,6 +22,7 @@ that repeat across attempts; then what that means for the next strategy.
 | 13 | 3,430 | 14,520 | 17,370 | - | 20,070 (2008) | 7 | 4-6% (factories to 12%) | 873 | 1,177 | 17 |
 | 14 | 3,610 | 12,130 | 20,360 | - | 23,580 (2013) | 9 | 5-6% | 738 | 1,202 | 19 |
 | 15 | 4,330 | 13,240 | 17,750 | - | 18,260 (2011) | 6 | 4-7% | 568 (dense) | 827 (dense) | 27 |
+| 16 | 4,520 | 13,730 | 22,030 | - | 24,870 (2014) | 9 | 4% homes | 675 (dense) | 1,161 (dense) | 19 |
 
 ## What each attempt teaches
 
@@ -89,8 +90,13 @@ that repeat across attempts; then what that means for the next strategy.
    17-20), the same city on ~40% less home land - and the same ~18,000 ceiling, with factory land empty at
    maximum demand even after a second seaport. *Lesson (from the research that followed): the stuck
    factory land failed the game's trip test.*
+16. **Attempt 16 (24,870):** attempt 15 plus the trip rule (factories only next to homes). It worked:
+   factory land filled wherever it touched homes, and the city passed 18,000 to 24,870 - the best since
+   attempt 4. Then too few jobs for the dense homes (unemployment 14-20%, 300-480 empty home tiles),
+   homes taxed at 4% the whole game, no police, land value ~21, and nine loans. *Lesson: job land must
+   lead home land with dense homes; police and land value were never built.*
 
-## Patterns across all fifteen
+## Patterns across all sixteen
 
 1. **Population follows home land zoned early (~20 people per home tile).** The three fast attempts had
    565-650 home tiles by 2005; every other attempt had under 370 and never passed 12,000 by 2010.
@@ -141,7 +147,12 @@ that repeat across attempts; then what that means for the next strategy.
    success, home/shop land 65-100%. Every stuck area was a factory-only district (the west strip by the
    river, the south factory rows) - zoned there because it was empty land, and abandoned factories and
    rising unemployment followed. Attempts 2 and 4, the biggest cities, used thin mixed bands (attempt 1's
-   lesson). The industry cap (10,000 workers per crane or link) was never reached.
+   lesson). The industry cap (10,000 workers per crane or link) was never reached. Attempt 16 confirmed
+   the fix: 24,870, the best since attempt 4.
+16. **People per zoned tile of any kind stays ~10.** Dense homes raise people per home tile (27 vs 18),
+   but they need more job land, so total land per person barely moves (attempts 14 and 16 both ~10 people
+   per zoned tile). Only bigger buildings - which need land value 96+ - would change that; no attempt has
+   built police, parks or a clean waterfront district to get there (land value 14-21).
 
 ## What this means for attempt 10
 Combine attempt 4's fast start (big early zoning, low tax, early loans) with attempt 9's tax lesson,
@@ -183,3 +194,8 @@ land value. Success test: people per home tile above 25 by 2008. See `attempt-15
 Keep attempt 15's start and dense homes; **never zone factory-only land**: every factory cell sits next to
 home cells (mixed district grids), checked with `trips.py` after each build and at every step (the loop
 stops on weak trips). With factories filling, jobs keep pace with dense homes. See `attempt-16/strategy.md`.
+
+## What this means for attempt 17
+Attempt 16's plan with three changes: job-heavier districts (three home cells per district become job cells,
+each still next to homes), police in each district from 2002, and homes taxed at 6% minimum (unemployment,
+not tax, held homes back). See `attempt-17/strategy.md`.

@@ -1,0 +1,13 @@
+{"2000": {"home_tiles": 250},
+ "2001": {"population": 1400},
+ "2003": {"population": 5000, "home_tiles": 650},
+ "2005": {"population": 12000},
+ "2006": {"home_tiles": 900},
+ "2009": {"home_tiles": 1100},
+ "2010": {"population": 22000},
+ "2012": {"home_tiles": 1400},
+ "2015": {"population": 32000},
+ "2020": {"population": 42000},
+ "2030": {"population": 60000},
+ "2040": {"population": 80000},
+ "2050": {"population": 100000}}

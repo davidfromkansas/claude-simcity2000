@@ -53,6 +53,8 @@ def main():
     state = json.load(open(STATE)) if os.path.exists(STATE) else {}
     global MAX
     MAX = run.get("taxmax", MAX)         # attempt 14: a ceiling per attempt (12% factory tax broke attempt 13)
+    global MIN
+    MIN = run.get("taxmin", MIN)         # attempt 17: homes sat at 4% all of attempt 16 while unemployment, not tax, held them back
     moves = decide(m, state)
     json.dump(state, open(STATE, "w"))
     if not moves:
