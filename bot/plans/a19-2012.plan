@@ -1,0 +1,13 @@
+# Attempt 19 Jul 2012: shop land short (16 empty, demand 1,312). Dense shop cells: around the pond x95-97 y79-81
+# (line x93 already there) and x102-107 y110-114 below the 2011 shop block (line x101 across road y109, road y115,
+# road x108, pipe y112 from the x96 pipe).
+zone C 94 77 99 78
+zone C 94 79 94 81
+zone C 98 79 99 81
+zone C 94 82 99 82
+line 101 109 101 114
+road 101 115 108 115
+road 108 110 108 114
+zone C 102 110 107 114
+pipe 97 112 107 112
+pipe 96 109 96 111

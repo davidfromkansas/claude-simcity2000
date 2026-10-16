@@ -21,6 +21,7 @@ import sc2parse as p  # noqa: E402
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = "/tmp/sc/taxctl.json"
 MIN, MAX = 5, 12
+KMAX = {}
 ARROW_X = {"res": 249, "com": 327, "ind": 397}
 UP_Y, DOWN_Y = 302, 311
 
@@ -39,7 +40,7 @@ def decide(m, state):
         state[k] = neg
         if r < MIN:                      # raise to the floor (attempt 17: homes 6% minimum)
             moves[k] = 1
-        elif d >= 1000 and r < MAX:
+        elif d >= 1000 and r < KMAX.get(k, MAX):
             moves[k] = 1
         elif neg >= 2 and r > MIN:
             moves[k] = -1
@@ -56,7 +57,9 @@ def main():
     global MAX
     MAX = run.get("taxmax", MAX)         # attempt 14: a ceiling per attempt (12% factory tax broke attempt 13)
     global MIN
-    MIN = run.get("taxmin", MIN)         # attempt 17: homes sat at 4% all of attempt 16 while unemployment, not tax, held them back
+    MIN = run.get("taxmin", MIN)
+    global KMAX                          # attempt 19: per-zone ceilings (factory demand fell to -800 at 10%)
+    KMAX = {k: run["taxmax_" + k] for k in ("res", "com", "ind") if "taxmax_" + k in run}         # attempt 17: homes sat at 4% all of attempt 16 while unemployment, not tax, held them back
     if sys.argv[1:2] == ["set"]:          # taxctl.py set R C I : set rates directly (start of an attempt)
         want = dict(zip(("res", "com", "ind"), map(int, sys.argv[2:5])))
         moves = {k: want[k] - m["tax"][k] for k in want if want[k] != m["tax"][k]}
