@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claudeville 3 Attempt</title>
+<meta name="description" content="Claude plays SimCity 2000: one attempt at 100,000 people in 50 years.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{
+  color-scheme: light;
+  --bg:#EEF1F0; --surface:#FFFFFF; --border:#D5DCD9; --line:#E2E7E5;
+  --ink:#14211F; --ink-2:#4A5A56; --muted:#6B7A76;
+  --hero:#14211F; --hero-ink:#EEF1F0; --hero-2:#C9D4D0; --hero-track:#2C3D3A;
+  --accent:#17604A; --accent-2:#C2410C; --hot:#FFB27A; --pace:#9AA6A2;
+  --good-bg:#DCEFE6; --good:#0E3F30; --warn-bg:#FFF3C4; --warn:#5C4300; --bad-bg:#FFD9CC; --bad:#7A1D06;
+  --mile-bg:#E4DCF7; --mile:#3B2370; --run-bg:#FFE6D3; --run:#7A2A06;
+  --s1:#17604A; --s2:#C2410C; --s3:#3B6FB6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#0F1716; --surface:#16211F; --border:#2A3836; --line:#22302E;
+    --ink:#E8EEEC; --ink-2:#AEBDB9; --muted:#8A9B97;
+    --hero:#1D2C29; --hero-ink:#EEF1F0; --hero-2:#B5C4C0; --hero-track:#33443F;
+    --accent:#4FB892; --accent-2:#F07A45; --hot:#FFB27A; --pace:#6E7D79;
+    --good-bg:#173A2E; --good:#9FE0C5; --warn-bg:#3D3313; --warn:#F2D27A; --bad-bg:#45231A; --bad:#FFB49C;
+    --mile-bg:#2E2546; --mile:#D2C3FA; --run-bg:#43291A; --run:#FFC9A3;
+    --s1:#4FB892; --s2:#F07A45; --s3:#7EA8E8;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#0F1716; --surface:#16211F; --border:#2A3836; --line:#22302E;
+  --ink:#E8EEEC; --ink-2:#AEBDB9; --muted:#8A9B97;
+  --hero:#1D2C29; --hero-ink:#EEF1F0; --hero-2:#B5C4C0; --hero-track:#33443F;
+  --accent:#4FB892; --accent-2:#F07A45; --hot:#FFB27A; --pace:#6E7D79;
+  --good-bg:#173A2E; --good:#9FE0C5; --warn-bg:#3D3313; --warn:#F2D27A; --bad-bg:#45231A; --bad:#FFB49C;
+  --mile-bg:#2E2546; --mile:#D2C3FA; --run-bg:#43291A; --run:#FFC9A3;
+  --s1:#4FB892; --s2:#F07A45; --s3:#7EA8E8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--accent)} a:hover{text-decoration-thickness:2px}
+.wrap{max-width:1240px;margin:0 auto;padding:28px 16px 64px;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;margin:0}
+h1{font-size:40px;line-height:1.05}
+h2{font-size:22px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:14px}
+header .back{font-size:14px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pill{display:inline-block;padding:4px 12px;border-radius:999px;font-size:13px;font-weight:600}
+.p-good{background:var(--good-bg);color:var(--good)} .p-warn{background:var(--warn-bg);color:var(--warn)}
+.p-bad{background:var(--bad-bg);color:var(--bad)} .p-run{background:var(--run-bg);color:var(--run)}
+.p-mile{background:var(--mile-bg);color:var(--mile)} .p-steady{background:var(--line);color:var(--ink-2)}
+button,select{font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer;min-height:44px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;min-width:0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.kpi{display:flex;flex-direction:column;gap:6px}
+.kpi .l{font-size:14px;color:var(--ink-2)} .kpi .v{font-family:"IBM Plex Mono",monospace;font-size:32px;line-height:1.1}
+.kpi .v small{font-size:17px;color:var(--ink-2)} .kpi .s{font-size:13px;color:var(--ink-2)}
+.hero{background:var(--hero);color:var(--hero-ink);border:0;grid-column:span 2}
+@media (max-width:520px){.hero{grid-column:auto}}
+.hero .l,.hero .s{color:var(--hero-2)} .hero .v{font-size:44px}
+.hero .s.hot{color:var(--hot)}
+.track{height:10px;background:var(--hero-track);border-radius:999px;overflow:hidden}
+.track i{display:block;height:100%;background:var(--hot);border-radius:999px}
+.row{display:flex;flex-wrap:wrap;gap:20px}
+.main{flex:999 1 620px;min-width:0} .side{flex:1 1 320px;min-width:0}
+.chartbox{position:relative;height:300px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--ink-2)}
+.legend span::before{content:"";display:inline-block;width:18px;height:3px;background:var(--c);margin-right:6px;vertical-align:middle}
+.legend span.dash::before{background:repeating-linear-gradient(90deg,var(--c) 0 5px,transparent 5px 9px)}
+.health{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column}
+.health li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.health .val{display:flex;align-items:center;gap:10px}
+.timeline{position:relative;height:64px;border-top:2px solid var(--ink);margin:18px 6px 4px}
+.timeline .end{position:absolute;top:8px;font-size:12px;color:var(--ink-2)}
+.timeline .ev{position:absolute;top:-9px;width:16px;height:16px;margin-left:-8px;border-radius:999px;background:var(--accent-2);border:2px solid var(--surface)}
+.timeline .lab{position:absolute;top:14px;font-size:12px;white-space:nowrap;transform:translateX(-50%)}
+.years{list-style:none;margin:0;padding:0}
+.years>li{display:flex;flex-wrap:wrap;gap:20px;padding:18px 0;border-top:1px solid var(--line)}
+.years>li:first-child{border-top:0}
+.ycol{flex:0 0 110px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.ycol .y{font-family:"IBM Plex Mono",monospace;font-size:22px}
+.ycol .d{font-size:13px;font-weight:600} .up{color:var(--accent)} .down{color:var(--accent-2)}
+.ybody{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:6px}
+.ybody h3{font-size:18px} .ybody p{margin:0}
+.ybody ul{margin:0;padding-left:18px}
+.lbl{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.ynums{flex:0 1 220px;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-2);line-height:1.7}
+.screen{width:100%;aspect-ratio:4/3;background:#000;border-radius:10px;display:block;object-fit:contain;image-rendering:pixelated}
+.controls{display:flex;gap:12px;align-items:center;margin-top:12px;flex-wrap:wrap}
+.controls input[type=range]{flex:1;min-width:140px;accent-color:var(--accent)}
+.play{width:44px;height:44px;border-radius:999px;border:0;background:var(--ink);color:var(--bg);display:inline-flex;align-items:center;justify-content:center;padding:0}
+.meta{font-size:13px;color:var(--ink-2);font-family:"IBM Plex Mono",monospace}
+.vids{display:flex;flex-direction:column;gap:12px}
+.vids a.v{display:flex;justify-content:space-between;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--ink)}
+video{width:100%;border-radius:10px;background:#000}
+.chips{display:flex;gap:8px;margin:0 0 10px}
+.chips button{font:inherit;font-size:13px;padding:4px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink-2);cursor:pointer}
+.chips button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.feed li.commentary .t{font-style:italic}
+.feed{list-style:none;margin:0;padding:0;max-height:560px;overflow:auto}
+.feed li{display:flex;flex-wrap:wrap;gap:6px 14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.feed .dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-2);flex:0 0 90px}
+.feed .k{flex:0 0 76px;font-weight:600;color:var(--accent);font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+.feed .t{flex:1 1 300px;min-width:0}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.charts .card h3{font-size:17px} .charts .card p{margin:2px 0 10px;font-size:13px;color:var(--ink-2)}
+.charts .box{position:relative;height:200px}
+.empty{color:var(--muted)}
+footer{font-size:13px;color:var(--muted)}
+.sr{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <a class="back" href="../../">← Claudeville 3 overview</a>
+      <h1 id="title">Attempt</h1>
+    </div>
+    <div class="pills">
+      <span class="pill p-run" id="status">Loading…</span>
+      <span class="pill p-steady" id="live">—</span>
+      <button id="themeBtn" aria-label="Switch light or dark theme">◐</button>
+    </div>
+  </header>
+
+  <section class="kpis" id="kpis"></section>
+
+  <section class="row">
+    <div class="card main">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px">
+        <h2>Population vs. pace needed</h2>
+        <div class="legend"><span style="--c:var(--s1)">Population</span><span class="dash" style="--c:var(--pace)">Pace needed (straight line to 100,000 in 2050)</span></div>
+      </div>
+      <div class="chartbox"><canvas id="popChart" role="img" aria-label="Population by year against the pace needed to reach 100,000 by 2050"></canvas></div>
+    </div>
+    <div class="card side">
+      <h2>City health</h2>
+      <ul class="health" id="health"></ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Disasters</h2>
+    <div class="timeline" id="disasters"></div>
+    <p class="meta" id="disNote" style="margin:0"></p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-bottom:6px">Year by year</h2>
+    <p class="meta" style="margin:0 0 8px">One entry per game year, written at the January check. Numbers come from the save file.</p>
+    <ol class="years" id="years"></ol>
+  </section>
+
+  <section class="row">
+    <div class="card main">
+      <h2 style="margin-bottom:12px">The city every 5 minutes</h2>
+      <img class="screen" id="shot" alt="Screenshot of the city">
+      <div class="controls">
+        <button class="play" id="playBtn" aria-label="Play timeline"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path id="playIcon" d="M4 2 L14 8 L4 14 Z" fill="currentColor"/></svg></button>
+        <label class="sr" for="scrub">Screenshot time</label>
+        <input type="range" id="scrub" min="0" max="0" value="0">
+        <select id="speed" aria-label="Playback speed"><option value="800">1×</option><option value="300" selected>3×</option><option value="100">8×</option></select>
+        <button id="liveBtn">Live</button>
+      </div>
+      <div class="meta" id="shotMeta" style="margin-top:8px"></div>
+    </div>
+    <div class="card side">
+      <h2 style="margin-bottom:12px">Videos</h2>
+      <div class="vids" id="vids"></div>
+      <p style="margin:16px 0 0"><a id="pmLink" href="../post-mortem/">Post-mortem →</a></p>
+      <p style="margin:6px 0 0"><a href="../strategy.md">Strategy for this attempt →</a></p>
+    </div>
+  </section>
+
+  <section class="charts" id="charts"></section>
+
+  <section class="card">
+    <h2 style="margin-bottom:12px">Every move</h2>
+    <div class="chips" id="chips"><button data-f="all" class="on">All</button><button data-f="moves">Moves</button><button data-f="commentary">Commentary</button></div>
+    <ul class="feed" id="feed"></ul>
+  </section>
+
+  <footer>Data comes straight from the game's save file. Screenshots every 5 minutes. The page refreshes itself every minute.</footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const fmt = n => (n == null || isNaN(n)) ? "–" : Number(n).toLocaleString("en-US");
+const money = n => (n < 0 ? "−$" : "$") + fmt(Math.abs(n));
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const GOAL = 100000, START = 2000, YEARS = 50;
+const ATTEMPT = (location.pathname.match(/attempt-(\d+)/) || [, "?"])[1];
+document.title = "Claudeville 3 · Attempt " + ATTEMPT;
+$("title").textContent = "Attempt " + ATTEMPT;
+let shots = [], idx = 0, timer = null, followLive = true, charts = {};
+
+try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+$("themeBtn").onclick = () => {
+  const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  const next = cur === "dark" ? "light" : "dark";
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem("theme", next); } catch (e) {}
+  Object.values(charts).forEach(c => c.destroy()); charts = {}; refresh();
+};
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+async function get(path, fallback) {
+  try { const r = await fetch(path + "?v=" + Date.now()); return r.ok ? r.json() : fallback; } catch (e) { return fallback; }
+}
+const pace = gy => Math.max(0, (gy - START) / YEARS * GOAL);
+
+function kpis(m, rows, disasters) {
+  const yr = Math.max(0, m.gy - START), need = pace(m.gy), pct = m.population / GOAL * 100;
+  const prevJan = [...rows].reverse().find(r => r.year === m.year - 1);
+  const firstJan = rows.find(r => r.year === m.year);
+  const cashDelta = firstJan && prevJan ? firstJan.money - prevJan.money : null;
+  $("kpis").innerHTML = `
+    <div class="card kpi hero"><div class="l">Population</div>
+      <div class="v">${fmt(m.population)} <small style="color:var(--hero-2)">of 100,000</small></div>
+      <div class="track"><i style="width:${Math.min(100, pct).toFixed(1)}%"></i></div>
+      <div class="s hot">${pct.toFixed(1)}% of goal · pace needed by now: ${fmt(Math.round(need / 100) * 100)}</div></div>
+    <div class="card kpi"><div class="l">Game year</div><div class="v">${Math.floor(yr)} <small>/ 50</small></div><div class="s">${m.date} · ${Math.max(0, Math.ceil(YEARS - yr))} years left</div></div>
+    <div class="card kpi"><div class="l">Cash</div><div class="v">${money(m.money)}</div><div class="s">${cashDelta == null ? "Tax " + m.tax_r + "%" : (cashDelta >= 0 ? "+" : "−") + money(Math.abs(cashDelta)).replace("−", "") + " last year · tax " + m.tax_r + "%"}</div></div>
+    <div class="card kpi"><div class="l">Loans (bonds)</div><div class="v">${fmt(m.bonds)}</div><div class="s">${m.bonds ? "Allowed in this challenge" : "None so far"}</div></div>
+    <div class="card kpi"><div class="l">Disasters so far</div><div class="v">${disasters.length}</div><div class="s">${disasters.length ? esc(disasters[disasters.length - 1].text).slice(0, 60) : "None yet"}</div></div>`;
+}
+
+function state(v, good, warn, higherIsBetter) {
+  const ok = higherIsBetter ? v >= good : v <= good, meh = higherIsBetter ? v >= warn : v <= warn;
+  return ok ? ["Good", "p-good"] : meh ? ["Watch", "p-warn"] : ["Risk", "p-bad"];
+}
+function health(m) {
+  const items = [
+    ["Water spare capacity", m.water_pct + "%", state(m.water_pct, 30, 15, true)],
+    ["Power spare capacity", m.power_pct + "%", state(m.power_pct, 30, 15, true)],
+    ["Buildings with water / power", m.watered_pct + "% / " + m.powered_pct + "%", state(Math.min(m.watered_pct, m.powered_pct), 90, 75, true)],
+    ["Unemployment", m.unemployment + "%", state(m.unemployment, 8, 15, false)],
+    ["Crime (average)", m.crime, state(m.crime, 20, 50, false)],
+    ["Fire stations", fmt(m.fire), m.population < 2000 ? ["Good", "p-good"] : state(m.fire, Math.max(1, Math.round(m.population / 15000)), 1, true)],
+    ["Police stations", fmt(m.police), m.population < 2000 ? ["Good", "p-good"] : state(m.police, Math.max(1, Math.round(m.population / 15000)), 1, true)],
+    ["Pollution (average)", m.pollution, state(m.pollution, 20, 50, false)],
+    ["Jammed road tiles", fmt(m.jammed), state(m.jammed, 5, 30, false)],
+    ["Abandoned buildings", fmt(m.abandoned), state(m.abandoned, 10, 40, false)],
+  ];
+  $("health").innerHTML = items.map(([l, v, [s, c]]) => `<li><span>${l}</span><span class="val"><span class="mono">${v}</span><span class="pill ${c}">${s}</span></span></li>`).join("");
+}
+
+function disasterLine(list) {
+  const pos = gy => Math.min(100, Math.max(0, (gy - START) / YEARS * 100));
+  const parse = d => { const [mo, y] = String(d || "").split(" "); const mi = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"].indexOf(mo); return +y + Math.max(0, mi) / 12; };
+  $("disasters").innerHTML = `<span class="end" style="left:0">2000</span><span class="end" style="right:0">2050</span>` +
+    list.map((d, i) => `<span class="ev" style="left:${pos(parse(d.date))}%" title="${esc(d.date)}: ${esc(d.text)}"></span>` +
+      (i < 6 ? `<span class="lab" style="left:${pos(parse(d.date))}%;top:${14 + (i % 2) * 18}px">${esc(d.date)}</span>` : "")).join("");
+  $("disNote").textContent = list.length ? list.map(d => d.date + ": " + d.text).join(" · ") : "Disasters are switched on. None has hit yet.";
+}
+
+function years(list) {
+  if (!list.length) { $("years").innerHTML = `<li class="empty">The first entry appears after the first January check.</li>`; return; }
+  const tone = { good: "p-good", setback: "p-bad", milestone: "p-mile", steady: "p-steady" };
+  $("years").innerHTML = list.slice().reverse().map(e => {
+    const a = e.start || {}, b = e.end || {};
+    const d = (b.population ?? 0) - (a.population ?? 0), cash = (b.money ?? 0) - (a.money ?? 0);
+    const nums = e.end ? `${fmt(a.population)} → ${fmt(b.population)} people<br>cash ${cash >= 0 ? "+" : "−"}${money(Math.abs(cash)).replace("−", "")}<br>unemployed ${b.unemployment}%<br>water ${b.watered_pct}% · power ${b.powered_pct}%<br>abandoned ${b.abandoned} · loans ${b.bonds}` : "Year in progress";
+    const moves = e.moves && e.moves.length ? `<ul>${e.moves.map(m => `<li>${esc(m)}</li>`).join("")}</ul>` : `<p>No changes.</p>`;
+    return `<li><div class="ycol"><span class="y">${e.year}</span>${e.end ? `<span class="d ${d >= 0 ? "up" : "down"}">${d >= 0 ? "+" : "−"}${fmt(Math.abs(d))} people</span>` : ""}<span class="pill ${tone[e.tone] || "p-steady"}">${esc(e.tone)}</span></div>
+      <div class="ybody"><h3>${esc(e.title)}</h3><p>${esc(e.happened)}</p><div class="lbl">Moves</div>${moves}<div class="lbl">Watching next</div><p>${esc(e.watching)}</p></div>
+      <div class="ynums">${nums}</div></li>`;
+  }).join("");
+}
+
+function lineChart(id, rows, series, opts = {}) {
+  const grid = css("--line"), text = css("--ink-2");
+  const datasets = series.map(([k, label, color, dash]) => ({
+    label, data: typeof k === "function" ? k(rows) : rows.map(r => ({ x: r.gy, y: r[k] })),
+    borderColor: css(color), backgroundColor: css(color), borderWidth: dash ? 1.5 : 2.5, borderDash: dash ? [6, 5] : [],
+    pointRadius: 0, pointHoverRadius: dash ? 0 : 4, tension: .2, stepped: opts.stepped ? "before" : false,
+  }));
+  if (charts[id]) { charts[id].data.datasets = datasets; charts[id].update("none"); return; }
+  charts[id] = new Chart($(id), { type: "line", data: { datasets }, options: {
+    animation: false, maintainAspectRatio: false, interaction: { mode: "nearest", axis: "x", intersect: false },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { title: it => it.length ? (rows.find(r => r.gy === it[0].parsed.x)?.date || Math.floor(it[0].parsed.x)) : "",
+      label: it => " " + it.dataset.label + ": " + (opts.money ? money(it.parsed.y) : fmt(Math.round(it.parsed.y))) } } },
+    scales: { x: { type: "linear", min: opts.full ? START : Math.floor(rows[0]?.gy ?? START), max: opts.full ? START + YEARS : undefined,
+                   suggestedMax: Math.floor(rows[0]?.gy ?? START) + 5, ticks: { color: text, precision: 0, callback: v => Math.floor(v) }, grid: { color: grid } },
+              y: { beginAtZero: true, max: opts.max, ticks: { color: text, callback: v => opts.money ? money(v) : fmt(v) }, grid: { color: grid } } } } });
+}
+
+const CHARTS = [
+  ["c_cash", "Cash", "City treasury.", [["money", "Cash", "--s1"]], { money: true }],
+  ["c_zones", "Built land", "Tiles with buildings, by zone type.", [["res_tiles", "Homes", "--s1"], ["com_tiles", "Shops", "--s3"], ["ind_tiles", "Factories", "--s2"]]],
+  ["c_health", "Water and power to spare", "Spare capacity left in the water and power systems (game graphs). Near 0 means shortage.", [["water_pct", "Water spare %", "--s3"], ["power_pct", "Power spare %", "--s1"]], { max: 100 }],
+  ["c_trouble", "Trouble signs", "Abandoned buildings, jammed roads, unemployment %.", [["abandoned", "Abandoned", "--s2"], ["jammed", "Jammed roads", "--s3"], ["unemployment", "Unemployment %", "--s1"]]],
+  ["c_qol", "Quality of life", "City averages (lower is better).", [["crime", "Crime", "--s2"], ["pollution", "Pollution", "--s3"], ["traffic", "Traffic", "--s1"]]],
+  ["c_svc", "Public services", "Police, fire stations, schools.", [["police", "Police", "--s3"], ["fire", "Fire", "--s2"], ["schools", "Schools", "--s1"]], { stepped: true }],
+  ["c_tax", "Tax rate", "Property tax %.", [["tax_r", "Tax %", "--s1"]], { stepped: true }],
+  ["c_value", "Land value", "Average land value (higher is better).", [["land_value", "Land value", "--s1"]]],
+];
+function drawCharts(rows) {
+  lineChart("popChart", rows, [["population", "Population", "--s1"], [r => [{ x: START, y: 0 }, { x: START + YEARS, y: GOAL }], "Pace needed", "--pace", true]], { full: true, max: GOAL });
+  if (!$("charts").children.length) $("charts").innerHTML = CHARTS.map(([id, t, d, s]) => `<div class="card"><h3>${t}</h3><p>${d}</p>
+    ${s.length > 1 ? `<div class="legend" style="margin-bottom:6px">${s.map(x => `<span style="--c:var(${x[2]})">${x[1]}</span>`).join("")}</div>` : ""}
+    <div class="box"><canvas id="${id}" role="img" aria-label="${t} chart"></canvas></div></div>`).join("");
+  CHARTS.forEach(([id, , , s, o]) => lineChart(id, rows, s, o || {}));
+}
+
+function showShot(i) {
+  if (!shots.length) { $("shotMeta").textContent = "No screenshots yet."; return; }
+  idx = Math.max(0, Math.min(i, shots.length - 1));
+  const s = shots[idx];
+  $("shot").src = s.file; $("scrub").value = idx;
+  $("shotMeta").textContent = `${idx + 1} of ${shots.length} · ${s.date || "—"} · pop ${fmt(s.population)}`;
+}
+function stop() { clearInterval(timer); timer = null; $("playIcon").setAttribute("d", "M4 2 L14 8 L4 14 Z"); $("playBtn").setAttribute("aria-label", "Play timeline"); }
+$("playBtn").onclick = () => {
+  if (timer) return stop();
+  followLive = false; if (idx >= shots.length - 1) showShot(0);
+  $("playIcon").setAttribute("d", "M3 2 H7 V14 H3 Z M9 2 H13 V14 H9 Z"); $("playBtn").setAttribute("aria-label", "Pause timeline");
+  timer = setInterval(() => { if (idx >= shots.length - 1) return stop(); showShot(idx + 1); }, +$("speed").value);
+};
+$("speed").onchange = () => { if (timer) { stop(); $("playBtn").click(); } };
+$("scrub").oninput = e => { stop(); followLive = false; showShot(+e.target.value); };
+$("liveBtn").onclick = () => { stop(); followLive = true; showShot(shots.length - 1); };
+
+function vids(list, tl) {
+  const out = [];
+  if (tl) out.push(`<div><div style="font-weight:600;margin-bottom:6px">Timelapse</div><video controls preload="none" src="${esc(tl.file)}"></video></div>`);
+  list.forEach((r, i) => out.push(`<a class="v" href="${esc(r.file)}"><span>Full recording, part ${i + 1}</span><span class="meta">${r.mb} MB</span></a>`));
+  $("vids").innerHTML = out.length ? out.join("") : `<p class="empty" style="margin:0">The game is being recorded. 30-minute clips appear here as each one finishes; the timelapse comes at the end.</p>`;
+}
+let FEED = [], FEED_F = (() => { try { return localStorage.getItem("feedFilter") || "all"; } catch (e) { return "all"; } })();
+function feed(items) {
+  if (items) FEED = items;
+  const pick = FEED.filter(a => FEED_F === "all" || (FEED_F === "commentary" ? a.type === "commentary" : a.type !== "commentary"));
+  document.querySelectorAll("#chips button").forEach(b => b.classList.toggle("on", b.dataset.f === FEED_F));
+  $("feed").innerHTML = pick.length ? pick.slice().reverse().map(a => `<li class="${a.type === "commentary" ? "commentary" : ""}"><span class="dt">${esc(a.date)}</span><span class="k">${esc(a.type)}</span><span class="t">${esc(a.text)}</span></li>`).join("")
+    : '<li><span class="t">Nothing here yet.</span></li>';
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("#chips button"); if (!b) return;
+  FEED_F = b.dataset.f; try { localStorage.setItem("feedFilter", FEED_F); } catch (err) {}
+  feed();
+});
+
+
+async function refresh() {
+  const [rows, s, act, rec, L, yr, info] = await Promise.all([get("data/metrics.json", []), get("data/shots.json", []), get("data/activity.json", []),
+    get("data/recordings.json", []), get("data/latest.json", null), get("data/yearly.json", []), get("../attempt.json", {})]);
+  const disasters = act.filter(a => a.type === "disaster");
+  if (rows.length) { const m = rows[rows.length - 1]; kpis(m, rows, disasters); health(m); drawCharts(rows); }
+  disasterLine(disasters); years(yr); feed(act); vids(rec, info.timelapse ? { file: "../" + info.timelapse } : null);
+  const st = info.status || "playing";
+  const cls = { playing: "p-run", success: "p-good", failed: "p-bad" }[st] || "p-steady";
+  $("status").className = "pill " + cls;
+  $("status").textContent = { playing: "Playing", success: "Goal reached", failed: "Missed the goal" }[st] + (rows.length ? " · " + rows[rows.length - 1].date : "");
+  $("pmLink").style.display = st === "failed" || st === "success" ? "" : "none";
+  const grew = s.length !== shots.length; shots = s; $("scrub").max = Math.max(0, shots.length - 1);
+  if (grew && followLive && !timer) showShot(shots.length - 1);
+  const last = L?.updated ? new Date(L.updated) : null, fresh = last && (Date.now() - last) < 15 * 60e3;
+  $("live").textContent = last ? (fresh ? "Live · updated " : "Last update ") + last.toLocaleTimeString() : "Waiting for data";
+  $("live").className = "pill " + (fresh ? "p-good" : "p-steady");
+}
+refresh(); setInterval(refresh, 60e3);
+</script>
+</body>
+</html>
