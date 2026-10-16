@@ -1,0 +1,12 @@
+# Attempt 19 Feb 2007: west factory block had weak trips (47 tiles under 30%) -> western cells x60-66 become dense
+# homes (riverside) facing the factories x68-75 across road x67; pipe x63 for water.
+dezone 60 57 66 58
+dezone 60 60 66 61
+dezone 60 63 66 64
+dezone 60 66 66 68
+zone R 60 57 66 58
+zone R 60 60 66 61
+zone R 60 63 66 64
+zone R 60 66 66 68
+park 62 67 63 68
+pipe 63 57 63 68
