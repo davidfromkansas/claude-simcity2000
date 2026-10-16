@@ -1,0 +1,7 @@
+# a19-2009 fix: lines x109/x116 stopped at roads y62/y69 (no crossing tiles); pipes y59/y65 not joined to the main
+line 109 62 109 62
+line 109 69 109 69
+line 116 62 116 62
+line 116 69 116 69
+pipe 115 59 115 72
+pipe 115 66 121 66
