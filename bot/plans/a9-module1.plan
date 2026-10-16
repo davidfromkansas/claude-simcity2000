@@ -1,0 +1,30 @@
+# Attempt 9 day one (manual method): module 1 with LIGHT zoning, road + rail links, coal plant,
+# riverbank pumps. Homes 108 = factories 72 + shops 36.
+link 76 0
+raillink 101 0
+rail 101 1 101 19
+road 76 1 76 34
+road 77 20 100 20
+road 77 27 100 27
+road 77 34 100 34
+road 84 21 84 33
+road 92 21 92 33
+road 100 21 100 33
+line 77 21 77 38
+line 85 21 85 35
+line 93 21 93 35
+line 82 35 93 35
+coal 78 35
+zone r 78 21 83 26
+zone r 86 21 91 26
+zone r 94 21 99 26
+zone i 78 28 83 33
+zone i 86 28 91 33
+zone c 94 28 99 33
+line 73 21 76 21
+line 73 22 73 27
+pump 72 22 72 27
+pipe 72 23 74 23
+pipe 74 23 74 33
+pipe 75 23 99 23
+pipe 75 30 99 30

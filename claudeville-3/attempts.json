@@ -46,5 +46,10 @@
   "status": "failed",
   "reason": "Stalled near 8,000 in 2014: dense-only zoning grew slowly, loan #2 did not pay back, water and jobs short",
   "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 9,
+  "status": "playing",
+  "reason": ""
  }
 ]
