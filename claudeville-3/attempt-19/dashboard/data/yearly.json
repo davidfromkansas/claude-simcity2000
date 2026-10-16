@@ -300,5 +300,39 @@
    "jammed": 8,
    "bonds": 9
   }
+ },
+ {
+  "year": 2010,
+  "tone": "good",
+  "title": "29,590 -> 31,040, south district",
+  "moves": [
+   "South district",
+   "4 riverbank pumps",
+   "Tax controller: homes 8, shops 10"
+  ],
+  "happened": "A no-industry south district (dense homes + parks, shops in the middle); water ran short twice, fixed with riverbank pumps. Home demand stayed positive (+800-1,000).",
+  "watching": "Water and power headroom; money",
+  "start": {
+   "date": "Feb 2010",
+   "population": 28430,
+   "money": 3748,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 47,
+   "jammed": 8,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 31730,
+   "money": -620,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 0,
+   "bonds": 9
+  }
  }
 ]
