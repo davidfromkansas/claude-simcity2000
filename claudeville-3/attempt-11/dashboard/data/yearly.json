@@ -216,6 +216,172 @@
    "jammed": 3,
    "bonds": 3
   },
-  "end": null
+  "end": {
+   "date": "Feb 2007",
+   "population": 11530,
+   "money": 2181,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 53,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "steady",
+  "title": "District 5 fills",
+  "moves": [],
+  "happened": "District 5 filled steadily; 12,380 by December.",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2007",
+   "population": 11530,
+   "money": 2181,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 53,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 12610,
+   "money": 1128,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 59,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "14,000 and the zoo",
+  "moves": [
+   "Loan #5",
+   "Zoo",
+   "District 6: 162 home + 72 shop tiles"
+  ],
+  "happened": "14,150 by December; home demand fell toward zero. Loan #5 paid for the first zoo and district 6.",
+  "watching": "Home demand after the zoo",
+  "start": {
+   "date": "Feb 2008",
+   "population": 12610,
+   "money": 1128,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 59,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 14390,
+   "money": 4302,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 73,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "setback",
+  "title": "Water runs dry",
+  "moves": [],
+  "happened": "Population 15,620, but spare water was 0-6% for 18 months and 146 buildings went dry; the play loop only warned.",
+  "watching": "Water",
+  "start": {
+   "date": "Feb 2009",
+   "population": 14390,
+   "money": 4302,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 73,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 15870,
+   "money": 3078,
+   "unemployment": 5,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 104,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "setback",
+  "title": "Home demand negative",
+  "moves": [
+   "16 riverbank pumps"
+  ],
+  "happened": "16,270. 16 riverbank pumps fixed the water in December; home demand fell below zero and cash ran out.",
+  "watching": "Cash, unemployment",
+  "start": {
+   "date": "Feb 2010",
+   "population": 15870,
+   "money": 3078,
+   "unemployment": 5,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 104,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 16250,
+   "money": -74,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 137,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "setback",
+  "title": "Broke at 16,000",
+  "moves": [],
+  "happened": "No changes possible: cash fell to -$1,199. Unemployment rose to 10% and abandoned homes to 162.",
+  "watching": "Factory land",
+  "start": {
+   "date": "Feb 2011",
+   "population": 16250,
+   "money": -74,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 137,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 16070,
+   "money": -1199,
+   "unemployment": 10,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 178,
+   "jammed": 0,
+   "bonds": 5
+  }
  }
 ]
