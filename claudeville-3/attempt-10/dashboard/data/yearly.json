@@ -1,0 +1,26 @@
+[
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Two blocks",
+  "moves": [
+   "Block 1",
+   "Loan #2",
+   "Block 2"
+  ],
+  "happened": "Block 1 at 5/4/4 tax filled steadily (1,540 by Dec 2002); loan #2 paid for block 2 south with a second plant, fire and police stations.",
+  "watching": "Home demand at max",
+  "start": {
+   "date": "Feb 2002",
+   "population": 890,
+   "money": 7970,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 2,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": null
+ }
+]
