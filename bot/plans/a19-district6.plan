@@ -1,0 +1,37 @@
+# Attempt 19 LIGHT-homes version of a14-district6
+# Attempt 14 district 6 (dense homes) around the zoo already at (110-113,56-59); column x117 fed from the zoo along y56
+# falling toward the ~15,000 home cap: 847 and dropping). Columns: line x109 / cells x110-115 / road x116 /
+# line x117 / cells x118-123 / road x124. Power fed across road x108 at built buildings (y58,65,72,79)
+# and along a line row y56 to column x117. Pond at x111-113 y63-65 left out.
+road 116 55 124 55
+road 116 56 116 83
+road 124 56 124 83
+road 109 62 124 62
+road 109 69 124 69
+road 109 76 124 76
+road 109 83 124 83
+line 108 58 109 58
+line 108 65 109 65
+line 108 72 109 72
+line 108 79 109 79
+line 114 56 117 56
+line 109 57 109 61
+line 109 63 109 68
+line 109 70 109 75
+line 109 77 109 82
+line 117 57 117 82
+zone r 114 57 115 61
+zone r 110 61 113 61
+zone r 114 63 115 65
+zone r 110 66 115 68
+zone r 110 70 115 75
+zone r 110 77 115 82
+zone r 118 57 123 61
+zone c 118 63 123 68
+zone i 118 70 123 75
+zone c 118 77 123 82
+pipe 108 59 123 59
+pipe 108 72 123 72
+pipe 108 80 123 80
+pipe 108 66 123 66
+line 109 76 109 76

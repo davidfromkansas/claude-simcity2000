@@ -35,7 +35,7 @@ def check(save=None, goals=None):
         path = os.path.join(HERE, "..", os.path.dirname(run["dashboard"]), "pace.json")
         if not os.path.exists(path):
             return "PACE: no pace.json for this attempt"
-        goals = json.load(open(path))
+        goals = {k: v for k, v in json.load(open(path)).items() if k != "reminders"}
     save = save or p.SAVE
     m = p.parse(save)
     z = p.chunks(save)["XZON"]
@@ -68,6 +68,23 @@ def land(save=None):
     return "LAND short: " + ", ".join(short) if short else "LAND ok: empty %s" % empty
 
 
+def remind(save=None):
+    """REMIND lines (after attempt 18 missed two planned steps): pace.json "reminders" {population: text};
+    each is printed once the population passes it, until it is listed in run.json "done_reminders"."""
+    run = json.load(open(os.path.join(HERE, "run.json")))
+    path = os.path.join(HERE, "..", os.path.dirname(run["dashboard"]), "pace.json")
+    if not os.path.exists(path):
+        return ""
+    rem = json.load(open(path)).get("reminders", {})
+    pop = p.parse(save or p.SAVE)["population"]
+    done = set(run.get("done_reminders", []))
+    return "\n".join("REMIND: %s (%s people)" % (t, k) for k, t in sorted(rem.items(), key=lambda kv: int(kv[0]))
+                     if pop >= int(k) and k not in done)
+
+
 if __name__ == "__main__":
     print(check())
     print(land())
+    r = remind()
+    if r:
+        print(r)
