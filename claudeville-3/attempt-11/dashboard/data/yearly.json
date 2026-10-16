@@ -1,0 +1,36 @@
+[
+ {
+  "year": 2000,
+  "tone": "steady",
+  "title": "Big day one",
+  "moves": [
+   "Loan #1",
+   "Day one: 288 home tiles, coal plant, 2 fire stations, 12 pumps",
+   "Taxes 4/4/4, factories 3 in 2001"
+  ],
+  "happened": "Built attempt 10's blocks 1 and 2 at once (288 home tiles). The game refused a second loan at founding. 480 people by Feb 2001: jobs come first.",
+  "watching": "Pace (480 vs 2,200), second loan",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 20000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2001",
+   "population": 480,
+   "money": 3662,
+   "unemployment": 3,
+   "watered_pct": 82,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  }
+ }
+]
