@@ -16,6 +16,7 @@ Plan lines (tile coordinates; '#' starts a comment):
   raillink X Y            rail neighbor link at edge tile X Y; must charge $1,500 (lifts the factory cap)
   seaport X0 Y0 X1 Y1     seaport zone beside water, $150/tile (lifts the factory cap)
   airport X0 Y0 X1 Y1     airport zone, $250/tile (lifts the shop cap, from ~20,000 people)
+  bigpark X Y             3x3 big park, X Y = top-left
   stadium X Y | zoo X Y   4x4, X Y = top-left ($5,000 / $3,000; lift the 15,000 home cap)
   marina X Y              3x3 across a shoreline, X Y = top-left ($1,000; lifts the home cap)
   bulldoze X0 Y0 X1 Y1    tile by tile, only tiles inside the box; never plants, stations or pumps
@@ -41,13 +42,13 @@ TOOL = {"road": "22 105 55 113", "line": "22 82 55 90", "pipe": "47 82 85 90", "
         "i": "68 128 120 135", "I": "68 128 120 151", "park": "68 155 100 163",
         "fire": "47 155 88 179", "police": "47 155 88 163", "bulldoze": "22 58 60 65", "dezone": "22 58 65 130", "plant": "22 82 60 105",
         "rail": "47 105 85 113", "seaport": "68 105 100 112", "airport": "68 105 100 128",
-        "stadium": "68 155 100 212", "zoo": "68 155 100 196", "marina": "68 155 100 227"}
+        "bigpark": "68 155 100 179", "stadium": "68 155 100 212", "zoo": "68 155 100 196", "marina": "68 155 100 227"}
 PLANT_ITEM = {"coal": (199, 145), "gas": (199, 255)}
 ZCODE = {"r": 1, "R": 2, "c": 3, "C": 4, "i": 5, "I": 6}
 # rough prices, used only to spot steps that charged nothing
 COST = {"road": 10, "line": 5, "pipe": 3, "pump": 100, "park": 20, "coal": 4000, "gas": 2000,
         "fire": 500, "police": 500, "link": 1000, "rail": 25, "raillink": 1500, "seaport": 150,
-        "airport": 250, "stadium": 5000, "zoo": 3000, "marina": 1000, "r": 5, "R": 10, "c": 5, "C": 10, "i": 5, "I": 10}
+        "airport": 250, "stadium": 5000, "zoo": 3000, "marina": 1000, "bigpark": 150, "r": 5, "R": 10, "c": 5, "C": 10, "i": 5, "I": 10}
 PROTECT = lambda t: is_plant(t) or t == 0xDC or 0xD3 <= t <= 0xDB
 
 
@@ -121,7 +122,7 @@ def parse(path):
             tiles = rect(*nums)
         elif kind in ("coal", "gas"):
             tiles = rect(nums[0], nums[1], nums[0] + 3, nums[1] + 3)
-        elif kind in ("fire", "police"):
+        elif kind in ("fire", "police", "bigpark"):
             tiles = rect(nums[0], nums[1], nums[0] + 2, nums[1] + 2)
         elif kind in ("stadium", "zoo"):
             tiles = rect(nums[0], nums[1], nums[0] + 3, nums[1] + 3)
@@ -154,6 +155,8 @@ def done(c, s, x, y):
         return is_plant(t)
     if k in ("fire", "police"):
         return t >= 0xC0 and not is_plant(t)
+    if k == "bigpark":                 # attempt 19: 3x3 big park (+3,000 home cap, +40 land value per tile)
+        return t == 0xD5
     if k in ("rail", "raillink"):
         return is_rail(t)
     if k == "seaport":
@@ -209,7 +212,7 @@ def place(s, c):
         sc("click", *screen(b[0] + 1, b[1] + 1))
         time.sleep(0.8)
         nodlg()
-    elif k in ("fire", "police"):
+    elif k in ("fire", "police", "bigpark"):
         vis(b[0], b[1], b[0] + 2, b[1] + 2)
         tool(k)
         sc("click", *screen(b[0] + 1, b[1] + 1))
@@ -308,7 +311,7 @@ def main(path, dry=False):
     plan_tiles = set(final) | set(under)
     print("plan: %d steps, %d tiles" % (len(steps), len(plan_tiles)))
     # preflight (attempt 19): a park placed over a planned line or road cut power to a whole factory strip
-    links = {p for s in steps if s["kind"] in ("line", "road", "rail", "police", "fire", "coal", "gas", "stadium", "zoo") for p in s["tiles"]}
+    links = {p for s in steps if s["kind"] in ("line", "road", "rail", "police", "fire", "bigpark", "coal", "gas", "stadium", "zoo") for p in s["tiles"]}
     clash = sorted(p for s in steps if s["kind"] == "park" for p in s["tiles"] if p in links)
     # preflight (attempt 19): roads/lines/pipes on the map edge each start a $1,000 neighbour deal (4 = $3,900 surprise)
     edge = sorted(p for s in steps if s["kind"] in ("road", "line", "pipe", "rail") for p in s["tiles"] if 0 in p or N - 1 in p)
@@ -336,7 +339,7 @@ def main(path, dry=False):
         if s["kind"] in ("pump", "park", "dezone") or s["kind"].startswith("bulldoze"):
             save()                  # these steps look at the current tiles first
             c = City()
-        big = s["kind"] in ("coal", "gas", "fire", "police", "link", "raillink", "stadium", "zoo", "marina")
+        big = s["kind"] in ("coal", "gas", "fire", "police", "bigpark", "link", "raillink", "stadium", "zoo", "marina")
         cb = save() if big else None
         if big:
             c = City()
