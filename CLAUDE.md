@@ -1,7 +1,7 @@
 # Claude plays SimCity 2000
 
 CURRENT CHALLENGE: Claudeville 3 — 100,000 people by Jan 2050, Medium, disasters on, loans allowed, same flat map
-(saves/claudeville-3-base.SC2). Up to 20 attempts; post-mortem after each miss. Active attempt is in bot/run.json
+(saves/claudeville-3-base.SC2). Up to 40 attempts (raised from 20 by the user after attempt 18); post-mortem after each miss. Active attempt is in bot/run.json
 (save, dashboard, recordings). Folder: claudeville-3/attempt-N/. Overview list: claudeville-3/attempts.json.
 (The goal text below is from challenges 1-2.)
 
