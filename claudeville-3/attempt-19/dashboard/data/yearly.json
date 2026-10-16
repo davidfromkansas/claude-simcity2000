@@ -334,5 +334,70 @@
    "jammed": 0,
    "bonds": 9
   }
+ },
+ {
+  "year": 2011,
+  "tone": "good",
+  "title": "32,920 - best since attempt 2",
+  "moves": [
+   "Loan #10: coal, lake pumps, shops"
+  ],
+  "happened": "Home demand +1,000 all year; taxes rose to 9-10%. Loan #10 for a fourth coal plant, lake pumps and a shop block.",
+  "watching": "Factory tax at 10%",
+  "start": {
+   "date": "Feb 2011",
+   "population": 31730,
+   "money": -620,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 0,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 33410,
+   "money": 4060,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 102,
+   "jammed": 0,
+   "bonds": 10
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "steady",
+  "title": "34,020",
+  "moves": [
+   "Factory tax 8% ceiling",
+   "Two shop cells"
+  ],
+  "happened": "Factory demand turned negative at 10% factory tax (attempt 13's lesson again); cut to 8% with a per-zone ceiling. Shop cells by the pond and below the airport.",
+  "watching": "Water and the shop stall",
+  "start": {
+   "date": "Feb 2012",
+   "population": 33410,
+   "money": 4060,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 102,
+   "jammed": 0,
+   "bonds": 10
+  },
+  "end": {
+   "date": "Feb 2013",
+   "population": 34350,
+   "money": 3066,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 107,
+   "jammed": 0,
+   "bonds": 10
+  }
  }
 ]
