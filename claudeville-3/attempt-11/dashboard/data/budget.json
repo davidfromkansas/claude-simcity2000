@@ -163,5 +163,35 @@
   },
   "est_property_tax": 1208,
   "budget_shot": "budget/2010.png"
+ },
+ {
+  "year": 2011,
+  "date": "Feb 2011",
+  "cash": -74,
+  "loans": 5,
+  "cash_change": -3152,
+  "population": 16250,
+  "tax": {
+   "res": 5,
+   "com": 7,
+   "ind": 7
+  },
+  "est_property_tax": 1241,
+  "budget_shot": "budget/2011.png"
+ },
+ {
+  "year": 2012,
+  "date": "Feb 2012",
+  "cash": -1199,
+  "loans": 5,
+  "cash_change": -1125,
+  "population": 16070,
+  "tax": {
+   "res": 5,
+   "com": 7,
+   "ind": 7
+  },
+  "est_property_tax": 1227,
+  "budget_shot": "budget/2012.png"
  }
 ]
