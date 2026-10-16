@@ -690,5 +690,38 @@
    "jammed": 0,
    "bonds": 14
   }
+ },
+ {
+  "year": 2022,
+  "tone": "good",
+  "title": "45,910 -> 46,730",
+  "moves": [
+   "Loan #15: south factory strip",
+   "Tax ceilings up"
+  ],
+  "happened": "Factory land ran out; loan #15 bought a dense factory strip at the south end. Tax ceilings raised as every demand bar sat above +1,000.",
+  "watching": "Shop tax, water",
+  "start": {
+   "date": "Jan 2022",
+   "population": 45060,
+   "money": 973,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 46,
+   "jammed": 0,
+   "bonds": 14
+  },
+  "end": {
+   "date": "Feb 2023",
+   "population": 46730,
+   "money": 7604,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 43,
+   "jammed": 0,
+   "bonds": 15
+  }
  }
 ]
