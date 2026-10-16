@@ -658,5 +658,37 @@
    "jammed": 2,
    "bonds": 13
   }
+ },
+ {
+  "year": 2021,
+  "tone": "steady",
+  "title": "44,380 -> 45,060",
+  "moves": [
+   "Loan #14: coal + pond district"
+  ],
+  "happened": "Loan #14: fifth coal plant and the pond district (homes around four ponds, a shop band, homes below). Growth ~1,200/yr; budget about -$2,100/yr.",
+  "watching": "Money and factory land",
+  "start": {
+   "date": "Mar 2021",
+   "population": 44040,
+   "money": 942,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 2,
+   "bonds": 13
+  },
+  "end": {
+   "date": "Jan 2022",
+   "population": 45060,
+   "money": 973,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 46,
+   "jammed": 0,
+   "bonds": 14
+  }
  }
 ]
