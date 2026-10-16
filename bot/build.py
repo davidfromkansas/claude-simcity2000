@@ -181,9 +181,21 @@ def click_tile(x, y):
     time.sleep(0.25)
 
 
+CROSS = {"road": (219, 292), "line": (319, 291)}   # Select pop-up: causeway $275 / raised wires (attempt 19)
+
+
 def drag(name, a, b):
     vis(*a, *b)
     tool(name)
+    if name in CROSS and "--allow-water" in sys.argv:
+        # a drag from bank to bank over water opens the bridge/wires pop-up: take the cheapest option
+        sh("SC_WATER=1 ./sc drag", *screen(*a), *screen(*b))
+        time.sleep(0.8)
+        sc("snap", "/tmp/sc/dlg.png")
+        sh("[ \"$(convert /tmp/sc/dlg.png -format '%[pixel:p{320,200}]' info:)\" = 'srgb(186,186,186)' ] && ./sc click %d %d" % CROSS[name])
+        time.sleep(1.0)
+        nodlg()
+        return
     sc("drag", *screen(*a), *screen(*b))
     time.sleep(0.4)
     nodlg()

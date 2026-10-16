@@ -30,7 +30,7 @@ KIND = {1: "res", 2: "res", 3: "com", 4: "com", 5: "ind", 6: "ind"}
 
 
 def is_road(t):
-    return 0x1D <= t <= 0x2B or 0x43 <= t <= 0x46 or t == 0x57
+    return 0x1D <= t <= 0x2B or 0x43 <= t <= 0x46 or 0x51 <= t <= 0x59
 
 
 def run(save=None, show_all=False):

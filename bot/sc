@@ -23,6 +23,7 @@ case $cmd in
   drag) xdotool mousemove --window "$W" "$1" "$2"; sleep 0.2; xdotool mousedown 1; sleep 0.2
         for i in 1 2 3 4 5 6 7 8; do xdotool mousemove --window "$W" $(( $1 + ($3-$1)*i/8 )) $(( $2 + ($4-$2)*i/8 )); sleep 0.08; done
         sleep 0.2; xdotool mouseup 1; sleep 0.4
+        [ -n "$SC_WATER" ] && exit 0      # attempt 19: SC_WATER=1 leaves the bridge/wires pop-up open to choose from
         # A "Select" pop-up (bridge / raised wires / causeway) means the drag hit water: cancel it with "None".
         import -window "$W" /tmp/sc/dlg.png
         if [ "$(convert /tmp/sc/dlg.png -format '%[pixel:p{285,240}]%[pixel:p{355,240}]%[pixel:p{320,200}]%[pixel:p{285,300}]%[pixel:p{355,300}]' info:)" = "$(printf 'srgb(186,186,186)%.0s' 1 2 3 4 5)" ]; then

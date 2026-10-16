@@ -809,6 +809,71 @@
    "jammed": 0,
    "bonds": 15
   },
+  "end": {
+   "date": "Feb 2026",
+   "population": 50860,
+   "money": 7764,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 115,
+   "jammed": 0,
+   "bonds": 16
+  }
+ },
+ {
+  "year": 2026,
+  "tone": "setback",
+  "title": "~51,000 - flat",
+  "moves": [
+   "No builds"
+  ],
+  "happened": "Demand drifted down: factories negative even at 7%, shops near zero; little empty land.",
+  "watching": "Land and demand",
+  "start": {
+   "date": "Feb 2026",
+   "population": 50860,
+   "money": 7764,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 115,
+   "jammed": 0,
+   "bonds": 16
+  },
+  "end": {
+   "date": "Feb 2027",
+   "population": 51500,
+   "money": 5055,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 159,
+   "jammed": 0,
+   "bonds": 16
+  }
+ },
+ {
+  "year": 2027,
+  "tone": "steady",
+  "title": "51,780",
+  "moves": [
+   "Loan #17: west district",
+   "Taxes 9/7/6"
+  ],
+  "happened": "Flat again; at year end the first district west of the river (causeway + raised wires) and a one-point tax cut.",
+  "watching": "Whether the west district fills",
+  "start": {
+   "date": "Feb 2027",
+   "population": 51500,
+   "money": 5055,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 159,
+   "jammed": 0,
+   "bonds": 16
+  },
   "end": null
  }
 ]

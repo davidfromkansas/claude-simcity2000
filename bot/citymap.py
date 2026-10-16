@@ -15,16 +15,16 @@ ZONES = {1: "light homes", 2: "dense homes", 3: "light shops", 4: "dense shops",
          5: "light factories", 6: "dense factories"}
 
 
-def is_road(t):
-    return 0x1D <= t <= 0x2B or 0x43 <= t <= 0x46
+def is_road(t):     # 0x51-0x59 bridges/causeways (attempt 19: 0x57 causeway)
+    return 0x1D <= t <= 0x2B or 0x43 <= t <= 0x46 or 0x51 <= t <= 0x59
 
 
 def is_rail(t):
     return 0x2C <= t <= 0x42 or 0x47 <= t <= 0x4A
 
 
-def is_line(t):
-    return 0x0E <= t <= 0x1C or 0x43 <= t <= 0x46
+def is_line(t):     # 0x5B/0x5C raised wires over water (attempt 19)
+    return 0x0E <= t <= 0x1C or 0x43 <= t <= 0x46 or t in (0x5B, 0x5C)
 
 
 def is_park(t):
