@@ -109,6 +109,14 @@ Only strategy lapses are acceptable reasons to fail.
   module; homes ~= shops + factories (more factories while small); 6x6 squares between roads; power lines consume
   power; pumps on fresh-water banks give 2-3x; industry leads a small city (rail link, seaport); shops near the centre.
 
+## The only hard limits (from the user, Oct 2026 - after attempt 18)
+1. No cheating: never edit save files to add money or buildings; never reload after disasters.
+2. The challenge rules: Medium difficulty, disasters on, the same map, the Jan 2050 deadline.
+Everything else is free: no self-imposed caps on taxes, loans, layouts, map areas, building types or tools,
+and no stopping an attempt early - play every attempt to Jan 2050 (or until the city is truly dead).
+My old habits (7% tax cap, loan caps, light-only job zones, east-of-river only, reused plans, coal only,
+quitting stalled cities) were self-imposed; treat each as an option to test, not a rule.
+
 ## Process rules (from the user, Oct 2026)
 - Before every new attempt, update `claudeville-3/reflection.md` reflecting on ALL previous attempts equally
   (not just the last one), and derive the next `strategy.md` from that reflection.
