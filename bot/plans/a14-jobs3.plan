@@ -1,0 +1,14 @@
+# Dec 2012 (loan #9): factory land short (demand 2,000, 29 empty). Factory cells below road y104
+# (x86-107 y105-109), line columns x85/93/101 continued across road y104, road y110, a pipe row.
+road 92 105 92 109
+road 100 105 100 109
+road 108 105 108 109
+road 84 110 108 110
+line 85 104 85 109
+line 93 104 93 109
+line 101 104 101 109
+zone i 86 105 91 109
+zone i 94 105 99 109
+zone i 102 105 107 109
+pipe 86 107 107 107
+pipe 107 102 107 106

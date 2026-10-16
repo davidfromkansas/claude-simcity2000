@@ -1,0 +1,14 @@
+# Dec 2012 water 10%: riverbank pumps rows 104-109, lines east to the line column x85 (crossing road x84 is not needed: lines end at x84 next to x85), pipes to a column x83
+pipe 83 104 83 109
+pump 70 106 70 106
+line 71 106 84 106
+pipe 70 106 82 106
+pump 70 107 70 107
+line 71 107 84 107
+pipe 70 107 82 107
+pump 69 108 69 108
+line 70 108 84 108
+pipe 69 108 82 108
+pump 69 109 69 109
+line 70 109 84 109
+pipe 69 109 82 109
