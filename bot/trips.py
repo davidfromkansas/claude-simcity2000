@@ -11,7 +11,7 @@ This estimates, for each empty zone tile, the share of random trips that succeed
   homes -> shops or factories;  shops -> homes;  factories -> homes   (assumption; see README note)
 usage: python3 -I trips.py [SAVE] [--all]
 Prints a summary per zone type and the worst areas; "TRIPS: weak" when an area of empty tiles of a type
-with demand > 500 has under 30% success.
+with demand > 500 has 20+ tiles under 30% success.
 """
 import os
 import random
@@ -85,7 +85,7 @@ def run(save=None, show_all=False):
             continue
         weak = [xy for xy, v in res.items() if v[0] == k and v[1] < 0.3]
         out.append("%s: %d empty tiles, mean trip success %.0f%%, %d under 30%%" % (k, len(vals), 100 * sum(vals) / len(vals), len(weak)))
-        if weak and m["demand"][k] > 500:
+        if len(weak) >= 20 and m["demand"][k] > 500:   # small pockets fill anyway (attempt 16: 11 home tiles)
             xs = [x for x, _ in weak]
             ys = [y for _, y in weak]
             out.append("TRIPS: weak %s land (demand %d): %d tiles around x%d-%d y%d-%d" % (k, m["demand"][k], len(weak), min(xs), max(xs), min(ys), max(ys)))
