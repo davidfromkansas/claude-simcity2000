@@ -1,4 +1,4 @@
-# Reflection on attempts 1-11 (all weighted equally)
+# Reflection on attempts 1-12 (all weighted equally)
 
 Updated before every new attempt (process rule). Each attempt gets its own entry; then the patterns
 that repeat across attempts; then what that means for the next strategy.
@@ -18,6 +18,7 @@ that repeat across attempts; then what that means for the next strategy.
 | 9 | 1,760 | 3,260 | 6,360 | 7,750 | 7,830 (2016) | 3 | 5-10% | 178 | 341 | 19 |
 | 10 | 890 | 3,160 | 11,220 | 13,380 | 14,190 (2018) | 5 | 5-7% | 200 | 657 | 18 |
 | 11 | 2,770 | 10,330 | 16,270 | 17,830 | 20,790 (2020) | 7 | 4-8% | 599 | 1,010 | 19 |
+| 12 | 3,190 | 14,520 | 18,900 | 21,120 | 21,130 (2015) | 6 | 4-8% | 913 | 1,169 | 17 |
 
 ## What each attempt teaches
 
@@ -63,8 +64,15 @@ that repeat across attempts; then what that means for the next strategy.
    test showed home demand stays positive at **8%** when jobs exist. Seven loans (~$3,000 a year) still
    outgrew all tax (~$2,100). *Lesson: seaport early, factory land in step with homes, taxes ~8% once
    the city works, and no more than ~4 loans.*
+12. **Attempt 12 (21,130):** attempt 11's plans with the seaport, second plant and 7-8% taxes brought
+   forward: the fastest start of all (12,030 by 2004, on the target curve 2003-2009). Then water and
+   power shortages forced loans #5 and #6, unemployment rose to 12-19% (shop demand negative for ten
+   years: one road link, no airport), and the city sat at ~21,000 from 2012 with land full and cash
+   below zero. It spent ~$60,700 - the six loans - for 21,000 people: **~$2.90 per person**, which
+   cannot reach 100,000 on the tax a growing city earns. *Lesson: the money model is the problem now:
+   income per person (tax rate) and cost per person (density, layout) both have to move.*
 
-## Patterns across all eleven
+## Patterns across all twelve
 
 1. **Population follows home land zoned early (~20 people per home tile).** The three fast attempts had
    565-650 home tiles by 2005; every other attempt had under 370 and never passed 12,000 by 2010.
@@ -94,7 +102,12 @@ that repeat across attempts; then what that means for the next strategy.
    15% -> 4%. A rail link alone was not enough.
 11. **Every stall at 11,000-18,000 (3, 6, 10, 11) came with rising unemployment.** Homes empty when jobs
    run out (no factory land, or the industry cap), and home demand turns negative. Jobs, not taxes or
-   home land, set the ceiling in that range.
+   home land, set the ceiling in that range. Attempt 12 adds the shop side: shop demand negative for ten
+   years with a single road link and no airport.
+12. **Every attempt costs ~$2.50-3.00 per person and earns ~$0.10 per person per year at 7-8%.** With
+   loans at ~$400 a year each, no attempt has been able to fund growth past ~21,000 except 2 and 4,
+   which borrowed 10 times and then failed on debt. Rates were left low while demand bars sat at
+   maximum for years (9, 11, 12) - money left on the table.
 
 ## What this means for attempt 10
 Combine attempt 4's fast start (big early zoning, low tax, early loans) with attempt 9's tax lesson,
@@ -113,3 +126,9 @@ Keep attempt 11's start (it works). Fix what stopped it, in order of cost: the s
 years (~$3,200, location proven), factory land zoned with every home block (LAND check now stops the
 loop), taxes up to ~8% once the city has ~5,000 people and jobs, at most 4 loans, the zoo by ~12,000.
 See `attempt-12/strategy.md`.
+
+## What this means for attempt 13
+Keep attempt 12's start (best ever). Change the money model: a tax controller raises each zone's rate
+while its demand is at maximum (up to 12%) and lowers it when demand turns negative; power and water are
+built at 30% spare from cash, not at 10% from loans; a second road link on the east edge lifts the shop
+cap; district 6 is zoned dense to test people per tile (cost per person). See `attempt-13/strategy.md`.

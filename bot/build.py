@@ -390,6 +390,16 @@ def main(path, dry=False):
             click_tile(x, y)
             click_tile(x, y)
             fix = " -> stray road removed"
+        z0, z1 = snap0[1][x + y * N] & 15, snap1[1][x + y * N] & 15
+        if old == 0 and new in (0, 1, 2, 3, 4) and z0 in ZCODE.values() and z1 != z0:
+            # attempts 11-12: a calibration road on an empty zoned tile, then bulldozed, removes the zone
+            k = [k for k, v in ZCODE.items() if v == z0][0]
+            if new:
+                vis(x, y); tool("bulldoze"); click_tile(x, y); click_tile(x, y)
+            vis(x, y)
+            tool(k)
+            click_tile(x, y)
+            fix += " -> zone %s restored" % k
         problems.append("tile (%d,%d) outside the plan changed: %#x -> %#x%s" % (x, y, old, new, fix))
     sc("tool", TOOL["road"])
     sc("pause")

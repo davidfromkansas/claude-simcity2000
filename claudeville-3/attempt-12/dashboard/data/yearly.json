@@ -294,5 +294,191 @@
    "jammed": 0,
    "bonds": 6
   }
+ },
+ {
+  "year": 2009,
+  "tone": "steady",
+  "title": "Cheaper jobs",
+  "moves": [
+   "Shop/factory tax down",
+   "108 factory tiles",
+   "6 pumps"
+  ],
+  "happened": "Shop tax 6, factory tax 8, 108 factory tiles, 6 pumps. 18,030 by December; unemployment 17%.",
+  "watching": "Jobs",
+  "start": {
+   "date": "Feb 2009",
+   "population": 17400,
+   "money": 5023,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 379,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 18210,
+   "money": 2119,
+   "unemployment": 16,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 361,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "steady",
+  "title": "Slow climb",
+  "moves": [],
+  "happened": "18,900; unemployment 15-16%; no money for more.",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2010",
+   "population": 18210,
+   "money": 2119,
+   "unemployment": 16,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 361,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 18910,
+   "money": 1300,
+   "unemployment": 16,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 357,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "steady",
+  "title": "Toward 20,000",
+  "moves": [],
+  "happened": "19,800 by December, cash $1,300.",
+  "watching": "20,000",
+  "start": {
+   "date": "Feb 2011",
+   "population": 18910,
+   "money": 1300,
+   "unemployment": 16,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 357,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 20160,
+   "money": 568,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 297,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "milestone",
+  "title": "20,000, and broke",
+  "moves": [
+   "Four finance ordinances"
+  ],
+  "happened": "20,160 in February. Ordinances (sales, income, gambling, parking: +$337/yr) cut the deficit in half.",
+  "watching": "Land",
+  "start": {
+   "date": "Feb 2012",
+   "population": 20160,
+   "money": 568,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 297,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2013",
+   "population": 20990,
+   "money": 97,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 292,
+   "jammed": 3,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "setback",
+  "title": "Flat",
+  "moves": [],
+  "happened": "~20,800; land full, cash at zero.",
+  "watching": "-",
+  "start": {
+   "date": "Feb 2013",
+   "population": 20990,
+   "money": 97,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 292,
+   "jammed": 3,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 21030,
+   "money": -152,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 321,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "setback",
+  "title": "Flat, below zero",
+  "moves": [],
+  "happened": "~21,000; cash below zero; attempt stopped mid-2015.",
+  "watching": "Next attempt",
+  "start": {
+   "date": "Feb 2014",
+   "population": 21030,
+   "money": -152,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 321,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2015",
+   "population": 21130,
+   "money": -393,
+   "unemployment": 13,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 317,
+   "jammed": 0,
+   "bonds": 6
+  }
  }
 ]

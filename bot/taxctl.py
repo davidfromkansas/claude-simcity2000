@@ -1,0 +1,79 @@
+"""Tax controller (after attempt 12): let each zone's demand set its tax rate.
+
+Every attempt left money on the table while a demand bar sat at maximum (attempts 9, 11, 12: shops or
+factories at max for years at 6-8%), and every attempt ran out of money. Tax income is about
+1.29 x population x rate, so the rate is the only lever on income per person.
+
+Rule, per zone (homes, shops, factories), once the city has 3,000+ people:
+  demand >= 1800                    -> rate + 1 (up to MAX)
+  demand <= -300 at two checks in a row -> rate - 1 (down to MIN)
+One step per zone per check. Changes are made in the game's tax window, verified from the save, and
+logged to the dashboard. Enabled per attempt with "taxctl": true in run.json; play.sh runs it each step.
+"""
+import json
+import os
+import subprocess
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import sc2parse as p  # noqa: E402
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+STATE = "/tmp/sc/taxctl.json"
+MIN, MAX = 5, 12
+ARROW_X = {"res": 249, "com": 327, "ind": 397}
+UP_Y, DOWN_Y = 302, 311
+
+
+def sc(*a):
+    subprocess.run([os.path.join(HERE, "sc")] + [str(x) for x in a], capture_output=True)
+
+
+def decide(m, state):
+    moves = {}
+    if m["population"] < 3000:
+        return moves
+    for k in ("res", "com", "ind"):
+        d, r = m["demand"][k], m["tax"][k]
+        neg = state.get(k, 0) + 1 if d <= -300 else 0
+        state[k] = neg
+        if d >= 1800 and r < MAX:
+            moves[k] = 1
+        elif neg >= 2 and r > MIN:
+            moves[k] = -1
+            state[k] = 0
+    return moves
+
+
+def main():
+    run = json.load(open(os.path.join(HERE, "run.json")))
+    if not run.get("taxctl"):
+        return
+    m = p.parse(p.SAVE)
+    state = json.load(open(STATE)) if os.path.exists(STATE) else {}
+    moves = decide(m, state)
+    json.dump(state, open(STATE, "w"))
+    if not moves:
+        print("TAXCTL: no change (taxes %s)" % m["tax"])
+        return
+    sc("click", 47, 297); subprocess.run(["sleep", "1.2"]); sc("click", 437, 165); subprocess.run(["sleep", "1"])
+    for k, d in moves.items():
+        sc("click", ARROW_X[k], UP_Y if d > 0 else DOWN_Y); subprocess.run(["sleep", "0.3"])
+    sc("click", 430, 307); subprocess.run(["sleep", "0.6"])
+    sc("click", 459, 123); subprocess.run(["sleep", "0.5"])
+    sc("pause")
+    subprocess.run([os.path.join(HERE, "sc"), "save"], capture_output=True)
+    after = p.parse(p.SAVE)["tax"]
+    ok = all(after[k] == m["tax"][k] + d for k, d in moves.items())
+    names = {"res": "homes", "com": "shops", "ind": "factories"}
+    text = "Tax controller: " + ", ".join("%s %d -> %d (demand %d)" % (names[k], m["tax"][k], after[k], m["demand"][k])
+                                          for k in moves)
+    print("TAXCTL:", text, "" if ok else "- CHECK FAILED, taxes now %s" % after)
+    if ok:
+        subprocess.run([os.path.join(HERE, "sc"), "log", "budget", text], capture_output=True)
+    else:
+        print("FAIL tax controller could not set the rates")
+
+
+if __name__ == "__main__":
+    main()

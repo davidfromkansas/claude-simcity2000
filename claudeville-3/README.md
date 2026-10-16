@@ -23,3 +23,4 @@ Each attempt folder holds:
 | 9 | missed | 7,830 | Manual's method: land filled faster than money; plant burned |
 | 10 | missed | 14,190 | Attempt 4's fast start, but blocks smaller and later than planned; 5 loans outgrew taxes |
 | 11 | missed | 20,790 | Big day one worked; seaport 9 years late, factory land short, 7 loans outgrew taxes |
+| 12 | missed | 21,130 | Fastest start (12,030 by 2004); flat at ~21,000: jobs capped, ~$2.90 per person |

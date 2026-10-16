@@ -80,6 +80,9 @@ Toolbar is the left column (x 10-80).
   target curve; `play.sh` stops when the city is under 70% of it (act, then `PACE_OK=1 bash play.sh N` to run on).
   It also prints a LAND line: `play.sh` stops when a zone type has demand >= 1500 but < 30 empty tiles (LAND_OK=1),
   and when spare water or power is under 10% (LOW_OK=1). Both added after attempt 11.
+- `bot/taxctl.py` (after attempt 12): when run.json has "taxctl": true, play.sh adjusts each zone's tax every step
+  (+1 while demand >= 1800 up to 12%, -1 after two checks <= -300 down to 5%, from 3,000 people) and logs it.
+  play.sh refuses to start on an audit FAIL; the low water/power stop has no override; build.py restores lost zones.
 - Attempt 11 findings: the game refuses a second loan at founding (credit rating); the SEAPORT at x53-57 y57-62
   lifted the factory cap at once; homes held at 8% tax when jobs existed; stalls at 11-18k track unemployment.
 

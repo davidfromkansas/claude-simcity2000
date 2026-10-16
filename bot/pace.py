@@ -53,7 +53,7 @@ def check(save=None, goals=None):
 
 def land(save=None):
     """LAND line (after attempt 11, which ran out of factory land unnoticed for a year): a zone type is
-    short when its demand is high (>= 1500) but under 30 of its tiles are empty."""
+    short when its demand is high (>= 1000; 1500 missed attempt 12's factory shortage at 1,260) but under 30 of its tiles are empty."""
     save = save or p.SAVE
     m = p.parse(save)
     c = p.chunks(save)
@@ -64,7 +64,7 @@ def land(save=None):
         if 1 <= t <= 6 and (b[i] == 0 or 1 <= b[i] <= 4):
             empty[("res", "res", "com", "com", "ind", "ind")[t - 1]] += 1
     short = ["%s (demand %d, %d empty)" % (k, m["demand"][k], empty[k]) for k in empty
-             if m["demand"][k] >= 1500 and empty[k] < 30]
+             if m["demand"][k] >= 1000 and empty[k] < 30]
     return "LAND short: " + ", ".join(short) if short else "LAND ok: empty %s" % empty
 
 
