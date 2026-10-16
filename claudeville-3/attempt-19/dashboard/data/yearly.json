@@ -464,5 +464,69 @@
    "jammed": 0,
    "bonds": 10
   }
+ },
+ {
+  "year": 2015,
+  "tone": "setback",
+  "title": "35,730 - flat",
+  "moves": [
+   "Loan #11: six police stations"
+  ],
+  "happened": "Six police stations halved crime (51 -> 29) but home land value only rose 73 -> 79; towers (192) are out of reach.",
+  "watching": "Land - the city was full",
+  "start": {
+   "date": "Feb 2015",
+   "population": 35980,
+   "money": 1714,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 158,
+   "jammed": 0,
+   "bonds": 10
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 35310,
+   "money": 6978,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 88,
+   "jammed": 0,
+   "bonds": 11
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "steady",
+  "title": "35,330 - flat",
+  "moves": [
+   "No builds"
+  ],
+  "happened": "No empty home or factory land left; home demand slowly positive.",
+  "watching": "Expansion",
+  "start": {
+   "date": "Feb 2016",
+   "population": 35310,
+   "money": 6978,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 88,
+   "jammed": 0,
+   "bonds": 11
+  },
+  "end": {
+   "date": "Feb 2017",
+   "population": 35390,
+   "money": 5228,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 11
+  }
  }
 ]
