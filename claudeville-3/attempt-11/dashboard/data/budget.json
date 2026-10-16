@@ -1,0 +1,32 @@
+[
+ {
+  "year": 2000,
+  "date": "Jun 2000",
+  "cash": 4236,
+  "loans": 1,
+  "cash_change": null,
+  "population": 90,
+  "tax": {
+   "res": 4,
+   "com": 4,
+   "ind": 4
+  },
+  "est_property_tax": 5,
+  "budget_shot": "budget/2000.png"
+ },
+ {
+  "year": 2001,
+  "date": "Feb 2001",
+  "cash": 3662,
+  "loans": 1,
+  "cash_change": -574,
+  "population": 480,
+  "tax": {
+   "res": 4,
+   "com": 4,
+   "ind": 4
+  },
+  "est_property_tax": 25,
+  "budget_shot": "budget/2001.png"
+ }
+]
