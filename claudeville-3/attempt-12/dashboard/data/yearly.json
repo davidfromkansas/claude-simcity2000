@@ -1,0 +1,66 @@
+[
+ {
+  "year": 2000,
+  "tone": "steady",
+  "title": "Day one again",
+  "moves": [
+   "Loan #1",
+   "Day one plan",
+   "Taxes 4/4/3"
+  ],
+  "happened": "Attempt 11's day one: 288 home tiles. 610 people by Feb 2001.",
+  "watching": "Loan #2",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 20000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2001",
+   "population": 610,
+   "money": 3661,
+   "unemployment": 0,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "Faster than 11",
+  "moves": [],
+  "happened": "1,870 by December (attempt 11: 1,370). Shop land nearly full by April 2002.",
+  "watching": "Loan #2",
+  "start": {
+   "date": "Feb 2001",
+   "population": 610,
+   "money": 3661,
+   "unemployment": 0,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Apr 2002",
+   "population": 2440,
+   "money": 3077,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 10,
+   "jammed": 0,
+   "bonds": 1
+  }
+ }
+]
