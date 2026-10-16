@@ -1,4 +1,4 @@
-# Reflection on attempts 1-17 (all weighted equally)
+# Reflection on attempts 1-18 (all weighted equally)
 
 Updated before every new attempt (process rule). Each attempt gets its own entry; then the patterns
 that repeat across attempts; then what that means for the next strategy.
@@ -24,6 +24,7 @@ that repeat across attempts; then what that means for the next strategy.
 | 15 | 4,330 | 13,240 | 17,750 | - | 18,260 (2011) | 6 | 4-7% | 568 (dense) | 827 (dense) | 27 |
 | 16 | 4,520 | 13,730 | 22,030 | - | 24,870 (2014) | 9 | 4% homes | 675 (dense) | 1,161 (dense) | 19 |
 | 17 | 6,600 | 19,360 | 26,530 | - | 29,090 (2013) | 11 | 6% homes | 885 (dense) | 1,163 (dense) | 23 |
+| 18 | 3,360 | 15,800 | 24,020 | 28,670 | 28,920 (2015) | 9 | 6-7% homes | - | - | - |
 
 ## What each attempt teaches
 
@@ -100,8 +101,12 @@ that repeat across attempts; then what that means for the next strategy.
    all (16,230 by 2004, 21,830 by 2006) and the best city since attempt 2. After 2006 it grew ~1,000 a
    year, each step on a loan; eleven loans and no ordinances left a ~$2,000 deficit. *Lesson: the layout
    problems are solved (checks catch them); what is left is money per person.*
+18. **Attempt 18 (28,920):** attempt 17 replayed with ordinances: the same ~29,000 plateau, a smaller
+   deficit. Unemployment 11-14% for ten years with 200-300 empty dense home tiles. Two strategy items
+   (the 7% home floor, the second seaport) were missed because nothing reminded me. *Lesson: the plateau
+   is the plan's; homes outrun jobs with dense zoning.*
 
-## Patterns across all seventeen
+## Patterns across all eighteen
 
 1. **Population follows home land zoned early (~20 people per home tile).** The three fast attempts had
    565-650 home tiles by 2005; every other attempt had under 370 and never passed 12,000 by 2010.
@@ -209,3 +214,9 @@ not tax, held homes back). See `attempt-17/strategy.md`.
 Attempt 17's schedule unchanged (it is the best), plus everything that raises income without slowing
 growth: finance ordinances from ~10,000, homes 7% from ~15,000, the second seaport at ~20,000 as a factory
 test, checkerboard districts for all new land. See `attempt-18/strategy.md`.
+
+## What this means for attempt 19
+Two of eighteen attempts reached ~29,000 with the same plan; something structural has to change. The
+untried combination: **light homes again (attempt 14 had low unemployment with them) inside attempt 17's
+mixed layout, more factory cells per district, and the second seaport at ~20,000** - with population
+reminders in pace.json so no planned step is missed. See `attempt-19/strategy.md`.

@@ -1,5 +1,9 @@
 {
  "attempt": 18,
- "status": "playing",
- "started": "2026-10-16"
+ "status": "failed",
+ "started": "2026-10-16",
+ "ended": "Nov 2016",
+ "peak": 28920,
+ "reason": "Attempt 17 replayed with ordinances: same ~29,000 plateau (peak 28,920 in 2015)",
+ "timelapse": "recording-timelapse/timelapse.mp4"
 }
