@@ -106,5 +106,10 @@
   "status": "failed",
   "reason": "Attempt 17 replayed with ordinances: same ~29,000 plateau (peak 28,920 in 2015)",
   "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 19,
+  "status": "playing",
+  "reason": ""
  }
 ]
