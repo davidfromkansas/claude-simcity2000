@@ -1,0 +1,20 @@
+# Attempt 10 block 3 (2003, loan #3): east of x=100 - homes x102-107 y21-33, shops x102-107 y35-40,
+# factory strip x110-114 y21-54, pipes; plus the north riverbank pump field (separate plan a9-pumps-north).
+road 101 20 115 20
+road 101 27 108 27
+road 101 34 108 34
+road 108 21 108 40
+road 109 41 115 41
+road 115 21 115 54
+road 109 55 115 55
+line 101 21 101 35
+line 108 30 109 30
+line 109 21 109 54
+zone r 102 21 107 26
+zone r 102 28 107 33
+zone c 102 35 107 40
+zone i 110 21 114 54
+pipe 100 23 114 23
+pipe 100 30 114 30
+pipe 100 38 114 38
+pipe 107 51 114 51
