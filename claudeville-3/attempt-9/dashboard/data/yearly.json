@@ -88,6 +88,51 @@
    "jammed": 0,
    "bonds": 1
   },
-  "end": null
+  "end": {
+   "date": "Feb 2010",
+   "population": 5810,
+   "money": 5142,
+   "unemployment": 7,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 38,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2019,
+  "tone": "setback",
+  "title": "Power plant lost",
+  "moves": [
+   "Taxes 10/10/9",
+   "Loan #3",
+   "Plant rebuilt",
+   "First fire station"
+  ],
+  "happened": "Taxes were raised to 8-10% while demand was at maximum, then in 2017 the second coal plant burned down (no fire station). 180 buildings lost power and the population fell to 6,100 before loan #3 rebuilt the plant and added a fire station.",
+  "watching": "Recovery",
+  "start": {
+   "date": "Feb 2019",
+   "population": 6520,
+   "money": 1705,
+   "unemployment": 21,
+   "watered_pct": 100,
+   "powered_pct": 78,
+   "abandoned": 195,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2020",
+   "population": 6660,
+   "money": 7006,
+   "unemployment": 20,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 151,
+   "jammed": 0,
+   "bonds": 3
+  }
  }
 ]
