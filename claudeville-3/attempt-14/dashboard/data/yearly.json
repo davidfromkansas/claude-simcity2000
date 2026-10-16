@@ -312,6 +312,74 @@
    "jammed": 0,
    "bonds": 6
   },
+  "end": {
+   "date": "Feb 2011",
+   "population": 20290,
+   "money": 6894,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 174,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "good",
+  "title": "Airport fills shops",
+  "moves": [
+   "Shop cells",
+   "Coal plant"
+  ],
+  "happened": "21,220 by December; shop demand ~1,950 after the airport; two shop cells and a coal plant added.",
+  "watching": "Debt",
+  "start": {
+   "date": "Feb 2011",
+   "population": 20290,
+   "money": 6894,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 174,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 21320,
+   "money": -364,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 176,
+   "jammed": 6,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "good",
+  "title": "22,660",
+  "moves": [
+   "Loan #9",
+   "Factory land",
+   "Pumps",
+   "Ordinances"
+  ],
+  "happened": "Loan #9: factory land, pumps; ordinances on (+$386/yr).",
+  "watching": "Debt vs growth",
+  "start": {
+   "date": "Feb 2012",
+   "population": 21320,
+   "money": -364,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 176,
+   "jammed": 6,
+   "bonds": 8
+  },
   "end": null
  }
 ]
