@@ -3,9 +3,10 @@
 # Power and water through the pumps on x74 (buildings conduct) from the line column x75.
 road 64 63 74 63
 road 58 69 74 69
-road 58 76 74 76
+road 59 76 74 76
 road 58 64 58 68
 zone R 59 64 73 68
 zone i 59 70 73 75
 pipe 59 66 73 66
 pipe 59 72 73 72
+road 75 76 75 76
