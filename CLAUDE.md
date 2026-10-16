@@ -96,3 +96,14 @@ Only strategy lapses are acceptable reasons to fail.
 - Official manual read in full (claudeville-3/research/manual-notes.md): start small and profitable, copy a compact
   module; homes ~= shops + factories (more factories while small); 6x6 squares between roads; power lines consume
   power; pumps on fresh-water banks give 2-3x; industry leads a small city (rail link, seaport); shops near the centre.
+
+## Process rules (from the user, Oct 2026)
+- Before every new attempt, update `claudeville-3/reflection.md` reflecting on ALL previous attempts equally
+  (not just the last one), and derive the next `strategy.md` from that reflection.
+- Log the commentary I give the user in chat with `bot/sc log commentary "<text>"` at every status update;
+  the dashboard feed shows it under the "Commentary" filter (All / Moves / Commentary chips).
+- Data kept per attempt (do not drop): metrics.json, activity.json (moves + commentary), yearly.json,
+  checks.jsonl (every step's check output), unlocks.json (first date of each unlock/service), budget.json +
+  budget/YYYY.png (January budget row and screenshot), saves/C3A<N>/YYYY-MM.SC2 (one save per game year),
+  plans in bot/plans/, recordings + timelapse, strategy.md, post-mortem. `step.sh` and `record_step.py` do this.
+- Run play with `bot/play.sh N` (stops at the first alarm). Keep going attempt after attempt without asking.

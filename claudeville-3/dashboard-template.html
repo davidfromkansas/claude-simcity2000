@@ -100,6 +100,10 @@ button,select{font:inherit;border:1px solid var(--border);background:var(--surfa
 .vids{display:flex;flex-direction:column;gap:12px}
 .vids a.v{display:flex;justify-content:space-between;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--ink)}
 video{width:100%;border-radius:10px;background:#000}
+.chips{display:flex;gap:8px;margin:0 0 10px}
+.chips button{font:inherit;font-size:13px;padding:4px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink-2);cursor:pointer}
+.chips button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.feed li.commentary .t{font-style:italic}
 .feed{list-style:none;margin:0;padding:0;max-height:560px;overflow:auto}
 .feed li{display:flex;flex-wrap:wrap;gap:6px 14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
 .feed .dt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-2);flex:0 0 90px}
@@ -180,6 +184,7 @@ footer{font-size:13px;color:var(--muted)}
 
   <section class="card">
     <h2 style="margin-bottom:12px">Every move</h2>
+    <div class="chips" id="chips"><button data-f="all" class="on">All</button><button data-f="moves">Moves</button><button data-f="commentary">Commentary</button></div>
     <ul class="feed" id="feed"></ul>
   </section>
 
@@ -329,10 +334,20 @@ function vids(list, tl) {
   list.forEach((r, i) => out.push(`<a class="v" href="${esc(r.file)}"><span>Full recording, part ${i + 1}</span><span class="meta">${r.mb} MB</span></a>`));
   $("vids").innerHTML = out.length ? out.join("") : `<p class="empty" style="margin:0">The game is being recorded. 30-minute clips appear here as each one finishes; the timelapse comes at the end.</p>`;
 }
+let FEED = [], FEED_F = (() => { try { return localStorage.getItem("feedFilter") || "all"; } catch (e) { return "all"; } })();
 function feed(items) {
-  $("feed").innerHTML = items.length ? items.slice().reverse().map(a => `<li><span class="dt">${esc(a.date)}</span><span class="k">${esc(a.type)}</span><span class="t">${esc(a.text)}</span></li>`).join("")
-    : `<li class="empty">No moves yet.</li>`;
+  if (items) FEED = items;
+  const pick = FEED.filter(a => FEED_F === "all" || (FEED_F === "commentary" ? a.type === "commentary" : a.type !== "commentary"));
+  document.querySelectorAll("#chips button").forEach(b => b.classList.toggle("on", b.dataset.f === FEED_F));
+  $("feed").innerHTML = pick.length ? pick.slice().reverse().map(a => `<li class="${a.type === "commentary" ? "commentary" : ""}"><span class="dt">${esc(a.date)}</span><span class="k">${esc(a.type)}</span><span class="t">${esc(a.text)}</span></li>`).join("")
+    : '<li><span class="t">Nothing here yet.</span></li>';
 }
+document.addEventListener("click", e => {
+  const b = e.target.closest("#chips button"); if (!b) return;
+  FEED_F = b.dataset.f; try { localStorage.setItem("feedFilter", FEED_F); } catch (err) {}
+  feed();
+});
+
 
 async function refresh() {
   const [rows, s, act, rec, L, yr, info] = await Promise.all([get("data/metrics.json", []), get("data/shots.json", []), get("data/activity.json", []),

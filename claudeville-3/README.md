@@ -20,3 +20,4 @@ Each attempt folder holds:
 | 6 | missed | 11,620 | Clean setup, but loans cost more than taxes |
 | 7 | missed | 3,850 | No loans: safe budget, growth far too slow |
 | 8 | missed | 8,230 | Research plan: checks all passed, but slow dense growth and loans |
+| 9 | missed | 7,830 | Manual's method: land filled faster than money; plant burned |

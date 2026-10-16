@@ -1,5 +1,9 @@
 {
  "attempt": 9,
- "status": "playing",
- "started": "2026-10-16"
+ "status": "failed",
+ "started": "2026-10-16",
+ "ended": "Feb 2022",
+ "peak": 7830,
+ "reason": "Stuck near 7,500: land filled faster than money; plant burned down",
+ "timelapse": "recording-timelapse/timelapse.mp4"
 }
