@@ -1,0 +1,29 @@
+# Attempt 19 Dec 2008 (loan #8): 25,970 people, factory land short (7 empty, demand 1754), home demand +290,
+# stadium due before 30,000. East district x109-122 y56-76: homes x110-114 (parks) facing dense factories x117-121
+# across road x115; lines x109 (joins the zoo line) and x116 (joins line y56). Stadium below road y97, power
+# from the factories at (105,96) across road y97.
+road 115 56 115 76
+road 109 62 121 62
+road 109 69 121 69
+road 109 76 121 76
+road 122 56 122 76
+line 109 56 109 61
+line 109 63 109 68
+line 109 70 109 75
+line 116 57 116 61
+line 116 63 116 68
+line 116 70 116 75
+zone R 110 63 114 68
+zone R 110 70 114 75
+park 112 65 113 66
+park 112 72 113 73
+zone I 117 57 121 61
+zone I 117 63 121 68
+zone I 117 70 121 75
+pipe 108 65 114 65
+pipe 108 72 114 72
+pipe 115 65 121 65
+pipe 115 72 121 72
+pipe 115 59 121 59
+line 105 97 105 98
+stadium 101 98
