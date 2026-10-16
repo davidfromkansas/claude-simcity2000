@@ -73,5 +73,20 @@
   },
   "est_property_tax": 511,
   "budget_shot": "budget/2004.png"
+ },
+ {
+  "year": 2005,
+  "date": "Feb 2005",
+  "cash": -1105,
+  "loans": 4,
+  "cash_change": -563,
+  "population": 12000,
+  "tax": {
+   "res": 6,
+   "com": 7,
+   "ind": 6
+  },
+  "est_property_tax": 949,
+  "budget_shot": "budget/2005.png"
  }
 ]
