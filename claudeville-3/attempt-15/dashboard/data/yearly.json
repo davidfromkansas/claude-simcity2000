@@ -96,5 +96,71 @@
    "jammed": 0,
    "bonds": 2
   }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "Seaport, links, factories",
+  "moves": [
+   "Loan #3",
+   "Seaport",
+   "Loan #4",
+   "East block",
+   "West factories"
+  ],
+  "happened": "Loan #3 coal + seaport + pumps, loan #4 east block, east link, west factories. 8,770 by August.",
+  "watching": "Jobs",
+  "start": {
+   "date": "Mar 2003",
+   "population": 6960,
+   "money": 525,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 86,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 10280,
+   "money": 3670,
+   "unemployment": 5,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 42,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "10,000, jobs lag",
+  "moves": [],
+  "happened": "11,050 by December; unemployment 5% -> 14% as dense homes outran jobs.",
+  "watching": "Shops",
+  "start": {
+   "date": "Feb 2004",
+   "population": 10280,
+   "money": 3670,
+   "unemployment": 5,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 42,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 10900,
+   "money": 2440,
+   "unemployment": 16,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 4
+  }
  }
 ]
