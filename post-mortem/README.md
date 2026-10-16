@@ -19,3 +19,4 @@ One post-mortem per failed attempt. Each one is also kept in its attempt folder
 | Claudeville 3 | 12 | Missed: flat at ~21,000 from 2012; jobs capped, out of land and money | [claudeville-3-attempt-12.md](claudeville-3-attempt-12.md) |
 | Claudeville 3 | 13 | Missed: peak 20,070 (2008); factory tax at 12% collapsed industry, too many shops | [claudeville-3-attempt-13.md](claudeville-3-attempt-13.md) |
 | Claudeville 3 | 14 | Missed: 23,580 by 2013; healthy but slow, 9 loans outgrew taxes | [claudeville-3-attempt-14.md](claudeville-3-attempt-14.md) |
+| Claudeville 3 | 15 | Missed: 18,260 by 2011; dense homes worked (27/tile), factories stalled | [claudeville-3-attempt-15.md](claudeville-3-attempt-15.md) |

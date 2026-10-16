@@ -162,5 +162,185 @@
    "jammed": 0,
    "bonds": 4
   }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "Zoo and coal",
+  "moves": [],
+  "happened": "13,240 by December; loan #5 coal, zoo, 16 pumps.",
+  "watching": "-",
+  "start": {
+   "date": "Feb 2005",
+   "population": 10900,
+   "money": 2440,
+   "unemployment": 16,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2006",
+   "population": 13940,
+   "money": 2063,
+   "unemployment": 6,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "Growth resumes",
+  "moves": [],
+  "happened": "15,420 by November.",
+  "watching": "-",
+  "start": {
+   "date": "Feb 2006",
+   "population": 13940,
+   "money": 2063,
+   "unemployment": 6,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 16480,
+   "money": 749,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 54,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "good",
+  "title": "17,950",
+  "moves": [],
+  "happened": "Shops full; factories stalling.",
+  "watching": "-",
+  "start": {
+   "date": "Feb 2007",
+   "population": 16480,
+   "money": 749,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 54,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 17780,
+   "money": -386,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 70,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "setback",
+  "title": "Factory stall",
+  "moves": [],
+  "happened": "Loan #6: second seaport, district 6. ~17,500.",
+  "watching": "-",
+  "start": {
+   "date": "Feb 2008",
+   "population": 17780,
+   "money": -386,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 70,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 17370,
+   "money": 1372,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 125,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "setback",
+  "title": "Flat",
+  "moves": [],
+  "happened": "~17,300; unemployment 13%.",
+  "watching": "-",
+  "start": {
+   "date": "Feb 2009",
+   "population": 17370,
+   "money": 1372,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 125,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 17540,
+   "money": -136,
+   "unemployment": 13,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 161,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "setback",
+  "title": "Flat, cash below zero",
+  "moves": [],
+  "happened": "~17,700; stopped mid-2011.",
+  "watching": "-",
+  "start": {
+   "date": "Feb 2010",
+   "population": 17540,
+   "money": -136,
+   "unemployment": 13,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 161,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 18080,
+   "money": -1638,
+   "unemployment": 13,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 160,
+   "jammed": 0,
+   "bonds": 6
+  }
  }
 ]

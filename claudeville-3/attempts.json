@@ -85,7 +85,8 @@
  },
  {
   "attempt": 15,
-  "status": "playing",
-  "reason": ""
+  "status": "failed",
+  "reason": "Dense homes reached 26.8 people per tile, but the city stopped at ~18,000: factories stalled with empty land even after a second seaport",
+  "timelapse": "recording-timelapse/timelapse.mp4"
  }
 ]

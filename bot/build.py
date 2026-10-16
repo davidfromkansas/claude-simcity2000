@@ -26,6 +26,7 @@ After building: every planned tile is checked in the save and missing tiles are 
 (two rounds). Any tile OUTSIDE the plan that changed is reported (and roads/lines/pipes repaired).
 Exit code 1 if anything is still wrong.
 """
+import json
 import os
 import subprocess
 import sys
@@ -411,6 +412,14 @@ def main(path, dry=False):
     for p in problems:
         print("PROBLEM", p)
     print("BUILD: %s" % ("checked, all planned tiles in place" if not problems else "%d problems" % len(problems)))
+    # record which plans this attempt has built (attempt 15 skipped district 5 while later plans assumed it)
+    try:
+        rp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "run.json")
+        r = json.load(open(rp))
+        r.setdefault("built", []).append({"plan": os.path.basename(path), "ok": not problems})
+        json.dump(r, open(rp, "w"))
+    except Exception as e:
+        print("note: could not record the plan in run.json:", e)
     return 1 if problems else 0
 
 
