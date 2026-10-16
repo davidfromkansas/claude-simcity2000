@@ -723,5 +723,92 @@
    "jammed": 0,
    "bonds": 15
   }
+ },
+ {
+  "year": 2023,
+  "tone": "steady",
+  "title": "48,410 peak, 47,880",
+  "moves": [
+   "14 riverbank pumps",
+   "Shop tax 8%"
+  ],
+  "happened": "Shop demand fell to -1,362 at 10% shop tax; cut to 8%. 14 more riverbank pumps.",
+  "watching": "Growth pace ~2,000/yr",
+  "start": {
+   "date": "Feb 2023",
+   "population": 46730,
+   "money": 7604,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 43,
+   "jammed": 0,
+   "bonds": 15
+  },
+  "end": {
+   "date": "Feb 2024",
+   "population": 48730,
+   "money": 3877,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 153,
+   "jammed": 0,
+   "bonds": 15
+  }
+ },
+ {
+  "year": 2024,
+  "tone": "good",
+  "title": "49,860",
+  "moves": [
+   "No builds"
+  ],
+  "happened": "Steady growth with taxes at 10/7/8.",
+  "watching": "Home land",
+  "start": {
+   "date": "Feb 2024",
+   "population": 48730,
+   "money": 3877,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 153,
+   "jammed": 0,
+   "bonds": 15
+  },
+  "end": {
+   "date": "Feb 2025",
+   "population": 50970,
+   "money": 1741,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 62,
+   "jammed": 0,
+   "bonds": 15
+  }
+ },
+ {
+  "year": 2025,
+  "tone": "milestone",
+  "title": "50,000 passed",
+  "moves": [
+   "Loan #16: north-east homes"
+  ],
+  "happened": "Peak 51,990 in July. Home land ran out; loan #16 for north-east homes.",
+  "watching": "Money: 16 loans, about -$2,000/yr",
+  "start": {
+   "date": "Feb 2025",
+   "population": 50970,
+   "money": 1741,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 62,
+   "jammed": 0,
+   "bonds": 15
+  },
+  "end": null
  }
 ]
