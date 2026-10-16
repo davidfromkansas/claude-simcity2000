@@ -310,6 +310,10 @@ def main(path, dry=False):
     # preflight (attempt 19): a park placed over a planned line or road cut power to a whole factory strip
     links = {p for s in steps if s["kind"] in ("line", "road", "rail", "police", "fire", "coal", "gas", "stadium", "zoo") for p in s["tiles"]}
     clash = sorted(p for s in steps if s["kind"] == "park" for p in s["tiles"] if p in links)
+    # preflight (attempt 19): roads/lines/pipes on the map edge each start a $1,000 neighbour deal (4 = $3,900 surprise)
+    edge = sorted(p for s in steps if s["kind"] in ("road", "line", "pipe", "rail") for p in s["tiles"] if 0 in p or N - 1 in p)
+    if edge and "--edge-ok" not in sys.argv:
+        print("PLAN ERROR: tiles on the map edge cost $1,000 each as neighbour deals: %s (use link/raillink, or --edge-ok)" % edge[:6]); print("BUILD: refused"); sys.exit(2)
     if clash:
         print("PLAN ERROR: park on a planned line/road/rail/building at %s" % clash[:8]); print("BUILD: refused"); sys.exit(2)
     # preflight: the plan must not put buildings, zones or parks on water (roads/lines/pipes would need bridges)

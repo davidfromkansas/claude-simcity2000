@@ -1,10 +1,10 @@
 # Attempt 19 Dec 2005: east job strip had weak trips (34%) -> dense homes across road x122 (x123-126) with parks,
-# roads y20 and y55 out to the east map edge (x127), power: line crossing road y20 at x116, line y19 east, line x127.
+# roads y20 and y55 out to the east map edge (x127), power: line x116 across road y55, line y56 east, line x127 (y19 is water at x116-117).
 road 123 20 127 20
 road 123 55 127 55
-line 116 20 116 20
-line 116 19 127 19
-line 127 20 127 20
+line 116 55 116 55
+line 116 56 127 56
+line 127 55 127 55
 line 127 21 127 54
 zone R 123 21 126 54
 park 124 24 125 25
