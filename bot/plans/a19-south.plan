@@ -1,0 +1,28 @@
+# Attempt 19 Feb 2010: 28,430 people, flat; shop land short (28 empty, demand 1,328), home demand +782.
+# South district x76-100 y98-109 with NO industry (land value): dense homes + parks west and east, dense shops in the
+# middle. Roads x76/x84/x92/x100 and y103/y109; lines x77 (fed by the building at (78,96) across road y97), x85, x93
+# (crossing road y97); pipes x80/x88/x96 down from the y94 pipe.
+road 76 98 76 109
+road 84 98 84 109
+road 92 98 92 109
+road 100 98 100 109
+road 77 103 99 103
+road 77 109 99 109
+line 77 96 77 102
+line 77 104 77 108
+line 77 103 77 103
+line 85 97 85 108
+line 93 97 93 108
+zone R 78 98 83 102
+zone R 78 104 83 108
+zone C 86 98 91 102
+zone C 86 104 91 108
+zone R 94 98 99 102
+zone R 94 104 99 108
+park 80 99 81 100
+park 80 105 81 106
+park 96 99 97 100
+park 96 105 97 106
+pipe 80 95 80 108
+pipe 88 95 88 108
+pipe 96 95 96 108
