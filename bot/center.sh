@@ -1,6 +1,7 @@
 #!/bin/bash
 # center.sh X Y : scroll the view (any distance) until tile X,Y is at the screen centre. Needs a valid calibration.
 cd "$(dirname "$0")"
+echo "{\"x\": $1, \"y\": $2}" > /tmp/sc/center.json   # autocal uses it to keep test roads off the map edge (attempt 19)
 for i in 1 2 3 4 5 6; do
   read sx sy < <(python3 -I tile.py "$1" "$2")
   if [ "$sx" -ge 100 ] && [ "$sx" -le 600 ] && [ "$sy" -ge 70 ] && [ "$sy" -le 440 ]; then ./sc goto "$1" "$2"; exit 0; fi
