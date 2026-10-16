@@ -97,7 +97,8 @@
  },
  {
   "attempt": 17,
-  "status": "playing",
-  "reason": ""
+  "status": "failed",
+  "reason": "Best since attempt 2: 21,830 by 2006, peak 29,090 in 2013; eleven loans and a deficit slowed it to ~1,000/yr",
+  "timelapse": "recording-timelapse/timelapse.mp4"
  }
 ]

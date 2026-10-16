@@ -28,3 +28,4 @@ Each attempt folder holds:
 | 14 | missed | 23,580 | Low taxes: healthy but slow (~1,500/yr), 9 loans, ~$3.80 per person |
 | 15 | missed | 18,260 | Dense homes: 27 people per tile; factories stalled, jobs capped the city |
 | 16 | missed | 24,870 | Trip fix (factories next to homes) passed 18,000; nine loans, too few jobs |
+| 17 | missed | 29,090 | More job land + police: fastest start, best since attempt 2; eleven loans |

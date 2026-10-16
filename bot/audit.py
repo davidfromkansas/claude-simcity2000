@@ -101,6 +101,13 @@ def audit(path=None, city=None):
         add("WARN", "home cap: %d stadium/zoo/marina for %d people - build one before ~%d" % (lifters, pop, 15000 * (lifters + 1)))
     if pop > 3000 and not (rail_link or seaport):
         add("WARN", "factory cap: no rail link off the map edge and no seaport")
+    # attempt 17: factories stalled at ~9,300 factory workers - the spec gives 10,000 factory workers per seaport
+    # crane / rail / highway link; warn from 8,000 workers per unit of trade capacity
+    ind_pop = (c.misc.get("taxed_pop") or {}).get("ind", 0)
+    cranes = count(0xE0)                 # seaport crane tile (research script port.py)
+    units = max(1, cranes) + (1 if rail_link else 0)
+    if ind_pop > 8000 * units:
+        add("WARN", "factory trade capacity: %d factory workers for ~%d units (10,000 each) - add a seaport or a rail/highway link" % (ind_pop, units))
     if pop > 18000 and not airport:
         add("WARN", "shop cap: no airport (helps from ~20,000 people)")
 

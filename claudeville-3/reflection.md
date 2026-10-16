@@ -1,4 +1,4 @@
-# Reflection on attempts 1-16 (all weighted equally)
+# Reflection on attempts 1-17 (all weighted equally)
 
 Updated before every new attempt (process rule). Each attempt gets its own entry; then the patterns
 that repeat across attempts; then what that means for the next strategy.
@@ -23,6 +23,7 @@ that repeat across attempts; then what that means for the next strategy.
 | 14 | 3,610 | 12,130 | 20,360 | - | 23,580 (2013) | 9 | 5-6% | 738 | 1,202 | 19 |
 | 15 | 4,330 | 13,240 | 17,750 | - | 18,260 (2011) | 6 | 4-7% | 568 (dense) | 827 (dense) | 27 |
 | 16 | 4,520 | 13,730 | 22,030 | - | 24,870 (2014) | 9 | 4% homes | 675 (dense) | 1,161 (dense) | 19 |
+| 17 | 6,600 | 19,360 | 26,530 | - | 29,090 (2013) | 11 | 6% homes | 885 (dense) | 1,163 (dense) | 23 |
 
 ## What each attempt teaches
 
@@ -95,8 +96,12 @@ that repeat across attempts; then what that means for the next strategy.
    attempt 4. Then too few jobs for the dense homes (unemployment 14-20%, 300-480 empty home tiles),
    homes taxed at 4% the whole game, no police, land value ~21, and nine loans. *Lesson: job land must
    lead home land with dense homes; police and land value were never built.*
+17. **Attempt 17 (29,090):** attempt 16 with more job land, police and homes at 6%: the fastest start of
+   all (16,230 by 2004, 21,830 by 2006) and the best city since attempt 2. After 2006 it grew ~1,000 a
+   year, each step on a loan; eleven loans and no ordinances left a ~$2,000 deficit. *Lesson: the layout
+   problems are solved (checks catch them); what is left is money per person.*
 
-## Patterns across all sixteen
+## Patterns across all seventeen
 
 1. **Population follows home land zoned early (~20 people per home tile).** The three fast attempts had
    565-650 home tiles by 2005; every other attempt had under 370 and never passed 12,000 by 2010.
@@ -199,3 +204,8 @@ stops on weak trips). With factories filling, jobs keep pace with dense homes. S
 Attempt 16's plan with three changes: job-heavier districts (three home cells per district become job cells,
 each still next to homes), police in each district from 2002, and homes taxed at 6% minimum (unemployment,
 not tax, held homes back). See `attempt-17/strategy.md`.
+
+## What this means for attempt 18
+Attempt 17's schedule unchanged (it is the best), plus everything that raises income without slowing
+growth: finance ordinances from ~10,000, homes 7% from ~15,000, the second seaport at ~20,000 as a factory
+test, checkerboard districts for all new land. See `attempt-18/strategy.md`.
