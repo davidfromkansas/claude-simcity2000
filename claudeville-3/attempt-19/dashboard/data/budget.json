@@ -343,5 +343,20 @@
   },
   "est_property_tax": 4737,
   "budget_shot": "budget/2022.png"
+ },
+ {
+  "year": 2023,
+  "date": "Feb 2023",
+  "cash": 7604,
+  "loans": 15,
+  "cash_change": 6631,
+  "population": 46730,
+  "tax": {
+   "res": 9,
+   "com": 10,
+   "ind": 7
+  },
+  "est_property_tax": 5147,
+  "budget_shot": "budget/2023.png"
  }
 ]
