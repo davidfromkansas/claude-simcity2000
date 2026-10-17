@@ -1272,5 +1272,70 @@
    "jammed": 0,
    "bonds": 26
   }
+ },
+ {
+  "year": 2040,
+  "tone": "steady",
+  "title": "83,210 -> 84,770",
+  "moves": [
+   "Loan #27: 15 big parks",
+   "Home tax 8%"
+  ],
+  "happened": "15 big parks and a home tax cut turned home demand positive again.",
+  "watching": "Land",
+  "start": {
+   "date": "Feb 2040",
+   "population": 83210,
+   "money": -2036,
+   "unemployment": 7,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 180,
+   "jammed": 0,
+   "bonds": 26
+  },
+  "end": {
+   "date": "Feb 2041",
+   "population": 83880,
+   "money": -1913,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 136,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2041,
+  "tone": "good",
+  "title": "85,420 -> 87,250 by Feb 2042",
+  "moves": [
+   "No builds"
+  ],
+  "happened": "Growth back; land ran out again.",
+  "watching": "Land, money (29 loans)",
+  "start": {
+   "date": "Feb 2041",
+   "population": 83880,
+   "money": -1913,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 136,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2042",
+   "population": 87250,
+   "money": -9804,
+   "unemployment": 2,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 84,
+   "jammed": 0,
+   "bonds": 27
+  }
  }
 ]
