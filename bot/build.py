@@ -333,6 +333,13 @@ def main(path, dry=False):
         print("PLAN ERROR: park on a planned line/road/rail/building at %s" % clash[:8]); print("BUILD: refused"); sys.exit(2)
     # preflight: the plan must not put buildings, zones or parks on water (roads/lines/pipes would need bridges)
     c0 = City()
+    # preflight (attempt 19): zone rows 4-5 tiles from any road can never grow (top strip y1-2 in Dec 2044)
+    roads = {p for s in steps if s["kind"] == "road" for p in s["tiles"]} | \
+            {(i % N, i // N) for i in range(N * N) if is_road(c0.t(i % N, i // N))}
+    far = sorted(p for s in steps if s["kind"] == "zone" for p in s["tiles"]
+                 if not any((p[0] + d, p[1]) in roads or (p[0], p[1] + d) in roads for d in (-3, -2, -1, 1, 2, 3)))
+    if far and "--far-ok" not in sys.argv:
+        print("PLAN ERROR: %d zone tiles have no road within 3 tiles, e.g. %s (--far-ok to override)" % (len(far), far[:6])); print("BUILD: refused"); sys.exit(2)
     wet = sorted(p for p, s in final.items() if c0.bit[p[1] * N + p[0]] & 4 and s["kind"] not in ("bulldoze", "bulldoze!", "dezone", "marina"))
     if wet:
         print("PLAN ERROR: %d planned tiles are water, e.g. %s - change the plan" % (len(wet), wet[:6]))
