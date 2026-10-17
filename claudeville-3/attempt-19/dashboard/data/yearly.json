@@ -1426,6 +1426,38 @@
    "jammed": 0,
    "bonds": 31
   },
+  "end": {
+   "date": "Feb 2045",
+   "population": 99650,
+   "money": 2697,
+   "unemployment": 1,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 72,
+   "jammed": 0,
+   "bonds": 33
+  }
+ },
+ {
+  "year": 2045,
+  "tone": "milestone",
+  "title": "100,000 reached",
+  "moves": [
+   "Ran past the land alarm"
+  ],
+  "happened": "Crossed 100,000 in mid-2045 (102,140 in July, 103,640 in December), 4.5 years before the deadline. Every demand bar at or near maximum.",
+  "watching": "Stay above 100,000 to Jan 2050; money (33 loans)",
+  "start": {
+   "date": "Feb 2045",
+   "population": 99650,
+   "money": 2697,
+   "unemployment": 1,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 72,
+   "jammed": 0,
+   "bonds": 33
+  },
   "end": null
  }
 ]
