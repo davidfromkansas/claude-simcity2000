@@ -1111,5 +1111,37 @@
    "jammed": 0,
    "bonds": 22
   }
+ },
+ {
+  "year": 2035,
+  "tone": "good",
+  "title": "73,850 -> 76,090",
+  "moves": [
+   "Loan #23: SW band 2 + pumps"
+  ],
+  "happened": "Loan #23: SW band 2 and 11 west-bank pumps.",
+  "watching": "Land and power",
+  "start": {
+   "date": "Mar 2035",
+   "population": 71620,
+   "money": -3671,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 69,
+   "jammed": 0,
+   "bonds": 22
+  },
+  "end": {
+   "date": "Mar 2036",
+   "population": 76090,
+   "money": -1469,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 23
+  }
  }
 ]
