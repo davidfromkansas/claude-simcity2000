@@ -1,0 +1,14 @@
+# Claudeville 4: a19-2006b without its map-edge tiles (they started four $1,000 neighbour deals in attempt 19).
+# Dense homes x123-125 across road x122 from the east job strip, line x126 (not x127) fed along y56 from line x116
+# across road y55; parks; pipes.
+line 116 55 116 55
+line 116 56 126 56
+line 126 21 126 55
+zone R 123 21 125 54
+park 123 24 124 25
+park 123 31 124 32
+park 123 38 124 39
+park 123 45 124 46
+park 123 51 124 52
+pipe 122 23 125 23
+pipe 124 24 124 54
