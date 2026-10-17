@@ -1404,5 +1404,28 @@
    "jammed": 0,
    "bonds": 31
   }
+ },
+ {
+  "year": 2044,
+  "tone": "milestone",
+  "title": "92,390 -> 97,290",
+  "moves": [
+   "Loan #32: north factories + homes",
+   "Loan #33: pumps + top row"
+  ],
+  "happened": "Fastest year since 2033 (+5,000). Loan #32: north factories and homes; loan #33: north-shore pumps and a top row of jobs.",
+  "watching": "100,000 within reach",
+  "start": {
+   "date": "Feb 2044",
+   "population": 92390,
+   "money": -3836,
+   "unemployment": 1,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 68,
+   "jammed": 0,
+   "bonds": 31
+  },
+  "end": null
  }
 ]
