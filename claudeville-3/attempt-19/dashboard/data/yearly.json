@@ -1337,5 +1337,38 @@
    "jammed": 0,
    "bonds": 27
   }
+ },
+ {
+  "year": 2042,
+  "tone": "good",
+  "title": "86,580 -> 88,410 by Feb 2043",
+  "moves": [
+   "Loans #28-29: west-bank district",
+   "Zoo #3 + shop cell"
+  ],
+  "happened": "Loans #28-29: west-bank checkerboard district. Homes stalled at the cap until zoo #3.",
+  "watching": "Shops, power to the west bank",
+  "start": {
+   "date": "Feb 2042",
+   "population": 87250,
+   "money": -9804,
+   "unemployment": 2,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 84,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2043",
+   "population": 88410,
+   "money": -6164,
+   "unemployment": 1,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 73,
+   "jammed": 0,
+   "bonds": 29
+  }
  }
 ]
