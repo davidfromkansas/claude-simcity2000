@@ -1143,5 +1143,28 @@
    "jammed": 0,
    "bonds": 23
   }
+ },
+ {
+  "year": 2036,
+  "tone": "good",
+  "title": "76,090 -> 77,560",
+  "moves": [
+   "Loan #24: coal + SW band 3",
+   "Loan #25"
+  ],
+  "happened": "Loan #24: eighth coal plant and SW band 3. A fire in December left 8 rubble tiles (cleared with loan #25); a calibration road hit the map edge again ($1,000, autocal margin widened).",
+  "watching": "Land, money",
+  "start": {
+   "date": "Mar 2036",
+   "population": 76090,
+   "money": -1469,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 23
+  },
+  "end": null
  }
 ]

@@ -13,10 +13,10 @@ wet() { for d in "0 0" "24 0" "-24 0" "0 12" "0 -12" "16 8" "-16 -8" "16 -8" "-1
   [ "$(wet1 $(($1+$3)) $(($2+$4)))" = 1 ] && { echo 1; return; }; done; echo 0; }
 for pt in "330 250" "450 360" "200 360" "470 150" "200 160" "560 260" "130 260" "400 300" "260 300" "400 200" "260 200" "520 400" "150 400" "520 100" "150 100" "330 400" "330 110" "580 350" "580 150"; do
   set -- $pt; [ "$(wet $1 $2)" = 1 ] && continue
-  # attempt 19: a test road on the map edge started a $1,000 neighbour deal - skip spots that may be within 3 tiles of it
+  # attempt 19: test roads on the map edge started $1,000 neighbour deals (twice: the zoom check adds 4 tiles) - keep 6+ tiles in
   if [ -f /tmp/sc/center.json ]; then python3 -I -c "
 import json,sys; c=json.load(open('/tmp/sc/center.json')); dx=($1-324)/8.0; dy=($2-240)/4.0
-x=c['x']+(dy-dx)/2; y=c['y']+(dx+dy)/2; sys.exit(0 if 4<=x<=123 and 4<=y<=123 else 1)" || continue; fi
+x=c['x']+(dy-dx)/2; y=c['y']+(dx+dy)/2; sys.exit(0 if 6<=x<=118 and 6<=y<=118 else 1)" || continue; fi
   ./sc click $1 $2; sleep 0.4; ./sc nodlg 2>/dev/null; ./sc save >/dev/null
   r=$(python3 -I - "$before" "$1" "$2" "$bridges" <<'PY'
 import sys, struct, json; sys.path.insert(0,'.'); import sc2parse as p
