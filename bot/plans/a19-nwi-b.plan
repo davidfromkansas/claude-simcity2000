@@ -1,0 +1,6 @@
+# top factory row had weak trips (22 tiles): make it dense homes
+dezone 41 7 46 12
+dezone 48 7 53 12
+zone R 41 7 46 12
+zone R 48 7 53 12
+park 49 8 50 9

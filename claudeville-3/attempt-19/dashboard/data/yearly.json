@@ -1370,5 +1370,39 @@
    "jammed": 0,
    "bonds": 29
   }
+ },
+ {
+  "year": 2043,
+  "tone": "good",
+  "title": "88,410 -> 90,970",
+  "moves": [
+   "Loan #30: west-bank power",
+   "Shops below the zoo",
+   "Loan #31: coal + NW district"
+  ],
+  "happened": "90,000 passed. West-bank power fixed, shops below the zoo, loan #31 for a ninth coal plant and the north-west district.",
+  "watching": "Factory land, money (31 loans)",
+  "start": {
+   "date": "Feb 2043",
+   "population": 88410,
+   "money": -6164,
+   "unemployment": 1,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 73,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2044",
+   "population": 92390,
+   "money": -3836,
+   "unemployment": 1,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 68,
+   "jammed": 0,
+   "bonds": 31
+  }
  }
 ]
