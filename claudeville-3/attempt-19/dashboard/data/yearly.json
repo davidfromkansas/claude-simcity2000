@@ -1079,5 +1079,37 @@
    "jammed": 2,
    "bonds": 21
   }
+ },
+ {
+  "year": 2034,
+  "tone": "good",
+  "title": "69,340 -> 71,620",
+  "moves": [
+   "Loan #22: SW block + stadium 2"
+  ],
+  "happened": "Loan #22: south-west block with shops, homes around a lake and a second stadium.",
+  "watching": "Shops, water",
+  "start": {
+   "date": "Mar 2034",
+   "population": 69340,
+   "money": -1505,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 56,
+   "jammed": 2,
+   "bonds": 21
+  },
+  "end": {
+   "date": "Mar 2035",
+   "population": 71620,
+   "money": -3671,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 69,
+   "jammed": 0,
+   "bonds": 22
+  }
  }
 ]
