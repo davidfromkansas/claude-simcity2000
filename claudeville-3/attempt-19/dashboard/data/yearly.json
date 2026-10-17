@@ -1208,5 +1208,69 @@
    "jammed": 0,
    "bonds": 25
   }
+ },
+ {
+  "year": 2038,
+  "tone": "good",
+  "title": "84,120 -> 85,000",
+  "moves": [
+   "Loan #26: four fire stations"
+  ],
+  "happened": "Four fire stations after the fire; growth slowed to a stop by year end.",
+  "watching": "Home cap",
+  "start": {
+   "date": "Feb 2038",
+   "population": 84120,
+   "money": 465,
+   "unemployment": 4,
+   "watered_pct": 96,
+   "powered_pct": 99,
+   "abandoned": 186,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Feb 2039",
+   "population": 85630,
+   "money": 3540,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 183,
+   "jammed": 0,
+   "bonds": 26
+  }
+ },
+ {
+  "year": 2039,
+  "tone": "setback",
+  "title": "85,630 -> 83,510",
+  "moves": [
+   "Tax controller cut shop/factory/home rates"
+  ],
+  "happened": "Home demand turned negative near the recreation cap (~90,000) and unemployment rose to 6-7%; population fell.",
+  "watching": "Recreation cap",
+  "start": {
+   "date": "Feb 2039",
+   "population": 85630,
+   "money": 3540,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 183,
+   "jammed": 0,
+   "bonds": 26
+  },
+  "end": {
+   "date": "Feb 2040",
+   "population": 83210,
+   "money": -2036,
+   "unemployment": 7,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 180,
+   "jammed": 0,
+   "bonds": 26
+  }
  }
 ]
