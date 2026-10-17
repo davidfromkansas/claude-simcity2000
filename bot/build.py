@@ -68,6 +68,8 @@ def screen(x, y):
 
 def vis(*xy):
     out = sh("./vis.sh", *xy)
+    if "AUTOCAL STRAY" in out:  # C4-1: a calibration road left behind blocked a zoo
+        print(out.strip().splitlines()[-2] if len(out.strip().splitlines()) > 1 else out.strip())
     if "AUTOCAL ZOOM" in out:   # attempt 19: half-scale build after the zoom-in failed
         print(out.strip()); print("BUILD: stopped - wrong zoom"); sys.exit(3)
 

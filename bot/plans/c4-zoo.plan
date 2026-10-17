@@ -1,0 +1,4 @@
+# zoo site blocked by a stray test road at (112,59)
+bulldoze 112 59 112 59
+zoo 110 56
+line 108 58 109 58

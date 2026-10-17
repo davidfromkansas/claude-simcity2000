@@ -54,6 +54,20 @@ PY
     fi
     for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $1 $2; sleep 0.3; ./sc click $1 $2; sleep 0.5; ./sc save >/dev/null
       python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];x,y=map(int,'$r'.split());sys.exit(0 if b[y*128+x]==0 else 1)" && break; done
+    # attempt C4-1: a test road was left behind at (112,59) and blocked a zoo - every road tile that was not
+    # there before must be gone again (retry with the bulldozer, then report)
+    for k in 1 2 3 4; do
+      left=$(python3 -I - "$before" <<'PY'
+import sys; sys.path.insert(0,'.'); import sc2parse as p
+before=set(map(int,sys.argv[1].split())); b=p.chunks(p.SAVE)['XBLD']
+print(' '.join('%d,%d' % (i%128,i//128) for i in range(16384) if 0x1d<=b[i]<=0x2b and i not in before))
+PY
+)
+      [ -z "$left" ] && break
+      for t in $left; do read sx sy < <(python3 -I tile.py ${t%,*} ${t#*,}); ./sc tool 22 58 60 65; sleep 0.3; ./sc click $sx $sy; sleep 0.3; ./sc click $sx $sy; sleep 0.4; done
+      ./sc save >/dev/null
+    done
+    [ -n "$left" ] && echo "AUTOCAL STRAY ROAD left at $left"
     echo "view calibrated on tile $r (screen $1,$2)"; exit 0; fi
 done
 echo "autocal failed"; exit 1
