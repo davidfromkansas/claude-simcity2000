@@ -1,0 +1,5 @@
+# shop trips weak (27%): smaller cell x48-51 becomes dense homes facing the shops across road x47
+dezone 48 117 49 121
+dezone 51 117 51 121
+zone R 48 117 49 121
+zone R 51 117 51 121
