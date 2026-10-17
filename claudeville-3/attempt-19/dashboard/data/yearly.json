@@ -982,5 +982,69 @@
    "jammed": 0,
    "bonds": 18
   }
+ },
+ {
+  "year": 2031,
+  "tone": "good",
+  "title": "57,650 -> 58,650",
+  "moves": [
+   "Loan #19: marina + west district 2"
+  ],
+  "happened": "Loan #19: marina and a second west district with 11 riverbank pumps.",
+  "watching": "Factory land, money",
+  "start": {
+   "date": "Feb 2031",
+   "population": 56690,
+   "money": -281,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 18
+  },
+  "end": {
+   "date": "Feb 2032",
+   "population": 59430,
+   "money": -2283,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 1,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2032,
+  "tone": "good",
+  "title": "60,000 passed: 64,500 by March 2033",
+  "moves": [
+   "Loan #20: west factory strip"
+  ],
+  "happened": "Loan #20: west factory strip; growth jumped to ~5,000 a year as the west filled.",
+  "watching": "Power and factory land",
+  "start": {
+   "date": "Feb 2032",
+   "population": 59430,
+   "money": -2283,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 1,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Mar 2033",
+   "population": 64500,
+   "money": 1738,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 61,
+   "jammed": 11,
+   "bonds": 20
+  }
  }
 ]

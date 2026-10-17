@@ -1,0 +1,18 @@
+# Attempt 19 Aug 2033: shop land short (12 empty, demand 1,464). West shop band y21-26 north of road y27: road y20
+# x13-40, roads x20/x27/x34/x40 and x13 extended up to y20; dense shops in four cells; lines x16/x24/x37 continued
+# up across road y27 (x31 already runs to the coal plant); pipe y23 joined to pipe x40.
+road 13 20 40 20
+road 13 21 13 26
+road 20 21 20 26
+road 27 21 27 26
+road 34 21 34 26
+road 40 21 40 26
+line 16 21 16 27
+line 24 21 24 27
+line 37 21 37 27
+zone C 14 21 19 26
+zone C 21 21 26 26
+zone C 28 21 33 26
+zone C 35 21 39 26
+pipe 14 23 39 23
+pipe 40 23 40 27
