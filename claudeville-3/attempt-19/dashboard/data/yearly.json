@@ -874,6 +874,113 @@
    "jammed": 0,
    "bonds": 16
   },
-  "end": null
+  "end": {
+   "date": "Feb 2028",
+   "population": 51550,
+   "money": 5614,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 93,
+   "jammed": 0,
+   "bonds": 17
+  }
+ },
+ {
+  "year": 2028,
+  "tone": "steady",
+  "title": "51,550 -> 52,230",
+  "moves": [
+   "No builds until 2029"
+  ],
+  "happened": "Slow growth; power ran down to 9%.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2028",
+   "population": 51550,
+   "money": 5614,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 93,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2029",
+   "population": 52910,
+   "money": 1826,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 106,
+   "jammed": 0,
+   "bonds": 17
+  }
+ },
+ {
+  "year": 2029,
+  "tone": "good",
+  "title": "54,540",
+  "moves": [
+   "Loan #18: coal plant",
+   "Tax floor 5%"
+  ],
+  "happened": "Loan #18: sixth coal plant; a stale 7% tax floor was found and removed.",
+  "watching": "Home cap, money",
+  "start": {
+   "date": "Feb 2029",
+   "population": 52910,
+   "money": 1826,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 106,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2030",
+   "population": 56210,
+   "money": 3877,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 81,
+   "jammed": 0,
+   "bonds": 18
+  }
+ },
+ {
+  "year": 2030,
+  "tone": "good",
+  "title": "56,060",
+  "moves": [
+   "No builds"
+  ],
+  "happened": "Growth ~2,000/yr with the west district filling; cash went negative by Feb 2031.",
+  "watching": "Home cap at ~60,000",
+  "start": {
+   "date": "Feb 2030",
+   "population": 56210,
+   "money": 3877,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 81,
+   "jammed": 0,
+   "bonds": 18
+  },
+  "end": {
+   "date": "Feb 2031",
+   "population": 56690,
+   "money": -281,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 18
+  }
  }
 ]
