@@ -129,7 +129,7 @@ def push(msg):
     with open(LOCK, "w") as lk:
         fcntl.flock(lk, fcntl.LOCK_EX)
         git = lambda *a: subprocess.run(["git", "-C", REPO, *a], capture_output=True, text=True)
-        snaps = os.path.join(REPO, "saves", "C3A%s" % sc2parse.RUN.get("attempt"))
+        snaps = os.path.join(REPO, "saves", "%s%s" % (sc2parse.RUN.get("prefix", "C3A"), sc2parse.RUN.get("attempt")))
         git("add", DOCS, VIDS, *([snaps] if os.path.isdir(snaps) else []))
         if git("diff", "--cached", "--quiet").returncode == 0:
             return

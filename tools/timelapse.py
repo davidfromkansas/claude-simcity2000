@@ -83,7 +83,7 @@ def main(recdir, dash, out, title, subtitle, *outro):
                     "-c:v", "libx264", "-preset", "medium", "-crf", "26", body], check=True)
     intro, end_card = os.path.join(TMP, "intro.mp4"), os.path.join(TMP, "outro.mp4")
     card(intro, [(title, 72, "#FFB27A"), (subtitle, 32, "white"),
-                 ("Goal: 100,000 people within 50 years", 30, "#C9D4D0"),
+                 ("Goal: %s people within 50 years" % ("200,000" if "claudeville-4" in dash else "100,000"), 30, "#C9D4D0"),
                  ("Medium difficulty, disasters on, loans allowed", 30, "#C9D4D0")], 4)
     card(end_card, [(outro[0], 64, "#FFB27A")] + [(l, 30, "white") for l in outro[1:]], 6)
     lst = textfile("list.txt", "".join(f"file '{p}'\n" for p in (intro, body, end_card)))

@@ -1,12 +1,14 @@
 #!/bin/bash
-# begin_attempt.sh N : start Claudeville 3 attempt N from the base map, the same way every time.
-# Starts the game if needed, loads C3BASE.SC2, saves it as C3A<N>.SC2, maximizes the city window,
+# begin_attempt.sh N [claudeville-3|claudeville-4] : start attempt N of a challenge from the base map, the same way
+# every time. Starts the game if needed, loads C3BASE.SC2 (the flat map both challenges use), saves it as
+# <prefix><N>.SC2 (C3A<N> / C4A<N>), maximizes the city window,
 # turns Auto-Goto off, zooms in, resets calibration, takes loan #1, starts recorder + publisher.
 set -e
 cd "$(dirname "$0")"
-n=$1; [ -n "$n" ] || { echo "usage: begin_attempt.sh N"; exit 1; }
-python3 -I new_attempt.py "$n"
-rm -f "/opt/sc2k/game/C3A$n.SC2"   # attempt 19 restart: an "Overwrite?" prompt threw every later click off
+n=$1; [ -n "$n" ] || { echo "usage: begin_attempt.sh N [challenge]"; exit 1; }
+python3 -I new_attempt.py "$n" "${2:-claudeville-3}"
+pre=$(python3 -I -c "import json;print(json.load(open('run.json'))['prefix'])")
+rm -f "/opt/sc2k/game/$pre$n.SC2"   # attempt 19 restart: an "Overwrite?" prompt threw every later click off
 if ! pgrep -x dosbox >/dev/null; then
   bash start.sh; sleep 6
   sleep 25                                   # splash screen, then the title menu
@@ -20,7 +22,7 @@ fi
 ./sc click 559 119; sleep 1                   # maximize the city window (no-op if already full)
 ./sc menu 25 7 60 119; sleep 1.5              # File > Save City As
 ./sc click 400 138; for i in $(seq 12); do ./sc key End BackSpace >/dev/null; done
-./sc type "C3A$n.SC2"; ./sc click 239 376; sleep 2; ./sc click 320 245; sleep 0.5
+./sc type "$pre$n.SC2"; ./sc click 239 376; sleep 2; ./sc click 320 245; sleep 0.5
 ./sc peek 120 7 >/dev/null 2>&1; ./sc key Escape
 # Auto-Goto is stored ON in the base map: toggle it off
 ./sc menu 120 7 135 39; sleep 0.3

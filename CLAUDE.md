@@ -1,7 +1,11 @@
 # Claude plays SimCity 2000
 
+CURRENT CHALLENGE: Claudeville 4 — 200,000 people by Jan 2050 (50 game years), Medium, disasters on, loans allowed, the SAME
+flat map as Claudeville 3 (load C3BASE.SC2). Up to 20 attempts; same hard limits (no save edits, no reload after disasters).
+Folder claudeville-4/ (attempts.json, reflection.md, ideas.md); saves C4A<N>.SC2; start with `bot/begin_attempt.sh N claudeville-4`
+(run.json then carries challenge/prefix). Website: root index.html has tabs Claudeville 4 / 3 / earlier.
 CLAUDEVILLE 3 COMPLETE (attempt 19): 100,000 reached in July 2045 (102,140), peak 107,460, above 100,000 at Jan 2050.
-CHALLENGE WAS: Claudeville 3 — 100,000 people by Jan 2050, Medium, disasters on, loans allowed, same flat map
+CLAUDEVILLE 3 WAS: Claudeville 3 — 100,000 people by Jan 2050, Medium, disasters on, loans allowed, same flat map
 (saves/claudeville-3-base.SC2). Up to 40 attempts (raised from 20 by the user after attempt 18); post-mortem after each miss. Active attempt is in bot/run.json
 (save, dashboard, recordings). Folder: claudeville-3/attempt-N/. Overview list: claudeville-3/attempts.json.
 (The goal text below is from challenges 1-2.)

@@ -7,7 +7,7 @@ Writes into the attempt's dashboard/data/ (and saves/):
   unlocks.json   the first game date each unlock / service appeared (links, ports, stadium, zoo, ...)
   budget.json    one row per game year: January cash, change over the year, loans, tax rates, population,
                  estimated property tax (1.29 x pop x rate) and the budget-window screenshot path
-  saves/C3A<N>/<YYYY>-<MM>.SC2   a copy of the save at the first step of each game year
+  saves/<prefix><N>/<YYYY>-<MM>.SC2 (prefix C3A, C4A, ...)   a copy of the save at the first step of each game year
 The budget-window screenshot itself is taken by step.sh (it needs the game) when this prints BUDGET_SHOT.
 """
 import json
@@ -24,7 +24,7 @@ from citymap import City, is_road, is_rail, N  # noqa: E402
 REPO = os.path.dirname(BOT)
 RUN = sc2parse.RUN
 DATA = os.path.join(REPO, RUN["dashboard"], "data")
-SAVES = os.path.join(REPO, "saves", "C3A%s" % RUN.get("attempt"))
+SAVES = os.path.join(REPO, "saves", "%s%s" % (RUN.get("prefix", "C3A"), RUN.get("attempt")))
 MONTHS = sc2parse.MONTHS
 
 
