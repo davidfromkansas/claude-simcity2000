@@ -1,0 +1,6 @@
+# rebuild road x92 / line x93 / crossing (93,97) burned in the Dec 2036 fire
+bulldoze 92 95 92 96
+bulldoze 93 97 93 98
+road 92 95 92 96
+road 93 97 93 97
+line 93 97 93 98

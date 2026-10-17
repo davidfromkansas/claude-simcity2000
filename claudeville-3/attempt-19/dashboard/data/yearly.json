@@ -1165,6 +1165,48 @@
    "jammed": 0,
    "bonds": 23
   },
-  "end": null
+  "end": {
+   "date": "Jan 2037",
+   "population": 77510,
+   "money": 5098,
+   "unemployment": 4,
+   "watered_pct": 98,
+   "powered_pct": 99,
+   "abandoned": 148,
+   "jammed": 0,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2037,
+  "tone": "good",
+  "title": "77,510 -> 84,120 by Feb 2038",
+  "moves": [
+   "Fire-damage repairs"
+  ],
+  "happened": "Ran unwatched for a year (control failure, fixed): no harm - strong growth into the new south-west and west land.",
+  "watching": "Fire cover, land",
+  "start": {
+   "date": "Jan 2037",
+   "population": 77510,
+   "money": 5098,
+   "unemployment": 4,
+   "watered_pct": 98,
+   "powered_pct": 99,
+   "abandoned": 148,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Feb 2038",
+   "population": 84120,
+   "money": 465,
+   "unemployment": 4,
+   "watered_pct": 96,
+   "powered_pct": 99,
+   "abandoned": 186,
+   "jammed": 0,
+   "bonds": 25
+  }
  }
 ]

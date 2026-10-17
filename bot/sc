@@ -59,6 +59,8 @@ case $cmd in
   run) # run SPEED(llama|cheetah) SECONDS, then pause and close any budget window
         case $1 in llama) y=55;; cheetah) y=71;; *) y=39;; esac
         "$0" menu 67 7 75 $y; "$0" key Escape; sleep "$2"; "$0" pause; sleep 0.3
+        # attempt 19: at year end a big city is busy and the pause click can be lost - the game ran a year unwatched
+        for i in 1 2 3 4 5 6; do [ "$("$0" paused)" = yes ] && break; sleep 1.5; "$0" pause; done
         import -window "$W" /tmp/sc/st.png
         if [ "$(convert /tmp/sc/st.png -crop 1x1+457+123 -format '%[pixel:p{0,0}]' info:)" != "$(convert /tmp/sc/st.png -crop 1x1+600+400 -format '%[pixel:p{0,0}]' info:)" ]; then :; fi;;
   query) xdotool mousemove --window "$W" "$1" "$2"; xdotool keydown shift; sleep 0.2; xdotool mousedown 1; sleep 0.2
