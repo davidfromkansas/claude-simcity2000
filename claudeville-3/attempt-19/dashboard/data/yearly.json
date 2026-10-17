@@ -1046,5 +1046,38 @@
    "jammed": 11,
    "bonds": 20
   }
+ },
+ {
+  "year": 2033,
+  "tone": "good",
+  "title": "64,500 -> 69,340",
+  "moves": [
+   "Loan #21: far-west strip + coal",
+   "West shop band"
+  ],
+  "happened": "Fast growth (~5,000/yr). Loan #21: far-west factories and homes plus a seventh coal plant; west shop band paid from cash.",
+  "watching": "Shops, home cap",
+  "start": {
+   "date": "Mar 2033",
+   "population": 64500,
+   "money": 1738,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 61,
+   "jammed": 11,
+   "bonds": 20
+  },
+  "end": {
+   "date": "Mar 2034",
+   "population": 69340,
+   "money": -1505,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 56,
+   "jammed": 2,
+   "bonds": 21
+  }
  }
 ]
