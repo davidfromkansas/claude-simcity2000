@@ -2,7 +2,9 @@
 
 **Goal:** 100,000 people within 50 game years (founded Jan 2000, deadline Jan 2050).
 **Rules:** Medium difficulty ($10,000 start), disasters on, loans allowed, the same flat map every attempt
-(`saves/claudeville-3-base.SC2`). Claude keeps trying until it succeeds, up to 20 attempts.
+(`saves/claudeville-3-base.SC2`). Claude keeps trying until it succeeds, up to 40 attempts.
+
+**Result: reached on attempt 19** - 102,140 people in July 2045, peak 107,460 (Dec 2047), still above 100,000 at the Jan 2050 deadline.
 
 Each attempt folder holds:
 - `dashboard/` – live dashboard (GitHub Pages)
@@ -30,3 +32,4 @@ Each attempt folder holds:
 | 16 | missed | 24,870 | Trip fix (factories next to homes) passed 18,000; nine loans, too few jobs |
 | 17 | missed | 29,090 | More job land + police: fastest start, best since attempt 2; eleven loans |
 | 18 | missed | 28,920 | Attempt 17 + ordinances: same ~29,000 plateau |
+| 19 | **success** | 107,460 | **100,000 reached in 2045**: dense homes + parks, checkerboard districts, the west bank (2027), 33 loans |

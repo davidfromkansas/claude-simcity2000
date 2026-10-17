@@ -25,6 +25,7 @@ that repeat across attempts; then what that means for the next strategy.
 | 16 | 4,520 | 13,730 | 22,030 | - | 24,870 (2014) | 9 | 4% homes | 675 (dense) | 1,161 (dense) | 19 |
 | 17 | 6,600 | 19,360 | 26,530 | - | 29,090 (2013) | 11 | 6% homes | 885 (dense) | 1,163 (dense) | 23 |
 | 18 | 3,360 | 15,800 | 24,020 | 28,670 | 28,920 (2015) | 9 | 6-7% homes | - | - | - |
+| 19 | 8,010 | 17,900 | 29,590 | 35,710 | **107,460 (2047)** | 33 | 6-10% homes | 865 (dense, 2008) | ~1,000 (dense) | ~35 |
 
 ## What each attempt teaches
 
@@ -105,6 +106,14 @@ that repeat across attempts; then what that means for the next strategy.
    deficit. Unemployment 11-14% for ten years with 200-300 empty dense home tiles. Two strategy items
    (the 7% home floor, the second seaport) were missed because nothing reminded me. *Lesson: the plateau
    is the plan's; homes outrun jobs with dense zoning.*
+
+## Attempt 19: the goal was reached (added after it)
+**Attempt 19 (107,460; 100,000 in mid-2045):** dense homes with a park in every home cell, jobs first, dense
+job zones, checkerboard districts built only after a trip check, recreation ahead of each cap, and loans for every
+stall. It still plateaued twice on the east side (~36,000 in 2014-16, ~51,000 in 2026-27) for lack of land; the
+step that broke the ceiling was crossing the river to the empty west half in 2027 (causeway + raised wires).
+Lessons that the earlier attempts never reached: land area, not money, sets the ceiling once trips and caps
+are handled; the game never refused a loan (33) and negative cash only blocks building.
 
 ## Patterns across all eighteen
 

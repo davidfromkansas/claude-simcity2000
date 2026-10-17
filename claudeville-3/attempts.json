@@ -109,7 +109,9 @@
  },
  {
   "attempt": 19,
-  "status": "playing",
-  "reason": ""
+  "status": "success",
+  "reason": "100,000 reached: 102,140 in Jul 2045, peak 107,460 (Dec 2047), ~104,000-105,000 at the Jan 2050 deadline; dense homes + parks, checkerboard districts, crossing to the west bank (2027), 33 loans",
+  "timeline": "2045-07",
+  "timelapse": "recording-timelapse/timelapse.mp4"
  }
 ]

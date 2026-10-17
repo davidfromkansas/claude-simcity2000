@@ -23,3 +23,4 @@ One post-mortem per failed attempt. Each one is also kept in its attempt folder
 | Claudeville 3 | 16 | Missed: 24,870 by 2014; trip fix worked, money and jobs ran out | [claudeville-3-attempt-16.md](claudeville-3-attempt-16.md) |
 | Claudeville 3 | 17 | Missed: peak 29,090 (2013), best since attempt 2; money slowed it | [claudeville-3-attempt-17.md](claudeville-3-attempt-17.md) |
 | Claudeville 3 | 18 | Missed: peak 28,920 (2015); same plateau as attempt 17 | [claudeville-3-attempt-18.md](claudeville-3-attempt-18.md) |
+| Claudeville 3 | 19 | **Goal reached**: 102,140 in July 2045, peak 107,460, above 100,000 at Jan 2050 | [claudeville-3-attempt-19.md](claudeville-3-attempt-19.md) |

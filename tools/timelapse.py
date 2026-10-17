@@ -78,7 +78,8 @@ def main(recdir, dash, out, title, subtitle, *outro):
                  f"x=24:y={H-50}:expansion=none:enable='between(t,{max(t, 0):.1f},{end:.1f})'")
     f += [f"setpts=PTS/{speed:.3f}", "fps=30", "format=yuv420p"]
     body = os.path.join(TMP, "body.mp4")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", joined, "-vf", ",".join(f), "-an",
+    fs = textfile("filter.txt", ",".join(f))   # attempt 19: the filter outgrew the command line
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", joined, "-filter_script:v", fs, "-an",
                     "-c:v", "libx264", "-preset", "medium", "-crf", "26", body], check=True)
     intro, end_card = os.path.join(TMP, "intro.mp4"), os.path.join(TMP, "outro.mp4")
     card(intro, [(title, 72, "#FFB27A"), (subtitle, 32, "white"),
