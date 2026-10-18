@@ -1,0 +1,6 @@
+# Claudeville 4 a2 Jan 2021: 8% jobless with shop/factory demand negative - more neighbour connections:
+# road y20 to the east edge and to the west edge ($1,000 each)
+road 123 20 126 20
+link 127 20
+road 1 20 12 20
+link 0 20
