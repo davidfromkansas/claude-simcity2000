@@ -404,6 +404,69 @@
    "jammed": 0,
    "bonds": 25
   },
+  "end": {
+   "date": "Jun 2019",
+   "population": 62850,
+   "money": -1721,
+   "unemployment": 3,
+   "watered_pct": 91,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 28
+  }
+ },
+ {
+  "year": 2019,
+  "tone": "good",
+  "title": "60,000",
+  "moves": [],
+  "happened": "The south-west district filled in; a new coal plant (117,84) ended the far south-east brownout.",
+  "watching": "Water on the west bank",
+  "start": {
+   "date": "Jun 2019",
+   "population": 62850,
+   "money": -1721,
+   "unemployment": 3,
+   "watered_pct": 91,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 28
+  },
+  "end": {
+   "date": "Feb 2020",
+   "population": 66070,
+   "money": -10689,
+   "unemployment": 2,
+   "watered_pct": 83,
+   "powered_pct": 100,
+   "abandoned": 75,
+   "jammed": 0,
+   "bonds": 28
+  }
+ },
+ {
+  "year": 2020,
+  "tone": "good",
+  "title": "68,000, ahead of pace",
+  "moves": [
+   "Pump row on the west shore of the river",
+   "South-west district 3: 18 more blocks (loans #29-31)"
+  ],
+  "happened": "Population 68,020 against a target of 62,750. Empty land ran out again and about 800 west-bank buildings were dry.",
+  "watching": "Water and land",
+  "start": {
+   "date": "Feb 2020",
+   "population": 66070,
+   "money": -10689,
+   "unemployment": 2,
+   "watered_pct": 83,
+   "powered_pct": 100,
+   "abandoned": 75,
+   "jammed": 0,
+   "bonds": 28
+  },
   "end": null
  }
 ]

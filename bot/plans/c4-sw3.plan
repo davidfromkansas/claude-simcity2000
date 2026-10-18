@@ -1,0 +1,56 @@
+# Claudeville 4 Dec 2020: west-bank water short (800 dry buildings) - pump row on the river shore x60 y88-92 fed by
+# line y84/x59 and joined to the y87 pipe; then district 3 rows south of y97 (same 6x6 checkerboard).
+line 48 84 55 84
+line 55 85 55 87
+line 56 87 59 87
+line 59 88 59 92
+pump 60 88 60 92
+pipe 48 87 59 87
+pipe 59 88 59 92
+road 6 97 6 118
+road 13 97 13 118
+road 20 97 20 118
+road 27 97 27 118
+road 34 97 34 118
+road 41 97 41 118
+road 48 97 48 118
+road 7 104 47 104
+road 7 111 47 111
+road 7 118 47 118
+line 7 98 47 98
+line 7 105 47 105
+line 7 112 47 112
+line 39 92 39 98
+line 39 99 39 104
+line 39 106 39 111
+zone C 7 98 12 103
+zone R 14 98 19 103
+park 16 100 17 101
+zone I 21 98 26 103
+zone R 28 98 33 103
+park 30 100 31 101
+zone C 35 98 40 103
+zone R 42 98 47 103
+park 44 100 45 101
+zone R 7 105 12 110
+park 9 107 10 108
+zone I 14 105 19 110
+zone R 21 105 26 110
+park 23 107 24 108
+zone C 28 105 33 110
+zone R 35 105 40 110
+park 37 107 38 108
+zone I 42 105 47 110
+zone I 7 112 12 117
+zone R 14 112 19 117
+park 16 114 17 115
+zone C 21 112 26 117
+zone R 28 112 33 117
+park 30 114 31 115
+zone I 35 112 40 117
+zone R 42 112 47 117
+park 44 114 45 115
+pipe 47 94 47 115
+pipe 7 101 47 101
+pipe 7 108 47 108
+pipe 7 115 47 115
