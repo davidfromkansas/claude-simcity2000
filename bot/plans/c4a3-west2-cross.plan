@@ -1,0 +1,13 @@
+# west2: the line columns x24/x31/x37 left road gaps on y34/y41 - road there, then the line crossing
+road 24 34 24 34
+road 31 34 31 34
+road 37 34 37 34
+road 24 41 24 41
+road 31 41 31 41
+road 37 41 37 41
+line 24 33 24 35
+line 24 40 24 42
+line 31 33 31 35
+line 31 40 31 42
+line 37 33 37 35
+line 37 40 37 42

@@ -68,6 +68,15 @@ PY
       ./sc save >/dev/null
     done
     [ -n "$left" ] && echo "AUTOCAL STRAY ROAD left at $left"
-    echo "view calibrated on tile $r (screen $1,$2)"; exit 0; fi
+    echo "view calibrated on tile $r (screen $1,$2)"
+    # attempt 3: near the west-bank map edge the view could not centre, autocal calibrated 20+ tiles away and
+    # build clicks then landed 2-4 rows off - warn so build.py's vis() reports it
+    python3 -I -c "
+import json,sys
+c=json.load(open('/tmp/sc/center.json')); x,y=map(int,'$r'.split())
+d=abs(x-c['x'])+abs(y-c['y'])
+if d>16: print('AUTOCAL STRAY calibration tile %d,%d is %d tiles from the requested centre %d,%d - clicks may land off' % (x,y,d,c['x'],c['y']))
+" 2>/dev/null
+    exit 0; fi
 done
 echo "autocal failed"; exit 1
