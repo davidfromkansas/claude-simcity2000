@@ -1,0 +1,6 @@
+# Claudeville 4 a2 Jul 2010: shops capped (7% jobless, shop demand -534) -> airport on bare land 17 tiles south of the
+# nearest district, with its own fire station; road x87 and line x86 from the district's bottom road y97.
+road 87 98 87 113
+line 86 96 86 113
+airport 84 114 89 117
+fire 83 108
