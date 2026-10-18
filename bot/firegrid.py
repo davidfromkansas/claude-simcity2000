@@ -15,14 +15,29 @@ import sc2parse  # noqa: E402
 STATION = 0xD3
 
 
-def main(out, spacing=14):
+def plan_tiles(names):
+    """Tiles that later plans will use (attempt 2: two stations landed on a seaport road and a road junction)."""
+    tiles = set()
+    for name in names:
+        for raw in open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "plans", name)):
+            w = raw.split("#")[0].split()
+            nums = [int(v) for v in w[1:] if v.lstrip("-").isdigit()]
+            if len(nums) == 4:
+                tiles |= {(x, y) for x in range(min(nums[0], nums[2]), max(nums[0], nums[2]) + 1)
+                          for y in range(min(nums[1], nums[3]), max(nums[1], nums[3]) + 1)}
+            elif len(nums) == 2:
+                tiles |= {(nums[0] + i, nums[1] + j) for i in range(4) for j in range(4)}
+    return tiles
+
+
+def main(out, spacing=14, avoid=()):
     c = City()
     xt = sc2parse.chunks(sc2parse.SAVE)["XTER"]
     wet = lambda x, y: bool(xt[y * N + x] & 0xF0)
     stations = [(x, y) for x in range(N) for y in range(N) if c.t(x, y) == STATION]
     free = lambda x, y: 2 <= x < N - 2 and 2 <= y < N - 2 and c.t(x, y) in (0, 1, 2, 3, 4) and not wet(x, y)
     half = spacing // 2
-    used = set()
+    used = plan_tiles(avoid)
     picks = []
     for gx in range(half, N, spacing):
         for gy in range(half, N, spacing):
@@ -56,4 +71,7 @@ def main(out, spacing=14):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], int(sys.argv[2]) if len(sys.argv) > 2 else 14)
+    # firegrid.py OUT.plan [SPACING] [--avoid plan1.plan,plan2.plan]
+    av = sys.argv[sys.argv.index("--avoid") + 1].split(",") if "--avoid" in sys.argv else ()
+    args = [a for a in sys.argv[2:] if a != "--avoid" and a not in ",".join(av).split(",") and a.isdigit()]
+    main(sys.argv[1], int(args[0]) if args else 14, av)
