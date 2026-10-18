@@ -205,6 +205,13 @@ def drag(name, a, b):
 
 def place(s, c):
     k, b = s["kind"], s["box"]
+    if k in ("coal", "gas", "fire", "police", "bigpark", "stadium", "zoo", "marina"):
+        # Claudeville 4 (2014): a stadium would not go down on rubble left by the fire - clear it first
+        rub = [(x, y) for x, y in s["tiles"] if c.t(x, y) in (1, 2, 3, 4)]
+        for x, y in rub:
+            vis(x, y)
+            tool("bulldoze")
+            click_tile(x, y)
     if k in ("road", "line", "pipe", "rail"):
         drag(k, b[:2], b[2:])
     elif k == "zone":

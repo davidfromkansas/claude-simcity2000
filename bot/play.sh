@@ -17,7 +17,10 @@ for ((i=1;i<=n;i++)); do
   rubble=$(echo "$out" | sed -n 's/.*rubble \([0-9]*\).*/\1/p' | head -1)
   reason=""
   echo "$out" | grep -q "^FAIL" && reason="$reason; audit FAIL"
-  echo "$out" | grep -q "buildings without power" && reason="$reason; buildings without power"
+  # Claudeville 4 (2011): after the fire, single regrown buildings in burnt bands sit unpowered until neighbours grow;
+  # UNPOWERED_OK=N runs on while at most N buildings are unpowered (spare power is checked separately)
+  unp=$(echo "$out" | sed -n 's/^WARN \([0-9]*\) buildings without power.*/\1/p' | head -1)
+  [ -n "$unp" ] && [ "$unp" -gt "${UNPOWERED_OK:-0}" ] && reason="$reason; buildings without power ($unp; UNPOWERED_OK=N to allow up to N)"
   echo "$out" | grep -q "^paused: no" && reason="$reason; game was not paused"
   echo "$out" | grep -q "WARN spare \(water\|power\) only [0-9]%" && reason="$reason; spare water or power under 10% (build more; no override: attempt 12 hid a power shortage with one)"
   echo "$out" | grep -q "^LAND short" && [ -z "$LAND_OK" ] && reason="$reason; a zone type with high demand has no empty land (LAND line; LAND_OK=1 to run on)"
