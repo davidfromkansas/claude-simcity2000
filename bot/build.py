@@ -212,7 +212,10 @@ def place(s, c):
     k, b = s["kind"], s["box"]
     if k in ("coal", "gas", "fire", "police", "bigpark", "stadium", "zoo", "marina"):
         # Claudeville 4 (2014): a stadium would not go down on rubble left by the fire - clear it first
-        rub = [(x, y) for x, y in s["tiles"] if c.t(x, y) in (1, 2, 3, 4)]
+        # attempts 2-3: autocal's test road landed on the empty zoo lot (112,59) and blocked the zoo twice - a big
+        # building's lot never keeps a road, so clear stray road tiles too
+        c = City()
+        rub = [(x, y) for x, y in s["tiles"] if c.t(x, y) in (1, 2, 3, 4) or is_road(c.t(x, y))]
         for x, y in rub:
             vis(x, y)
             tool("bulldoze")
