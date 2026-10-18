@@ -13,7 +13,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from citymap import City, ZONES, is_road, is_rail, is_building, nbrs, N
+from citymap import City, ZONES, is_road, is_rail, is_building, is_line, is_plant, nbrs, N
 
 
 def box(reg):
@@ -48,6 +48,16 @@ def audit(path=None, city=None):
         add("FAIL", "%s %s (%d tiles): power cannot reach it" % (ZONES[k], box(reg), len(reg)))
     if plants and not dark:
         add("OK", "power reaches all %d zone areas" % len(regions))
+    # Claudeville 4 (2023): a coal plant sat with no line into the grid for years and its blocks went dark
+    ptiles = {(x, y) for x, y in c.tiles() if is_plant(c.t(x, y))}
+    pseen = set()
+    for p in sorted(ptiles):
+        if p in pseen:
+            continue
+        grp = c.flood([p], lambda x, y: (x, y) in ptiles)
+        pseen |= grp
+        if not any(q not in ptiles and (is_line(c.t(*q)) or is_building(c.t(*q))) for g in grp for q in nbrs(*g)):
+            add("FAIL", "power plant at (%d,%d): no line or building touches it, so its power goes nowhere" % min(grp))
 
     # 3. pumps powered and joined to pipes
     pumps = [(x, y) for x, y in c.tiles() if c.t(x, y) == 0xDC]
@@ -70,8 +80,9 @@ def audit(path=None, city=None):
     if not pumps:
         add("WARN", "no water pumps")
     for k, reg in regions:
-        if pumps and not any(q in net for p in reg for q in [p, *nbrs(*p)]):
-            add("WARN", "%s %s: no pipe in or next to it" % (ZONES[k], box(reg)))
+        # Claudeville 4 (2012-2023): pipe networks that never reached a pump left ~500 buildings dry for years - FAIL now
+        if pumps and len(reg) >= 12 and not any(q in net for p in reg for q in [p, *nbrs(*p)]):
+            add("FAIL", "%s %s: no pipe joined to a pump in or next to it (water cannot reach it)" % (ZONES[k], box(reg)))
 
     # 4. road access
     roads = [[False] * N for _ in range(N)]
@@ -108,6 +119,11 @@ def audit(path=None, city=None):
     units = max(1, cranes) + (1 if rail_link else 0)
     if ind_pop > 8000 * units:
         add("WARN", "factory trade capacity: %d factory workers for ~%d units (10,000 each) - add a seaport or a rail/highway link" % (ind_pop, units))
+    # Claudeville 4: 3 fire stations for 78,000 people - two airport fires burned the whole east bank
+    stations = count(0xD2) // 9 if count(0xD2) else sum(1 for x, y in c.tiles() if c.t(x, y) in range(0xD2, 0xD3))
+    fires = c.misc.get("services", {}).get("fire", {}).get("count", stations)
+    if pop > 6000 and fires * 6000 < pop - 6000:
+        add("WARN", "fire cover: %d fire stations for %d people - want one per ~6,000 people (every ~14 tiles)" % (fires, pop))
     if pop > 18000 and not airport:
         add("WARN", "shop cap: no airport (helps from ~20,000 people)")
 

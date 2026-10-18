@@ -22,6 +22,10 @@ for ((i=1;i<=n;i++)); do
   unp=$(echo "$out" | sed -n 's/^WARN \([0-9]*\) buildings without power.*/\1/p' | head -1)
   [ -n "$unp" ] && [ "$unp" -gt "${UNPOWERED_OK:-0}" ] && reason="$reason; buildings without power ($unp; UNPOWERED_OK=N to allow up to N)"
   echo "$out" | grep -q "^paused: no" && reason="$reason; game was not paused"
+  # Claudeville 4 attempt 1: at about -$100,000 the game throws the mayor out (Jan 2031); the bond cap is 50
+  cash=$(echo "$out" | sed -n 's/.* cash \(-\{0,1\}[0-9]*\) bonds.*/\1/p' | tail -1)
+  [ -n "$cash" ] && [ "$cash" -lt -50000 ] && [ -z "$DEBT_OK" ] && reason="$reason; cash $cash is below -\$50,000 (game over near -\$100,000): raise taxes / cut costs (DEBT_OK=1 to run on)"
+  echo "$out" | grep -q "^WARN fire cover" && [ -z "$FIRE_OK" ] && reason="$reason; too few fire stations (WARN fire cover; FIRE_OK=1 to run on)"
   echo "$out" | grep -q "WARN spare \(water\|power\) only [0-9]%" && reason="$reason; spare water or power under 10% (build more; no override: attempt 12 hid a power shortage with one)"
   echo "$out" | grep -q "^LAND short" && [ -z "$LAND_OK" ] && reason="$reason; a zone type with high demand has no empty land (LAND line; LAND_OK=1 to run on)"
   echo "$out" | grep -q "^TRIPS: weak" && [ -z "$TRIPS_OK" ] && reason="$reason; empty zone land where the game's trips fail (TRIPS line: zone it next to homes instead)"

@@ -4,9 +4,9 @@ Updated before every new attempt (process rule), weighing ALL earlier attempts e
 19 Claudeville 3 attempts on the same map (full detail in `claudeville-3/reflection.md` and the post-mortems).
 
 ## What Claudeville 3 established (attempts 1-19)
-1. **Money is not the ceiling; land and the game's caps are.** Attempts 2, 4 and 6 died of debt only because they
-   stopped borrowing or stopped building. Attempt 19 carried 33 loans; the game never refused one, and negative
-   cash only blocked building until the next loan.
+1. **Money was not the ceiling at 100,000; land and the game's caps were.** Attempts 2, 4 and 6 died of debt only
+   because they stopped borrowing. Attempt 19 carried 33 loans. **But Claudeville 4 attempt 1 found the limits:**
+   the game refuses bond #51, and at about -$100,000 cash it throws the mayor out and ends the game.
 2. **Trips decide whether land grows.** Factory-only districts stalled attempts 10-15 near 20,000. Checkerboard
    districts (homes next to shops/factories) plus `trips.py` before each build fixed it (attempt 16 on).
 3. **Caps:** homes stall without zoos/stadiums/marina ahead of each ~15,000 people (attempt 2's 35,690 ceiling and
@@ -30,3 +30,22 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
   4x4 lot. Not yet tested on this map - research first.
 - **Recreation far ahead** of the cap (~13 zoo/stadium-equivalents for 200,000).
 - **Time:** reaching 120,000 by ~2040 leaves ten years for arcologies.
+
+## Claudeville 4 attempt 1 (peak 87,090 - mayor thrown out Jan 2031)
+- The fast start worked: 25,450 by 2007, 45,530 by Apr 2011 (both ahead of attempt 19), river crossed in 2006.
+- **Two plane crashes at the airport (Apr 2011, Feb 2023) each burned the whole east bank.** 3 fire stations for up
+  to 78,000 people; bulldozed firebreaks 1, 2 and 4 tiles wide were all jumped. Each rebuild cost ~$40-45k and
+  3-5 years of growth. The airport zone regrows by itself after a fire.
+- **Debt became fatal**: 41-48 loans cost $25-28k a year against $7k of taxes; bond cap 50 hit in 2028; cutting
+  taxes to 2% after that sped the slide to -$108k and the game ended in Jan 2031.
+- Controller lessons: cash guard in build.py (stops under $100), rubble cleared under big buildings, stadium team
+  dialog, water-reach and isolated-plant FAILs in audit.py, fire-cover WARN and a -$50,000 debt stop in play.sh,
+  rebuild.py keeps the land parts of river crossings.
+
+## What all attempts now say about 200,000
+- Fast start + early river crossing + checkerboard districts (proven).
+- **Fire cover is part of every district** (a station every ~14 tiles); the airport comes late, on bare land far
+  from districts, with its own station - or not at all if shops are not capped.
+- **A debt budget**: loans are finite (50) and so is debt (-$100,000). Every loan must add people that pay for
+  it; at ~$600 a year per loan, 30 loans need ~150,000 people at 9-10% tax to break even. Keep taxes as high as
+  demand allows (homes 10-12%), never cut them to "help growth" once in debt.

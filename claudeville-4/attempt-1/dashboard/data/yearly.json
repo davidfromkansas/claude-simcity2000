@@ -655,6 +655,98 @@
    "jammed": 0,
    "bonds": 41
   },
+  "end": {
+   "date": "Feb 2027",
+   "population": 69310,
+   "money": -13148,
+   "unemployment": 8,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 220,
+   "jammed": 0,
+   "bonds": 48
+  }
+ },
+ {
+  "year": 2027,
+  "tone": "steady",
+  "title": "Growth on a full city",
+  "moves": [],
+  "happened": "Population back near 75,000; no land left for homes.",
+  "watching": "Debt",
+  "start": {
+   "date": "Feb 2027",
+   "population": 69310,
+   "money": -13148,
+   "unemployment": 8,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 220,
+   "jammed": 0,
+   "bonds": 48
+  },
+  "end": {
+   "date": "Feb 2028",
+   "population": 77430,
+   "money": -38456,
+   "unemployment": 4,
+   "watered_pct": 92,
+   "powered_pct": 100,
+   "abandoned": 102,
+   "jammed": 0,
+   "bonds": 48
+  }
+ },
+ {
+  "year": 2028,
+  "tone": "setback",
+  "title": "Loan cap",
+  "moves": [
+   "Taxes to 2%"
+  ],
+  "happened": "The game refused loan #51 (bond cap 50). Taxes cut to 2% to push growth - a mistake: the debt slide sped up.",
+  "watching": "Cash vs the -$100,000 limit",
+  "start": {
+   "date": "Feb 2028",
+   "population": 77430,
+   "money": -38456,
+   "unemployment": 4,
+   "watered_pct": 92,
+   "powered_pct": 100,
+   "abandoned": 102,
+   "jammed": 0,
+   "bonds": 48
+  },
+  "end": {
+   "date": "Aug 2029",
+   "population": 82760,
+   "money": -45938,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 1,
+   "bonds": 50
+  }
+ },
+ {
+  "year": 2030,
+  "tone": "setback",
+  "title": "Game over",
+  "moves": [],
+  "happened": "Peak 87,090 in Dec 2030. In Jan 2031 cash reached -$108,214 and the game threw the mayor out.",
+  "watching": "Attempt 2",
+  "start": {
+   "date": "Jul 2030",
+   "population": 84570,
+   "money": -77137,
+   "unemployment": 0,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 41,
+   "jammed": 0,
+   "bonds": 50
+  },
   "end": null
  }
 ]

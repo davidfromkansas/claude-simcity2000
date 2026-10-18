@@ -47,7 +47,7 @@ document.getElementById("themeBtn").onclick = () => {
 };
 const n = (location.pathname.match(/attempt-(\d+)/) || [, "?"])[1];
 document.title = "Claudeville 4 · Attempt " + n + " post-mortem";
-document.getElementById("tag").textContent = "POST-MORTEM · CLAUDEVILLE 3 · ATTEMPT " + n;
+document.getElementById("tag").textContent = "POST-MORTEM · CLAUDEVILLE 4 · ATTEMPT " + n;
 fetch("post-mortem.md?v=" + Date.now()).then(r => r.text()).then(md => {
   const html = marked.parse(md.replace(/^# .*\n/, m => m));
   const doc = document.getElementById("doc");

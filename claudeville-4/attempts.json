@@ -1,7 +1,10 @@
 [
  {
   "attempt": 1,
-  "status": "playing",
-  "reason": ""
+  "status": "failed",
+  "reason": "Peak 87,090 (Dec 2030). Two plane-crash fires at the airport burned the east bank (2011, 2023); two rebuilds used ~25 loans; bond cap 50 hit in 2028; cash fell below -$100,000 and the mayor was thrown out (Jan 2031).",
+  "timeline": "2031-01",
+  "timelapse": "recording-timelapse/timelapse.mp4",
+  "peak": 87090
  }
 ]
