@@ -1,0 +1,22 @@
+# Claudeville 4: a19-2007 with attempt 19 fix folded in (homes x60-66 facing factories x68-75; coal 64 52)
+# Attempt 19 Feb 2007 (loan #7): factory land short (22 empty, demand 2000), spare power 11%, cash -$721.
+# Third coal plant beside the others (64,52); a DENSE factory block by the seaport x60-75 y56-68 (west of road x76):
+# roads y56 and y62 from x60 to x75 (join road x76), road x67 y57-68; seaport line y59 runs through;
+# line y65 x60-76 crosses road x76 to line x77; pipes y60 and y66 to the x74 main.
+coal 64 52
+road 60 56 75 56
+road 60 62 75 62
+road 67 57 67 68
+line 60 65 76 65
+pipe 60 60 73 60
+pipe 60 66 73 66
+zone R 60 57 66 58
+zone R 60 60 66 61
+zone I 68 57 75 58
+zone I 68 60 75 61
+zone R 60 63 66 64
+zone R 60 66 66 68
+zone I 68 63 75 64
+zone I 68 66 75 68
+park 62 67 63 68
+pipe 63 57 63 68
