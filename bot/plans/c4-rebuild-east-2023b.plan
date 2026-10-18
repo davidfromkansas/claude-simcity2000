@@ -1,0 +1,40 @@
+# rebuild 2023 part 2: steps still missing after the cash ran out
+road 77 27 100 27   # a20-day1.plan
+road 77 34 100 34   # a20-day1.plan
+road 84 21 84 33   # a20-day1.plan
+line 77 21 77 38   # a20-day1.plan
+road 77 41 108 41   # a20-day1.plan
+road 77 48 108 48   # a20-day1.plan
+road 84 42 84 54   # a20-day1.plan
+road 92 42 92 54   # a20-day1.plan
+road 100 42 100 54   # a20-day1.plan
+road 108 42 108 54   # a20-day1.plan
+line 85 35 85 55   # a20-day1.plan
+line 93 35 93 55   # a20-day1.plan
+line 101 35 101 55   # a20-day1.plan
+road 77 7 91 7   # a19-2004.plan
+line 59 54 59 58   # a19-seaport2.plan
+road 109 62 121 62   # c4-east2.plan
+line 71 104 76 104   # a19-pumps-s2.plan
+fire 78 52   # grid
+fire 78 66   # grid
+fire 78 73   # grid
+fire 79 91   # grid
+fire 81 104   # grid
+fire 86 11   # grid
+fire 88 24   # grid
+fire 86 52   # grid
+fire 86 66   # grid
+fire 89 77   # grid
+fire 94 91   # grid
+fire 89 104   # grid
+fire 102 24   # grid
+fire 102 35   # grid
+fire 102 66   # grid
+fire 102 73   # grid
+fire 103 103   # grid
+fire 106 120   # grid
+fire 119 24   # grid
+fire 119 35   # grid
+fire 119 47   # grid
+fire 117 73   # grid

@@ -379,7 +379,7 @@ def main(path, dry=False):
         # Claudeville 4 (May 2011): the east-bank rebuild ran out of cash and clicked on for an hour with $0
         if i % 10 == 9:
             cnow = save()
-            if cnow is not None and cnow <= 0:
+            if cnow is not None and cnow < 100:
                 problems.append("OUT OF CASH at line %d: stopped (take a loan and rerun the plan)" % s["line"])
                 break
         if s["kind"] in ("pump", "park", "dezone") or s["kind"].startswith("bulldoze"):
@@ -410,7 +410,7 @@ def main(path, dry=False):
     # check every planned tile; place gaps one by one, two rounds
     for rnd in (1, 2, 3):
         cash = save()
-        if cash is not None and cash <= 0:
+        if cash is not None and cash < 100:
             problems.append("OUT OF CASH before gap round %d: stopped" % rnd)
             break
         c = City()
