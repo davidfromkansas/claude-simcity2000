@@ -53,6 +53,48 @@
    "jammed": 0,
    "bonds": 9
   },
-  "end": null
+  "end": {
+   "date": "Feb 2008",
+   "population": 26800,
+   "money": 3842,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 10
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "26,800 -> 31,340",
+  "moves": [
+   "Loans #11-12: coal + seaport + far-west strip + shops"
+  ],
+  "happened": "West filling fast. Loans #11-12: coal, second seaport, far-west strip with its own coal plant, west shops.",
+  "watching": "Factory land, home demand",
+  "start": {
+   "date": "Feb 2008",
+   "population": 26800,
+   "money": 3842,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 10
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 33840,
+   "money": 6269,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 12
+  }
  }
 ]
