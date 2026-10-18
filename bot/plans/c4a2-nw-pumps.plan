@@ -1,0 +1,8 @@
+# Claudeville 4 a2 Oct 2023: water 7% / power 13% spare - river pumps beside the NW district (x56-57 y5-12) fed by
+# the y7 line row, pipe x55/x56 joined to the y10 pipe row; coal plant (50,102) between the zoo and the coal on line x49
+line 55 7 56 7
+pipe 55 5 55 12
+pipe 56 5 56 8
+pump 57 5 57 9
+pump 56 9 56 12
+coal 50 102
