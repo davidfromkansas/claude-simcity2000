@@ -1,0 +1,3 @@
+# attempt 2: stadium only (no airport next to it - both attempt-1 fires began at that airport)
+line 105 97 105 98
+stadium 101 98
