@@ -1,0 +1,8 @@
+# Claudeville 4 Feb 2016: dry districts - join pipe networks that never linked
+# south-east: x107 main (watered) to the x113 pipe
+pipe 107 94 107 96
+pipe 108 96 113 96
+# far west: re-drag the T joints
+pipe 11 36 11 44
+pipe 11 22 11 28
+pipe 20 24 27 24

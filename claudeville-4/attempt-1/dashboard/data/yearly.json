@@ -280,6 +280,130 @@
    "jammed": 0,
    "bonds": 21
   },
+  "end": {
+   "date": "Feb 2015",
+   "population": 48140,
+   "money": -5323,
+   "unemployment": 5,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 174,
+   "jammed": 0,
+   "bonds": 23
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "good",
+  "title": "Past 45,000",
+  "moves": [],
+  "happened": "The new zoo and stadium lifted the home cap; growth continued on the rebuilt east bank. Budget still about $6k a year short.",
+  "watching": "Water in the far-west and south-east",
+  "start": {
+   "date": "Feb 2015",
+   "population": 48140,
+   "money": -5323,
+   "unemployment": 5,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 174,
+   "jammed": 0,
+   "bonds": 23
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 50130,
+   "money": -12279,
+   "unemployment": 9,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 238,
+   "jammed": 0,
+   "bonds": 23
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "steady",
+  "title": "50,000 and dry districts",
+  "moves": [
+   "Joined pipe networks in the far west and south-east"
+  ],
+  "happened": "Population 50,130. About 540 buildings had no water because pipe networks never linked; joined them (loans #24-25).",
+  "watching": "Land running out",
+  "start": {
+   "date": "Feb 2016",
+   "population": 50130,
+   "money": -12279,
+   "unemployment": 9,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 238,
+   "jammed": 0,
+   "bonds": 23
+  },
+  "end": {
+   "date": "Feb 2017",
+   "population": 52730,
+   "money": -1796,
+   "unemployment": 8,
+   "watered_pct": 89,
+   "powered_pct": 100,
+   "abandoned": 303,
+   "jammed": 0,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "Steady growth",
+  "moves": [],
+  "happened": "No new building; the watered districts filled in.",
+  "watching": "Empty land almost gone",
+  "start": {
+   "date": "Feb 2017",
+   "population": 52730,
+   "money": -1796,
+   "unemployment": 8,
+   "watered_pct": 89,
+   "powered_pct": 100,
+   "abandoned": 303,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Feb 2018",
+   "population": 55860,
+   "money": -10438,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 134,
+   "jammed": 0,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2018,
+  "tone": "steady",
+  "title": "New south-west district",
+  "moves": [
+   "South-west district 2: 6 home, 3 shop, 3 factory blocks"
+  ],
+  "happened": "Population 55,860, on pace. Only 24 empty home tiles were left, so a new 12-block district goes onto the empty land south of y82 on the west bank (loans #26-27).",
+  "watching": "District growth; bond payments",
+  "start": {
+   "date": "Feb 2018",
+   "population": 55860,
+   "money": -10438,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 134,
+   "jammed": 0,
+   "bonds": 25
+  },
   "end": null
  }
 ]
