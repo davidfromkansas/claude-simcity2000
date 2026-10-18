@@ -91,6 +91,19 @@ def audit(path=None, city=None):
     def near_road(x, y, r):
         return any(roads[j][i] for j in range(max(0, y - r), min(N, y + r + 1))
                    for i in range(max(0, x - r), min(N, x + r + 1)))
+    # Claudeville 4 attempt 2: a seaport road and a neighbour-link road sat unconnected, and a stray calibration
+    # road tile blocked a zoo site - every road piece must join the main network
+    rtiles = {(x, y) for x, y in c.tiles() if roads[y][x]}
+    comps, rseen = [], set()
+    for p in sorted(rtiles):
+        if p not in rseen:
+            comp = c.flood([p], lambda x, y: (x, y) in rtiles)
+            rseen |= comp
+            comps.append(comp)
+    comps.sort(key=len, reverse=True)
+    for comp in comps[1:]:
+        what = "stray road tile" if len(comp) == 1 else "road piece of %d tiles" % len(comp)
+        add("FAIL", "%s at %s is not joined to the main road network" % (what, box(comp)))
     far = []
     for k, reg in regions:
         if not any(near_road(x, y, 1) for x, y in reg):

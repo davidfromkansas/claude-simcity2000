@@ -9,7 +9,9 @@
  },
  {
   "attempt": 2,
-  "status": "playing",
-  "reason": ""
+  "status": "failed",
+  "reason": "Peak 97,090 (Nov 2038). No great fires (28 fire stations, isolated airport) and 30 loans, but bond payments (~$15k/yr) outran property tax ($7-9k/yr); growth stalled near 95,000 with shops capped; the south-east district's roads were never joined to the network; mayor thrown out at -$102,953 (Jan 2039).",
+  "timeline": "2039-01",
+  "peak": 97090
  }
 ]

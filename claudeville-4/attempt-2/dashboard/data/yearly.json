@@ -782,6 +782,48 @@
    "jammed": 0,
    "bonds": 30
   },
+  "end": {
+   "date": "Feb 2030",
+   "population": 94990,
+   "money": -19955,
+   "unemployment": 10,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 432,
+   "jammed": 0,
+   "bonds": 30
+  }
+ },
+ {
+  "year": 2038,
+  "tone": "steady",
+  "title": "Peak 97,090",
+  "moves": [
+   "Factory tax to 14% (demand at max)"
+  ],
+  "happened": "Population recovered to a new peak of 97,090 by November; cash -$93k. The game crashed to DOS once (reloaded the Nov 2038 save).",
+  "watching": "The January budget",
+  "start": {
+   "date": "Feb 2038",
+   "population": 93910,
+   "money": -93103,
+   "unemployment": 8,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 348,
+   "jammed": 0,
+   "bonds": 30
+  },
+  "end": null
+ },
+ {
+  "year": 2039,
+  "tone": "setback",
+  "title": "Game over",
+  "moves": [],
+  "happened": "In January cash reached -$102,953 and the mayor was thrown out.",
+  "watching": "Attempt 3",
+  "start": null,
   "end": null
  }
 ]

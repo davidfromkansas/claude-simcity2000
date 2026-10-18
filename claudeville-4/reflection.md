@@ -49,3 +49,23 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
 - **A debt budget**: loans are finite (50) and so is debt (-$100,000). Every loan must add people that pay for
   it; at ~$600 a year per loan, 30 loans need ~150,000 people at 9-10% tax to break even. Keep taxes as high as
   demand allows (homes 10-12%), never cut them to "help growth" once in debt.
+
+## Claudeville 4 attempt 2 (peak 97,090 - mayor thrown out Jan 2039)
+- Fire cover (28 stations from `firegrid.py`) and an isolated airport worked: no great fire in 39 years.
+- 30 loans for 97,000 people (attempt 1: 48 for 87,000), but bond payments (~$15k/yr) still outran property tax
+  ($7-9k/yr). Growth stalled near 95,000 from 2029 with shop demand ~-1,500 (smallest airport), factories past
+  their trade capacity, 8-22% jobless.
+- Raising taxes on the stalled city (to 10-11%) lost 15,000 people in two years; income fell anyway.
+- The road-network check written after the attempt found the whole south-east district (116 road tiles) cut off
+  from the city for the entire game.
+
+## What all four Claudeville 4 lessons add up to (before attempt 3)
+- **Tax depends on population x rate only** (research: tax ~ rate x population / 75; land value does not count).
+  At 8-9% a person pays ~$0.11-0.12 a year. 200,000 people pay ~$23k; 100,000 pay ~$12k.
+- **So loans must stay well under what the city can carry**: each $10k loan costs ~$500 a year for ever. 20 loans
+  (~$10k/yr) is about what a 100,000 city carries. Repay bonds whenever cash allows (bond window).
+- **Service upkeep counts**: 28 fire stations cost $2.8k a year - a fifth of the tax. One station per ~8,000
+  people is enough with an isolated airport.
+- **The caps decide the stall**: a bigger airport (shops), a seaport or rail link per ~10,000 factory workers
+  (factories), recreation ahead of each ~15,000 (homes). Lift them before demand turns negative, not after.
+- **Every road must join the network** (now checked).
