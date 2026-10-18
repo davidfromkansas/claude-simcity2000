@@ -1,0 +1,4 @@
+# join the south-east district's roads to the city (cut off in attempt 2 for the whole game): y97 east to x115,
+# and y104 west to road x100
+road 109 97 115 97
+road 101 104 108 104
