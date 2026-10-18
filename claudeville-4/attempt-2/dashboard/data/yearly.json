@@ -688,6 +688,100 @@
    "jammed": 0,
    "bonds": 24
   },
+  "end": {
+   "date": "Feb 2024",
+   "population": 80420,
+   "money": -33,
+   "unemployment": 7,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 198,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2025,
+  "tone": "good",
+  "title": "Past attempt 1's peak",
+  "moves": [
+   "Rail link off the east edge"
+  ],
+  "happened": "87,520 people in Jul 2025, beyond attempt 1's 87,090 peak five years earlier; second rail link east; factory tax ceiling to 10%.",
+  "watching": "Budget deficit ~$8k/yr",
+  "start": {
+   "date": "Feb 2025",
+   "population": 84150,
+   "money": -1322,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 199,
+   "jammed": 0,
+   "bonds": 28
+  },
+  "end": {
+   "date": "Jan 2026",
+   "population": 88100,
+   "money": -1003,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 269,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2027,
+  "tone": "steady",
+  "title": "90,000",
+  "moves": [
+   "Pond pumps"
+  ],
+  "happened": "Water ran short again: 5 pumps on the fresh-water pond (loan #30, the end of the planned loan budget).",
+  "watching": "Deficit",
+  "start": {
+   "date": "Feb 2027",
+   "population": 90370,
+   "money": -8054,
+   "unemployment": 8,
+   "watered_pct": 92,
+   "powered_pct": 100,
+   "abandoned": 272,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2028",
+   "population": 94540,
+   "money": -5822,
+   "unemployment": 7,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 226,
+   "jammed": 0,
+   "bonds": 30
+  }
+ },
+ {
+  "year": 2029,
+  "tone": "steady",
+  "title": "95,000 and the caps",
+  "moves": [],
+  "happened": "95,530 people, ahead of pace, but all demand negative with 10% jobless and 423 abandoned buildings; cash -$12.7k on 30 loans.",
+  "watching": "Caps and debt",
+  "start": {
+   "date": "Jun 2029",
+   "population": 96350,
+   "money": -12735,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 440,
+   "jammed": 0,
+   "bonds": 30
+  },
   "end": null
  }
 ]
