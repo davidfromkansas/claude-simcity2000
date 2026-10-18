@@ -28,12 +28,12 @@
  },
  "reminders": {
   "9000": "zoo (a14-zoo) before 10,000; finance ordinances + City Beautification",
-  "18000": "stadium (a19 stadium at 101 98 with line 105 97-98) and the airport (a19-airport)",
-  "25000": "cross the river: causeway y69 + raised wires y68 + the first west district (a19-west)",
+  "18000": "stadium (NOT the c4-stadium-airport airport); fire stations every ~14 tiles in every district",
+  "25000": "cross the river: causeway y69 + raised wires y68 + the first west district (a19-west); airport only if shops are capped - bare land 10+ tiles from districts, own fire station",
   "30000": "second seaport (a19-seaport2)",
   "45000": "zoo #2 / marina; west districts 2-3",
   "70000": "stadium #2, zoo #3",
   "110000": "arcology research: find the tool, cost and size; keep 4x4 lots free",
-  "500": "loan #2 and the next blocks (a20-2003) - attempt 19 took it in Feb 2001"
+  "500": "loan #2 as soon as the game allows; follow attempt 1's sequence (a20-2003, a19-2002, district5, c4-zoo)"
  }
 }

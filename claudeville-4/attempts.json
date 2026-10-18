@@ -6,5 +6,10 @@
   "timeline": "2031-01",
   "timelapse": "recording-timelapse/timelapse.mp4",
   "peak": 87090
+ },
+ {
+  "attempt": 2,
+  "status": "playing",
+  "reason": ""
  }
 ]
