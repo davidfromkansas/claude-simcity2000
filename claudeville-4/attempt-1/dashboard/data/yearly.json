@@ -561,6 +561,100 @@
    "jammed": 0,
    "bonds": 33
   },
+  "end": {
+   "date": "Jul 2024",
+   "population": 55800,
+   "money": -11605,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 99,
+   "abandoned": 259,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2024,
+  "tone": "setback",
+  "title": "Slow regrowth",
+  "moves": [
+   "Re-joined the NW coal plant and the y68 east-west line"
+  ],
+  "happened": "The east bank regrew slowly; the west bank's north blocks were unpowered for months before I found the cut lines.",
+  "watching": "Power links",
+  "start": {
+   "date": "Jul 2024",
+   "population": 55800,
+   "money": -11605,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 99,
+   "abandoned": 259,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Feb 2025",
+   "population": 58070,
+   "money": -33249,
+   "unemployment": 11,
+   "watered_pct": 98,
+   "powered_pct": 99,
+   "abandoned": 312,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2025,
+  "tone": "steady",
+  "title": "Back to 60,000+",
+  "moves": [],
+  "happened": "Growth resumed on the rebuilt east bank with 25 new fire stations; no new building (cash negative).",
+  "watching": "Shop cap without an airport",
+  "start": {
+   "date": "Feb 2025",
+   "population": 58070,
+   "money": -33249,
+   "unemployment": 11,
+   "watered_pct": 98,
+   "powered_pct": 99,
+   "abandoned": 312,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Feb 2026",
+   "population": 65580,
+   "money": -53688,
+   "unemployment": 8,
+   "watered_pct": 89,
+   "powered_pct": 100,
+   "abandoned": 184,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2026,
+  "tone": "setback",
+  "title": "Debt and the shop cap",
+  "moves": [
+   "New airport far from the districts with its own fire station (loans #42-48)"
+  ],
+  "happened": "66,740 people, behind pace. Bond payments $25k a year against $7k of taxes; homes demand -1200 because shops are capped without an airport (8% jobless).",
+  "watching": "Airport effect on jobs",
+  "start": {
+   "date": "Feb 2026",
+   "population": 65580,
+   "money": -53688,
+   "unemployment": 8,
+   "watered_pct": 89,
+   "powered_pct": 100,
+   "abandoned": 184,
+   "jammed": 0,
+   "bonds": 41
+  },
   "end": null
  }
 ]
