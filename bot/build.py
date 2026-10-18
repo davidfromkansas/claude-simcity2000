@@ -194,7 +194,7 @@ def drag(name, a, b):
         sh("SC_WATER=1 ./sc drag", *screen(*a), *screen(*b))
         time.sleep(0.8)
         sc("snap", "/tmp/sc/dlg.png")
-        sh("[ \"$(convert /tmp/sc/dlg.png -format '%[pixel:p{320,200}]' info:)\" = 'srgb(186,186,186)' ] && ./sc click %d %d" % CROSS[name])
+        sh("[ \"$(convert /tmp/sc/dlg.png -format '%%[pixel:p{320,200}]' info:)\" = 'srgb(186,186,186)' ] && ./sc click %d %d" % CROSS[name])
         time.sleep(1.0)
         nodlg()
         return
