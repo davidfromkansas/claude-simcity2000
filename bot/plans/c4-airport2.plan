@@ -1,0 +1,6 @@
+# Claudeville 4 Jun 2026: shops are capped without an airport (8% jobless, homes demand -1200). New airport on empty land
+# far from the districts (10+ tiles of bare land on every side), its own fire station, road from y109, line from x77.
+road 82 110 82 118
+line 77 109 77 122
+airport 78 119 83 122
+fire 74 120

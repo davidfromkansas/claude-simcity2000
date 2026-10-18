@@ -1,0 +1,37 @@
+# Claudeville 4 Jul 2028: homes demand 1500 with no land - north-west district on the empty strip y6-19 (west bank).
+# 6x6 cells on the existing x13..x55 road grid; factories next to the two coal plants, homes and shops elsewhere.
+# Line rows y7/y14 (y14 touches both plants), pipe rows y10/y17 joined to the x11 pipe main.
+road 6 6 6 19
+road 13 6 13 19
+road 20 6 20 19
+road 27 6 27 19
+road 34 6 34 19
+road 41 6 41 19
+road 48 6 48 19
+road 55 6 55 19
+road 7 6 54 6
+road 7 13 54 13
+road 7 20 12 20
+line 7 7 54 7
+line 7 14 54 14
+line 10 8 10 12
+zone R 7 7 12 12
+park 11 9 12 10
+zone C 14 7 19 12
+zone R 21 7 26 12
+park 23 9 24 10
+zone R 28 7 33 12
+park 30 9 31 10
+zone C 35 7 40 12
+zone R 42 7 47 12
+park 44 9 45 10
+zone R 49 7 54 12
+park 51 9 52 10
+zone R 7 15 12 19
+zone R 14 15 19 19
+zone I 21 15 26 19
+zone I 42 15 47 19
+zone C 49 15 54 19
+pipe 11 10 11 21
+pipe 7 10 54 10
+pipe 7 17 54 17
