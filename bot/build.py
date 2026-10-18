@@ -435,9 +435,12 @@ def main(path, dry=False):
     hurt = []
     for i in range(N * N):
         p = (i % N, i // N)
-        if p in plan_tiles:
-            continue
         o, n = snap0[0][i], snap1[0][i]
+        # attempt 3: autocal test roads left on planned ZONE tiles were skipped here - only planned road tiles
+        # may turn into new road
+        stray = o == 0 and is_road(n) and not (p in final and final[p]["kind"] in ("road", "link"))
+        if p in plan_tiles and not stray:
+            continue
         if (is_road(o) and is_road(n)) or (is_line(o) and is_line(n)) or (is_rail(o) and is_rail(n)):
             continue                # the game redraws road/line pieces to join new neighbours
         # zone type (low bits) and pipe present/absent matter; pipe-piece shapes and corner bits do not
@@ -446,7 +449,12 @@ def main(path, dry=False):
     for (x, y), old, new in hurt:
         what = "road" if is_road(old) else "line" if is_line(old) else None
         fix = ""
-        if what and new == 0:
+        if is_line(old) and is_road(new):
+            # attempt 3: an autocal test road replaced a power-line tile (37,64) and cut the line
+            vis(x, y); tool("bulldoze"); click_tile(x, y); click_tile(x, y)
+            tool("line"); click_tile(x, y)
+            fix = " -> stray road on a line: removed, line re-placed"
+        elif what and new == 0:
             vis(x, y)
             tool(what)
             click_tile(x, y)
