@@ -17,10 +17,10 @@ This attempt keeps attempt 2's build order and fire cover, and changes money and
    - the north-west.
 
    Run `audit.py` after every build; it now FAILs disconnected roads.
-2. **Loans:** a hard budget.
-   - Take a new loan only while the last January's property tax and ordinances cover bond payments plus ~$1k.
-   - Allow at most 1 extra loan a year while the city is under 20,000 people (the start needs money).
-   - Repay the oldest bond when cash exceeds ~$15k.
+2. **Loans: a budget to 2050** (`loan.sh` checks it from 20,000 people). A loan is refused when cash projected to
+   2050 would fall below -$80,000. The projection uses last January's tax x1.15 for ordinances and x1.5 for growth,
+   minus ~$500 a loan and service upkeep. (The first version, a deficit cap of ~$2,500 a year, refused every loan
+   from 25,000 people while 10 loans already cost more than the tax.) Repay the oldest bond when cash is over ~$15k.
 3. **Taxes:** homes 9%, shops 8%, factories 8% from about 2,000 people. The controller goes up to 11 / 10 / 10 while demand is strong.
    Never cut below 7%, never raise into a stall.
 4. **Fire cover:** about one station per 8,000 people, via `firegrid.py SPACING --avoid <next plans>`.

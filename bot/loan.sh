@@ -4,26 +4,30 @@
 # updates run.json. Exits 1 if the game refused (e.g. "credit rating" at founding).
 cd "$(dirname "$0")"
 # Claudeville 4 attempts 1-2: loans outran tax (each $10k costs ~$500 a year for ever) and both cities ended at
-# -$100,000. From 20,000 people a loan needs the last January's tax + ordinances to cover the bond payments
-# minus ~$2,500 afterwards - a deficit no bigger than that lasts to 2050 (LOAN_OK=1 overrides; say why in the log).
+# -$100,000. From 20,000 people a loan is refused when cash projected to 2050 (last January's tax x1.15 for
+# ordinances x1.5 for growth, minus ~$500 a loan and service upkeep) would fall below -$80,000 (LOAN_OK=1 overrides).
 if [ -z "$LOAN_OK" ]; then
   python3 -I - <<'PY' || exit 1
 import json, os, sys
 sys.path.insert(0, ".")
 import sc2parse as p
 r = json.load(open("run.json")); d = p.parse(p.SAVE)
-pop, bonds = d.get("population", 0), r.get("bonds", 0)
+pop, bonds, cash = d.get("population", 0), r.get("bonds", 0), d.get("money", 0)
+year = int(str(d.get("date", "Jan 2000")).split()[-1])
 b = []
 try:
     b = json.load(open(os.path.join("..", r.get("dashboard", ""), "data", "budget.json")))
 except Exception:
     pass
 tax = b[-1].get("est_property_tax", 0) if b else 0
-income = tax * 1.15                      # ordinances add ~15%
-need = (bonds + 1) * 500 - 2500       # a ~$2.5k yearly deficit spends the -$100k margin over ~40 years
-if pop >= 20000 and income < need:
-    print("LOAN: refused by the loan budget - yearly tax ~$%d vs ~$%d of bond payments after this loan (LOAN_OK=1 to override)" % (income, need))
+income = tax * 1.15 * 1.5               # ordinances ~15%; income assumed to grow by half on average as the city grows
+fixed = 400 + 100 * d.get("services", {}).get("fire", {}).get("count", 0) // 2   # rough service upkeep
+yearly = income - (bonds + 1) * 500 - fixed
+end = cash + 10000 + yearly * (2050 - year)
+if pop >= 20000 and end < -80000:
+    print("LOAN: refused by the loan budget - cash projected to 2050 with this loan: ~$%d (game over near -$100k; LOAN_OK=1 to override)" % end)
     sys.exit(1)
+print("LOAN budget: projected 2050 cash ~$%d" % end)
 PY
 fi
 ./sc save >/dev/null; before=$(python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;print(p.parse(p.SAVE)['money'])")
