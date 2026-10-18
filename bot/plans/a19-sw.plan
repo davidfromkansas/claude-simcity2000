@@ -1,0 +1,32 @@
+# Attempt 19 Aug 2034 (loan #22): 71,000 people, shop demand 2,000 with 26 empty tiles, home cap warning (4 lifters
+# for ~75,000). South-west block below road y69: dense shops x14-26 y70-75, dense homes x28-39 y70-75 with parks,
+# second STADIUM (14,77), homes around the lake x29-37 y77-82. Roads y76 and columns x13/x20/x27/x34/x40; lines
+# x24/x31/x37 continue the y68 line south, x18 fed along y73; pipe x40 down from the west network, rows y72/y79.
+road 13 70 13 82
+road 20 70 20 82
+road 27 70 27 82
+road 34 70 34 75
+road 40 70 40 82
+road 14 76 39 76
+line 24 69 24 82
+line 31 69 31 75
+line 37 69 37 82
+line 18 70 18 82
+line 19 73 23 73
+zone C 14 70 19 75
+zone C 21 70 26 75
+zone R 28 70 33 75
+zone R 35 70 39 75
+park 28 72 29 73
+park 35 72 36 73
+stadium 14 77
+zone R 19 77 19 82
+zone R 14 81 17 82
+bulldoze 25 79 25 79
+zone R 21 77 26 82
+zone R 38 77 39 82
+pipe 40 68 40 82
+pipe 14 72 39 72
+pipe 21 79 28 79
+pipe 38 79 39 79
+pipe 22 73 22 78

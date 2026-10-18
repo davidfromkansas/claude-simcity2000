@@ -1,0 +1,3 @@
+# link the x=85 power column to the plant
+line 85 34 85 35
+line 82 35 84 35

@@ -1,0 +1,11 @@
+# Dec 2011: shop demand 1,946 with 26 empty shop tiles (the airport opened the shop cap); spare power 19%.
+# Shop cells x110-115 / x118-123 y91-96 below road y90, line columns x109/x117 across road y90, road y97 east.
+road 116 91 116 96
+road 109 97 124 97
+road 124 91 124 96
+line 109 90 109 96
+line 117 90 117 96
+zone c 110 91 115 96
+zone c 118 91 123 96
+pipe 108 94 123 94
+coal 68 48

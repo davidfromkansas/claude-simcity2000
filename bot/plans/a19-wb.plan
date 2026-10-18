@@ -1,0 +1,33 @@
+# Attempt 19 Feb 2042 (loans #28-29): 87,250 people; home land (11 empty, demand +515) and factory land (1 empty,
+# demand 1,077) short. West-bank district x41-53 y83-109 between the south-west bands and the river: checkerboard
+# of dense homes (parks) and dense factories; roads y83/y90/y97/y104 extended east to x54, y110, x47, x54; lines x44
+# (from the pump line at (44,82)) and x51 (fed along y86); pipes rows y87/y94/y101/y107 joined to pipe x40.
+bulldoze 44 83 46 85
+road 41 83 54 83
+road 41 90 54 90
+road 41 97 54 97
+road 41 104 54 104
+road 40 110 54 110
+road 40 104 40 109
+road 47 84 47 109
+road 54 84 54 109
+line 44 83 44 109
+line 45 86 51 86
+line 51 84 51 109
+zone R 41 84 46 89
+zone I 48 84 53 89
+zone I 41 91 46 96
+zone R 48 91 53 96
+zone R 41 98 46 103
+zone I 48 98 53 103
+zone I 41 105 46 109
+zone R 48 105 53 109
+park 41 84 42 85
+park 48 91 49 92
+park 41 98 42 99
+park 48 105 49 106
+pipe 41 87 53 87
+pipe 41 94 53 94
+pipe 41 101 53 101
+pipe 41 107 53 107
+pipe 42 88 42 106

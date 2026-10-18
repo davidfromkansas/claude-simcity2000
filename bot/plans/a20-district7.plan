@@ -1,0 +1,26 @@
+# Dense homes + a 2x2 tree park in the middle of every home cell (land value research): from a17-district7
+# Attempt 17 Dec 2008: factory land short (21 empty, demand 2,000). District 7 south-east, around the airport,
+# MIXED in a checkerboard: homes x118-123 y98-103 / factories y105-110 / homes y112-117; homes x110-115 y105-110 /
+# factories y112-117. Roads x108 (extended), x116, x124, y104, y111, y118; power columns x109 (from the airport
+# line) and x117 (from district 6's x117 line across road y90); pipes from district 5's x107 column.
+road 108 105 108 118
+road 116 98 116 117
+road 124 98 124 117
+road 109 104 124 104
+road 109 111 124 111
+road 109 118 124 118
+line 109 102 109 117
+line 117 90 117 117
+zone R 118 98 123 103
+park 120 100 121 101
+zone i 118 105 123 110
+zone R 118 112 123 117
+park 120 114 121 115
+zone R 110 105 115 110
+park 112 107 113 108
+zone i 110 112 115 117
+pipe 107 95 107 114
+pipe 108 107 123 107
+pipe 108 114 123 114
+pipe 117 100 123 100
+pipe 117 101 117 106

@@ -1,0 +1,28 @@
+# Attempt 19 Nov 2043 (loan #31): 90,970 people; all demand high (shops 2,000 with 29 empty), unemployment 1%,
+# spare power 14%. Ninth coal plant (38,15) beside the west one. North-west district x41-53 y20-40 east of the west
+# shops: roads y20/y27 extended east, y34, y41, columns x47/x54; shops and dense homes alternate; lines x44 (fed along
+# y23 across road x40 from the west shops) and x51 (fed along y30); pipes rows y24/y31/y38 joined by x42 to pipe x40.
+coal 38 15
+road 41 20 54 20
+road 41 27 54 27
+road 41 34 54 34
+road 41 41 54 41
+road 47 21 47 40
+road 54 21 54 40
+line 40 23 43 23
+line 44 21 44 40
+line 45 30 50 30
+line 51 21 51 40
+zone C 41 21 46 26
+zone R 48 21 53 26
+zone R 41 28 46 33
+zone C 48 28 53 33
+zone C 41 35 46 40
+zone R 48 35 53 40
+park 49 22 50 23
+park 41 29 42 30
+park 49 36 50 37
+pipe 41 24 53 24
+pipe 41 31 53 31
+pipe 41 38 53 38
+pipe 42 25 42 37

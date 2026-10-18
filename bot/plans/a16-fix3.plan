@@ -1,0 +1,3 @@
+# the one built home left at (86,4) inside the new factory cell: bulldoze and zone it with the cell
+bulldoze 86 4 86 4
+zone i 86 4 86 4

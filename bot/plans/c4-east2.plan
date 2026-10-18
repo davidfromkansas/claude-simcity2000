@@ -1,0 +1,31 @@
+# Claudeville 4: a19-2009 east district (homes around the pond, dense factories) with a19-2009b's line crossings and pipes folded in; no stadium (already built)
+road 115 56 115 76
+road 109 62 121 62
+road 109 69 121 69
+road 109 76 121 76
+road 122 56 122 76
+line 109 56 109 61
+line 109 63 109 68
+line 109 70 109 75
+line 116 57 116 61
+line 116 63 116 68
+line 116 70 116 75
+zone R 110 66 114 68
+zone R 110 63 110 65
+zone R 114 63 114 65
+zone R 110 70 114 75
+park 112 72 113 73
+zone I 117 57 121 61
+zone I 117 63 121 68
+zone I 117 70 121 75
+pipe 108 66 114 66
+pipe 108 72 114 72
+pipe 115 65 121 65
+pipe 115 72 121 72
+pipe 115 59 121 59
+line 109 62 109 62
+line 109 69 109 69
+line 116 62 116 62
+line 116 69 116 69
+pipe 115 59 115 72
+pipe 115 66 121 66

@@ -1,0 +1,655 @@
+[
+ {
+  "year": 2000,
+  "tone": "good",
+  "title": "Clean start",
+  "moves": [
+   "$10,000 bond, separate taxes 5/4/3%",
+   "Block 1 + neighbor link",
+   "Coal plant, 12 pumps, fire station"
+  ],
+  "happened": "Built block 1 on day one with every power column linked, wired pumps, a pipe main and a fire station. 900 people by January, all buildings powered.",
+  "watching": "Shop demand is negative (too many shops for now).",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 10000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2001",
+   "population": 900,
+   "money": 4502,
+   "unemployment": 3,
+   "watered_pct": 86,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "2,650 people",
+  "moves": [
+   "Second bond",
+   "Block 2 with coal plant, police, pumps"
+  ],
+  "happened": "Population 900 -> 2,650 with full demand for homes and shops. Built block 2 ahead of demand with a second bond.",
+  "watching": "Water spare capacity; money ($886 left).",
+  "start": {
+   "date": "Jan 2001",
+   "population": 900,
+   "money": 4502,
+   "unemployment": 3,
+   "watered_pct": 86,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2002",
+   "population": 2650,
+   "money": 4051,
+   "unemployment": 4,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 7,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "5,930 people",
+  "moves": [],
+  "happened": "Population 2,650 -> 5,930. Water spare capacity hit zero by January.",
+  "watching": "Water.",
+  "start": {
+   "date": "Jan 2002",
+   "population": 2650,
+   "money": 4051,
+   "unemployment": 4,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 7,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2003",
+   "population": 5930,
+   "money": 180,
+   "unemployment": 2,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 19,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "10,000 reached",
+  "moves": [
+   "Third bond",
+   "43-pump field",
+   "Block 3 east"
+  ],
+  "happened": "Third bond: a 43-pump field wired with its own power lines, and block 3 east. Population passed 10,000 by spring 2004.",
+  "watching": "Power capacity.",
+  "start": {
+   "date": "Jan 2003",
+   "population": 5930,
+   "money": 180,
+   "unemployment": 2,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 19,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Mar 2004",
+   "population": 10920,
+   "money": 787,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 45,
+   "jammed": 0,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "12,970 people",
+  "moves": [
+   "Home tax 5% -> 8%",
+   "Fourth bond"
+  ],
+  "happened": "Growth continued but power ran out (Power Plant Needed) and loan payments ($999) passed tax income ($699).",
+  "watching": "Power and budget.",
+  "start": {
+   "date": "Mar 2004",
+   "population": 10920,
+   "money": 787,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 45,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 12970,
+   "money": 10129,
+   "unemployment": 7,
+   "watered_pct": 0,
+   "powered_pct": 92,
+   "abandoned": 96,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "14,040 people",
+  "moves": [
+   "Third coal plant"
+  ],
+  "happened": "The game ran unpaused through 2005 after the budget window (fixed). Third coal plant built in Feb 2006.",
+  "watching": "Power spare; block 4.",
+  "start": {
+   "date": "Feb 2005",
+   "population": 12970,
+   "money": 10129,
+   "unemployment": 7,
+   "watered_pct": 0,
+   "powered_pct": 92,
+   "abandoned": 96,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2006",
+   "population": 14040,
+   "money": 9504,
+   "unemployment": 6,
+   "watered_pct": 0,
+   "powered_pct": 89,
+   "abandoned": 108,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "steady",
+  "title": "14,880 people",
+  "moves": [
+   "Block 3 south + fire station"
+  ],
+  "happened": "Population 14,040 -> 14,880. Built block 3 south with a second fire station.",
+  "watching": "Power and water spare near 15%.",
+  "start": {
+   "date": "Feb 2006",
+   "population": 14040,
+   "money": 9504,
+   "unemployment": 6,
+   "watered_pct": 0,
+   "powered_pct": 89,
+   "abandoned": 108,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 14880,
+   "money": 4925,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 68,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "good",
+  "title": "16,070 people",
+  "moves": [
+   "Fifth bond",
+   "Fourth coal plant",
+   "33 pumps"
+  ],
+  "happened": "Population 14,880 -> 16,070. Fifth bond for a fourth coal plant and 33 more pumps (spare water 52%, power 34%).",
+  "watching": "Block 4 when cash allows.",
+  "start": {
+   "date": "Feb 2007",
+   "population": 14880,
+   "money": 4925,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 68,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 16070,
+   "money": 260,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "steady",
+  "title": "17,600 people",
+  "moves": [],
+  "happened": "Population 16,070 -> 17,610. The city ran out of land; cash fell to $2,110.",
+  "watching": "Money for the next block.",
+  "start": {
+   "date": "Feb 2008",
+   "population": 16070,
+   "money": 260,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 17610,
+   "money": 2110,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 50,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Block 4",
+  "moves": [
+   "Sixth bond",
+   "Taxes 10/4/4%",
+   "Block 4 south"
+  ],
+  "happened": "Population 17,610 -> 18,650. Sixth bond and a home-tax rise to 10% paid for block 4, with every band zoned so new homes have jobs next door, plus a fire and police station.",
+  "watching": "Power spare ~20%.",
+  "start": {
+   "date": "Feb 2009",
+   "population": 17610,
+   "money": 2110,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 50,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 18650,
+   "money": 3386,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "good",
+  "title": "21,670 people",
+  "moves": [],
+  "happened": "Population 18,650 -> 21,670, unemployment 1-2%. Block 4 filled fast.",
+  "watching": "Power and water spare falling (10-16%).",
+  "start": {
+   "date": "Feb 2010",
+   "population": 18650,
+   "money": 3386,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 21670,
+   "money": 2511,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 2,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "good",
+  "title": "23,760 people",
+  "moves": [
+   "Seventh bond",
+   "Fifth coal plant + 34 pumps"
+  ],
+  "happened": "Population 21,670 -> 23,760. Seventh bond for a fifth coal plant and 34 more pumps.",
+  "watching": "Budget: loan payments slightly above tax income.",
+  "start": {
+   "date": "Feb 2011",
+   "population": 21670,
+   "money": 2511,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 2,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 23760,
+   "money": 4265,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 36,
+   "jammed": 0,
+   "bonds": 7
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "steady",
+  "title": "Land full at 24,000",
+  "moves": [
+   "Taxes 12/7/5%",
+   "Ordinances"
+  ],
+  "happened": "Population 23,760 -> 24,240: no land left. Raised taxes (homes 12%, shops 7%, factories 5%) and turned on gambling, parking fines and a volunteer fire department.",
+  "watching": "Block 5 southeast.",
+  "start": {
+   "date": "Feb 2012",
+   "population": 23760,
+   "money": 4265,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 36,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": {
+   "date": "Feb 2013",
+   "population": 24240,
+   "money": 3722,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 46,
+   "jammed": 0,
+   "bonds": 7
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "steady",
+  "title": "24,870 people",
+  "moves": [
+   "Eighth bond",
+   "Block 5 southeast"
+  ],
+  "happened": "Population 24,240 -> 24,870. Block 5 filled slowly; homes average only ~22 people per tile, so 100,000 needs dense housing.",
+  "watching": "Dense housing test in block 5.",
+  "start": {
+   "date": "Feb 2013",
+   "population": 24240,
+   "money": 3722,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 46,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 24870,
+   "money": 7761,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 61,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "steady",
+  "title": "Going dense",
+  "moves": [
+   "Dense housing test",
+   "Ninth bond",
+   "North dense district"
+  ],
+  "happened": "Population 24,870 -> 25,870. Dense housing grew on test lots in block 5, so the empty north strip was built as a dense district (ninth bond).",
+  "watching": "Dense district growth; budget.",
+  "start": {
+   "date": "Feb 2014",
+   "population": 24870,
+   "money": 7761,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 61,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2015",
+   "population": 25870,
+   "money": 6929,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 92,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "steady",
+  "title": "27,560 people",
+  "moves": [
+   "Sixth coal plant",
+   "2 schools + hospital"
+  ],
+  "happened": "Population 25,870 -> 27,560. Sixth coal plant, first schools and a hospital.",
+  "watching": "Home demand weakening.",
+  "start": {
+   "date": "Feb 2015",
+   "population": 25870,
+   "money": 6929,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 92,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 27560,
+   "money": 8949,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 117,
+   "jammed": 0,
+   "bonds": 9
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "setback",
+  "title": "Demand turns negative",
+  "moves": [
+   "Second neighbor link (east)",
+   "Home tax 12% -> 9%"
+  ],
+  "happened": "Population about 27,560 -> 28,600. Demand for homes, shops and factories all fell to zero or below; unemployment rose to 9-10%. Added a second neighbor link and cut home tax to 9%.",
+  "watching": "Factory demand: trade.",
+  "start": {
+   "date": "Feb 2016",
+   "population": 27560,
+   "money": 8949,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 117,
+   "jammed": 0,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Mar 2017",
+   "population": 28750,
+   "money": 3101,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 160,
+   "jammed": 18,
+   "bonds": 9
+  }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "Seaport",
+  "moves": [
+   "Tenth bond",
+   "Seaport",
+   "Factory tax 5% -> 3%"
+  ],
+  "happened": "Population 28,600 -> 29,420. Tenth bond for a seaport on the river; factory demand rose from 0 to +1,250 and unemployment fell from 10% to 7%.",
+  "watching": "Factory land near the seaport.",
+  "start": {
+   "date": "Mar 2017",
+   "population": 28750,
+   "money": 3101,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 160,
+   "jammed": 18,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Mar 2018",
+   "population": 28090,
+   "money": 1185,
+   "unemployment": 10,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 275,
+   "jammed": 17,
+   "bonds": 9
+  }
+ },
+ {
+  "year": 2018,
+  "tone": "good",
+  "title": "Past 30,000",
+  "moves": [
+   "Factory land by the seaport"
+  ],
+  "happened": "Population about 29,000 -> 30,300 by May 2019, factory demand +1,500. Zoned factories next to the seaport.",
+  "watching": "Jobs and cash ($1,135).",
+  "start": {
+   "date": "Mar 2018",
+   "population": 28090,
+   "money": 1185,
+   "unemployment": 10,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 275,
+   "jammed": 17,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Mar 2019",
+   "population": 28950,
+   "money": 4430,
+   "unemployment": 8,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 209,
+   "jammed": 3,
+   "bonds": 10
+  }
+ },
+ {
+  "year": 2019,
+  "tone": "setback",
+  "title": "Out of money",
+  "moves": [
+   "Factory land by the seaport"
+  ],
+  "happened": "Population about 29,400 -> 30,860 then flat. Ten loans cost $3,800 a year against $2,627 of tax income; cash went negative, so the new factory land by the seaport couldn't get the road it needed. Attempt ended Nov 2021.",
+  "watching": "Attempt 5: a high-value city.",
+  "start": {
+   "date": "Mar 2019",
+   "population": 28950,
+   "money": 4430,
+   "unemployment": 8,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 209,
+   "jammed": 3,
+   "bonds": 10
+  },
+  "end": {
+   "date": "Feb 2020",
+   "population": 29420,
+   "money": 2356,
+   "unemployment": 7,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 192,
+   "jammed": 0,
+   "bonds": 10
+  }
+ }
+]

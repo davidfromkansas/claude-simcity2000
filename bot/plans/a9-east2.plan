@@ -1,0 +1,12 @@
+# east expansion (y42-54): 2 home squares x102-107, factory strip x110-114; home and factory demand at max
+road 101 48 108 48
+road 101 55 115 55
+road 108 42 108 54
+road 115 42 115 54
+line 101 41 101 55
+line 109 41 109 55
+zone r 102 42 107 47
+zone r 102 49 107 54
+zone i 110 42 114 54
+pipe 100 44 107 44
+pipe 100 51 114 51

@@ -1,0 +1,22 @@
+# Module 2 (south, y36-47): homes and shops, since home demand is at max and shop demand high,
+# factory demand negative. Light zoning.
+road 76 35 76 48
+road 77 41 100 41
+road 77 48 100 48
+road 92 35 92 40
+road 100 35 100 40
+road 84 42 84 47
+road 92 42 92 47
+road 100 42 100 47
+line 94 35 99 35
+line 77 38 77 48
+line 85 35 85 48
+line 93 35 93 48
+zone r 86 36 91 40
+zone r 94 36 99 40
+zone r 78 42 83 47
+zone r 86 42 91 47
+zone c 94 42 99 47
+pipe 74 34 74 46
+pipe 75 38 99 38
+pipe 75 44 99 44

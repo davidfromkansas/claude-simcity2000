@@ -1,0 +1,58 @@
+[
+ {
+  "year": 2002,
+  "tone": "setback",
+  "title": "Homes had no power",
+  "moves": [
+   "Pipes joined to pumps",
+   "Parks swapped for power lines"
+  ],
+  "happened": "The park columns sat between the power lines and the home zones, so no home could grow for two years. Pumps were also cut off from the pipes. Both fixed.",
+  "watching": "Whether homes now fill in",
+  "start": {
+   "date": "Feb 2002",
+   "population": 590,
+   "money": 3158,
+   "unemployment": 21,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 23,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2003",
+   "population": 1340,
+   "money": 2651,
+   "unemployment": 20,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 28,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "Growth at last",
+  "moves": [
+   "7 more pumps",
+   "New factory strip in the south"
+  ],
+  "happened": "Population passed 5,000. Water ran out and was fixed with 7 more pumps. Factory demand is at its maximum while shops are overbuilt.",
+  "watching": "Cash is low; unemployment 14%",
+  "start": {
+   "date": "Feb 2004",
+   "population": 4560,
+   "money": 2292,
+   "unemployment": 4,
+   "watered_pct": 82,
+   "powered_pct": 100,
+   "abandoned": 19,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": null
+ }
+]

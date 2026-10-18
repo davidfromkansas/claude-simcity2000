@@ -1,0 +1,19 @@
+# Attempt 19 Nov 2025 (loan #16): 51,000 people, home land short (18 empty, demand 1,102). North-east homes
+# x116-125 y1-19 above the east shops (jobs across road y20); a big park; the creek at x115-119 y12-19 left alone.
+# Roads x122 (joins y20), x118 y1-11 and y1 x118-122; lines: y7 from the lake-pump line (114,6), x126 down to
+# road y20 and the shops below; pipes y7 from the lake pipe, x120 and x124.
+road 122 1 122 19
+road 118 1 121 1
+road 118 2 118 11
+line 115 6 116 6
+line 116 7 126 7
+line 126 8 126 20
+zone R 116 2 117 11
+zone R 119 2 121 11
+zone R 120 12 121 19
+zone R 123 1 125 19
+bigpark 123 2
+park 120 15 121 16
+pipe 116 7 125 7
+pipe 120 8 120 19
+pipe 124 8 124 19

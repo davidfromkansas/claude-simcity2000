@@ -1,0 +1,11 @@
+# C4-1: the east-homes park spots got road tiles (wrong tool active) - clear them, then parks
+bulldoze 123 24 124 25
+bulldoze 123 31 124 32
+bulldoze 123 38 124 39
+bulldoze 123 45 124 46
+bulldoze 123 51 124 52
+park 123 24 124 25
+park 123 31 124 32
+park 123 38 124 39
+park 123 45 124 46
+park 123 51 124 52

@@ -1,0 +1,138 @@
+[
+ {
+  "year": 2001,
+  "tone": "steady",
+  "title": "Module 1",
+  "moves": [
+   "Module 1",
+   "Sales tax and parking fines"
+  ],
+  "happened": "Module 1 built from one checked plan; 850 people by December. Homes filled, factories partly abandoned as factory demand turned negative.",
+  "watching": "Home demand at max",
+  "start": {
+   "date": "Feb 2001",
+   "population": 350,
+   "money": 9069,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2002",
+   "population": 910,
+   "money": 8699,
+   "unemployment": 13,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 17,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "steady",
+  "title": "Lower taxes, more land",
+  "moves": [
+   "Taxes 5/5/4",
+   "Factory squares east",
+   "South homes"
+  ],
+  "happened": "Taxes cut to 5/5/4 (attempt 2 began at 4%). Factory and home land filled up, so new factory squares, an east factory strip and south homes were zoned.",
+  "watching": "Land filling vs demand",
+  "start": {
+   "date": "Feb 2006",
+   "population": 3240,
+   "money": 3798,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 32,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 4060,
+   "money": 3600,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 26,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Power, water, land",
+  "moves": [
+   "Loan #2",
+   "Second coal plant",
+   "East homes and factories"
+  ],
+  "happened": "Lower taxes and new land took the city from 4,000 to 5,800. Power and water ran out; loan #2 paid for a second coal plant, riverbank pumps and more land.",
+  "watching": "Growth after the new plant",
+  "start": {
+   "date": "Feb 2009",
+   "population": 5560,
+   "money": 1188,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 23,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 5810,
+   "money": 5142,
+   "unemployment": 7,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 38,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2019,
+  "tone": "setback",
+  "title": "Power plant lost",
+  "moves": [
+   "Taxes 10/10/9",
+   "Loan #3",
+   "Plant rebuilt",
+   "First fire station"
+  ],
+  "happened": "Taxes were raised to 8-10% while demand was at maximum, then in 2017 the second coal plant burned down (no fire station). 180 buildings lost power and the population fell to 6,100 before loan #3 rebuilt the plant and added a fire station.",
+  "watching": "Recovery",
+  "start": {
+   "date": "Feb 2019",
+   "population": 6520,
+   "money": 1705,
+   "unemployment": 21,
+   "watered_pct": 100,
+   "powered_pct": 78,
+   "abandoned": 195,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2020",
+   "population": 6660,
+   "money": 7006,
+   "unemployment": 20,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 151,
+   "jammed": 0,
+   "bonds": 3
+  }
+ }
+]

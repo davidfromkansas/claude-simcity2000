@@ -1,0 +1,6 @@
+# Attempt 19 Jul 2010: spare water 6%, cash $440 -> 4 riverbank pumps: (73,91) on line x73/pipe x74; (73-75,99)
+# powered across road x76 from line x77, piped along y98 to the x80 pipe.
+pump 73 91 73 91
+line 76 99 76 99
+pump 73 99 75 99
+pipe 73 98 79 98

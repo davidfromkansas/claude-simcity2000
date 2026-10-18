@@ -1,0 +1,55 @@
+# Attempt 19 LIGHT-homes version of a17-2003
+# Attempt 17 job-heavier version (attempt 16: unemployment 15%+ with 300-480 empty dense home tiles): 3 home cells -> jobs
+# Attempt 15 DENSE homes version of a12-2003. # Attempt 12 ~2003 (loan #2): attempt 11's a11-2003 (blocks 3 + 4) with its fixes folded in
+road 101 20 115 20
+road 101 27 108 27
+road 101 34 108 34
+road 108 21 108 40
+road 109 41 115 41
+road 115 21 115 54
+road 109 55 115 55
+line 101 21 101 35
+line 108 30 109 30
+line 109 21 109 54
+zone r 102 21 107 26
+zone r 102 28 107 33
+zone c 102 35 107 40
+zone i 110 21 114 54
+pipe 100 23 114 23
+pipe 100 30 114 30
+pipe 100 38 114 38
+pipe 107 51 114 51
+zone r 86 36 91 40
+zone r 94 36 99 40
+line 101 30 109 30
+road 76 56 76 76
+road 77 62 108 62
+road 77 69 108 69
+road 77 76 108 76
+road 84 56 84 75
+road 92 56 92 75
+road 100 56 100 75
+road 108 56 108 75
+line 77 57 77 76
+line 85 55 85 76
+line 93 55 93 76
+line 101 55 101 76
+zone r 78 57 83 61
+zone i 86 57 91 61
+zone c 94 57 99 61
+zone r 102 57 107 61
+zone r 78 63 83 68
+zone r 86 63 91 68
+zone c 94 63 99 68
+zone i 102 63 107 68
+zone i 78 70 83 75
+zone i 86 70 91 75
+zone r 94 70 99 75
+zone i 102 70 107 75
+pipe 74 51 74 74
+pipe 75 59 107 59
+pipe 75 65 107 65
+pipe 75 72 107 72
+line 77 56 77 56
+pipe 75 38 99 38
+police 94 36

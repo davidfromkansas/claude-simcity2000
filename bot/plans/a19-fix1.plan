@@ -1,0 +1,4 @@
+# a20-2003 fix: park was planned on the power line at y30
+bulldoze 104 30 105 30
+line 104 30 105 30
+park 104 32 105 32

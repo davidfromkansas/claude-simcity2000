@@ -1,0 +1,22 @@
+# Dec 2010 (loan #8): shop and factory land both short (demand 1,827 / 2,000). Factory cells below road y97 (a11-factories2)
+# and a shop block east of the airport (x118-123 y84-89), line x117 down from district 6 across road y83.
+# road x84 y98-103 left out: the south pump lines run along x84
+road 92 98 92 103
+road 100 98 100 103
+road 108 98 108 103
+road 84 104 108 104
+line 85 97 85 103
+line 93 97 93 103
+line 101 97 101 103
+zone i 86 98 91 103
+zone i 94 98 99 103
+zone i 102 98 107 103
+pipe 107 95 107 100
+pipe 86 101 107 101
+pipe 107 101 107 101
+road 116 84 116 90
+road 109 90 124 90
+road 124 84 124 89
+line 117 83 117 89
+zone c 118 84 123 89
+pipe 108 87 123 87

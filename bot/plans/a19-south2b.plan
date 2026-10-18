@@ -1,0 +1,4 @@
+# south2 fix: the airport does not pass power to line x109 - join it to line x116 along y103; two pipes
+line 110 103 115 103
+pipe 124 98 124 107
+pipe 119 102 119 107

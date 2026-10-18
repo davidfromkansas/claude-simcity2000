@@ -1,0 +1,14 @@
+# Dense homes + a 2x2 tree park in the middle of every home cell (land value research): from a17-district8
+# Attempt 17 Jul 2010 (loan #10): factory land short (16 empty, demand 2,000). District 7 extended south: factory
+# cell x118-123 y119-124 under district 7's homes, dense homes x110-115 y119-124 under its factories.
+road 108 119 108 125
+road 116 119 116 125
+road 124 119 124 125
+road 109 125 123 125
+line 109 118 109 124
+line 117 118 117 124
+zone i 118 119 123 124
+zone R 110 119 115 124
+park 112 121 113 122
+pipe 107 115 107 121
+pipe 108 121 123 121

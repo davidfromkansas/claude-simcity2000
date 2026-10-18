@@ -1,0 +1,29 @@
+# Attempt 10 block 4 (2007, from cash): south district y56-76 - homes 264 tiles, factories 108, shops 36
+road 76 56 76 76
+road 77 62 108 62
+road 77 69 108 69
+road 77 76 108 76
+road 84 56 84 75
+road 92 56 92 75
+road 100 56 100 75
+road 108 56 108 75
+line 77 57 77 76
+line 85 55 85 76
+line 93 55 93 76
+line 101 55 101 76
+zone r 78 57 83 61
+zone r 86 57 91 61
+zone r 94 57 99 61
+zone r 102 57 107 61
+zone r 78 63 83 68
+zone r 86 63 91 68
+zone c 94 63 99 68
+zone i 102 63 107 68
+zone i 78 70 83 75
+zone i 86 70 91 75
+zone r 94 70 99 75
+zone r 102 70 107 75
+pipe 74 51 74 74
+pipe 75 59 107 59
+pipe 75 65 107 65
+pipe 75 72 107 72

@@ -1,0 +1,6 @@
+# Feb 2014 (loan #7, over the 6-loan limit on purpose): factory demand at max for 2 years with 137 empty
+# factory tiles and unemployment 15% = the industry cap (the rail link alone is not enough). First seaport:
+# river bank west of the power plants; road from the x53 column, power from the y63 line.
+road 53 63 53 63
+seaport 53 60 57 62
+seaport 54 57 55 59

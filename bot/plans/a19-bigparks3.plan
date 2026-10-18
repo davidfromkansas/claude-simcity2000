@@ -1,0 +1,17 @@
+# Attempt 19 Feb 2040 (loan #27): population falling (85,630 -> 83,210), home demand -430, home cap warning (~90,000).
+# 15 big parks ($150 each, +3,000 cap each, land value) on free spots next to home areas.
+bigpark 5 29
+bigpark 5 38
+bigpark 5 47
+bigpark 5 56
+bigpark 5 74
+bigpark 5 83
+bigpark 5 92
+bigpark 5 101
+bigpark 14 105
+bigpark 23 105
+bigpark 32 105
+bigpark 96 3
+bigpark 106 116
+bigpark 100 119
+bigpark 44 83

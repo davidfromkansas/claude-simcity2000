@@ -1,0 +1,9 @@
+# Attempt 19 Feb 2032 (loan #20): factory land short (20 empty, demand 1,123). A 3-wide dense factory strip
+# x17-19 y28-61 (creek below) along road x20, facing the west homes; line x16 fed across road x20 at y52 from the homes;
+# pipe x18 joined to the y31 pipe.
+line 16 28 16 61
+line 17 52 20 52
+zone I 17 28 19 51
+zone I 17 53 19 61
+pipe 18 28 18 61
+pipe 19 31 21 31

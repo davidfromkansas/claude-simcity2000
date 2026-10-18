@@ -1,0 +1,9 @@
+# Attempt 19 Dec 2042: homes stalled 300 days at ~87,000 (home cap ~90,000 counting zoos/stadiums/marina only) and
+# shop land short. Third ZOO (45,111) below road y110 (line x44 across the road), dense shop cell x49-53 y111-113 (river below)
+# (road x54 extended, line x51 across road y110, pipe x50 from the y107 pipe).
+line 44 110 44 111
+zoo 45 111
+road 54 111 54 113
+line 51 110 51 113
+zone C 49 111 53 113
+pipe 50 108 50 113

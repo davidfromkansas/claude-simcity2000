@@ -1,0 +1,17 @@
+# Attempt 19 Mar 2033 (loan #21): 64,500 people (+5,000 in 13 months), factory land short (14 empty, demand 1,054),
+# spare power 14%. West of the x17-19 factory strip: road x13 y27-61 (joined to road y27), dense factories x14-15
+# (line x16 already there), dense homes x10-12 with parks, line x9 fed along y40 across road x13; pipe x11 joined to
+# pipe x18 along y31. Seventh coal plant (30,15) north of the west districts, line x31 down to the district lines.
+road 13 27 19 27
+road 13 28 13 61
+zone I 14 28 15 61
+zone R 10 28 12 61
+line 9 28 9 61
+line 10 40 16 40
+park 10 32 11 33
+park 10 46 11 47
+park 10 56 11 57
+pipe 11 28 11 61
+pipe 12 31 17 31
+coal 30 15
+line 31 19 31 27

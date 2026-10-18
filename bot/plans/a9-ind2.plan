@@ -1,0 +1,14 @@
+# three factory blocks east (x102-107, y21-40): factory land full, demand at max, 17% unemployed
+road 101 20 108 20
+road 101 27 108 27
+road 101 34 108 34
+road 101 41 108 41
+road 108 21 108 40
+line 100 35 101 35
+line 101 21 101 40
+zone i 102 21 107 26
+zone i 102 28 107 33
+zone i 102 35 107 40
+pipe 100 23 107 23
+pipe 100 30 107 30
+pipe 100 38 107 38

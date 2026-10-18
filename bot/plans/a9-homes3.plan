@@ -1,0 +1,14 @@
+# three home squares south (y49-54): home demand at max, only 40 empty home tiles
+road 76 49 76 55
+road 77 55 100 55
+road 84 49 84 54
+road 92 49 92 54
+road 100 49 100 54
+line 77 48 77 55
+line 85 48 85 55
+line 93 48 93 55
+zone r 78 49 83 54
+zone r 86 49 91 54
+zone r 94 49 99 54
+pipe 74 46 74 52
+pipe 75 51 99 51

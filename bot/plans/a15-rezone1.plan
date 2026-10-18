@@ -1,0 +1,3 @@
+# Feb 2005: shops short (demand 1,773, 19 empty) while 390 dense home tiles sit empty (home demand -1,376,
+# unemployment 16%): turn the east block's empty home band x118-121 y38-54 into shops
+zone c 118 38 121 54

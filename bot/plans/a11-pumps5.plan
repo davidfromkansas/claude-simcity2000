@@ -1,0 +1,22 @@
+# Dec 2016 water spare 8%: riverbank pumps rows 98-103 east of the river, lines east across road x84
+# to the factory line column x85, pipes to a new column x83 joined to the y101 pipe row.
+pipe 83 98 83 103
+pipe 84 101 85 101
+pump 74 98 74 98
+line 75 98 84 98
+pipe 74 98 82 98
+pump 73 99 73 99
+line 74 99 84 99
+pipe 73 99 82 99
+pump 72 100 72 100
+line 73 100 84 100
+pipe 72 100 82 100
+pump 72 101 72 101
+line 73 101 84 101
+pipe 72 101 82 101
+pump 71 102 71 102
+line 72 102 84 102
+pipe 71 102 82 102
+pump 70 103 70 103
+line 71 103 84 103
+pipe 70 103 82 103

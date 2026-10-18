@@ -1,0 +1,9 @@
+# jobs block south (y36-40): factories x86-91, shops x94-99; unemployment 13%, shop+factory demand at max
+road 77 41 100 41
+road 92 35 92 40
+road 100 35 100 40
+line 94 35 99 35
+zone i 86 36 91 40
+zone c 94 36 99 40
+pipe 74 34 74 38
+pipe 75 38 99 38
