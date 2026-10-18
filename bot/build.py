@@ -345,6 +345,7 @@ def main(path, dry=False):
         for p in s["tiles"]:
             (under if s["kind"] == "pipe" else final)[p] = s
     plan_tiles = set(final) | set(under)
+    road_plan = {t for st in steps if st["kind"] in ("road", "link") for t in st["tiles"]}
     print("plan: %d steps, %d tiles" % (len(steps), len(plan_tiles)))
     # preflight (attempt 19): a park placed over a planned line or road cut power to a whole factory strip
     links = {p for s in steps if s["kind"] in ("line", "road", "rail", "police", "fire", "bigpark", "coal", "gas", "stadium", "zoo") for p in s["tiles"]}
@@ -438,7 +439,9 @@ def main(path, dry=False):
         o, n = snap0[0][i], snap1[0][i]
         # attempt 3: autocal test roads left on planned ZONE tiles were skipped here - only planned road tiles
         # may turn into new road
-        stray = o == 0 and is_road(n) and not (p in final and final[p]["kind"] in ("road", "link"))
+        # (a crossing's last step is the line, so check every road step, not just the final one - attempt 3's
+        #  first version bulldozed every new road/line crossing as a stray)
+        stray = o == 0 and is_road(n) and p not in road_plan
         if p in plan_tiles and not stray:
             continue
         if (is_road(o) and is_road(n)) or (is_line(o) and is_line(n)) or (is_rail(o) and is_rail(n)):
