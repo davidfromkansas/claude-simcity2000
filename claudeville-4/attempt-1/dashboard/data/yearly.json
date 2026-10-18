@@ -128,5 +128,29 @@
    "jammed": 0,
    "bonds": 12
   }
+ },
+ {
+  "year": 2010,
+  "tone": "good",
+  "title": "38,790 -> 43,610",
+  "moves": [
+   "Loan #13: south districts + zoo 2",
+   "Loan #14: 30 pumps + SW block + stadium 2",
+   "Loan #15: factories + NW district"
+  ],
+  "happened": "Water crisis (1% spare) fixed with ~30 pumps; south districts, zoo #2, stadium #2 and a south-west block. ~12,000 ahead of Claudeville 3.",
+  "watching": "Jobs: factory land short",
+  "start": {
+   "date": "Feb 2010",
+   "population": 38790,
+   "money": 2048,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 12
+  },
+  "end": null
  }
 ]
