@@ -1,0 +1,8 @@
+# Claudeville 4 Feb 2023: west-bank water short (pipes watered only near their source) - 14 more riverbank pumps
+# x59 y93-101 and x58 y101-105, powered through the x59 line, piped into the y94 and y108 pipe rows
+pipe 58 92 58 100
+pump 59 93 59 101
+pump 58 101 58 105
+pipe 57 100 57 108
+pipe 48 108 56 108
+pipe 48 94 57 94

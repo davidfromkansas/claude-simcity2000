@@ -83,6 +83,11 @@ def nodlg():
     sh("./sc nodlg 2>/dev/null")
 
 
+def pixel(x, y):
+    sc("snap")
+    return sh("convert /tmp/sc/now.png -format '%%[pixel:p{%d,%d}]' info:" % (x, y)).strip()
+
+
 def save():
     out = sc("save")
     try:
@@ -247,11 +252,18 @@ def place(s, c):
         tool(k)
         sc("click", *screen(b[0] + 1, b[1] + 1))
         time.sleep(1.0)
-        if k == "stadium":             # "Pick a team and name it": Football, then Done
-            sc("click", 212, 212)
-            time.sleep(0.6)
-            sc("click", 440, 187)
-            time.sleep(0.6)
+        if k == "stadium":             # "Pick a team and name it": a team, then Done
+            # Claudeville 4 (2021): a team already used by another stadium is greyed out and no Done button
+            # appears - try each team in turn while the dialog is open, and click Done once it shows
+            for ty in (212, 232, 252, 272, 292):
+                if pixel(330, 181) != "srgb(186,186,186)":
+                    break
+                sc("click", 212, ty)
+                time.sleep(1.0)
+                if pixel(425, 181) == "srgb(158,158,158)":
+                    sc("click", 440, 187)
+                    time.sleep(0.8)
+                    break
         nodlg()
     elif k == "raillink":
         x, y = b
