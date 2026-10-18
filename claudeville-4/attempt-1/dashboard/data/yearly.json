@@ -467,6 +467,100 @@
    "jammed": 0,
    "bonds": 28
   },
+  "end": {
+   "date": "Feb 2021",
+   "population": 68360,
+   "money": -470,
+   "unemployment": 3,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 31
+  }
+ },
+ {
+  "year": 2021,
+  "tone": "good",
+  "title": "70,000 and district 3",
+  "moves": [],
+  "happened": "District 3 (18 blocks) and a west-shore pump row went in; a zoo, stadium and coal plant east of it (loans #29-33).",
+  "watching": "Water still short on the west bank",
+  "start": {
+   "date": "Feb 2021",
+   "population": 68360,
+   "money": -470,
+   "unemployment": 3,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 31
+  },
+  "end": {
+   "date": "Feb 2022",
+   "population": 72700,
+   "money": -2285,
+   "unemployment": 3,
+   "watered_pct": 88,
+   "powered_pct": 100,
+   "abandoned": 116,
+   "jammed": 0,
+   "bonds": 33
+  }
+ },
+ {
+  "year": 2022,
+  "tone": "good",
+  "title": "Ahead of pace",
+  "moves": [],
+  "happened": "Growth continued on the new districts; no new building.",
+  "watching": "West-bank water",
+  "start": {
+   "date": "Feb 2022",
+   "population": 72700,
+   "money": -2285,
+   "unemployment": 3,
+   "watered_pct": 88,
+   "powered_pct": 100,
+   "abandoned": 116,
+   "jammed": 0,
+   "bonds": 33
+  },
+  "end": {
+   "date": "Feb 2023",
+   "population": 77720,
+   "money": -12962,
+   "unemployment": 3,
+   "watered_pct": 81,
+   "powered_pct": 100,
+   "abandoned": 81,
+   "jammed": 0,
+   "bonds": 33
+  }
+ },
+ {
+  "year": 2023,
+  "tone": "setback",
+  "title": "Second great fire",
+  "moves": [
+   "14 more west-shore pumps (loans #34-35)",
+   "Removed the airport zone (it regrows and both great fires began there)",
+   "East-bank rebuild with 25 fire stations on a grid (loans #36-39)"
+  ],
+  "happened": "In February a plane crash at the airport started another fire that burned the east bank again: 77,850 -> 48,240 people. A four-tile firebreak at the start was jumped. The city had only 3 fire stations.",
+  "watching": "Rebuild with fire cover",
+  "start": {
+   "date": "Feb 2023",
+   "population": 77720,
+   "money": -12962,
+   "unemployment": 3,
+   "watered_pct": 81,
+   "powered_pct": 100,
+   "abandoned": 81,
+   "jammed": 0,
+   "bonds": 33
+  },
   "end": null
  }
 ]
