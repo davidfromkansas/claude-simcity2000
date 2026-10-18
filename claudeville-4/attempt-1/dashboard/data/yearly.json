@@ -1,0 +1,26 @@
+[
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "River crossed in 2006",
+  "moves": [
+   "Stadium + airport",
+   "West block + coal",
+   "River crossing + west district"
+  ],
+  "happened": "Loans #7-9: stadium, airport, a west block with a coal plant, then the causeway, raised wires and the first west district - 21 years earlier than Claudeville 3.",
+  "watching": "West district filling; money",
+  "start": {
+   "date": "Feb 2006",
+   "population": 14630,
+   "money": -664,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 24,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": null
+ }
+]
