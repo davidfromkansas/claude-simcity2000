@@ -96,5 +96,37 @@
    "jammed": 0,
    "bonds": 12
   }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "33,840 -> 38,110",
+  "moves": [
+   "East district 2"
+  ],
+  "happened": "East district 2 from cash; home demand cooled to about zero by year end.",
+  "watching": "Shops and the home cap",
+  "start": {
+   "date": "Feb 2009",
+   "population": 33840,
+   "money": 6269,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 12
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 38790,
+   "money": 2048,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 12
+  }
  }
 ]
