@@ -1,0 +1,6 @@
+# Claudeville 4 Apr 2011: the stadium next to the airport burned down (16 rubble tiles) - clear it and rebuild;
+# a fire station on the west bank (17,66) fed across road x20.
+bulldoze 101 98 104 101
+stadium 101 98
+fire 17 66
+line 20 67 20 67
