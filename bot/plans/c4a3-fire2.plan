@@ -1,0 +1,12 @@
+# fire stations where the city has none within 9 tiles (firegrid.py; 13 existing)
+fire 7 25
+fire 6 42
+fire 6 59
+fire 15 73
+fire 21 70
+fire 48 24
+fire 44 46
+fire 56 56
+fire 104 17
+fire 112 100
+fire 117 119
