@@ -1,0 +1,13 @@
+# fixes for c4a7-sw: join the cross streets to road y69 across line y70; re-lay road rows y88/y95/(36,81) over the
+# line crossings; raised line x36 over the lake; pipes joined to the y68 main
+road 6 70 6 70
+road 23 70 23 70
+road 40 70 40 70
+road 6 88 40 88
+road 6 95 40 95
+road 36 81 36 81
+line 36 78 36 80
+pipe 6 68 6 70
+pipe 23 68 23 70
+pipe 40 68 40 70
+pipe 13 72 13 74

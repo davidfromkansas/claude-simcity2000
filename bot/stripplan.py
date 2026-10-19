@@ -52,16 +52,18 @@ def main():
         if y + 6 <= y1:
             bands.append((y + 4, y + 6, types[k % len(types)])); k += 1
         y += 7
-    for ry in roads_y:
-        for ra, rb in runs([x for x in range(x0, x1 + 1) if ok(x, ry)]):
-            steps.append("road %d %d %d %d" % (ra, ry, rb, ry))
     ys_all = range(y0, min(y1, y - 1) + 1)
-    for cx in xs_cross:
-        for ra, rb in runs([yy for yy in ys_all if ok(cx, yy) or yy in roads_y]):
-            steps.append("road %d %d %d %d" % (cx, ra, cx, rb))
+    # lines first: a road dragged over a line makes a crossing; a line dragged over roads broke road rows (attempt 7)
     for lx in xs_line:
         for ra, rb in runs([yy for yy in ys_all if ok(lx, yy) or yy in roads_y]):
             steps.append("line %d %d %d %d" % (lx, ra, lx, rb))
+    for ry in roads_y:
+        for ra, rb in runs([x for x in range(x0, x1 + 1) if ok(x, ry)]):
+            steps.append("road %d %d %d %d" % (ra, ry, rb, ry))
+    ys_top = range(max(0, y0 - 1), min(y1, y - 1) + 1)   # cross streets reach one row up to join the road above
+    for cx in xs_cross:
+        for ra, rb in runs([yy for yy in ys_top if not wet(cx, yy)]):
+            steps.append("road %d %d %d %d" % (cx, ra, cx, rb))
     skip = set(xs_cross) | set(xs_line)
     for ya, yb, kind in bands:
         if kind == "-":
@@ -75,7 +77,7 @@ def main():
         for ra, rb in runs([x for x in range(x0, x1 + 1) if not wet(x, ry)]):
             steps.append("pipe %d %d %d %d" % (ra, ry, rb, ry))
     for cx in xs_cross:
-        for ra, rb in runs([yy for yy in ys_all if not wet(cx, yy)]):
+        for ra, rb in runs([yy for yy in range(max(0, y0 - 2), min(y1, y - 1) + 1) if not wet(cx, yy)]):
             steps.append("pipe %d %d %d %d" % (cx, ra, cx, rb))
     if "--pipe-from" in opt:
         px, py = map(int, opt["--pipe-from"].split(","))
