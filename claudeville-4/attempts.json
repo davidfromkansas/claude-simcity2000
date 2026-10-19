@@ -20,5 +20,10 @@
   "reason": "Peak 81,950 (Nov 2033). Loan guard kept loans to 27, but shops stayed capped from 2021 (no airport ever developed; ~14,000 shop workers vs ~6,000 of road-link capacity); coal-cluster fire burned ~1,300 tiles in 2023; game over at -$106,226 (Jan 2038).",
   "timeline": "2038-01",
   "peak": 81950
+ },
+ {
+  "attempt": 4,
+  "status": "playing",
+  "reason": ""
  }
 ]
