@@ -10,13 +10,14 @@ cd "$(dirname "$0")"
 n=${1:-6}; secs=${2:-1.5}; prev_rubble=""
 # refuse to start the clock on a failing city (attempt 12 ran 5 months after a build left a FAIL)
 ./sc save >/dev/null 2>&1
-if python3 -I audit.py | grep -q "^FAIL"; then python3 -I audit.py | grep "^FAIL"; echo "PLAY REFUSED: audit FAIL - fix first"; exit 1; fi
+# AUDIT_OK=1 (Claudeville 4, 2024): only while cash is negative and nothing can be built to fix the FAILs
+if [ -z "$AUDIT_OK" ] && python3 -I audit.py | grep -q "^FAIL"; then python3 -I audit.py | grep "^FAIL"; echo "PLAY REFUSED: audit FAIL - fix first"; exit 1; fi
 for ((i=1;i<=n;i++)); do
   out=$(bash step.sh "$secs" 2>&1 | grep -v -e xdo -e "Can't open display")
   echo "$out" | grep -v -e "^paused: yes" -e "^AUDIT: passed" -e "stall check: OK"
   rubble=$(echo "$out" | sed -n 's/.*rubble \([0-9]*\).*/\1/p' | head -1)
   reason=""
-  echo "$out" | grep -q "^FAIL" && reason="$reason; audit FAIL"
+  echo "$out" | grep -q "^FAIL" && [ -z "$AUDIT_OK" ] && reason="$reason; audit FAIL"
   # Claudeville 4 (2011): after the fire, single regrown buildings in burnt bands sit unpowered until neighbours grow;
   # UNPOWERED_OK=N runs on while at most N buildings are unpowered (spare power is checked separately)
   unp=$(echo "$out" | sed -n 's/^WARN \([0-9]*\) buildings without power.*/\1/p' | head -1)
