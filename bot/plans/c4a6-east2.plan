@@ -1,0 +1,31 @@
+# Attempt 6 Mar 2037: home demand 760 with 1 empty tile -> 12 cells x109-126 y70-96 on the empty east side (mostly dense
+# homes beside the empty factory/shop zones x102-107, for trips). Power: line x119 down from the east coal plant's
+# line y57, row y71 across roads x115/x122, columns x112/x125. Pipes from the pond ring at (115,67).
+road 109 69 126 69
+road 109 76 126 76
+road 109 83 126 83
+road 109 90 126 90
+road 115 70 115 96
+road 122 70 122 96
+line 119 58 119 96
+line 112 71 125 71
+line 112 72 112 96
+line 125 72 125 96
+zone R 109 70 114 75
+zone R 116 70 121 75
+zone R 123 70 126 75
+zone R 109 77 114 82
+zone C 116 77 121 82
+zone R 123 77 126 82
+zone R 109 84 114 89
+zone R 116 84 121 89
+zone R 123 84 126 89
+zone R 109 91 114 96
+zone R 116 91 121 96
+zone R 123 91 126 96
+pipe 116 67 117 67
+pipe 117 68 117 94
+pipe 109 73 126 73
+pipe 109 80 126 80
+pipe 109 87 126 87
+pipe 109 94 126 94

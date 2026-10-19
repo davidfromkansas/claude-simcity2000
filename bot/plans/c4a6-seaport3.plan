@@ -1,0 +1,5 @@
+# Attempt 6 Nov 2032: factory demand -1,242 with abandonment rising (trade cap) -> third seaport on the south-west
+# river bank beside the factory strip; road (56,90) to road x55, power across road x55 at y89 from the factories.
+seaport 57 88 60 92
+road 56 90 56 90
+line 55 89 56 89
