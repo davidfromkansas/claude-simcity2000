@@ -1,0 +1,22 @@
+# Attempt 5 Dec 2013: factory demand 1,077 with 11 empty tiles -> a19-south with factories in the middle cells (homes on both sides for trips), no parks
+# (crossing road y97); pipes x80/x88/x96 down from the y94 pipe.
+road 76 98 76 109
+road 84 98 84 109
+road 92 98 92 109
+road 100 98 100 109
+road 77 103 99 103
+road 77 109 99 109
+line 77 96 77 102
+line 77 104 77 108
+line 77 103 77 103
+line 85 97 85 108
+line 93 97 93 108
+zone R 78 98 83 102
+zone R 78 104 83 108
+zone I 86 98 91 102
+zone I 86 104 91 108
+zone R 94 98 99 102
+zone R 94 104 99 108
+pipe 80 95 80 108
+pipe 88 95 88 108
+pipe 96 95 96 108

@@ -1,0 +1,6 @@
+# Attempt 5: second seaport by the coal plants (attempt 4's a19-seaport2 + its road); power from the coal plant at (64,51)
+road 63 49 63 55
+seaport 59 49 62 53
+line 64 52 64 53
+line 63 53 63 53
+road 63 56 75 56

@@ -1,0 +1,4 @@
+# Attempt 5 Dec 2021: spare power 9% -> coal plant on its own in the south-west, own fire station; line y115 to line x77
+coal 70 114
+line 74 115 76 115
+fire 70 118

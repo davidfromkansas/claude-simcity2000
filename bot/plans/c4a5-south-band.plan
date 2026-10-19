@@ -1,0 +1,14 @@
+# Attempt 5 Jul 2017: shop (1,032) and factory (1,553) land short -> cheap south band x101-119 y111-124 (no bridge):
+# shops + factories on top, homes + factories below; line x101 down from line x101, rows y114/y121 east. No parks.
+road 108 111 108 125
+road 101 118 119 118
+road 101 125 119 125
+line 101 110 101 124
+line 102 114 119 114
+line 102 121 119 121
+zone C 102 111 107 117
+zone I 109 111 119 117
+zone R 102 119 107 124
+zone I 109 119 119 124
+pipe 104 108 104 124
+pipe 113 108 113 124

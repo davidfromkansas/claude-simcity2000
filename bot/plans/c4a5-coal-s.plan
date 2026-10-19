@@ -1,0 +1,4 @@
+# Attempt 5 Jul 2016: spare power 11% -> coal plant on its own south of the SE district, own fire station; line x126 from line y105
+line 126 106 126 111
+coal 123 112
+fire 120 112

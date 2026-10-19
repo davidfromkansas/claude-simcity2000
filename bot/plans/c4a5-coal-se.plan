@@ -1,0 +1,4 @@
+# Attempt 5: coal plant on its own in the east (not in the river cluster: attempt 3's cluster fire), wired via the stadium, own fire station
+coal 123 56
+line 118 57 122 57
+fire 123 60
