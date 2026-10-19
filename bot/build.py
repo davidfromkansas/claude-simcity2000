@@ -35,7 +35,7 @@ import time
 
 BOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BOT)
-from citymap import City, is_road, is_rail, is_line, is_park, is_plant, N  # noqa: E402
+from citymap import City, is_road, is_rail, is_line, is_park, is_plant, nbrs, N  # noqa: E402
 
 TOOL = {"road": "22 105 55 113", "line": "22 82 55 90", "pipe": "47 82 85 90", "pump": "47 82 85 105",
         "r": "22 128 75 135", "R": "22 128 75 151", "c": "47 128 100 135", "C": "47 128 100 151",
@@ -479,6 +479,22 @@ def main(path, dry=False):
             click_tile(x, y)
             fix += " -> zone %s restored" % k
         problems.append("tile (%d,%d) outside the plan changed: %#x -> %#x%s" % (x, y, old, new, fix))
+    # Claudeville 4 attempt 4: autocal test roads kept appearing after the collateral check (often on power lines,
+    # cutting them). Final sweep: every lone road tile that was not road before and is not planned road is
+    # bulldozed, and a power line that was there before is put back. Twice, since the sweep's own autocal can stray.
+    for sweep in (1, 2):
+        save()
+        c = City()
+        lone = [(x, y) for x, y in c.tiles() if is_road(c.t(x, y)) and not is_road(snap0[0][y * N + x])
+                and (x, y) not in road_plan and not any(is_road(c.t(*q)) for q in nbrs(x, y))]
+        if not lone:
+            break
+        for x, y in lone:
+            vis(x, y)
+            tool("bulldoze"); click_tile(x, y); click_tile(x, y)
+            if is_line(snap0[0][y * N + x]):
+                tool("line"); click_tile(x, y)
+            problems.append("stray road (%d,%d) removed in the final sweep%s" % (x, y, ", line re-placed" if is_line(snap0[0][y * N + x]) else ""))
     sc("tool", TOOL["road"])
     sc("pause")
     cash1 = save()

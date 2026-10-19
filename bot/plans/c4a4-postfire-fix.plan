@@ -1,0 +1,9 @@
+# after the 2017 fire: NW lines x44/x51 need crossings over roads x40 (y23) and x47 (y30); strays; lone tile
+line 38 23 40 23
+line 47 30 47 30
+bulldoze 16 46 16 46
+bulldoze 31 25 31 25
+bulldoze 71 47 71 47
+bulldoze 74 65 74 65
+bulldoze 109 113 109 113
+dezone 12 47 12 47
