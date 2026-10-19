@@ -1,7 +1,8 @@
 # Claudeville 4 · Attempt 5 post-mortem
 
 **Result: failed.** Peak **50,120** people (Jul 2039), against a goal of 200,000 by Jan 2050.
-The city survived to the 2050 deadline (cash about -$75,000), but it never grew past 50,000.
+It never grew past 50,000. In June 2048 an alien-ship disaster set a great fire; with cash at -$75,000 nothing could be
+bulldozed, and the city ended Jan 2050 with **9,220** people.
 
 | Date | People | Loans | Notes |
 |---|---|---|---|
@@ -15,10 +16,11 @@ The city survived to the 2050 deadline (cash about -$75,000), but it never grew 
 | Jan 2036 | 48,990 | 15 | Plane crash: small fire (33 tiles) |
 | Jul 2039 | 50,120 | 15 | Peak. Demand at maximum but no cash to zone land. |
 | Jun 2048 | 49,600 | 15 | Alien-ship disaster with fires; cash too low to bulldoze firebreaks |
+| Jan 2050 | 9,220 | 15 | Deadline, after the great fire |
 
 ## What worked
-- **No great fire for the first time in Claudeville 4.** No tree parks, spread-out coal plants each with a station,
-  airport far from homes. Two disasters (2036 plane crash, 2048 aliens) did only local damage.
+- **No great fire for 46 years.** No tree parks, spread-out coal plants each with a station,
+  airport far from homes. The 2036 plane crash did only local damage.
 - The tax cut in 2012 ended a 5-year jobs stall within a year.
 
 ## Control failures vs strategy failures
@@ -27,8 +29,8 @@ The city survived to the 2050 deadline (cash about -$75,000), but it never grew 
 1. **I overrode the trips and pace alarms for 12 steps at once (2007-2010).** The city sat stalled at ~15,000 for
    three years and I did nothing. *Rule:* an override covers 1-2 steps only, then look again.
 2. **The run-out script mistook a disaster for game over.** The calendar freezes during a disaster (plane crash 2036,
-   aliens 2048); the script stopped with "date stuck". That was safe, but slow. *Fix to make:* when the date is stuck,
-   check for the red disaster arrow and say "DISASTER" instead.
+   aliens 2048); the script stopped with "date stuck". *Fixed:* when the date is stuck it
+   checks for the red disaster arrow and says "DISASTER".
 3. **The 2002 plan ran before its loan.** The coal plant was half-built until loan #3. Small, but the plan said "loan #3".
 
 ### Strategy failures
@@ -37,7 +39,8 @@ The city survived to the 2050 deadline (cash about -$75,000), but it never grew 
    people each. Every Claudeville 4 attempt has died of this sum.
 2. **The north-east airport only half developed** (12 of 24 tiles; its top row is the map edge). Shops stayed capped
    from ~40,000.
-3. **Taxes too high early.** 8% with demand negative from 2006; 6-7% from 2012 fixed it.
+3. **Negative cash leaves no fire defence.** Once cash was negative, firebreaks were impossible; the 2048 fire took 80% of the city.
+4. **Taxes too high early.** 8% with demand negative from 2006; 6-7% from 2012 fixed it.
 
 ## What changes next time (attempt 6)
 - **Loans only when the plan shows 5,000+ new people for it** (a district that fills, not a coal plant ahead of need).

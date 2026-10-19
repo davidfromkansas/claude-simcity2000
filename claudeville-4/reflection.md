@@ -101,3 +101,19 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
 - Every city stalled at 70-97k with all demand negative. Fixing fires and money first; then the stall.
 - Plan for attempt 5: no tree parks, clear rubble at once, airport far from homes, coal plants spread out each with a
   station, keep ~$5k for firebreaks from 20,000 people, and every run (play or run-out) stops on new rubble.
+
+## Claudeville 4 attempt 5 (peak 50,120 - 9,220 at Jan 2050)
+- **The fire rules worked for 46 years** (no tree parks, plants spread out, airport far away). But once cash went
+  negative (2024) bulldozing was blocked, and a 2048 alien-ship fire took 80% of the city.
+- **The airport on the map edge half developed** (12 of 24 tiles). Keep it off the edge row.
+- **A 5-year jobs stall (2006-2011)** with 20% unemployment: taxes at 8% with demand negative. A cut to 6-7% fixed it in a year.
+- **Loan arithmetic, measured from the budget:** ~$513 a year per loan; tax ~$0.11 a person a year at 8-9%.
+  **A loan must bring ~4,800 people just to pay its interest.** Attempt 5 got ~2,800 per loan; attempt 4 ~2,700;
+  Claudeville 3's winner ~5,000+.
+
+## Across all five attempts (before attempt 6)
+- Every city ended broke. The loan arithmetic explains it: 15-30 loans for 50-97k people.
+- Fire: solved while cash is positive; negative cash removes the only defence.
+- Plan for attempt 6: **spend loans only on districts that fill** (homes + jobs together, each ~5,000 people), never on
+  infrastructure ahead of need; taxes 6-7% while demand is weak; keep cash positive so fires can be fought;
+  airport inside the map (not on the edge), far from homes, line through it.
