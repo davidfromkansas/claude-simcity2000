@@ -298,5 +298,20 @@
   },
   "est_property_tax": 4084,
   "budget_shot": "budget/2019.png"
+ },
+ {
+  "year": 2020,
+  "date": "Feb 2020",
+  "cash": 6342,
+  "loans": 14,
+  "cash_change": 4047,
+  "population": 38900,
+  "tax": {
+   "res": 9,
+   "com": 10,
+   "ind": 10
+  },
+  "est_property_tax": 4783,
+  "budget_shot": "budget/2020.png"
  }
 ]
