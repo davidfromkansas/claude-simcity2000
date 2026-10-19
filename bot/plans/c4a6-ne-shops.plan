@@ -1,0 +1,10 @@
+# Attempt 6 Jun 2032: shop demand 1,023 with 18 empty tiles -> two dense shop cells x93-99 y1-13 east of the north
+# district (road y7 extended, road x100 beside the rail); power across road x92 at y4 from the built shops, line x96.
+road 93 7 100 7
+road 100 1 100 12
+line 92 4 95 4
+line 96 1 96 12
+zone C 93 1 99 6
+zone C 93 8 99 12
+pipe 92 3 99 3
+pipe 97 4 97 12

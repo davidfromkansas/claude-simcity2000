@@ -1,0 +1,6 @@
+# Attempt 6 Sep 2031: spare power 10% -> coal plant in the empty north-west corner (far from homes), own fire station,
+# line y7 + x11 down to the first north-west coal plant at (12,12)
+coal 4 4
+fire 8 4
+line 8 7 11 7
+line 11 8 11 12
