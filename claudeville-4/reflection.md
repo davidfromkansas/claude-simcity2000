@@ -69,3 +69,16 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
 - **The caps decide the stall**: a bigger airport (shops), a seaport or rail link per ~10,000 factory workers
   (factories), recreation ahead of each ~15,000 (homes). Lift them before demand turns negative, not after.
 - **Every road must join the network** (now checked).
+
+## Claudeville 4 attempt 3 (peak 81,950 - game over Jan 2038)
+- The road-network / water-reach / isolated-plant audits caught every gap at once (south-east district joined in 2016).
+- The loan guard (cash projected to 2050 > -$80k) held loans at 27; the city still ran ~$8k a year short and ended in 2038.
+- **The airport never developed - in attempts 2-3 or Claudeville 3's winner; only attempt 1's did.** Shops stayed capped
+  from ~14,000 shop workers (3 road links ~6,000); a 1% shop tax did not lift shop demand above -1,100.
+  Attempt 1's airports had a power line along a whole side (one was zoned while shop demand was positive).
+- A fire in the 4-plant coal cluster by the seaport burned ~1,300 tiles (2023).
+
+## Before attempt 4
+- The airport is the key unknown. Wire it like attempt 1's (line along a full side), zone it early, check it every
+  year and move it if empty after 2 years.
+- Road links on all four edges early. Spread coal plants out, each with a fire station.
