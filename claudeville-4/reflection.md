@@ -85,3 +85,19 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
 - **Lab test (Oct 2026, copy of attempt 3's 2012 save): the empty airport developed once a power line ran THROUGH it.**
   The airports in attempts 2-3 had a line touching one corner tile; empty zones do not carry power. This one wiring
   detail capped shops in every city since attempt 1.
+
+## Claudeville 4 attempt 4 (peak 74,150 - game over Jan 2038)
+- **The airport fix worked**: a power line through the zone and it developed within ~7 months (2007). Shop demand rose at once.
+- **Fire is now the main killer**: great fires in 2017 (~3,900 tiles, -30,000 people, 6 loans to rebuild) and 2035
+  (most of the city, while the run-out script ran unattended). A 2024 fire burned ~300 tiles.
+- Fuel was everywhere: a 2x2 tree park in every home cell and rubble left in burned or abandoned blocks. The airport
+  sat only 5 rows from homes.
+- Even with shops working, the city stalled near 70,000 from 2023 with all demand negative and a ~$5k yearly deficit.
+
+## Across all four attempts (before attempt 5)
+- Three of four cities were wrecked by great fires (attempts 1, 3, 4). Attempt 2, with no great fire, got furthest (97,090).
+  **Surviving fires is worth more than any growth trick.**
+- All four ran out of money in 2031-2039. Each fire rebuild cost loans that never paid back.
+- Every city stalled at 70-97k with all demand negative. Fixing fires and money first; then the stall.
+- Plan for attempt 5: no tree parks, clear rubble at once, airport far from homes, coal plants spread out each with a
+  station, keep ~$5k for firebreaks from 20,000 people, and every run (play or run-out) stops on new rubble.

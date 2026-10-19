@@ -111,13 +111,27 @@ def rect(x0, y0, x1, y1):
     return [(x, y) for y in range(min(y0, y1), max(y0, y1) + 1) for x in range(min(x0, x1), max(x0, x1) + 1)]
 
 
+def noparks():
+    # NOPARKS=1, or "noparks": true in run.json
+    if os.environ.get("NOPARKS"):
+        return True
+    try:
+        return bool(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "run.json"))).get("noparks"))
+    except Exception:
+        return False
+
+
 def parse(path):
     steps = []
+    skip_parks = noparks()
     for n, raw in enumerate(open(path), 1):
         line = raw.split("#")[0].split()
         if not line:
             continue
         kind, args = line[0], line[1:]
+        # Claudeville 4 attempt 5: tree parks are fire fuel (three great fires in attempt 4) - NOPARKS=1 skips them
+        if kind in ("park", "bigpark") and skip_parks:
+            continue
         if kind == "zone":
             k, nums = args[0], list(map(int, args[1:]))
             steps.append({"kind": "zone", "z": k, "box": nums, "tiles": rect(*nums), "line": n})
