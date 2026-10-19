@@ -1,0 +1,4 @@
+# factory strip fixes: power crossings over road x48 from the built shops, water pipe for the middle cell
+line 48 86 48 86
+line 48 100 48 100
+pipe 48 93 54 93

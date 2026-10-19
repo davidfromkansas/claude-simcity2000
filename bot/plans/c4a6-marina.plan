@@ -1,0 +1,4 @@
+# Attempt 6 Jan 2030: home demand -220 (recreation cap) -> marina on the east shore of the south river (+cap, $1,000),
+# power line x70 down to the coal plant at (70,114)
+marina 68 107
+line 70 110 70 113
