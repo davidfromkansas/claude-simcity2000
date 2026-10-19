@@ -117,3 +117,17 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
 - Plan for attempt 6: **spend loans only on districts that fill** (homes + jobs together, each ~5,000 people), never on
   infrastructure ahead of need; taxes 6-7% while demand is weak; keep cash positive so fires can be fought;
   airport inside the map (not on the edge), far from homes, line through it.
+
+## Claudeville 4 attempt 6 (peak 120,770 - 118,410 at Jan 2050) - the best so far
+- **The loan rule worked**: loans only for districts that fill, guard never overridden: 27 loans, ~4,400 people each,
+  2050 projection positive, income about equal to bond payments by 2030.
+- **Fire rules worked**: no great fire in 50 years (no tree parks, plants spread out with stations, ~20 stations).
+- **Shore pumps**: pumps on true shoreline tiles give several times the water of inland columns.
+- **Land ran out by 2043** at ~112,000: 3,085 dense home tiles (~38 people each), jobs 3,200 tiles, roads 17% of the land.
+
+## Across all six attempts (before attempt 7)
+- Fire (attempts 1, 3, 4, 5) and money (all of 1-5) are solved by attempt 6's rules. Keep them exactly.
+- **The ceiling is now land use.** 200,000 at ~38 people per home tile needs ~5,300 home tiles plus ~5,300 job tiles
+  - about 10,600 of the map's 14,567 land tiles. Attempt 6 zoned only 6,363 (44%).
+- So attempt 7 must zone ~70% of the land: dense zones only, roads as long strips (fewer cross streets), the west and
+  south-west banks started ~5 years earlier, and no wasted pockets (every leftover lot zoned).

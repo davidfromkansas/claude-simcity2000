@@ -37,7 +37,9 @@
  },
  {
   "attempt": 6,
-  "status": "playing",
-  "reason": ""
+  "status": "failed",
+  "reason": "Peak 120,770 (Apr 2049), 118,410 at Jan 2050 - the best Claudeville 4 city. No great fire in 50 years; 27 guarded loans (~4,400 people each, budget near balance). The map filled by 2043 at ~112,000: light zones and 6x6 cells could not hold 200,000.",
+  "peak": 120770,
+  "timeline": "2050-01"
  }
 ]

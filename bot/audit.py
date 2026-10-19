@@ -79,6 +79,10 @@ def audit(path=None, city=None):
         add("OK", "%d pumps, all joined to pipes" % len(pumps))
     if not pumps:
         add("WARN", "no water pumps")
+    # attempt 6 (2032-2039): pump columns away from the shore gave little water; 14 shore pumps lifted spare water 5% -> 30%
+    inland = [p for p in pumps if not any(0 <= q[0] < N and 0 <= q[1] < N and c.bit[q[1] * N + q[0]] & 4 for q in nbrs(*p))]
+    if len(inland) > 5:
+        add("WARN", "%d of %d pumps are not on the shore (little water), e.g. %s - put new pumps on shore tiles" % (len(inland), len(pumps), inland[:3]))
     for k, reg in regions:
         # Claudeville 4 (2012-2023): pipe networks that never reached a pump left ~500 buildings dry for years - FAIL now
         if pumps and len(reg) >= 12 and not any(q in net for p in reg for q in [p, *nbrs(*p)]):
