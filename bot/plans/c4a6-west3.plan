@@ -1,0 +1,14 @@
+# Attempt 6 Feb 2018: shop demand 1,265 with 28 empty tiles -> three dense shop cells x21-39 y21-26 north of west district 2
+road 20 20 40 20
+road 20 21 20 26
+road 27 21 27 26
+road 34 21 34 26
+road 40 21 40 26
+line 24 21 24 27
+line 31 21 31 27
+line 37 21 37 27
+zone C 21 21 26 26
+zone C 28 21 33 26
+zone C 35 21 39 26
+pipe 40 21 40 27
+pipe 21 24 39 24
