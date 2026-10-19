@@ -253,5 +253,20 @@
   },
   "est_property_tax": 2619,
   "budget_shot": "budget/2016.png"
+ },
+ {
+  "year": 2017,
+  "date": "Jul 2017",
+  "cash": 3006,
+  "loans": 12,
+  "cash_change": -628,
+  "population": 30570,
+  "tax": {
+   "res": 7,
+   "com": 10,
+   "ind": 10
+  },
+  "est_property_tax": 3353,
+  "budget_shot": "budget/2017.png"
  }
 ]
