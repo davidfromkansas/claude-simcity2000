@@ -1,0 +1,4 @@
+# Attempt 6 Feb 2026: spare water 9% -> 12 pumps in a column x41 y71-82 on the south-west river bank, powered from
+# line y70, pipe x40 down from the x40 main.
+pump 41 71 41 82
+pipe 40 69 40 82

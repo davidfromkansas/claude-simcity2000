@@ -1,0 +1,35 @@
+# Attempt 6 Feb 2027: home demand 1,055 with 1 empty tile -> 12 cells x7-47 y105-117 (mostly dense homes, a factory
+# cell and a shop cell for trips) below the south-west districts. Power: line columns down from the lines above,
+# joined by line y114. Pipes y107/y114 joined to pipe x13.
+road 21 104 26 104
+road 6 105 6 118
+road 13 105 13 118
+road 20 105 20 118
+road 27 105 27 118
+road 34 105 34 118
+road 41 105 41 118
+road 48 105 48 118
+road 7 111 47 111
+road 7 118 47 118
+line 10 104 10 117
+line 17 104 17 117
+line 24 105 24 117
+line 31 105 31 117
+line 38 104 38 117
+line 45 104 45 117
+line 7 114 47 114
+zone R 7 105 12 110
+zone R 14 105 19 110
+zone R 21 105 26 110
+zone R 28 105 33 110
+zone I 35 105 40 110
+zone R 42 105 47 110
+zone R 7 112 12 117
+zone I 14 112 19 117
+zone R 21 112 26 117
+zone R 28 112 33 117
+zone R 35 112 40 117
+zone C 42 112 47 117
+pipe 13 103 13 114
+pipe 7 107 47 107
+pipe 7 115 47 115
