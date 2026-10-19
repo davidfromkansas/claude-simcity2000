@@ -1,0 +1,14 @@
+# Attempt 6 Sep 2028: factory demand 1,032 with 4 empty tiles -> 3 dense factory cells x49-54 y84-103 between road x48
+# and the river (next to the SW shop/home cells); line y94 across road x48, column x52.
+road 55 84 55 104
+road 49 83 54 83
+road 49 90 54 90
+road 49 97 54 97
+road 49 104 54 104
+line 48 94 51 94
+line 52 84 52 103
+zone I 49 84 54 89
+zone I 49 91 54 96
+zone I 49 98 54 103
+pipe 48 87 54 87
+pipe 48 100 54 100

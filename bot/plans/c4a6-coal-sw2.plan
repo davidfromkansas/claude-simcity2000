@@ -1,0 +1,7 @@
+# Attempt 6 Jul 2027: power short -> coal plant in the far south-west corner (5+ rows below the homes), own fire station;
+# line x8 from the fire station up to y119, east to x10, across road y118 to line x10.
+coal 1 122
+fire 5 122
+line 8 120 8 123
+line 8 119 10 119
+line 10 118 10 118
