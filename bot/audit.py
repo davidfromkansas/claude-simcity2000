@@ -142,7 +142,7 @@ def audit(path=None, city=None):
     air = {(x, y) for x, y in c.tiles() if c.zone(x, y) == 8}
     if air:
         fed = sum(1 for p in air if is_line(c.t(*p)) or is_building(c.t(*p)) or
-                  any(q not in air and (is_line(c.t(*q)) or is_building(c.t(*q))) for q in nbrs(*p)))
+                  any(is_line(c.t(*q)) or is_building(c.t(*q)) for q in nbrs(*p)))
         if fed * 4 < len(air):
             add("FAIL", "airport %s: only %d of %d tiles touch a power line or building - run a line through it or along a full side"
                 % (box(air), fed, len(air)))
