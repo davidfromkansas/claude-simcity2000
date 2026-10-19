@@ -538,5 +538,20 @@
   },
   "est_property_tax": 7704,
   "budget_shot": "budget/2035.png"
+ },
+ {
+  "year": 2036,
+  "date": "Jun 2036",
+  "cash": -78181,
+  "loans": 28,
+  "cash_change": -7540,
+  "population": 20880,
+  "tax": {
+   "res": 9,
+   "com": 8,
+   "ind": 8
+  },
+  "est_property_tax": 2291,
+  "budget_shot": "budget/2036.png"
  }
 ]
