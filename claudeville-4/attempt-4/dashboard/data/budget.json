@@ -508,5 +508,35 @@
   },
   "est_property_tax": 7637,
   "budget_shot": "budget/2033.png"
+ },
+ {
+  "year": 2034,
+  "date": "Feb 2034",
+  "cash": -64898,
+  "loans": 28,
+  "cash_change": -5805,
+  "population": 69660,
+  "tax": {
+   "res": 9,
+   "com": 8,
+   "ind": 8
+  },
+  "est_property_tax": 7618,
+  "budget_shot": "budget/2034.png"
+ },
+ {
+  "year": 2035,
+  "date": "Feb 2035",
+  "cash": -70641,
+  "loans": 28,
+  "cash_change": -5743,
+  "population": 70370,
+  "tax": {
+   "res": 9,
+   "com": 8,
+   "ind": 8
+  },
+  "est_property_tax": 7704,
+  "budget_shot": "budget/2035.png"
  }
 ]
