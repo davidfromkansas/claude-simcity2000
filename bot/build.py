@@ -390,6 +390,15 @@ def main(path, dry=False):
     cash0 = save()
     before = City()
     snap0 = snapshot(before)
+    # attempt 7 (2022-23): a strip plan ran out of cash after its roads and left zones, pipes and lines for later -
+    # refuse a plan the cash cannot pay for (estimate from the tiles still missing)
+    need = sum(COST.get(s.get("z", s["kind"]), 0) * (1 if s["kind"] in ("coal", "gas", "fire", "police", "bigpark", "link",
+               "raillink", "stadium", "zoo", "marina") else sum(1 for x, y in s["tiles"] if not done(before, s, x, y)))
+               for s in steps)
+    if cash0 is not None and need > cash0 and "--cash-ok" not in sys.argv:
+        print("PLAN ERROR: the plan costs about $%d but cash is $%d (take a loan first, or --cash-ok)" % (need, cash0))
+        print("BUILD: refused")
+        return 2
     expect = 0
     problems = []
     for i, s in enumerate(steps):
