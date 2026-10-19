@@ -1,0 +1,7 @@
+# Attempt 6 Feb 2011: water for the south-west band: pumps on the lake shore at y110 east of the line x78-85,
+# pipe y109 under the road joins pipes x80/x82/x88/x94/x96.
+line 86 110 88 110
+pump 89 110 93 110
+line 94 110 94 110
+pump 95 110 96 110
+pipe 79 109 96 109

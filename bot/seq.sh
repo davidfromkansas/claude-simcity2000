@@ -8,9 +8,12 @@ for s in "$@"; do
     loan) bash loan.sh | tail -1 | grep -q "refused" && { echo "SEQ: loan refused"; break; } ;;
     LOAN) LOAN_OK=1 bash loan.sh | tail -1 ;;
     *) p=${s%%:*}; a=""; [ "$p" != "$s" ] && a=${s#*:}; a=${a//,/ }
-       echo "== $p $a"; timeout 4000 python3 -I -u build.py plans/$p.plan $a 2>&1 | grep -v "outside the plan" | grep -E "PROBLEM|BUILD|money" | tail -4 ;;
+       echo "== $p $a"; r=$(timeout 4000 python3 -I -u build.py plans/$p.plan $a 2>&1 | grep -v "outside the plan" | grep -E "PROBLEM|BUILD|money|ERROR")
+       echo "$r" | tail -4
+       echo "$r" | grep -q "BUILD: checked" || bad="$bad $p" ;;
   esac
 done
+[ -n "$bad" ] && echo "SEQ NOT CLEAN (read their output):$bad"   # attempt 6: a refused plan went unnoticed for 5 years
 python3 -I audit.py | grep "FAIL\|AUDIT"
 ./sc save | tail -1 | cut -c1-90
 echo SEQDONE
