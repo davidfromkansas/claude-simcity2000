@@ -1,0 +1,8 @@
+# Attempt 6 Sep 2022: spare power 8% / water 12% -> coal plant below the south-west grid (line x24 across road y90),
+# its own fire station; 5 pumps on the north shore of the lake x29-37 (line x31 from line y70, pipe x32 to the y68 main).
+line 24 90 24 92
+coal 21 93
+fire 25 93
+line 31 71 31 75
+pump 31 76 35 76
+pipe 32 69 32 75
