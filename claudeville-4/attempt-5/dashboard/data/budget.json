@@ -658,5 +658,80 @@
   },
   "est_property_tax": 5234,
   "budget_shot": "budget/2043.png"
+ },
+ {
+  "year": 2044,
+  "date": "Feb 2044",
+  "cash": -63307,
+  "loans": 15,
+  "cash_change": -2822,
+  "population": 49210,
+  "tax": {
+   "res": 9,
+   "com": 8,
+   "ind": 7
+  },
+  "est_property_tax": 5162,
+  "budget_shot": "budget/2044.png"
+ },
+ {
+  "year": 2045,
+  "date": "Feb 2045",
+  "cash": -66185,
+  "loans": 15,
+  "cash_change": -2878,
+  "population": 49200,
+  "tax": {
+   "res": 9,
+   "com": 8,
+   "ind": 7
+  },
+  "est_property_tax": 5155,
+  "budget_shot": "budget/2045.png"
+ },
+ {
+  "year": 2046,
+  "date": "Feb 2046",
+  "cash": -69064,
+  "loans": 15,
+  "cash_change": -2879,
+  "population": 49230,
+  "tax": {
+   "res": 9,
+   "com": 8,
+   "ind": 7
+  },
+  "est_property_tax": 5158,
+  "budget_shot": "budget/2046.png"
+ },
+ {
+  "year": 2047,
+  "date": "Feb 2047",
+  "cash": -71955,
+  "loans": 15,
+  "cash_change": -2891,
+  "population": 48960,
+  "tax": {
+   "res": 9,
+   "com": 8,
+   "ind": 7
+  },
+  "est_property_tax": 5130,
+  "budget_shot": "budget/2047.png"
+ },
+ {
+  "year": 2048,
+  "date": "Feb 2048",
+  "cash": -74809,
+  "loans": 15,
+  "cash_change": -2854,
+  "population": 49800,
+  "tax": {
+   "res": 9,
+   "com": 8,
+   "ind": 7
+  },
+  "est_property_tax": 5216,
+  "budget_shot": "budget/2048.png"
  }
 ]
