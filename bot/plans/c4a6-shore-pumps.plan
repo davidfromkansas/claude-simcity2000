@@ -1,0 +1,8 @@
+# Attempt 6 Jul 2039: spare water 5% (inland pump columns give little) -> pumps on true shoreline tiles:
+# x59 y93-101 below the third seaport (power through it), x51 y117-121 by the new coal plant (line y119).
+pump 59 93 59 101
+pipe 58 93 58 101
+pipe 55 100 57 100
+line 50 119 50 119
+pump 51 117 51 121
+pipe 50 118 50 121
