@@ -223,5 +223,50 @@
   },
   "est_property_tax": 3867,
   "budget_shot": "budget/2014.png"
+ },
+ {
+  "year": 2015,
+  "date": "Feb 2015",
+  "cash": -2662,
+  "loans": 12,
+  "cash_change": -2607,
+  "population": 37500,
+  "tax": {
+   "res": 7,
+   "com": 9,
+   "ind": 10
+  },
+  "est_property_tax": 4026,
+  "budget_shot": "budget/2015.png"
+ },
+ {
+  "year": 2016,
+  "date": "Feb 2016",
+  "cash": 3449,
+  "loans": 13,
+  "cash_change": 6111,
+  "population": 37710,
+  "tax": {
+   "res": 7,
+   "com": 9,
+   "ind": 10
+  },
+  "est_property_tax": 4046,
+  "budget_shot": "budget/2016.png"
+ },
+ {
+  "year": 2017,
+  "date": "Feb 2017",
+  "cash": 97,
+  "loans": 13,
+  "cash_change": -3352,
+  "population": 37890,
+  "tax": {
+   "res": 7,
+   "com": 9,
+   "ind": 10
+  },
+  "est_property_tax": 4068,
+  "budget_shot": "budget/2017.png"
  }
 ]
