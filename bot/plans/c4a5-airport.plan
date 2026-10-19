@@ -1,0 +1,10 @@
+# Attempt 5: airport in the empty north-east corner, 17+ rows from homes (attempt 4's sat 5 rows from the south districts).
+# Power from the factory at (114,22) across the x115 road, up x121; a line THROUGH the airport (lab finding); own fire station.
+road 116 20 122 20
+road 122 1 122 19
+line 115 22 121 22
+line 121 4 121 21
+line 118 4 120 4
+airport 116 0 121 3
+line 118 1 118 3
+fire 119 6
