@@ -373,5 +373,20 @@
   },
   "est_property_tax": 9010,
   "budget_shot": "budget/2024.png"
+ },
+ {
+  "year": 2025,
+  "date": "Jan 2025",
+  "cash": -21644,
+  "loans": 27,
+  "cash_change": -4541,
+  "population": 69760,
+  "tax": {
+   "res": 10,
+   "com": 8,
+   "ind": 8
+  },
+  "est_property_tax": 8037,
+  "budget_shot": "budget/2025.png"
  }
 ]
