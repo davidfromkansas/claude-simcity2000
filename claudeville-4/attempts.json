@@ -27,5 +27,10 @@
   "reason": "Peak 74,150 (Jan 2024). The airport finally developed (power line through it), but a great fire in 2017 burned ~3,900 tiles and cost ~30,000 people and 6 loans; the city stalled near 70,000 with all demand negative; a second great fire in 2035 burned most of the city while it ran unattended; game over at -$102,377 (Jan 2038).",
   "timeline": "2038-01",
   "peak": 74150
+ },
+ {
+  "attempt": 5,
+  "status": "playing",
+  "reason": ""
  }
 ]
