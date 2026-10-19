@@ -1,0 +1,26 @@
+# Attempt 6 Feb 2021: factory demand 1,003 with 1 empty tile -> south-west bank grid x6-27 y70-90 (west of the lake x29-37):
+# 9 cells, factories next to homes (shops are capped). Power: line y70 west from x19, columns x10/x17/x24.
+road 6 70 6 90
+road 13 70 13 90
+road 20 70 20 90
+road 27 70 27 90
+road 7 76 26 76
+road 7 83 26 83
+road 7 90 26 90
+line 10 70 18 70
+line 10 71 10 89
+line 17 71 17 89
+line 24 71 24 89
+zone I 7 71 12 75
+zone R 14 71 19 75
+zone I 21 71 26 75
+zone R 7 77 12 82
+zone I 14 77 19 82
+zone R 21 77 26 82
+zone I 7 84 12 89
+zone R 14 84 19 89
+zone I 21 84 26 89
+pipe 13 68 13 89
+pipe 7 73 26 73
+pipe 7 80 26 80
+pipe 7 87 26 87
