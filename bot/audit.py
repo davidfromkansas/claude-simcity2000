@@ -137,6 +137,15 @@ def audit(path=None, city=None):
     fires = c.misc.get("services", {}).get("fire", {}).get("count", stations)
     if pop > 6000 and fires * 6000 < pop - 6000:
         add("WARN", "fire cover: %d fire stations for %d people - want one per ~6,000 people (every ~14 tiles)" % (fires, pop))
+    # Claudeville 4 lab test (Oct 2026): an airport zone touched by a line at one corner stayed empty for 11-28 years;
+    # it developed once a line ran through it - empty zone tiles do not carry power
+    air = {(x, y) for x, y in c.tiles() if c.zone(x, y) == 8}
+    if air:
+        fed = sum(1 for p in air if is_line(c.t(*p)) or is_building(c.t(*p)) or
+                  any(q not in air and (is_line(c.t(*q)) or is_building(c.t(*q))) for q in nbrs(*p)))
+        if fed * 4 < len(air):
+            add("FAIL", "airport %s: only %d of %d tiles touch a power line or building - run a line through it or along a full side"
+                % (box(air), fed, len(air)))
     if pop > 18000 and not airport:
         add("WARN", "shop cap: no airport (helps from ~20,000 people)")
 

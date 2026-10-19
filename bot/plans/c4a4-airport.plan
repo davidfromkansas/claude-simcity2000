@@ -1,0 +1,7 @@
+# Claudeville 4 a4: airport on bare land south of the districts, road x87 and line x86 from road y97; the line runs
+# THROUGH the airport (lab test: a corner-only line left it empty for decades), own fire station.
+road 87 98 87 113
+line 86 96 86 113
+airport 84 114 89 117
+line 86 114 86 117
+fire 83 108
