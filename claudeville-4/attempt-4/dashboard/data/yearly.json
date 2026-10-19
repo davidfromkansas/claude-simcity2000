@@ -1,0 +1,54 @@
+[
+ {
+  "year": 2017,
+  "tone": "setback",
+  "title": "Great fire",
+  "moves": [
+   "Firefighter research: one dispatch per station"
+  ],
+  "happened": "A fire (likely a plane crash near the south airport) burned ~3,900 tiles of the west bank and the south: 59,820 -> 30,380. Rebuilt with rebuild.py (loans #20-25, one guard override logged).",
+  "watching": "Recovery",
+  "start": {
+   "date": "Nov 2017",
+   "population": 30380,
+   "money": 8882,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 81,
+   "abandoned": 208,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Feb 2018",
+   "population": 30220,
+   "money": 1548,
+   "unemployment": 11,
+   "watered_pct": 99,
+   "powered_pct": 92,
+   "abandoned": 210,
+   "jammed": 0,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2020,
+  "tone": "good",
+  "title": "Back to 50,000",
+  "moves": [],
+  "happened": "Recovered to 50,030 by mid-2020; unpowered pockets after the rebuild cleared on their own. Cash -$16k on 25 loans.",
+  "watching": "Debt",
+  "start": {
+   "date": "Feb 2020",
+   "population": 46390,
+   "money": -15977,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 90,
+   "abandoned": 288,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": null
+ }
+]
