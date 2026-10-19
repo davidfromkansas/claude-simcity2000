@@ -11,11 +11,12 @@ Goal: 200,000 by Jan 2050, same map, Medium, disasters on.
 - **Fires:** three great fires in three attempts (two at the airport, one in the coal cluster by the seaport). Each forced a ~$25-45k rebuild.
 
 ## Plan
-1. **Airport early and wired properly.**
-   - Zone it at ~12-15,000 people, while shop demand is positive.
-   - Run a power line along one full side and a road along another.
-   - Give it its own fire station. Put it at the city's edge, not in the middle and not on far bare land.
-   - Check every year that it develops. If it is still empty after 2 years, move it.
+1. **Airport early, with a power line THROUGH it.** Lab test (copy of attempt 3's Feb 2012 save):
+   - The empty airport zone developed into 22 airport tiles once a line ran down its middle (`line 86 114 86 117`).
+     Nothing else changed.
+   - A line touching only one corner tile left it empty for 11-28 years. Empty zone tiles do not carry power.
+   - So: zone the airport at ~12-15,000 people, with a line through it or along a full side, its own fire station,
+     and a road. Check it develops within a year.
 2. **Road links on all four edges** by ~20,000 people (~$1,000 each; +2,000 shop workers each).
 3. **Taxes:** homes at 10-11% while home demand is at its maximum (2000-2012 in every attempt). Shops and factories at 8%. Never cut below 7%.
 4. **Loans:** the 2050 projection guard (`loan.sh`).

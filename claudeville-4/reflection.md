@@ -82,3 +82,6 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
 - The airport is the key unknown. Wire it like attempt 1's (line along a full side), zone it early, check it every
   year and move it if empty after 2 years.
 - Road links on all four edges early. Spread coal plants out, each with a fire station.
+- **Lab test (Oct 2026, copy of attempt 3's 2012 save): the empty airport developed once a power line ran THROUGH it.**
+  The airports in attempts 2-3 had a line touching one corner tile; empty zones do not carry power. This one wiring
+  detail capped shops in every city since attempt 1.
