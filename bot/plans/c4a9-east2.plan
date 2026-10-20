@@ -1,0 +1,55 @@
+# stripplan.py 109 63 125 96 RCRRCR --cross 8 --line 8
+line 113 66 113 96
+line 121 63 121 67
+line 121 69 121 96
+road 109 66 125 66
+road 109 73 125 73
+road 109 80 125 80
+road 109 87 125 87
+road 109 94 125 94
+road 109 63 109 96
+road 117 62 117 96
+road 125 63 125 96
+zone R 114 63 116 65
+zone R 118 63 120 65
+zone R 122 63 124 65
+zone C 110 67 112 69
+zone C 122 67 124 69
+zone R 110 70 112 72
+zone R 114 70 116 72
+zone R 119 70 120 72
+zone R 122 70 124 72
+zone R 110 74 112 76
+zone R 114 74 116 76
+zone R 118 74 120 76
+zone R 122 74 124 76
+zone C 110 77 112 79
+zone C 114 77 116 79
+zone C 118 77 120 79
+zone C 122 77 124 79
+zone R 110 81 112 83
+zone R 114 81 116 83
+zone R 118 81 120 83
+zone R 122 81 124 83
+zone R 110 84 112 86
+zone R 114 84 116 86
+zone R 118 84 120 86
+zone R 122 84 124 86
+zone C 110 88 112 90
+zone C 114 88 116 90
+zone C 118 88 120 90
+zone C 122 88 124 90
+zone R 110 91 112 93
+zone R 114 91 116 93
+zone R 118 91 120 93
+zone R 122 91 124 93
+pipe 109 66 125 66
+pipe 109 73 125 73
+pipe 109 80 125 80
+pipe 109 87 125 87
+pipe 109 94 125 94
+pipe 109 61 109 96
+pipe 117 61 117 96
+pipe 125 61 125 96
+# water: pipe y65 (x104-107) to the cross street x109
+pipe 108 65 108 65
