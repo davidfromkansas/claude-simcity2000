@@ -36,6 +36,7 @@ import time
 BOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BOT)
 from citymap import City, is_road, is_rail, is_line, is_park, is_plant, nbrs, N  # noqa: E402
+import sc2parse as p  # noqa: E402
 
 TOOL = {"road": "22 105 55 113", "line": "22 82 55 90", "pipe": "47 82 85 90", "pump": "47 82 85 105",
         "r": "22 128 75 135", "R": "22 128 75 151", "c": "47 128 100 135", "C": "47 128 100 151",
@@ -395,6 +396,12 @@ def main(path, dry=False):
         return 2
     if dry:
         return 0
+    # attempt 8 (Oct 2026): after a container restart the load landed on a new blank map and a build then saved over
+    # the attempt's save - never build on anything but the attempt's city
+    if p.parse(p.SAVE).get("city") != "Claudeville 3" and "--any-city" not in sys.argv:
+        print("PLAN ERROR: the game holds '%s', not the attempt's city - reload with load.sh" % p.parse(p.SAVE).get("city"))
+        print("BUILD: refused")
+        return 2
     sc("pause")
     cash0 = save()
     before = City()
