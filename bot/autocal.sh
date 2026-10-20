@@ -56,6 +56,13 @@ PY
     if [ "$3" = none ]; then
       for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $1 $2; sleep 0.3; ./sc click $1 $2; sleep 0.5; ./sc save >/dev/null; done
       # (Feb 2026: stopping here gave false alarms where the second spot was built up - try the next spot instead)
+      # (Sep 2028: in burned/built views no second spot ever landed - accept the zoom when the first road sits where
+      # step 8 predicts from the view centre and the spot is far enough from the centre for a wrong zoom to show)
+      if [ -f /tmp/sc/center.json ] && python3 -I -c "
+import json,sys; c=json.load(open('/tmp/sc/center.json')); x,y=map(int,'$r'.split()); dx=($1-324)/8.0; dy=($2-240)/4.0
+px=c['x']+(dy-dx)/2; py=c['y']+(dx+dy)/2; far=abs($1-324)+abs($2-240)
+sys.exit(0 if far>=80 and abs(px-x)+abs(py-y)<=2 else 1)"; then
+        echo "view calibrated on tile $r (screen $1,$2); zoom checked against the view centre"; exit 0; fi
       zoomskip=1; continue; fi
     if [ "$3" != none ]; then
       for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $(($1+32*d)) $(($2+16*d)); sleep 0.3; ./sc click $(($1+32*d)) $(($2+16*d)); sleep 0.5; ./sc save >/dev/null
