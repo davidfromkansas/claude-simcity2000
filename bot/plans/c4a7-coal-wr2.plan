@@ -1,0 +1,6 @@
+# Attempt 7 Nov 2031: spare power 11% -> second coal plant on the west-bank river strip, own fire station;
+# line y31 from the first plant, down x50
+line 46 31 50 31
+line 50 32 50 32
+coal 50 33
+fire 54 33
