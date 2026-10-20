@@ -51,7 +51,9 @@
  },
  {
   "attempt": 8,
-  "status": "playing",
-  "reason": ""
+  "status": "failed",
+  "reason": "Peak 92,500 (Feb 2038), ahead of attempt 7 and close to attempt 6 until 2038. In Nov 2038 an alien-ship fire (~24 tiles) became a great fire (~4,800 rubble tiles: the west bank, south-west and north district) while I ran the game unwatched; down to 38,000 with 30 loans and no money to rebuild; game over Jan 2046 (-$105,463).",
+  "peak": 92500,
+  "timeline": "2046-01"
  }
 ]

@@ -144,3 +144,14 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
   (5 and 7) borrowed ~2,800-2,900 people per loan.
 - Attempt 8: replay attempt 6's order closely, add a people-per-loan floor to the loan guard (~4,000), keep taxes
   steady at 8-9% from 30,000 people, and use the fixed tools (cash check, edge guard, strip generator) for new land.
+
+## Claudeville 4 attempt 8 (peak 92,500 - game over Jan 2046)
+- Replaying attempt 6 with the 3,000-people-per-loan floor put the city ahead of attempt 6 for 20 years (51,110 in
+  2017, 64,670 in 2021).
+- **One unwatched disaster ended it**: an alien-ship fire (~24 tiles) became a great fire (~4,800 tiles) while the
+  game ran at Cheetah for ~10 minutes. disaster.sh now runs watched bursts and stops when the fire grows.
+- Restart handling is now verified (load.sh), after a blank-map overwrite and a stale-check deletion.
+
+## Before attempt 9
+- Attempt 8's plan was the best start in Claudeville 4. Keep it; add disaster.sh for every disaster; hold taxes at 8%
+  (the 2022-24 recession followed a drift to 9-10%).
