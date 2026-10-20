@@ -51,7 +51,8 @@ PY
     # was rebuilt at half scale 14 tiles off - an unverified zoom is a failure, not a pass
     if [ "$3" = none ]; then
       for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $1 $2; sleep 0.3; ./sc click $1 $2; sleep 0.5; ./sc save >/dev/null; done
-      echo "AUTOCAL ZOOM: not verified (second test road did not land) - check the zoom before building"; exit 3; fi
+      # (Feb 2026: stopping here gave false alarms where the second spot was built up - try the next spot instead)
+      zoomskip=1; continue; fi
     if [ "$3" != none ]; then
       for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $(($1+32)) $(($2+16)); sleep 0.3; ./sc click $(($1+32)) $(($2+16)); sleep 0.5; ./sc save >/dev/null
         python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];x,y=$3,$4;sys.exit(0 if b[y*128+x]==0 else 1)" && break; done
@@ -84,4 +85,5 @@ if d>16: print('AUTOCAL STRAY calibration tile %d,%d is %d tiles from the reques
 " 2>/dev/null
     exit 0; fi
 done
+[ -n "$zoomskip" ] && { echo "AUTOCAL ZOOM: not verified at any spot (second test road never landed) - check the zoom before building"; exit 3; }
 echo "autocal failed"; exit 1
