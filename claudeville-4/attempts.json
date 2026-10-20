@@ -48,5 +48,10 @@
   "reason": "Peak 91,980 (Feb 2041). Same rules as attempt 6 but more control failures (misplaced builds at the map edges, districts half-built when cash ran out) cost ~$5,000 and extra fix loans; 32 loans bought only ~2,900 people each, bond payments reached $19k a year against $9.8k income, and the money ran out (game over Jan 2046 at -$104,898).",
   "peak": 91980,
   "timeline": "2046-01"
+ },
+ {
+  "attempt": 8,
+  "status": "playing",
+  "reason": ""
  }
 ]
