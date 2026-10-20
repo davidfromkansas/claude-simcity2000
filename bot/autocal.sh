@@ -47,6 +47,11 @@ c.update({"s":s,"ox":sx-s*(y-x),"oy":sy-s/2*(x+y)}); json.dump(c,open('/tmp/sc/c
 PY
 )
     set -- $1 $2 $r2
+    # C4 attempt 9 (Sep 2020): the second test road did not land ('none'), the zoom went unchecked, and a whole district
+    # was rebuilt at half scale 14 tiles off - an unverified zoom is a failure, not a pass
+    if [ "$3" = none ]; then
+      for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $1 $2; sleep 0.3; ./sc click $1 $2; sleep 0.5; ./sc save >/dev/null; done
+      echo "AUTOCAL ZOOM: not verified (second test road did not land) - check the zoom before building"; exit 3; fi
     if [ "$3" != none ]; then
       for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $(($1+32)) $(($2+16)); sleep 0.3; ./sc click $(($1+32)) $(($2+16)); sleep 0.5; ./sc save >/dev/null
         python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];x,y=$3,$4;sys.exit(0 if b[y*128+x]==0 else 1)" && break; done
