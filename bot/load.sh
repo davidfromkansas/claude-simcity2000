@@ -16,6 +16,8 @@ fi
 ./sc click 559 119; sleep 1
 ./sc snap >/dev/null
 # read the city from the game WITHOUT overwriting the attempt's save: Save City As a scratch name first
+# (remove any old scratch file: its "Overwrite?" prompt stopped the save and the check read a stale copy - Oct 2026)
+rm -f /opt/sc2k/game/LOADCHK.SC2
 ./sc menu 25 7 60 119; sleep 1.5
 ./sc click 400 138; for i in $(seq 12); do ./sc key End BackSpace >/dev/null; done
 ./sc type "LOADCHK.SC2"; ./sc click 239 376; sleep 2; ./sc click 320 245; sleep 0.5
@@ -31,6 +33,7 @@ rm -f "/opt/sc2k/game/$name"
 ./sc menu 25 7 60 119; sleep 1.5
 ./sc click 400 138; for i in $(seq 12); do ./sc key End BackSpace >/dev/null; done
 ./sc type "$name"; ./sc click 239 376; sleep 2; ./sc click 320 245; sleep 0.5; ./sc click 320 228; sleep 0.5
+[ -f "/opt/sc2k/game/$name" ] || { echo "LOAD FAILED: $name was not written back - save it by hand (Save City As) before anything else"; exit 1; }
 ./sc click 45 230; sleep 0.8; rm -f /tmp/sc/cal.json /tmp/sc/center.json      # zoom in, recalibrate on next build
 ./sc save | tail -1 | cut -c1-80
 echo "LOAD OK"

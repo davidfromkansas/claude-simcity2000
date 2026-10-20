@@ -268,5 +268,35 @@
   },
   "est_property_tax": 4950,
   "budget_shot": "budget/2017.png"
+ },
+ {
+  "year": 2018,
+  "date": "Feb 2018",
+  "cash": 2066,
+  "loans": 16,
+  "cash_change": -2216,
+  "population": 54220,
+  "tax": {
+   "res": 8,
+   "com": 9,
+   "ind": 7
+  },
+  "est_property_tax": 5519,
+  "budget_shot": "budget/2018.png"
+ },
+ {
+  "year": 2019,
+  "date": "Feb 2019",
+  "cash": -907,
+  "loans": 16,
+  "cash_change": -2973,
+  "population": 57760,
+  "tax": {
+   "res": 10,
+   "com": 9,
+   "ind": 8
+  },
+  "est_property_tax": 6848,
+  "budget_shot": "budget/2019.png"
  }
 ]

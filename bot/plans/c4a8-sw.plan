@@ -1,0 +1,45 @@
+# stripplan.py 8 71 27 97 ICRICRIR --cross 10 --line 10
+line 13 74 13 97
+line 23 71 23 97
+road 8 74 11 74
+road 16 74 27 74
+road 8 81 27 81
+road 8 88 27 88
+road 8 95 27 95
+road 8 70 8 97
+road 18 70 18 97
+road 27 70 27 97
+zone I 9 71 11 73
+zone I 19 71 22 73
+zone I 24 71 26 73
+zone C 9 75 12 77
+zone C 14 75 17 77
+zone C 19 75 22 77
+zone C 24 75 26 77
+zone R 9 78 12 80
+zone R 14 78 17 80
+zone R 19 78 22 80
+zone R 24 78 26 80
+zone I 9 82 12 84
+zone I 14 82 17 84
+zone I 19 82 22 84
+zone I 24 82 26 84
+zone C 9 85 12 87
+zone C 14 85 17 87
+zone C 19 85 22 87
+zone C 24 85 26 87
+zone R 9 89 12 91
+zone R 14 89 17 91
+zone R 19 89 22 91
+zone R 24 89 26 91
+zone I 9 92 12 94
+zone I 14 92 17 94
+zone I 19 92 22 94
+zone I 24 92 26 94
+pipe 8 74 27 74
+pipe 8 81 27 81
+pipe 8 88 27 88
+pipe 8 95 27 95
+pipe 8 69 8 97
+pipe 18 69 18 97
+pipe 27 69 27 97
