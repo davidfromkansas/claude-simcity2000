@@ -1,0 +1,42 @@
+# stripplan.py 38 72 54 97 IRIRIRIR --cross 8 --line 8
+line 42 74 42 91
+line 42 93 42 97
+line 50 82 50 91
+line 50 93 50 97
+road 38 75 45 75
+road 38 82 46 82
+road 50 82 52 82
+road 38 89 54 89
+road 38 96 54 96
+road 38 71 38 97
+road 46 76 46 76
+road 46 82 46 97
+road 54 71 54 71
+road 54 83 54 97
+zone I 39 72 40 74
+zone R 39 76 41 78
+zone R 43 76 45 78
+zone I 39 79 41 81
+zone I 43 79 44 81
+zone R 39 83 41 85
+zone R 43 83 45 85
+zone R 47 83 49 85
+zone R 51 83 53 85
+zone I 39 86 41 88
+zone I 43 86 45 88
+zone I 47 86 49 88
+zone I 51 86 53 88
+zone I 39 93 41 95
+zone I 43 93 45 95
+zone I 47 93 49 95
+zone I 51 93 53 95
+pipe 38 75 45 75
+pipe 38 82 46 82
+pipe 50 82 52 82
+pipe 38 89 54 89
+pipe 38 96 54 96
+pipe 38 70 38 97
+pipe 46 76 46 76
+pipe 46 82 46 97
+pipe 54 70 54 71
+pipe 54 83 54 97
