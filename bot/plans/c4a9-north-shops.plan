@@ -1,0 +1,28 @@
+# stripplan.py 21 1 40 11 CRC --cross 10 --line 10
+line 26 1 26 11
+line 36 1 36 11
+road 21 4 40 4
+road 21 11 40 11
+road 21 1 21 11
+road 31 1 31 11
+road 40 1 40 11
+zone C 22 1 25 3
+zone C 27 1 30 3
+zone C 32 1 35 3
+zone C 37 1 39 3
+zone R 22 5 25 7
+zone R 27 5 30 7
+zone R 32 5 35 7
+zone R 37 5 39 7
+zone C 22 8 25 10
+zone C 27 8 30 10
+zone C 32 8 35 10
+zone C 37 8 39 10
+pipe 21 4 40 4
+pipe 21 11 40 11
+pipe 21 1 21 11
+pipe 31 1 31 11
+pipe 40 1 40 11
+# links: road x21 down to road y20; line y12 from line y13 (x24) to both line columns
+road 21 12 21 19
+line 24 12 36 12
