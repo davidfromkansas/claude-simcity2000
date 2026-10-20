@@ -1,0 +1,3 @@
+# Attempt 8 Jul 2014: shops capped (-801) -> the west-edge neighbour link (left out of c4a8-west by the edge guard), built alone and checked
+road 1 69 7 69
+link 0 69
