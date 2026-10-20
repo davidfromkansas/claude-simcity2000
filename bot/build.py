@@ -386,9 +386,11 @@ def main(path, dry=False):
             return 2
     # attempt 7 (2025): clicks within ~8 tiles of the west map edge landed 2+ tiles off and left calibration roads
     # that could not be bulldozed - keep plans away from it
-    west = sorted({p for s in steps for p in s["tiles"] if p[0] < 8 and not s["kind"].startswith("bulldoze")})
+    # (and in the north-east corner the view did not scroll to the plan: a coal plant became a trail of road tiles)
+    west = sorted({p for s in steps for p in s["tiles"] if (p[0] < 8 or (p[0] > 119 and p[1] < 8) or (p[1] < 8 and p[0] < 20))
+                   and not s["kind"].startswith("bulldoze") and s["kind"] not in ("link", "raillink")})
     if west and "--west-ok" not in sys.argv:
-        print("PLAN ERROR: %d tiles within 8 tiles of the west map edge, e.g. %s (clicks there land wrong; --west-ok)" % (len(west), west[:4]))
+        print("PLAN ERROR: %d tiles near the west edge or a map corner, e.g. %s (clicks there land wrong; --west-ok)" % (len(west), west[:4]))
         print("BUILD: refused")
         return 2
     if dry:

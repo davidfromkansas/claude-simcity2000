@@ -1,0 +1,6 @@
+# Attempt 7 Feb 2026: spare water 8% -> 9 pumps on the south shore row y61 of the west lake (x8-16), power line y61
+# across road x20 from the west district homes, pipe y60 joined to the district's y59 pipe
+line 17 61 20 61
+pump 8 61 16 61
+pipe 8 60 20 60
+pipe 20 59 20 59

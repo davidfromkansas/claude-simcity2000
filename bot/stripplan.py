@@ -55,7 +55,7 @@ def main():
     ys_all = range(y0, min(y1, y - 1) + 1)
     # lines first: a road dragged over a line makes a crossing; a line dragged over roads broke road rows (attempt 7)
     for lx in xs_line:
-        for ra, rb in runs([yy for yy in ys_all if ok(lx, yy) or yy in roads_y]):
+        for ra, rb in runs([yy for yy in ys_all if not wet(lx, yy) and (ok(lx, yy) or yy in roads_y)]):
             steps.append("line %d %d %d %d" % (lx, ra, lx, rb))
     for ry in roads_y:
         for ra, rb in runs([x for x in range(x0, x1 + 1) if ok(x, ry)]):
