@@ -1,0 +1,6 @@
+# Attempt 9 Sep 2020: line tile (60,77) to the pump at (59,77) burned; water for the shifted copy's shops x33-36 y83-85;
+# stray road tile (48,91) by the zoo
+bulldoze 60 77 60 77
+line 60 77 60 77
+pipe 32 84 36 84
+bulldoze 48 91 48 91

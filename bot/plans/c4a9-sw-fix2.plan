@@ -1,0 +1,7 @@
+# Attempt 9 Sep 2020: line crossings cannot sit on road junctions (23,81/88/95 and 27,81) - join the line columns x23,
+# x27 and x37 through the zone bands instead; (37,90) was a gap in column x37
+line 25 78 25 78
+line 24 85 26 85
+line 24 90 36 90
+line 37 90 37 90
+line 24 97 26 97

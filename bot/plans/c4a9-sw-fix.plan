@@ -1,0 +1,11 @@
+# Attempt 9 Sep 2020: after the fire + shifted rebuild - burned line crossings on the SW district roads, links for the
+# shifted copy x22-41 y78-104 (line x27 up to the y78 crossing, line x37 up to line y70), and joins for its stray roads
+line 13 88 13 88
+line 23 81 23 81
+line 23 88 23 88
+line 23 95 23 95
+line 27 79 27 81
+line 37 71 37 78
+road 32 83 32 86
+road 39 82 40 82
+road 28 82 29 82
