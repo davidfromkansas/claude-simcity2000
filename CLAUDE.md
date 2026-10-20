@@ -94,6 +94,12 @@ Toolbar is the left column (x 10-80).
 - Attempt 11 findings: the game refuses a second loan at founding (credit rating); the SEAPORT at x53-57 y57-62
   lifted the factory cap at once; homes held at 8% tax when jobs existed; stalls at 11-18k track unemployment.
 
+## Disasters (after Claudeville 4 attempt 8)
+- The calendar freezes while a disaster runs; play.sh/runout.sh stop ("DISASTER"). Then run `bot/disaster.sh`: it runs
+  10-second bursts centred on the disaster and stops at once when the fire grows (exit 2 = act: firebreak).
+  NEVER run the game unwatched at Cheetah during a disaster (attempt 8: a 24-tile fire became ~4,800 rubble tiles).
+- firebreak.py misreads red rooftops and the alien ship as flames; cut only a tight ring around the real cluster.
+
 ## Post-mortem rule (from the user)
 Every post-mortem must split causes into CONTROL failures (the agent could not carry out its own plan: misplaced or
 missing tiles, unnoticed broken links, accidents) and STRATEGY failures (the plan itself was wrong). Control failures
