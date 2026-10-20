@@ -34,18 +34,22 @@ PY
   if [ -n "$r" ]; then
     # attempt 19: the zoom-in did not take and every tile landed at half scale. Check the scale with a
     # second road 32 px right / 16 px down (zoom 3 = same x, y+4) and recalibrate with the measured step.
-    b2=$(roads); ./sc tool 22 105 55 113; sleep 0.3; ./sc click $(($1+32)) $(($2+16)); sleep 0.4; ./sc save >/dev/null
-    r2=$(python3 -I - "$b2" "$r" "$1" "$2" <<'PY'
+    # (Jul 2026: at the east map edge the spot 32 px right/down was off the map - also try 32 px left/up)
+    for d in 1 -1; do
+    b2=$(roads); ./sc tool 22 105 55 113; sleep 0.3; ./sc click $(($1+32*d)) $(($2+16*d)); sleep 0.4; ./sc save >/dev/null
+    r2=$(python3 -I - "$b2" "$r" "$1" "$2" "$d" <<'PY'
 import sys, json; sys.path.insert(0,'.'); import sc2parse as p
 before=set(map(int,sys.argv[1].split())); b=p.chunks(p.SAVE)['XBLD']
 new=[i for i in range(16384) if 0x1d<=b[i]<=0x2b and i not in before]
 if len(new)!=1: print("none"); sys.exit()
-x,y=map(int,sys.argv[2].split()); x2,y2=new[0]%128,new[0]//128; k=(y2-y)-(x2-x)
+x,y=map(int,sys.argv[2].split()); x2,y2=new[0]%128,new[0]//128; k=((y2-y)-(x2-x))*int(sys.argv[5])
 if k<=0: print("%d %d bad" % (x2,y2)); sys.exit()
 s=32.0/k; sx,sy=float(sys.argv[3]),float(sys.argv[4]); c=json.load(open('/tmp/sc/cal.json'))
 c.update({"s":s,"ox":sx-s*(y-x),"oy":sy-s/2*(x+y)}); json.dump(c,open('/tmp/sc/cal.json','w')); print(x2,y2,s)
 PY
 )
+    case $r2 in none) ;; *) break ;; esac
+    done
     set -- $1 $2 $r2
     # C4 attempt 9 (Sep 2020): the second test road did not land ('none'), the zoom went unchecked, and a whole district
     # was rebuilt at half scale 14 tiles off - an unverified zoom is a failure, not a pass
@@ -54,7 +58,7 @@ PY
       # (Feb 2026: stopping here gave false alarms where the second spot was built up - try the next spot instead)
       zoomskip=1; continue; fi
     if [ "$3" != none ]; then
-      for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $(($1+32)) $(($2+16)); sleep 0.3; ./sc click $(($1+32)) $(($2+16)); sleep 0.5; ./sc save >/dev/null
+      for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $(($1+32*d)) $(($2+16*d)); sleep 0.3; ./sc click $(($1+32*d)) $(($2+16*d)); sleep 0.5; ./sc save >/dev/null
         python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];x,y=$3,$4;sys.exit(0 if b[y*128+x]==0 else 1)" && break; done
       if [ "$5" != "8.0" ]; then echo "AUTOCAL ZOOM: step $5 px, not 8 - zoom is wrong; fix the zoom before building"; exit 3; fi
     fi
