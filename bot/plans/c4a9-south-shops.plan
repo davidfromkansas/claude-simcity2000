@@ -1,0 +1,6 @@
+# Attempt 9 May 2012: shop demand 1,793 with 28 empty shop tiles, factory demand negative with 93 empty factory tiles.
+# Turn the two empty factory rows of the south band (y119 and y124, x109-119) into shops next to the homes.
+dezone 109 119 119 119
+dezone 109 124 119 124
+zone C 109 119 119 119
+zone C 109 124 119 124
