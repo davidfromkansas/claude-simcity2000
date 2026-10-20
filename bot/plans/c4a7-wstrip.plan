@@ -1,0 +1,31 @@
+# stripplan.py 41 12 56 26 CRCRC --cross 8 --line 8
+line 45 12 45 25
+line 53 12 53 25
+road 41 15 56 15
+road 41 22 56 22
+road 41 11 41 25
+road 49 11 49 25
+road 56 11 56 25
+zone C 42 12 44 14
+zone C 46 12 48 14
+zone C 50 12 52 14
+zone C 54 12 55 14
+zone R 42 16 44 18
+zone R 46 16 48 18
+zone R 50 16 52 18
+zone R 54 16 55 18
+zone C 42 19 44 21
+zone C 46 19 48 21
+zone C 50 19 52 21
+zone C 54 19 55 21
+zone R 42 23 44 25
+zone R 46 23 48 25
+zone R 50 23 52 25
+zone R 54 23 55 25
+pipe 41 15 56 15
+pipe 41 22 56 22
+pipe 41 10 41 25
+pipe 49 10 49 25
+pipe 56 10 56 25
+line 45 26 45 27
+line 46 24 52 24

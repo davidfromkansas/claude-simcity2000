@@ -82,6 +82,13 @@ def main():
     if "--pipe-from" in opt:
         px, py = map(int, opt["--pipe-from"].split(","))
         steps.append("pipe %d %d %d %d" % (px, py, px, y0))
+    # attempt 7: line columns that touch nothing powered left whole districts dark - name them so a link is added
+    from citymap import City, is_line, is_building
+    cm = City()
+    for lx in xs_line:
+        ends = [(lx, y0 - 1), (lx - 1, y0), (lx + 1, y0)]
+        if not any(0 <= q[0] < N and 0 <= q[1] < N and (is_line(cm.t(*q)) or is_building(cm.t(*q))) for q in ends):
+            print("stripplan WARN: line column x%d does not touch a line or building at its top - add a link line" % lx)
     open(out, "w").write("\n".join(steps) + "\n")
     zt = sum(1 for s in steps if s.startswith("zone"))
     print("stripplan: %d roads rows, %d cross streets, %d line columns, %d zone pieces -> %s" %
