@@ -1,0 +1,23 @@
+# stripplan.py 43 88 58 98 IRIR --cross 8 --line 8
+line 47 88 47 91
+line 47 93 47 98
+line 55 88 55 91
+line 55 93 55 98
+road 43 91 58 91
+road 43 98 58 98
+road 43 87 43 98
+road 51 87 51 98
+road 58 87 58 98
+zone I 44 88 46 90
+zone I 48 88 50 90
+zone I 52 88 54 90
+zone I 56 88 57 90
+zone I 44 95 46 97
+zone I 48 95 50 97
+zone I 52 95 54 97
+zone I 56 95 57 97
+pipe 43 91 58 91
+pipe 43 98 58 98
+pipe 43 86 43 98
+pipe 51 86 51 98
+pipe 58 86 58 98
