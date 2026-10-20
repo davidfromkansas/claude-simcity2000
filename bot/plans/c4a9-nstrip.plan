@@ -1,0 +1,43 @@
+# stripplan.py 41 9 57 26 RCRCR --cross 8 --line 8 --pipe-from 41,28
+line 45 9 45 26
+line 53 9 53 26
+road 41 12 56 12
+road 41 19 42 19
+road 44 19 57 19
+road 41 26 57 26
+road 41 8 41 26
+road 49 8 49 26
+road 57 8 57 9
+road 57 13 57 26
+zone R 42 9 44 11
+zone R 46 9 48 11
+zone R 50 9 52 11
+zone R 54 9 56 11
+zone C 42 13 44 15
+zone C 46 13 48 15
+zone C 50 13 52 15
+zone C 54 13 56 15
+zone R 42 16 44 18
+zone R 46 16 48 18
+zone R 50 16 52 18
+zone R 54 16 56 18
+zone C 42 20 44 22
+zone C 46 20 48 22
+zone C 50 20 52 22
+zone C 54 20 56 22
+zone R 42 23 44 25
+zone R 46 23 48 25
+zone R 50 23 52 25
+zone R 54 23 56 25
+pipe 41 12 56 12
+pipe 41 19 57 19
+pipe 41 26 57 26
+pipe 41 7 41 26
+pipe 49 7 49 26
+pipe 57 7 57 9
+pipe 57 13 57 26
+pipe 41 28 41 9
+# links: line y27 above the riverbank coal plant (42-48,28-31) to both line columns; rubble at 43,19 cleared for road y19
+line 45 27 53 27
+bulldoze 43 19 43 19
+road 43 19 43 19
