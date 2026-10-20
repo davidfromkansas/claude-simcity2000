@@ -131,3 +131,16 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
   - about 10,600 of the map's 14,567 land tiles. Attempt 6 zoned only 6,363 (44%).
 - So attempt 7 must zone ~70% of the land: dense zones only, roads as long strips (fewer cross streets), the west and
   south-west banks started ~5 years earlier, and no wasted pockets (every leftover lot zoned).
+
+## Claudeville 4 attempt 7 (peak 91,980 - game over Jan 2046)
+- Same rules as attempt 6, but 32 loans for ~92,000 people (~2,900 each) against attempt 6's 27 for 120,770.
+  Control failures (generator bugs, half-built plans, misplaced builds at the map edges) cost ~$5,000 and extra loans;
+  all now have checks.
+- **The bond rate rises with the loan count**: 32 loans cost $19k a year (~$600 each), not $513.
+- The early river crossing (2008) and dense strips did not raise the ceiling; borrowing efficiency matters more.
+
+## Across all seven attempts (before attempt 8)
+- The best city (attempt 6) borrowed the least per person. The two that fell short of it after the fire rules
+  (5 and 7) borrowed ~2,800-2,900 people per loan.
+- Attempt 8: replay attempt 6's order closely, add a people-per-loan floor to the loan guard (~4,000), keep taxes
+  steady at 8-9% from 30,000 people, and use the fixed tools (cash check, edge guard, strip generator) for new land.

@@ -1,5 +1,7 @@
 {
  "attempt": 7,
- "status": "playing",
- "started": "2026-10-19"
+ "status": "failed",
+ "started": "2026-10-19",
+ "peak": 91980,
+ "ended": "2046-01"
 }
