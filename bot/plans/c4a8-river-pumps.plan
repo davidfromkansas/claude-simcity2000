@@ -1,0 +1,7 @@
+# Attempt 8 Feb 2022: spare water 8% -> 14 pumps on the south-river shoreline x60 y88-92 and x59 y93-101,
+# power line y92 from line x23 across road x27, pipe y91 from the strip's x27 pipe, pipe x58 beside the pumps
+line 27 92 59 92
+pump 60 88 60 92
+pump 59 93 59 101
+pipe 28 91 59 91
+pipe 58 92 58 101
