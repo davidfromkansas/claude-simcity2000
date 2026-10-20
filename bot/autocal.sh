@@ -89,5 +89,24 @@ if d>16: print('AUTOCAL STRAY calibration tile %d,%d is %d tiles from the reques
 " 2>/dev/null
     exit 0; fi
 done
+# C4 attempt 9 (Sep 2028 fire): in a fully built view no test road can land - drop power lines on road tiles instead
+# (a line on a straight road just makes a harmless crossing) and calibrate from the changed tile; check the zoom with a
+# second line 32 px away
+xb() { python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;open('$1','wb').write(bytes(p.chunks(p.SAVE)['XBLD']))"; }
+lineat() { ./sc save >/dev/null; xb /tmp/sc/lc_b; ./sc tool 22 82 55 90; sleep 0.4; ./sc click $1 $2; sleep 0.5; ./sc nodlg 2>/dev/null; ./sc save >/dev/null; xb /tmp/sc/lc_a
+  python3 -I -c "
+b=open('/tmp/sc/lc_b','rb').read(); a=open('/tmp/sc/lc_a','rb').read(); L=lambda t: 0x0e<=t<=0x1c or 0x43<=t<=0x46
+d=[i for i in range(16384) if L(a[i]) and not L(b[i])]
+print('%d %d' % (d[0]%128, d[0]//128) if len(d)==1 else 'none')"; }
+n=0; for pt in $(for yy in 236 300 172 364 140 396 268 204 332; do for xx in 316 252 380 188 444 508 156 556; do echo "$xx,$yy"; done; done); do
+  n=$((n+1)); [ $n -gt 45 ] && break
+  set -- ${pt/,/ }; t1=$(lineat $1 $2); [ "$t1" = none ] && continue
+  for d in 1 -1; do t2=$(lineat $(($1+32*d)) $(($2+16*d))); [ "$t2" != none ] && break; done
+  [ "$t2" = none ] && continue
+  read x1 y1 <<< "$t1"; read x2 y2 <<< "$t2"; k=$(( ((y2-y1)-(x2-x1))*d ))
+  if [ "$k" != 4 ]; then echo "AUTOCAL ZOOM: line check moved $k tiles for 32 px, not 4 - zoom is wrong"; exit 3; fi
+  python3 -I -c "import json;json.dump({'s':8.0,'ox':$1-8*($y1-$x1),'oy':$2-4*($x1+$y1),'alt':4},open('/tmp/sc/cal.json','w'))"
+  echo "view calibrated on tile $x1 $y1 (screen $1,$2) by power line (crossings left at $t1 and $t2)"; exit 0
+done
 [ -n "$zoomskip" ] && { echo "AUTOCAL ZOOM: not verified at any spot (second test road never landed) - check the zoom before building"; exit 3; }
 echo "autocal failed"; exit 1
