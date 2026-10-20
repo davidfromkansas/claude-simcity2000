@@ -1,0 +1,11 @@
+# Attempt 9 Sep 2028: spare water 3%, 143 buildings dry -> 22 more pumps on the south lake shore y110-113 between the
+# lake pieces; power from line y110 / line x77 / the existing pumps, pipes from pipe y109 / y110 / x82 / x94
+pipe 78 109 78 110
+pump 78 111 78 113
+pump 82 111 82 113
+pipe 83 110 88 110
+pump 86 111 88 111
+pump 86 112 88 112
+pump 86 113 88 113
+pump 94 111 94 113
+pump 97 110 97 113
