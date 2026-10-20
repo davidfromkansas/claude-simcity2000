@@ -1,0 +1,5 @@
+# Attempt 7 Jul 2025: spare power 8% (the far-SW coal failed at the west edge) -> coal plant in the empty north-east
+# corner east of the airport road, own fire station; line (122,5) across road x122 from the airport line
+coal 123 1
+line 122 5 123 5
+# fire 123 6  (next, from cash)
