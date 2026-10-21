@@ -187,6 +187,38 @@
    "jammed": 0,
    "bonds": 6
   },
+  "end": {
+   "date": "Feb 2006",
+   "population": 18420,
+   "money": 5401,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "Past 20,000 a year early",
+  "moves": [
+   "East coal plant + fire station"
+  ],
+  "happened": "Dec 2006: 22,180 people (attempt 10: 17,600). East coal plant built in Dec 2005; water ran short again by December.",
+  "watching": "Water 6%; land getting short",
+  "start": {
+   "date": "Feb 2006",
+   "population": 18420,
+   "money": 5401,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 8
+  },
   "end": null
  }
 ]
