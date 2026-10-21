@@ -454,7 +454,8 @@ def main(path, dry=False):
             save()
             c2 = City()
             if not any(done(c2, s, x, y) for x, y in s["tiles"] if not done(before, s, x, y)):
-                moved = [(i % N, i // N) for i in range(N * N) if c2.b[i] != before.b[i] and (i % N, i // N) not in plan_tiles]
+                moved = [(i % N, i // N) for i in range(N * N) if c2.b[i] != before.b[i] and (i % N, i // N) not in plan_tiles
+                         and not (is_road(c2.b[i]) and is_road(before.b[i])) and not (is_line(c2.b[i]) and is_line(before.b[i]))]   # redraws of joined pieces are fine
                 if moved:
                     print("PLAN ERROR: line %d %s: none of its tiles landed but %d tiles outside the plan changed, e.g. %s"
                           " - clicks are landing off (calibration)" % (s["line"], s["kind"], len(moved), moved[:4]))
