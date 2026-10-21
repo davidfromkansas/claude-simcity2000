@@ -124,7 +124,8 @@ n=0; for pt in $(for yy in 236 300 172 364 140 396 268 204 332; do for xx in 316
   for d in 1 -1; do t2=$(lineat $(($1+32*d)) $(($2+16*d))); [ "$t2" != none ] && break; done
   [ "$t2" = none ] && continue
   read x1 y1 <<< "$t1"; read x2 y2 <<< "$t2"; k=$(( ((y2-y1)-(x2-x1))*d ))
-  if [ "$k" != 4 ]; then echo "AUTOCAL ZOOM: line check moved $k tiles for 32 px, not 4 - zoom is wrong"; rm -f /tmp/sc/cal.json; exit 3; fi
+  # (Dec 2019: a line can snap one tile toward a neighbour, so 3-5 tiles is fine; a wrong zoom gives 2 or 8)
+  if [ "$k" -lt 3 ] || [ "$k" -gt 5 ]; then echo "AUTOCAL ZOOM: line check moved $k tiles for 32 px, not 4 - zoom is wrong"; rm -f /tmp/sc/cal.json; exit 3; fi
   python3 -I -c "import json;json.dump({'s':8.0,'ox':$1-8*($y1-$x1),'oy':$2-4*($x1+$y1),'alt':4,'method':'line'},open('/tmp/sc/cal.json','w'))"
   echo "view calibrated on tile $x1 $y1 (screen $1,$2) by power line (crossings left at $t1 and $t2)"; exit 0
 done
