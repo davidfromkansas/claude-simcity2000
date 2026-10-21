@@ -121,6 +121,10 @@ def recordings():
         os.makedirs(VIDS, exist_ok=True)
         shutil.copy(src, os.path.join(VIDS, f))
         listed.append({"file": rel, "t": now(), "mb": round(os.path.getsize(src) / 1e6, 1)})
+        # C4 attempt 10 (disk full): every part was kept twice (/opt and the repo) - drop the /opt copy once the repo
+        # copy is complete
+        if os.path.getsize(os.path.join(VIDS, f)) == os.path.getsize(src):
+            os.remove(src)
     dump("recordings.json", listed)
 
 
