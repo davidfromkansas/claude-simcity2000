@@ -253,6 +253,41 @@
    "jammed": 0,
    "bonds": 8
   },
+  "end": {
+   "date": "Feb 2008",
+   "population": 26370,
+   "money": 1405,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 38,
+   "jammed": 0,
+   "bonds": 10
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "Nearly 30,000",
+  "moves": [
+   "Loan 10",
+   "SE district + pipe, road links",
+   "South coal plant, second seaport",
+   "Home tax 7%"
+  ],
+  "happened": "Dec 2008: 29,930 people (attempt 10: 22,430). Loan 10 paid for the south-east district and road links; south coal plant and second seaport from cash. Home tax raised 6 -> 7% while home demand was positive.",
+  "watching": "Shop and factory land short; water 11%",
+  "start": {
+   "date": "Feb 2008",
+   "population": 26370,
+   "money": 1405,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 38,
+   "jammed": 0,
+   "bonds": 10
+  },
   "end": null
  }
 ]
