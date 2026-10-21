@@ -85,6 +85,51 @@
    "jammed": 1,
    "bonds": 4
   },
-  "end": null
+  "end": {
+   "date": "Feb 2003",
+   "population": 10500,
+   "money": 3032,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 49,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "Seaport, job strip and airport",
+  "moves": [
+   "Loans 5-6",
+   "Seaport + dense job strip (a19-2006)",
+   "Airport (c4a6-airport)",
+   "East homes + power (c4a6-east-homes, c4a7-east-power)"
+  ],
+  "happened": "Dec 2003: 13,010 people, about a year ahead of attempt 10. Unemployment 9% and factory demand high, so loans 5-6 paid for the seaport job strip and the airport; homes beside the strip in Feb 2004 fixed weak trips.",
+  "watching": "Water (spare 25%) and the 15,000 recreation cap",
+  "start": {
+   "date": "Feb 2003",
+   "population": 10500,
+   "money": 3032,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 49,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 13440,
+   "money": 9617,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 67,
+   "jammed": 0,
+   "bonds": 6
+  }
  }
 ]
