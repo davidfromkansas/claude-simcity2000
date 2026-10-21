@@ -591,5 +591,39 @@
    "jammed": 0,
    "bonds": 18
   }
+ },
+ {
+  "year": 2018,
+  "tone": "steady",
+  "title": "Around 70,000; west strip, coal #2, shore pumps",
+  "moves": [
+   "Home tax 8%",
+   "Loan 19: west strip + powerfix",
+   "Coal plant #2 + 6 shore pumps (c4a11-wr2)"
+  ],
+  "happened": "Dec 2018: ~69,000 people (attempt 10: 46,900). Unemployment rose to 6% with no factory land; loan 19 paid for the west strip; a second river-strip coal plant and 6 shore pumps from cash. Home tax 9 -> 8%.",
+  "watching": "Water; shop stall",
+  "start": {
+   "date": "Feb 2018",
+   "population": 69880,
+   "money": 1433,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 18
+  },
+  "end": {
+   "date": "Feb 2019",
+   "population": 69970,
+   "money": 1991,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 98,
+   "jammed": 2,
+   "bonds": 19
+  }
  }
 ]

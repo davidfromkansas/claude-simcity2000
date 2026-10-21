@@ -1,0 +1,7 @@
+# Attempt 11 Feb 2019: spare water 8% -> 8 more pumps on the west river shore: x58 y34-35 (beside pipe x57) and x59 y36-41
+# beside a line x58 y36-41 (from the pump at 58,35) with a pipe under it from pipe x57
+pump 58 34 58 35
+line 58 36 58 41
+pump 59 36 59 41
+pipe 57 37 57 41
+pipe 58 36 58 41

@@ -283,5 +283,20 @@
   },
   "est_property_tax": 8113,
   "budget_shot": "budget/2018.png"
+ },
+ {
+  "year": 2019,
+  "date": "Feb 2019",
+  "cash": 1991,
+  "loans": 19,
+  "cash_change": 558,
+  "population": 69970,
+  "tax": {
+   "res": 8,
+   "com": 9,
+   "ind": 9
+  },
+  "est_property_tax": 7681,
+  "budget_shot": "budget/2019.png"
  }
 ]
