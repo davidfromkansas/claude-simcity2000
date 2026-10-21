@@ -1,0 +1,4 @@
+# Attempt 11 Jul 2017: home demand -85 with 4 recreation buildings for 68,030 -> zoo x72-75 y112-115 on free land west of road x76,
+# power by one line tile crossing road x76 at y113 from line x77
+zoo 72 112
+line 76 113 76 113
