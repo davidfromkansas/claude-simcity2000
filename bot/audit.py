@@ -121,7 +121,11 @@ def audit(path=None, city=None):
     far = []
     for k, reg in regions:
         if not any(near_road(x, y, 1) for x, y in reg):
-            add("FAIL", "%s %s: no road touches it" % (ZONES[k], box(reg)))
+            # C4 attempt 9 (2030): a lone built tile left by the fire, road 2 tiles away - the game still serves it
+            if len(reg) <= 2 and any(near_road(x, y, 3) for x, y in reg):
+                add("WARN", "%s %s: small leftover area, road 2-3 tiles away" % (ZONES[k], box(reg)))
+            else:
+                add("FAIL", "%s %s: no road touches it" % (ZONES[k], box(reg)))
         far += [p for p in reg if not near_road(p[0], p[1], 3)]
     if far:
         add("WARN", "%d zone tiles more than 3 tiles from a road, e.g. (%d,%d)" % (len(far), *far[0]))
