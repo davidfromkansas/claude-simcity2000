@@ -1,0 +1,8 @@
+# Attempt 11 Dec 2022: spare water 9% -> 4 south-lake shore pumps x69 y108-109 and x70 y110-111, pipes from the x70-71 y107 pipes,
+# power from the zoo (72,112) by line x71-72 y111 and line x70 y108-109
+pipe 70 108 70 109
+pipe 71 108 71 111
+line 70 108 70 109
+line 71 111 72 111
+pump 69 108 69 109
+pump 70 110 70 111
