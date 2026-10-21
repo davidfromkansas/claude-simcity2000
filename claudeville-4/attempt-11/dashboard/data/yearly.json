@@ -433,5 +433,38 @@
    "jammed": 0,
    "bonds": 15
   }
+ },
+ {
+  "year": 2013,
+  "tone": "good",
+  "title": "59,090 people; SW home strip",
+  "moves": [
+   "Loan 16: SW home strip + power",
+   "SW strip pipes"
+  ],
+  "happened": "Feb 2014: 59,090 people. Loan 16 paid for the SW home strip (powered by a new line down x12) and pipes into the SW strip.",
+  "watching": "Recreation cap near 60,000; power 13%",
+  "start": {
+   "date": "Feb 2013",
+   "population": 54480,
+   "money": 2269,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 60,
+   "jammed": 0,
+   "bonds": 15
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 59090,
+   "money": 2675,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 1,
+   "bonds": 16
+  }
  }
 ]
