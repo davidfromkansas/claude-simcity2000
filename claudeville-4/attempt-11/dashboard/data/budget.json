@@ -133,5 +133,20 @@
   },
   "est_property_tax": 2489,
   "budget_shot": "budget/2008.png"
+ },
+ {
+  "year": 2009,
+  "date": "Jul 2009",
+  "cash": 2279,
+  "loans": 11,
+  "cash_change": 874,
+  "population": 33010,
+  "tax": {
+   "res": 7,
+   "com": 9,
+   "ind": 9
+  },
+  "est_property_tax": 3426,
+  "budget_shot": "budget/2009.png"
  }
 ]
