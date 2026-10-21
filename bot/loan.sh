@@ -25,8 +25,9 @@ fixed = 400 + 100 * d.get("services", {}).get("fire", {}).get("count", 0) // 2  
 yearly = income - (bonds + 1) * 500 - fixed
 end = cash + 10000 + yearly * (2050 - year)
 # attempt 7: 32 loans for ~92,000 people (~2,900 each) ran out of money; attempt 6 (the best) kept ~3,300-4,400 each
-if pop >= 30000 and pop / (bonds + 1) < 3000:
-    print("LOAN: refused - %d people for %d loans is under 3,000 per loan (attempt 7 went broke at ~2,900; LOAN_OK=1 to override)" % (pop, bonds + 1))
+floor = r.get("loan_floor", 3000)   # attempt 11: 4,000 (attempt 10 went broke at ~2,600 per loan)
+if pop >= 30000 and pop / (bonds + 1) < floor:
+    print("LOAN: refused - %d people for %d loans is under %d per loan (attempts 7 and 10 went broke under 3,000; LOAN_OK=1 to override)" % (pop, bonds + 1, floor))
     sys.exit(1)
 if pop >= 20000 and end < -80000:
     print("LOAN: refused by the loan budget - cash projected to 2050 with this loan: ~$%d (game over near -$100k; LOAN_OK=1 to override)" % end)

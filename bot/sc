@@ -46,10 +46,14 @@ case $cmd in
   move) xdotool mousemove --window "$W" "$1" "$2";;
   key) for k in "$@"; do xdotool key --window "$W" "$k"; sleep 0.1; done;;
   type) xdotool type --window "$W" --delay 60 "$*";;
-  save) "$0" menu 25 7 45 103; sleep 2
+  save) sv0=$(python3 -I -c "import sys,os;sys.path.insert(0,'$(dirname "$0")');import sc2parse as p;print(os.path.getmtime(p.SAVE))" 2>/dev/null)
+        "$0" menu 25 7 45 103; sleep 2
         # dismiss "Game Saved" only if the grey box is really there (else the click would build with the current tool)
         import -window "$W" /tmp/sc/sv.png
         convert /tmp/sc/sv.png -crop 1x1+320+228 -format "%[fx:abs(r-g)<0.05&&abs(g-b)<0.05&&r>0.55?1:0]" info: | grep -q 1 && "$0" click 320 228; sleep 0.5; python3 -I "$(dirname "$0")/publish.py" metrics
+        # attempt 10: the game had ended (bankrupt, start menu) and save kept printing the old file as if current
+        sv1=$(python3 -I -c "import sys,os;sys.path.insert(0,'$(dirname "$0")');import sc2parse as p;print(os.path.getmtime(p.SAVE))" 2>/dev/null)
+        [ "$sv0" = "$sv1" ] && { echo "SAVE FAILED: the save file did not change - is the game still in the city view (game over / start menu)? Look at sc snap."; exit 4; }
         python3 -I -c "import sys,json;sys.path.insert(0,'$(dirname "$0")');import sc2parse as p;m=p.parse(p.SAVE);h=m['health'];print(m['date'],'pop',m['population'],'cash',m['money'],'bonds',m['bonds'],'RCI',m['demand'],'| water',str(h['watered_pct'])+'%','power',str(h['powered_pct'])+'%','abandoned',h['abandoned'],'jammed',h['jammed_road_tiles'],'unemp',m['graphs']['unemployment'][:1],'tax',m['tax']['res'])";;
   paused) import -window "$W" /tmp/sc/st.png
         # count the exact green of the "*PAUSED*" label anywhere in the top strip (the tool panel can sit anywhere there)

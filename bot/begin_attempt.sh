@@ -31,6 +31,7 @@ fi
 ./sc click 267 260; sleep 1; ./sc click 430 307; sleep 0.8; ./sc click 459 123; sleep 0.5; ./sc pause
 python3 -c "import json;r=json.load(open('run.json'));r['bonds']=1;json.dump(r,open('run.json','w'))"
 ./sc save | cut -c1-80
+bash ordinances.sh || true   # attempt 10 forgot the finance ordinances for 40 years - enact them on day one
 rm -f /tmp/sc/rec.stop
 (DISPLAY=:99 nohup bash record.sh >/dev/null 2>&1 &)
 (nohup python3 -I publish.py loop >/tmp/sc/pub.log 2>&1 &)

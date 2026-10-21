@@ -179,3 +179,30 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
 - Money and land: attempts 6, 8 and 9 show the order works to ~95,000 by ~2028; the ceiling after that is land use
   (attempt 6: map full at ~112,000 by 2043) and the caps (recreation, airport, factory trade).
 - Controller: the north map edge (views that cannot centre) is still unsafe - stay off it or fix autocal first.
+
+## Claudeville 4 attempt 10 (peak 109,570 - bankrupt Jan 2048)
+- Attempt 9's opening plus the fire rules gave the fastest city so far: 100,000 by Nov 2032 (attempt 6: 2036). The one
+  disaster fire (2036) was out in two watched bursts: dispatching firefighters at once works.
+- **Debt ended it.** 35 loans at 100,000 and 41 by 2038 (~2,600 people each, attempt 6 ~4,400). Bonds cost
+  $24-31k a year against ~$11k of tax; ordinances were forgotten until 2040; taxes were raised on a stalled city
+  in 2041 (recession, 109k -> 93k); road funding cut to 0% in 2046 lost 89 roads. Cash hit -$102k in Jan 2048.
+
+## Across all ten attempts (before attempt 11)
+- **How each ended:** debt in 1, 2, 7, 8 and 10 (game over 2031-2048); fire in 3, 4, 5, 8, 9. Only attempts 6
+  and 9 reached 2050, and attempt 6 (27 loans, ~4,400 people per loan) is still the best at 120,770.
+- **Fire is solved** by attempt 10's rules (stations per ~6,000 people, dispatch at once, watched bursts).
+- **Money is now the main limit.** Every city past ~30 loans went broke; bond cost per loan also rises with the
+  count. The people-per-loan floor of 3,000 was too low (attempt 10 sat at ~2,600-2,900 most of the game because
+  the floor applies only to new loans). The best cities kept income near the bond bill by ~2030.
+- **Land fills by ~2033-2043 at ~105-120k** in every good attempt. The map alone cannot hold 200,000 at
+  ~35-38 people per home tile; the only route the game offers is **arcologies, unlocked at 120,000 people**. No
+  attempt has yet checked the arcology menu, its price or its population. Buying arcologies needs cash, which needs
+  a low-debt city.
+- **Never again:** raising taxes on a stalled city (3 times now), cutting road funding, skipping ordinances.
+
+## So attempt 11
+1. Attempt 10's opening and fire rules (fastest to 100,000), but **ordinances in Jan 2000** and a **4,000
+   people-per-loan floor from 30,000 people** (loan.sh), aiming for <= 30 loans by 120,000.
+2. Taxes: controller 7-9%, never above 9% while demand is negative; transit and fire funding never cut.
+3. Reach 120,000 (attempt 6 did it in 2043), then open the arcology menu at once, record price and population,
+   and save cash for them; add towers (land value) on the remaining land meanwhile.

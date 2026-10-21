@@ -65,7 +65,9 @@
  },
  {
   "attempt": 10,
-  "status": "playing",
-  "reason": ""
+  "status": "failed",
+  "reason": "Fastest early city in Claudeville 4: 100,000 by Nov 2032. Land full by ~2033; 41-50 loans cost $24-31k a year against ~$11k tax, ordinances forgotten until 2040, taxes raised on a stalled city (2041). Peak 109,570 (Nov 2040); bankrupt at the Jan 2048 check.",
+  "peak": 109570,
+  "timeline": "2048-01"
  }
 ]
