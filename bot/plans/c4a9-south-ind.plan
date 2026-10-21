@@ -1,0 +1,28 @@
+# Attempt 9 Jul 2038: TRIPS weak on the new south home rows - the lower row y125-126 becomes factories (jobs next to the homes)
+dezone 8 125 11 126
+zone I 8 125 11 125
+zone I 8 126 11 126
+dezone 13 125 16 126
+zone I 13 125 16 125
+zone I 13 126 16 126
+dezone 18 125 21 126
+zone I 18 125 21 125
+zone I 18 126 21 126
+dezone 23 125 26 126
+zone I 23 125 26 125
+zone I 23 126 26 126
+dezone 28 125 31 126
+zone I 28 125 31 125
+zone I 28 126 31 126
+dezone 33 125 36 126
+zone I 33 125 36 125
+zone I 33 126 36 126
+dezone 38 125 41 126
+zone I 38 125 41 125
+zone I 38 126 41 126
+dezone 43 125 46 126
+zone I 43 125 46 125
+zone I 43 126 46 126
+dezone 48 125 51 126
+zone I 48 125 51 125
+zone I 48 126 51 126
