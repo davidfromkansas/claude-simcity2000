@@ -389,6 +389,49 @@
    "jammed": 0,
    "bonds": 13
   },
-  "end": null
+  "end": {
+   "date": "Feb 2012",
+   "population": 50890,
+   "money": -1124,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 14
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "good",
+  "title": "53,110 people; SW strip",
+  "moves": [
+   "Loan 15: SW strip (c4a8-swind) + fixes",
+   "Powerfix links"
+  ],
+  "happened": "Dec 2012: 53,110 people (attempt 10: 32,720 in Jul 2012). Loan 15 paid for the SW homes/factories strip, which needed road joins, power links and (Feb 2013) pipes.",
+  "watching": "Home land short; SW home strip next",
+  "start": {
+   "date": "Feb 2012",
+   "population": 50890,
+   "money": -1124,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 14
+  },
+  "end": {
+   "date": "Feb 2013",
+   "population": 54480,
+   "money": 2269,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 60,
+   "jammed": 0,
+   "bonds": 15
+  }
  }
 ]
