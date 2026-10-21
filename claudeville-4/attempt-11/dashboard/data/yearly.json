@@ -131,5 +131,37 @@
    "jammed": 0,
    "bonds": 6
   }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "Water fixed, 15,100 people",
+  "moves": [
+   "South pumps + power (a19-pumps-s, c4a6-pumps-power)"
+  ],
+  "happened": "Dec 2004: 15,100 people (attempt 10: 13,130). South pumps built when spare water fell to 7%.",
+  "watching": "Factory land and the recreation cap",
+  "start": {
+   "date": "Feb 2004",
+   "population": 13440,
+   "money": 9617,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 67,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 15600,
+   "money": 5105,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 50,
+   "jammed": 0,
+   "bonds": 6
+  }
  }
 ]
