@@ -466,5 +466,97 @@
    "jammed": 1,
    "bonds": 16
   }
+ },
+ {
+  "year": 2014,
+  "tone": "good",
+  "title": "61,790 people; stadium #2",
+  "moves": [
+   "Loan 17: coal plant + fire station + stadium (c4a11-wr)"
+  ],
+  "happened": "Dec 2014: 61,790 people. Loan 17 paid for a coal plant, fire station and stadium #2 on the free west-bank strip by the river.",
+  "watching": "Land filling",
+  "start": {
+   "date": "Feb 2014",
+   "population": 59090,
+   "money": 2675,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 1,
+   "bonds": 16
+  },
+  "end": {
+   "date": "Feb 2015",
+   "population": 63100,
+   "money": 1838,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 17
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "steady",
+  "title": "Growing on the land built",
+  "moves": [],
+  "happened": "No new builds: cash stayed under $2,000 and the loan floor held loan 18 back; the city filled the land already zoned.",
+  "watching": "Land almost full",
+  "start": {
+   "date": "Feb 2015",
+   "population": 63100,
+   "money": 1838,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 66930,
+   "money": 1017,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 79,
+   "jammed": 0,
+   "bonds": 17
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "steady",
+  "title": "Growing on the land built",
+  "moves": [],
+  "happened": "No new builds: cash stayed under $2,000 and the loan floor held loan 18 back; the city filled the land already zoned.",
+  "watching": "Land almost full",
+  "start": {
+   "date": "Feb 2016",
+   "population": 66930,
+   "money": 1017,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 79,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2017",
+   "population": 69230,
+   "money": 562,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 83,
+   "jammed": 0,
+   "bonds": 17
+  }
  }
 ]
