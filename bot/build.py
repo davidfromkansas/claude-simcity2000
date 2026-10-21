@@ -447,6 +447,20 @@ def main(path, dry=False):
                 continue
         place(s, c)
         n = sum(1 for x, y in s["tiles"] if not done(before, s, x, y))   # only tiles that were missing cost money
+        if not big and n:
+            # C4 attempt 9 (Nov 2040): at the north map edge a whole shop plan landed 11 rows south (bridges, stray
+            # zones, $3.6k) and was only found at the end. Check each step at once: nothing of it in place but
+            # tiles outside the plan changed = the clicks are landing off -> stop before spending more.
+            save()
+            c2 = City()
+            if not any(done(c2, s, x, y) for x, y in s["tiles"] if not done(before, s, x, y)):
+                moved = [(i % N, i // N) for i in range(N * N) if c2.b[i] != before.b[i] and (i % N, i // N) not in plan_tiles]
+                if moved:
+                    print("PLAN ERROR: line %d %s: none of its tiles landed but %d tiles outside the plan changed, e.g. %s"
+                          " - clicks are landing off (calibration)" % (s["line"], s["kind"], len(moved), moved[:4]))
+                    print("BUILD: stopped - clicks landed off")
+                    return 3
+            c = c2
         expect += COST.get(s.get("z", s["kind"]), 0) * (1 if big else n)
         if big:
             ca = save()
