@@ -323,6 +323,49 @@
    "jammed": 0,
    "bonds": 11
   },
-  "end": null
+  "end": {
+   "date": "Feb 2010",
+   "population": 38260,
+   "money": 1756,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 24,
+   "jammed": 0,
+   "bonds": 12
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "good",
+  "title": "Across the river; 44,170 people",
+  "moves": [
+   "Loan 12: west district + causeway, west power",
+   "Loan 13: west coal plant, zoo #2"
+  ],
+  "happened": "Dec 2010: 44,170 people (attempt 10: 28,630). Loan 12 crossed the river (west district + causeway); power fell to 4% and loan 13 paid for the west coal plant and zoo #2. Home tax 7 -> 8 -> 9% with home demand near the maximum.",
+  "watching": "Shop land short; west districts 2-3",
+  "start": {
+   "date": "Feb 2010",
+   "population": 38260,
+   "money": 1756,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 24,
+   "jammed": 0,
+   "bonds": 12
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 45310,
+   "money": 2539,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 0,
+   "bonds": 13
+  }
  }
 ]
