@@ -1,0 +1,3 @@
+# Attempt 9 Jul 2030: rebuild the coal plant (123,112) and its fire station (120,112) burned in the 2028 fire; spare power 12%
+fire 120 112
+coal 123 112
