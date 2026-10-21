@@ -1,0 +1,18 @@
+# Attempt 9 Oct 2028: autocal test roads left by the zoom-fail exits during the rebuild
+bulldoze 33 73 33 73
+bulldoze 37 106 37 106
+bulldoze 72 106 72 106
+bulldoze 73 23 73 23
+bulldoze 82 112 82 112
+bulldoze 93 39 93 39
+bulldoze 94 9 94 9
+bulldoze 94 13 94 13
+bulldoze 94 107 94 107
+bulldoze 94 111 94 111
+bulldoze 106 11 106 11
+bulldoze 112 115 112 115
+bulldoze 113 85 113 85
+bulldoze 116 31 116 31
+bulldoze 120 68 120 68
+bulldoze 121 71 121 71
+bulldoze 127 69 127 69
