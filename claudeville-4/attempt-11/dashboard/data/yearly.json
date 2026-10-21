@@ -558,5 +558,38 @@
    "jammed": 0,
    "bonds": 17
   }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "Land full; east strip and zoo #3",
+  "moves": [
+   "Loan 18: east strip + power",
+   "Zoo #3"
+  ],
+  "happened": "Dec 2017: 69,520 people (attempt 10: 43,940). Loan 18 (loan floor now slopes to 4,000 at 120,000) paid for the east strip; zoo #3 from cash.",
+  "watching": "Home demand slightly negative",
+  "start": {
+   "date": "Feb 2017",
+   "population": 69230,
+   "money": 562,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 83,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2018",
+   "population": 69880,
+   "money": 1433,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 18
+  }
  }
 ]
