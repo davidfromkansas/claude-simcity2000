@@ -1,0 +1,5 @@
+# NE shops: road y7 broken by a rubble tile at (101,7); pipe joins to the x90-91 pipes
+road 101 7 101 7
+pipe 92 4 92 4
+pipe 92 10 92 10
+bulldoze 118 4 118 4
