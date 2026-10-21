@@ -1,0 +1,30 @@
+# stripplan.py 44 9 57 22 ICRCI --cross 8 --line 8
+line 48 9 48 22
+road 44 12 56 12
+road 44 19 57 19
+road 44 8 44 22
+road 52 8 52 22
+road 57 13 57 22
+zone I 45 9 47 11
+zone I 49 9 51 11
+zone I 53 9 56 11
+zone C 45 13 47 15
+zone C 49 13 51 15
+zone C 53 13 55 15
+zone R 45 16 47 18
+zone R 49 16 51 18
+zone R 53 16 56 18
+zone C 45 20 47 22
+zone C 49 20 51 22
+zone C 53 20 56 22
+pipe 44 12 56 12
+pipe 44 19 57 19
+pipe 44 7 44 22
+pipe 52 7 52 22
+pipe 57 7 57 9
+pipe 57 13 57 22
+# links: road to road y20 (x40), line x48 down to the riverbank coal plant (42-48,28-30), pipe to the x40 pipe
+road 41 20 43 20
+line 48 23 48 27
+pipe 41 20 43 20
+pipe 40 20 40 20
