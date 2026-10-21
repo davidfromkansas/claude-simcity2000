@@ -1,0 +1,3 @@
+# Attempt 9 Jul 2032: autocal test road on line y62 (114,62) - restore the line
+bulldoze 114 62 114 62
+line 114 62 114 62
