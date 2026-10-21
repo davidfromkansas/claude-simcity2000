@@ -62,5 +62,10 @@
   "reason": "Ahead of every earlier attempt until 2028 (89,990 in Jul 2027). Sep 2028 alien-ship fires became a great fire (94,400 -> 48,320); rebuilt to a peak of 102,360 (Dec 2044); 97,880 at the Jan 2050 check with 46 loans.",
   "peak": 102360,
   "timeline": "2050-01"
+ },
+ {
+  "attempt": 10,
+  "status": "playing",
+  "reason": ""
  }
 ]
