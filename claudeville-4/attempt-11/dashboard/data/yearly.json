@@ -219,6 +219,40 @@
    "jammed": 0,
    "bonds": 8
   },
+  "end": {
+   "date": "Feb 2007",
+   "population": 22440,
+   "money": 1507,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "good",
+  "title": "26,020 people",
+  "moves": [
+   "Mid pumps (from cash)",
+   "Loan 9",
+   "West block + pipes, south district + power"
+  ],
+  "happened": "Dec 2007: 26,020 people (attempt 10: 20,350). Loan 9 was refused by the loan guard in Dec 2006 and allowed after the January budget; west block and south district built with it.",
+  "watching": "Shop land short; river crossing due",
+  "start": {
+   "date": "Feb 2007",
+   "population": 22440,
+   "money": 1507,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 0,
+   "bonds": 8
+  },
   "end": null
  }
 ]
