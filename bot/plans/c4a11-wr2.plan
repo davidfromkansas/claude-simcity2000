@@ -1,0 +1,10 @@
+# Attempt 11 Nov 2018: spare water 11%, power 14% -> coal plant x42-45 y24-27 touching the y28 plant; 6 shore pumps x58 y28-30 and
+# x59 y31-33 powered by line y29 from the fire station (x48) and line x58 y31-33; pipes x57 y28-36 and y36 x41-57 to the x40 main
+coal 42 24
+line 49 29 57 29
+line 58 31 58 33
+pump 58 28 58 30
+pump 59 31 59 33
+pipe 57 28 57 36
+pipe 41 36 56 36
+pipe 58 31 58 33
