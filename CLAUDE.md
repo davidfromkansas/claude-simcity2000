@@ -99,6 +99,10 @@ Toolbar is the left column (x 10-80).
   10-second bursts centred on the disaster and stops at once when the fire grows (exit 2 = act: firebreak).
   NEVER run the game unwatched at Cheetah during a disaster (attempt 8: a 24-tile fire became ~4,800 rubble tiles).
 - firebreak.py misreads red rooftops and the alien ship as flames; cut only a tight ring around the real cluster.
+- (after attempt 9) FIRST dispatch firefighters: Emergency tool `sc tool 68 58 135 81`, click every flame cluster (one unit per
+  station), re-dispatch after each burst. disaster.sh now also stops on +25 rubble anywhere on the map. Roads/lines can be
+  placed straight onto rubble; `bot/powerfix.py OUT.plan` plans the power links for districts left dark.
+- Never build at the north map edge (y < 12): views there cannot centre and whole plans landed 11-21 rows off.
 
 ## Post-mortem rule (from the user)
 Every post-mortem must split causes into CONTROL failures (the agent could not carry out its own plan: misplaced or

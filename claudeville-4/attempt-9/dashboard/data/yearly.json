@@ -1,0 +1,1077 @@
+[
+ {
+  "year": 2001,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Feb 2001: loan #2, 2003 district."
+  ],
+  "happened": "Builds: Feb 2001",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2002,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Jul 2002: loans #3-4: coal plant + 19 north pumps, second coal plant + north job district.",
+   "Tax controller: shops 7 -> 8 (demand 1994), factories 7 -> 8 (demand 2000)"
+  ],
+  "happened": "Builds: Jul 2002; Tax controller",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2003,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Tax controller: homes 7 -> 6 (demand -1904), shops 8 -> 9 (demand 1896), factories 8 -> 9 (demand 2000)",
+   "Zoo from cash; finance ordinances + City Beautification.",
+   "Tax controller: factories 9 -> 10 (demand 1144)"
+  ],
+  "happened": "Builds: Tax controller; Zoo from cash; finance ordinances + City Beautification.; Tax controller",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2004,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Jul 2004: loan #5: seaport job strip, east-edge homes with their power feeds; airport from cash.",
+   "Dec 2004: loans #6-7: south pumps, district 5; stadium + 4 fire stations from cash."
+  ],
+  "happened": "Builds: Jul 2004; Dec 2004",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2005,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [],
+  "happened": "No new builds this year; the city grew on the land already zoned.",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2006,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Feb 2006: loan #8: east coal plant + fire station, factory + home block by the seaport.",
+   "Tax controller: shops 9 -> 10 (demand 1032)"
+  ],
+  "happened": "Builds: Feb 2006; Tax controller",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2007,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [],
+  "happened": "No new builds this year; the city grew on the land already zoned.",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2008,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Feb 2008: loan #9: south mixed district (factory demand 1,290).",
+   "Jul 2008: south-east district + road links east and south from cash."
+  ],
+  "happened": "Builds: Feb 2008; Jul 2008",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2009,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [],
+  "happened": "No new builds this year; the city grew on the land already zoned.",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2010,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Loan 10: south coal plant and second seaport (joined to road row 55; its old extra road was not needed)"
+  ],
+  "happened": "Builds: Loan 10",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2011,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Tax controller: homes 6 -> 7 (demand 1139)",
+   "Loan 11: 7 lake-shore pumps (water 5% spare), south band (shops+factories+homes) and south-west band (homes+sh"
+  ],
+  "happened": "Builds: Tax controller; Loan 11",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2012,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Rezoned two empty factory rows of the south band (y119, y124) to shops: shop demand 1,793 with no land, factor"
+  ],
+  "happened": "Builds: Rezoned two empty factory rows of the south band (y119, y124",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2013,
+  "tone": "milestone",
+  "title": "River crossing",
+  "moves": [
+   "Loan 12: river crossing - bridge + west district, west coal plant, west-edge road link ($1,000 charged)",
+   "Tax controller: factories 10 -> 9 (demand -432)"
+  ],
+  "happened": "Bridge, west district, west coal plant and west-edge link (loan 12).",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2014,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Tax controller: shops 10 -> 9 (demand -629)",
+   "Tax controller: shops 9 -> 8 (demand -858)"
+  ],
+  "happened": "Builds: Tax controller; Tax controller",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2015,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Tax controller: homes 7 -> 8 (demand 172)",
+   "Loans 13-14: zoo #3 and the second west district with riverbank pumps; tax 8/8/9",
+   "NW coal plant + fire station; west strip x10-19 y28-61 (factories, shops, homes)",
+   "CONTROL: the west4 build left a stray 3-tile bridge at x13 y63-65 (audit FAIL: road not joined); joined it to "
+  ],
+  "happened": "Builds: Tax controller; Loans 13-14; NW coal plant + fire station; west strip x10-19 y28-61 (fact",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2016,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Tax controller: shops 8 -> 7 (demand -394), factories 9 -> 10 (demand 1069)"
+  ],
+  "happened": "Builds: Tax controller",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2017,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Loan 15: west shop cells x21-39 y21-26, marina on the SW river shore, zoo at 49,99 (home demand only +70)",
+   "10 shore pumps (x70 y103-107, SW lake y76 x31-35): spare water 8%"
+  ],
+  "happened": "Builds: Loan 15; 10 shore pumps (x70 y103-107, SW lake y76 x31-35)",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2018,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Tax controller: shops 7 -> 8 (demand 1384)",
+   "Tax controller: shops 8 -> 9 (demand 1596)",
+   "Loans 16-17: south-west strip district x8-27 y71-97 (factories/shops/homes bands) and a coal plant on the west"
+  ],
+  "happened": "Builds: Tax controller; Tax controller; Loans 16-17",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2019,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Tax controller: factories 10 -> 9 (demand -919)"
+  ],
+  "happened": "Builds: Tax controller",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2020,
+  "tone": "setback",
+  "title": "SW coal plant fire",
+  "moves": [
+   "Tax controller: shops 9 -> 8 (demand -699), factories 9 -> 8 (demand -882)",
+   "Aug 2020: the SW coal plant burned (fire spread into the SW strip district, 79 rubble tiles, district unpowere",
+   "Sep 2020: fire over. SW district lost its buildings, roads and lines (zones kept), the SW coal plant and zoo #",
+   "CONTROL: the SW rebuild (c4a8-sw) landed shifted ~(+14,+8) - a copy of the district was built on empty land x2",
+   "SW district repaired: rubble cleared, coal plant + fire station, roads, zoo rebuilt; power joined around road "
+  ],
+  "happened": "The south-west coal plant burned and the fire took its district; the rebuild landed 14 tiles off (kept as an extra block).",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2021,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Tax controller: homes 8 -> 7 (demand -161), shops 8 -> 6 (demand -1088), factories 8 -> 7 (demand -201)",
+   "Feb 2021: all demand negative (shops -1,088), unemployment 8% -> taxes 7/6/7",
+   "Loan 19: river pumps x59-60 y88-101 and 4 west-bank shore pumps x59 y39-42 (+ feed line from the riverbank coa"
+  ],
+  "happened": "Builds: Tax controller; Feb 2021; Loan 19",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2022,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [],
+  "happened": "No new builds this year; the city grew on the land already zoned.",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2023,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Loans 20-21: stadium #2 at 43,84; new strip districts south (x12-52 y106-121) and by the east river (x43-58 y8"
+  ],
+  "happened": "Builds: Loans 20-21",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2024,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Tax controller: homes 7 -> 8 (demand 1543), factories 7 -> 8 (demand 1123)",
+   "Nov 2024: coal plant at 53,101 (+fire station) for spare power 9%; homes zoned on the empty rows y93-94 of the"
+  ],
+  "happened": "Builds: Tax controller; Nov 2024",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2025,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Tax controller: homes 8 -> 9 (demand 1796)",
+   "Tax controller: homes 9 -> 10 (demand 1971), shops 6 -> 7 (demand 2000)"
+  ],
+  "happened": "Builds: Tax controller; Tax controller",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2026,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Feb 2026: 6 fire stations (SW district, west coal plant, east gaps) - fire cover 13 stations for 84,710",
+   "autocal: an unverified zoom now tries the next spot and only fails if no spot verifies (the first rule gave a ",
+   "autocal: at the east map edge the zoom-check road (32 px right/down) fell off the map -> now also tries 32 px ",
+   "Loan 23: east strip x109-125 y63-96 (homes/shops), powered from the east-edge coal plant's fire station",
+   "Tax controller: shops 7 -> 8 (demand 2000)"
+  ],
+  "happened": "Builds: Feb 2026; autocal; autocal",
+  "watching": "land, power and water",
+  "start": null,
+  "end": null
+ },
+ {
+  "year": 2027,
+  "tone": "steady",
+  "title": "0 people",
+  "moves": [
+   "Tax controller: shops 8 -> 9 (demand 2000)",
+   "Jul 2027: NW coal plant #2 (10,21) + fire station; north shop strip x21-40 y1-11; 7 west-riverbank shore pumps",
+   "Aug 2027: the 2006 coal plant at 78,35 wore out (no fire) - rubble cleared and a new coal plant built on the s"
+  ],
+  "happened": "Builds: Tax controller; Jul 2027; Aug 2027",
+  "watching": "land, power and water",
+  "start": null,
+  "end": {
+   "date": "Oct 2028",
+   "population": 48320,
+   "money": 2320,
+   "unemployment": 2,
+   "watered_pct": 78,
+   "powered_pct": 79,
+   "abandoned": 83,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2028,
+  "tone": "setback",
+  "title": "Great fire",
+  "moves": [
+   "Loan 25: 22 more pumps on the south lake shore (spare water 3%, 143 dry)",
+   "Sep 2028: alien-ship disaster set 5 fires (one in the dense middle x99-106 y61-70). Game paused; 161-tile fire",
+   "CONTROL: disaster.sh watched only the view around the alien ship; a fire elsewhere grew over 17 bursts into a ",
+   "CONTROL: the second firebreak never ran - autocal found no spot for its zoom check in burned/built views. Fix:",
+   "Oct 2028: the alien-ship great fire is over. Population 94,400 -> 48,320; 3,470 rubble tiles (942 road and 663",
+   "Loans 26-27 (over the loan floor, LOAN_OK): rebuild every burned road, line and pump from the Jul 2028 save (1"
+  ],
+  "happened": "An alien ship set five fires that became a great fire across the east bank: 94,400 -> 48,320 people.",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Oct 2028",
+   "population": 48320,
+   "money": 2320,
+   "unemployment": 2,
+   "watered_pct": 78,
+   "powered_pct": 79,
+   "abandoned": 83,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2029",
+   "population": 47710,
+   "money": -1129,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 98,
+   "abandoned": 36,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2029,
+  "tone": "setback",
+  "title": "Rebuilding",
+  "moves": [],
+  "happened": "Roads, lines and pumps rebuilt from the Jul 2028 save; powerfix.py relinked dark districts.",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2029",
+   "population": 47710,
+   "money": -1129,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 98,
+   "abandoned": 36,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2030",
+   "population": 56750,
+   "money": 1495,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 99,
+   "abandoned": 129,
+   "jammed": 0,
+   "bonds": 28
+  }
+ },
+ {
+  "year": 2030,
+  "tone": "good",
+  "title": "62,020 people",
+  "moves": [
+   "Tax controller: homes 10 -> 9 (demand 872), shops 9 -> 7 (demand -2000)",
+   "Jul 2030: taxes 9/7/8 (shops -2,000, unemployment 8%); loan 29 rebuilt the SE coal plant + fire station burned",
+   "Nov 2030: zoo rebuilt at 117,98 (only 1 stadium/zoo/marina left for 62,000 people after the fire)"
+  ],
+  "happened": "Builds: Tax controller; Jul 2030; Nov 2030",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2030",
+   "population": 56750,
+   "money": 1495,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 99,
+   "abandoned": 129,
+   "jammed": 0,
+   "bonds": 28
+  },
+  "end": {
+   "date": "Feb 2031",
+   "population": 64140,
+   "money": -5785,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 247,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2031,
+  "tone": "good",
+  "title": "74,160 people",
+  "moves": [
+   "Tax controller: shops 7 -> 6 (demand -1190)"
+  ],
+  "happened": "Builds: Tax controller",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2031",
+   "population": 64140,
+   "money": -5785,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 247,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2032",
+   "population": 75480,
+   "money": -12713,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 109,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2032,
+  "tone": "good",
+  "title": "78,710 people",
+  "moves": [
+   "Jul 2032: bond payments $13k/yr vs $9.4k income; a $10k loan costs ~$450/yr = ~$8k by 2050, so late loans stil",
+   "Jul 2032: coal plant (78,35), stadium (114,56), fire stations (15,21) and (46,28) built; a test road on line y"
+  ],
+  "happened": "Builds: Jul 2032; Jul 2032",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2032",
+   "population": 75480,
+   "money": -12713,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 109,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2033",
+   "population": 78890,
+   "money": 187,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 114,
+   "jammed": 0,
+   "bonds": 32
+  }
+ },
+ {
+  "year": 2033,
+  "tone": "steady",
+  "title": "82,310 people",
+  "moves": [
+   "Tax controller: shops 6 -> 7 (demand 1024)",
+   "Tax controller: shops 7 -> 8 (demand 1221)",
+   "Nov 2033: loan 33 for 31 shore pumps on every empty shore tile already touching power and pipes (spare water 5"
+  ],
+  "happened": "Builds: Tax controller; Tax controller; Nov 2033",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2033",
+   "population": 78890,
+   "money": 187,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 114,
+   "jammed": 0,
+   "bonds": 32
+  },
+  "end": {
+   "date": "Feb 2034",
+   "population": 82940,
+   "money": -276,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 128,
+   "jammed": 0,
+   "bonds": 33
+  }
+ },
+ {
+  "year": 2034,
+  "tone": "good",
+  "title": "87,150 people",
+  "moves": [
+   "Tax controller: shops 8 -> 9 (demand 1255)"
+  ],
+  "happened": "Builds: Tax controller",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2034",
+   "population": 82940,
+   "money": -276,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 128,
+   "jammed": 0,
+   "bonds": 33
+  },
+  "end": {
+   "date": "Feb 2035",
+   "population": 87840,
+   "money": -7576,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 102,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2035,
+  "tone": "steady",
+  "title": "90,340 people",
+  "moves": [],
+  "happened": "No new builds this year; the city grew on the land already zoned.",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2035",
+   "population": 87840,
+   "money": -7576,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 102,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2036",
+   "population": 90300,
+   "money": -14177,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 135,
+   "jammed": 0,
+   "bonds": 33
+  }
+ },
+ {
+  "year": 2036,
+  "tone": "steady",
+  "title": "91,630 people",
+  "moves": [
+   "Tax controller: factories 8 -> 7 (demand -383)"
+  ],
+  "happened": "Builds: Tax controller",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2036",
+   "population": 90300,
+   "money": -14177,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 135,
+   "jammed": 0,
+   "bonds": 33
+  },
+  "end": {
+   "date": "Feb 2037",
+   "population": 90210,
+   "money": -20728,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 141,
+   "jammed": 0,
+   "bonds": 33
+  }
+ },
+ {
+  "year": 2037,
+  "tone": "steady",
+  "title": "91,420 people",
+  "moves": [
+   "Tax controller: shops 9 -> 8 (demand -497), factories 7 -> 6 (demand -330)",
+   "Jun 2037: loans 34-36 (late loans pay back in cash by 2050); two home rows below the south district (roads y12"
+  ],
+  "happened": "Builds: Tax controller; Jun 2037",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2037",
+   "population": 90210,
+   "money": -20728,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 141,
+   "jammed": 0,
+   "bonds": 33
+  },
+  "end": {
+   "date": "Feb 2038",
+   "population": 91770,
+   "money": -2426,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 115,
+   "jammed": 1,
+   "bonds": 36
+  }
+ },
+ {
+  "year": 2038,
+  "tone": "steady",
+  "title": "93,520 people",
+  "moves": [
+   "Tax controller: homes 9 -> 10 (demand 1118)",
+   "Jul 2038: loan 37; lower south row y125-126 rezoned to factories so the new home row has jobs next door (TRIPS"
+  ],
+  "happened": "Builds: Tax controller; Jul 2038",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2038",
+   "population": 91770,
+   "money": -2426,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 115,
+   "jammed": 1,
+   "bonds": 36
+  },
+  "end": {
+   "date": "Feb 2039",
+   "population": 94640,
+   "money": -2566,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 0,
+   "bonds": 37
+  }
+ },
+ {
+  "year": 2039,
+  "tone": "steady",
+  "title": "95,610 people",
+  "moves": [
+   "Jul 2039: loan 38, coal plant (49,30) + fire station on the west riverbank (spare power 9%)"
+  ],
+  "happened": "Builds: Jul 2039",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2039",
+   "population": 94640,
+   "money": -2566,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 0,
+   "bonds": 37
+  },
+  "end": {
+   "date": "Jan 2040",
+   "population": 96140,
+   "money": -6852,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 0,
+   "bonds": 38
+  }
+ },
+ {
+  "year": 2040,
+  "tone": "steady",
+  "title": "98,800 people",
+  "moves": [
+   "Nov 2040: loans 39-40; zoo back on its burned lot (110,56) for the home cap; shop strip x93-118 y4-11 on the b",
+   "CONTROL: the NE shop plan (north map edge) landed 11 rows south - bridges and stray zones over the lakes, ~$3.",
+   "CONTROL: the NE shop plan landed off twice more at the north map edge (try 2: $3.3k on roads/zones 21 rows sou"
+  ],
+  "happened": "Builds: Nov 2040; CONTROL; CONTROL",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Jan 2040",
+   "population": 96140,
+   "money": -6852,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 0,
+   "bonds": 38
+  },
+  "end": {
+   "date": "Feb 2041",
+   "population": 99420,
+   "money": -7222,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 97,
+   "jammed": 0,
+   "bonds": 40
+  }
+ },
+ {
+  "year": 2041,
+  "tone": "milestone",
+  "title": "Back over 100,000",
+  "moves": [
+   "Tax controller: shops 8 -> 9 (demand 1338)",
+   "Jul 2041: 100,030 people - past 100,000 again after the 2028 fire",
+   "Jul 2041: shop strip x41-57 y35-46 on the west riverbank (powerfix links); guard now ignores road/line redraws",
+   "Dec 2041: coal plant (67,70) + fire station, line to x77 (spare power 7%)"
+  ],
+  "happened": "100,030 in Jul 2041 - past 100,000 again after the fire.",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2041",
+   "population": 99420,
+   "money": -7222,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 97,
+   "jammed": 0,
+   "bonds": 40
+  },
+  "end": {
+   "date": "Feb 2042",
+   "population": 99470,
+   "money": -5391,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 0,
+   "bonds": 42
+  }
+ },
+ {
+  "year": 2042,
+  "tone": "steady",
+  "title": "100,500 people",
+  "moves": [
+   "Tax controller: shops 9 -> 10 (demand 1063)",
+   "Jul 2042: loan 43; home cells by the west edge x8-19 y96-119"
+  ],
+  "happened": "Builds: Tax controller; Jul 2042",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2042",
+   "population": 99470,
+   "money": -5391,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 0,
+   "bonds": 42
+  },
+  "end": {
+   "date": "Feb 2043",
+   "population": 101150,
+   "money": -9361,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 111,
+   "jammed": 0,
+   "bonds": 43
+  }
+ },
+ {
+  "year": 2043,
+  "tone": "steady",
+  "title": "100,770 people",
+  "moves": [
+   "Tax controller: homes 10 -> 9 (demand 361), shops 10 -> 7 (demand -427), factories 6 -> 10 (demand 1040)",
+   "Dec 2043: ~101,000 and flat; deficit ~$12.5k/yr (43 loans). Factory tax 8->10% (factory demand 1,040); late lo"
+  ],
+  "happened": "Builds: Tax controller; Dec 2043",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2043",
+   "population": 101150,
+   "money": -9361,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 111,
+   "jammed": 0,
+   "bonds": 43
+  },
+  "end": {
+   "date": "Feb 2044",
+   "population": 101730,
+   "money": -22082,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 120,
+   "jammed": 0,
+   "bonds": 43
+  }
+ },
+ {
+  "year": 2044,
+  "tone": "steady",
+  "title": "102,360 people",
+  "moves": [],
+  "happened": "No new builds this year; the city grew on the land already zoned.",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2044",
+   "population": 101730,
+   "money": -22082,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 120,
+   "jammed": 0,
+   "bonds": 43
+  },
+  "end": {
+   "date": "Feb 2045",
+   "population": 102190,
+   "money": -34710,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 147,
+   "jammed": 0,
+   "bonds": 43
+  }
+ },
+ {
+  "year": 2045,
+  "tone": "steady",
+  "title": "101,520 people",
+  "moves": [
+   "Tax controller: factories 10 -> 9 (demand -501)",
+   "Tax controller: shops 7 -> 8 (demand 1260)",
+   "Tax controller: homes 9 -> 10 (demand 1124), shops 8 -> 9 (demand 1362), factories 9 -> 8 (demand -972)"
+  ],
+  "happened": "Builds: Tax controller; Tax controller; Tax controller",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2045",
+   "population": 102190,
+   "money": -34710,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 147,
+   "jammed": 0,
+   "bonds": 43
+  },
+  "end": {
+   "date": "Aug 2046",
+   "population": 100500,
+   "money": -47616,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 262,
+   "jammed": 0,
+   "bonds": 43
+  }
+ },
+ {
+  "year": 2046,
+  "tone": "steady",
+  "title": "100,500 people",
+  "moves": [],
+  "happened": "No new builds this year; the city grew on the land already zoned.",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Aug 2046",
+   "population": 100500,
+   "money": -47616,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 262,
+   "jammed": 0,
+   "bonds": 43
+  },
+  "end": {
+   "date": "Jul 2047",
+   "population": 102080,
+   "money": -59845,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 220,
+   "jammed": 0,
+   "bonds": 43
+  }
+ },
+ {
+  "year": 2047,
+  "tone": "steady",
+  "title": "Late loans",
+  "moves": [
+   "Jul 2047: cash -$59,845 heading for ~-$97k by Jan 2050 (game over near -$100k). Loans 44-46: +$30k now, ~$1.5k",
+   "Tax controller: factories 8 -> 7 (demand -823)"
+  ],
+  "happened": "Cash heading for -$97k by 2050; three late loans kept the city clear of bankruptcy.",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Jul 2047",
+   "population": 102080,
+   "money": -59845,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 220,
+   "jammed": 0,
+   "bonds": 43
+  },
+  "end": {
+   "date": "Feb 2048",
+   "population": 99820,
+   "money": -43117,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 247,
+   "jammed": 3,
+   "bonds": 46
+  }
+ },
+ {
+  "year": 2048,
+  "tone": "steady",
+  "title": "97,320 people",
+  "moves": [
+   "Tax controller: homes 10 -> 9 (demand -573), factories 7 -> 6 (demand -594)",
+   "Tax controller: shops 9 -> 8 (demand -760)"
+  ],
+  "happened": "Builds: Tax controller; Tax controller",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2048",
+   "population": 99820,
+   "money": -43117,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 247,
+   "jammed": 3,
+   "bonds": 46
+  },
+  "end": {
+   "date": "Feb 2049",
+   "population": 96860,
+   "money": -59082,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 271,
+   "jammed": 0,
+   "bonds": 46
+  }
+ },
+ {
+  "year": 2049,
+  "tone": "steady",
+  "title": "97,370 people",
+  "moves": [
+   "Tax controller: homes 9 -> 8 (demand -522)",
+   "Tax controller: shops 8 -> 7 (demand -766)"
+  ],
+  "happened": "Builds: Tax controller; Tax controller",
+  "watching": "fire cover and money",
+  "start": {
+   "date": "Feb 2049",
+   "population": 96860,
+   "money": -59082,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 271,
+   "jammed": 0,
+   "bonds": 46
+  },
+  "end": {
+   "date": "Feb 2050",
+   "population": 97880,
+   "money": -76917,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 171,
+   "jammed": 0,
+   "bonds": 46
+  }
+ }
+]

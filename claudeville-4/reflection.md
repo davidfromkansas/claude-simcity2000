@@ -155,3 +155,27 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
 ## Before attempt 9
 - Attempt 8's plan was the best start in Claudeville 4. Keep it; add disaster.sh for every disaster; hold taxes at 8%
   (the 2022-24 recession followed a drift to 9-10%).
+
+## Claudeville 4 attempt 9 (pre-fire 94,400; peak 102,360; 97,880 at Jan 2050)
+- Replaying attempt 8's order (with the loan floor) put it ahead of every earlier attempt until 2028: 58,130 in 2018,
+  81,280 in 2025, 89,990 in 2027 (about 6,000 ahead of pace).
+- **Fire again decided it.** A coal plant fire (2020) burned the south-west district; an alien ship (2028) set five
+  fires that became a great fire across the east bank (94,400 -> 48,320). disaster.sh watched only the view around the
+  ship; the fire spread elsewhere. **Emergency -> Dispatch Firefighters finally stopped the front** - the first time
+  in 9 attempts that this tool was used.
+- The rebuild worked (roads and lines go straight onto rubble; `powerfix.py` relinked dark districts): back above
+  100,000 by 2041 with 40 loans. Late loans pay back in cash by 2050 (~$450/yr each); 46 loans kept it alive.
+- Calibration failures at the map edges and in fully built views built whole plans in the wrong place three times
+  (~$10k). build.py now stops at the first step whose clicks land off; the north edge is still unsafe.
+
+## Across all nine attempts (before attempt 10)
+- **Fire is the single biggest loss in 6 of 9 attempts** (1, 3, 4, 5, 8, 9). The best city (attempt 6) had no great
+  fire. Attempts 8 and 9 both lost ~50% of a ~93,000 city to alien-ship fires around 2028-2038.
+- What worked against fire: no tree parks, plants spread out with stations, many stations, and in attempt 9 the
+  firefighter dispatch. What failed: firebreaks cut too late or too narrow, and watching only part of the map.
+- **So attempt 10's first rule: every disaster -> pause, dispatch firefighters (and police) onto every flame at once,
+  then watched 10-second bursts with the whole-map rubble check, re-dispatching each burst.** Firebreaks only around
+  clusters the trucks cannot reach.
+- Money and land: attempts 6, 8 and 9 show the order works to ~95,000 by ~2028; the ceiling after that is land use
+  (attempt 6: map full at ~112,000 by 2043) and the caps (recreation, airport, factory trade).
+- Controller: the north map edge (views that cannot centre) is still unsafe - stay off it or fix autocal first.

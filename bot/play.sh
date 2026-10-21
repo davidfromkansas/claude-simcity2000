@@ -17,6 +17,8 @@ for ((i=1;i<=n;i++)); do
   echo "$out" | grep -v -e "^paused: yes" -e "^AUDIT: passed" -e "stall check: OK"
   rubble=$(echo "$out" | sed -n 's/.*rubble \([0-9]*\).*/\1/p' | head -1)
   reason=""
+  # C4 attempt 9: play.sh ran on past Jan 2050 to a bankruptcy in 2052 - stop at the deadline like runout.sh
+  echo "$out" | grep -qE "^[A-Z][a-z]{2} 20[5-9][0-9] " && { echo "$out" | tail -3; ./sc pause >/dev/null 2>&1; echo "PLAY STOPPED: DEADLINE (Jan 2050) reached"; exit 0; }
   echo "$out" | grep -q "^FAIL" && [ -z "$AUDIT_OK" ] && reason="$reason; audit FAIL"
   # Claudeville 4 (2011): after the fire, single regrown buildings in burnt bands sit unpowered until neighbours grow;
   # UNPOWERED_OK=N runs on while at most N buildings are unpowered (spare power is checked separately)
