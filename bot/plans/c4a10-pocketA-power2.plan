@@ -1,0 +1,3 @@
+# road x75 doubles road x76, so no line can cross the pair: clear (75,114) and run line y114 across road x76 to line x77
+bulldoze 75 114 75 114
+line 75 114 76 114
