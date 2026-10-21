@@ -288,6 +288,41 @@
    "jammed": 0,
    "bonds": 10
   },
+  "end": {
+   "date": "Jul 2009",
+   "population": 33010,
+   "money": 2279,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 25,
+   "jammed": 0,
+   "bonds": 11
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "36,380 people; crossing the river",
+  "moves": [
+   "Loan 11",
+   "Lake pumps",
+   "South band, south-west band",
+   "Shore pumps"
+  ],
+  "happened": "Dec 2009: 36,380 people (attempt 10: 25,680). Loan 11 paid for lake pumps and the south and south-west bands. A reused shore-pump plan put 5 pumps on the still-empty west bank (control slip, ~$500).",
+  "watching": "River crossing (west district, coal plant)",
+  "start": {
+   "date": "Jul 2009",
+   "population": 33010,
+   "money": 2279,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 25,
+   "jammed": 0,
+   "bonds": 11
+  },
   "end": null
  }
 ]
