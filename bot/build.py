@@ -421,6 +421,11 @@ def main(path, dry=False):
     need = sum(COST.get(s.get("z", s["kind"]), 0) * (1 if s["kind"] in ("coal", "gas", "fire", "police", "bigpark", "link",
                "raillink", "stadium", "zoo", "marina") else sum(1 for x, y in s["tiles"] if not done(before, s, x, y)))
                for s in steps)
+    # attempt 11 (Dec 2022): with negative cash the game places nothing, and a --cash-ok build looped for 30 minutes
+    if cash0 is not None and cash0 < 0 and need > 0:
+        print("PLAN ERROR: cash is $%d - the game builds nothing while cash is negative (take a loan first)" % cash0)
+        print("BUILD: refused")
+        return 2
     if cash0 is not None and need > cash0 and "--cash-ok" not in sys.argv:
         print("PLAN ERROR: the plan costs about $%d but cash is $%d (take a loan first, or --cash-ok)" % (need, cash0))
         print("BUILD: refused")
