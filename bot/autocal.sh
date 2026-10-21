@@ -4,8 +4,8 @@
 cd "$(dirname "$0")"
 roads() { python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;c=p.chunks(p.SAVE);b=c['XBLD'];print(' '.join(str(i) for i in range(16384) if 0x1d<=b[i]<=0x2b))"; }
 ./sc key Escape; ./sc save >/dev/null; before=$(roads); bridges=$(python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];print(' '.join(str(i) for i in range(16384) if b[i]==0x57) or '-1')"); rm -f /tmp/sc/cal_bridge
-# C4 attempt 9 (Oct 2028): the zoom-fail exits left their test roads behind (13 stray roads in one rebuild) - every exit
-# sweeps every road tile that was not there at the start
+# C4 attempt 9 (Oct 2028): sweep() is NOT called on the zoom-fail exits any more - there the calibration is wrong, and
+# its bulldozer clicks destroyed two fire stations. Strays are left for build.py's final sweep (verified calibration).
 sweep() { for k in 1 2 3; do
   left=$(python3 -I - "$before" <<'PY'
 import sys; sys.path.insert(0,'.'); import sc2parse as p
@@ -79,7 +79,7 @@ sys.exit(0 if far>=80 and abs(px-x)+abs(py-y)<=2 else 1)"; then
     if [ "$3" != none ]; then
       for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $(($1+32*d)) $(($2+16*d)); sleep 0.3; ./sc click $(($1+32*d)) $(($2+16*d)); sleep 0.5; ./sc save >/dev/null
         python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];x,y=$3,$4;sys.exit(0 if b[y*128+x]==0 else 1)" && break; done
-      if [ "$5" != "8.0" ]; then echo "AUTOCAL ZOOM: step $5 px, not 8 - zoom is wrong; fix the zoom before building"; sweep; exit 3; fi
+      if [ "$5" != "8.0" ]; then echo "AUTOCAL ZOOM: step $5 px, not 8 - zoom is wrong; fix the zoom before building"; exit 3; fi
     fi
     for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $1 $2; sleep 0.3; ./sc click $1 $2; sleep 0.5; ./sc save >/dev/null
       python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];x,y=map(int,'$r'.split());sys.exit(0 if b[y*128+x]==0 else 1)" && break; done
@@ -127,5 +127,5 @@ n=0; for pt in $(for yy in 236 300 172 364 140 396 268 204 332; do for xx in 316
   python3 -I -c "import json;json.dump({'s':8.0,'ox':$1-8*($y1-$x1),'oy':$2-4*($x1+$y1),'alt':4},open('/tmp/sc/cal.json','w'))"
   echo "view calibrated on tile $x1 $y1 (screen $1,$2) by power line (crossings left at $t1 and $t2)"; exit 0
 done
-[ -n "$zoomskip" ] && { echo "AUTOCAL ZOOM: not verified at any spot (second test road never landed) - check the zoom before building"; sweep; exit 3; }
+[ -n "$zoomskip" ] && { echo "AUTOCAL ZOOM: not verified at any spot (second test road never landed) - check the zoom before building"; exit 3; }
 echo "autocal failed"; exit 1
