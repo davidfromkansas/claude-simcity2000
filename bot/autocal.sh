@@ -80,7 +80,7 @@ sys.exit(0 if far>=80 and abs(px-x)+abs(py-y)<=2 else 1)"; then
     if [ "$3" != none ]; then
       for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $(($1+32*d)) $(($2+16*d)); sleep 0.3; ./sc click $(($1+32*d)) $(($2+16*d)); sleep 0.5; ./sc save >/dev/null
         python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];x,y=$3,$4;sys.exit(0 if b[y*128+x]==0 else 1)" && break; done
-      if [ "$5" != "8.0" ]; then echo "AUTOCAL ZOOM: step $5 px, not 8 - zoom is wrong; fix the zoom before building"; exit 3; fi
+      if [ "$5" != "8.0" ]; then echo "AUTOCAL ZOOM: step $5 px, not 8 - zoom is wrong; fix the zoom before building"; rm -f /tmp/sc/cal.json; exit 3; fi
     fi
     for k in 1 2 3; do ./sc tool 22 58 60 65; sleep 0.4; ./sc click $1 $2; sleep 0.3; ./sc click $1 $2; sleep 0.5; ./sc save >/dev/null
       python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];x,y=map(int,'$r'.split());sys.exit(0 if b[y*128+x]==0 else 1)" && break; done
@@ -124,9 +124,9 @@ n=0; for pt in $(for yy in 236 300 172 364 140 396 268 204 332; do for xx in 316
   for d in 1 -1; do t2=$(lineat $(($1+32*d)) $(($2+16*d))); [ "$t2" != none ] && break; done
   [ "$t2" = none ] && continue
   read x1 y1 <<< "$t1"; read x2 y2 <<< "$t2"; k=$(( ((y2-y1)-(x2-x1))*d ))
-  if [ "$k" != 4 ]; then echo "AUTOCAL ZOOM: line check moved $k tiles for 32 px, not 4 - zoom is wrong"; exit 3; fi
+  if [ "$k" != 4 ]; then echo "AUTOCAL ZOOM: line check moved $k tiles for 32 px, not 4 - zoom is wrong"; rm -f /tmp/sc/cal.json; exit 3; fi
   python3 -I -c "import json;json.dump({'s':8.0,'ox':$1-8*($y1-$x1),'oy':$2-4*($x1+$y1),'alt':4,'method':'line'},open('/tmp/sc/cal.json','w'))"
   echo "view calibrated on tile $x1 $y1 (screen $1,$2) by power line (crossings left at $t1 and $t2)"; exit 0
 done
-[ -n "$zoomskip" ] && { echo "AUTOCAL ZOOM: not verified at any spot (second test road never landed) - check the zoom before building"; exit 3; }
+[ -n "$zoomskip" ] && { echo "AUTOCAL ZOOM: not verified at any spot (second test road never landed) - check the zoom before building"; rm -f /tmp/sc/cal.json; exit 3; }
 echo "autocal failed"; exit 1

@@ -466,6 +466,12 @@ def main(path, dry=False):
         if big:
             ca = save()
             want = COST[s["kind"]]
+            # C4 attempt 10 (Dec 2002): a zoo was charged but built 22 rows off (calibration scale 1.78) - a big
+            # building that cost money but is not in place means the clicks landed off: stop
+            if cb is not None and ca is not None and cb - ca >= want * 0.9 and not all(done(City(), s, x, y) for x, y in s["tiles"]):
+                print("PLAN ERROR: line %d %s: charged $%d but not in place - clicks are landing off (calibration)" % (s["line"], s["kind"], cb - ca))
+                print("BUILD: stopped - clicks landed off")
+                return 3
             if cb is not None and ca is not None and cb - ca < want * 0.9:
                 problems.append("line %d %s: cash fell only $%d (expected about $%d): not built?"
                                 % (s["line"], s["kind"], cb - ca, want))
