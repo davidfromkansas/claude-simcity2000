@@ -1,0 +1,8 @@
+# Attempt 10 Dec 2022: REMIND 70000 (stadium #2, zoo #3) and spare power 14%:
+# stadium under line y29 on the west riverbank, zoo #3 at 49,99 (line x48 crossing), coal plant 53,102 touching the zoo,
+# its fire station 50,103 between them
+stadium 49 30
+line 48 100 48 100
+zoo 49 99
+coal 53 102
+fire 50 103
