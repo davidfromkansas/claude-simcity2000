@@ -1,0 +1,5 @@
+# Attempt 11 Feb 2013: the SW strip x38-54 y72-97 has no pipes (62 dry buildings) - pipe y76 east from the shore-pump pipe at (35,76),
+# then down x42 and x50 through the strip
+pipe 36 76 53 76
+pipe 42 72 42 96
+pipe 50 72 50 96
