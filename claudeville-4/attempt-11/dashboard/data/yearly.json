@@ -163,5 +163,30 @@
    "jammed": 0,
    "bonds": 6
   }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "18,350 people - three years ahead",
+  "moves": [
+   "Loans 7-8",
+   "Stadium (c4a5-stadium) + fire stations (c4a6-fire1)",
+   "District 5 + power",
+   "East coal plant + fire station"
+  ],
+  "happened": "Dec 2005: 18,350 people (attempt 10: 15,140). Factory land ran short in Feb, so attempt 10's 2007 step came two years early: loans 7-8, stadium, fire stations, district 5.",
+  "watching": "Spare power 12%",
+  "start": {
+   "date": "Feb 2005",
+   "population": 15600,
+   "money": 5105,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 50,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": null
  }
 ]
