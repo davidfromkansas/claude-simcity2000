@@ -367,5 +367,28 @@
    "jammed": 0,
    "bonds": 13
   }
+ },
+ {
+  "year": 2011,
+  "tone": "good",
+  "title": "48,740 people; west districts 2-3",
+  "moves": [
+   "Loan 14: west districts 2-3",
+   "Coal plant x67-70 y70-73 + fire station"
+  ],
+  "happened": "Dec 2011: 48,740 people (attempt 10: 30,810 in Aug 2011). Loan 14 paid for west districts 2 and 3; spare power fell to 9% and a new coal plant came from cash. Budget roughly break-even (+$783 in 2010).",
+  "watching": "Cash $252; land getting short (19 empty factory tiles)",
+  "start": {
+   "date": "Feb 2011",
+   "population": 45310,
+   "money": 2539,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 0,
+   "bonds": 13
+  },
+  "end": null
  }
 ]
