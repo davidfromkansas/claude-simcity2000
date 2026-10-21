@@ -74,6 +74,7 @@ PY
 import json,sys; c=json.load(open('/tmp/sc/center.json')); x,y=map(int,'$r'.split()); dx=($1-324)/8.0; dy=($2-240)/4.0
 px=c['x']+(dy-dx)/2; py=c['y']+(dx+dy)/2; far=abs($1-324)+abs($2-240)
 sys.exit(0 if far>=80 and abs(px-x)+abs(py-y)<=2 else 1)"; then
+        python3 -I -c "import json;c=json.load(open('/tmp/sc/cal.json'));c['method']='centre';json.dump(c,open('/tmp/sc/cal.json','w'))"
         echo "view calibrated on tile $r (screen $1,$2); zoom checked against the view centre"; exit 0; fi
       zoomskip=1; continue; fi
     if [ "$3" != none ]; then
@@ -124,7 +125,7 @@ n=0; for pt in $(for yy in 236 300 172 364 140 396 268 204 332; do for xx in 316
   [ "$t2" = none ] && continue
   read x1 y1 <<< "$t1"; read x2 y2 <<< "$t2"; k=$(( ((y2-y1)-(x2-x1))*d ))
   if [ "$k" != 4 ]; then echo "AUTOCAL ZOOM: line check moved $k tiles for 32 px, not 4 - zoom is wrong"; exit 3; fi
-  python3 -I -c "import json;json.dump({'s':8.0,'ox':$1-8*($y1-$x1),'oy':$2-4*($x1+$y1),'alt':4},open('/tmp/sc/cal.json','w'))"
+  python3 -I -c "import json;json.dump({'s':8.0,'ox':$1-8*($y1-$x1),'oy':$2-4*($x1+$y1),'alt':4,'method':'line'},open('/tmp/sc/cal.json','w'))"
   echo "view calibrated on tile $x1 $y1 (screen $1,$2) by power line (crossings left at $t1 and $t2)"; exit 0
 done
 [ -n "$zoomskip" ] && { echo "AUTOCAL ZOOM: not verified at any spot (second test road never landed) - check the zoom before building"; exit 3; }

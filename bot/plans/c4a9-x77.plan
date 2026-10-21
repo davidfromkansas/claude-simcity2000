@@ -1,0 +1,3 @@
+# Attempt 9 Nov 2029: line x77 broken at (77,75) (rubble) - the whole x77 grid is dark
+bulldoze 77 75 77 75
+line 77 75 77 75

@@ -27,7 +27,8 @@ def main(out):
     # existing lines and buildings cut off from the plants carry power once joined: pass through them for free
     cond = lambda x, y: conducts(c.t(x, y))
     lines, dark = [], 0
-    for k, reg in c.zone_regions():
+    targets = list(c.zone_regions()) + [("pump", [q]) for q in c.tiles() if c.t(*q) == 0xDC]   # pumps need power too
+    for k, reg in targets:
         if any(q in reach or any(r in reach for r in nbrs(*q)) for q in reg):
             continue
         dark += 1

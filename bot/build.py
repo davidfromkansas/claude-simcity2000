@@ -67,6 +67,16 @@ def screen(x, y):
     return tile.to_screen(x, y)
 
 
+def cal_trusted():
+    """C4 attempt 9 (Oct 2028): clean-up bulldozing after a calibration from the view-centre zoom check destroyed fire
+    stations near the west edge (the view cannot centre there) - only bulldoze outside the plan after a test-road or
+    power-line calibration."""
+    try:
+        return json.load(open("/tmp/sc/cal.json")).get("method") != "centre"
+    except Exception:
+        return False
+
+
 def vis(*xy):
     out = sh("./vis.sh", *xy)
     if "AUTOCAL STRAY" in out:  # C4-1: a calibration road left behind blocked a zoo
@@ -501,6 +511,8 @@ def main(path, dry=False):
             tool(what)
             click_tile(x, y)
             fix = " -> %s re-placed" % what
+        elif old == 0 and is_road(new) and not cal_trusted():
+            fix = " -> stray road left (calibration not verified here)"
         elif old == 0 and is_road(new):
             vis(x, y)
             tool("bulldoze")
@@ -530,6 +542,8 @@ def main(path, dry=False):
             break
         for x, y in lone:
             vis(x, y)
+            if not cal_trusted():
+                problems.append("stray road (%d,%d) left: calibration not verified there" % (x, y)); continue
             tool("bulldoze"); click_tile(x, y); click_tile(x, y)
             if is_line(snap0[0][y * N + x]):
                 tool("line"); click_tile(x, y)
