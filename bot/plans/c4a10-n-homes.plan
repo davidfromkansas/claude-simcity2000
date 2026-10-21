@@ -1,0 +1,9 @@
+# Attempt 10 Feb 2034: homes 1,125 with 29 empty - free land north of the north strip: road y8 between the cross streets,
+# home rows y5-7, a home column x41-43 beside road x40
+road 45 8 51 8
+road 53 8 56 8
+zone R 45 5 51 7
+zone R 53 5 56 7
+zone R 41 1 43 8
+pipe 45 8 51 8
+pipe 53 8 56 8
