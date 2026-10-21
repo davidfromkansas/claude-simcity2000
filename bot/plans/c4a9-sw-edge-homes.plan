@@ -1,0 +1,13 @@
+# Attempt 9 Jul 2042: homes have 3 empty tiles - home cells on the free land by the west edge x8-19 y96-119
+line 13 97 13 103
+road 8 98 8 103
+road 8 99 19 99
+road 9 103 21 103
+zone R 9 96 12 98
+zone R 14 96 17 98
+zone R 9 100 12 102
+zone R 14 100 17 102
+zone R 9 104 11 119
+pipe 8 96 8 103
+pipe 9 99 19 99
+pipe 9 103 21 103
