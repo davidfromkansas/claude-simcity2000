@@ -545,5 +545,69 @@
    "jammed": 0,
    "bonds": 14
   }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "Homes-first south-west",
+  "moves": [
+   "Loans 15-17",
+   "SW home strip + zoo #3",
+   "Homes-first district"
+  ],
+  "happened": "Dec 2017: ~57,500. Loans 15-17 paid for the SW home strip, zoo #3 and a homes-first district on the big free block x8-58 y71-97 (1,376 tiles). Calibration over the river built a $975 stray bridge (fixed in autocal).",
+  "watching": "Growth on the new home land",
+  "start": {
+   "date": "Jan 2017",
+   "population": 56900,
+   "money": 1524,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 14
+  },
+  "end": {
+   "date": "Feb 2018",
+   "population": 57090,
+   "money": 6274,
+   "unemployment": 4,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 141,
+   "jammed": 6,
+   "bonds": 17
+  }
+ },
+ {
+  "year": 2018,
+  "tone": "good",
+  "title": "Growing again",
+  "moves": [],
+  "happened": "Dec 2018: ~62,000; the new home land filling (home demand +700).",
+  "watching": "Power and water",
+  "start": {
+   "date": "Feb 2018",
+   "population": 57090,
+   "money": 6274,
+   "unemployment": 4,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 141,
+   "jammed": 6,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2019",
+   "population": 63260,
+   "money": 5055,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 121,
+   "jammed": 0,
+   "bonds": 17
+  }
  }
 ]
