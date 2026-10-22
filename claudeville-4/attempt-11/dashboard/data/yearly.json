@@ -944,5 +944,37 @@
    "jammed": 0,
    "bonds": 24
   }
+ },
+ {
+  "year": 2029,
+  "tone": "steady",
+  "title": "SW interior shops/factories",
+  "moves": [
+   "Loan 25: SW interior bands + joins"
+  ],
+  "happened": "Dec 2029: ~89,000 people. Loan 25 paid for shop/factory bands in the SW interior; road joins raised their trip success. Shop demand at the maximum, homes negative.",
+  "watching": "Budget -$4.5k/yr",
+  "start": {
+   "date": "Feb 2029",
+   "population": 87670,
+   "money": 1636,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 126,
+   "jammed": 0,
+   "bonds": 24
+  },
+  "end": {
+   "date": "Feb 2030",
+   "population": 88920,
+   "money": 4803,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 98,
+   "jammed": 0,
+   "bonds": 25
+  }
  }
 ]

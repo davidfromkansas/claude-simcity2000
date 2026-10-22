@@ -1,0 +1,9 @@
+# Attempt 11 Feb 2030: shops 2,000 demand with 25 unreachable empty tiles -> shop bands on the free block x17-28 y71-80 between
+# road y70 and the lake (near the west-strip homes); roads y74 and y78; power and pipes joined afterwards
+road 16 74 30 74
+road 16 78 28 78
+zone C 19 71 27 73
+zone C 17 75 27 77
+zone C 17 79 28 80
+pipe 16 74 30 74
+pipe 16 78 28 78
