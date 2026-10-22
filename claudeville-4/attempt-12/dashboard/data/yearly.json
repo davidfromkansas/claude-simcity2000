@@ -183,6 +183,49 @@
    "jammed": 0,
    "bonds": 7
   },
-  "end": null
+  "end": {
+   "date": "Feb 2006",
+   "population": 19530,
+   "money": 6217,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "Pumps and west block from cash",
+  "moves": [
+   "Mid pumps",
+   "West block + pipes"
+  ],
+  "happened": "Dec 2006: 22,350 people (attempt 11: 22,180). Mid pumps and the west block from cash.",
+  "watching": "Shop land",
+  "start": {
+   "date": "Feb 2006",
+   "population": 19530,
+   "money": 6217,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 22630,
+   "money": 70,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 8
+  }
  }
 ]
