@@ -72,7 +72,9 @@
  },
  {
   "attempt": 11,
-  "status": "playing",
-  "reason": ""
+  "status": "failed",
+  "reason": "Fastest start of all attempts (48,740 by 2011, 63,100 by 2015; river crossed 2009). Land full at ~70,000 by 2017; fill-ins to a peak of 106,750 (Jun 2048). Alien ship 2033 contained (~160 tiles). Alive at the deadline: 104,690 at the Jan 2050 check, cash -$55k, 29 loans. Too few home tiles (2,706 vs attempt 6's 3,085).",
+  "peak": 106750,
+  "timeline": "2050-01"
  }
 ]

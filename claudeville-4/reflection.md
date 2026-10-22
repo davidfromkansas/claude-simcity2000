@@ -206,3 +206,20 @@ Attempt 19 used most of the map at ~35 people per home tile and peaked at 107,46
 2. Taxes: controller 7-9%, never above 9% while demand is negative; transit and fire funding never cut.
 3. Reach 120,000 (attempt 6 did it in 2043), then open the arcology menu at once, record price and population,
    and save cash for them; add towers (land value) on the remaining land meanwhile.
+
+## Claudeville 4 attempt 11 (peak 106,750; 104,690 at Jan 2050, alive)
+- Attempt 10's opening with ordinances from day one and a loan floor: the fastest city of all attempts to 2015
+  (63,100; attempt 6 had 38,820), river crossed in 2009.
+- Land was full at ~70,000 by 2017; 30 years of fill-ins added 35,000. Money held (cash never below -$60k, 29 loans) and
+  the 2033 alien ship burned only ~160 tiles (firefighters every burst).
+- Shop tax cap at 11% cost two years of shop demand.
+
+## Across all eleven attempts (before attempt 12)
+- **Peak population = ~38-39 people x home tiles, in every attempt** (6: 3,085 -> 120,770; 10: 2,933 -> 109,570;
+  11: 2,706 -> 106,750). Speed decides when the land fills, not how many people it holds.
+- 200,000 would need ~5,100 home tiles plus a similar job area - more than the map's buildable land. The only known route
+  is arcologies (unlocked at 120,000). No attempt has opened that menu yet; attempt 6 passed 120,000 only in 2049.
+- Fire (solved since attempt 10's rules) and money (solved in attempt 11) no longer end cities.
+- **So attempt 12 maximises home tiles**: attempt 11's fast opening to ~2015, then every new block homes-first (homes
+  ~55% of zoned land, jobs only as demand needs), plants and stations on poor land, fewer road rows (long strips), and
+  reach 120,000 by ~2040 - then build arcologies with every loan left.
