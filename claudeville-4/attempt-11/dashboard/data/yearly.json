@@ -1317,5 +1317,35 @@
    "jammed": 0,
    "bonds": 29
   }
+ },
+ {
+  "year": 2041,
+  "tone": "steady",
+  "title": "103,280 people",
+  "moves": [],
+  "happened": "Dec 2041: 103,280 people (new high). Land full; cash -$15.5k, falling ~$5.6k a year.",
+  "watching": "Reach 2050 above -$100k",
+  "start": {
+   "date": "Feb 2041",
+   "population": 102460,
+   "money": -15525,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 109,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2042",
+   "population": 103250,
+   "money": -21119,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 29
+  }
  }
 ]
