@@ -1039,5 +1039,35 @@
    "jammed": 0,
    "bonds": 25
   }
+ },
+ {
+  "year": 2032,
+  "tone": "good",
+  "title": "96,540 people",
+  "moves": [],
+  "happened": "Dec 2032: 96,540 (attempt 10: 100,470 in Nov 2032). Home demand +500; shops still at the maximum.",
+  "watching": "100,000 soon; cash -$5k",
+  "start": {
+   "date": "Feb 2032",
+   "population": 95150,
+   "money": -5166,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 89,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Feb 2033",
+   "population": 96870,
+   "money": -8861,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 25
+  }
  }
 ]
