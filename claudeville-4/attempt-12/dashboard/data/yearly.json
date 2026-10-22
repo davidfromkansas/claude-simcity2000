@@ -63,5 +63,37 @@
    "jammed": 0,
    "bonds": 4
   }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Zoo; 10,520 people",
+  "moves": [
+   "Zoo (a14-zoo)"
+  ],
+  "happened": "Nov 2002: 10,520 (attempt 11: 9,820 in Dec 2002). Zoo built after a south-edge calibration slip (3 stray test roads, fixed).",
+  "watching": "Seaport, airport",
+  "start": {
+   "date": "Jul 2002",
+   "population": 8580,
+   "money": 8614,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 18,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2003",
+   "population": 11200,
+   "money": 4407,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 0,
+   "bonds": 4
+  }
  }
 ]
