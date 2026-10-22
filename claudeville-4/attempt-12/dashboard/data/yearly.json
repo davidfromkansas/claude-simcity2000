@@ -379,6 +379,38 @@
    "jammed": 1,
    "bonds": 11
   },
+  "end": {
+   "date": "Feb 2012",
+   "population": 41550,
+   "money": 2544,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 48,
+   "jammed": 0,
+   "bonds": 13
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "good",
+  "title": "45,990 people",
+  "moves": [
+   "West district 2"
+  ],
+  "happened": "Dec 2012: 45,990 (attempt 11: 53,110). West district 2 from cash.",
+  "watching": "Recreation cap; shops",
+  "start": {
+   "date": "Feb 2012",
+   "population": 41550,
+   "money": 2544,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 48,
+   "jammed": 0,
+   "bonds": 13
+  },
   "end": null
  }
 ]
