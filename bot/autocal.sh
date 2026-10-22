@@ -3,7 +3,7 @@
 # reads its tile from the save, calibrates tile.py (zoom 3), then bulldozes it.
 cd "$(dirname "$0")"
 roads() { python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;c=p.chunks(p.SAVE);b=c['XBLD'];print(' '.join(str(i) for i in range(16384) if 0x1d<=b[i]<=0x2b))"; }
-./sc key Escape; ./sc save >/dev/null; before=$(roads); bridges=$(python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];print(' '.join(str(i) for i in range(16384) if b[i]==0x57) or '-1')"); rm -f /tmp/sc/cal_bridge
+./sc key Escape; ./sc save >/dev/null; before=$(roads); bridges=$(python3 -I -c "import sys;sys.path.insert(0,'.');import sc2parse as p;b=p.chunks(p.SAVE)['XBLD'];print(' '.join(str(i) for i in range(16384) if 0x51<=b[i]<=0x57) or '-1')"); rm -f /tmp/sc/cal_bridge
 # C4 attempt 9 (Oct 2028): sweep() is NOT called on the zoom-fail exits any more - there the calibration is wrong, and
 # its bulldozer clicks destroyed two fire stations. Strays are left for build.py's final sweep (verified calibration).
 sweep() { for k in 1 2 3; do
@@ -23,6 +23,11 @@ PY
 wet1() { convert /tmp/sc/calview.png -format "%[fx:(p{$1,$2}.b-p{$1,$2}.r>0.25 && p{$1,$2}.b-p{$1,$2}.g>0.15)?1:0]" info:; }
 wet() { for d in "0 0" "24 0" "-24 0" "0 12" "0 -12" "16 8" "-16 -8" "16 -8" "-16 8"; do set -- $1 $2 $d
   [ "$(wet1 $(($1+$3)) $(($2+$4)))" = 1 ] && { echo 1; return; }; done; echo 0; }
+# C4 attempt 12 (Jun 2017): with the view centred over the river every "dry" spot was a shore tile; test roads built a
+# $975 suspension bridge and opened the bridge dialog, which swallowed later clicks. Refuse a view that is mostly water.
+wetshare=$(convert /tmp/sc/calview.png -crop 400x260+120+110 -fx "(b-r>0.25 && b-g>0.15)?1:0" -format "%[fx:mean]" info:)
+if python3 -I -c "import sys; sys.exit(0 if float('$wetshare')>0.25 else 1)"; then
+  echo "AUTOCAL VIEW OVER WATER (${wetshare} of the centre is water) - centre the view on built land first"; rm -f /tmp/sc/cal.json; exit 3; fi
 for pt in "330 250" "450 360" "200 360" "470 150" "200 160" "560 260" "130 260" "400 300" "260 300" "400 200" "260 200" "520 400" "150 400" "520 100" "150 100" "330 400" "330 110" "580 350" "580 150"; do
   set -- $pt; [ "$(wet $1 $2)" = 1 ] && continue
   # attempt 19: test roads on the map edge started $1,000 neighbour deals (twice: the zoom check adds 4 tiles south) - keep 2+ tiles in (C4-1: a 6-tile margin made calibration fail near the east edge and misplaced roads)
@@ -34,7 +39,7 @@ x=c['x']+(dy-dx)/2; y=c['y']+(dx+dy)/2; sys.exit(0 if 2<=x<=125 and 2<=y<=121 el
 import sys, struct, json; sys.path.insert(0,'.'); import sc2parse as p
 before=set(map(int,sys.argv[1].split())); c=p.chunks(p.SAVE); b=c['XBLD']
 new=[i for i in range(16384) if 0x1d<=b[i]<=0x2b and i not in before]
-bridge=[i for i in range(16384) if b[i]==0x57 and i not in set(map(int,sys.argv[4].split()))]
+bridge=[i for i in range(16384) if 0x51<=b[i]<=0x57 and i not in set(map(int,sys.argv[4].split()))]   # C4-12: a suspension bridge (0x51-0x56) was missed
 if bridge: open('/tmp/sc/cal_bridge','w').write(' '.join('%d %d' % (i%128,i//128) for i in bridge)); sys.exit(1)
 if len(new)!=1: sys.exit(1)
 x,y=new[0]%128,new[0]//128; a=struct.unpack('>16384H',c['ALTM'])[new[0]]&31
