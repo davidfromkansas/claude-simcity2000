@@ -733,5 +733,68 @@
    "jammed": 0,
    "bonds": 19
   }
+ },
+ {
+  "year": 2023,
+  "tone": "good",
+  "title": "Jobs land",
+  "moves": [
+   "Loan 20: NW jobs block",
+   "Loan 21: west-bank factory rows"
+  ],
+  "happened": "Dec 2023: ~71,000. Loans 20-21 paid for the NW jobs block and west-bank factory rows (which also joined the stray bridge); unemployment fell from 6%.",
+  "watching": "Factory land",
+  "start": {
+   "date": "Feb 2023",
+   "population": 70220,
+   "money": -4408,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 218,
+   "jammed": 0,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Feb 2024",
+   "population": 71190,
+   "money": 8679,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 177,
+   "jammed": 0,
+   "bonds": 21
+  }
+ },
+ {
+  "year": 2024,
+  "tone": "good",
+  "title": "Growing again",
+  "moves": [],
+  "happened": "Dec 2024: ~73,500; abandoned buildings down from 218 to ~150.",
+  "watching": "Factory land",
+  "start": {
+   "date": "Feb 2024",
+   "population": 71190,
+   "money": 8679,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 177,
+   "jammed": 0,
+   "bonds": 21
+  },
+  "end": {
+   "date": "Feb 2025",
+   "population": 74960,
+   "money": 5898,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 159,
+   "jammed": 0,
+   "bonds": 21
+  }
  }
 ]
