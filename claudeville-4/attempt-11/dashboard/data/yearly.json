@@ -910,5 +910,39 @@
    "jammed": 3,
    "bonds": 22
   }
+ },
+ {
+  "year": 2028,
+  "tone": "steady",
+  "title": "NW strip, zoo #4",
+  "moves": [
+   "Loans 23-24",
+   "NW strip + power/pipe joins",
+   "Zoo #4"
+  ],
+  "happened": "Dec 2028: ~86,000 people (attempt 10: 84,690 in Aug 2028). Loans 23-24 paid for the NW free block (factories/homes) and zoo #4; shop tax cap back to 9%.",
+  "watching": "Shop land",
+  "start": {
+   "date": "Feb 2028",
+   "population": 85440,
+   "money": -9348,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 143,
+   "jammed": 3,
+   "bonds": 22
+  },
+  "end": {
+   "date": "Feb 2029",
+   "population": 87670,
+   "money": 1636,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 126,
+   "jammed": 0,
+   "bonds": 24
+  }
  }
 ]
