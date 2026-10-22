@@ -609,5 +609,129 @@
    "jammed": 0,
    "bonds": 17
   }
+ },
+ {
+  "year": 2019,
+  "tone": "good",
+  "title": "Plants, pumps, 65,000",
+  "moves": [
+   "Loans 18-19: plants, stadium #2, pumps",
+   "SW fire stations",
+   "Shore pumps"
+  ],
+  "happened": "Dec 2019: ~65,000. Loans 18-19 paid for two river-strip coal plants, stadium #2 and shore pumps; 6 fire stations in the SW. Two calibration slips over the river (stray bridge earlier; an uncalibrated build) - both fixed in the controller.",
+  "watching": "Jobs",
+  "start": {
+   "date": "Feb 2019",
+   "population": 63260,
+   "money": 5055,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 121,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2020",
+   "population": 65690,
+   "money": 2665,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 139,
+   "jammed": 0,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2020,
+  "tone": "setback",
+  "title": "Too many homes, too few jobs",
+  "moves": [],
+  "happened": "Population ~68-70k; home demand -700, unemployment 6%, ~220 abandoned buildings; factories wanted land (+1,200 to +1,700) and had none. Cash slipping below zero.",
+  "watching": "Job land",
+  "start": {
+   "date": "Feb 2020",
+   "population": 65690,
+   "money": 2665,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 139,
+   "jammed": 0,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Feb 2021",
+   "population": 68120,
+   "money": 337,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 226,
+   "jammed": 0,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2021,
+  "tone": "setback",
+  "title": "Too many homes, too few jobs",
+  "moves": [],
+  "happened": "Population ~68-70k; home demand -700, unemployment 6%, ~220 abandoned buildings; factories wanted land (+1,200 to +1,700) and had none. Cash slipping below zero.",
+  "watching": "Job land",
+  "start": {
+   "date": "Feb 2021",
+   "population": 68120,
+   "money": 337,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 226,
+   "jammed": 0,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Jan 2022",
+   "population": 69010,
+   "money": -2076,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 215,
+   "jammed": 0,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2022,
+  "tone": "setback",
+  "title": "Too many homes, too few jobs",
+  "moves": [],
+  "happened": "Population ~68-70k; home demand -700, unemployment 6%, ~220 abandoned buildings; factories wanted land (+1,200 to +1,700) and had none. Cash slipping below zero.",
+  "watching": "Job land",
+  "start": {
+   "date": "Jan 2022",
+   "population": 69010,
+   "money": -2076,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 215,
+   "jammed": 0,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Feb 2023",
+   "population": 70220,
+   "money": -4408,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 218,
+   "jammed": 0,
+   "bonds": 19
+  }
  }
 ]
