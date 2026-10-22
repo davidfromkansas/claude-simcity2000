@@ -1,0 +1,7 @@
+# Attempt 11 Feb 2033: shops 2,000 demand / 29 empty -> shop block on the free river strip below the stadium: road y39 from road x40,
+# shop rows y37-38 (beside pipe y36) and y40-42, pipe y39 to the x57 pipe; power from line x57 (powerfix after)
+road 41 39 56 39
+zone C 44 37 56 38
+zone C 41 40 43 42
+zone C 45 40 56 42
+pipe 41 39 56 39

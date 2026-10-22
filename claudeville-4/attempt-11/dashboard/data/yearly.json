@@ -976,5 +976,68 @@
    "jammed": 0,
    "bonds": 25
   }
+ },
+ {
+  "year": 2030,
+  "tone": "steady",
+  "title": "Shop block, shop tax 9%",
+  "moves": [
+   "Shop tax 9%",
+   "Shop block x17-28 y71-80"
+  ],
+  "happened": "Dec 2030: ~90,500 people. Shop tax 9% (demand at the maximum); shop block x17-28 y71-80 from cash.",
+  "watching": "Shops; budget",
+  "start": {
+   "date": "Feb 2030",
+   "population": 88920,
+   "money": 4803,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 98,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Jul 2031",
+   "population": 92910,
+   "money": -1089,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 99,
+   "jammed": 14,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2031,
+  "tone": "good",
+  "title": "Growth returns",
+  "moves": [],
+  "happened": "Dec 2031: 94,190 people; home demand turned positive. No builds (cash negative).",
+  "watching": "Budget",
+  "start": {
+   "date": "Jul 2031",
+   "population": 92910,
+   "money": -1089,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 99,
+   "jammed": 14,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Feb 2032",
+   "population": 95150,
+   "money": -5166,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 89,
+   "jammed": 0,
+   "bonds": 25
+  }
  }
 ]
