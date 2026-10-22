@@ -1,0 +1,4 @@
+# Claudeville 4 Jul 2018: power running short (far south-east browning out) - coal plant on empty land east of the airport,
+# fed into the x116 line
+coal 117 84
+line 116 84 116 96

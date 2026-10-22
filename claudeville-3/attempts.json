@@ -1,0 +1,117 @@
+[
+ {
+  "attempt": 1,
+  "status": "failed",
+  "reason": "Homes too far from jobs (commutes failed); stopped in year 22 at 9,190 people with $40,000 of loans",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 2,
+  "status": "failed",
+  "reason": "Peaked at 35,690 in 2011; traffic jams, broken power wiring and 10 loans; bankrupt in 2017",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 3,
+  "status": "failed",
+  "reason": "Destroyed by an earthquake and fire in 2011 at 18,410 people (one fire station, no cash reserve)",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 4,
+  "status": "failed",
+  "reason": "Stalled at ~30,000 in 2021: low land value, low tax income, 10 loans costing more than all taxes",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 5,
+  "status": "failed",
+  "reason": "Stuck near 6,700 people in 2012: the neighbor road link was missing for 10 years, homes had no power for 2 years, too much shop land",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 6,
+  "status": "failed",
+  "reason": "Stuck near 11,500 in 2013: every setup check passed, but three loans cost more than the city earned in tax",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 7,
+  "status": "failed",
+  "reason": "Debt-free but only 3,850 people by 2010: growing from savings alone was far too slow",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 8,
+  "status": "failed",
+  "reason": "Stalled near 8,000 in 2014: dense-only zoning grew slowly, loan #2 did not pay back, water and jobs short",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 9,
+  "status": "failed",
+  "reason": "Stuck near 7,500 by 2022: demand at max but no money for more land; a power plant burned down with no fire station",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 10,
+  "status": "failed",
+  "reason": "Stalled near 14,000 by 2018: too little land in the first five years, then loan payments outgrew tax income",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 11,
+  "status": "failed",
+  "reason": "Stopped at 20,790 in 2020: seaport 9 years late, factory land fell behind, 7 loans outgrew taxes",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 12,
+  "status": "failed",
+  "reason": "Fastest start (12,030 by 2004), then flat at ~21,000 from 2012: jobs capped (no airport), out of land and money at ~$2.90 per person",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 13,
+  "status": "failed",
+  "reason": "Best year 6 (17,790), peak 20,070 in 2008; factory tax pushed to 12% collapsed industry, unemployment 26%",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 14,
+  "status": "failed",
+  "reason": "Never collapsed (unemployment 4-7%) but grew ~1,500/yr after 2005; 9 loans, ~$3.80 per person",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 15,
+  "status": "failed",
+  "reason": "Dense homes reached 26.8 people per tile, but the city stopped at ~18,000: factories stalled with empty land even after a second seaport",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 16,
+  "status": "failed",
+  "reason": "Trip fix worked (passed 18,000); 24,870 by 2014, then nine loans and too few jobs for dense homes",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 17,
+  "status": "failed",
+  "reason": "Best since attempt 2: 21,830 by 2006, peak 29,090 in 2013; eleven loans and a deficit slowed it to ~1,000/yr",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 18,
+  "status": "failed",
+  "reason": "Attempt 17 replayed with ordinances: same ~29,000 plateau (peak 28,920 in 2015)",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ },
+ {
+  "attempt": 19,
+  "status": "success",
+  "reason": "100,000 reached: 102,140 in Jul 2045, peak 107,460 (Dec 2047), ~104,000-105,000 at the Jan 2050 deadline; dense homes + parks, checkerboard districts, crossing to the west bank (2027), 33 loans",
+  "timeline": "2045-07",
+  "timelapse": "recording-timelapse/timelapse.mp4"
+ }
+]

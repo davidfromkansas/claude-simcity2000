@@ -1,0 +1,6 @@
+# Attempt 19 Feb 2017: second seaport (research: ports and connections matter most for big growth; factory land just
+# added). a15-seaport2 site x59-62 y49-53; road x63 down to road y56 only (the west homes sit on x60-66 y57+);
+# power line x59 down to the y59 line.
+road 63 49 63 55
+seaport 59 49 62 53
+line 59 54 59 58

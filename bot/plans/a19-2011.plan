@@ -1,0 +1,17 @@
+# Attempt 19 Jul 2011 (loan #10): 32,180 people, cash -$620, spare power 11%, water 7%, shop land short (27 empty,
+# demand 1,982). Fourth coal plant beside the others; 3 pumps on the north-east lake shore (110-112,6) powered by a
+# line down x105 to (107,19), piped along y7/x104 to the y23 main; a dense shop block x102-107 y104-108 below the
+# stadium/airport, line x101 from the stadium, pipe y106 from the x96 pipe.
+coal 68 52
+line 105 6 109 6
+line 105 7 105 19
+line 106 19 106 19
+pump 110 6 112 6
+pipe 104 7 112 7
+pipe 104 8 104 23
+road 101 103 108 103
+road 101 109 108 109
+road 108 104 108 108
+line 101 102 101 108
+zone C 102 104 107 108
+pipe 97 106 107 106

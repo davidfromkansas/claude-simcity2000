@@ -1,0 +1,14 @@
+# Attempt 19 Jun 2043: shop land short (18 empty, demand 1,767). Two dense shop cells below the zoo, x41-51 y117-121
+# (river from x52): road x40 down to y122, road y116 and y122, road x47; lines x44 (from (44,111)) and x50 (from the
+# shops at (50,113)) across road y116; pipe x42 from the y107 pipe, row pipe y119.
+road 40 111 40 122
+road 41 116 51 116
+road 41 122 51 122
+road 47 117 47 121
+line 44 112 44 121
+line 50 114 50 121
+zone C 41 117 46 121
+zone C 48 117 49 121
+zone C 51 117 51 121
+pipe 42 108 42 121
+pipe 43 119 51 119

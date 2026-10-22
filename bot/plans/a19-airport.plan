@@ -1,0 +1,4 @@
+# Attempt 19 Nov 2009 (loan #9): 28,510 people, shops stalled 6 months with demand +1,210 and 42 empty tiles (shop cap
+# ~20,000+ without an airport). Airport x106-111 y98-101 beside the stadium, touching road y97, powered through the
+# stadium line at (105,98).
+airport 106 98 111 101

@@ -1,0 +1,135 @@
+[
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "Checked start",
+  "moves": [
+   "Loan #1",
+   "Block 1 with rail link"
+  ],
+  "happened": "Day one built from one plan with road and rail links; every check passed before the clock ran. 960 people by December.",
+  "watching": "Jobs vs homes balance",
+  "start": {
+   "date": "Feb 2001",
+   "population": 370,
+   "money": 8530,
+   "unemployment": 2,
+   "watered_pct": 86,
+   "powered_pct": 100,
+   "abandoned": 4,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2002",
+   "population": 1170,
+   "money": 8165,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 8,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "steady",
+  "title": "Jobs needed",
+  "moves": [
+   "Jobs block south"
+  ],
+  "happened": "2,440 people. Home land is filling and unemployment rose to 13% while shop and factory demand sat at maximum.",
+  "watching": "Unemployment",
+  "start": {
+   "date": "Jan 2003",
+   "population": 2040,
+   "money": 7891,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 2190,
+   "money": 7682,
+   "unemployment": 13,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 29,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Back to growing",
+  "moves": [
+   "East factory blocks",
+   "Riverbank pumps",
+   "North dense homes"
+  ],
+  "happened": "Jobs blocks fixed 17-22% unemployment; riverbank pumps fixed water; north homes took the city to 5,000 by January 2010.",
+  "watching": "Home demand at max for two years",
+  "start": {
+   "date": "Feb 2009",
+   "population": 4240,
+   "money": 3151,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 19,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 5000,
+   "money": 3142,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 12,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "setback",
+  "title": "Stalled near 8,000",
+  "moves": [
+   "South block (loan #2)",
+   "First marina",
+   "Second coal plant and pumps"
+  ],
+  "happened": "The south block, marina and second power plant took the city to 8,230 in mid-2013, then growth stopped: water short again, cash under $1,000, loans costing more than property tax.",
+  "watching": "Money and water",
+  "start": {
+   "date": "Feb 2013",
+   "population": 7910,
+   "money": 1321,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 14,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 7590,
+   "money": 923,
+   "unemployment": 10,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 38,
+   "jammed": 0,
+   "bonds": 2
+  }
+ }
+]

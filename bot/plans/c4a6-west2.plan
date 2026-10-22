@@ -1,0 +1,62 @@
+# Attempt 6 Jul 2017: a19-west2 without its marina: second west district x20-40 y27-47 + riverbank pumps y49-59
+road 20 27 40 27
+road 20 34 40 34
+road 20 41 40 41
+road 20 28 20 47
+road 27 28 27 47
+road 34 28 34 47
+road 40 28 40 47
+line 24 28 24 48
+line 31 28 31 48
+line 37 28 37 48
+zone I 21 42 26 47
+zone R 28 42 33 47
+zone I 35 42 39 47
+zone R 21 35 26 40
+zone C 28 35 33 40
+zone R 35 35 39 40
+zone R 21 28 26 33
+zone R 28 28 33 33
+zone R 35 28 39 33
+park 29 44 30 45
+park 22 37 23 38
+park 35 37 36 38
+park 22 30 23 31
+park 29 30 30 31
+park 35 30 36 31
+pipe 40 28 40 48
+pipe 21 31 39 31
+pipe 21 38 39 38
+pipe 21 45 39 45
+line 41 49 41 59
+pump 47 49 47 49
+line 42 49 46 49
+pipe 41 49 46 49
+pump 47 50 47 50
+line 42 50 46 50
+pipe 41 50 46 50
+pump 46 51 46 51
+line 42 51 45 51
+pipe 41 51 45 51
+pump 46 52 46 52
+line 42 52 45 52
+pipe 41 52 45 52
+pump 45 53 45 53
+line 42 53 44 53
+pipe 41 53 44 53
+pump 44 54 44 54
+line 42 54 43 54
+pipe 41 54 43 54
+pump 43 55 43 55
+line 42 55 42 55
+pipe 41 55 42 55
+pump 43 56 43 56
+line 42 56 42 56
+pipe 41 56 42 56
+pump 43 57 43 57
+line 42 57 42 57
+pipe 41 57 42 57
+pump 42 58 42 58
+pipe 41 58 41 58
+pump 42 59 42 59
+pipe 41 59 41 59

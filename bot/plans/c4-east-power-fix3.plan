@@ -1,0 +1,4 @@
+# far east: line crossings over roads x115 and x122 on y56, and across road y20 to the north pump row
+line 115 56 115 56
+line 122 56 122 56
+line 109 20 109 20

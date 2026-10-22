@@ -1,0 +1,18 @@
+# Attempt 9 Aug 2027: the 2006 coal plant at 78-81,35-38 wore out (rubble, no fire) -> clear and rebuild
+bulldoze 78 35 78 35
+bulldoze 79 35 79 35
+bulldoze 80 35 80 35
+bulldoze 81 35 81 35
+bulldoze 78 36 78 36
+bulldoze 79 36 79 36
+bulldoze 80 36 80 36
+bulldoze 81 36 81 36
+bulldoze 78 37 78 37
+bulldoze 79 37 79 37
+bulldoze 80 37 80 37
+bulldoze 81 37 81 37
+bulldoze 78 38 78 38
+bulldoze 79 38 79 38
+bulldoze 80 38 80 38
+bulldoze 81 38 81 38
+coal 78 35

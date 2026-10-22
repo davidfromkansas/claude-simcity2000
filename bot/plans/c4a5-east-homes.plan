@@ -1,0 +1,8 @@
+# Attempt 5 Dec 2020: home demand 803 with 2 empty tiles -> dense homes x123-125 y21-54 facing the east job strip
+# across road x122 (c4-east-homes, fed instead by lines crossing road x122 at y28 and y45 from the built shops/factories).
+line 122 28 126 28
+line 122 45 126 45
+line 126 21 126 54
+zone R 123 21 125 54
+pipe 122 23 125 23
+pipe 124 24 124 54

@@ -1,0 +1,8 @@
+# Claudeville 4 a2 Feb 2027: water 9% spare - 5 pumps on the north shore of the fresh-water pond (x94-98 y12-13):
+# line y11 from the powered x85 line across road x92; pipe y11 and down x92 (under the road) to the y23 pipe row.
+line 86 11 98 11
+line 93 12 93 13
+pipe 92 11 98 11
+pipe 92 12 92 23
+pump 94 13 94 13
+pump 95 12 98 12

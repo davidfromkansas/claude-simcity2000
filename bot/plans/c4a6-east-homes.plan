@@ -1,0 +1,7 @@
+# Attempt 6: dense homes x123-125 y21-54 facing the east job strip (its trips failed: no homes within reach);
+# power from line (121,22) across road x122, down line x126.
+line 122 22 126 22
+line 126 21 126 54
+zone R 123 21 125 54
+pipe 122 23 125 23
+pipe 124 24 124 54

@@ -1,0 +1,5 @@
+# powerfix.py: 4 line tiles for 3 dark zone areas
+line 66 121 66 121
+line 66 122 66 122
+line 76 110 76 110
+line 76 114 76 114

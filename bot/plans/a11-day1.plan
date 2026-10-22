@@ -1,0 +1,65 @@
+# Attempt 11 day one (Jan 2000, loan #1; a second loan was refused - credit rating): attempt 10's
+# blocks 1 and 2 at once (block 2 without its coal plant and police station, powered from block 1's plant).
+# Attempt 10 day one (attempt 4's fast start): block 1 light zoning, road + rail links, coal plant,
+# riverbank pumps, pipe main, fire station by the plant. Homes 108, factories 72, shops 36.
+link 76 0
+raillink 101 0
+rail 101 1 101 19
+road 76 1 76 34
+road 77 20 100 20
+road 77 27 100 27
+road 77 34 100 34
+road 84 21 84 33
+road 92 21 92 33
+road 100 21 100 33
+line 77 21 77 38
+line 85 21 85 35
+line 93 21 93 35
+line 82 35 93 35
+coal 78 35
+zone r 78 21 83 26
+zone r 86 21 91 26
+zone r 94 21 99 26
+zone i 78 28 83 33
+zone i 86 28 91 33
+zone c 94 28 99 33
+line 73 21 76 21
+line 73 22 73 27
+pump 72 22 72 27
+pipe 72 23 74 23
+pipe 74 23 74 33
+pipe 75 23 99 23
+pipe 75 30 99 30
+fire 82 36
+# Attempt 10 block 2 (Jan 2002, loan #2): south block y42-54 with light zoning, fire station, police station,
+# second coal plant on the river strip and 6 riverbank pumps.
+road 76 35 76 55
+road 77 41 108 41
+road 77 48 108 48
+road 77 55 108 55
+road 84 42 84 54
+road 92 42 92 54
+road 100 42 100 54
+road 108 42 108 54
+line 77 38 77 55
+line 85 35 85 55
+line 93 35 93 55
+line 94 35 101 35
+line 101 35 101 55
+zone r 78 42 83 47
+zone r 86 42 91 47
+zone c 94 42 99 47
+zone i 102 42 107 47
+zone r 78 49 83 54
+zone r 86 49 91 54
+zone r 94 49 99 54
+zone i 102 49 107 54
+fire 94 42
+pipe 74 39 74 52
+pipe 75 44 107 44
+pipe 75 51 107 51
+pump 71 42 71 47
+line 72 42 72 47
+line 73 47 77 47
+pipe 71 44 74 44
+pipe 74 33 74 39

@@ -1,0 +1,59 @@
+# Attempt 19 Aug 2035 (loan #23): 73,850 people, shop demand 1,960 with 24 empty tiles, spare water 14%.
+# South-west band 2 y84-89 (road y83 and y90, columns x13/x20/x27/x34/x40): dense shops x14-19 and x28-33, homes
+# x21-26 and x35-39 with parks; lines x18/x24/x37 continued, x30 fed along y86. West-bank pumps y72-82 with row
+# lines/pipes to a line+pipe column x41 (fed across road x40 at y74, piped to pipe x40 at y79).
+road 13 83 40 83
+road 13 90 40 90
+road 13 84 13 89
+road 20 84 20 89
+road 27 84 27 89
+road 34 84 34 89
+road 40 84 40 89
+line 18 83 18 89
+line 24 83 24 89
+line 37 83 37 89
+line 25 86 30 86
+line 30 84 30 89
+zone C 14 84 19 89
+zone R 21 84 26 89
+zone C 28 84 33 89
+zone R 35 84 39 89
+park 21 84 22 85
+park 35 87 36 88
+pipe 40 83 40 89
+pipe 14 87 39 87
+line 41 72 41 82
+line 40 74 40 74
+pipe 41 72 41 82
+pipe 40 79 41 79
+pump 42 72 42 72
+pump 44 73 44 73
+line 42 73 43 73
+pipe 42 73 43 73
+pump 45 74 45 74
+line 42 74 44 74
+pipe 42 74 44 74
+pump 45 75 45 75
+line 42 75 44 75
+pipe 42 75 44 75
+pump 46 76 46 76
+line 42 76 45 76
+pipe 42 76 45 76
+pump 45 77 45 77
+line 42 77 44 77
+pipe 42 77 44 77
+pump 45 78 45 78
+line 42 78 44 78
+pipe 42 78 44 78
+pump 44 79 44 79
+line 42 79 43 79
+pipe 42 79 43 79
+pump 44 80 44 80
+line 42 80 43 80
+pipe 42 80 43 80
+pump 45 81 45 81
+line 42 81 44 81
+pipe 42 81 44 81
+pump 46 82 46 82
+line 42 82 45 82
+pipe 42 82 45 82

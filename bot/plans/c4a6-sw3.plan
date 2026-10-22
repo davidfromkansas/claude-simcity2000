@@ -1,0 +1,28 @@
+# Attempt 6 Dec 2024: shop demand 1,893 with 13 empty tiles, home demand 491 -> 9 cells x28-47 y84-103 east of the
+# south-west grid: shops and homes alternating, stadium #2 in the bottom-left cell. Power: line y94 from the fire
+# station (25-27,93-95) by the SW coal plant, columns x31/x38/x45. Pipes from the SW grid's y87 pipe.
+road 28 83 48 83
+road 27 91 27 104
+road 28 90 48 90
+road 28 97 48 97
+road 28 104 48 104
+road 34 84 34 103
+road 41 84 41 103
+road 48 84 48 103
+line 28 94 47 94
+line 31 84 31 98
+line 38 84 38 103
+line 45 84 45 103
+zone C 28 84 33 89
+zone R 35 84 40 89
+zone C 42 84 47 89
+zone R 28 91 33 96
+zone C 35 91 40 96
+zone R 42 91 47 96
+stadium 29 99
+zone R 35 98 40 103
+zone C 42 98 47 103
+pipe 27 87 47 87
+pipe 27 100 47 100
+pipe 33 87 33 100
+pipe 44 87 44 100

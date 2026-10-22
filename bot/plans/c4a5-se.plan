@@ -1,0 +1,19 @@
+# Attempt 5 Jul 2015: shop demand 1,143 with 9 empty tiles -> south-east district x101-125 y97-110: shops, homes, zoo #2.
+# Power: line x101 down from the factories, lines y103 and y105 east across roads x115/x122. No parks.
+road 109 97 122 97
+road 101 104 125 104
+road 115 98 115 110
+road 122 98 122 110
+road 101 110 125 110
+line 101 97 101 109
+line 102 103 126 103
+line 102 105 126 105
+# zoo 117 98 later (cash): site kept free
+zone C 102 98 114 102
+zone R 123 98 125 102
+zone R 102 106 114 109
+zone C 116 106 121 109
+zone R 123 106 125 109
+pipe 109 92 109 109
+pipe 102 100 125 100
+pipe 102 107 125 107

@@ -1,0 +1,30 @@
+# stripplan.py 13 83 27 96 CICI --cross 7 --line 7
+# Attempt 11 Jul 2029: SW interior x13-27 y83-96 (free): shop/factory bands (shops 1,490 demand / 7 empty, factories +457)
+line 16 83 16 96
+line 23 83 23 96
+road 13 86 27 86
+road 13 93 27 93
+road 13 83 13 96
+road 20 82 20 96
+road 27 82 27 96
+zone C 14 83 15 85
+zone C 17 83 19 85
+zone C 21 83 22 85
+zone C 24 83 26 85
+zone I 14 87 15 89
+zone I 17 87 19 89
+zone I 21 87 22 89
+zone I 24 87 26 89
+zone C 14 90 15 92
+zone C 17 90 19 92
+zone C 21 90 22 92
+zone C 24 90 26 92
+zone I 14 94 15 96
+zone I 17 94 19 96
+zone I 21 94 22 96
+zone I 24 94 26 96
+pipe 13 86 27 86
+pipe 13 93 27 93
+pipe 13 83 13 96
+pipe 20 81 20 96
+pipe 27 81 27 96

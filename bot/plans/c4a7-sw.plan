@@ -1,0 +1,73 @@
+# stripplan.py 6 71 40 98 RIRCRIRC --cross 17 --line 9 --pipe-from 13,68
+line 10 70 11 70
+road 6 74 11 74
+road 16 74 27 74
+road 32 74 40 74
+road 6 81 29 81
+road 36 81 40 81
+road 6 88 40 88
+road 6 95 40 95
+road 6 71 6 98
+road 23 71 23 98
+road 40 71 40 98
+line 10 71 10 98
+line 19 71 19 98
+line 27 71 27 98
+line 36 71 36 77
+line 36 81 36 98
+zone R 7 71 9 73
+zone R 20 71 22 73
+zone R 24 71 26 73
+zone R 32 71 35 73
+zone R 37 71 39 73
+zone I 7 75 9 77
+zone I 11 75 18 77
+zone I 20 75 22 77
+zone I 24 75 26 77
+zone I 28 75 30 77
+zone I 37 75 39 77
+zone R 7 78 9 80
+zone R 11 78 18 80
+zone R 20 78 22 80
+zone R 24 78 26 80
+zone R 37 78 39 80
+zone C 7 82 9 84
+zone C 11 82 18 84
+zone C 20 82 22 84
+zone C 24 82 26 84
+zone C 28 82 30 84
+zone C 34 82 35 84
+zone C 37 82 39 84
+zone R 7 85 9 87
+zone R 11 85 18 87
+zone R 20 85 22 87
+zone R 24 85 26 87
+zone R 28 85 35 87
+zone R 37 85 39 87
+zone I 7 89 9 91
+zone I 11 89 18 91
+zone I 20 89 22 91
+zone I 24 89 26 91
+zone I 28 89 35 91
+zone I 37 89 39 91
+zone R 7 92 9 94
+zone R 11 92 18 94
+zone R 20 92 22 94
+zone R 24 92 26 94
+zone R 28 92 35 94
+zone R 37 92 39 94
+zone C 7 96 9 98
+zone C 11 96 18 98
+zone C 20 96 22 98
+zone C 24 96 26 98
+zone C 28 96 35 98
+zone C 37 96 39 98
+pipe 6 74 40 74
+pipe 6 81 29 81
+pipe 36 81 40 81
+pipe 6 88 40 88
+pipe 6 95 40 95
+pipe 6 71 6 98
+pipe 23 71 23 98
+pipe 40 71 40 98
+pipe 13 68 13 71

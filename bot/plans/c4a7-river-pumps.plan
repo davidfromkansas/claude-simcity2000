@@ -1,0 +1,13 @@
+# Attempt 7 Nov 2031: spare water 6% -> pumps on the south river shoreline east of the SW strips:
+# x55 y109-112, x58 y102-105, x59 y93-101; power line y110 across road x48, up x54 and across to the shore pumps.
+line 48 110 54 110
+pump 55 109 55 112
+line 54 104 54 109
+line 55 104 57 104
+pump 58 102 58 105
+line 58 101 58 101
+pump 59 93 59 101
+pipe 49 111 54 111
+pipe 54 100 54 110
+pipe 55 100 58 100
+pipe 57 101 57 103

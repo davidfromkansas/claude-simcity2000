@@ -1,0 +1,6 @@
+# NE fix: top row cut off by the big park, rows 17-19 behind the small park (empty zones carry no power)
+line 126 1 126 6
+pipe 126 1 126 6
+pipe 125 1 125 1
+bulldoze 120 15 120 16
+line 120 8 120 19

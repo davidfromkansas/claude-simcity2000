@@ -1,0 +1,77 @@
+#!/bin/bash
+# Tiny control helper for the game.  Usage:
+#   sc snap [file]        screenshot (default /tmp/sc/now.png)
+#   sc click X Y [btn]    click at game pixel (640x480)
+#   sc drag X1 Y1 X2 Y2   left-drag
+#   sc menu MX MY IX IY   open menu at MX,MY and pick item at IX,IY
+#   sc peek MX MY         screenshot an open menu without choosing
+#   sc tool X Y IX IY     long-press toolbar button, pick submenu item
+#   sc tpeek X Y          long-press toolbar button and screenshot its submenu
+#   sc key KEY...         press keys (xdotool names)
+#   sc type TEXT          type text
+#   sc save               save city (Alt+S) and print key numbers
+#   sc pause / sc paused   make sure game is paused / report it
+#   sc run llama|cheetah SECS   run the clock then pause
+#   sc log TYPE TEXT      add an entry to the dashboard activity feed
+export DISPLAY=:99
+mkdir -p /tmp/sc
+W=$(xdotool search --name DOSBox | head -1)
+cmd=$1; shift
+case $cmd in
+  snap) f=${1:-/tmp/sc/now.png}; import -window "$W" "$f"; echo "$f";;
+  click) xdotool mousemove --window "$W" "$1" "$2"; sleep 0.2; xdotool mousedown "${3:-1}"; sleep 0.15; xdotool mouseup "${3:-1}";;
+  drag) xdotool mousemove --window "$W" "$1" "$2"; sleep 0.2; xdotool mousedown 1; sleep 0.2
+        for i in 1 2 3 4 5 6 7 8; do xdotool mousemove --window "$W" $(( $1 + ($3-$1)*i/8 )) $(( $2 + ($4-$2)*i/8 )); sleep 0.08; done
+        sleep 0.2; xdotool mouseup 1; sleep 0.4
+        [ -n "$SC_WATER" ] && exit 0      # attempt 19: SC_WATER=1 leaves the bridge/wires pop-up open to choose from
+        # A "Select" pop-up (bridge / raised wires / causeway) means the drag hit water: cancel it with "None".
+        import -window "$W" /tmp/sc/dlg.png
+        if [ "$(convert /tmp/sc/dlg.png -format '%[pixel:p{285,240}]%[pixel:p{355,240}]%[pixel:p{320,200}]%[pixel:p{285,300}]%[pixel:p{355,300}]' info:)" = "$(printf 'srgb(186,186,186)%.0s' 1 2 3 4 5)" ]; then
+          if [ "$(convert /tmp/sc/dlg.png -format '%[pixel:p{185,240}]%[pixel:p{455,240}]' info:)" = "srgb(186,186,186)srgb(186,186,186)" ]; then nx=446; else nx=346; fi
+          xdotool mousemove --window "$W" $nx 185; xdotool mousedown 1; sleep 0.15; xdotool mouseup 1; echo "WARNING: drag hit water, pop-up cancelled" >&2; fi;;
+  nodlg)
+        # A "Select" pop-up (bridge / raised wires / causeway) means the drag hit water: cancel it with "None".
+        import -window "$W" /tmp/sc/dlg.png
+        if [ "$(convert /tmp/sc/dlg.png -format '%[pixel:p{285,240}]%[pixel:p{355,240}]%[pixel:p{320,200}]%[pixel:p{285,300}]%[pixel:p{355,300}]' info:)" = "$(printf 'srgb(186,186,186)%.0s' 1 2 3 4 5)" ]; then
+          if [ "$(convert /tmp/sc/dlg.png -format '%[pixel:p{185,240}]%[pixel:p{455,240}]' info:)" = "srgb(186,186,186)srgb(186,186,186)" ]; then nx=446; else nx=346; fi
+          xdotool mousemove --window "$W" $nx 185; xdotool mousedown 1; sleep 0.15; xdotool mouseup 1; echo "WARNING: drag hit water, pop-up cancelled" >&2; fi;;
+  menu) xdotool mousemove --window "$W" "$1" "$2"; xdotool mousedown 1; sleep 0.5
+        xdotool mousemove --window "$W" "$3" "$4"; sleep 0.4; xdotool mouseup 1;;
+  tool) xdotool mousemove --window "$W" "$1" "$2"; xdotool mousedown 1; sleep 1.3
+        xdotool mousemove --window "$W" "$3" "$4"; sleep 0.3; xdotool mouseup 1;;
+  tpeek) xdotool mousemove --window "$W" "$1" "$2"; xdotool mousedown 1; sleep 1.3; import -window "$W" /tmp/sc/now.png
+        xdotool mouseup 1; echo /tmp/sc/now.png;;
+  peek) xdotool mousemove --window "$W" "$1" "$2"; xdotool mousedown 1; sleep 0.5; import -window "$W" /tmp/sc/now.png
+        xdotool mousemove --window "$W" 630 470; sleep 0.2; xdotool mouseup 1; echo /tmp/sc/now.png;;
+  move) xdotool mousemove --window "$W" "$1" "$2";;
+  key) for k in "$@"; do xdotool key --window "$W" "$k"; sleep 0.1; done;;
+  type) xdotool type --window "$W" --delay 60 "$*";;
+  save) sv0=$(python3 -I -c "import sys,os;sys.path.insert(0,'$(dirname "$0")');import sc2parse as p;print(os.path.getmtime(p.SAVE))" 2>/dev/null)
+        "$0" menu 25 7 45 103; sleep 2
+        # dismiss "Game Saved" only if the grey box is really there (else the click would build with the current tool)
+        import -window "$W" /tmp/sc/sv.png
+        convert /tmp/sc/sv.png -crop 1x1+320+228 -format "%[fx:abs(r-g)<0.05&&abs(g-b)<0.05&&r>0.55?1:0]" info: | grep -q 1 && "$0" click 320 228; sleep 0.5; python3 -I "$(dirname "$0")/publish.py" metrics
+        # attempt 10: the game had ended (bankrupt, start menu) and save kept printing the old file as if current
+        sv1=$(python3 -I -c "import sys,os;sys.path.insert(0,'$(dirname "$0")');import sc2parse as p;print(os.path.getmtime(p.SAVE))" 2>/dev/null)
+        [ "$sv0" = "$sv1" ] && { echo "SAVE FAILED: the save file did not change - is the game still in the city view (game over / start menu)? Look at sc snap."; exit 4; }
+        python3 -I -c "import sys,json;sys.path.insert(0,'$(dirname "$0")');import sc2parse as p;m=p.parse(p.SAVE);h=m['health'];print(m['date'],'pop',m['population'],'cash',m['money'],'bonds',m['bonds'],'RCI',m['demand'],'| water',str(h['watered_pct'])+'%','power',str(h['powered_pct'])+'%','abandoned',h['abandoned'],'jammed',h['jammed_road_tiles'],'unemp',m['graphs']['unemployment'][:1],'tax',m['tax']['res'])";;
+  paused) import -window "$W" /tmp/sc/st.png
+        # count the exact green of the "*PAUSED*" label anywhere in the top strip (the tool panel can sit anywhere there)
+        n=$(convert /tmp/sc/st.png -crop 555x45+85+28 txt:- | grep -c "#00AA04")
+        [ "$n" -gt 8 ] && echo yes || echo no;;
+  pause) "$0" key Escape; [ "$("$0" paused)" = yes ] || { "$0" menu 67 7 75 23; "$0" key Escape; };;
+  run) # run SPEED(llama|cheetah) SECONDS, then pause and close any budget window
+        case $1 in llama) y=55;; cheetah) y=71;; *) y=39;; esac
+        "$0" menu 67 7 75 $y; "$0" key Escape; sleep "$2"; "$0" pause; sleep 0.3
+        # attempt 19: at year end a big city is busy and the pause click can be lost - the game ran a year unwatched
+        for i in 1 2 3 4 5 6; do [ "$("$0" paused)" = yes ] && break; sleep 1.5; "$0" pause; done
+        import -window "$W" /tmp/sc/st.png
+        if [ "$(convert /tmp/sc/st.png -crop 1x1+457+123 -format '%[pixel:p{0,0}]' info:)" != "$(convert /tmp/sc/st.png -crop 1x1+600+400 -format '%[pixel:p{0,0}]' info:)" ]; then :; fi;;
+  query) xdotool mousemove --window "$W" "$1" "$2"; xdotool keydown shift; sleep 0.2; xdotool mousedown 1; sleep 0.2
+        xdotool mouseup 1; xdotool keyup shift; sleep 0.8; import -window "$W" /tmp/sc/now.png; echo /tmp/sc/now.png;;
+  goto) # goto X Y : center view on tile X,Y (must be on screen now) and recalibrate
+        "$0" click 68 230; sleep 0.2; "$0" click $(python3 -I "$(dirname "$0")/tile.py" "$1" "$2"); sleep 0.6
+        python3 -I "$(dirname "$0")/tile.py" cal "$1" "$2" 324 240 8 >/dev/null; echo "centered on $1,$2";;
+  log) python3 -I "$(dirname "$0")/publish.py" log "$@";;
+  *) echo "unknown"; exit 1;;
+esac

@@ -1,0 +1,385 @@
+[
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "Fast start",
+  "moves": [
+   "Loan #2"
+  ],
+  "happened": "1,850 by December; loan #2 allowed in December.",
+  "watching": "Shop land",
+  "start": {
+   "date": "Feb 2001",
+   "population": 500,
+   "money": 3661,
+   "unemployment": 3,
+   "watered_pct": 82,
+   "powered_pct": 100,
+   "abandoned": 3,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Apr 2002",
+   "population": 2360,
+   "money": 811,
+   "unemployment": 7,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 14,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Blocks 3 + 4",
+  "moves": [
+   "Blocks 3 + 4",
+   "Coal #2"
+  ],
+  "happened": "Blocks 3+4 and coal #2; growth to 6,130 by mid-2003.",
+  "watching": "Water",
+  "start": {
+   "date": "Apr 2002",
+   "population": 2360,
+   "money": 811,
+   "unemployment": 7,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 14,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2003",
+   "population": 4880,
+   "money": -97,
+   "unemployment": 4,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 23,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "Seaport and links",
+  "moves": [
+   "Loan #3",
+   "Seaport + pumps",
+   "East block",
+   "East road link"
+  ],
+  "happened": "7,300 by December; water ran out; loan #3 for the seaport, 19 pumps, the east block and the east road link.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2003",
+   "population": 4880,
+   "money": -97,
+   "unemployment": 4,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 23,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 7770,
+   "money": -88,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "10,000 passed",
+  "moves": [],
+  "happened": "Growth to 10,580 by early 2005.",
+  "watching": "Land",
+  "start": {
+   "date": "Feb 2004",
+   "population": 7770,
+   "money": -88,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 10580,
+   "money": -906,
+   "unemployment": 5,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 71,
+   "jammed": 0,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "District 5, power, zoo",
+  "moves": [
+   "Loan #4",
+   "District 5",
+   "Loan #5",
+   "Coal plant",
+   "Zoo"
+  ],
+  "happened": "Loan #4: district 5 + gas plant; loan #5: coal plant, 16 pumps, zoo. 12,130 by December.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2005",
+   "population": 10580,
+   "money": -906,
+   "unemployment": 5,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 71,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2006",
+   "population": 12640,
+   "money": 790,
+   "unemployment": 4,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "Steady growth",
+  "moves": [],
+  "happened": "14,780 by December; unemployment 5%.",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2006",
+   "population": 12640,
+   "money": 790,
+   "unemployment": 4,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 15260,
+   "money": -723,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 79,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "good",
+  "title": "Steady growth",
+  "moves": [],
+  "happened": "16,800 by December; cash below zero.",
+  "watching": "Land, cash",
+  "start": {
+   "date": "Feb 2007",
+   "population": 15260,
+   "money": -723,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 79,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 17080,
+   "money": -2050,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 6,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "18,000",
+  "moves": [
+   "Loan #6",
+   "District 6",
+   "Coal plant"
+  ],
+  "happened": "18,040 by December. Loan #6: district 6 (dense homes) and a coal plant.",
+  "watching": "Airport",
+  "start": {
+   "date": "Feb 2008",
+   "population": 17080,
+   "money": -2050,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 6,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 18260,
+   "money": -920,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 89,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Approaching 20,000",
+  "moves": [],
+  "happened": "18,900 by December; factory stall; cash below zero.",
+  "watching": "Shop cap",
+  "start": {
+   "date": "Feb 2009",
+   "population": 18260,
+   "money": -920,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 89,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 19250,
+   "money": -2547,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "milestone",
+  "title": "20,000, airport",
+  "moves": [
+   "Loan #7",
+   "Airport",
+   "Loan #8",
+   "Job land"
+  ],
+  "happened": "Loan #7: airport and pumps; loan #8: factory and shop land. 20,360 by December, unemployment 5%.",
+  "watching": "Debt",
+  "start": {
+   "date": "Feb 2010",
+   "population": 19250,
+   "money": -2547,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 20290,
+   "money": 6894,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 174,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "good",
+  "title": "Airport fills shops",
+  "moves": [
+   "Shop cells",
+   "Coal plant"
+  ],
+  "happened": "21,220 by December; shop demand ~1,950 after the airport; two shop cells and a coal plant added.",
+  "watching": "Debt",
+  "start": {
+   "date": "Feb 2011",
+   "population": 20290,
+   "money": 6894,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 174,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 21320,
+   "money": -364,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 176,
+   "jammed": 6,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "good",
+  "title": "22,660",
+  "moves": [
+   "Loan #9",
+   "Factory land",
+   "Pumps",
+   "Ordinances"
+  ],
+  "happened": "Loan #9: factory land, pumps; ordinances on (+$386/yr).",
+  "watching": "Debt vs growth",
+  "start": {
+   "date": "Feb 2012",
+   "population": 21320,
+   "money": -364,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 176,
+   "jammed": 6,
+   "bonds": 8
+  },
+  "end": null
+ }
+]

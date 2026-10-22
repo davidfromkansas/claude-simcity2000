@@ -1,0 +1,7 @@
+# Claudeville 4: the south districts' lines leaned on districts that are not built yet in this attempt.
+# South district west cells: line x77 joined to line x85 along y101 (across road x84).
+line 78 101 84 101
+# South2: feed line x109 from the stadium line at (105,98) along x105/y102; join x116 to x126 along y103 (road x122).
+line 105 99 105 102
+line 106 102 108 102
+line 117 103 125 103

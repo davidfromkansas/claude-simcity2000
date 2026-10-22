@@ -1,0 +1,10 @@
+# dense homes north (y14-19), home demand near max
+road 77 13 92 13
+road 84 14 84 19
+line 77 13 77 21
+line 86 19 93 19
+line 93 19 93 21
+zone R 78 14 83 19
+zone R 85 14 91 18
+pipe 74 16 74 22
+pipe 75 16 91 16

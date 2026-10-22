@@ -1,0 +1,3 @@
+# Attempt 6 Nov 2042: the west-edge factory trips fail (homes ~34 road tiles away) -> a road link to the west map edge
+road 1 45 1 45
+link 0 45

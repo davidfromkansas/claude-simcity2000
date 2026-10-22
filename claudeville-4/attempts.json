@@ -1,0 +1,85 @@
+[
+ {
+  "attempt": 1,
+  "status": "failed",
+  "reason": "Peak 87,090 (Dec 2030). Two plane-crash fires at the airport burned the east bank (2011, 2023); two rebuilds used ~25 loans; bond cap 50 hit in 2028; cash fell below -$100,000 and the mayor was thrown out (Jan 2031).",
+  "timeline": "2031-01",
+  "timelapse": "recording-timelapse/timelapse.mp4",
+  "peak": 87090
+ },
+ {
+  "attempt": 2,
+  "status": "failed",
+  "reason": "Peak 97,090 (Nov 2038). No great fires (28 fire stations, isolated airport) and 30 loans, but bond payments (~$15k/yr) outran property tax ($7-9k/yr); growth stalled near 95,000 with shops capped; the south-east district's roads were never joined to the network; mayor thrown out at -$102,953 (Jan 2039).",
+  "timeline": "2039-01",
+  "peak": 97090
+ },
+ {
+  "attempt": 3,
+  "status": "failed",
+  "reason": "Peak 81,950 (Nov 2033). Loan guard kept loans to 27, but shops stayed capped from 2021 (no airport ever developed; ~14,000 shop workers vs ~6,000 of road-link capacity); coal-cluster fire burned ~1,300 tiles in 2023; game over at -$106,226 (Jan 2038).",
+  "timeline": "2038-01",
+  "peak": 81950
+ },
+ {
+  "attempt": 4,
+  "status": "failed",
+  "reason": "Peak 74,150 (Jan 2024). The airport finally developed (power line through it), but a great fire in 2017 burned ~3,900 tiles and cost ~30,000 people and 6 loans; the city stalled near 70,000 with all demand negative; a second great fire in 2035 burned most of the city while it ran unattended; game over at -$102,377 (Jan 2038).",
+  "timeline": "2038-01",
+  "peak": 74150
+ },
+ {
+  "attempt": 5,
+  "status": "failed",
+  "reason": "Peak 50,120 (Jul 2039). No great fire for 46 years (no tree parks, spread plants, airport far away), but a 2006-2011 jobs stall and 15 loans that bought only ~2,800 people each left the city broke from 2023; an alien-ship disaster in 2048 set a great fire that cash of -$75k could not fight: 9,220 people at Jan 2050.",
+  "peak": 50120,
+  "timeline": "2050-01"
+ },
+ {
+  "attempt": 6,
+  "status": "failed",
+  "reason": "Peak 120,770 (Apr 2049), 118,410 at Jan 2050 - the best Claudeville 4 city. No great fire in 50 years; 27 guarded loans (~4,400 people each, budget near balance). The map filled by 2043 at ~112,000: light zones and 6x6 cells could not hold 200,000.",
+  "peak": 120770,
+  "timeline": "2050-01"
+ },
+ {
+  "attempt": 7,
+  "status": "failed",
+  "reason": "Peak 91,980 (Feb 2041). Same rules as attempt 6 but more control failures (misplaced builds at the map edges, districts half-built when cash ran out) cost ~$5,000 and extra fix loans; 32 loans bought only ~2,900 people each, bond payments reached $19k a year against $9.8k income, and the money ran out (game over Jan 2046 at -$104,898).",
+  "peak": 91980,
+  "timeline": "2046-01"
+ },
+ {
+  "attempt": 8,
+  "status": "failed",
+  "reason": "Peak 92,500 (Feb 2038), ahead of attempt 7 and close to attempt 6 until 2038. In Nov 2038 an alien-ship fire (~24 tiles) became a great fire (~4,800 rubble tiles: the west bank, south-west and north district) while I ran the game unwatched; down to 38,000 with 30 loans and no money to rebuild; game over Jan 2046 (-$105,463).",
+  "peak": 92500,
+  "timeline": "2046-01"
+ },
+ {
+  "attempt": 9,
+  "status": "failed",
+  "reason": "Ahead of every earlier attempt until 2028 (89,990 in Jul 2027). Sep 2028 alien-ship fires became a great fire (94,400 -> 48,320); rebuilt to a peak of 102,360 (Dec 2044); 97,880 at the Jan 2050 check with 46 loans.",
+  "peak": 102360,
+  "timeline": "2050-01"
+ },
+ {
+  "attempt": 10,
+  "status": "failed",
+  "reason": "Fastest early city in Claudeville 4: 100,000 by Nov 2032. Land full by ~2033; 41-50 loans cost $24-31k a year against ~$11k tax, ordinances forgotten until 2040, taxes raised on a stalled city (2041). Peak 109,570 (Nov 2040); bankrupt at the Jan 2048 check.",
+  "peak": 109570,
+  "timeline": "2048-01"
+ },
+ {
+  "attempt": 11,
+  "status": "failed",
+  "reason": "Fastest start of all attempts (48,740 by 2011, 63,100 by 2015; river crossed 2009). Land full at ~70,000 by 2017; fill-ins to a peak of 106,750 (Jun 2048). Alien ship 2033 contained (~160 tiles). Alive at the deadline: 104,690 at the Jan 2050 check, cash -$55k, 29 loans. Too few home tiles (2,706 vs attempt 6's 3,085).",
+  "peak": 106750,
+  "timeline": "2050-01"
+ },
+ {
+  "attempt": 12,
+  "status": "playing",
+  "reason": ""
+ }
+]

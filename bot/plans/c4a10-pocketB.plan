@@ -1,0 +1,8 @@
+# Attempt 10 Feb 2032: factories 1,385 / shops 1,515 with no land - pocket between roads x27 and x38, y82-97:
+# factory columns beside both roads, homes in the middle on a new road x31 (joined to road y81)
+road 28 88 30 88
+road 31 83 31 97
+zone I 28 82 30 97
+zone R 32 83 34 96
+zone I 35 82 37 97
+pipe 31 83 31 97

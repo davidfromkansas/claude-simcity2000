@@ -1,0 +1,6 @@
+# Jul 2008 (loan #6): factories stalled with 74 empty factory tiles (industry cap) at ~5,200 factory workers,
+# unemployment rising. A second, larger seaport on the river bank north of the first (x58-62 y49-53), road
+# x63 down to road y63, power line x58 from the line row y59.
+road 63 49 63 62
+seaport 59 49 62 53
+line 59 54 59 58

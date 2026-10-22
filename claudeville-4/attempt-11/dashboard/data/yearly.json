@@ -1,0 +1,1473 @@
+[
+ {
+  "year": 2000,
+  "tone": "good",
+  "title": "Founded with ordinances on",
+  "moves": [
+   "Day-one district (a20-day1)",
+   "Finance ordinances + City Beautification"
+  ],
+  "happened": "First district built from attempt 10's day-one plan; finance ordinances enacted on day one (attempt 10 forgot them until 2040).",
+  "watching": "Population growth into 2001",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 20000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2001",
+   "population": 660,
+   "money": 2168,
+   "unemployment": 4,
+   "watered_pct": 94,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "Loans 2-4: coal, pumps, new zones",
+  "moves": [
+   "Loans 2-4",
+   "a20-2003, a19-2002 (coal + pumps), a19-2004"
+  ],
+  "happened": "Followed attempt 10's opening order; a build was cut off by a time limit and finished afterwards with no lost time.",
+  "watching": "Home demand and the zoo before 10,000",
+  "start": {
+   "date": "Feb 2001",
+   "population": 660,
+   "money": 2168,
+   "unemployment": 4,
+   "watered_pct": 94,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jul 2002",
+   "population": 7470,
+   "money": 7226,
+   "unemployment": 3,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 25,
+   "jammed": 1,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "9,820 people - ahead of attempt 10",
+  "moves": [
+   "Zoo (a14-zoo)"
+  ],
+  "happened": "Dec 2002: 9,820 people (attempt 10: 8,730). Zoo built before 10,000.",
+  "watching": "Factory demand at maximum: seaport and job strip next",
+  "start": {
+   "date": "Jul 2002",
+   "population": 7470,
+   "money": 7226,
+   "unemployment": 3,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 25,
+   "jammed": 1,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2003",
+   "population": 10500,
+   "money": 3032,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 49,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "Seaport, job strip and airport",
+  "moves": [
+   "Loans 5-6",
+   "Seaport + dense job strip (a19-2006)",
+   "Airport (c4a6-airport)",
+   "East homes + power (c4a6-east-homes, c4a7-east-power)"
+  ],
+  "happened": "Dec 2003: 13,010 people, about a year ahead of attempt 10. Unemployment 9% and factory demand high, so loans 5-6 paid for the seaport job strip and the airport; homes beside the strip in Feb 2004 fixed weak trips.",
+  "watching": "Water (spare 25%) and the 15,000 recreation cap",
+  "start": {
+   "date": "Feb 2003",
+   "population": 10500,
+   "money": 3032,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 49,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 13440,
+   "money": 9617,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 67,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "Water fixed, 15,100 people",
+  "moves": [
+   "South pumps + power (a19-pumps-s, c4a6-pumps-power)"
+  ],
+  "happened": "Dec 2004: 15,100 people (attempt 10: 13,130). South pumps built when spare water fell to 7%.",
+  "watching": "Factory land and the recreation cap",
+  "start": {
+   "date": "Feb 2004",
+   "population": 13440,
+   "money": 9617,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 67,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 15600,
+   "money": 5105,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 50,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "18,350 people - three years ahead",
+  "moves": [
+   "Loans 7-8",
+   "Stadium (c4a5-stadium) + fire stations (c4a6-fire1)",
+   "District 5 + power",
+   "East coal plant + fire station"
+  ],
+  "happened": "Dec 2005: 18,350 people (attempt 10: 15,140). Factory land ran short in Feb, so attempt 10's 2007 step came two years early: loans 7-8, stadium, fire stations, district 5.",
+  "watching": "Spare power 12%",
+  "start": {
+   "date": "Feb 2005",
+   "population": 15600,
+   "money": 5105,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 50,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2006",
+   "population": 18420,
+   "money": 5401,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "Past 20,000 a year early",
+  "moves": [
+   "East coal plant + fire station"
+  ],
+  "happened": "Dec 2006: 22,180 people (attempt 10: 17,600). East coal plant built in Dec 2005; water ran short again by December.",
+  "watching": "Water 6%; land getting short",
+  "start": {
+   "date": "Feb 2006",
+   "population": 18420,
+   "money": 5401,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 22440,
+   "money": 1507,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "good",
+  "title": "26,020 people",
+  "moves": [
+   "Mid pumps (from cash)",
+   "Loan 9",
+   "West block + pipes, south district + power"
+  ],
+  "happened": "Dec 2007: 26,020 people (attempt 10: 20,350). Loan 9 was refused by the loan guard in Dec 2006 and allowed after the January budget; west block and south district built with it.",
+  "watching": "Shop land short; river crossing due",
+  "start": {
+   "date": "Feb 2007",
+   "population": 22440,
+   "money": 1507,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 26370,
+   "money": 1405,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 38,
+   "jammed": 0,
+   "bonds": 10
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "Nearly 30,000",
+  "moves": [
+   "Loan 10",
+   "SE district + pipe, road links",
+   "South coal plant, second seaport",
+   "Home tax 7%"
+  ],
+  "happened": "Dec 2008: 29,930 people (attempt 10: 22,430). Loan 10 paid for the south-east district and road links; south coal plant and second seaport from cash. Home tax raised 6 -> 7% while home demand was positive.",
+  "watching": "Shop and factory land short; water 11%",
+  "start": {
+   "date": "Feb 2008",
+   "population": 26370,
+   "money": 1405,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 38,
+   "jammed": 0,
+   "bonds": 10
+  },
+  "end": {
+   "date": "Jul 2009",
+   "population": 33010,
+   "money": 2279,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 25,
+   "jammed": 0,
+   "bonds": 11
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "36,380 people; crossing the river",
+  "moves": [
+   "Loan 11",
+   "Lake pumps",
+   "South band, south-west band",
+   "Shore pumps"
+  ],
+  "happened": "Dec 2009: 36,380 people (attempt 10: 25,680). Loan 11 paid for lake pumps and the south and south-west bands. A reused shore-pump plan put 5 pumps on the still-empty west bank (control slip, ~$500).",
+  "watching": "River crossing (west district, coal plant)",
+  "start": {
+   "date": "Jul 2009",
+   "population": 33010,
+   "money": 2279,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 25,
+   "jammed": 0,
+   "bonds": 11
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 38260,
+   "money": 1756,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 24,
+   "jammed": 0,
+   "bonds": 12
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "good",
+  "title": "Across the river; 44,170 people",
+  "moves": [
+   "Loan 12: west district + causeway, west power",
+   "Loan 13: west coal plant, zoo #2"
+  ],
+  "happened": "Dec 2010: 44,170 people (attempt 10: 28,630). Loan 12 crossed the river (west district + causeway); power fell to 4% and loan 13 paid for the west coal plant and zoo #2. Home tax 7 -> 8 -> 9% with home demand near the maximum.",
+  "watching": "Shop land short; west districts 2-3",
+  "start": {
+   "date": "Feb 2010",
+   "population": 38260,
+   "money": 1756,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 24,
+   "jammed": 0,
+   "bonds": 12
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 45310,
+   "money": 2539,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 0,
+   "bonds": 13
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "good",
+  "title": "48,740 people; west districts 2-3",
+  "moves": [
+   "Loan 14: west districts 2-3",
+   "Coal plant x67-70 y70-73 + fire station"
+  ],
+  "happened": "Dec 2011: 48,740 people (attempt 10: 30,810 in Aug 2011). Loan 14 paid for west districts 2 and 3; spare power fell to 9% and a new coal plant came from cash. Budget roughly break-even (+$783 in 2010).",
+  "watching": "Cash $252; land getting short (19 empty factory tiles)",
+  "start": {
+   "date": "Feb 2011",
+   "population": 45310,
+   "money": 2539,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 39,
+   "jammed": 0,
+   "bonds": 13
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 50890,
+   "money": -1124,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 14
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "good",
+  "title": "53,110 people; SW strip",
+  "moves": [
+   "Loan 15: SW strip (c4a8-swind) + fixes",
+   "Powerfix links"
+  ],
+  "happened": "Dec 2012: 53,110 people (attempt 10: 32,720 in Jul 2012). Loan 15 paid for the SW homes/factories strip, which needed road joins, power links and (Feb 2013) pipes.",
+  "watching": "Home land short; SW home strip next",
+  "start": {
+   "date": "Feb 2012",
+   "population": 50890,
+   "money": -1124,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 14
+  },
+  "end": {
+   "date": "Feb 2013",
+   "population": 54480,
+   "money": 2269,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 60,
+   "jammed": 0,
+   "bonds": 15
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "good",
+  "title": "59,090 people; SW home strip",
+  "moves": [
+   "Loan 16: SW home strip + power",
+   "SW strip pipes"
+  ],
+  "happened": "Feb 2014: 59,090 people. Loan 16 paid for the SW home strip (powered by a new line down x12) and pipes into the SW strip.",
+  "watching": "Recreation cap near 60,000; power 13%",
+  "start": {
+   "date": "Feb 2013",
+   "population": 54480,
+   "money": 2269,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 60,
+   "jammed": 0,
+   "bonds": 15
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 59090,
+   "money": 2675,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 1,
+   "bonds": 16
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "good",
+  "title": "61,790 people; stadium #2",
+  "moves": [
+   "Loan 17: coal plant + fire station + stadium (c4a11-wr)"
+  ],
+  "happened": "Dec 2014: 61,790 people. Loan 17 paid for a coal plant, fire station and stadium #2 on the free west-bank strip by the river.",
+  "watching": "Land filling",
+  "start": {
+   "date": "Feb 2014",
+   "population": 59090,
+   "money": 2675,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 1,
+   "bonds": 16
+  },
+  "end": {
+   "date": "Feb 2015",
+   "population": 63100,
+   "money": 1838,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 17
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "steady",
+  "title": "Growing on the land built",
+  "moves": [],
+  "happened": "No new builds: cash stayed under $2,000 and the loan floor held loan 18 back; the city filled the land already zoned.",
+  "watching": "Land almost full",
+  "start": {
+   "date": "Feb 2015",
+   "population": 63100,
+   "money": 1838,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 66930,
+   "money": 1017,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 79,
+   "jammed": 0,
+   "bonds": 17
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "steady",
+  "title": "Growing on the land built",
+  "moves": [],
+  "happened": "No new builds: cash stayed under $2,000 and the loan floor held loan 18 back; the city filled the land already zoned.",
+  "watching": "Land almost full",
+  "start": {
+   "date": "Feb 2016",
+   "population": 66930,
+   "money": 1017,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 79,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2017",
+   "population": 69230,
+   "money": 562,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 83,
+   "jammed": 0,
+   "bonds": 17
+  }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "Land full; east strip and zoo #3",
+  "moves": [
+   "Loan 18: east strip + power",
+   "Zoo #3"
+  ],
+  "happened": "Dec 2017: 69,520 people (attempt 10: 43,940). Loan 18 (loan floor now slopes to 4,000 at 120,000) paid for the east strip; zoo #3 from cash.",
+  "watching": "Home demand slightly negative",
+  "start": {
+   "date": "Feb 2017",
+   "population": 69230,
+   "money": 562,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 83,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2018",
+   "population": 69880,
+   "money": 1433,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 18
+  }
+ },
+ {
+  "year": 2018,
+  "tone": "steady",
+  "title": "Around 70,000; west strip, coal #2, shore pumps",
+  "moves": [
+   "Home tax 8%",
+   "Loan 19: west strip + powerfix",
+   "Coal plant #2 + 6 shore pumps (c4a11-wr2)"
+  ],
+  "happened": "Dec 2018: ~69,000 people (attempt 10: 46,900). Unemployment rose to 6% with no factory land; loan 19 paid for the west strip; a second river-strip coal plant and 6 shore pumps from cash. Home tax 9 -> 8%.",
+  "watching": "Water; shop stall",
+  "start": {
+   "date": "Feb 2018",
+   "population": 69880,
+   "money": 1433,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 18
+  },
+  "end": {
+   "date": "Feb 2019",
+   "population": 69970,
+   "money": 1991,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 98,
+   "jammed": 2,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2019,
+  "tone": "steady",
+  "title": "Slow growth on full land",
+  "moves": [
+   "8 shore pumps"
+  ],
+  "happened": "Dec 2019: 73,660 people. 8 more shore pumps; stalls in shops and factories with little free land.",
+  "watching": "Cash below zero",
+  "start": {
+   "date": "Feb 2019",
+   "population": 69970,
+   "money": 1991,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 98,
+   "jammed": 2,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Feb 2020",
+   "population": 72470,
+   "money": -358,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2020,
+  "tone": "steady",
+  "title": "Slow growth, cash slipping",
+  "moves": [],
+  "happened": "No builds: cash fell below zero (about -$1,200 a year) while land was nearly full; the city grew ~1,000 a year.",
+  "watching": "Water; cash",
+  "start": {
+   "date": "Feb 2020",
+   "population": 72470,
+   "money": -358,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Feb 2021",
+   "population": 73630,
+   "money": -1650,
+   "unemployment": 5,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 119,
+   "jammed": 0,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2021,
+  "tone": "steady",
+  "title": "Slow growth, cash slipping",
+  "moves": [],
+  "happened": "No builds: cash fell below zero (about -$1,200 a year) while land was nearly full; the city grew ~1,000 a year.",
+  "watching": "Water; cash",
+  "start": {
+   "date": "Feb 2021",
+   "population": 73630,
+   "money": -1650,
+   "unemployment": 5,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 119,
+   "jammed": 0,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Feb 2022",
+   "population": 76430,
+   "money": -2812,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 126,
+   "jammed": 0,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2022,
+  "tone": "steady",
+  "title": "Loan 20: south rows, pocket B, lake pumps",
+  "moves": [
+   "Loan 20",
+   "Lake pumps",
+   "South rows + pipes",
+   "Pocket B + road/pipe joins"
+  ],
+  "happened": "Dec 2022: 77,830 people (attempt 10: 70,800). Water at 9% and land full: loan 20 paid for 4 lake pumps, south home rows and pocket B. A cash-negative build looped 30 minutes (control fix: build.py refuses while cash < 0).",
+  "watching": "Growth on the new land",
+  "start": {
+   "date": "Feb 2022",
+   "population": 76430,
+   "money": -2812,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 126,
+   "jammed": 0,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Feb 2023",
+   "population": 78120,
+   "money": 1228,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 20
+  }
+ },
+ {
+  "year": 2023,
+  "tone": "steady",
+  "title": "Fire stations, shop rezoning, water",
+  "moves": [
+   "Loan 21: 14 fire stations",
+   "South-row shops",
+   "25 shore pumps"
+  ],
+  "happened": "Dec 2023: 79,210 people. Loan 21 paid for 14 fire stations (26 total); 52 empty south-row home tiles rezoned to shops; 25 shore pumps from cash.",
+  "watching": "Water; cash near zero",
+  "start": {
+   "date": "Feb 2023",
+   "population": 78120,
+   "money": 1228,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 20
+  },
+  "end": {
+   "date": "Feb 2024",
+   "population": 80580,
+   "money": -2372,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 0,
+   "bonds": 21
+  }
+ },
+ {
+  "year": 2024,
+  "tone": "steady",
+  "title": "North strip, shop tax",
+  "moves": [
+   "Loan 22: north strip",
+   "Coal plant x49-52 y23-26",
+   "Shop tax 10%"
+  ],
+  "happened": "Dec 2024: ~82,000 people. Loan 22 paid for the north strip (trimmed off the north edge) and a coal plant; shop tax raised to 10 then (controller) 11%.",
+  "watching": "Shop demand",
+  "start": {
+   "date": "Feb 2024",
+   "population": 80580,
+   "money": -2372,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 0,
+   "bonds": 21
+  },
+  "end": {
+   "date": "Jul 2025",
+   "population": 83310,
+   "money": -1057,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 92,
+   "jammed": 0,
+   "bonds": 22
+  }
+ },
+ {
+  "year": 2025,
+  "tone": "setback",
+  "title": "Shop demand collapses",
+  "moves": [],
+  "happened": "Dec 2025: 84,330. With the shop tax at 11% shop demand fell from +1,373 to about 0 and then negative (strategy slip: research said shops turn negative above ~9%).",
+  "watching": "Cash slipping (~-$3k/yr)",
+  "start": {
+   "date": "Jul 2025",
+   "population": 83310,
+   "money": -1057,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 92,
+   "jammed": 0,
+   "bonds": 22
+  },
+  "end": {
+   "date": "Feb 2026",
+   "population": 84320,
+   "money": -3809,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 122,
+   "jammed": 0,
+   "bonds": 22
+  }
+ },
+ {
+  "year": 2026,
+  "tone": "setback",
+  "title": "Flat year",
+  "moves": [],
+  "happened": "Dec 2026: ~84,000. Shop demand -800, unemployment 6%; the controller lowered the shop tax back toward 8%. No builds (cash negative).",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2026",
+   "population": 84320,
+   "money": -3809,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 122,
+   "jammed": 0,
+   "bonds": 22
+  },
+  "end": {
+   "date": "Feb 2027",
+   "population": 83770,
+   "money": -6412,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 144,
+   "jammed": 0,
+   "bonds": 22
+  }
+ },
+ {
+  "year": 2027,
+  "tone": "steady",
+  "title": "Recovering",
+  "moves": [],
+  "happened": "Dec 2027: 85,050. Shop tax back at 8-9%, demand recovering; cash -$9k.",
+  "watching": "Recreation cap; land",
+  "start": {
+   "date": "Feb 2027",
+   "population": 83770,
+   "money": -6412,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 144,
+   "jammed": 0,
+   "bonds": 22
+  },
+  "end": {
+   "date": "Feb 2028",
+   "population": 85440,
+   "money": -9348,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 143,
+   "jammed": 3,
+   "bonds": 22
+  }
+ },
+ {
+  "year": 2028,
+  "tone": "steady",
+  "title": "NW strip, zoo #4",
+  "moves": [
+   "Loans 23-24",
+   "NW strip + power/pipe joins",
+   "Zoo #4"
+  ],
+  "happened": "Dec 2028: ~86,000 people (attempt 10: 84,690 in Aug 2028). Loans 23-24 paid for the NW free block (factories/homes) and zoo #4; shop tax cap back to 9%.",
+  "watching": "Shop land",
+  "start": {
+   "date": "Feb 2028",
+   "population": 85440,
+   "money": -9348,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 143,
+   "jammed": 3,
+   "bonds": 22
+  },
+  "end": {
+   "date": "Feb 2029",
+   "population": 87670,
+   "money": 1636,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 126,
+   "jammed": 0,
+   "bonds": 24
+  }
+ },
+ {
+  "year": 2029,
+  "tone": "steady",
+  "title": "SW interior shops/factories",
+  "moves": [
+   "Loan 25: SW interior bands + joins"
+  ],
+  "happened": "Dec 2029: ~89,000 people. Loan 25 paid for shop/factory bands in the SW interior; road joins raised their trip success. Shop demand at the maximum, homes negative.",
+  "watching": "Budget -$4.5k/yr",
+  "start": {
+   "date": "Feb 2029",
+   "population": 87670,
+   "money": 1636,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 126,
+   "jammed": 0,
+   "bonds": 24
+  },
+  "end": {
+   "date": "Feb 2030",
+   "population": 88920,
+   "money": 4803,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 98,
+   "jammed": 0,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2030,
+  "tone": "steady",
+  "title": "Shop block, shop tax 9%",
+  "moves": [
+   "Shop tax 9%",
+   "Shop block x17-28 y71-80"
+  ],
+  "happened": "Dec 2030: ~90,500 people. Shop tax 9% (demand at the maximum); shop block x17-28 y71-80 from cash.",
+  "watching": "Shops; budget",
+  "start": {
+   "date": "Feb 2030",
+   "population": 88920,
+   "money": 4803,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 98,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Jul 2031",
+   "population": 92910,
+   "money": -1089,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 99,
+   "jammed": 14,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2031,
+  "tone": "good",
+  "title": "Growth returns",
+  "moves": [],
+  "happened": "Dec 2031: 94,190 people; home demand turned positive. No builds (cash negative).",
+  "watching": "Budget",
+  "start": {
+   "date": "Jul 2031",
+   "population": 92910,
+   "money": -1089,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 99,
+   "jammed": 14,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Feb 2032",
+   "population": 95150,
+   "money": -5166,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 89,
+   "jammed": 0,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2032,
+  "tone": "good",
+  "title": "96,540 people",
+  "moves": [],
+  "happened": "Dec 2032: 96,540 (attempt 10: 100,470 in Nov 2032). Home demand +500; shops still at the maximum.",
+  "watching": "100,000 soon; cash -$5k",
+  "start": {
+   "date": "Feb 2032",
+   "population": 95150,
+   "money": -5166,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 89,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Feb 2033",
+   "population": 96870,
+   "money": -8861,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2033,
+  "tone": "setback",
+  "title": "Alien ship, contained",
+  "moves": [
+   "Loan 26: river shop block",
+   "Home tax 9%",
+   "Disaster response + road y69 rebuild",
+   "Loan 27"
+  ],
+  "happened": "Feb-Mar 2033: an alien ship crossed the city; firefighters were dispatched on every burst and ~160 tiles burned (attempt 9 lost half its city). The ship cut road y69 (the west bank link), rebuilt with loan 27. Loan 26 had paid for a river shop block; home tax 9%.",
+  "watching": "Recovery",
+  "start": {
+   "date": "Feb 2033",
+   "population": 96870,
+   "money": -8861,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Jul 2034",
+   "population": 97560,
+   "money": 5241,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2034,
+  "tone": "steady",
+  "title": "Recovery",
+  "moves": [],
+  "happened": "Dec 2034: 97,980 people. Burned land regrew.",
+  "watching": "100,000",
+  "start": {
+   "date": "Jul 2034",
+   "population": 97560,
+   "money": 5241,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2035",
+   "population": 98300,
+   "money": 784,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2035,
+  "tone": "steady",
+  "title": "Near 100,000",
+  "moves": [],
+  "happened": "Dec 2035: 99,140. Shops stalled with positive demand (few empty lots).",
+  "watching": "100,000",
+  "start": {
+   "date": "Feb 2035",
+   "population": 98300,
+   "money": 784,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2036",
+   "population": 98960,
+   "money": -3485,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 117,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2036,
+  "tone": "milestone",
+  "title": "Past 100,000",
+  "moves": [],
+  "happened": "Jun 2036: 100,150 people (attempt 10 passed 100,000 in Nov 2032).",
+  "watching": "Recreation cap ~105k; cash -$7.6k",
+  "start": {
+   "date": "Feb 2036",
+   "population": 98960,
+   "money": -3485,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 117,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2037",
+   "population": 100570,
+   "money": -7586,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 116,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2037,
+  "tone": "steady",
+  "title": "Zoo #5, coal plant",
+  "moves": [
+   "Loans 28-29",
+   "Zoo #5 + coal plant"
+  ],
+  "happened": "Dec 2037: ~100,600 people with land full. Loans 28-29 (late loans are cash-positive by 2050) paid for zoo #5 and a coal plant.",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2037",
+   "population": 100570,
+   "money": -7586,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 116,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Jan 2038",
+   "population": 101120,
+   "money": 1256,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 113,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2038,
+  "tone": "steady",
+  "title": "Holding near 101,000",
+  "moves": [],
+  "happened": "Land full; population 100-102k; cash falling ~$5k a year.",
+  "watching": "Cash vs the -$100k limit",
+  "start": {
+   "date": "Jan 2038",
+   "population": 101120,
+   "money": 1256,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 113,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2039",
+   "population": 100720,
+   "money": -4183,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 132,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2039,
+  "tone": "steady",
+  "title": "Holding near 101,000",
+  "moves": [],
+  "happened": "Land full; population 100-102k; cash falling ~$5k a year.",
+  "watching": "Cash vs the -$100k limit",
+  "start": {
+   "date": "Feb 2039",
+   "population": 100720,
+   "money": -4183,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 132,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2040",
+   "population": 101930,
+   "money": -9905,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2040,
+  "tone": "steady",
+  "title": "Holding near 101,000",
+  "moves": [],
+  "happened": "Land full; population 100-102k; cash falling ~$5k a year.",
+  "watching": "Cash vs the -$100k limit",
+  "start": {
+   "date": "Feb 2040",
+   "population": 101930,
+   "money": -9905,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2041",
+   "population": 102460,
+   "money": -15525,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 109,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2041,
+  "tone": "steady",
+  "title": "103,280 people",
+  "moves": [],
+  "happened": "Dec 2041: 103,280 people (new high). Land full; cash -$15.5k, falling ~$5.6k a year.",
+  "watching": "Reach 2050 above -$100k",
+  "start": {
+   "date": "Feb 2041",
+   "population": 102460,
+   "money": -15525,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 109,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2042",
+   "population": 103250,
+   "money": -21119,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2042,
+  "tone": "steady",
+  "title": "Factory tax back to 8-9%",
+  "moves": [
+   "Factory tax 8%"
+  ],
+  "happened": "Dec 2042: ~102,500. Factory demand rose to +1,000 with no land; factory tax 7 -> 9% (controller).",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2042",
+   "population": 103250,
+   "money": -21119,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2043",
+   "population": 101690,
+   "money": -26632,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 65,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2043,
+  "tone": "good",
+  "title": "104,390 - new high",
+  "moves": [],
+  "happened": "Dec 2043: 104,390 people.",
+  "watching": "Cash -$27k",
+  "start": {
+   "date": "Feb 2043",
+   "population": 101690,
+   "money": -26632,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 65,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2044",
+   "population": 104160,
+   "money": -31388,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 72,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2044,
+  "tone": "steady",
+  "title": "Holding near 104,000",
+  "moves": [],
+  "happened": "Land full; ~103-104k people; cash falling ~$4.6k a year.",
+  "watching": "Cash vs -$100k",
+  "start": {
+   "date": "Feb 2044",
+   "population": 104160,
+   "money": -31388,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 72,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2045",
+   "population": 103570,
+   "money": -36006,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2045,
+  "tone": "steady",
+  "title": "Holding near 104,000",
+  "moves": [],
+  "happened": "Land full; ~103-104k people; cash falling ~$4.6k a year.",
+  "watching": "Cash vs -$100k",
+  "start": {
+   "date": "Feb 2045",
+   "population": 103570,
+   "money": -36006,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2046",
+   "population": 103040,
+   "money": -40620,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 99,
+   "jammed": 0,
+   "bonds": 29
+  }
+ }
+]

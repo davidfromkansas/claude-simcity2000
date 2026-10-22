@@ -1,0 +1,6 @@
+# Attempt 8 Oct 2028: fire cover WARN -> 5 firegrid lots (none near the west edge)
+fire 9 96
+fire 10 117
+fire 24 96
+fire 24 117
+fire 44 46

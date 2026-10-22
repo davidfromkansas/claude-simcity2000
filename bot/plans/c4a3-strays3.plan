@@ -1,0 +1,4 @@
+# remove two stray roads left by misplaced clicks
+bulldoze 16 32 16 32
+bulldoze 37 36 37 36
+line 37 36 37 36

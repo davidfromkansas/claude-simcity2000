@@ -1,0 +1,14 @@
+# Attempt 19 Jul 2007: shop land short (23 empty, demand 1256), home demand -176 with 3% unemployment (jobs first):
+# the still-empty north half of the east homes (x123-126 y21-33) becomes dense shops; parks stay.
+dezone 123 26 126 30
+dezone 123 33 126 33
+dezone 123 24 123 25
+dezone 126 24 126 25
+dezone 123 31 123 32
+dezone 126 31 126 32
+zone C 123 26 126 30
+zone C 123 33 126 33
+zone C 123 24 123 25
+zone C 126 24 126 25
+zone C 123 31 123 32
+zone C 126 31 126 32

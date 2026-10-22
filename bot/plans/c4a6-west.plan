@@ -1,0 +1,38 @@
+# Attempt 6 Jul 2015: shops capped (no west neighbour link), little land left -> cross the river (a19-west, no parks):
+# bridge road y69 x20-52, a 3x3 grid x20-40 y48-69, road link to the WEST edge at (0,69), pumps on the west lake shore.
+# Power: line y70 from the west block's line x62 (crossing road y69), over the river, up columns x24/x31/x37.
+road 20 69 52 69
+road 20 48 40 48
+road 20 55 40 55
+road 20 62 40 62
+road 20 49 20 68
+road 27 49 27 68
+road 34 49 34 68
+road 40 49 40 68
+road 1 69 19 69
+link 0 69
+line 62 69 62 70
+line 19 70 61 70
+line 24 49 24 70
+line 31 49 31 70
+line 37 49 37 70
+line 19 68 19 69
+line 1 68 18 68
+pump 1 67 3 67
+pump 5 67 6 67
+pump 12 67 17 67
+pump 41 60 41 67
+zone R 21 49 26 54
+zone R 28 49 33 54
+zone I 35 49 39 54
+zone R 21 56 26 61
+zone C 28 56 33 61
+zone R 35 56 39 61
+zone R 21 63 26 67
+zone R 28 63 33 67
+zone C 35 63 39 67
+pipe 40 49 40 68
+pipe 1 68 39 68
+pipe 21 52 39 52
+pipe 21 59 39 59
+pipe 21 66 39 66

@@ -1,0 +1,18 @@
+# Attempt 12 Jul 2019: spare water 8% -> single pumps on free shore tiles that already touch a pipe and a powered conductor
+pump 17 66 17 66
+pump 42 62 42 62
+pump 44 73 44 73
+pump 44 80 44 80
+pump 58 42 58 42
+pump 59 42 59 42
+pump 59 76 59 76
+pump 60 37 60 37
+pump 60 38 60 38
+pump 70 43 70 43
+pump 71 27 71 27
+pump 73 20 73 20
+pump 73 91 73 91
+pump 82 111 82 111
+pump 82 113 82 113
+pump 94 111 94 111
+pump 94 113 94 113

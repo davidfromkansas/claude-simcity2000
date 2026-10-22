@@ -1,0 +1,4 @@
+# Jul 2013: power/water under 10%, shop and factory land short (demand 2,000 each): coal plant above (68,52), the empty
+# east home cell x118-123 y84-89 becomes shops (between the airport side and district 6 homes)
+coal 68 48
+zone c 118 84 123 89

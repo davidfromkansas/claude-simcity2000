@@ -1,0 +1,4 @@
+# district 5 police: zoned spot and two park tiles in the way
+bulldoze 80 79 81 79
+dezone 79 77 81 79
+police 79 77

@@ -1,0 +1,19 @@
+# Attempt 19 Feb 2015 (loan #11): plateau at ~36,000, home land value 73 (crime 51 costs ~18, pollution 23 ~13).
+# One police station (79,77) took its area to crime 0-5. Six more: two on empty land (west 56,63 with a line from
+# the y59 seaport line; north 102,17 beside line x105), four replacing 3x3 of factories in the high-crime blocks
+# (also less pollution next to homes).
+line 58 61 58 62
+police 56 63
+police 102 17
+bulldoze 79 29 81 31
+dezone 79 29 81 31
+police 79 29
+bulldoze 103 49 105 51
+dezone 103 49 105 51
+police 103 49
+bulldoze 103 92 105 94
+dezone 103 92 105 94
+police 103 92
+bulldoze 118 44 120 46
+dezone 118 44 120 46
+police 118 44

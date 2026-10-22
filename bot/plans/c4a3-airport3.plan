@@ -1,0 +1,6 @@
+# Claudeville 4 a3 Nov 2021 experiment: the isolated airports of attempts 2-3 never developed (0 buildings in 11+ years);
+# attempt 1's airport inside the city did. Second airport inside the east corner, touching roads x108/y76, power
+# line x115 from the x116 line, its own fire station.
+airport 109 77 114 80
+line 115 77 115 84
+fire 116 77

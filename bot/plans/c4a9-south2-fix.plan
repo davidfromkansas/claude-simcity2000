@@ -1,0 +1,4 @@
+# Attempt 9 Nov 2023: join the east-river strip's road x43 to road x41 (the stadium took 43,87), and carry line x47
+# (east-river strip, crossing at 47,98) down to line y105 for the south2 blocks x43-51 (41-42,105 are road junctions)
+road 42 98 42 98
+line 47 99 47 104

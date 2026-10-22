@@ -1,0 +1,4 @@
+# Claudeville 4 a2 Jul 2025: factory trade capacity (29,000 workers, ~3 units) - second rail link, off the east edge
+# beside the east factory block along y97
+rail 117 97 125 97
+raillink 127 97

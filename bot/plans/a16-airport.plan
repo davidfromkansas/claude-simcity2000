@@ -1,0 +1,4 @@
+# Jul 2011 (loan #9): shops stalled at 348 buildings with demand 1,023 - the shop cap at ~20,000 needs an airport.
+# 6x4 airport below road y97 east of the factory cells; power down line x109 across road y97.
+line 109 97 109 101
+airport 110 98 115 101

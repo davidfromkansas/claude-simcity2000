@@ -1,0 +1,5 @@
+# Attempt 7 Dec 2010: spare power 8% -> coal plant on the west bank below the bridge road, own fire station;
+# line y70 west from x19
+line 12 70 18 70
+coal 12 71
+fire 16 71

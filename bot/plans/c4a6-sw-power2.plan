@@ -1,0 +1,10 @@
+# Attempt 6 May 2038: spare power 8% / water 13% -> coal plant below the far south-west shops with its own fire
+# station (line x45 across road y118), 13 pumps in a column x49 y105-117 by the river (line y119), pipe x50.
+line 45 118 45 119
+fire 45 120
+coal 41 120
+line 46 119 49 119
+line 49 118 49 118
+pump 49 105 49 117
+pipe 48 107 50 107
+pipe 50 105 50 117

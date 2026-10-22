@@ -1,0 +1,15 @@
+# Attempt 6 Feb 2032: home demand 658 with 2 empty tiles -> three dense home cells x21-39 y6-11 above the north-west
+# shops (road y5; lines x24/x31/x37 up across road y12).
+road 20 5 40 5
+road 20 6 20 11
+road 27 6 27 11
+road 34 6 34 11
+road 40 6 40 11
+line 24 6 24 12
+line 31 6 31 12
+line 37 6 37 12
+zone R 21 6 26 11
+zone R 28 6 33 11
+zone R 35 6 39 11
+pipe 21 9 39 9
+pipe 40 9 40 17

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claudeville 4</title>
+<meta name="description" content="Claude plays SimCity 2000: 200,000 people in 50 years, every attempt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{color-scheme:light;--bg:#EEF1F0;--surface:#FFFFFF;--border:#D5DCD9;--line:#E2E7E5;--ink:#14211F;--ink-2:#4A5A56;--muted:#6B7A76;
+  --hero:#14211F;--hero-ink:#EEF1F0;--hero-2:#C9D4D0;--accent:#17604A;--accent-2:#C2410C;--hot:#FFB27A;--pace:#9AA6A2;
+  --good-bg:#DCEFE6;--good:#0E3F30;--bad-bg:#FFD9CC;--bad:#7A1D06;--run-bg:#FFE6D3;--run:#7A2A06;--wait-bg:#E2E7E5;--wait:#2C3A37;
+  --c1:#17604A;--c2:#C2410C;--c3:#3B6FB6;--c4:#8A4FBF;--c5:#B8860B}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0F1716;--surface:#16211F;--border:#2A3836;--line:#22302E;--ink:#E8EEEC;--ink-2:#AEBDB9;--muted:#8A9B97;
+  --hero:#1D2C29;--hero-ink:#EEF1F0;--hero-2:#B5C4C0;--accent:#4FB892;--accent-2:#F07A45;--pace:#6E7D79;
+  --good-bg:#173A2E;--good:#9FE0C5;--bad-bg:#45231A;--bad:#FFB49C;--run-bg:#43291A;--run:#FFC9A3;--wait-bg:#22302E;--wait:#AEBDB9;
+  --c1:#4FB892;--c2:#F07A45;--c3:#7EA8E8;--c4:#C29AEB;--c5:#E3C25A}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0F1716;--surface:#16211F;--border:#2A3836;--line:#22302E;--ink:#E8EEEC;--ink-2:#AEBDB9;--muted:#8A9B97;
+  --hero:#1D2C29;--hero-ink:#EEF1F0;--hero-2:#B5C4C0;--accent:#4FB892;--accent-2:#F07A45;--pace:#6E7D79;
+  --good-bg:#173A2E;--good:#9FE0C5;--bad-bg:#45231A;--bad:#FFB49C;--run-bg:#43291A;--run:#FFC9A3;--wait-bg:#22302E;--wait:#AEBDB9;
+  --c1:#4FB892;--c2:#F07A45;--c3:#7EA8E8;--c4:#C29AEB;--c5:#E3C25A}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1200px;margin:0 auto;padding:32px 16px 64px;display:flex;flex-direction:column;gap:28px}
+h1,h2{font-family:"Space Grotesk",system-ui,sans-serif;margin:0}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px}
+.brand{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:20px;display:flex;gap:10px;align-items:center}
+nav{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+button{font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer;min-height:44px}
+.banner{background:var(--hero);color:var(--hero-ink);border-radius:14px;padding:36px;display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:flex-end}
+.banner .tag{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.08em;color:#9FD8C3}
+.banner h1{font-size:clamp(40px,8vw,64px);line-height:1}
+.banner p{margin:0;font-size:19px;max-width:620px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;flex:0 1 460px}
+.stats .v{font-family:"IBM Plex Mono",monospace;font-size:32px;color:var(--hot)} .stats .l{font-size:14px;color:var(--hero-2)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:28px;min-width:0}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--ink-2)}
+.legend span::before{content:"";display:inline-block;width:18px;height:3px;background:var(--c);margin-right:6px;vertical-align:middle}
+.box{position:relative;height:340px;margin-top:12px}
+.scroll{overflow-x:auto}
+table{width:100%;min-width:760px;border-collapse:collapse;font-size:15px}
+th{text-align:left;font-size:13px;color:var(--ink-2);letter-spacing:.04em;padding:10px 12px;border-bottom:2px solid var(--ink)}
+td{padding:14px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.pill{display:inline-block;padding:4px 10px;border-radius:999px;font-size:13px;font-weight:600;white-space:nowrap}
+.p-good{background:var(--good-bg);color:var(--good)} .p-bad{background:var(--bad-bg);color:var(--bad)} .p-run{background:var(--run-bg);color:var(--run)} .p-wait{background:var(--wait-bg);color:var(--wait)}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.rules .k{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--accent)}
+.rules p{margin:6px 0 0}
+footer{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><svg width="32" height="32" viewBox="0 0 36 36" aria-hidden="true"><rect x="3" y="14" width="8" height="19" fill="none" stroke="currentColor" stroke-width="2"/><rect x="14" y="4" width="8" height="29" fill="none" stroke="currentColor" stroke-width="2"/><rect x="25" y="20" width="8" height="13" fill="none" stroke="currentColor" stroke-width="2"/></svg>Claude plays SimCity 2000</div>
+    <nav><a id="curLink" href="attempt-1/dashboard/">Current attempt</a><a href="../post-mortem/">Post-mortems</a><a href="../claudeville-3/">Claudeville 3</a><a href="../">All challenges</a>
+      <button id="themeBtn" aria-label="Switch light or dark theme">◐</button></nav>
+  </header>
+
+  <section class="banner">
+    <div style="display:flex;flex-direction:column;gap:12px;flex:1 1 460px">
+      <div class="tag">CHALLENGE 4</div>
+      <h1>Claudeville 4</h1>
+      <p>Grow a city to <strong>200,000 people</strong> within <strong>50 game years</strong>. Medium difficulty ($10,000 to start), disasters on, loans allowed, the same flat map every attempt. After each miss Claude writes a post-mortem and tries again, up to 20 attempts.</p>
+    </div>
+    <div class="stats">
+      <div><div class="v" id="sAttempts">–</div><div class="l">attempts so far</div></div>
+      <div><div class="v" id="sBest">–</div><div class="l">best population</div></div>
+      <div><div class="v" id="sStatus">–</div><div class="l">status</div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px">
+      <h2 style="font-size:26px">Every attempt vs. the goal</h2>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="box"><canvas id="chart" role="img" aria-label="Population of each attempt by game year against the 200,000 goal"></canvas></div>
+  </section>
+
+  <section class="card">
+    <h2 style="font-size:26px;margin-bottom:14px">Attempts</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>#</th><th>Status</th><th>Peak population</th><th>Reached by</th><th>Main reason it ended</th><th>Links</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table></div>
+  </section>
+
+  <section class="rules">
+    <div class="card"><div class="k">RULE</div><p>Success = 200,000 people before January 2050 (game year 50).</p></div>
+    <div class="card"><div class="k">AFTER A MISS</div><p>Claude writes a post-mortem, turns it into a new strategy, and starts the next attempt on the same map.</p></div>
+    <div class="card"><div class="k">FOR EVERY ATTEMPT</div><p>A live dashboard, full recordings, a timelapse, a yearly journal and a post-mortem.</p></div>
+  </section>
+  <footer>Data comes straight from the game's save files. This page refreshes itself every minute.</footer>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const fmt = n => (n == null || isNaN(n)) ? "–" : Number(n).toLocaleString("en-US");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+let chart = null;
+try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+$("themeBtn").onclick = () => {
+  const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  const next = cur === "dark" ? "light" : "dark"; document.documentElement.dataset.theme = next;
+  try { localStorage.setItem("theme", next); } catch (e) {}
+  if (chart) { chart.destroy(); chart = null; } refresh();
+};
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+async function get(p, f) { try { const r = await fetch(p + "?v=" + Date.now()); return r.ok ? r.json() : f; } catch (e) { return f; } }
+
+async function refresh() {
+  const list = await get("attempts.json", []);
+  const data = await Promise.all(list.map(a => get(`attempt-${a.attempt}/dashboard/data/metrics.json`, [])));
+  const rows = list.map((a, i) => {
+    const m = data[i]; let peak = null;
+    m.forEach(r => { if (!peak || r.population > peak.population) peak = r; });
+    return { ...a, peak, last: m[m.length - 1] };
+  });
+  const best = Math.max(0, ...rows.map(r => r.peak?.population || 0));
+  const cur = rows.find(r => r.status === "playing") || rows[rows.length - 1];
+  $("sAttempts").textContent = rows.length; $("sBest").textContent = fmt(best);
+  $("sStatus").textContent = rows.some(r => r.status === "success") ? "Won" : cur ? "Playing" : "–";
+  if (cur) $("curLink").href = `attempt-${cur.attempt}/dashboard/`;
+  const pill = { playing: ["Playing", "p-run"], success: ["Goal reached", "p-good"], failed: ["Missed", "p-bad"] };
+  $("rows").innerHTML = rows.map(r => {
+    const [t, c] = pill[r.status] || ["Not started", "p-wait"];
+    const done = r.status !== "playing";
+    return `<tr><td class="mono">${r.attempt}</td><td><span class="pill ${c}">${t}${r.status === "playing" && r.last ? " · " + esc(r.last.date) : ""}</span></td>
+      <td class="mono">${fmt(r.peak?.population)}</td><td>${r.peak ? esc(r.peak.date) + " (year " + Math.floor(r.peak.gy - 2000) + ")" : "–"}</td>
+      <td style="color:var(--ink-2)">${esc(r.reason || "—")}</td>
+      <td style="white-space:nowrap"><a href="attempt-${r.attempt}/dashboard/">Dashboard</a>${done ? ` · <a href="attempt-${r.attempt}/post-mortem/">Post-mortem</a>` : ""}${r.timelapse ? ` · <a href="attempt-${r.attempt}/${esc(r.timelapse)}">Timelapse</a>` : ""}</td></tr>`;
+  }).join("") || `<tr><td colspan="6">No attempts yet.</td></tr>`;
+
+  const colors = ["--c1", "--c2", "--c3", "--c4", "--c5"].map(css);
+  const ds = rows.map((r, i) => ({ label: "Attempt " + r.attempt, data: data[i].map(x => ({ x: x.gy, y: x.population })),
+    borderColor: colors[i % 5], borderWidth: 2.5, pointRadius: 0, tension: .2 }));
+  ds.push({ label: "Pace needed", data: [{ x: 2000, y: 0 }, { x: 2050, y: 200000 }], borderColor: css("--pace"), borderDash: [6, 5], borderWidth: 1.5, pointRadius: 0 });
+  $("legend").innerHTML = ds.map((d, i) => `<span style="--c:${d.borderColor}">${esc(d.label)}</span>`).join("");
+  const grid = css("--line"), text = css("--ink-2");
+  if (chart) { chart.data.datasets = ds; chart.update("none"); return; }
+  chart = new Chart($("chart"), { type: "line", data: { datasets: ds }, options: { animation: false, maintainAspectRatio: false,
+    interaction: { mode: "nearest", axis: "x", intersect: false }, plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: it => " " + it.dataset.label + ": " + fmt(Math.round(it.parsed.y)) } } },
+    scales: { x: { type: "linear", min: 2000, max: 2050, ticks: { color: text, stepSize: 10, callback: v => v }, grid: { color: grid } },
+              y: { min: 0, max: 200000, ticks: { color: text, callback: v => fmt(v) }, grid: { color: grid } } } } });
+}
+refresh(); setInterval(refresh, 60e3);
+</script>
+</body>
+</html>

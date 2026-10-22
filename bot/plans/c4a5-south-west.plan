@@ -1,0 +1,15 @@
+# Attempt 5 Feb 2019: home (938) and shop (1,029) demand, 12-14 empty tiles -> south band x77-99 y114-124 below the lakes.
+# Line x77 down from the lake pump line, rows y115/y121 east across road x88. No parks.
+road 76 110 76 125
+road 77 117 99 117
+road 77 125 99 125
+road 88 114 88 124
+line 77 111 77 124
+line 78 115 99 115
+line 78 121 99 121
+zone R 78 114 87 116
+zone C 89 114 99 116
+zone C 78 118 87 124
+zone R 89 118 99 124
+pipe 82 110 82 124
+pipe 94 110 94 124

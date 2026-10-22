@@ -1,0 +1,16 @@
+# Attempt 19 Feb 2044 (loan #32): 92,390 people, factory land short (21 empty, demand 1,608). Dense factory cells
+# x41-53 y7-19 above the north-west district (roads y6/y13, columns x47/x54; lines x44/x51 continued north across
+# road y20; pipe x42 up from the district, rows y10/y17).
+road 41 6 54 6
+road 41 13 54 13
+road 47 7 47 19
+road 54 7 54 19
+line 44 7 44 20
+line 51 7 51 20
+zone I 41 7 46 12
+zone I 48 7 53 12
+zone I 41 14 46 19
+zone I 48 14 53 19
+pipe 42 10 42 24
+pipe 43 10 53 10
+pipe 43 17 53 17

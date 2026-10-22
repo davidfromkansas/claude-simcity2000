@@ -1,0 +1,8 @@
+# Attempt 9 Jul 2027: spare water 14% -> 7 shore pumps on the west riverbank x58-59 y28-34 beside line x57 (2021 link),
+# pipe x57 down to the y40 pipe of the west shore pumps
+line 58 31 58 33
+pump 58 28 58 30
+pump 59 31 59 33
+pump 58 34 58 34
+pipe 57 28 57 40
+pipe 58 31 58 33

@@ -1,0 +1,62 @@
+# stripplan.py 8 99 48 118 RRCRRI --cross 10 --line 10
+line 13 99 13 118
+line 23 99 23 118
+line 33 99 33 118
+line 43 99 43 118
+road 8 102 48 102
+road 8 109 48 109
+road 8 116 48 116
+road 8 98 8 118
+road 18 98 18 118
+road 28 98 28 118
+road 38 98 38 118
+road 48 98 48 118
+zone R 9 99 12 101
+zone R 14 99 17 101
+zone R 19 99 22 101
+zone R 24 99 27 101
+zone R 29 99 32 101
+zone R 34 99 37 101
+zone R 39 99 42 101
+zone R 44 99 47 101
+zone R 9 103 12 105
+zone R 14 103 17 105
+zone R 19 103 22 105
+zone R 24 103 27 105
+zone R 29 103 32 105
+zone R 34 103 37 105
+zone R 39 103 42 105
+zone R 44 103 47 105
+zone C 9 106 12 108
+zone C 14 106 17 108
+zone C 19 106 22 108
+zone C 24 106 27 108
+zone C 29 106 32 108
+zone C 34 106 37 108
+zone C 39 106 42 108
+zone C 44 106 47 108
+zone R 9 110 12 112
+zone R 14 110 17 112
+zone R 19 110 22 112
+zone R 24 110 27 112
+zone R 29 110 32 112
+zone R 34 110 37 112
+zone R 39 110 42 112
+zone R 44 110 47 112
+zone R 9 113 12 115
+zone R 14 113 17 115
+zone R 19 113 22 115
+zone R 24 113 27 115
+zone R 29 113 32 115
+zone R 34 113 37 115
+zone R 39 113 42 115
+zone R 44 113 47 115
+pipe 8 102 48 102
+pipe 8 109 48 109
+pipe 8 116 48 116
+pipe 8 97 8 118
+pipe 18 97 18 118
+pipe 28 97 28 118
+pipe 38 97 38 118
+pipe 48 97 48 118
+line 14 100 42 100

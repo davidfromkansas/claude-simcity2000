@@ -1,0 +1,17 @@
+# Feb 2016: the seaport worked (factories 524 -> 606 built, unemployment 15% -> 9%); factory demand still at
+# max with 59 empty tiles left. Three factory cells below road y97 (x86-107 y98-103), same 8-column pitch:
+# line columns x85/93/101 continued across road y97, roads x84/92/100/108, road y104, a pipe row.
+road 84 98 84 103
+road 92 98 92 103
+road 100 98 100 103
+road 108 98 108 103
+road 84 104 108 104
+line 85 97 85 103
+line 93 97 93 103
+line 101 97 101 103
+zone i 86 98 91 103
+zone i 94 98 99 103
+zone i 102 98 107 103
+pipe 107 95 107 100
+pipe 86 101 107 101
+pipe 107 101 107 101

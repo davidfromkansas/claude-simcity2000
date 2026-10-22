@@ -1,0 +1,5 @@
+# Attempt 7 Jul 2035: spare power 9% -> coal plant inland east of the south-west strips, own fire station;
+# line y85 from the strip homes across road x40
+line 40 85 46 85
+coal 47 84
+fire 51 84

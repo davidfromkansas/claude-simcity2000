@@ -1,0 +1,3 @@
+# Attempt 9->10 Feb 2010: shop demand 1,036 with 33 empty shop tiles; the factory block x67-75 y64-68 is empty -> shops
+dezone 67 64 75 68
+zone C 67 64 75 68

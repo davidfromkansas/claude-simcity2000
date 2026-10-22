@@ -1,0 +1,8 @@
+# south shops x88-91 are cut off by the airport road x87: lines through them joined across x87 to line x86;
+# south-east district pipes joined to the x107 main (attempt 1's 2016 fix)
+line 88 98 88 102
+line 88 104 88 108
+line 87 100 87 100
+line 87 106 87 106
+pipe 107 94 107 96
+pipe 108 96 113 96

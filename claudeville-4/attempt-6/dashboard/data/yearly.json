@@ -1,0 +1,648 @@
+[
+ {
+  "year": 2000,
+  "tone": "steady",
+  "title": "Same opening, no parks",
+  "moves": [
+   "District 1"
+  ],
+  "happened": "Attempt 6 began with attempt 5's opening, no tree parks, and a new rule: a loan must bring ~5,000 people.",
+  "watching": "Power",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 20000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2001",
+   "population": 970,
+   "money": 2170,
+   "unemployment": 1,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 2,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "steady",
+  "title": "Coal, pumps, north district",
+  "moves": [
+   "Coal + pumps",
+   "North district"
+  ],
+  "happened": "Loans #3-4 for the coal plants, north pumps and the north job district.",
+  "watching": "Recreation",
+  "start": {
+   "date": "Jun 2002",
+   "population": 7020,
+   "money": 2178,
+   "unemployment": 3,
+   "watered_pct": 70,
+   "powered_pct": 86,
+   "abandoned": 28,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2003",
+   "population": 9920,
+   "money": 8716,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 30,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "Zoo from cash",
+  "moves": [
+   "Zoo"
+  ],
+  "happened": "Zoo and finance ordinances paid from cash.",
+  "watching": "Airport",
+  "start": {
+   "date": "Feb 2003",
+   "population": 9920,
+   "money": 8716,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 30,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Jul 2004",
+   "population": 13390,
+   "money": 5273,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 32,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "Airport off the edge",
+  "moves": [
+   "Airport",
+   "Seaport strip"
+  ],
+  "happened": "Airport in the north-east one row in from the edge; seaport job strip (loan #5); south pumps powered after the audit caught them.",
+  "watching": "Trips for the job strip",
+  "start": {
+   "date": "Jul 2004",
+   "population": 13390,
+   "money": 5273,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 32,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 14490,
+   "money": 324,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "Homes for the job strip",
+  "moves": [
+   "East homes",
+   "District 5"
+  ],
+  "happened": "East-edge homes and district 5 (loan #6) fixed the job strip's failed trips.",
+  "watching": "Recreation cap",
+  "start": {
+   "date": "Feb 2005",
+   "population": 14490,
+   "money": 324,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2006",
+   "population": 16740,
+   "money": 2565,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "Stadium",
+  "moves": [
+   "Stadium",
+   "Fire stations"
+  ],
+  "happened": "Stadium (loan #7) and 4 fire stations; 18,000+ people, 4,000 ahead of attempt 5.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2006",
+   "population": 16740,
+   "money": 2565,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 20350,
+   "money": 4737,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 63,
+   "jammed": 0,
+   "bonds": 7
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "South and south-east",
+  "moves": [
+   "South district",
+   "South-east district",
+   "Road links"
+  ],
+  "happened": "Factory block and south district (loan #8), south-east shops (loan #9), road links and seaport 2 from cash.",
+  "watching": "Water",
+  "start": {
+   "date": "Feb 2008",
+   "population": 23410,
+   "money": 6449,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 45,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 25700,
+   "money": 7761,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 57,
+   "jammed": 0,
+   "bonds": 9
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "steady",
+  "title": "South bands",
+  "moves": [
+   "South bands"
+  ],
+  "happened": "South bands (loans #10-11) and pumps; 30,000 people.",
+  "watching": "Shop cap",
+  "start": {
+   "date": "Feb 2011",
+   "population": 30570,
+   "money": 3335,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 0,
+   "bonds": 10
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 35100,
+   "money": 8220,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 0,
+   "bonds": 11
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "milestone",
+  "title": "Across the river",
+  "moves": [
+   "West district",
+   "West link"
+  ],
+  "happened": "Bridge, west district and a fourth neighbour link at the west edge (loan #12); a missed 2007 plan found and built.",
+  "watching": "West bank land",
+  "start": {
+   "date": "Feb 2015",
+   "population": 38820,
+   "money": 1964,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 73,
+   "jammed": 0,
+   "bonds": 11
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 41430,
+   "money": 7019,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 82,
+   "jammed": 0,
+   "bonds": 13
+  }
+ },
+ {
+  "year": 2018,
+  "tone": "good",
+  "title": "West bank fills",
+  "moves": [
+   "West districts"
+  ],
+  "happened": "West districts 2-4, shop cells, north-west coal plant (loans #14-15); 51,000 people.",
+  "watching": "South-west bank",
+  "start": {
+   "date": "Feb 2018",
+   "population": 47100,
+   "money": 6750,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 55,
+   "jammed": 0,
+   "bonds": 14
+  },
+  "end": {
+   "date": "Feb 2019",
+   "population": 51050,
+   "money": 4802,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 67,
+   "jammed": 0,
+   "bonds": 15
+  }
+ },
+ {
+  "year": 2021,
+  "tone": "good",
+  "title": "South-west bank",
+  "moves": [
+   "South-west grid"
+  ],
+  "happened": "A 9-cell grid on the empty south-west bank (loan #16); 57,600.",
+  "watching": "Shops",
+  "start": {
+   "date": "Feb 2021",
+   "population": 57580,
+   "money": 2115,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 132,
+   "jammed": 0,
+   "bonds": 15
+  },
+  "end": {
+   "date": "Feb 2022",
+   "population": 59610,
+   "money": 5679,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 146,
+   "jammed": 0,
+   "bonds": 16
+  }
+ },
+ {
+  "year": 2024,
+  "tone": "good",
+  "title": "More south-west",
+  "moves": [
+   "South-west cells",
+   "Stadium 2"
+  ],
+  "happened": "Shops, homes, stadium #2 (loans #17-18); 70,900 by the end of 2024.",
+  "watching": "Records",
+  "start": {
+   "date": "Feb 2024",
+   "population": 67280,
+   "money": 6324,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 92,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2025",
+   "population": 70690,
+   "money": 5530,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 115,
+   "jammed": 0,
+   "bonds": 18
+  }
+ },
+ {
+  "year": 2026,
+  "tone": "milestone",
+  "title": "Claudeville 4 record",
+  "moves": [
+   "Far south-west homes"
+  ],
+  "happened": "75,760 beat attempt 4's 74,150 peak; 79,000 in 2027 with 5 more fire stations.",
+  "watching": "Land",
+  "start": {
+   "date": "Feb 2026",
+   "population": 75760,
+   "money": 4062,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 106,
+   "jammed": 0,
+   "bonds": 18
+  },
+  "end": {
+   "date": "Feb 2027",
+   "population": 79190,
+   "money": 1818,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 101,
+   "jammed": 0,
+   "bonds": 18
+  }
+ },
+ {
+  "year": 2030,
+  "tone": "good",
+  "title": "Marina and shops",
+  "moves": [
+   "Marina",
+   "Zoo 3"
+  ],
+  "happened": "Marina, north-west shops (loan #21), zoo #3, a small open-land fire that burned out.",
+  "watching": "Land",
+  "start": {
+   "date": "Jan 2030",
+   "population": 88560,
+   "money": 624,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 95,
+   "jammed": 0,
+   "bonds": 20
+  },
+  "end": {
+   "date": "Feb 2031",
+   "population": 91880,
+   "money": 7073,
+   "unemployment": 2,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 83,
+   "jammed": 0,
+   "bonds": 21
+  }
+ },
+ {
+  "year": 2032,
+  "tone": "good",
+  "title": "Strip by the river",
+  "moves": [
+   "River strip",
+   "Seaport 3"
+  ],
+  "happened": "West-bank river strip (loan #23), seaport 3, north-east shops.",
+  "watching": "Factory cap",
+  "start": {
+   "date": "Feb 2032",
+   "population": 93320,
+   "money": 13877,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 122,
+   "jammed": 0,
+   "bonds": 21
+  },
+  "end": {
+   "date": "Feb 2033",
+   "population": 94900,
+   "money": 5309,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 244,
+   "jammed": 0,
+   "bonds": 23
+  }
+ },
+ {
+  "year": 2036,
+  "tone": "milestone",
+  "title": "100,000",
+  "moves": [
+   "Tax cut"
+  ],
+  "happened": "A small tax cut ended a stall; 100,180 people in Nov 2036, the first Claudeville 4 city past 100,000.",
+  "watching": "Land and water",
+  "start": {
+   "date": "Feb 2036",
+   "population": 99030,
+   "money": -891,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 177,
+   "jammed": 0,
+   "bonds": 23
+  },
+  "end": {
+   "date": "Feb 2037",
+   "population": 100170,
+   "money": -3671,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 118,
+   "jammed": 0,
+   "bonds": 23
+  }
+ },
+ {
+  "year": 2037,
+  "tone": "good",
+  "title": "East side",
+  "moves": [
+   "East district"
+  ],
+  "happened": "12 home cells on the empty east side (loan #24); 106,000 by 2038.",
+  "watching": "Water",
+  "start": {
+   "date": "Feb 2037",
+   "population": 100170,
+   "money": -3671,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 118,
+   "jammed": 0,
+   "bonds": 23
+  },
+  "end": {
+   "date": "May 2038",
+   "population": 106380,
+   "money": -2488,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 71,
+   "jammed": 0,
+   "bonds": 24
+  }
+ },
+ {
+  "year": 2039,
+  "tone": "good",
+  "title": "Shore pumps",
+  "moves": [
+   "Shore pumps"
+  ],
+  "happened": "Pumps on true shoreline tiles took spare water from 5% to 30%; 111,000.",
+  "watching": "Full map",
+  "start": {
+   "date": "Feb 2039",
+   "population": 109110,
+   "money": -512,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 89,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Feb 2040",
+   "population": 110960,
+   "money": 6541,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 26
+  }
+ },
+ {
+  "year": 2043,
+  "tone": "steady",
+  "title": "Map full",
+  "moves": [],
+  "happened": "The last empty land (west-edge factories) would not fill; ~112,000 is the layout's capacity. Ran to 2050.",
+  "watching": "Deadline",
+  "start": {
+   "date": "Feb 2043",
+   "population": 112690,
+   "money": 7676,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 110,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2044",
+   "population": 113270,
+   "money": 5161,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 84,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2049,
+  "tone": "milestone",
+  "title": "Peak 120,770",
+  "moves": [],
+  "happened": "Demand at maximum in the last years lifted the city to 120,770 (Apr 2049); 118,410 at Jan 2050.",
+  "watching": "Attempt 7",
+  "start": {
+   "date": "Apr 2049",
+   "population": 120770,
+   "money": -5630,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 72,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2050",
+   "population": 118410,
+   "money": -7176,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 78,
+   "jammed": 0,
+   "bonds": 27
+  }
+ }
+]

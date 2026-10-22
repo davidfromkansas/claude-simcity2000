@@ -1,0 +1,3 @@
+# the y22 feed line did not go down over the shop zone: dezone the 5 tiles, then lay it
+dezone 117 22 121 22
+line 117 22 121 22

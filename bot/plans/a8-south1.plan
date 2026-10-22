@@ -1,0 +1,24 @@
+# south block (y42-54): 5 dense home segments, shops, factories, fire station. Loan #2 (home demand at max).
+road 76 35 76 55
+road 77 48 108 48
+road 77 55 108 55
+road 84 42 84 54
+road 92 42 92 54
+road 100 42 100 54
+road 108 42 108 54
+line 77 38 77 55
+line 85 35 85 55
+line 93 35 93 55
+line 101 41 101 55
+zone R 78 42 83 47
+zone R 86 42 91 47
+zone c 94 42 99 47
+zone i 102 42 107 47
+zone R 78 49 83 54
+zone R 86 49 91 54
+zone R 94 49 99 54
+zone i 102 49 107 54
+fire 94 42
+pipe 74 39 74 52
+pipe 75 44 107 44
+pipe 75 51 107 51

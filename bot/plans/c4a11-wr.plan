@@ -1,0 +1,6 @@
+# Attempt 11 Feb 2014: spare power 13% and home cap (3 recreation for 59,090) -> coal plant x42-45 y28-31 with fire station x46-48 y28-30
+# on the free west-bank strip by the river, line y29 across road x40 from the west-district-2 building at (39,29); stadium x42-45 y32-35 touching the plant
+line 40 29 41 29
+coal 42 28
+fire 46 28
+stadium 42 32

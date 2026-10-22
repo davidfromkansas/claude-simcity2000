@@ -1,0 +1,100 @@
+[
+ {
+  "year": 2001,
+  "tone": "steady",
+  "title": "Slow, debt-free start",
+  "moves": [
+   "Block 1",
+   "Power column linked"
+  ],
+  "happened": "Block 1 built from $10,000 with no loan. The audit caught an unlinked power column before the clock ran.",
+  "watching": "Growth is slow without borrowing",
+  "start": {
+   "date": "Feb 2001",
+   "population": 260,
+   "money": 1944,
+   "unemployment": 0,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Feb 2002",
+   "population": 1050,
+   "money": 1859,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "setback",
+  "title": "Not enough jobs",
+  "moves": [
+   "Shop strip with pipe and road"
+  ],
+  "happened": "Population stuck near 1,500 with unemployment rising to 21%.",
+  "watching": "Factory demand at maximum",
+  "start": {
+   "date": "Feb 2003",
+   "population": 1550,
+   "money": 1822,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 6,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 1450,
+   "money": 1964,
+   "unemployment": 21,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 19,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "steady",
+  "title": "Slow but debt-free",
+  "moves": [
+   "Dense homes north",
+   "Factory blocks east"
+  ],
+  "happened": "No loans. Savings were reinvested in dense homes and factories as demand allowed. 3,850 people by January 2010, far behind the pace needed.",
+  "watching": "Growth rate",
+  "start": {
+   "date": "Feb 2009",
+   "population": 3220,
+   "money": 891,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 3810,
+   "money": 1226,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 7,
+   "jammed": 0,
+   "bonds": 0
+  }
+ }
+]

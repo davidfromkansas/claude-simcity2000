@@ -1,0 +1,392 @@
+[
+ {
+  "year": 2000,
+  "tone": "setback",
+  "title": "Slow start: power not linked",
+  "moves": [
+   "$10,000 bond, tax 4%",
+   "First block with un-zoned power columns",
+   "Coal plant, 12 pumps",
+   "Power link along y=56"
+  ],
+  "happened": "Built the full first block on day one, but only one of the four power columns touched the coal plant, so most zones had no power for a year (120 people by January). Linked the columns in February.",
+  "watching": "Growth now that every zone has power.",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 10000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2001",
+   "population": 120,
+   "money": 5540,
+   "unemployment": 13,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "1,000 people",
+  "moves": [],
+  "happened": "Population 120 -> 1,000 with 1% unemployment once power reached every block.",
+  "watching": "Water: only 44% of buildings have water yet.",
+  "start": {
+   "date": "Jan 2001",
+   "population": 120,
+   "money": 5540,
+   "unemployment": 13,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2002",
+   "population": 1000,
+   "money": 5014,
+   "unemployment": 1,
+   "watered_pct": 44,
+   "powered_pct": 100,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "3,190 people",
+  "moves": [
+   "North-south pipe x=74"
+  ],
+  "happened": "Population 1,000 -> 3,190. Found the south pipe rows had never connected to the pumps; one north-south pipe fixed water to 98%.",
+  "watching": "Room: the first block is filling.",
+  "start": {
+   "date": "Jan 2002",
+   "population": 1000,
+   "money": 5014,
+   "unemployment": 1,
+   "watered_pct": 44,
+   "powered_pct": 100,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2003",
+   "population": 3190,
+   "money": 4593,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 12,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "5,150 people",
+  "moves": [
+   "Second bond",
+   "Block 2 (y56-90)",
+   "Second coal plant",
+   "11 pumps"
+  ],
+  "happened": "Population 3,190 -> 5,150, every building powered. Shop demand fell to -2,000 while factory demand stayed maxed.",
+  "watching": "Water spare 14%; services due now (5,000 people).",
+  "start": {
+   "date": "Jan 2003",
+   "population": 3190,
+   "money": 4593,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 12,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2004",
+   "population": 5150,
+   "money": 2317,
+   "unemployment": 10,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "8,260 people",
+  "moves": [
+   "Tax 4% -> 6%",
+   "Factories in block 2 middle bands",
+   "11 pumps"
+  ],
+  "happened": "Population 5,150 -> 8,260, unemployment 2%. Cash went slightly negative (tax income $659 vs loan payments $700).",
+  "watching": "Services (first fire and police) and room to grow.",
+  "start": {
+   "date": "Jan 2004",
+   "population": 5150,
+   "money": 2317,
+   "unemployment": 10,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2005",
+   "population": 8260,
+   "money": -109,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "10,580 people",
+  "moves": [
+   "Third bond",
+   "Fire + police stations",
+   "Block 3 east",
+   "16-pump field with its own power line"
+  ],
+  "happened": "Population 8,260 -> 10,580, unemployment 3%, every building powered. Built block 3 east and the first fire and police stations.",
+  "watching": "Power spare 14%: third plant; school and hospital due.",
+  "start": {
+   "date": "Jan 2005",
+   "population": 8260,
+   "money": -109,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2006",
+   "population": 10580,
+   "money": 2551,
+   "unemployment": 3,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 41,
+   "jammed": 2,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "13,510 people",
+  "moves": [
+   "Fourth bond",
+   "Third coal plant",
+   "School + hospital",
+   "27-pump field"
+  ],
+  "happened": "Population 10,580 -> 13,510, 2% unemployed. Added a third coal plant (citizens refused a spot next to homes, so it went by the river), a school, a hospital and a second wired pump field. Fourth bond.",
+  "watching": "Home demand maxed: more land. Rail before 15,000-20,000.",
+  "start": {
+   "date": "Jan 2006",
+   "population": 10580,
+   "money": 2551,
+   "unemployment": 3,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 41,
+   "jammed": 2,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Jan 2007",
+   "population": 13510,
+   "money": 4190,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 36,
+   "jammed": 4,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "good",
+  "title": "15,000 people",
+  "moves": [
+   "Block 3 south (x109-126, y56-90)",
+   "Tax 6% -> 8%"
+  ],
+  "happened": "Population 13,510 -> 15,030. Built block 3 south. But loan payments now exceed tax income, so cash is nearly gone.",
+  "watching": "Budget at 8% tax; power spare 18%.",
+  "start": {
+   "date": "Jan 2007",
+   "population": 13510,
+   "money": 4190,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 36,
+   "jammed": 4,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Jan 2008",
+   "population": 15030,
+   "money": 402,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 65,
+   "jammed": 4,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "steady",
+  "title": "16,430 people",
+  "moves": [
+   "Fifth bond",
+   "Fourth coal plant",
+   "Block 4 south"
+  ],
+  "happened": "Population 15,030 -> 16,430 (+9%), slower: the city was full and cash was gone. Tax at 8% roughly balanced the loans.",
+  "watching": "New south block; power spare 12%.",
+  "start": {
+   "date": "Jan 2008",
+   "population": 15030,
+   "money": 402,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 65,
+   "jammed": 4,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Jan 2009",
+   "population": 16430,
+   "money": 270,
+   "unemployment": 4,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 76,
+   "jammed": 10,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "steady",
+  "title": "17,350 people",
+  "moves": [],
+  "happened": "Population 16,430 -> 17,350 (+6%). The new south block is filling slowly. Budget is about even at 8% tax with five loans.",
+  "watching": "Growth of block 4.",
+  "start": {
+   "date": "Jan 2009",
+   "population": 16430,
+   "money": 270,
+   "unemployment": 4,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 76,
+   "jammed": 10,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Jan 2010",
+   "population": 17350,
+   "money": 258,
+   "unemployment": 5,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 97,
+   "jammed": 3,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "setback",
+  "title": "Stalled at 17,580",
+  "moves": [
+   "Separate tax rates",
+   "Sixth bond",
+   "Block 4 shops + factories",
+   "Power line x=78"
+  ],
+  "happened": "Population 17,350 -> 17,580. Factory and shop demand turned negative after tax went to 8%, and the new southern homes had no jobs nearby (block 4's middle bands were never zoned). Fix: separate taxes (homes 10%, shops 6%, factories 5%) and zone the middle bands.",
+  "watching": "Whether jobs and southern homes fill.",
+  "start": {
+   "date": "Jan 2010",
+   "population": 17350,
+   "money": 258,
+   "unemployment": 5,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 97,
+   "jammed": 3,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Jan 2011",
+   "population": 17580,
+   "money": -81,
+   "unemployment": 8,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 145,
+   "jammed": 10,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "setback",
+  "title": "Earthquake destroys the city",
+  "moves": [
+   "Earthquake: firefighters dispatched"
+  ],
+  "happened": "In May an earthquake started fires that burned almost the whole city (about 3,500 tiles, most roads). With one fire station, six loans and no tax base left, the attempt ended.",
+  "watching": "Attempt 4: fire stations in every block, cash reserve.",
+  "start": {
+   "date": "Jan 2011",
+   "population": 17580,
+   "money": -81,
+   "unemployment": 8,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 145,
+   "jammed": 10,
+   "bonds": 5
+  },
+  "end": null
+ }
+]

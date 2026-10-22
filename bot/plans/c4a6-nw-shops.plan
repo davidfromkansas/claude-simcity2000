@@ -1,0 +1,14 @@
+# Attempt 6 Jan 2030: shop demand 1,035 with 7 empty tiles -> three dense shop cells x21-39 y13-19 above the west shop
+# cells (road y12; line x24 from the NW coal plant; lines x31/x37 down across road y20).
+road 20 12 40 12
+road 20 13 20 19
+road 27 13 27 19
+road 34 13 34 19
+road 40 13 40 19
+line 31 13 31 20
+line 37 13 37 20
+zone C 21 14 26 19
+zone C 28 13 33 19
+zone C 35 13 39 19
+pipe 21 17 39 17
+pipe 40 17 40 21

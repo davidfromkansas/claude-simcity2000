@@ -1,0 +1,4 @@
+# Attempt 13: second neighbor road link on the EAST edge (commerce cap: road links on different edges count;
+# attempts 10-12 had one link and shop demand negative for years), from block 5's road y20
+road 123 20 126 20
+link 127 20

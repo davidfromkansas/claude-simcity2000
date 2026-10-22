@@ -1,0 +1,5 @@
+# a20-2003 police 94 36 never built: zoned + a park tile in the way
+bulldoze 96 38 97 38
+dezone 94 36 96 38
+police 94 36
+park 96 39 97 40

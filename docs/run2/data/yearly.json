@@ -1,0 +1,572 @@
+[
+ {
+  "year": 2000,
+  "tone": "steady",
+  "title": "Day one: build the basics first",
+  "moves": [
+   "Coal power plant (200 MW) by the river, so power never runs short.",
+   "Road grid of 4 east-west and 5 north-south roads, so traffic has many routes.",
+   "10 water pumps on day one: 5 on the lake shore, 5 on the river.",
+   "Zoned 144 dense residential, about 96 factory and 24 shop tiles.",
+   "Tax set to 5%. Road to the map edge for a trade link with Fort Verdegris ($1,000)."
+  ],
+  "happened": "The first homes and factories appeared. Most of the starting $20,000 went into roads, the plant, pumps and zoning, which was the plan. The January check showed only 30% of buildings had water.",
+  "watching": "Water coverage: 30% is far too low for a city with 10 pumps.",
+  "start": {
+   "date": "Feb 2000",
+   "population": 0,
+   "money": 19990,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2001",
+   "population": 180,
+   "money": 8555,
+   "unemployment": 5,
+   "watered_pct": 30,
+   "powered_pct": 100,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "Year 1 check catches a water gap",
+  "moves": [
+   "Found that the eastern pipe columns were not linked to any pump. Added the missing pipe links."
+  ],
+  "happened": "Water coverage jumped from 30% to 97% and population roughly quadrupled. Shop demand turned positive for the first time.",
+  "watching": "Shop demand. The city only had one small shop block.",
+  "start": {
+   "date": "Jan 2001",
+   "population": 180,
+   "money": 8555,
+   "unemployment": 5,
+   "watered_pct": 30,
+   "powered_pct": 100,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2002",
+   "population": 710,
+   "money": 8039,
+   "unemployment": 5,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 9,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "steady",
+  "title": "A second shop block",
+  "moves": [
+   "Zoned one more 24-tile shop block in the middle of town."
+  ],
+  "happened": "Population kept climbing, but every housing zone filled up. Housing demand hit its maximum while factory demand went negative, and 35 buildings were abandoned.",
+  "watching": "Room for new homes. Housing demand is maxed and there is nowhere left to build.",
+  "start": {
+   "date": "Jan 2002",
+   "population": 710,
+   "money": 8039,
+   "unemployment": 5,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 9,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2003",
+   "population": 1090,
+   "money": 7987,
+   "unemployment": 22,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 35,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "The north district",
+  "moves": [
+   "Built a new district north of the lake: 2 east-west roads, 3 links, about 150 dense residential tiles, power and pipes.",
+   "Added 2 pumps on the lake shore."
+  ],
+  "happened": "The biggest jump of the run: population more than doubled, unemployment fell to 3%, and abandoned buildings dropped from 35 to 10.",
+  "watching": "Jobs. That many new residents will need work.",
+  "start": {
+   "date": "Jan 2003",
+   "population": 1090,
+   "money": 7987,
+   "unemployment": 22,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 35,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2004",
+   "population": 2420,
+   "money": 5414,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 10,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "setback",
+  "title": "Homes outgrow jobs",
+  "moves": [],
+  "happened": "The January check looked healthy (unemployment 3%, water 99%). During the year homes outgrew jobs. Unemployment rose to 17%, housing demand fell to its minimum, and abandoned buildings rose to 27.",
+  "watching": "Factory land. Factory demand is maxed but every factory zone is full.",
+  "start": {
+   "date": "Jan 2004",
+   "population": 2420,
+   "money": 5414,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 10,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2005",
+   "population": 2560,
+   "money": 5549,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "setback",
+  "title": "More factory land",
+  "moves": [
+   "Added a 50-tile factory strip on a new road east of the lake.",
+   "Zoned one more row of shops."
+  ],
+  "happened": "A small dip while the new factories were still being built, and unemployment peaked at 25%. Only the west half of the new strip developed.",
+  "watching": "Whether the new factory strip fills in.",
+  "start": {
+   "date": "Jan 2005",
+   "population": 2560,
+   "money": 5549,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2006",
+   "population": 2460,
+   "money": 5225,
+   "unemployment": 25,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "The new factories fill in",
+  "moves": [],
+  "happened": "I waited for the factories added in 2005 to open. The half of the strip that had power did, and unemployment fell from 25% to 6% while population grew by about 800. I didn't yet know the other half had no power.",
+  "watching": "Housing room again, now that jobs have caught up.",
+  "start": {
+   "date": "Jan 2006",
+   "population": 2460,
+   "money": 5225,
+   "unemployment": 25,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2007",
+   "population": 3280,
+   "money": 5378,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "steady",
+  "title": "More homes up north",
+  "moves": [
+   "Zoned about 60 more dense residential tiles in a new band north of the north district, with power and pipes."
+  ],
+  "happened": "A small dip: population fell by about 240 and unemployment rose to 12%.",
+  "watching": "Jobs. The east factory strip never filled in completely.",
+  "start": {
+   "date": "Jan 2007",
+   "population": 3280,
+   "money": 5378,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2008",
+   "population": 3040,
+   "money": 4686,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 28,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "Found the unpowered factories",
+  "moves": [
+   "Health check: the east side of the factory strip had no power, because a road separated it from the power line. Added 3 power crossings.",
+   "Zoned 14 more factory tiles next to the power plant."
+  ],
+  "happened": "The far side of the strip started filling in and population grew by about 300.",
+  "watching": "Abandoned buildings, which were creeping up (35).",
+  "start": {
+   "date": "Jan 2008",
+   "population": 3040,
+   "money": 4686,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 28,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2009",
+   "population": 3330,
+   "money": 4760,
+   "unemployment": 15,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 35,
+   "jammed": 1,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "steady",
+  "title": "Steady growth",
+  "moves": [],
+  "happened": "Population grew by about 300 and unemployment eased to 11%. Abandoned buildings kept creeping up, to 37, mostly dense homes in the north district.",
+  "watching": "Why north district homes are being abandoned despite having power and water.",
+  "start": {
+   "date": "Jan 2009",
+   "population": 3330,
+   "money": 4760,
+   "unemployment": 15,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 35,
+   "jammed": 1,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2010",
+   "population": 3640,
+   "money": 4950,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 1,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "good",
+  "title": "A shorter commute",
+  "moves": [
+   "About 30 dense homes in the north district were abandoned despite power, water, no crime and no pollution. The likely cause was long commutes, since the district's only road ran around the lake. Built a direct road on the east side of the lake."
+  ],
+  "happened": "Population jumped by about 1,000 to 4,630. Abandoned buildings fell from 37 to 24 and unemployment to 7%.",
+  "watching": "The 5,000 goal is close. Shop and factory demand are both rising.",
+  "start": {
+   "date": "Jan 2010",
+   "population": 3640,
+   "money": 4950,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 1,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2011",
+   "population": 4630,
+   "money": 5020,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 24,
+   "jammed": 1,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "steady",
+  "title": "Close to 5,000",
+  "moves": [],
+  "happened": "Population reached 4,820. Shop and factory demand both hit their maximum, and abandoned buildings rose to 41.",
+  "watching": "Jobs. Both kinds of job demand are maxed.",
+  "start": {
+   "date": "Jan 2011",
+   "population": 4630,
+   "money": 5020,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 24,
+   "jammed": 1,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2012",
+   "population": 4820,
+   "money": 5294,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 41,
+   "jammed": 1,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "setback",
+  "title": "Setback: not enough jobs",
+  "moves": [
+   "Zoned a 60-tile shop district west of the west road, next to the north homes."
+  ],
+  "happened": "Population fell by 250, unemployment jumped to 25%, and abandoned buildings more than doubled, to 99. Homes had outgrown jobs and every factory zone was full, so even maxed factory demand could not create jobs.",
+  "watching": "Factory land. The real limit was that no factory land was left.",
+  "start": {
+   "date": "Jan 2012",
+   "population": 4820,
+   "money": 5294,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 41,
+   "jammed": 1,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2013",
+   "population": 4570,
+   "money": 5211,
+   "unemployment": 25,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 99,
+   "jammed": 1,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "steady",
+  "title": "Rezoning homes as factories",
+  "moves": [
+   "Bulldozed the mostly abandoned southwest housing band and rezoned it as factories.",
+   "Zoned a 37-tile factory strip along the south edge."
+  ],
+  "happened": "Population recovered slightly. Unemployment stayed at 25% while the new factories were built, and water briefly dipped to 90%.",
+  "watching": "Whether the new factory land fills in.",
+  "start": {
+   "date": "Jan 2013",
+   "population": 4570,
+   "money": 5211,
+   "unemployment": 25,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 99,
+   "jammed": 1,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2014",
+   "population": 4740,
+   "money": 5178,
+   "unemployment": 25,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 1,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "milestone",
+  "title": "Goal 1: 5,000 people",
+  "moves": [],
+  "happened": "I waited for the new factories to fill in. They did. Unemployment fell to 9% and population jumped by 1,230 to 5,970, passing 5,000 in year 15 of 30.",
+  "watching": "Goal 2: three profitable years in a row with no loans.",
+  "start": {
+   "date": "Jan 2014",
+   "population": 4740,
+   "money": 5178,
+   "unemployment": 25,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 1,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2015",
+   "population": 5970,
+   "money": 5489,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 38,
+   "jammed": 2,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "good",
+  "title": "Profitable year 1 of 3",
+  "moves": [
+   "Froze all building, so each year's cash change reflects the budget alone. Tax stays at 5%; the game estimated +$363."
+  ],
+  "happened": "Cash grew by $353 and population edged up to 6,100.",
+  "watching": "Keep the budget positive. Expenses are tiny because the city has no paid services.",
+  "start": {
+   "date": "Jan 2015",
+   "population": 5970,
+   "money": 5489,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 38,
+   "jammed": 2,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2016",
+   "population": 6100,
+   "money": 5842,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 41,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "good",
+  "title": "Profitable year 2 of 3",
+  "moves": [],
+  "happened": "Cash grew by $362. Population dipped slightly and abandoned buildings rose to 51.",
+  "watching": "One more profitable year.",
+  "start": {
+   "date": "Jan 2016",
+   "population": 6100,
+   "money": 5842,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 41,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2017",
+   "population": 6050,
+   "money": 6204,
+   "unemployment": 14,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2017,
+  "tone": "milestone",
+  "title": "Goal 2: three profitable years",
+  "moves": [],
+  "happened": "Cash grew by $372, the third profitable year in a row. Population reached 6,370. Zero loans were taken all game.",
+  "watching": "Run complete. Left unaddressed: no police, schools or hospitals, 57 abandoned buildings, and rising traffic.",
+  "start": {
+   "date": "Jan 2017",
+   "population": 6050,
+   "money": 6204,
+   "unemployment": 14,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2018",
+   "population": 6370,
+   "money": 6576,
+   "unemployment": 13,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 57,
+   "jammed": 1,
+   "bonds": 0
+  }
+ }
+]

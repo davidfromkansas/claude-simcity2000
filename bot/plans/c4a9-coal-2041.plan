@@ -1,0 +1,4 @@
+# Attempt 9 Dec 2041: spare power 7% -> coal plant x67-70 y70-73 on free land west of road x76, fire station x71-73 y70-72, line y71 across road x76 to line x77
+coal 67 70
+fire 71 70
+line 74 71 76 71

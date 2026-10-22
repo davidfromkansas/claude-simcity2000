@@ -1,0 +1,6 @@
+# Attempt 19 Jun 2009: spare water 3% -> 7 pumps on the north LAKE shore (fresh water, 2-3x a river pump) x108-114 y19,
+# power from the homes at (107,21) via a line crossing road y20; pipe under road y20 and down x112 to the y23 main.
+line 107 19 107 20
+pump 108 19 114 19
+pipe 108 20 114 20
+pipe 112 21 112 22

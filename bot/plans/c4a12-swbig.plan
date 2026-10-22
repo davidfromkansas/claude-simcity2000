@@ -1,0 +1,95 @@
+# stripplan.py 8 71 58 97 RRRCRRRI --cross 10 --line 10
+# Attempt 12 Jun 2017: homes-first district on the big free block x8-58 y71-97 between road y69 and the SW home strip (y98); cross streets every 10 join both
+line 13 75 13 97
+line 23 71 23 77
+line 23 79 23 97
+line 33 71 33 76
+line 33 83 33 97
+line 43 73 43 97
+line 53 83 53 97
+road 8 74 11 74
+road 16 74 45 74
+road 58 74 58 74
+road 8 81 29 81
+road 36 81 45 81
+road 8 88 58 88
+road 8 95 58 95
+road 8 70 8 97
+road 18 74 18 97
+road 28 70 28 97
+road 38 70 38 97
+road 48 83 48 97
+road 58 70 58 74
+road 58 86 58 97
+zone R 9 71 11 73
+zone R 19 71 22 73
+zone R 24 71 27 73
+zone R 29 71 32 73
+zone R 34 71 37 73
+zone R 39 71 41 73
+zone R 9 75 12 77
+zone R 14 75 17 77
+zone R 19 75 22 77
+zone R 24 75 27 77
+zone R 29 75 30 77
+zone R 36 75 37 77
+zone R 39 75 42 77
+zone R 44 75 45 77
+zone R 9 78 12 80
+zone R 14 78 17 80
+zone R 19 78 22 80
+zone R 24 78 27 80
+zone R 39 78 42 80
+zone C 9 82 12 84
+zone C 14 82 17 84
+zone C 19 82 22 84
+zone C 24 82 27 84
+zone C 29 82 30 84
+zone C 34 82 37 84
+zone C 39 82 42 84
+zone C 44 82 46 84
+zone C 50 82 52 84
+zone R 9 85 12 87
+zone R 14 85 17 87
+zone R 19 85 22 87
+zone R 24 85 27 87
+zone R 29 85 32 87
+zone R 34 85 37 87
+zone R 39 85 42 87
+zone R 44 85 47 87
+zone R 49 85 52 87
+zone R 54 85 57 87
+zone R 9 89 12 91
+zone R 14 89 17 91
+zone R 19 89 22 91
+zone R 24 89 27 91
+zone R 29 89 32 91
+zone R 34 89 37 91
+zone R 39 89 42 91
+zone R 44 89 47 91
+zone R 49 89 52 91
+zone R 54 89 57 91
+zone R 9 92 12 94
+zone R 14 92 17 94
+zone R 19 92 22 94
+zone R 24 92 27 94
+zone R 29 92 32 94
+zone R 34 92 37 94
+zone R 39 92 42 94
+zone R 44 92 47 94
+zone R 49 92 52 94
+zone R 54 92 57 94
+pipe 8 74 11 74
+pipe 16 74 45 74
+pipe 58 74 58 74
+pipe 8 81 29 81
+pipe 36 81 45 81
+pipe 8 88 58 88
+pipe 8 95 58 95
+pipe 8 69 8 97
+pipe 18 74 18 97
+pipe 28 69 28 97
+pipe 38 69 38 97
+pipe 48 83 48 97
+pipe 58 69 58 74
+pipe 58 86 58 97

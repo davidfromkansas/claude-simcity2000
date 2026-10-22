@@ -1,0 +1,23 @@
+# stripplan.py 93 4 118 11 CC --cross 10 --line 10
+line 98 4 98 10
+line 108 4 108 10
+road 93 7 100 7
+road 102 7 118 7
+road 93 3 93 10
+road 103 3 103 10
+road 113 5 113 10
+road 118 3 118 10
+zone C 94 4 97 6
+zone C 99 4 102 6
+zone C 104 4 107 6
+zone C 114 4 115 6
+zone C 94 8 97 10
+zone C 99 8 102 10
+zone C 104 8 107 10
+zone C 109 8 112 10
+zone C 114 8 117 10
+pipe 93 7 118 7
+pipe 93 2 93 10
+pipe 103 2 103 10
+pipe 113 5 113 10
+pipe 118 2 118 10

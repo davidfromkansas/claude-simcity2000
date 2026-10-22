@@ -1,0 +1,60 @@
+# Attempt 10 Jun 2030: south rows fitted to attempt 10 streets (cross streets x8-48 every 10, lines x13/23/33/43).
+# powerfix had run a line along y124 (the road row) - remove it, road y124, homes y119-123, lines continued
+bulldoze 11 124 11 124
+bulldoze 12 124 12 124
+bulldoze 13 124 13 124
+bulldoze 14 124 14 124
+bulldoze 15 124 15 124
+bulldoze 16 124 16 124
+bulldoze 17 124 17 124
+bulldoze 18 124 18 124
+bulldoze 19 124 19 124
+bulldoze 20 124 20 124
+bulldoze 21 124 21 124
+bulldoze 22 124 22 124
+bulldoze 23 124 23 124
+bulldoze 24 124 24 124
+bulldoze 25 124 25 124
+bulldoze 26 124 26 124
+bulldoze 27 124 27 124
+bulldoze 28 124 28 124
+bulldoze 29 124 29 124
+bulldoze 30 124 30 124
+bulldoze 31 124 31 124
+bulldoze 32 124 32 124
+bulldoze 33 124 33 124
+bulldoze 34 124 34 124
+bulldoze 35 124 35 124
+bulldoze 36 124 36 124
+bulldoze 37 124 37 124
+bulldoze 38 124 38 124
+bulldoze 39 124 39 124
+bulldoze 40 124 40 124
+bulldoze 41 124 41 124
+bulldoze 42 124 42 124
+bulldoze 43 124 43 124
+bulldoze 44 124 44 124
+bulldoze 45 124 45 124
+bulldoze 46 124 46 124
+bulldoze 47 124 47 124
+bulldoze 48 124 48 124
+line 13 119 13 123
+line 23 119 23 123
+line 33 119 33 123
+line 43 119 43 123
+road 8 124 51 124
+road 8 119 8 123
+road 18 119 18 123
+road 28 119 28 123
+road 38 119 38 123
+road 48 119 48 123
+zone R 9 119 12 123
+zone R 14 119 17 123
+zone R 19 119 22 123
+zone R 24 119 27 123
+zone R 29 119 32 123
+zone R 34 119 37 123
+zone R 39 119 42 123
+zone R 44 119 47 123
+zone R 49 119 51 123
+pipe 8 124 51 124

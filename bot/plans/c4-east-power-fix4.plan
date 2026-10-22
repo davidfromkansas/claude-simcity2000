@@ -1,0 +1,7 @@
+# far east: join line columns x109/x116 across roads y62 and y69; feed the north pump row via (114,20)
+line 109 61 109 63
+line 109 68 109 70
+line 116 61 116 63
+line 116 68 116 70
+line 114 20 114 21
+line 110 21 113 21

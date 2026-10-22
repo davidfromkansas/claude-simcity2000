@@ -1,0 +1,604 @@
+"""Build from a plan file, then check every tile against the save, retry gaps, and check the money.
+
+usage: python3 -I build.py PLAN [--dry] [--allow-water]
+
+Plan lines (tile coordinates; '#' starts a comment):
+  road X0 Y0 X1 Y1        straight road
+  line X0 Y0 X1 Y1        straight power line
+  pipe X0 Y0 X1 Y1        straight water pipe
+  zone K X0 Y0 X1 Y1      rectangle; K = r R c C i I (lower case light, upper case dense)
+  pump X0 Y0 X1 Y1        one pump on every tile of the line
+  park X0 Y0 X1 Y1        small parks
+  coal X Y | gas X Y      power plant, X Y = top-left of its 4x4
+  fire X Y | police X Y   station, X Y = top-left of its 3x3
+  link X Y                road neighbor link at edge tile X Y; must charge $1,000 (helps shops)
+  rail X0 Y0 X1 Y1        straight rail
+  raillink X Y            rail neighbor link at edge tile X Y; must charge $1,500 (lifts the factory cap)
+  seaport X0 Y0 X1 Y1     seaport zone beside water, $150/tile (lifts the factory cap)
+  airport X0 Y0 X1 Y1     airport zone, $250/tile (lifts the shop cap, from ~20,000 people)
+  bigpark X Y             3x3 big park, X Y = top-left
+  stadium X Y | zoo X Y   4x4, X Y = top-left ($5,000 / $3,000; lift the 15,000 home cap)
+  marina X Y              3x3 across a shoreline, X Y = top-left ($1,000; lifts the home cap)
+  bulldoze X0 Y0 X1 Y1    tile by tile, only tiles inside the box; never plants, stations or pumps
+  bulldoze! X0 Y0 X1 Y1   same, but may remove plants, stations and pumps
+  dezone X0 Y0 X1 Y1      remove zoning from empty tiles in the box
+
+After building: every planned tile is checked in the save and missing tiles are placed one by one
+(two rounds). Any tile OUTSIDE the plan that changed is reported (and roads/lines/pipes repaired).
+Exit code 1 if anything is still wrong.
+"""
+import json
+import os
+import subprocess
+import sys
+import time
+
+BOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, BOT)
+from citymap import City, is_road, is_rail, is_line, is_park, is_plant, nbrs, N  # noqa: E402
+import sc2parse as sc2p  # noqa: E402
+
+TOOL = {"road": "22 105 55 113", "line": "22 82 55 90", "pipe": "47 82 85 90", "pump": "47 82 85 105",
+        "r": "22 128 75 135", "R": "22 128 75 151", "c": "47 128 100 135", "C": "47 128 100 151",
+        "i": "68 128 120 135", "I": "68 128 120 151", "park": "68 155 100 163",
+        "fire": "47 155 88 179", "police": "47 155 88 163", "bulldoze": "22 58 60 65", "dezone": "22 58 65 130", "plant": "22 82 60 105",
+        "rail": "47 105 85 113", "seaport": "68 105 100 112", "airport": "68 105 100 128",
+        "bigpark": "68 155 100 179", "stadium": "68 155 100 212", "zoo": "68 155 100 196", "marina": "68 155 100 227"}
+PLANT_ITEM = {"coal": (199, 145), "gas": (199, 255)}
+ZCODE = {"r": 1, "R": 2, "c": 3, "C": 4, "i": 5, "I": 6}
+# rough prices, used only to spot steps that charged nothing
+COST = {"road": 10, "line": 5, "pipe": 3, "pump": 100, "park": 20, "coal": 4000, "gas": 2000,
+        "fire": 500, "police": 500, "link": 1000, "rail": 25, "raillink": 1500, "seaport": 150,
+        "airport": 250, "stadium": 5000, "zoo": 3000, "marina": 1000, "bigpark": 150, "r": 5, "R": 10, "c": 5, "C": 10, "i": 5, "I": 10}
+PROTECT = lambda t: is_plant(t) or t == 0xDC or 0xD3 <= t <= 0xDB
+
+
+def sh(*args):
+    return subprocess.run(["bash", "-c", " ".join(str(a) for a in args)], cwd=BOT,
+                          capture_output=True, text=True).stdout
+
+
+def sc(*args):
+    return sh("./sc", *args)
+
+
+def screen(x, y):
+    import tile
+    return tile.to_screen(x, y)
+
+
+def cal_trusted():
+    """C4 attempt 9 (Oct 2028): clean-up bulldozing after a calibration from the view-centre zoom check destroyed fire
+    stations near the west edge (the view cannot centre there) - only bulldoze outside the plan after a test-road or
+    power-line calibration."""
+    try:
+        return json.load(open("/tmp/sc/cal.json")).get("method") != "centre"
+    except Exception:
+        return False
+
+
+def vis(*xy):
+    out = sh("./vis.sh", *xy)
+    if "AUTOCAL STRAY" in out:  # C4-1: a calibration road left behind blocked a zoo
+        print(out.strip().splitlines()[-2] if len(out.strip().splitlines()) > 1 else out.strip())
+    if "AUTOCAL ZOOM" in out:   # attempt 19: half-scale build after the zoom-in failed
+        print(out.strip()); print("BUILD: stopped - wrong zoom"); sys.exit(3)
+    # C4 attempt 12 (Jul 2019): autocal refused a view over water but the build went on with no calibration and the
+    # bulldozer hit roads 100 tiles away - stop on every calibration failure
+    for bad in ("AUTOCAL VIEW OVER WATER", "AUTOCAL BRIDGE"):
+        if bad in out:
+            print(out.strip()); print("BUILD: stopped - calibration failed (%s)" % bad.lower()); sys.exit(3)
+
+
+def tool(name):
+    sc("tool", TOOL[name])
+    time.sleep(0.4)
+
+
+def nodlg():
+    sh("./sc nodlg 2>/dev/null")
+
+
+def pixel(x, y):
+    sc("snap")
+    return sh("convert /tmp/sc/now.png -format '%%[pixel:p{%d,%d}]' info:" % (x, y)).strip()
+
+
+def save():
+    out = sc("save")
+    try:
+        return int(out.split(" cash ")[1].split()[0])
+    except (IndexError, ValueError):
+        return None
+
+
+def seg(x0, y0, x1, y1):
+    if x0 != x1 and y0 != y1:
+        raise ValueError("not a straight line: %s" % ((x0, y0, x1, y1),))
+    sx = (x1 > x0) - (x1 < x0)
+    sy = (y1 > y0) - (y1 < y0)
+    out = [(x0, y0)]
+    while out[-1] != (x1, y1):
+        out.append((out[-1][0] + sx, out[-1][1] + sy))
+    return out
+
+
+def rect(x0, y0, x1, y1):
+    return [(x, y) for y in range(min(y0, y1), max(y0, y1) + 1) for x in range(min(x0, x1), max(x0, x1) + 1)]
+
+
+def noparks():
+    # NOPARKS=1, or "noparks": true in run.json
+    if os.environ.get("NOPARKS"):
+        return True
+    try:
+        return bool(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "run.json"))).get("noparks"))
+    except Exception:
+        return False
+
+
+def parse(path):
+    steps = []
+    skip_parks = noparks()
+    for n, raw in enumerate(open(path), 1):
+        line = raw.split("#")[0].split()
+        if not line:
+            continue
+        kind, args = line[0], line[1:]
+        # Claudeville 4 attempt 5: tree parks are fire fuel (three great fires in attempt 4) - NOPARKS=1 skips them
+        if kind in ("park", "bigpark") and skip_parks:
+            continue
+        if kind == "zone":
+            k, nums = args[0], list(map(int, args[1:]))
+            steps.append({"kind": "zone", "z": k, "box": nums, "tiles": rect(*nums), "line": n})
+            continue
+        nums = list(map(int, args))
+        if kind in ("road", "line", "pipe", "pump", "rail"):
+            tiles = seg(*nums)
+        elif kind in ("park", "bulldoze", "bulldoze!", "dezone", "seaport", "airport"):
+            tiles = rect(*nums)
+        elif kind in ("coal", "gas"):
+            tiles = rect(nums[0], nums[1], nums[0] + 3, nums[1] + 3)
+        elif kind in ("fire", "police", "bigpark"):
+            tiles = rect(nums[0], nums[1], nums[0] + 2, nums[1] + 2)
+        elif kind in ("stadium", "zoo"):
+            tiles = rect(nums[0], nums[1], nums[0] + 3, nums[1] + 3)
+        elif kind == "marina":         # the game may nudge a marina one tile to fit the shoreline
+            tiles = rect(nums[0] - 1, nums[1] - 1, nums[0] + 3, nums[1] + 3)
+        elif kind in ("link", "raillink"):
+            tiles = [tuple(nums)]
+        else:
+            raise ValueError("line %d: unknown step %r" % (n, kind))
+        steps.append({"kind": kind, "box": nums, "tiles": tiles, "line": n})
+    return steps
+
+
+def done(c, s, x, y):
+    """Is planned tile (x, y) of step s in place in the save?"""
+    t, k = c.t(x, y), s["kind"]
+    if k in ("road", "link"):
+        return is_road(t)
+    if k == "line":
+        return is_line(t)
+    if k == "pipe":
+        return c.pipe(x, y)
+    if k == "pump":
+        return t == 0xDC
+    if k == "park":
+        return is_park(t)
+    if k == "zone":
+        return c.zone(x, y) == ZCODE[s["z"]] or is_road(t) or is_line(t) or t >= 0xC0
+    if k in ("coal", "gas"):
+        return is_plant(t)
+    if k in ("fire", "police"):
+        return t >= 0xC0 and not is_plant(t)
+    if k == "bigpark":                 # attempt 19: 3x3 big park (+3,000 home cap, +40 land value per tile)
+        return t == 0xD5
+    if k in ("rail", "raillink"):
+        return is_rail(t)
+    if k == "seaport":
+        return c.zone(x, y) == 9 or t >= 0x70
+    if k == "airport":
+        return c.zone(x, y) == 8 or t >= 0x70
+    if k == "marina":                  # done if a full marina (9 tiles) sits in the box or one tile around it
+        x0, y0 = s["box"]
+        return sum(1 for j in range(y0 - 1, y0 + 4) for i in range(x0 - 1, x0 + 4) if c.t(i, j) == 0xF8) >= 9
+    if k in ("stadium", "zoo"):
+        return t == {"stadium": 0xD7, "zoo": 0xDA}[k]
+    if k == "dezone":
+        return c.zone(x, y) == 0 or t >= 0x70
+    if k.startswith("bulldoze"):
+        return t == 0 or (k == "bulldoze" and PROTECT(t))
+    return True
+
+
+def click_tile(x, y):
+    vis(x, y)
+    sc("click", *screen(x, y))
+    time.sleep(0.25)
+
+
+CROSS = {"road": (219, 292), "line": (319, 291)}   # Select pop-up: causeway $275 / raised wires (attempt 19)
+
+
+def drag(name, a, b):
+    vis(*a, *b)
+    tool(name)
+    if name in CROSS and "--allow-water" in sys.argv:
+        # a drag from bank to bank over water opens the bridge/wires pop-up: take the cheapest option
+        sh("SC_WATER=1 ./sc drag", *screen(*a), *screen(*b))
+        time.sleep(0.8)
+        sc("snap", "/tmp/sc/dlg.png")
+        sh("[ \"$(convert /tmp/sc/dlg.png -format '%%[pixel:p{320,200}]' info:)\" = 'srgb(186,186,186)' ] && ./sc click %d %d" % CROSS[name])
+        time.sleep(1.0)
+        nodlg()
+        return
+    sc("drag", *screen(*a), *screen(*b))
+    time.sleep(0.4)
+    nodlg()
+
+
+def place(s, c):
+    k, b = s["kind"], s["box"]
+    if k in ("coal", "gas", "fire", "police", "bigpark", "stadium", "zoo", "marina"):
+        # Claudeville 4 (2014): a stadium would not go down on rubble left by the fire - clear it first
+        # attempts 2-3: autocal's test road landed on the empty zoo lot (112,59) and blocked the zoo twice - a big
+        # building's lot never keeps a road, so clear stray road tiles too
+        c = City()
+        rub = [(x, y) for x, y in s["tiles"] if c.t(x, y) in (1, 2, 3, 4) or is_road(c.t(x, y))]
+        for x, y in rub:
+            vis(x, y)
+            tool("bulldoze")
+            click_tile(x, y)
+    if k in ("road", "line", "pipe", "rail"):
+        drag(k, b[:2], b[2:])
+    elif k == "zone":
+        drag(s["z"], b[:2], b[2:])
+    elif k in ("pump", "park"):
+        tool(k)
+        for x, y in s["tiles"]:
+            if not done(c, s, x, y):
+                vis(x, y)
+                tool(k)
+                click_tile(x, y)
+        nodlg()
+    elif k in ("coal", "gas"):
+        vis(b[0], b[1], b[0] + 3, b[1] + 3)
+        tool("plant")
+        time.sleep(0.6)
+        sc("click", *PLANT_ITEM[k])
+        time.sleep(0.6)
+        sc("click", *screen(b[0] + 1, b[1] + 1))
+        time.sleep(0.8)
+        nodlg()
+    elif k in ("fire", "police", "bigpark"):
+        vis(b[0], b[1], b[0] + 2, b[1] + 2)
+        tool(k)
+        sc("click", *screen(b[0] + 1, b[1] + 1))
+        time.sleep(0.8)
+        nodlg()
+    elif k in ("seaport", "airport"):
+        drag(k, b[:2], b[2:])
+    elif k in ("stadium", "zoo", "marina"):
+        w = 2 if k == "marina" else 3
+        vis(b[0], b[1], b[0] + w, b[1] + w)
+        tool(k)
+        sc("click", *screen(b[0] + 1, b[1] + 1))
+        time.sleep(1.0)
+        if k == "stadium":             # "Pick a team and name it": a team, then Done
+            # Claudeville 4 (2021): a team already used by another stadium is greyed out and no Done button
+            # appears - try each team in turn while the dialog is open, and click Done once it shows
+            for ty in (212, 232, 252, 272, 292):
+                if pixel(330, 181) != "srgb(186,186,186)":
+                    break
+                sc("click", 212, ty)
+                time.sleep(1.0)
+                if pixel(425, 181) == "srgb(158,158,158)":
+                    sc("click", 440, 187)
+                    time.sleep(0.8)
+                    break
+        nodlg()
+    elif k == "raillink":
+        x, y = b
+        ix = 1 if x == 0 else N - 2 if x == N - 1 else x
+        iy = 1 if y == 0 else N - 2 if y == N - 1 else y
+        vis(ix, iy, x, y)
+        tool("rail")
+        sc("drag", *screen(ix, iy), *screen(x, y))
+        time.sleep(1.2)
+        sc("click", 265, 261)          # "build a connection to your neighbor for $1500?" -> Yes
+        time.sleep(0.8)
+        nodlg()
+    elif k == "link":
+        x, y = b
+        ix = 1 if x == 0 else N - 2 if x == N - 1 else x      # the tile just inside the edge
+        iy = 1 if y == 0 else N - 2 if y == N - 1 else y
+        vis(ix, iy, x, y)
+        tool("road")
+        sc("drag", *screen(ix, iy), *screen(x, y))
+        time.sleep(1.2)
+        sc("click", 265, 261)          # "build a connection to your neighbor for $1000?" -> Yes
+        time.sleep(0.8)
+        nodlg()
+    elif k == "dezone":
+        for x, y in s["tiles"]:
+            if c.zone(x, y) and c.t(x, y) < 0x70:
+                vis(x, y)
+                tool("dezone")
+                click_tile(x, y)
+    elif k.startswith("bulldoze"):
+        for x, y in s["tiles"]:
+            t = c.t(x, y)
+            if t == 0 or (k == "bulldoze" and PROTECT(t)):
+                continue
+            vis(x, y)
+            tool("bulldoze")
+            click_tile(x, y)
+            click_tile(x, y)        # the first click leaves rubble, the second clears it
+
+
+def retry(s, x, y):
+    k = s["kind"]
+    if k in ("road", "line", "pipe", "pump", "park", "rail"):
+        vis(x, y)
+        tool(k)
+        click_tile(x, y)
+        nodlg()
+    elif k == "zone":
+        vis(x, y)
+        tool(s["z"])
+        sc("drag", *screen(x, y), *screen(x, y))
+        nodlg()
+    elif k.startswith("bulldoze"):
+        vis(x, y)
+        tool("bulldoze")
+        click_tile(x, y)
+        click_tile(x, y)
+    elif k == "dezone":
+        vis(x, y)
+        tool("dezone")
+        click_tile(x, y)
+    else:
+        return False      # big buildings and the link are re-run as a whole step
+    return True
+
+
+def snapshot(c):
+    return bytes(c.b), bytes(c.z), bytes(c.u)
+
+
+def main(path, dry=False):
+    steps = parse(path)
+    final = {}                      # each tile is checked against the LAST surface step that touches it
+    under = {}                      # pipes are underground, so they are checked on their own
+    for s in steps:
+        for p in s["tiles"]:
+            (under if s["kind"] == "pipe" else final)[p] = s
+    plan_tiles = set(final) | set(under)
+    road_plan = {t for st in steps if st["kind"] in ("road", "link") for t in st["tiles"]}
+    print("plan: %d steps, %d tiles" % (len(steps), len(plan_tiles)))
+    # preflight (attempt 19): a park placed over a planned line or road cut power to a whole factory strip
+    links = {p for s in steps if s["kind"] in ("line", "road", "rail", "police", "fire", "bigpark", "coal", "gas", "stadium", "zoo") for p in s["tiles"]}
+    clash = sorted(p for s in steps if s["kind"] == "park" for p in s["tiles"] if p in links)
+    # preflight (attempt 19): roads/lines/pipes on the map edge each start a $1,000 neighbour deal (4 = $3,900 surprise)
+    edge = sorted(p for s in steps if s["kind"] in ("road", "line", "pipe", "rail") for p in s["tiles"] if 0 in p or N - 1 in p)
+    if edge and "--edge-ok" not in sys.argv:
+        print("PLAN ERROR: tiles on the map edge cost $1,000 each as neighbour deals: %s (use link/raillink, or --edge-ok)" % edge[:6]); print("BUILD: refused"); sys.exit(2)
+    if clash:
+        print("PLAN ERROR: park on a planned line/road/rail/building at %s" % clash[:8]); print("BUILD: refused"); sys.exit(2)
+    # preflight: the plan must not put buildings, zones or parks on water (roads/lines/pipes would need bridges)
+    c0 = City()
+    # preflight (attempt 19): zone rows 4-5 tiles from any road can never grow (top strip y1-2 in Dec 2044)
+    roads = {p for s in steps if s["kind"] == "road" for p in s["tiles"]} | \
+            {(i % N, i // N) for i in range(N * N) if is_road(c0.t(i % N, i // N))}
+    far = sorted(p for s in steps if s["kind"] == "zone" for p in s["tiles"]
+                 if not any((p[0] + d, p[1]) in roads or (p[0], p[1] + d) in roads for d in (-3, -2, -1, 1, 2, 3)))
+    if far and "--far-ok" not in sys.argv:
+        print("PLAN ERROR: %d zone tiles have no road within 3 tiles, e.g. %s (--far-ok to override)" % (len(far), far[:6])); print("BUILD: refused"); sys.exit(2)
+    wet = sorted(p for p, s in final.items() if c0.bit[p[1] * N + p[0]] & 4 and s["kind"] not in ("bulldoze", "bulldoze!", "dezone", "marina"))
+    if wet:
+        print("PLAN ERROR: %d planned tiles are water, e.g. %s - change the plan" % (len(wet), wet[:6]))
+        if "--allow-water" not in sys.argv:
+            return 2
+    # attempt 7 (2025): clicks within ~8 tiles of the west map edge landed 2+ tiles off and left calibration roads
+    # that could not be bulldozed - keep plans away from it
+    # (and in the north-east corner the view did not scroll to the plan: a coal plant became a trail of road tiles)
+    west = sorted({p for s in steps for p in s["tiles"] if (p[0] < 8 or (p[0] > 119 and p[1] < 8) or (p[1] < 8 and p[0] < 20))
+                   and not s["kind"].startswith("bulldoze") and s["kind"] not in ("link", "raillink")})
+    if west and "--west-ok" not in sys.argv:
+        print("PLAN ERROR: %d tiles near the west edge or a map corner, e.g. %s (clicks there land wrong; --west-ok)" % (len(west), west[:4]))
+        print("BUILD: refused")
+        return 2
+    if dry:
+        return 0
+    # attempt 8 (Oct 2026): after a container restart the load landed on a new blank map and a build then saved over
+    # the attempt's save - never build on anything but the attempt's city
+    if sc2p.parse(sc2p.SAVE).get("city") != "Claudeville 3" and "--any-city" not in sys.argv:
+        print("PLAN ERROR: the game holds '%s', not the attempt's city - reload with load.sh" % sc2p.parse(sc2p.SAVE).get("city"))
+        print("BUILD: refused")
+        return 2
+    sc("pause")
+    cash0 = save()
+    before = City()
+    snap0 = snapshot(before)
+    # attempt 7 (2022-23): a strip plan ran out of cash after its roads and left zones, pipes and lines for later -
+    # refuse a plan the cash cannot pay for (estimate from the tiles still missing)
+    need = sum(COST.get(s.get("z", s["kind"]), 0) * (1 if s["kind"] in ("coal", "gas", "fire", "police", "bigpark", "link",
+               "raillink", "stadium", "zoo", "marina") else sum(1 for x, y in s["tiles"] if not done(before, s, x, y)))
+               for s in steps)
+    # attempt 11 (Dec 2022): with negative cash the game places nothing, and a --cash-ok build looped for 30 minutes
+    if cash0 is not None and cash0 < 0 and need > 0:
+        print("PLAN ERROR: cash is $%d - the game builds nothing while cash is negative (take a loan first)" % cash0)
+        print("BUILD: refused")
+        return 2
+    if cash0 is not None and need > cash0 and "--cash-ok" not in sys.argv:
+        print("PLAN ERROR: the plan costs about $%d but cash is $%d (take a loan first, or --cash-ok)" % (need, cash0))
+        print("BUILD: refused")
+        return 2
+    expect = 0
+    problems = []
+    for i, s in enumerate(steps):
+        c = before
+        # Claudeville 4 (May 2011): the east-bank rebuild ran out of cash and clicked on for an hour with $0
+        if i % 10 == 9:
+            cnow = save()
+            if cnow is not None and cnow < 100:
+                problems.append("OUT OF CASH at line %d: stopped (take a loan and rerun the plan)" % s["line"])
+                break
+        if s["kind"] in ("pump", "park", "dezone") or s["kind"].startswith("bulldoze"):
+            save()                  # these steps look at the current tiles first
+            c = City()
+        big = s["kind"] in ("coal", "gas", "fire", "police", "bigpark", "link", "raillink", "stadium", "zoo", "marina")
+        cb = save() if big else None
+        if big:
+            c = City()
+            if all(done(c, s, x, y) for x, y in s["tiles"]):
+                print("line %d %s: already in place, skipped" % (s["line"], s["kind"]))
+                continue
+        place(s, c)
+        n = sum(1 for x, y in s["tiles"] if not done(before, s, x, y))   # only tiles that were missing cost money
+        if not big and n:
+            # C4 attempt 9 (Nov 2040): at the north map edge a whole shop plan landed 11 rows south (bridges, stray
+            # zones, $3.6k) and was only found at the end. Check each step at once: nothing of it in place but
+            # tiles outside the plan changed = the clicks are landing off -> stop before spending more.
+            save()
+            c2 = City()
+            if not any(done(c2, s, x, y) for x, y in s["tiles"] if not done(before, s, x, y)):
+                moved = [(i % N, i // N) for i in range(N * N) if c2.b[i] != before.b[i] and (i % N, i // N) not in plan_tiles
+                         and not (is_road(c2.b[i]) and is_road(before.b[i])) and not (is_line(c2.b[i]) and is_line(before.b[i]))]   # redraws of joined pieces are fine
+                if moved:
+                    print("PLAN ERROR: line %d %s: none of its tiles landed but %d tiles outside the plan changed, e.g. %s"
+                          " - clicks are landing off (calibration)" % (s["line"], s["kind"], len(moved), moved[:4]))
+                    print("BUILD: stopped - clicks landed off")
+                    return 3
+            c = c2
+        expect += COST.get(s.get("z", s["kind"]), 0) * (1 if big else n)
+        if big:
+            ca = save()
+            want = COST[s["kind"]]
+            # C4 attempt 10 (Dec 2002): a zoo was charged but built 22 rows off (calibration scale 1.78) - a big
+            # building that cost money but is not in place means the clicks landed off: stop
+            if cb is not None and ca is not None and cb - ca >= want * 0.9 and not all(done(City(), s, x, y) for x, y in s["tiles"]):
+                print("PLAN ERROR: line %d %s: charged $%d but not in place - clicks are landing off (calibration)" % (s["line"], s["kind"], cb - ca))
+                print("BUILD: stopped - clicks landed off")
+                return 3
+            if cb is not None and ca is not None and cb - ca < want * 0.9:
+                problems.append("line %d %s: cash fell only $%d (expected about $%d): not built?"
+                                % (s["line"], s["kind"], cb - ca, want))
+                if s["kind"] != "link" or not done(City(), s, *s["tiles"][0]):
+                    place(s, City())     # one more try for the whole step
+                    ca2 = save()
+                    if ca is not None and ca2 is not None and ca - ca2 >= want * 0.9:
+                        problems[-1] += " -> retried, now charged"
+    sc("tool", TOOL["road"])
+    # check every planned tile; place gaps one by one, two rounds
+    for rnd in (1, 2, 3):
+        cash = save()
+        if cash is not None and cash < 100:
+            problems.append("OUT OF CASH before gap round %d: stopped" % rnd)
+            break
+        c = City()
+        gaps = [(s, x, y) for d in (final, under) for (x, y), s in d.items() if not done(c, s, x, y)]
+        if not gaps:
+            break
+        print("round %d: %d planned tiles missing" % (rnd, len(gaps)))
+        if rnd == 3:
+            for s, x, y in gaps[:20]:
+                problems.append("line %d %s: tile (%d,%d) still missing" % (s["line"], s["kind"], x, y))
+            break
+        for s, x, y in gaps:
+            if not retry(s, x, y) and s["kind"] != "link":
+                place(s, City())
+        sc("tool", TOOL["road"])
+    # collateral: tiles outside the plan that changed
+    after = City()
+    snap1 = snapshot(after)
+    hurt = []
+    for i in range(N * N):
+        p = (i % N, i // N)
+        o, n = snap0[0][i], snap1[0][i]
+        # attempt 3: autocal test roads left on planned ZONE tiles were skipped here - only planned road tiles
+        # may turn into new road
+        # (a crossing's last step is the line, so check every road step, not just the final one - attempt 3's
+        #  first version bulldozed every new road/line crossing as a stray)
+        stray = o == 0 and is_road(n) and p not in road_plan
+        if p in plan_tiles and not stray:
+            continue
+        if (is_road(o) and is_road(n)) or (is_line(o) and is_line(n)) or (is_rail(o) and is_rail(n)):
+            continue                # the game redraws road/line pieces to join new neighbours
+        # zone type (low bits) and pipe present/absent matter; pipe-piece shapes and corner bits do not
+        if o != n or (snap0[1][i] & 15) != (snap1[1][i] & 15) or bool(snap0[2][i]) != bool(snap1[2][i]):
+            hurt.append((p, snap0[0][i], snap1[0][i]))
+    for (x, y), old, new in hurt:
+        what = "road" if is_road(old) else "line" if is_line(old) else None
+        fix = ""
+        if is_line(old) and is_road(new):
+            # attempt 3: an autocal test road replaced a power-line tile (37,64) and cut the line
+            vis(x, y); tool("bulldoze"); click_tile(x, y); click_tile(x, y)
+            tool("line"); click_tile(x, y)
+            fix = " -> stray road on a line: removed, line re-placed"
+        elif what and new == 0:
+            vis(x, y)
+            tool(what)
+            click_tile(x, y)
+            fix = " -> %s re-placed" % what
+        elif old == 0 and is_road(new) and not cal_trusted():
+            fix = " -> stray road left (calibration not verified here)"
+        elif old == 0 and is_road(new):
+            vis(x, y)
+            tool("bulldoze")
+            click_tile(x, y)
+            click_tile(x, y)
+            fix = " -> stray road removed"
+        z0, z1 = snap0[1][x + y * N] & 15, snap1[1][x + y * N] & 15
+        if old == 0 and new in (0, 1, 2, 3, 4) and z0 in ZCODE.values() and z1 != z0:
+            # attempts 11-12: a calibration road on an empty zoned tile, then bulldozed, removes the zone
+            k = [k for k, v in ZCODE.items() if v == z0][0]
+            if new:
+                vis(x, y); tool("bulldoze"); click_tile(x, y); click_tile(x, y)
+            vis(x, y)
+            tool(k)
+            click_tile(x, y)
+            fix += " -> zone %s restored" % k
+        problems.append("tile (%d,%d) outside the plan changed: %#x -> %#x%s" % (x, y, old, new, fix))
+    # Claudeville 4 attempt 4: autocal test roads kept appearing after the collateral check (often on power lines,
+    # cutting them). Final sweep: every lone road tile that was not road before and is not planned road is
+    # bulldozed, and a power line that was there before is put back. Twice, since the sweep's own autocal can stray.
+    for sweep in (1, 2):
+        save()
+        c = City()
+        lone = [(x, y) for x, y in c.tiles() if is_road(c.t(x, y)) and not is_road(snap0[0][y * N + x])
+                and (x, y) not in road_plan and not any(is_road(c.t(*q)) for q in nbrs(x, y))]
+        if not lone:
+            break
+        for x, y in lone:
+            vis(x, y)
+            if not cal_trusted():
+                problems.append("stray road (%d,%d) left: calibration not verified there" % (x, y)); continue
+            tool("bulldoze"); click_tile(x, y); click_tile(x, y)
+            if is_line(snap0[0][y * N + x]):
+                tool("line"); click_tile(x, y)
+            problems.append("stray road (%d,%d) removed in the final sweep%s" % (x, y, ", line re-placed" if is_line(snap0[0][y * N + x]) else ""))
+    sc("tool", TOOL["road"])
+    sc("pause")
+    cash1 = save()
+    spent = (cash0 - cash1) if cash0 is not None and cash1 is not None else None
+    print("money: spent $%s, plan estimate about $%d" % (spent, expect))
+    if spent is not None and expect >= 200 and spent < expect * 0.5:
+        problems.append("spent $%d but the plan should cost about $%d: parts may not be built" % (spent, expect))
+    for p in problems:
+        print("PROBLEM", p)
+    print("BUILD: %s" % ("checked, all planned tiles in place" if not problems else "%d problems" % len(problems)))
+    # record which plans this attempt has built (attempt 15 skipped district 5 while later plans assumed it)
+    try:
+        rp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "run.json")
+        r = json.load(open(rp))
+        r.setdefault("built", []).append({"plan": os.path.basename(path), "ok": not problems})
+        json.dump(r, open(rp, "w"))
+    except Exception as e:
+        print("note: could not record the plan in run.json:", e)
+    return 1 if problems else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1], "--dry" in sys.argv))

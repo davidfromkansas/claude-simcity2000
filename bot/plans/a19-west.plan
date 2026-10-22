@@ -1,0 +1,36 @@
+# Attempt 19 Dec 2027 (loan #17): ~51,000 since 2026; only 45 empty home tiles, 1 factory tile. First district WEST
+# of the river (idea #5): road bridge along y69 from the seaport road (x52) to x20; power line over the river on y68
+# from the west homes (59,68); a 3x3 grid x20-40 y48-69 (roads x20/x27/x34/x40, y48/y55/y62/y69), mostly dense homes
+# with parks, shops at two cells, factories by the river; 8 riverbank pumps at x41 y60-67 with pipe x40 and rows.
+road 20 69 52 69
+road 20 48 40 48
+road 20 55 40 55
+road 20 62 40 62
+road 20 49 20 68
+road 27 49 27 68
+road 34 49 34 68
+road 40 49 40 68
+line 21 68 59 68
+line 24 49 24 67
+line 31 49 31 67
+line 37 49 37 67
+pump 41 60 41 67
+zone R 21 49 26 54
+zone R 28 49 33 54
+zone I 35 49 39 54
+zone R 21 56 26 61
+zone C 28 56 33 61
+zone R 35 56 39 61
+zone R 21 63 26 67
+zone R 28 63 33 67
+zone C 35 63 39 67
+park 22 51 23 52
+park 29 51 30 52
+park 22 58 23 59
+park 36 58 36 59
+park 22 64 23 65
+park 29 64 30 65
+pipe 40 49 40 67
+pipe 21 52 39 52
+pipe 21 59 39 59
+pipe 21 66 39 66

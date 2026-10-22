@@ -1,0 +1,4 @@
+# Sep 2023: west-bank north lost power - join the NW coal plant (38,15) to the blocks across road y20, and restore
+# the burned east-shore part of the y68 line that ties the east and west grids together
+line 39 19 39 20
+line 51 68 59 68

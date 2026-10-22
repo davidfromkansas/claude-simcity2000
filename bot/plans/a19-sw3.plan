@@ -1,0 +1,31 @@
+# Attempt 19 Aug 2036 (loan #24): 76,760 people, home and shop land short (18/27 empty), spare power 13%.
+# Eighth coal plant (34,15) beside the west one. South-west band 3 y91-103 (roads y97/y104, columns x13/x20/x27/
+# x34/x40): mostly dense homes with parks, shops x21-26 (top) and x28-33 (bottom); lines x18/x24/x30/x37 continued
+# south across road y90 and y97; pipe x40 continued, rows y93/y100.
+coal 34 15
+road 13 97 40 97
+road 13 104 40 104
+road 13 91 13 103
+road 20 91 20 103
+road 27 91 27 103
+road 34 91 34 103
+road 40 91 40 103
+line 18 90 18 103
+line 24 90 24 103
+line 30 90 30 103
+line 37 90 37 103
+zone R 14 91 19 96
+zone C 21 91 26 96
+zone R 28 91 33 96
+zone R 35 91 39 96
+zone R 14 98 19 103
+zone R 21 98 26 103
+zone C 28 98 33 103
+zone R 35 98 39 103
+park 15 93 16 94
+park 28 93 29 94
+park 15 100 16 101
+park 21 100 22 101
+pipe 40 90 40 103
+pipe 14 93 39 93
+pipe 14 100 39 100

@@ -1,0 +1,26 @@
+# Attempt 11 Dec 2023: spare water 5% -> single pumps on free shore tiles that already touch a pipe and a powered conductor (no new pipe/line)
+pump 17 62 17 62
+pump 17 66 17 66
+pump 36 77 36 77
+pump 42 62 42 62
+pump 45 81 45 81
+pump 46 76 46 76
+pump 51 82 51 82
+pump 52 82 52 82
+pump 54 71 54 71
+pump 55 71 55 71
+pump 58 42 58 42
+pump 59 42 59 42
+pump 59 76 59 76
+pump 60 37 60 37
+pump 60 38 60 38
+pump 70 43 70 43
+pump 71 27 71 27
+pump 73 20 73 20
+pump 73 91 73 91
+pump 78 112 78 112
+pump 82 111 82 111
+pump 82 113 82 113
+pump 94 111 94 111
+pump 94 113 94 113
+pump 110 63 110 63

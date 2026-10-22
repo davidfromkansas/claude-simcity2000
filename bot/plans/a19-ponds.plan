@@ -1,0 +1,27 @@
+# Attempt 19 Aug 2021 (loan #14): 44,380 people, shop land short (19 empty, demand 2,000), power 10% spare.
+# Fifth coal plant beside the others (72,48). South pond district x76-99 y110-125: homes around the four ponds
+# (y110-115, water lifts land value), dense shops y117-121, homes y123-125 (kept off the map edge). Roads x76 down
+# to y122, y116 and y122; lines x77 and x88 (across road y109 from the built blocks above); pipes x82/x88/x94.
+coal 72 48
+road 76 110 76 122
+road 77 116 99 116
+road 77 122 99 122
+line 77 109 77 121
+line 88 109 88 121
+zone R 78 110 99 110
+zone R 78 114 99 115
+zone R 78 111 78 113
+zone R 82 111 82 113
+zone R 86 111 87 113
+zone R 94 111 94 113
+zone R 97 111 99 113
+zone C 78 117 99 121
+zone R 78 123 99 125
+park 80 124 81 125
+park 92 124 93 125
+pipe 80 109 82 109
+pipe 82 110 82 125
+pipe 88 109 88 125
+pipe 94 109 96 109
+pipe 94 110 94 125
+pipe 78 119 99 119

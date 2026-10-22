@@ -1,0 +1,6 @@
+# Attempt 9 Nov 2024: TRIPS weak on the east-river factory bands (no homes) and home demand 1,716 -> zone the empty rows
+# y93-94 between them as homes
+zone R 44 93 46 94
+zone R 48 93 50 94
+zone R 52 93 54 94
+zone R 56 93 57 94

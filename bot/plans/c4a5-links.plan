@@ -1,0 +1,6 @@
+# Attempt 5 Feb 2011: 17,000 people, all demand negative (shops -1,203, factories -521), one road link only.
+# Road links to the east edge (from the airport road y20) and the south edge (from road y97).
+road 123 20 126 20
+link 127 20
+road 100 98 100 126
+link 100 127

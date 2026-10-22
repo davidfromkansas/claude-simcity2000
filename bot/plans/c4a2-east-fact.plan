@@ -1,0 +1,15 @@
+# Claudeville 4 a2 Oct 2023: factory land short (demand 1,320) - dense factory block in the empty east corner beside
+# the SE coal plant: road x121 down from road y76, rows y83/y90; lines y88 (from the plant) and x124/x119; pipe from
+# the x113 pipe along y96 and up x124.
+road 121 77 121 96
+road 122 83 126 83
+road 122 90 126 90
+line 117 88 126 88
+line 124 77 124 96
+line 119 77 119 83
+zone I 122 77 126 82
+zone I 122 84 126 89
+zone I 122 91 126 96
+zone I 118 77 120 82
+pipe 114 96 124 96
+pipe 124 77 124 95

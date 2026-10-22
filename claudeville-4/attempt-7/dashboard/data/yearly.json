@@ -1,0 +1,341 @@
+[
+ {
+  "year": 2000,
+  "tone": "steady",
+  "title": "Attempt 6's opening",
+  "moves": [
+   "District 1",
+   "Coal + pumps"
+  ],
+  "happened": "Same opening as attempt 6; water short early, so loan #3 came in 2001.",
+  "watching": "Jobs",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 20000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2001",
+   "population": 560,
+   "money": 2168,
+   "unemployment": 3,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 4,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "Jobs strip and airport",
+  "moves": [
+   "Seaport strip",
+   "Airport"
+  ],
+  "happened": "Seaport job strip and east homes (loan #5), airport and south pumps (loan #6).",
+  "watching": "Recreation",
+  "start": {
+   "date": "Feb 2004",
+   "population": 12000,
+   "money": 3162,
+   "unemployment": 10,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 82,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "May 2005",
+   "population": 15520,
+   "money": 4369,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 61,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "Stadium, district 5",
+  "moves": [
+   "Stadium",
+   "District 5"
+  ],
+  "happened": "Stadium (loan #7), district 5 and fire stations; 18,000 people, level with attempt 6.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2006",
+   "population": 17600,
+   "money": 5427,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 60,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 19580,
+   "money": 1407,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 61,
+   "jammed": 0,
+   "bonds": 7
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "milestone",
+  "title": "River crossed early",
+  "moves": [
+   "West district",
+   "Links"
+  ],
+  "happened": "Road links, seaport 2 and the river crossing with the west link (loans #9-10), six years earlier than attempt 6.",
+  "watching": "Shops",
+  "start": {
+   "date": "Feb 2008",
+   "population": 22520,
+   "money": 3260,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 60,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 23770,
+   "money": 5746,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 63,
+   "jammed": 0,
+   "bonds": 10
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "setback",
+  "title": "Two-year stall",
+  "moves": [
+   "West district 2",
+   "Marina"
+  ],
+  "happened": "Shops had no land: ~38,900 from 2015 to 2017 until west district 2 and shop cells (loan #14).",
+  "watching": "Shops",
+  "start": {
+   "date": "Feb 2015",
+   "population": 37500,
+   "money": -2662,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 79,
+   "jammed": 0,
+   "bonds": 12
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 37710,
+   "money": 3449,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 68,
+   "jammed": 0,
+   "bonds": 13
+  }
+ },
+ {
+  "year": 2019,
+  "tone": "steady",
+  "title": "Strip districts",
+  "moves": [
+   "SW strips"
+  ],
+  "happened": "First stripplan districts on the south-west bank (loans #16-20); generator bugs and half-built plans needed fixes.",
+  "watching": "Money",
+  "start": {
+   "date": "Feb 2019",
+   "population": 44070,
+   "money": -174,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 108,
+   "jammed": 0,
+   "bonds": 15
+  },
+  "end": {
+   "date": "Feb 2020",
+   "population": 45730,
+   "money": -3676,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 99,
+   "jammed": 0,
+   "bonds": 16
+  }
+ },
+ {
+  "year": 2025,
+  "tone": "setback",
+  "title": "Lost builds at the edges",
+  "moves": [
+   "Inland coal plant"
+  ],
+  "happened": "Two coal plants became stray roads near the map edges (~$5,000 lost); guards added.",
+  "watching": "Money",
+  "start": {
+   "date": "Feb 2025",
+   "population": 61410,
+   "money": -2639,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 79,
+   "jammed": 0,
+   "bonds": 20
+  },
+  "end": {
+   "date": "Feb 2026",
+   "population": 65710,
+   "money": 1965,
+   "unemployment": 2,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 68,
+   "jammed": 0,
+   "bonds": 22
+  }
+ },
+ {
+  "year": 2030,
+  "tone": "steady",
+  "title": "East and west strips",
+  "moves": [],
+  "happened": "East strip district, west-bank shop strips, south bands (loans #23-30).",
+  "watching": "Money",
+  "start": {
+   "date": "Feb 2030",
+   "population": 68200,
+   "money": -21944,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 88,
+   "jammed": 0,
+   "bonds": 22
+  },
+  "end": {
+   "date": "Feb 2031",
+   "population": 70350,
+   "money": -5932,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 63,
+   "jammed": 0,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2037,
+  "tone": "setback",
+  "title": "Recession",
+  "moves": [],
+  "happened": "All demand negative, unemployment 9%; tax cut then raise.",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2037",
+   "population": 85100,
+   "money": -13572,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 271,
+   "jammed": 0,
+   "bonds": 32
+  },
+  "end": {
+   "date": "Feb 2038",
+   "population": 86040,
+   "money": -24516,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 199,
+   "jammed": 0,
+   "bonds": 32
+  }
+ },
+ {
+  "year": 2041,
+  "tone": "milestone",
+  "title": "Peak 91,980",
+  "moves": [],
+  "happened": "Peak population; bond payments $19k vs $9.8k income.",
+  "watching": "Game over",
+  "start": {
+   "date": "Feb 2041",
+   "population": 91980,
+   "money": -58232,
+   "unemployment": 1,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 75,
+   "jammed": 0,
+   "bonds": 32
+  },
+  "end": {
+   "date": "Feb 2042",
+   "population": 89990,
+   "money": -65675,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 182,
+   "jammed": 2,
+   "bonds": 32
+  }
+ },
+ {
+  "year": 2045,
+  "tone": "setback",
+  "title": "Out of money",
+  "moves": [],
+  "happened": "Cash passed -$100,000; the mayor was thrown out in Jan 2046.",
+  "watching": "Attempt 8",
+  "start": {
+   "date": "Feb 2045",
+   "population": 84060,
+   "money": -94591,
+   "unemployment": 10,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 372,
+   "jammed": 0,
+   "bonds": 32
+  },
+  "end": null
+ }
+]

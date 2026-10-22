@@ -1,0 +1,4 @@
+# fixes after block 2 south: fire station moved off the pond, pipe to the east factories, stray rubble
+fire 86 77
+pipe 107 80 107 85
+bulldoze 75 85 75 85

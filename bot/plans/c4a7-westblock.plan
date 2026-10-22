@@ -1,0 +1,13 @@
+# Attempt 6: c4a5-westblock with the factory cell trimmed to x72 (fire station at x73-75 y56-58)
+# (between the seaport, road y56, road y69 and road x76), homes beside factories for trips; power from line y59 down x62.
+road 59 55 75 55
+road 54 63 75 63
+line 62 60 62 68
+zone R 59 56 63 58
+zone I 64 56 72 58
+zone R 58 60 61 62
+zone I 63 60 72 62
+zone R 54 64 61 68
+zone I 63 64 75 68
+pipe 54 66 77 66
+pipe 66 57 66 65

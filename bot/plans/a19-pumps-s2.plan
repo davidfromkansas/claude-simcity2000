@@ -1,0 +1,4 @@
+# Attempt 19 Aug 2020: spare water 9% -> 5 riverbank pumps x70 y103-107; line y104 across road x76 to line x77; pipe y105 to the x80 pipe
+pump 70 103 70 107
+line 71 104 76 104
+pipe 71 105 79 105

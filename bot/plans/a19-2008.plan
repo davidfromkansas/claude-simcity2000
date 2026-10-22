@@ -1,0 +1,5 @@
+# Attempt 19 Dec 2007: factory land short (16 empty, demand 2000; dense factories fill within months) -> a row of
+# dense factories x60-75 y70-72 facing the west homes across road y69; line y73 across road x76 to line x77; pipe y71.
+zone I 60 70 75 72
+line 60 73 76 73
+pipe 60 71 73 71

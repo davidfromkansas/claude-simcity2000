@@ -1,0 +1,1487 @@
+[
+ {
+  "year": 2000,
+  "tone": "steady",
+  "title": "Year 2000",
+  "moves": [],
+  "happened": "0 -> 630 people (+630). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 20000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2001",
+   "population": 630,
+   "money": 2167,
+   "unemployment": 0,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "Year 2001",
+  "moves": [
+   "Feb 2001: loans 2-4; a20-2003, a19-2002 (coal + pumps), a19-2004 - attempt 9's opening"
+  ],
+  "happened": "630 -> 3,960 people (+3330). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2001",
+   "population": 630,
+   "money": 2167,
+   "unemployment": 0,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2002",
+   "population": 3960,
+   "money": 8464,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 17,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Year 2002",
+  "moves": [
+   "CONTROL: zoo charged but built 22 rows off (117,78) - calibration file held scale 1.78 from a failed zoom check. Fix: autocal deletes cal.js"
+  ],
+  "happened": "3,960 -> 9,460 people (+5500). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2002",
+   "population": 3960,
+   "money": 8464,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 17,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "May 2003",
+   "population": 9460,
+   "money": 4002,
+   "unemployment": 14,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 68,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "steady",
+  "title": "Year 2003",
+  "moves": [],
+  "happened": "9,460 -> 12,290 people (+2830). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "May 2003",
+   "population": 9460,
+   "money": 4002,
+   "unemployment": 14,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 68,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Jul 2004",
+   "population": 12290,
+   "money": 3010,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "steady",
+  "title": "Year 2004",
+  "moves": [
+   "Jul 2004: loans 5-6; seaport + dense job strip (a19-2006, unemployment 12%) and the NE airport with a line through it",
+   "Dec 2004: east homes beside the seaport job strip (TRIPS weak) + power links"
+  ],
+  "happened": "12,290 -> 13,270 people (+980). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Jul 2004",
+   "population": 12290,
+   "money": 3010,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 13270,
+   "money": 7871,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 78,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "steady",
+  "title": "Year 2005",
+  "moves": [
+   "Jul 2005: south pumps + power (spare water 10%)"
+  ],
+  "happened": "13,270 -> 15,300 people (+2030). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2005",
+   "population": 13270,
+   "money": 7871,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 78,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2006",
+   "population": 15300,
+   "money": 4457,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "steady",
+  "title": "Year 2006",
+  "moves": [],
+  "happened": "15,300 -> 18,120 people (+2820). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2006",
+   "population": 15300,
+   "money": 4457,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 18120,
+   "money": 3241,
+   "unemployment": 4,
+   "watered_pct": 92,
+   "powered_pct": 100,
+   "abandoned": 50,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "steady",
+  "title": "Year 2007",
+  "moves": [
+   "Feb 2007: loans 7-8; stadium, fire stations, district 5 + power",
+   "Nov 2007: east coal plant + fire station (spare power 11%); 8 fire stations for 20,350"
+  ],
+  "happened": "18,120 -> 20,440 people (+2320). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2007",
+   "population": 18120,
+   "money": 3241,
+   "unemployment": 4,
+   "watered_pct": 92,
+   "powered_pct": 100,
+   "abandoned": 50,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 20440,
+   "money": 3578,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "steady",
+  "title": "Year 2008",
+  "moves": [
+   "Dec 2008: loan 9; west block + pipes, mid pumps (water 8%), south district + power"
+  ],
+  "happened": "20,440 -> 23,110 people (+2670). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2008",
+   "population": 20440,
+   "money": 3578,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 23110,
+   "money": 4130,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 54,
+   "jammed": 0,
+   "bonds": 9
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "steady",
+  "title": "Year 2009",
+  "moves": [
+   "Disk full (session allowance): video parts were stored twice (/opt and repo). publish.py now deletes the /opt copy once the repo copy matche",
+   "Feb 2009: loan 10; SE district (shops/homes) + pipe, road links east and south",
+   "Dec 2009: loan 11; south coal plant, second seaport (retried after the landing guard stopped the first try) + join"
+  ],
+  "happened": "23,110 -> 26,080 people (+2970). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2009",
+   "population": 23110,
+   "money": 4130,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 54,
+   "jammed": 0,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 26080,
+   "money": 8733,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 75,
+   "jammed": 0,
+   "bonds": 11
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "good",
+  "title": "Year 2010",
+  "moves": [
+   "Feb 2010: empty factory block x67-75 y64-68 rezoned to shops (shops 1,036 with 33 empty) + 2 power-line tiles"
+  ],
+  "happened": "26,080 -> 29,360 people (+3280). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2010",
+   "population": 26080,
+   "money": 8733,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 75,
+   "jammed": 0,
+   "bonds": 11
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 29360,
+   "money": 4932,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 59,
+   "jammed": 1,
+   "bonds": 11
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "good",
+  "title": "Year 2011",
+  "moves": [],
+  "happened": "29,360 -> 32,720 people (+3360). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2011",
+   "population": 29360,
+   "money": 4932,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 59,
+   "jammed": 1,
+   "bonds": 11
+  },
+  "end": {
+   "date": "Jul 2012",
+   "population": 32720,
+   "money": 1937,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 12,
+   "bonds": 11
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "steady",
+  "title": "Year 2012",
+  "moves": [],
+  "happened": "32,720 -> 34,220 people (+1500). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Jul 2012",
+   "population": 32720,
+   "money": 1937,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 12,
+   "bonds": 11
+  },
+  "end": {
+   "date": "Jul 2013",
+   "population": 34220,
+   "money": -769,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 67,
+   "jammed": 11,
+   "bonds": 11
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "steady",
+  "title": "Year 2013",
+  "moves": [
+   "Jul 2013: loans 12-13 (floor overridden: land full, districts fill); lake pumps (water 5%), south band, south-west band"
+  ],
+  "happened": "34,220 -> 36,910 people (+2690). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Jul 2013",
+   "population": 34220,
+   "money": -769,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 67,
+   "jammed": 11,
+   "bonds": 11
+  },
+  "end": {
+   "date": "May 2014",
+   "population": 36910,
+   "money": 9465,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 89,
+   "jammed": 0,
+   "bonds": 13
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "steady",
+  "title": "Year 2014",
+  "moves": [],
+  "happened": "36,910 -> 39,380 people (+2470). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "May 2014",
+   "population": 36910,
+   "money": 9465,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 89,
+   "jammed": 0,
+   "bonds": 13
+  },
+  "end": {
+   "date": "Feb 2015",
+   "population": 39380,
+   "money": 6133,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 53,
+   "jammed": 0,
+   "bonds": 13
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "steady",
+  "title": "Year 2015",
+  "moves": [],
+  "happened": "39,380 -> 40,970 people (+1590). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2015",
+   "population": 39380,
+   "money": 6133,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 53,
+   "jammed": 0,
+   "bonds": 13
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 40970,
+   "money": 3154,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 99,
+   "jammed": 5,
+   "bonds": 13
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "steady",
+  "title": "Crossed the river after a one-year stall",
+  "moves": [
+   "Jul 2016: loans 14-15; river crossing (west district, west coal plant, west-edge link) and zoo #3"
+  ],
+  "happened": "40,970 -> 41,770 people (+800). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2016",
+   "population": 40970,
+   "money": 3154,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 99,
+   "jammed": 5,
+   "bonds": 13
+  },
+  "end": {
+   "date": "Feb 2017",
+   "population": 41770,
+   "money": 3789,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 111,
+   "jammed": 1,
+   "bonds": 15
+  }
+ },
+ {
+  "year": 2017,
+  "tone": "steady",
+  "title": "Year 2017",
+  "moves": [],
+  "happened": "41,770 -> 44,360 people (+2590). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2017",
+   "population": 41770,
+   "money": 3789,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 111,
+   "jammed": 1,
+   "bonds": 15
+  },
+  "end": {
+   "date": "Feb 2018",
+   "population": 44360,
+   "money": -516,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 71,
+   "jammed": 2,
+   "bonds": 15
+  }
+ },
+ {
+  "year": 2018,
+  "tone": "good",
+  "title": "Year 2018",
+  "moves": [
+   "Jul 2018: NW coal plant + west strip (stray bridge joined, same as attempt 9)"
+  ],
+  "happened": "44,360 -> 47,740 people (+3380). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2018",
+   "population": 44360,
+   "money": -516,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 71,
+   "jammed": 2,
+   "bonds": 15
+  },
+  "end": {
+   "date": "Feb 2019",
+   "population": 47740,
+   "money": -2422,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 48,
+   "jammed": 0,
+   "bonds": 17
+  }
+ },
+ {
+  "year": 2019,
+  "tone": "good",
+  "title": "Biggest growth year so far",
+  "moves": [
+   "Dec 2019: loans 18-19; SW strip district, riverbank coal plant; 6 fire stations (18 total). autocal line check accepts 3-5 tiles (a line sna"
+  ],
+  "happened": "47,740 -> 55,440 people (+7700). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2019",
+   "population": 47740,
+   "money": -2422,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 48,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2020",
+   "population": 55440,
+   "money": 54,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 65,
+   "jammed": 0,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2020,
+  "tone": "good",
+  "title": "Year 2020",
+  "moves": [
+   "Jul 2020: loan 20; shore, west-bank and riverbank pumps (spare water 5%)"
+  ],
+  "happened": "55,440 -> 59,230 people (+3790). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2020",
+   "population": 55440,
+   "money": 54,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 65,
+   "jammed": 0,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Feb 2021",
+   "population": 59230,
+   "money": 1578,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 73,
+   "jammed": 0,
+   "bonds": 20
+  }
+ },
+ {
+  "year": 2021,
+  "tone": "good",
+  "title": "Year 2021",
+  "moves": [
+   "Feb 2021: loan 21; SW factory strip x38-54 y71-97 (+ fix, road joins, power links, road x38 across line y70)"
+  ],
+  "happened": "59,230 -> 66,290 people (+7060). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2021",
+   "population": 59230,
+   "money": 1578,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 73,
+   "jammed": 0,
+   "bonds": 20
+  },
+  "end": {
+   "date": "Feb 2022",
+   "population": 66290,
+   "money": -521,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 67,
+   "jammed": 0,
+   "bonds": 21
+  }
+ },
+ {
+  "year": 2022,
+  "tone": "good",
+  "title": "Ahead of the pace curve",
+  "moves": [
+   "Jul 2022: loan 22; SW home strip (c4a8-sw2) + power",
+   "Dec 2022: loans 23-24; stadium #2 (49,30), zoo #3 (49,99), coal plant (53,102) + fire station"
+  ],
+  "happened": "66,290 -> 72,250 people (+5960). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2022",
+   "population": 66290,
+   "money": -521,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 67,
+   "jammed": 0,
+   "bonds": 21
+  },
+  "end": {
+   "date": "Feb 2023",
+   "population": 72250,
+   "money": 3268,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 76,
+   "jammed": 0,
+   "bonds": 24
+  }
+ },
+ {
+  "year": 2023,
+  "tone": "good",
+  "title": "Year 2023",
+  "moves": [],
+  "happened": "72,250 -> 77,550 people (+5300). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2023",
+   "population": 72250,
+   "money": 3268,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 76,
+   "jammed": 0,
+   "bonds": 24
+  },
+  "end": {
+   "date": "Feb 2024",
+   "population": 77550,
+   "money": -2446,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 0,
+   "bonds": 24
+  }
+ },
+ {
+  "year": 2024,
+  "tone": "steady",
+  "title": "Year 2024",
+  "moves": [
+   "Jul 2024: loan 25; east strip x109-125 y63-96 (homes/shops) + powerfix links",
+   "Nov 2024: loan 26; 13 south-lake pumps (the other 9 lots hold a fire station)"
+  ],
+  "happened": "77,550 -> 79,850 people (+2300). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2024",
+   "population": 77550,
+   "money": -2446,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 0,
+   "bonds": 24
+  },
+  "end": {
+   "date": "Feb 2025",
+   "population": 79850,
+   "money": 5707,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 0,
+   "bonds": 26
+  }
+ },
+ {
+  "year": 2025,
+  "tone": "steady",
+  "title": "Year 2025",
+  "moves": [
+   "Jun 2025: loans 27-28; west-riverbank shop strip, coal plant (67,70) + fire station, power links"
+  ],
+  "happened": "79,850 -> 82,040 people (+2190). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2025",
+   "population": 79850,
+   "money": 5707,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 0,
+   "bonds": 26
+  },
+  "end": {
+   "date": "Feb 2026",
+   "population": 82040,
+   "money": 12887,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 182,
+   "jammed": 0,
+   "bonds": 28
+  }
+ },
+ {
+  "year": 2026,
+  "tone": "steady",
+  "title": "Year 2026",
+  "moves": [],
+  "happened": "82,040 -> 83,390 people (+1350). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2026",
+   "population": 82040,
+   "money": 12887,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 182,
+   "jammed": 0,
+   "bonds": 28
+  },
+  "end": {
+   "date": "Feb 2027",
+   "population": 83390,
+   "money": 6375,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 230,
+   "jammed": 0,
+   "bonds": 28
+  }
+ },
+ {
+  "year": 2027,
+  "tone": "setback",
+  "title": "Year 2027",
+  "moves": [],
+  "happened": "83,390 -> 82,970 people (-420). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2027",
+   "population": 83390,
+   "money": 6375,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 230,
+   "jammed": 0,
+   "bonds": 28
+  },
+  "end": {
+   "date": "Jan 2028",
+   "population": 82970,
+   "money": -901,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 326,
+   "jammed": 0,
+   "bonds": 28
+  }
+ },
+ {
+  "year": 2028,
+  "tone": "setback",
+  "title": "Cash goes negative as land fills",
+  "moves": [],
+  "happened": "82,970 -> 86,150 people (+3180). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Jan 2028",
+   "population": 82970,
+   "money": -901,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 326,
+   "jammed": 0,
+   "bonds": 28
+  },
+  "end": {
+   "date": "Jul 2029",
+   "population": 86150,
+   "money": -9193,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 154,
+   "jammed": 0,
+   "bonds": 28
+  }
+ },
+ {
+  "year": 2029,
+  "tone": "steady",
+  "title": "Year 2029",
+  "moves": [],
+  "happened": "86,150 -> 88,120 people (+1970). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Jul 2029",
+   "population": 86150,
+   "money": -9193,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 154,
+   "jammed": 0,
+   "bonds": 28
+  },
+  "end": {
+   "date": "Feb 2030",
+   "population": 88120,
+   "money": -17575,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 0,
+   "bonds": 28
+  }
+ },
+ {
+  "year": 2030,
+  "tone": "good",
+  "title": "Year 2030",
+  "moves": [
+   "CONTROL: the south-rows plan was refused (cash) but I ran powerfix anyway, and it laid a line along the planned road row y124. Fixed with an",
+   "Jun 2030: loans 29-31; south rows (homes y119-123, factories y125-126, road y124) + power and pipe joins"
+  ],
+  "happened": "88,120 -> 91,620 people (+3500). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2030",
+   "population": 88120,
+   "money": -17575,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 0,
+   "bonds": 28
+  },
+  "end": {
+   "date": "Feb 2031",
+   "population": 91620,
+   "money": -468,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 0,
+   "bonds": 31
+  }
+ },
+ {
+  "year": 2031,
+  "tone": "good",
+  "title": "Year 2031",
+  "moves": [
+   "Jul 2031: loans 32-33; north strip (factories/shops/homes x44-57 y9-22), NW coal plant #2, north shop strip x21-40 y1-11, pipe and power joi"
+  ],
+  "happened": "91,620 -> 95,850 people (+4230). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2031",
+   "population": 91620,
+   "money": -468,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 0,
+   "bonds": 31
+  },
+  "end": {
+   "date": "Feb 2032",
+   "population": 95850,
+   "money": 394,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 33
+  }
+ },
+ {
+  "year": 2032,
+  "tone": "milestone",
+  "title": "Past 100,000 - four years early",
+  "moves": [
+   "Feb-Jul 2032: loans 34-35; pocket districts A (x61-75 y109-126) and B (x28-37 y82-97), power across the double road, pipe joins, 17 shore pu"
+  ],
+  "happened": "95,850 -> 101,620 people (+5770). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2032",
+   "population": 95850,
+   "money": 394,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 33
+  },
+  "end": {
+   "date": "Feb 2033",
+   "population": 101620,
+   "money": 3928,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 78,
+   "jammed": 0,
+   "bonds": 35
+  }
+ },
+ {
+  "year": 2033,
+  "tone": "good",
+  "title": "Year 2033",
+  "moves": [
+   "Jun 2033: loans 36-37; zoo (72,100), stadium (44,23), NE shop strip x93-118 y4-10 (landed right this time; road, pipe and power joins)"
+  ],
+  "happened": "101,620 -> 107,410 people (+5790). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2033",
+   "population": 101620,
+   "money": 3928,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 78,
+   "jammed": 0,
+   "bonds": 35
+  },
+  "end": {
+   "date": "Feb 2034",
+   "population": 107410,
+   "money": 3980,
+   "unemployment": 1,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 93,
+   "jammed": 0,
+   "bonds": 37
+  }
+ },
+ {
+  "year": 2034,
+  "tone": "setback",
+  "title": "Year 2034",
+  "moves": [
+   "Feb 2034: home rows north of the north strip (x41-56 y1-8, road y8) + power routing"
+  ],
+  "happened": "107,410 -> 106,140 people (-1270). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2034",
+   "population": 107410,
+   "money": 3980,
+   "unemployment": 1,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 93,
+   "jammed": 0,
+   "bonds": 37
+  },
+  "end": {
+   "date": "Feb 2035",
+   "population": 106140,
+   "money": -6055,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 202,
+   "jammed": 0,
+   "bonds": 37
+  }
+ },
+ {
+  "year": 2035,
+  "tone": "steady",
+  "title": "Year 2035",
+  "moves": [],
+  "happened": "106,140 -> 106,490 people (+350). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2035",
+   "population": 106140,
+   "money": -6055,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 202,
+   "jammed": 0,
+   "bonds": 37
+  },
+  "end": {
+   "date": "Feb 2036",
+   "population": 106490,
+   "money": -15950,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 309,
+   "jammed": 0,
+   "bonds": 37
+  }
+ },
+ {
+  "year": 2036,
+  "tone": "setback",
+  "title": "Seaport plant fire, put out in two bursts",
+  "moves": [
+   "Aug 2036: disaster fire at the seaport coal plants (x61-67 y48-51) - paused, firefighters dispatched at once, watched bursts: over in 2 burs"
+  ],
+  "happened": "106,490 -> 102,210 people (-4280). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2036",
+   "population": 106490,
+   "money": -15950,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 309,
+   "jammed": 0,
+   "bonds": 37
+  },
+  "end": {
+   "date": "Feb 2037",
+   "population": 102210,
+   "money": -27534,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 284,
+   "jammed": 0,
+   "bonds": 37
+  }
+ },
+ {
+  "year": 2037,
+  "tone": "setback",
+  "title": "Deficit: more loans and higher taxes",
+  "moves": [],
+  "happened": "102,210 -> 99,600 people (-2610). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2037",
+   "population": 102210,
+   "money": -27534,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 284,
+   "jammed": 0,
+   "bonds": 37
+  },
+  "end": {
+   "date": "Feb 2038",
+   "population": 99600,
+   "money": -6511,
+   "unemployment": 11,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 458,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2038,
+  "tone": "good",
+  "title": "Year 2038",
+  "moves": [],
+  "happened": "99,600 -> 103,620 people (+4020). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2038",
+   "population": 99600,
+   "money": -6511,
+   "unemployment": 11,
+   "watered_pct": 93,
+   "powered_pct": 100,
+   "abandoned": 458,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Feb 2039",
+   "population": 103620,
+   "money": -22425,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 299,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2039,
+  "tone": "steady",
+  "title": "Year 2039",
+  "moves": [],
+  "happened": "103,620 -> 105,770 people (+2150). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2039",
+   "population": 103620,
+   "money": -22425,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 299,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Feb 2040",
+   "population": 105770,
+   "money": -39750,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 155,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2040,
+  "tone": "good",
+  "title": "Peak 109,570; finance ordinances finally on",
+  "moves": [],
+  "happened": "105,770 -> 109,250 people (+3480). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2040",
+   "population": 105770,
+   "money": -39750,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 155,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Feb 2041",
+   "population": 109250,
+   "money": -56510,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 137,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2041,
+  "tone": "setback",
+  "title": "Raised taxes on a stalled city",
+  "moves": [],
+  "happened": "109,250 -> 107,350 people (-1900). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2041",
+   "population": 109250,
+   "money": -56510,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 137,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Feb 2042",
+   "population": 107350,
+   "money": -66449,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 279,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2042,
+  "tone": "setback",
+  "title": "Year 2042",
+  "moves": [],
+  "happened": "107,350 -> 100,920 people (-6430). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2042",
+   "population": 107350,
+   "money": -66449,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 279,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Jan 2043",
+   "population": 100920,
+   "money": -77551,
+   "unemployment": 13,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 643,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2043,
+  "tone": "setback",
+  "title": "Recession: unemployment 18%",
+  "moves": [],
+  "happened": "100,920 -> 94,430 people (-6490). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Jan 2043",
+   "population": 100920,
+   "money": -77551,
+   "unemployment": 13,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 643,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Feb 2044",
+   "population": 94430,
+   "money": -92502,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 729,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2044,
+  "tone": "good",
+  "title": "Year 2044",
+  "moves": [],
+  "happened": "94,430 -> 99,790 people (+5360). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2044",
+   "population": 94430,
+   "money": -92502,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 729,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Feb 2045",
+   "population": 99790,
+   "money": -73707,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 264,
+   "jammed": 0,
+   "bonds": 45
+  }
+ },
+ {
+  "year": 2045,
+  "tone": "good",
+  "title": "Year 2045",
+  "moves": [],
+  "happened": "99,790 -> 103,930 people (+4140). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2045",
+   "population": 99790,
+   "money": -73707,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 264,
+   "jammed": 0,
+   "bonds": 45
+  },
+  "end": {
+   "date": "Feb 2046",
+   "population": 103930,
+   "money": -73383,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 200,
+   "jammed": 0,
+   "bonds": 47
+  }
+ },
+ {
+  "year": 2046,
+  "tone": "setback",
+  "title": "Road funding cut: 89 roads crumbled",
+  "moves": [
+   "CONTROL/STRATEGY failure: I set transit funding to 0% to save $288/yr; in ~3 months 89 road tiles decayed (incl. the east link). They cannot"
+  ],
+  "happened": "103,930 -> 104,850 people (+920). Written after the attempt from the logs (the journal was missed during play).",
+  "watching": "",
+  "start": {
+   "date": "Feb 2046",
+   "population": 103930,
+   "money": -73383,
+   "unemployment": 7,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 200,
+   "jammed": 0,
+   "bonds": 47
+  },
+  "end": {
+   "date": "Feb 2047",
+   "population": 104850,
+   "money": -82510,
+   "unemployment": 7,
+   "watered_pct": 93,
+   "powered_pct": 96,
+   "abandoned": 251,
+   "jammed": 0,
+   "bonds": 48
+  }
+ },
+ {
+  "year": 2047,
+  "tone": "setback",
+  "title": "Out of loans; bankrupt at the January check",
+  "moves": [],
+  "happened": "Nov 2047: 103,780 people, cash -$82,510, all loans used. The Jan 2048 check found -$102,331 and the game ended (mayor thrown out).",
+  "watching": "Attempt over.",
+  "start": {
+   "date": "Feb 2047",
+   "population": 104850,
+   "money": -82510,
+   "unemployment": 7,
+   "watered_pct": 93,
+   "powered_pct": 96,
+   "abandoned": 251,
+   "jammed": 0,
+   "bonds": 48
+  },
+  "end": null
+ }
+]

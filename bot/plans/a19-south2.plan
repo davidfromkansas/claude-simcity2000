@@ -1,0 +1,27 @@
+# Attempt 19 Mar 2020 (loan #13): 42,220 people, shop land short (11 empty, demand 1,548), home cap warning (2 lifters
+# for ~42,000). South district x109-125 y98-117 below the south-east one: second ZOO (117,98), shop and home cells
+# alternating, homes with parks. Roads x115/x122 down to y118, y104/y111/y118; lines x109 (from the airport),
+# x116 and x126 (both continue the lines above across road y97); pipe x113 from the y94 pipe, pipes y107/y114.
+road 115 98 115 118
+road 122 98 122 118
+road 109 104 125 104
+road 109 111 125 111
+road 109 118 125 118
+bulldoze 109 110 109 110
+line 109 102 109 117
+line 116 97 116 117
+line 126 97 126 117
+zoo 117 98
+zone R 117 102 121 103
+zone C 123 98 125 103
+zone C 110 105 114 110
+zone R 117 105 121 110
+park 118 107 119 108
+zone C 123 105 125 110
+zone R 110 112 114 117
+park 111 114 112 115
+zone C 117 112 121 117
+zone R 123 112 125 117
+pipe 113 95 113 117
+pipe 109 107 125 107
+pipe 109 114 125 114

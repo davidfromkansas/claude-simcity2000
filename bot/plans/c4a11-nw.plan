@@ -1,0 +1,27 @@
+# stripplan.py 10 12 38 20 IR --cross 10 --line 10
+# Attempt 11 Jul 2028: NW free block x10-38 y12-20: factory band y12-14, homes y16-18 (factory demand +457); cross streets/pipes trimmed to y>=12 and run to y20
+line 15 12 15 18
+line 25 12 25 18
+line 35 12 35 18
+road 10 15 38 15
+road 10 12 10 20
+road 20 12 20 20
+road 30 12 30 20
+road 38 12 38 20
+zone I 11 12 14 14
+zone I 16 12 19 14
+zone I 21 12 24 14
+zone I 26 12 29 14
+zone I 31 12 34 14
+zone I 36 12 37 14
+zone R 11 16 14 18
+zone R 16 16 19 18
+zone R 21 16 24 18
+zone R 26 16 29 18
+zone R 31 16 34 18
+zone R 36 16 37 18
+pipe 10 15 38 15
+pipe 10 12 10 20
+pipe 20 12 20 20
+pipe 30 12 30 20
+pipe 38 12 38 20

@@ -1,0 +1,696 @@
+[
+ {
+  "year": 2000,
+  "tone": "setback",
+  "title": "Founded, but almost nothing grew",
+  "moves": [
+   "Avenue and 4 streets",
+   "Zones: homes, shops, factories",
+   "Coal plant + power line",
+   "4 water pumps + pipes"
+  ],
+  "happened": "Built a full starter town on the flat map: avenue, 4 streets, homes, shops, factories, coal plant, 4 river pumps. But empty zones don't carry power, so only one edge of each zone had electricity and the city stayed at about 20 people.",
+  "watching": "Whether the new power lines through the zones get buildings going.",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 10000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2001",
+   "population": 20,
+   "money": 2227,
+   "unemployment": 25,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2001,
+  "tone": "setback",
+  "title": "Found the power problem",
+  "moves": [
+   "Power lines through all zones"
+  ],
+  "happened": "Population stuck at 30 with 42% unemployment. Found that only zone tiles touching a power line were powered. Added two power lines through every zone row (x=84, x=92), linked to the plant.",
+  "watching": "Growth now that every block has power.",
+  "start": {
+   "date": "Jan 2001",
+   "population": 20,
+   "money": 2227,
+   "unemployment": 25,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2002",
+   "population": 30,
+   "money": 2080,
+   "unemployment": 42,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 3,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Growth finally starts",
+  "moves": [
+   "Power line to the pumps"
+  ],
+  "happened": "With power lines through the zones, population rose from 30 to 170. The pumps had no power, so water was 0%; ran a power line to them.",
+  "watching": "Water and job numbers.",
+  "start": {
+   "date": "Jan 2002",
+   "population": 30,
+   "money": 2080,
+   "unemployment": 42,
+   "watered_pct": 0,
+   "powered_pct": 100,
+   "abandoned": 3,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2003",
+   "population": 200,
+   "money": 2045,
+   "unemployment": 19,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "steady",
+  "title": "Slow climb",
+  "moves": [
+   "More power lines through zones (x=80, 88, 96)"
+  ],
+  "happened": "Population 200 -> 480. Water reached 94%. Buildings only appear next to a power line or another building, so growth spreads slowly.",
+  "watching": "Unemployment and abandoned factories.",
+  "start": {
+   "date": "Jan 2003",
+   "population": 200,
+   "money": 2045,
+   "unemployment": 19,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2004",
+   "population": 480,
+   "money": 2058,
+   "unemployment": 26,
+   "watered_pct": 94,
+   "powered_pct": 100,
+   "abandoned": 20,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "setback",
+  "title": "Jobs collapse",
+  "moves": [
+   "Neighbor road link ($1,000)",
+   "Tax 7% -> 3%"
+  ],
+  "happened": "Population 480 -> 640 but 45 buildings abandoned and 38% unemployment: shops and factories had no outside trade.",
+  "watching": "Whether the neighbor link brings jobs back.",
+  "start": {
+   "date": "Jan 2004",
+   "population": 480,
+   "money": 2058,
+   "unemployment": 26,
+   "watered_pct": 94,
+   "powered_pct": 100,
+   "abandoned": 20,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2005",
+   "population": 640,
+   "money": 1946,
+   "unemployment": 38,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 45,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "Neighbor link brings jobs",
+  "moves": [],
+  "happened": "Population passed 1,000 (640 -> 1,010). Shop and factory demand flipped from negative to full after the neighbor link.",
+  "watching": "Water: pumps are starting to fall behind.",
+  "start": {
+   "date": "Jan 2005",
+   "population": 640,
+   "money": 1946,
+   "unemployment": 38,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 45,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2006",
+   "population": 1010,
+   "money": 920,
+   "unemployment": 31,
+   "watered_pct": 85,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "steady",
+  "title": "Growing, but water runs short",
+  "moves": [
+   "4 more water pumps (east lake + river)"
+  ],
+  "happened": "Population 1,010 -> 1,350. Water coverage dropped to 48% and 64 buildings stood abandoned, many at the far east end. Cash only about $950: income is tiny at this size.",
+  "watching": "Abandoned buildings once water is back.",
+  "start": {
+   "date": "Jan 2006",
+   "population": 1010,
+   "money": 920,
+   "unemployment": 31,
+   "watered_pct": 85,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2007",
+   "population": 1350,
+   "money": 951,
+   "unemployment": 31,
+   "watered_pct": 48,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 1,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "setback",
+  "title": "Too few jobs, first loan",
+  "moves": [
+   "Factory rows y39-41",
+   "Homes y29-34",
+   "$10,000 bond at 5%"
+  ],
+  "happened": "Population 1,350 -> 1,450 but abandoned buildings rose to 94 and 38% had no job. Shops were over-built. Income was only about $57 a year, so took a $10,000 bond at 5%.",
+  "watching": "Jobs from the new factory rows; homes in y29-34.",
+  "start": {
+   "date": "Jan 2007",
+   "population": 1350,
+   "money": 951,
+   "unemployment": 31,
+   "watered_pct": 48,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 1,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2008",
+   "population": 1450,
+   "money": 538,
+   "unemployment": 38,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 3,
+   "bonds": 0
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "Borrowed and built",
+  "moves": [
+   "10 river pumps",
+   "South factory district (streets y=49, y=56)"
+  ],
+  "happened": "Population 1,450 -> 2,430. The $10,000 bond paid for new homes, a whole factory district to the south and 10 river pumps. Unemployment fell from 38% to 28%.",
+  "watching": "Jobs in the new factory district; shops are still over-built.",
+  "start": {
+   "date": "Jan 2008",
+   "population": 1450,
+   "money": 538,
+   "unemployment": 38,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 3,
+   "bonds": 0
+  },
+  "end": {
+   "date": "Jan 2009",
+   "population": 2430,
+   "money": 6317,
+   "unemployment": 28,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 82,
+   "jammed": 1,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Fast growth",
+  "moves": [
+   "North housing district (y3-16)"
+  ],
+  "happened": "Population 2,430 -> 3,120 (+28%). Abandoned buildings rose to 144: mostly small shops and factories turning over. Homes are almost full.",
+  "watching": "Whether the new north housing district fills.",
+  "start": {
+   "date": "Jan 2009",
+   "population": 2430,
+   "money": 6317,
+   "unemployment": 28,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 82,
+   "jammed": 1,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2010",
+   "population": 3120,
+   "money": 5909,
+   "unemployment": 28,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 144,
+   "jammed": 1,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "steady",
+  "title": "Slower than needed",
+  "moves": [
+   "North housing district"
+  ],
+  "happened": "Population 3,120 -> 3,680. The new north homes started filling, but abandoned buildings kept rising (153) and 28% had no job.",
+  "watching": "Why so many buildings empty out.",
+  "start": {
+   "date": "Jan 2010",
+   "population": 3120,
+   "money": 5909,
+   "unemployment": 28,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 144,
+   "jammed": 1,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2011",
+   "population": 3680,
+   "money": 3976,
+   "unemployment": 28,
+   "watered_pct": 94,
+   "powered_pct": 100,
+   "abandoned": 153,
+   "jammed": 1,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "good",
+  "title": "Found the real bottleneck: roads",
+  "moves": [
+   "Connector roads x=88 and x=102"
+  ],
+  "happened": "Only one north-south road (the west avenue) meant the east blocks were about 60 road tiles from jobs, too far for commuters. Two connector roads (x=88, x=102) fixed it: population 3,680 -> 5,310 (+44%), unemployment 28% -> 12%, abandoned 153 -> 84.",
+  "watching": "Water (81%) and more connectors.",
+  "start": {
+   "date": "Jan 2011",
+   "population": 3680,
+   "money": 3976,
+   "unemployment": 28,
+   "watered_pct": 94,
+   "powered_pct": 100,
+   "abandoned": 153,
+   "jammed": 1,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 5310,
+   "money": 2918,
+   "unemployment": 12,
+   "watered_pct": 81,
+   "powered_pct": 100,
+   "abandoned": 84,
+   "jammed": 2,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "steady",
+  "title": "Ran unattended",
+  "moves": [],
+  "happened": "A bug in Claude's pause check let the game run on its own from early 2012 to early 2015. No changes were made in this year. Population kept climbing (5,310 -> 6,070 by Feb 2015) while water fell to 24% and the coal plant ran out of capacity.",
+  "watching": "Water and power once Claude is back in control.",
+  "start": {
+   "date": "Feb 2012",
+   "population": 5310,
+   "money": 2918,
+   "unemployment": 12,
+   "watered_pct": 81,
+   "powered_pct": 100,
+   "abandoned": 84,
+   "jammed": 2,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2013",
+   "population": 5790,
+   "money": 2611,
+   "unemployment": 16,
+   "watered_pct": 52,
+   "powered_pct": 96,
+   "abandoned": 118,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "steady",
+  "title": "Ran unattended",
+  "moves": [],
+  "happened": "A bug in Claude's pause check let the game run on its own from early 2012 to early 2015. No changes were made in this year. Population kept climbing (5,310 -> 6,070 by Feb 2015) while water fell to 24% and the coal plant ran out of capacity.",
+  "watching": "Water and power once Claude is back in control.",
+  "start": {
+   "date": "Jan 2013",
+   "population": 5790,
+   "money": 2611,
+   "unemployment": 16,
+   "watered_pct": 52,
+   "powered_pct": 96,
+   "abandoned": 118,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": null
+ },
+ {
+  "year": 2014,
+  "tone": "setback",
+  "title": "Water and power ran out",
+  "moves": [
+   "Second bond, tax 6%",
+   "Second coal plant",
+   "7 river pumps",
+   "East district (dense homes)"
+  ],
+  "happened": "Found the game had been running unattended. By Jan 2015: 6,070 people, water 24%, power plant maxed out, 160 abandoned buildings. Fixed the pause check, took a second $10,000 bond (4%), raised tax 3% -> 6%.",
+  "watching": "New east district of dense homes.",
+  "start": null,
+  "end": {
+   "date": "Feb 2015",
+   "population": 6070,
+   "money": 2014,
+   "unemployment": 19,
+   "watered_pct": 24,
+   "powered_pct": 90,
+   "abandoned": 160,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "steady",
+  "title": "Building out the east",
+  "moves": [
+   "Dense shops y37-41 (east)"
+  ],
+  "happened": "Population 6,070 -> 6,530. Dense homes in the east district started to rise slowly. Shop demand stayed maxed, with only 69 shop tiles in the whole city.",
+  "watching": "Shops in the new east commercial rows; traffic (12 jammed tiles).",
+  "start": {
+   "date": "Feb 2015",
+   "population": 6070,
+   "money": 2014,
+   "unemployment": 19,
+   "watered_pct": 24,
+   "powered_pct": 90,
+   "abandoned": 160,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jan 2016",
+   "population": 6530,
+   "money": 3025,
+   "unemployment": 16,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 135,
+   "jammed": 12,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "steady",
+  "title": "Slow year, money gone",
+  "moves": [
+   "Factory rows y57-62",
+   "Third $10,000 bond",
+   "Fire and police stations",
+   "Second neighbor link (east edge)"
+  ],
+  "happened": "Population 6,530 -> 7,420 (+14%). Factory land was full while factory demand stayed maxed; 17% unemployed. Cash ran down to almost zero.",
+  "watching": "Jobs from new factories; whether the bonds can be carried.",
+  "start": {
+   "date": "Jan 2016",
+   "population": 6530,
+   "money": 3025,
+   "unemployment": 16,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 135,
+   "jammed": 12,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2017",
+   "population": 7420,
+   "money": 1247,
+   "unemployment": 17,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 163,
+   "jammed": 8,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "Second neighbor link pays off",
+  "moves": [
+   "7 pumps at the east lake",
+   "Factory rows y64-69"
+  ],
+  "happened": "Population 7,420 -> 9,050 (+22%). The east neighbor link and the new factories helped; water fell to 53% again as the city grew.",
+  "watching": "Water; unemployment stuck at 17% while factory demand stays maxed.",
+  "start": {
+   "date": "Jan 2017",
+   "population": 7420,
+   "money": 1247,
+   "unemployment": 17,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 163,
+   "jammed": 8,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Jan 2018",
+   "population": 9050,
+   "money": 7144,
+   "unemployment": 17,
+   "watered_pct": 53,
+   "powered_pct": 100,
+   "abandoned": 193,
+   "jammed": 13,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2018,
+  "tone": "setback",
+  "title": "Drying up",
+  "moves": [
+   "25 riverbank pumps",
+   "Factory rows y64-69"
+  ],
+  "happened": "Population fell 9,050 -> 8,880. 298 buildings abandoned and 24% unemployed. The newspaper reported a water shortage; Claude's own water number (buildings on pipes) had hidden it.",
+  "watching": "The game's water graph after 25 new riverbank pumps.",
+  "start": {
+   "date": "Jan 2018",
+   "population": 9050,
+   "money": 7144,
+   "unemployment": 17,
+   "watered_pct": 53,
+   "powered_pct": 100,
+   "abandoned": 193,
+   "jammed": 13,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Jan 2019",
+   "population": 8880,
+   "money": 4263,
+   "unemployment": 24,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 298,
+   "jammed": 15,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2019,
+  "tone": "setback",
+  "title": "Jobs collapse",
+  "moves": [
+   "25 riverbank pumps"
+  ],
+  "happened": "Population 8,880 -> 7,720, unemployment 37%, 434 abandoned. 25 riverbank pumps lifted the game's water graph to about 60%, but factories kept emptying.",
+  "watching": "Whether a neighbor link near the factories helps.",
+  "start": {
+   "date": "Jan 2019",
+   "population": 8880,
+   "money": 4263,
+   "unemployment": 24,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 298,
+   "jammed": 15,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Jan 2020",
+   "population": 7720,
+   "money": 856,
+   "unemployment": 37,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 434,
+   "jammed": 5,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2020,
+  "tone": "setback",
+  "title": "Still falling",
+  "moves": [
+   "Fourth $10,000 bond",
+   "Neighbor link east of the south factories"
+  ],
+  "happened": "Population 7,720 -> 6,800 and 45% unemployed even after a fourth loan and a neighbor link next to the south factories. Factory rows far from homes never filled.",
+  "watching": "Test: homes right next to the empty factory rows.",
+  "start": {
+   "date": "Jan 2020",
+   "population": 7720,
+   "money": 856,
+   "unemployment": 37,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 434,
+   "jammed": 5,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Jan 2021",
+   "population": 6800,
+   "money": 8196,
+   "unemployment": 45,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 469,
+   "jammed": 14,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2021,
+  "tone": "milestone",
+  "title": "Found the cause; attempt ended",
+  "moves": [
+   "Homes y71-76 next to factories (test)"
+  ],
+  "happened": "Homes zoned next to the empty factory rows made both fill within a year: population 6,800 -> 9,190, unemployment 45% -> 32%. Commute distance was the hidden limit. With 9,190 people in year 22 and $40,000 of loans, the attempt was stopped and a new one planned around homes close to jobs.",
+  "watching": "Attempt 2: compact layout, every home band next to a job band.",
+  "start": {
+   "date": "Jan 2021",
+   "population": 6800,
+   "money": 8196,
+   "unemployment": 45,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 469,
+   "jammed": 14,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Jan 2022",
+   "population": 9190,
+   "money": 5642,
+   "unemployment": 32,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 409,
+   "jammed": 3,
+   "bonds": 4
+  }
+ }
+]

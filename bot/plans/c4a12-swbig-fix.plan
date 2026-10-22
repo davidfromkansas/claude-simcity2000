@@ -1,0 +1,7 @@
+# Attempt 12 Jun 2017: finish c4a12-swbig - remove the strays on the line columns, join road x58 to road y69 across line y70,
+# re-lay the two line tiles
+bulldoze 23 91 23 91
+bulldoze 33 86 33 86
+road 58 69 58 71
+line 23 91 23 91
+line 33 86 33 86

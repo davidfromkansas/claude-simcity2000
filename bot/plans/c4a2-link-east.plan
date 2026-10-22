@@ -1,0 +1,4 @@
+# east link road (126-127,20) is cut off by the fire station at (123,18): loop round it via y17
+road 126 17 126 19
+road 122 17 125 17
+road 122 18 122 19

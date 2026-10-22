@@ -1,0 +1,356 @@
+[
+ {
+  "year": 2001,
+  "tone": "steady",
+  "title": "Replaying attempt 6",
+  "moves": [
+   "District 2003"
+  ],
+  "happened": "Attempt 6's opening; a container restart and a misread save cost one early loan.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2001",
+   "population": 720,
+   "money": 2167,
+   "unemployment": 1,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Jul 2002",
+   "population": 7900,
+   "money": 4191,
+   "unemployment": 1,
+   "watered_pct": 94,
+   "powered_pct": 100,
+   "abandoned": 10,
+   "jammed": 1,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "setback",
+  "title": "Save overwritten, restored",
+  "moves": [
+   "load.sh"
+  ],
+  "happened": "After a restart a blank map was saved over the attempt; the Feb 2003 yearly save was restored (tool failure, not a disaster).",
+  "watching": "Loads",
+  "start": {
+   "date": "Feb 2003",
+   "population": 10780,
+   "money": 6924,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 17,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 14250,
+   "money": -157,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 30,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "Ahead of attempt 6",
+  "moves": [],
+  "happened": "Stadium, district 5, coal plant and the seaport block; 20,780 people in Feb 2006.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2006",
+   "population": 20780,
+   "money": 3886,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 36,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 23830,
+   "money": 3148,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 61,
+   "jammed": 0,
+   "bonds": 8
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "29,350",
+  "moves": [],
+  "happened": "South and south-east districts, links, seaport 2, zoo 2, south-east coal plant.",
+  "watching": "Loan floor",
+  "start": {
+   "date": "Feb 2008",
+   "population": 27160,
+   "money": 92,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 71,
+   "jammed": 0,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 30670,
+   "money": 335,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 42,
+   "jammed": 0,
+   "bonds": 10
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "milestone",
+  "title": "River crossed",
+  "moves": [],
+  "happened": "Bridge and west district (loans 12-13); the west-edge link built alone and checked in 2014.",
+  "watching": "Shops",
+  "start": {
+   "date": "Feb 2011",
+   "population": 37080,
+   "money": -565,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 1,
+   "bonds": 11
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 41240,
+   "money": 6173,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 59,
+   "jammed": 0,
+   "bonds": 13
+  }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "51,110",
+  "moves": [],
+  "happened": "West districts 2-4, north-west coal plant; 5,500 ahead of attempt 6.",
+  "watching": "Water",
+  "start": {
+   "date": "Feb 2017",
+   "population": 49990,
+   "money": 4282,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 60,
+   "jammed": 0,
+   "bonds": 15
+  },
+  "end": {
+   "date": "Feb 2018",
+   "population": 54220,
+   "money": 2066,
+   "unemployment": 2,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 54,
+   "jammed": 0,
+   "bonds": 16
+  }
+ },
+ {
+  "year": 2021,
+  "tone": "good",
+  "title": "64,670",
+  "moves": [],
+  "happened": "South-west strips, shore pumps, inland coal plant.",
+  "watching": "Taxes",
+  "start": {
+   "date": "Feb 2021",
+   "population": 64670,
+   "money": -1453,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 62,
+   "jammed": 0,
+   "bonds": 17
+  },
+  "end": {
+   "date": "Feb 2022",
+   "population": 66090,
+   "money": 2110,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 203,
+   "jammed": 0,
+   "bonds": 18
+  }
+ },
+ {
+  "year": 2022,
+  "tone": "setback",
+  "title": "Recession",
+  "moves": [],
+  "happened": "66,090 -> 61,650 with 16% unemployment after taxes drifted to 9-10%; cut to 7.",
+  "watching": "Recovery",
+  "start": {
+   "date": "Feb 2022",
+   "population": 66090,
+   "money": 2110,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 203,
+   "jammed": 0,
+   "bonds": 18
+  },
+  "end": {
+   "date": "Feb 2023",
+   "population": 62820,
+   "money": -1805,
+   "unemployment": 13,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 572,
+   "jammed": 0,
+   "bonds": 18
+  }
+ },
+ {
+  "year": 2026,
+  "tone": "steady",
+  "title": "Recovery",
+  "moves": [],
+  "happened": "Back to 70,000; far south-west homes (loans 19-21).",
+  "watching": "Recreation",
+  "start": {
+   "date": "Feb 2026",
+   "population": 66520,
+   "money": -15949,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 124,
+   "jammed": 0,
+   "bonds": 18
+  },
+  "end": {
+   "date": "Jan 2027",
+   "population": 70080,
+   "money": 834,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 72,
+   "jammed": 0,
+   "bonds": 21
+  }
+ },
+ {
+  "year": 2034,
+  "tone": "good",
+  "title": "84,460",
+  "moves": [],
+  "happened": "Marina, zoo 3, factory strips; tax cut fixed a second dip.",
+  "watching": "Money",
+  "start": {
+   "date": "Feb 2034",
+   "population": 82400,
+   "money": -18408,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 127,
+   "jammed": 2,
+   "bonds": 24
+  },
+  "end": {
+   "date": "Feb 2035",
+   "population": 84240,
+   "money": -2211,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2038,
+  "tone": "milestone",
+  "title": "Peak 92,500, then the great fire",
+  "moves": [],
+  "happened": "Peak in Feb; in Nov an alien-ship fire spread across the west bank and north while the game ran unwatched: 92,250 -> 37,940.",
+  "watching": "Rebuild impossible",
+  "start": {
+   "date": "Feb 2038",
+   "population": 92500,
+   "money": -22442,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 96,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "May 2039",
+   "population": 37940,
+   "money": -3157,
+   "unemployment": 10,
+   "watered_pct": 39,
+   "powered_pct": 52,
+   "abandoned": 196,
+   "jammed": 0,
+   "bonds": 30
+  }
+ },
+ {
+  "year": 2045,
+  "tone": "setback",
+  "title": "Out of money",
+  "moves": [],
+  "happened": "Game over in Jan 2046 at -$105,463.",
+  "watching": "Attempt 9",
+  "start": {
+   "date": "Feb 2045",
+   "population": 25910,
+   "money": -90369,
+   "unemployment": 38,
+   "watered_pct": 38,
+   "powered_pct": 52,
+   "abandoned": 712,
+   "jammed": 0,
+   "bonds": 30
+  },
+  "end": null
+ }
+]

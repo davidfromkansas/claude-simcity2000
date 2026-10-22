@@ -1,0 +1,6 @@
+# Claudeville 4 May 2011: after the fire the far-east line networks (x116/x126) are cut off - the burned
+# buildings used to carry power. North: join x116 to the powered x109 line along y56. South: join the x105
+# line to the powered x101 line across road y97.
+line 110 56 114 56
+line 101 97 101 102
+line 102 102 104 102

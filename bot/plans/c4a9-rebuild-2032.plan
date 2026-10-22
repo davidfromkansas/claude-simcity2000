@@ -1,0 +1,42 @@
+# Attempt 9 Jul 2032: loans 30-32 - coal plant on the 2006 lot (78,35), stadium on its burned lot (114,56), the two fire stations the bad clean-up destroyed
+bulldoze 78 37 78 37
+bulldoze 79 37 79 37
+bulldoze 79 38 79 38
+coal 78 35
+bulldoze 114 56 114 56
+bulldoze 115 56 115 56
+bulldoze 116 56 116 56
+bulldoze 117 56 117 56
+bulldoze 114 57 114 57
+bulldoze 115 57 115 57
+bulldoze 116 57 116 57
+bulldoze 117 57 117 57
+bulldoze 114 58 114 58
+bulldoze 115 58 115 58
+bulldoze 116 58 116 58
+bulldoze 117 58 117 58
+bulldoze 114 59 114 59
+bulldoze 115 59 115 59
+bulldoze 116 59 116 59
+bulldoze 117 59 117 59
+stadium 114 56
+bulldoze 15 21 15 21
+bulldoze 16 21 16 21
+bulldoze 17 21 17 21
+bulldoze 15 22 15 22
+bulldoze 16 22 16 22
+bulldoze 17 22 17 22
+bulldoze 15 23 15 23
+bulldoze 16 23 16 23
+bulldoze 17 23 17 23
+fire 15 21
+bulldoze 46 28 46 28
+bulldoze 47 28 47 28
+bulldoze 48 28 48 28
+bulldoze 46 29 46 29
+bulldoze 47 29 47 29
+bulldoze 48 29 48 29
+bulldoze 46 30 46 30
+bulldoze 47 30 47 30
+bulldoze 48 30 48 30
+fire 46 28

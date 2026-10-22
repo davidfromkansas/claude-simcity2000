@@ -1,0 +1,10 @@
+# Attempt 16 Jul 2008: factory cells below road y90 next to district 6 homes and the airport site (factory land short, unemployment 18%)
+# Shop cells x110-115 / x118-123 y91-96 below road y90, line columns x109/x117 across road y90, road y97 east.
+road 116 91 116 96
+road 109 97 124 97
+road 124 91 124 96
+line 109 90 109 96
+line 117 90 117 96
+zone i 110 91 115 96
+zone i 118 91 123 96
+pipe 108 94 123 94

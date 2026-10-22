@@ -1,0 +1,18 @@
+# Attempt 6 Dec 2018: shops 1,364 / factories 782 / homes 510 with little land -> strip x10-19 y28-61 west of road x20:
+# factories, shops, homes beside the west districts; power line x9 from the north-west coal plant, line x16 through the cells.
+road 13 27 19 27
+road 13 28 13 61
+road 14 41 19 41
+road 14 52 19 52
+line 10 14 11 14
+line 9 14 9 61
+line 10 40 16 40
+line 16 28 16 61
+zone I 14 28 19 40
+zone C 14 42 19 51
+zone R 14 53 19 61
+zone R 10 28 12 61
+pipe 11 28 11 61
+pipe 12 31 20 31
+pipe 17 32 17 61
+# note: this plan leaves a 3-tile bridge at x13 y63-65 (attempts 9 and 10) - follow it with c4a9-join-bridge

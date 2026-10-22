@@ -1,0 +1,5 @@
+# two strays on lines
+bulldoze 9 49 9 49
+bulldoze 60 59 60 59
+line 9 48 9 50
+line 59 59 61 59

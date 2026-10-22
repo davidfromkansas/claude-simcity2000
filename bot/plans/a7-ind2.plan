@@ -1,0 +1,12 @@
+# two factory blocks east (x94-99), power column x=93 linked to x=85 over the top (y=19)
+road 93 20 100 20
+road 93 27 100 27
+road 93 34 100 34
+road 100 21 100 33
+line 85 19 85 20
+line 86 19 93 19
+line 93 20 93 33
+zone i 94 21 99 26
+zone i 94 28 99 33
+pipe 92 23 99 23
+pipe 92 30 99 30

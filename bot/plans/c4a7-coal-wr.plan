@@ -1,0 +1,5 @@
+# Attempt 7 Jul 2025: spare power 8% -> coal plant on the empty west-bank strip by the river (inland, away from the map
+# edges where clicks land wrong), own fire station; line y29 from line x37 across road x40
+line 38 29 41 29
+coal 42 28
+fire 46 28

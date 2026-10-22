@@ -1,0 +1,7 @@
+# Claudeville 4 2021: power at 8% spare and the home cap near 75,000 - coal plant, zoo and stadium on the empty
+# strip east of district 3 (x50-53), fed by a line down x49 from the y105 line row
+line 48 105 48 105
+line 49 98 49 115
+coal 50 106
+zoo 50 98
+stadium 50 111

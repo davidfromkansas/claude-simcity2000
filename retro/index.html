@@ -1,0 +1,241 @@
+<meta charset="utf-8">
+<title>Claudeville: Two Attempts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column (~68ch) with full-width figures; scoreboard as two matched panels. */
+:root {
+  --bg: #eef1ec; --surface: #f8faf7; --ink: #17231e; --muted: #56675f; --rule: #d2dbd4;
+  --a1: #b4532a; --a2: #1d7a69; --accent: #8f6210; --tint1: #f4e3da; --tint2: #d9ece6;
+  --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1714; --surface: #16211c; --ink: #e4ebe7; --muted: #9bada4; --rule: #2a3a33;
+  --a1: #e3825a; --a2: #4cb8a1; --accent: #e3b955; --tint1: #33221b; --tint2: #17322b; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f1714; --surface: #16211c; --ink: #e4ebe7; --muted: #9bada4; --rule: #2a3a33;
+  --a1: #e3825a; --a2: #4cb8a1; --accent: #e3b955; --tint1: #33221b; --tint2: #17322b; color-scheme: dark }
+
+body { background: var(--bg); color: var(--ink); font: 400 17px/1.6 var(--body); }
+.page { max-width: 1040px; min-width: 0; margin: 0 auto; padding-inline: 20px; padding-block: 48px 72px; display: grid; gap: 56px; }
+.read { max-width: 68ch; }
+h1, h2 { font-family: var(--display); font-weight: 800; letter-spacing: .01em; line-height: 1.02; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(38px, 8vw, 84px); text-transform: uppercase; overflow-wrap: anywhere; }
+h2 { font-size: clamp(30px, 4.5vw, 42px); text-transform: uppercase; margin-bottom: 14px; }
+h3 { font: 600 18px/1.3 var(--body); margin: 0 0 6px; }
+p { margin: 0 0 14px; }
+.eyebrow { font: 600 13px/1.2 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+.lede { font-size: 20px; color: var(--muted); max-width: 60ch; margin-top: 18px; }
+.mono { font-family: var(--mono); }
+.num { font-variant-numeric: tabular-nums; }
+
+/* Scoreboard */
+.score { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 22px; display: grid; gap: 14px; min-width: 0; }
+.panel header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.panel h3 { font: 800 28px/1 var(--display); text-transform: uppercase; letter-spacing: .02em; }
+.p1 h3 { color: var(--a1); } .p2 h3 { color: var(--a2); }
+.pill { font: 600 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 6px 9px; border-radius: 3px; white-space: nowrap; }
+.pill.miss { background: var(--tint1); color: var(--a1); } .pill.met { background: var(--tint2); color: var(--a2); }
+.panel figure { margin: 0; }
+.panel img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px; image-rendering: pixelated; }
+.panel figcaption { font: 13px/1.4 var(--mono); color: var(--muted); margin-top: 6px; }
+dl.kv { display: grid; grid-template-columns: 1fr auto; margin: 0; }
+dl.kv dt, dl.kv dd { padding: 7px 0; border-top: 1px solid var(--rule); margin: 0; }
+dl.kv dt { color: var(--muted); font-size: 15px; }
+dl.kv dd { font: 600 15px/1.6 var(--mono); text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Video */
+.video video { display: block; width: 100%; max-width: 100%; aspect-ratio: 4 / 3; background: #000; border-radius: 6px; }
+.video p { color: var(--muted); font-size: 15px; margin-top: 10px; }
+
+/* Chart */
+.chart { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 18px 18px 10px; }
+.legend { display: flex; gap: 18px; flex-wrap: wrap; font: 14px var(--mono); color: var(--muted); margin-bottom: 6px; }
+.legend span::before { content: ""; display: inline-block; width: 14px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 7px; background: var(--c); }
+.chart-wrap { position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.tip { position: absolute; top: 8px; pointer-events: none; background: var(--ink); color: var(--bg); font: 13px/1.45 var(--mono); padding: 7px 10px; border-radius: 4px; white-space: nowrap; transform: translateX(-50%); }
+.tip[hidden] { display: none; }
+
+/* Tables */
+.table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 15px; }
+th, td { text-align: left; padding: 11px 14px; border-top: 1px solid var(--rule); vertical-align: top; }
+thead th { border-top: 0; font: 600 12px/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+td.bad { color: var(--a1); font-weight: 600; } td.good { color: var(--a2); font-weight: 600; }
+
+/* Lists */
+.changes { display: grid; gap: 18px; padding: 0; margin: 0; list-style: none; }
+.changes li { display: grid; grid-template-columns: 7ch 1fr; gap: 14px; min-width: 0; }
+.changes .tag { font: 600 13px/1.5 var(--mono); color: var(--accent); padding-top: 2px; }
+.changes p { margin: 0; color: var(--muted); }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+.two ul { padding-left: 1.1em; margin: 0; display: grid; gap: 10px; color: var(--muted); }
+.two li strong { color: var(--ink); font-weight: 600; }
+
+.lesson { border-left: 4px solid var(--accent); padding: 6px 0 6px 20px; font-size: clamp(20px, 2.6vw, 24px); line-height: 1.45; max-width: 60ch; }
+footer { font-size: 15px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 22px; }
+footer a { color: var(--a2); }
+a:focus-visible, video:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 480px) { body { font-size: 16px; } .changes li { grid-template-columns: 1fr; gap: 2px; } }
+</style>
+
+<div class="page">
+  <header>
+    <div class="eyebrow">SimCity 2000 · played by Claude · retro</div>
+    <h1>Claudeville: Two Attempts</h1>
+    <p class="lede">Claude played SimCity 2000 twice on the same map with the same goal: reach 5,000 people within 30 game years, then keep the budget positive for 3 years in a row without borrowing. Attempt 1 missed. Attempt 2 met both goals with 12 years to spare.</p>
+  </header>
+
+  <section class="score" aria-label="Results">
+    <article class="panel p1">
+      <header><h3>Attempt 1 · Claudeville</h3><span class="pill miss">Missed</span></header>
+      <figure><img src="attempt1.jpg" alt="Claudeville in January 2031: a long strip city along one main road" width="640" height="480"><figcaption>Jan 2031 · 4,610 people</figcaption></figure>
+      <dl class="kv">
+        <dt>People at year 10 (2010)</dt><dd>2,390</dd>
+        <dt>People at year 15 (2015)</dt><dd>2,910</dd>
+        <dt>Reached 5,000</dt><dd>Never</dd>
+        <dt>Longest stall</dt><dd>12 years</dd>
+        <dt>3 profitable years</dt><dd>Not reached</dd>
+        <dt>Loans taken</dt><dd>0</dd>
+      </dl>
+    </article>
+    <article class="panel p2">
+      <header><h3>Attempt 2 · Claudeville II</h3><span class="pill met">Both goals met</span></header>
+      <figure><img src="attempt2.jpg" alt="Claudeville II in January 2018: a road grid city wrapped around a lake" width="640" height="480"><figcaption>Jan 2018 · 6,370 people</figcaption></figure>
+      <dl class="kv">
+        <dt>People at year 10 (2010)</dt><dd>3,640</dd>
+        <dt>People at year 15 (2015)</dt><dd>5,970</dd>
+        <dt>Reached 5,000</dt><dd>Jan 2015</dd>
+        <dt>Longest stall</dt><dd>~2 years</dd>
+        <dt>3 profitable years</dt><dd>2015–2017</dd>
+        <dt>Loans taken</dt><dd>0</dd>
+      </dl>
+    </article>
+  </section>
+
+  <section class="video">
+    <h2>Watch attempt 2</h2>
+    <video controls preload="metadata" poster="poster.jpg" src="timelapse.mp4" aria-label="Two-minute timelapse of Claudeville II"></video>
+    <p>Two minutes, sped up 12×. The top bar shows the game date, population, cash and loans; the bottom bar shows each decision Claude made at that moment.</p>
+  </section>
+
+  <section>
+    <h2>Same map, two curves</h2>
+    <div class="chart">
+      <div class="legend"><span style="--c: var(--a1)">Attempt 1</span><span style="--c: var(--a2)">Attempt 2</span><span style="--c: var(--muted)">5,000 goal</span></div>
+      <div class="chart-wrap" id="chartWrap">
+        <svg id="chart" viewBox="0 0 960 400" role="img" aria-label="Population by game year. Attempt 2 crosses 5,000 in 2015. Attempt 1 stalls near 3,200 from 2012 to 2024 and ends at 4,610 in 2031."></svg>
+        <div class="tip" id="tip" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How fast problems got spotted</h2>
+    <div class="read"><p>Both cities hit the same kinds of problems. The difference was how long each one went unnoticed. In attempt 2, Claude read the city's data from the save file every game year: water coverage, power coverage, abandoned buildings and jammed roads.</p></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Problem</th><th>Attempt 1</th><th>Attempt 2</th></tr></thead>
+        <tbody>
+          <tr><td>Buildings without water</td><td class="bad">~8 years</td><td class="good">1 year (pipe gap fixed in 2001)</td></tr>
+          <tr><td>Roads jammed, too few routes</td><td class="bad">~21 years</td><td class="good">Avoided with a road grid from day one</td></tr>
+          <tr><td>Factory block cut off from roads or power</td><td class="bad">~10 years</td><td class="good">Under a year (power crossings in 2008)</td></tr>
+          <tr><td>Not enough jobs for the homes</td><td class="bad">Years of slow growth</td><td class="good">Fixed within a year (2005, 2013)</td></tr>
+          <tr><td>No road link to a neighbor city</td><td class="bad">Built in 2019</td><td class="good">Built on day one</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>What changed</h2>
+    <ul class="changes read">
+      <li><span class="tag">Day 1</span><div><h3>The basics went in before anything grew</h3><p>10 water pumps, a road grid, a coal plant and a neighbor link on the first day. In attempt 1 each of these arrived years late, after it had already done damage.</p></div></li>
+      <li><span class="tag">Cash</span><div><h3>Money was spent early</h3><p>Attempt 2 ran its cash down to about $5,000 by 2004 and kept it there. Attempt 1 sat on $10,000–$16,000 for 20 years.</p></div></li>
+      <li><span class="tag">Tax 5%</span><div><h3>Low tax from the start</h3><p>5% for the whole game. Attempt 1 stayed at 7% until 2025, even though tax only brought in about $300 a year.</p></div></li>
+      <li><span class="tag">Demand</span><div><h3>Built what the city asked for</h3><p>When homes were in demand Claude added a north district by the lake (2003). When jobs ran short it added factory land (2005, 2013). Attempt 1 mostly kept to its first layout.</p></div></li>
+      <li><span class="tag">Checks</span><div><h3>Trusted the save file over the screenshot</h3><p>Every build was checked against the saved game, so clicks that landed on the wrong tile and roads that hit water were caught within minutes.</p></div></li>
+    </ul>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Same in both</h2>
+      <ul>
+        <li><strong>Jobs and homes kept swinging.</strong> Attempt 2 still dipped in 2006, 2008 and 2013, but each dip lasted about a year instead of a decade.</li>
+        <li><strong>Clumsy controls.</strong> Wrong tiles, accidental scrolling and surprise pop-ups happened in both runs. In attempt 2 the checks caught them quickly.</li>
+        <li><strong>Zero loans.</strong> The no-borrowing rule held in both runs.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Where attempt 2 was weak</h2>
+      <ul>
+        <li><strong>No public services.</strong> No police, schools or hospitals all game. Costs stayed near zero, which made the budget goal easy, and life expectancy stayed around 59.</li>
+        <li><strong>Abandonment never cleared.</strong> 40–57 abandoned buildings at any time from 2014 on.</li>
+        <li><strong>Traffic was rising</strong> by 2018 and would have been the next problem.</li>
+        <li><strong>How "profitable" was measured.</strong> Cash up from January to January with building frozen. The game's own estimate agreed: +$363 for 2015.</li>
+      </ul>
+    </div>
+  </section>
+
+  <p class="lesson">Attempt 1 didn't fail because the game was hard. It failed because Claude only looked at the city's data once something broke. Attempt 2 checked every year, so each problem cost about a year instead of a decade.</p>
+
+  <footer>Both runs were played by Claude Code in a cloud container, controlling SimCity 2000 (DOS) through DOSBox and reading population, cash and city health straight from the game's save file. Live dashboards: <a href="https://davidfromkansas.github.io/claude-simcity2000/" target="_blank" rel="noopener">attempt 1</a> · <a href="https://davidfromkansas.github.io/claude-simcity2000/run2/" target="_blank" rel="noopener">attempt 2</a>.</footer>
+</div>
+
+<script>
+(function () {
+  const A1 = [[2000,0],[2001,290],[2003,1600],[2004,1490],[2006,1200],[2007,1450],[2008,1540],[2009,2110],[2010,2390],[2011,2960],[2012,3220],[2013,3010],[2014,2750],[2015,2910],[2016,3180],[2017,3180],[2018,3160],[2019,3270],[2020,3360],[2021,3310],[2022,3250],[2023,3310],[2024,3520],[2025,3390],[2026,3590],[2027,3800],[2028,4020],[2029,4240],[2030,4410],[2031,4610]];
+  const A2 = [[2000,0],[2001,180],[2002,710],[2003,1090],[2004,2420],[2005,2560],[2006,2460],[2007,3280],[2008,3040],[2009,3330],[2010,3640],[2011,4630],[2012,4820],[2013,4570],[2014,4740],[2015,5970],[2016,6100],[2017,6050],[2018,6370]];
+  const W = 960, H = 400, L = 58, R = 92, T = 20, B = 40;
+  const x = y => L + (y - 2000) / 31 * (W - L - R);
+  const yv = v => T + (1 - v / 7000) * (H - T - B);
+  const svg = document.getElementById("chart");
+  const ns = "http://www.w3.org/2000/svg";
+  const el = (tag, attrs, text) => { const e = document.createElementNS(ns, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (text != null) e.textContent = text; svg.appendChild(e); return e; };
+  const ink = "var(--muted)", rule = "var(--rule)";
+  // stall band (attempt 1, 2012-2024)
+  el("rect", { x: x(2012), y: T, width: x(2024) - x(2012), height: H - T - B, fill: "var(--tint1)" });
+  el("text", { x: (x(2012) + x(2024)) / 2, y: T + 18, "text-anchor": "middle", fill: "var(--a1)", "font-family": "IBM Plex Mono, monospace", "font-size": 13 }, "Attempt 1 stalls, 2012–2024");
+  for (let v = 0; v <= 7000; v += 1000) {
+    el("line", { x1: L, x2: W - R, y1: yv(v), y2: yv(v), stroke: rule, "stroke-width": 1 });
+    el("text", { x: L - 8, y: yv(v) + 4, "text-anchor": "end", fill: ink, "font-family": "IBM Plex Mono, monospace", "font-size": 12 }, v.toLocaleString("en-US"));
+  }
+  for (let yr = 2000; yr <= 2030; yr += 5)
+    el("text", { x: x(yr), y: H - B + 22, "text-anchor": "middle", fill: ink, "font-family": "IBM Plex Mono, monospace", "font-size": 12 }, yr);
+  // goal line and deadline
+  el("line", { x1: L, x2: W - R, y1: yv(5000), y2: yv(5000), stroke: "var(--ink)", "stroke-width": 1.5, "stroke-dasharray": "6 5" });
+  el("text", { x: W - R + 6, y: yv(5000) + 4, fill: "var(--ink)", "font-family": "IBM Plex Mono, monospace", "font-size": 12 }, "Goal 5,000");
+  el("line", { x1: x(2030), x2: x(2030), y1: T, y2: H - B, stroke: "var(--ink)", "stroke-width": 1, "stroke-dasharray": "2 4" });
+  el("text", { x: x(2030) - 6, y: H - B - 8, "text-anchor": "end", fill: "var(--ink)", "font-family": "IBM Plex Mono, monospace", "font-size": 12 }, "30-year deadline");
+  const line = (d, c) => el("polyline", { points: d.map(p => x(p[0]) + "," + yv(p[1])).join(" "), fill: "none", stroke: c, "stroke-width": 2.5, "stroke-linejoin": "round", "stroke-linecap": "round" });
+  line(A1, "var(--a1)"); line(A2, "var(--a2)");
+  // endpoints + direct labels
+  const end = (d, c, label) => { const p = d[d.length - 1]; el("circle", { cx: x(p[0]), cy: yv(p[1]), r: 5, fill: c, stroke: "var(--surface)", "stroke-width": 2 });
+    el("text", { x: x(p[0]) + 9, y: yv(p[1]) + 4, fill: "var(--ink)", "font-family": "IBM Plex Mono, monospace", "font-size": 12 }, label); };
+  end(A1, "var(--a1)", "4,610");
+  end(A2, "var(--a2)", "6,370");
+  el("circle", { cx: x(2015), cy: yv(5970), r: 5, fill: "var(--a2)", stroke: "var(--surface)", "stroke-width": 2 });
+  el("text", { x: x(2015) - 8, y: yv(5970) - 12, "text-anchor": "end", fill: "var(--a2)", "font-family": "IBM Plex Mono, monospace", "font-size": 13, "font-weight": 600 }, "Goal met, Jan 2015");
+  // hover crosshair
+  const cross = el("line", { y1: T, y2: H - B, stroke: "var(--ink)", "stroke-width": 1, opacity: 0 });
+  const wrap = document.getElementById("chartWrap"), tip = document.getElementById("tip");
+  const at = (d, yr) => { const r = d.find(p => p[0] === yr); return r ? r[1].toLocaleString("en-US") : "–"; };
+  function move(ev) {
+    const box = svg.getBoundingClientRect();
+    const px = (ev.clientX - box.left) / box.width * W;
+    const yr = Math.max(2000, Math.min(2031, Math.round(2000 + (px - L) / (W - L - R) * 31)));
+    cross.setAttribute("x1", x(yr)); cross.setAttribute("x2", x(yr)); cross.setAttribute("opacity", .35);
+    tip.hidden = false;
+    tip.innerHTML = "Jan " + yr + "<br>Attempt 1: " + at(A1, yr) + "<br>Attempt 2: " + at(A2, yr);
+    tip.style.left = Math.max(70, Math.min(box.width - 70, x(yr) / W * box.width)) + "px";
+  }
+  wrap.addEventListener("pointermove", move);
+  wrap.addEventListener("pointerleave", () => { tip.hidden = true; cross.setAttribute("opacity", 0); });
+})();
+</script>

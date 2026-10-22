@@ -1,0 +1,2 @@
+# west pumps fix: (38-39,74) were empty zone (no power) between line x37 and the crossing at (40,74)
+line 38 74 39 74

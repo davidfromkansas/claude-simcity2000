@@ -1,0 +1,16 @@
+# Attempt 6 Dec 2023: shop demand 1,268 with 6 empty tiles, cash negative -> loan #17: shops + homes x7-19 y91-103
+# below the south-west grid (west of the coal plant); lines x10/x17 down across road y90.
+road 6 91 6 104
+road 13 91 13 104
+road 20 91 20 104
+road 7 97 19 97
+road 7 104 19 104
+line 10 90 10 103
+line 17 90 17 103
+zone C 7 91 12 96
+zone C 14 91 19 96
+zone R 7 98 12 103
+zone R 14 98 19 103
+pipe 13 89 13 103
+pipe 7 94 19 94
+pipe 7 100 19 100

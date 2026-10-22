@@ -1,0 +1,4 @@
+# rebuild the coal plant destroyed in 2017 (clear rubble first) and add the city's first fire station
+bulldoze 64 56 67 59
+coal 64 56
+fire 82 36

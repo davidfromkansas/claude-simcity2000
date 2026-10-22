@@ -1,0 +1,484 @@
+[
+ {
+  "year": 2000,
+  "tone": "steady",
+  "title": "Day one again",
+  "moves": [
+   "Loan #1",
+   "Day one plan",
+   "Taxes 4/4/3"
+  ],
+  "happened": "Attempt 11's day one: 288 home tiles. 610 people by Feb 2001.",
+  "watching": "Loan #2",
+  "start": {
+   "date": "Jan 2000",
+   "population": 0,
+   "money": 20000,
+   "unemployment": 0,
+   "watered_pct": 0,
+   "powered_pct": 0,
+   "abandoned": 0,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2001",
+   "population": 610,
+   "money": 3661,
+   "unemployment": 0,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2001,
+  "tone": "good",
+  "title": "Faster than 11",
+  "moves": [],
+  "happened": "1,870 by December (attempt 11: 1,370). Shop land nearly full by April 2002.",
+  "watching": "Loan #2",
+  "start": {
+   "date": "Feb 2001",
+   "population": 610,
+   "money": 3661,
+   "unemployment": 0,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 1,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Apr 2002",
+   "population": 2440,
+   "money": 3077,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 10,
+   "jammed": 0,
+   "bonds": 1
+  }
+ },
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Loan #2 a year early",
+  "moves": [
+   "Loan #2",
+   "Blocks 3 + 4",
+   "Coal plant #2 + 5 pumps"
+  ],
+  "happened": "Loan #2 allowed in April: blocks 3 + 4 and a second coal plant before any shortage. 4,620 by Feb 2003.",
+  "watching": "Water, shop land",
+  "start": {
+   "date": "Apr 2002",
+   "population": 2440,
+   "money": 3077,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 10,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2003",
+   "population": 4620,
+   "money": 31,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2003,
+  "tone": "milestone",
+  "title": "On the curve",
+  "moves": [
+   "Loan #3",
+   "Seaport",
+   "19 riverbank pumps",
+   "East shop block",
+   "Taxes 7/7/7"
+  ],
+  "happened": "6,090 by July, on the target curve for the first time in any attempt. Loan #3: seaport, 19 pumps, east shop block. Taxes 7/7/7.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2003",
+   "population": 4620,
+   "money": 31,
+   "unemployment": 3,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 21,
+   "jammed": 0,
+   "bonds": 2
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 8560,
+   "money": 979,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 36,
+   "jammed": 0,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2004,
+  "tone": "milestone",
+  "title": "10,000 passed",
+  "moves": [
+   "Loan #4",
+   "District 5 + west factories + coal",
+   "Taxes 8/8/8"
+  ],
+  "happened": "10,230 by June. Loan #4: district 5, west factory strip, third coal plant. Taxes 8/8/8 in November.",
+  "watching": "Water",
+  "start": {
+   "date": "Feb 2004",
+   "population": 8560,
+   "money": 979,
+   "unemployment": 3,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 36,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 12850,
+   "money": -267,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "Zoo and pumps",
+  "moves": [
+   "Loan #5",
+   "16 pumps",
+   "Zoo + district 6"
+  ],
+  "happened": "Water hit 2% in July; loan #5 (an exception) paid for 16 pumps, the zoo and district 6. 14,520 by December.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2005",
+   "population": 12850,
+   "money": -267,
+   "unemployment": 3,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 64,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2006",
+   "population": 14930,
+   "money": 1234,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 140,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "setback",
+  "title": "Unemployment climbs",
+  "moves": [],
+  "happened": "16,840; power fell to 5% while I had the low-capacity stop overridden; home and shop demand turned negative.",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2006",
+   "population": 14930,
+   "money": 1234,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 140,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 16850,
+   "money": 501,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 192,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "setback",
+  "title": "Power cut",
+  "moves": [
+   "Loan #6",
+   "Coal plant #4",
+   "Factory tax 10"
+  ],
+  "happened": "53 buildings lost power in July; loan #6 paid for a fourth coal plant. Unemployment 13-16%.",
+  "watching": "Jobs",
+  "start": {
+   "date": "Feb 2007",
+   "population": 16850,
+   "money": 501,
+   "unemployment": 9,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 192,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 16670,
+   "money": 5791,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 358,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "setback",
+  "title": "Flat at 16,800",
+  "moves": [],
+  "happened": "Unemployment 17-19%, 380-417 abandoned buildings, no changes.",
+  "watching": "Jobs",
+  "start": {
+   "date": "Feb 2008",
+   "population": 16670,
+   "money": 5791,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 358,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 17400,
+   "money": 5023,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 379,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "steady",
+  "title": "Cheaper jobs",
+  "moves": [
+   "Shop/factory tax down",
+   "108 factory tiles",
+   "6 pumps"
+  ],
+  "happened": "Shop tax 6, factory tax 8, 108 factory tiles, 6 pumps. 18,030 by December; unemployment 17%.",
+  "watching": "Jobs",
+  "start": {
+   "date": "Feb 2009",
+   "population": 17400,
+   "money": 5023,
+   "unemployment": 17,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 379,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 18210,
+   "money": 2119,
+   "unemployment": 16,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 361,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "steady",
+  "title": "Slow climb",
+  "moves": [],
+  "happened": "18,900; unemployment 15-16%; no money for more.",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2010",
+   "population": 18210,
+   "money": 2119,
+   "unemployment": 16,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 361,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 18910,
+   "money": 1300,
+   "unemployment": 16,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 357,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "steady",
+  "title": "Toward 20,000",
+  "moves": [],
+  "happened": "19,800 by December, cash $1,300.",
+  "watching": "20,000",
+  "start": {
+   "date": "Feb 2011",
+   "population": 18910,
+   "money": 1300,
+   "unemployment": 16,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 357,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 20160,
+   "money": 568,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 297,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "milestone",
+  "title": "20,000, and broke",
+  "moves": [
+   "Four finance ordinances"
+  ],
+  "happened": "20,160 in February. Ordinances (sales, income, gambling, parking: +$337/yr) cut the deficit in half.",
+  "watching": "Land",
+  "start": {
+   "date": "Feb 2012",
+   "population": 20160,
+   "money": 568,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 297,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2013",
+   "population": 20990,
+   "money": 97,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 292,
+   "jammed": 3,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "setback",
+  "title": "Flat",
+  "moves": [],
+  "happened": "~20,800; land full, cash at zero.",
+  "watching": "-",
+  "start": {
+   "date": "Feb 2013",
+   "population": 20990,
+   "money": 97,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 292,
+   "jammed": 3,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 21030,
+   "money": -152,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 321,
+   "jammed": 0,
+   "bonds": 6
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "setback",
+  "title": "Flat, below zero",
+  "moves": [],
+  "happened": "~21,000; cash below zero; attempt stopped mid-2015.",
+  "watching": "Next attempt",
+  "start": {
+   "date": "Feb 2014",
+   "population": 21030,
+   "money": -152,
+   "unemployment": 12,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 321,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2015",
+   "population": 21130,
+   "money": -393,
+   "unemployment": 13,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 317,
+   "jammed": 0,
+   "bonds": 6
+  }
+ }
+]

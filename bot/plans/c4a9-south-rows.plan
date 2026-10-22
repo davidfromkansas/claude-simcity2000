@@ -1,0 +1,38 @@
+# Attempt 9 Jun 2037: homes demand 1,057 with no land -> two home rows below the south district: roads y120/y124,
+# cross streets x12-52 every 10 continued, line columns x17/27/37/47 continued, pipes under the roads
+line 17 120 17 126
+line 27 120 27 126
+line 37 120 37 126
+line 47 120 47 126
+road 8 120 51 120
+road 8 124 51 124
+road 12 121 12 126
+road 22 121 22 126
+road 32 121 32 126
+road 42 121 42 126
+road 52 122 52 126
+zone R 8 121 11 123
+zone R 8 125 11 126
+zone R 13 121 16 123
+zone R 13 125 16 126
+zone R 18 121 21 123
+zone R 18 125 21 126
+zone R 23 121 26 123
+zone R 23 125 26 126
+zone R 28 121 31 123
+zone R 28 125 31 126
+zone R 33 121 36 123
+zone R 33 125 36 126
+zone R 38 121 41 123
+zone R 38 125 41 126
+zone R 43 121 46 123
+zone R 43 125 46 126
+zone R 48 121 51 123
+zone R 48 125 51 126
+pipe 8 120 51 120
+pipe 8 124 51 124
+pipe 12 119 12 126
+pipe 22 119 22 126
+pipe 32 119 32 126
+pipe 42 119 42 126
+pipe 52 122 52 126

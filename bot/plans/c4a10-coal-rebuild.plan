@@ -1,0 +1,31 @@
+# Attempt 10 Feb 2037: rebuild the seaport coal plant burned in Aug 2036 (roads/rubble: coal straight onto cleared lot) + fire station
+bulldoze 61 48 61 48
+bulldoze 62 48 62 48
+bulldoze 63 48 63 48
+bulldoze 64 48 64 48
+bulldoze 65 48 65 48
+bulldoze 66 48 66 48
+bulldoze 67 48 67 48
+bulldoze 61 49 61 49
+bulldoze 62 49 62 49
+bulldoze 63 49 63 49
+bulldoze 64 49 64 49
+bulldoze 65 49 65 49
+bulldoze 66 49 66 49
+bulldoze 67 49 67 49
+bulldoze 61 50 61 50
+bulldoze 62 50 62 50
+bulldoze 63 50 63 50
+bulldoze 64 50 64 50
+bulldoze 65 50 65 50
+bulldoze 66 50 66 50
+bulldoze 67 50 67 50
+bulldoze 61 51 61 51
+bulldoze 62 51 62 51
+bulldoze 63 51 63 51
+bulldoze 64 51 64 51
+bulldoze 65 51 65 51
+bulldoze 66 51 66 51
+bulldoze 67 51 67 51
+coal 61 48
+fire 65 48

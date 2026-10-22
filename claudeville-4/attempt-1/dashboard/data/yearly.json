@@ -1,0 +1,752 @@
+[
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "River crossed in 2006",
+  "moves": [
+   "Stadium + airport",
+   "West block + coal",
+   "River crossing + west district"
+  ],
+  "happened": "Loans #7-9: stadium, airport, a west block with a coal plant, then the causeway, raised wires and the first west district - 21 years earlier than Claudeville 3.",
+  "watching": "West district filling; money",
+  "start": {
+   "date": "Feb 2006",
+   "population": 14630,
+   "money": -664,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 24,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 20000,
+   "money": 4731,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 31,
+   "jammed": 0,
+   "bonds": 9
+  }
+ },
+ {
+  "year": 2007,
+  "tone": "good",
+  "title": "25,450 - ahead of Claudeville 3",
+  "moves": [
+   "Loan #10: west district 2 + marina + factory strip"
+  ],
+  "happened": "The west districts filled fast; passed attempt 19's 2007 total (23,030).",
+  "watching": "Factory land, recreation",
+  "start": {
+   "date": "Feb 2007",
+   "population": 20000,
+   "money": 4731,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 31,
+   "jammed": 0,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Feb 2008",
+   "population": 26800,
+   "money": 3842,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 10
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "26,800 -> 31,340",
+  "moves": [
+   "Loans #11-12: coal + seaport + far-west strip + shops"
+  ],
+  "happened": "West filling fast. Loans #11-12: coal, second seaport, far-west strip with its own coal plant, west shops.",
+  "watching": "Factory land, home demand",
+  "start": {
+   "date": "Feb 2008",
+   "population": 26800,
+   "money": 3842,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 10
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 33840,
+   "money": 6269,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 12
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "33,840 -> 38,110",
+  "moves": [
+   "East district 2"
+  ],
+  "happened": "East district 2 from cash; home demand cooled to about zero by year end.",
+  "watching": "Shops and the home cap",
+  "start": {
+   "date": "Feb 2009",
+   "population": 33840,
+   "money": 6269,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 37,
+   "jammed": 0,
+   "bonds": 12
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 38790,
+   "money": 2048,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 12
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "good",
+  "title": "38,790 -> 43,610",
+  "moves": [
+   "Loan #13: south districts + zoo 2",
+   "Loan #14: 30 pumps + SW block + stadium 2",
+   "Loan #15: factories + NW district"
+  ],
+  "happened": "Water crisis (1% spare) fixed with ~30 pumps; south districts, zoo #2, stadium #2 and a south-west block. ~12,000 ahead of Claudeville 3.",
+  "watching": "Jobs: factory land short",
+  "start": {
+   "date": "Feb 2010",
+   "population": 38790,
+   "money": 2048,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 44,
+   "jammed": 0,
+   "bonds": 12
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 44600,
+   "money": -797,
+   "unemployment": 3,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 54,
+   "jammed": 0,
+   "bonds": 15
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "setback",
+  "title": "Plane crash burns the east bank",
+  "moves": [
+   "Firefighters and bulldozed firebreaks",
+   "Rebuilt the east-bank roads, lines and plants from the original plans (loans #17-20)",
+   "Joined the cut-off far-east power lines across roads"
+  ],
+  "happened": "In April a plane crashed at the airport. The fire spread for weeks of game time and burned almost the whole east bank (about 4,000 tiles), including roads and power lines. Firebreaks 1-2 tiles wide were jumped; a 4-tile break helped at the end. Population fell from 45,530 to about 21,000.",
+  "watching": "Rebuild the network and let the surviving zones regrow",
+  "start": {
+   "date": "Feb 2011",
+   "population": 44600,
+   "money": -797,
+   "unemployment": 3,
+   "watered_pct": 95,
+   "powered_pct": 100,
+   "abandoned": 54,
+   "jammed": 0,
+   "bonds": 15
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 24000,
+   "money": -4742,
+   "unemployment": 3,
+   "watered_pct": 82,
+   "powered_pct": 98,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 20
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "setback",
+  "title": "Debt spiral after the fire",
+  "moves": [
+   "Piped water to the dry far-west strip (loan #21)",
+   "Raised the home tax ceiling to 12% and factories to 10%"
+  ],
+  "happened": "Bond payments reached $11k a year against $2.6k of taxes with half the city gone. Homes demand stayed at the maximum while the burned zones regrew.",
+  "watching": "Taxes and income",
+  "start": {
+   "date": "Feb 2012",
+   "population": 24000,
+   "money": -4742,
+   "unemployment": 3,
+   "watered_pct": 82,
+   "powered_pct": 98,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 20
+  },
+  "end": {
+   "date": "Feb 2013",
+   "population": 33520,
+   "money": -3499,
+   "unemployment": 9,
+   "watered_pct": 95,
+   "powered_pct": 99,
+   "abandoned": 213,
+   "jammed": 0,
+   "bonds": 21
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "good",
+  "title": "Recovery",
+  "moves": [],
+  "happened": "No new building (cash negative). The zones that survived the fire regrew fast on the rebuilt network.",
+  "watching": "Recreation cap near 45,000",
+  "start": {
+   "date": "Feb 2013",
+   "population": 33520,
+   "money": -3499,
+   "unemployment": 9,
+   "watered_pct": 95,
+   "powered_pct": 99,
+   "abandoned": 213,
+   "jammed": 0,
+   "bonds": 21
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 44030,
+   "money": -10378,
+   "unemployment": 2,
+   "watered_pct": 86,
+   "powered_pct": 100,
+   "abandoned": 73,
+   "jammed": 0,
+   "bonds": 21
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "good",
+  "title": "Back on pace at 44,000",
+  "moves": [
+   "Zoo (117,98) and stadium (110,42) on burned land (loans #22-23)"
+  ],
+  "happened": "Population is back to 44,030, on the pace curve again, but the budget runs about $6k a year short.",
+  "watching": "Growth past the cap; income vs bond payments",
+  "start": {
+   "date": "Feb 2014",
+   "population": 44030,
+   "money": -10378,
+   "unemployment": 2,
+   "watered_pct": 86,
+   "powered_pct": 100,
+   "abandoned": 73,
+   "jammed": 0,
+   "bonds": 21
+  },
+  "end": {
+   "date": "Feb 2015",
+   "population": 48140,
+   "money": -5323,
+   "unemployment": 5,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 174,
+   "jammed": 0,
+   "bonds": 23
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "good",
+  "title": "Past 45,000",
+  "moves": [],
+  "happened": "The new zoo and stadium lifted the home cap; growth continued on the rebuilt east bank. Budget still about $6k a year short.",
+  "watching": "Water in the far-west and south-east",
+  "start": {
+   "date": "Feb 2015",
+   "population": 48140,
+   "money": -5323,
+   "unemployment": 5,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 174,
+   "jammed": 0,
+   "bonds": 23
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 50130,
+   "money": -12279,
+   "unemployment": 9,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 238,
+   "jammed": 0,
+   "bonds": 23
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "steady",
+  "title": "50,000 and dry districts",
+  "moves": [
+   "Joined pipe networks in the far west and south-east"
+  ],
+  "happened": "Population 50,130. About 540 buildings had no water because pipe networks never linked; joined them (loans #24-25).",
+  "watching": "Land running out",
+  "start": {
+   "date": "Feb 2016",
+   "population": 50130,
+   "money": -12279,
+   "unemployment": 9,
+   "watered_pct": 87,
+   "powered_pct": 100,
+   "abandoned": 238,
+   "jammed": 0,
+   "bonds": 23
+  },
+  "end": {
+   "date": "Feb 2017",
+   "population": 52730,
+   "money": -1796,
+   "unemployment": 8,
+   "watered_pct": 89,
+   "powered_pct": 100,
+   "abandoned": 303,
+   "jammed": 0,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2017,
+  "tone": "good",
+  "title": "Steady growth",
+  "moves": [],
+  "happened": "No new building; the watered districts filled in.",
+  "watching": "Empty land almost gone",
+  "start": {
+   "date": "Feb 2017",
+   "population": 52730,
+   "money": -1796,
+   "unemployment": 8,
+   "watered_pct": 89,
+   "powered_pct": 100,
+   "abandoned": 303,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Feb 2018",
+   "population": 55860,
+   "money": -10438,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 134,
+   "jammed": 0,
+   "bonds": 25
+  }
+ },
+ {
+  "year": 2018,
+  "tone": "steady",
+  "title": "New south-west district",
+  "moves": [
+   "South-west district 2: 6 home, 3 shop, 3 factory blocks"
+  ],
+  "happened": "Population 55,860, on pace. Only 24 empty home tiles were left, so a new 12-block district goes onto the empty land south of y82 on the west bank (loans #26-27).",
+  "watching": "District growth; bond payments",
+  "start": {
+   "date": "Feb 2018",
+   "population": 55860,
+   "money": -10438,
+   "unemployment": 5,
+   "watered_pct": 96,
+   "powered_pct": 100,
+   "abandoned": 134,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Jun 2019",
+   "population": 62850,
+   "money": -1721,
+   "unemployment": 3,
+   "watered_pct": 91,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 28
+  }
+ },
+ {
+  "year": 2019,
+  "tone": "good",
+  "title": "60,000",
+  "moves": [],
+  "happened": "The south-west district filled in; a new coal plant (117,84) ended the far south-east brownout.",
+  "watching": "Water on the west bank",
+  "start": {
+   "date": "Jun 2019",
+   "population": 62850,
+   "money": -1721,
+   "unemployment": 3,
+   "watered_pct": 91,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 28
+  },
+  "end": {
+   "date": "Feb 2020",
+   "population": 66070,
+   "money": -10689,
+   "unemployment": 2,
+   "watered_pct": 83,
+   "powered_pct": 100,
+   "abandoned": 75,
+   "jammed": 0,
+   "bonds": 28
+  }
+ },
+ {
+  "year": 2020,
+  "tone": "good",
+  "title": "68,000, ahead of pace",
+  "moves": [
+   "Pump row on the west shore of the river",
+   "South-west district 3: 18 more blocks (loans #29-31)"
+  ],
+  "happened": "Population 68,020 against a target of 62,750. Empty land ran out again and about 800 west-bank buildings were dry.",
+  "watching": "Water and land",
+  "start": {
+   "date": "Feb 2020",
+   "population": 66070,
+   "money": -10689,
+   "unemployment": 2,
+   "watered_pct": 83,
+   "powered_pct": 100,
+   "abandoned": 75,
+   "jammed": 0,
+   "bonds": 28
+  },
+  "end": {
+   "date": "Feb 2021",
+   "population": 68360,
+   "money": -470,
+   "unemployment": 3,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 31
+  }
+ },
+ {
+  "year": 2021,
+  "tone": "good",
+  "title": "70,000 and district 3",
+  "moves": [],
+  "happened": "District 3 (18 blocks) and a west-shore pump row went in; a zoo, stadium and coal plant east of it (loans #29-33).",
+  "watching": "Water still short on the west bank",
+  "start": {
+   "date": "Feb 2021",
+   "population": 68360,
+   "money": -470,
+   "unemployment": 3,
+   "watered_pct": 90,
+   "powered_pct": 100,
+   "abandoned": 66,
+   "jammed": 0,
+   "bonds": 31
+  },
+  "end": {
+   "date": "Feb 2022",
+   "population": 72700,
+   "money": -2285,
+   "unemployment": 3,
+   "watered_pct": 88,
+   "powered_pct": 100,
+   "abandoned": 116,
+   "jammed": 0,
+   "bonds": 33
+  }
+ },
+ {
+  "year": 2022,
+  "tone": "good",
+  "title": "Ahead of pace",
+  "moves": [],
+  "happened": "Growth continued on the new districts; no new building.",
+  "watching": "West-bank water",
+  "start": {
+   "date": "Feb 2022",
+   "population": 72700,
+   "money": -2285,
+   "unemployment": 3,
+   "watered_pct": 88,
+   "powered_pct": 100,
+   "abandoned": 116,
+   "jammed": 0,
+   "bonds": 33
+  },
+  "end": {
+   "date": "Feb 2023",
+   "population": 77720,
+   "money": -12962,
+   "unemployment": 3,
+   "watered_pct": 81,
+   "powered_pct": 100,
+   "abandoned": 81,
+   "jammed": 0,
+   "bonds": 33
+  }
+ },
+ {
+  "year": 2023,
+  "tone": "setback",
+  "title": "Second great fire",
+  "moves": [
+   "14 more west-shore pumps (loans #34-35)",
+   "Removed the airport zone (it regrows and both great fires began there)",
+   "East-bank rebuild with 25 fire stations on a grid (loans #36-39)"
+  ],
+  "happened": "In February a plane crash at the airport started another fire that burned the east bank again: 77,850 -> 48,240 people. A four-tile firebreak at the start was jumped. The city had only 3 fire stations.",
+  "watching": "Rebuild with fire cover",
+  "start": {
+   "date": "Feb 2023",
+   "population": 77720,
+   "money": -12962,
+   "unemployment": 3,
+   "watered_pct": 81,
+   "powered_pct": 100,
+   "abandoned": 81,
+   "jammed": 0,
+   "bonds": 33
+  },
+  "end": {
+   "date": "Jul 2024",
+   "population": 55800,
+   "money": -11605,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 99,
+   "abandoned": 259,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2024,
+  "tone": "setback",
+  "title": "Slow regrowth",
+  "moves": [
+   "Re-joined the NW coal plant and the y68 east-west line"
+  ],
+  "happened": "The east bank regrew slowly; the west bank's north blocks were unpowered for months before I found the cut lines.",
+  "watching": "Power links",
+  "start": {
+   "date": "Jul 2024",
+   "population": 55800,
+   "money": -11605,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 99,
+   "abandoned": 259,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Feb 2025",
+   "population": 58070,
+   "money": -33249,
+   "unemployment": 11,
+   "watered_pct": 98,
+   "powered_pct": 99,
+   "abandoned": 312,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2025,
+  "tone": "steady",
+  "title": "Back to 60,000+",
+  "moves": [],
+  "happened": "Growth resumed on the rebuilt east bank with 25 new fire stations; no new building (cash negative).",
+  "watching": "Shop cap without an airport",
+  "start": {
+   "date": "Feb 2025",
+   "population": 58070,
+   "money": -33249,
+   "unemployment": 11,
+   "watered_pct": 98,
+   "powered_pct": 99,
+   "abandoned": 312,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Feb 2026",
+   "population": 65580,
+   "money": -53688,
+   "unemployment": 8,
+   "watered_pct": 89,
+   "powered_pct": 100,
+   "abandoned": 184,
+   "jammed": 0,
+   "bonds": 41
+  }
+ },
+ {
+  "year": 2026,
+  "tone": "setback",
+  "title": "Debt and the shop cap",
+  "moves": [
+   "New airport far from the districts with its own fire station (loans #42-48)"
+  ],
+  "happened": "66,740 people, behind pace. Bond payments $25k a year against $7k of taxes; homes demand -1200 because shops are capped without an airport (8% jobless).",
+  "watching": "Airport effect on jobs",
+  "start": {
+   "date": "Feb 2026",
+   "population": 65580,
+   "money": -53688,
+   "unemployment": 8,
+   "watered_pct": 89,
+   "powered_pct": 100,
+   "abandoned": 184,
+   "jammed": 0,
+   "bonds": 41
+  },
+  "end": {
+   "date": "Feb 2027",
+   "population": 69310,
+   "money": -13148,
+   "unemployment": 8,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 220,
+   "jammed": 0,
+   "bonds": 48
+  }
+ },
+ {
+  "year": 2027,
+  "tone": "steady",
+  "title": "Growth on a full city",
+  "moves": [],
+  "happened": "Population back near 75,000; no land left for homes.",
+  "watching": "Debt",
+  "start": {
+   "date": "Feb 2027",
+   "population": 69310,
+   "money": -13148,
+   "unemployment": 8,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 220,
+   "jammed": 0,
+   "bonds": 48
+  },
+  "end": {
+   "date": "Feb 2028",
+   "population": 77430,
+   "money": -38456,
+   "unemployment": 4,
+   "watered_pct": 92,
+   "powered_pct": 100,
+   "abandoned": 102,
+   "jammed": 0,
+   "bonds": 48
+  }
+ },
+ {
+  "year": 2028,
+  "tone": "setback",
+  "title": "Loan cap",
+  "moves": [
+   "Taxes to 2%"
+  ],
+  "happened": "The game refused loan #51 (bond cap 50). Taxes cut to 2% to push growth - a mistake: the debt slide sped up.",
+  "watching": "Cash vs the -$100,000 limit",
+  "start": {
+   "date": "Feb 2028",
+   "population": 77430,
+   "money": -38456,
+   "unemployment": 4,
+   "watered_pct": 92,
+   "powered_pct": 100,
+   "abandoned": 102,
+   "jammed": 0,
+   "bonds": 48
+  },
+  "end": {
+   "date": "Aug 2029",
+   "population": 82760,
+   "money": -45938,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 74,
+   "jammed": 1,
+   "bonds": 50
+  }
+ },
+ {
+  "year": 2030,
+  "tone": "setback",
+  "title": "Game over",
+  "moves": [],
+  "happened": "Peak 87,090 in Dec 2030. In Jan 2031 cash reached -$108,214 and the game threw the mayor out.",
+  "watching": "Attempt 2",
+  "start": {
+   "date": "Jul 2030",
+   "population": 84570,
+   "money": -77137,
+   "unemployment": 0,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 41,
+   "jammed": 0,
+   "bonds": 50
+  },
+  "end": null
+ }
+]

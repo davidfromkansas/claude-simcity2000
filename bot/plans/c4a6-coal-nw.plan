@@ -1,0 +1,6 @@
+# Attempt 6 Dec 2018: spare power 8% -> coal plant on its own in the empty north-west of the west bank (7+ tiles from homes),
+# own fire station; line y13 east and down x24 across road y20 to the shop cells' line.
+coal 12 12
+fire 12 16
+line 16 13 24 13
+line 24 14 24 20

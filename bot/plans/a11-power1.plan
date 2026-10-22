@@ -1,0 +1,19 @@
+# Dec 2003 power + water shortage (spare 4% / 0%, 30 buildings unpowered): gas plant (cash $3,754 - coal is $4,000) on the river strip, line to the x77 column; 5 riverbank pumps rows 37-41 on a new line column x75
+line 75 36 75 56
+pump 72 37 72 37
+line 73 37 74 37
+pipe 72 37 73 37
+pump 72 38 72 38
+line 73 38 74 38
+pipe 72 38 73 38
+pump 71 39 71 39
+line 72 39 74 39
+pipe 71 39 73 39
+pump 71 40 71 40
+line 72 40 74 40
+pipe 71 40 73 40
+pump 71 41 71 41
+line 72 41 74 41
+gas 64 56
+line 68 57 75 57
+# (76,57) cannot take a crossing; the plant joins the grid via column x75 and the crossing at (76,47)

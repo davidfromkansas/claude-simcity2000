@@ -1,0 +1,4 @@
+# fix: power gap at (77,56) between block 2 column and block 4 column (attempt 10 fed it from the west plant); join the y38 water main
+line 77 56 77 56
+pipe 75 38 99 38
+zone r 106 33 106 33

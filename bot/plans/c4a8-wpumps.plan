@@ -1,0 +1,7 @@
+# Attempt 8 Oct 2028: spare water 11% -> 4 shoreline pumps x59 y39-42 on the west-bank river strip, power from the second
+# west coal plant's fire station (54-56,33-35), pipe y40 from the x40 main
+line 57 35 58 35
+line 58 36 58 39
+pump 59 39 59 42
+pipe 41 40 58 40
+pipe 58 41 58 42

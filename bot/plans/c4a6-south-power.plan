@@ -1,0 +1,4 @@
+# power the west homes of the south district: join line x77 to line x85 below road y109
+line 77 109 77 110
+line 78 110 84 110
+line 85 109 85 110

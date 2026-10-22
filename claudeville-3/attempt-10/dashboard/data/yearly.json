@@ -1,0 +1,352 @@
+[
+ {
+  "year": 2002,
+  "tone": "good",
+  "title": "Two blocks",
+  "moves": [
+   "Block 1",
+   "Loan #2",
+   "Block 2"
+  ],
+  "happened": "Block 1 at 5/4/4 tax filled steadily (1,540 by Dec 2002); loan #2 paid for block 2 south with a second plant, fire and police stations.",
+  "watching": "Home demand at max",
+  "start": {
+   "date": "Feb 2002",
+   "population": 890,
+   "money": 7970,
+   "unemployment": 2,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 2,
+   "jammed": 0,
+   "bonds": 1
+  },
+  "end": {
+   "date": "Feb 2003",
+   "population": 1660,
+   "money": 8260,
+   "unemployment": 2,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 5,
+   "jammed": 0,
+   "bonds": 2
+  }
+ },
+ {
+  "year": 2006,
+  "tone": "good",
+  "title": "Growing on schedule's heels",
+  "moves": [
+   "Loan #3",
+   "Block 3",
+   "Pump field"
+  ],
+  "happened": "Block 3, a 19-pump field and a home row took the city from 3,060 to 6,100; all three demand bars reached maximum.",
+  "watching": "Land vs demand",
+  "start": {
+   "date": "Feb 2006",
+   "population": 4830,
+   "money": 9303,
+   "unemployment": 5,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 27,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2007",
+   "population": 6360,
+   "money": 8097,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 34,
+   "jammed": 0,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2009,
+  "tone": "good",
+  "title": "Past 10,000",
+  "moves": [
+   "Block 4"
+  ],
+  "happened": "Block 4 from cash took the city past 10,000 in May 2009 with all demand at maximum. Cash ran out by 2010: interest about twice property tax.",
+  "watching": "Tax income vs interest",
+  "start": {
+   "date": "Feb 2009",
+   "population": 9630,
+   "money": 1355,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 49,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 11220,
+   "money": 445,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 47,
+   "jammed": 0,
+   "bonds": 3
+  }
+ },
+ {
+  "year": 2010,
+  "tone": "setback",
+  "title": "Taxes up, growth stops",
+  "moves": [
+   "Third coal plant + marina",
+   "13 riverbank pumps"
+  ],
+  "happened": "Taxes went to 7/6/6 to carry 4 loans. Population held at about 11,500; home demand slid toward zero while shop and factory demand stayed at maximum.",
+  "watching": "Whether higher taxes stall growth",
+  "start": {
+   "date": "Feb 2010",
+   "population": 11220,
+   "money": 445,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 47,
+   "jammed": 0,
+   "bonds": 3
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 11710,
+   "money": 2376,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2011,
+  "tone": "steady",
+  "title": "Flat year",
+  "moves": [],
+  "happened": "No changes: land was full and cash was under $2,000. Population about 11,500.",
+  "watching": "Cash for the next block",
+  "start": {
+   "date": "Feb 2011",
+   "population": 11710,
+   "money": 2376,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2012",
+   "population": 11520,
+   "money": 1459,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 81,
+   "jammed": 0,
+   "bonds": 4
+  }
+ },
+ {
+  "year": 2012,
+  "tone": "steady",
+  "title": "Land full, demand for jobs",
+  "moves": [
+   "Loan #5 ($10,000)",
+   "East block: 170 shop tiles, 102 home tiles",
+   "Shop/factory tax 6 -> 8"
+  ],
+  "happened": "No changes until December: 1 empty home tile, shop and factory demand at maximum, 91 abandoned homes. In December took loan #5 for a new block.",
+  "watching": "Shops filling the east block",
+  "start": {
+   "date": "Feb 2012",
+   "population": 11520,
+   "money": 1459,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 81,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2013",
+   "population": 11230,
+   "money": 8332,
+   "unemployment": 8,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 106,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "good",
+  "title": "East block fills",
+  "moves": [],
+  "happened": "Shops and homes filled the east block; population 11,600.",
+  "watching": "Shop demand turning down",
+  "start": {
+   "date": "Feb 2013",
+   "population": 11230,
+   "money": 8332,
+   "unemployment": 8,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 106,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2014",
+   "population": 12050,
+   "money": 7135,
+   "unemployment": 8,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 119,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "good",
+  "title": "13,000 passed",
+  "moves": [],
+  "happened": "Population reached 13,280. Shop demand fell from maximum to below zero as the east block filled; factory demand stayed at maximum.",
+  "watching": "Factory land",
+  "start": {
+   "date": "Feb 2014",
+   "population": 12050,
+   "money": 7135,
+   "unemployment": 8,
+   "watered_pct": 98,
+   "powered_pct": 100,
+   "abandoned": 119,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2015",
+   "population": 13380,
+   "money": 6049,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 101,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "steady",
+  "title": "South factory block",
+  "moves": [
+   "South factory block",
+   "Shop tax 8 -> 7"
+  ],
+  "happened": "Population 13,100. Added ~150 factory tiles south of road y76 (factory demand at maximum since 2012) and cut shop tax back to 7.",
+  "watching": "Unemployment (up to 14%)",
+  "start": {
+   "date": "Feb 2015",
+   "population": 13380,
+   "money": 6049,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 101,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Jan 2016",
+   "population": 12620,
+   "money": 3550,
+   "unemployment": 14,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 223,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "setback",
+  "title": "Factories fill, many abandon",
+  "moves": [],
+  "happened": "Population 13,800. The factory block filled but abandoned buildings rose past 200; unemployment 11-14%; cash down to $3,550.",
+  "watching": "Loan payments vs tax",
+  "start": {
+   "date": "Jan 2016",
+   "population": 12620,
+   "money": 3550,
+   "unemployment": 14,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 223,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2017",
+   "population": 13880,
+   "money": 2504,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 189,
+   "jammed": 0,
+   "bonds": 5
+  }
+ },
+ {
+  "year": 2017,
+  "tone": "setback",
+  "title": "Debt trap",
+  "moves": [],
+  "happened": "Population 14,150. Loan payments ($2,000 a year) are bigger than property tax ($1,391); cash $1,530 and falling; spare power and water near 20%.",
+  "watching": "Decision on the attempt",
+  "start": {
+   "date": "Feb 2017",
+   "population": 13880,
+   "money": 2504,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 189,
+   "jammed": 0,
+   "bonds": 5
+  },
+  "end": {
+   "date": "Feb 2018",
+   "population": 14190,
+   "money": 1530,
+   "unemployment": 11,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 175,
+   "jammed": 0,
+   "bonds": 5
+  }
+ }
+]

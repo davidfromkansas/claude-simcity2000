@@ -1,0 +1,3 @@
+# NW district: join its pipe x11 to the watered x11 pipe at y28, and its top line row across road y13
+pipe 11 21 11 28
+line 10 13 10 13

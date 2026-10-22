@@ -1,0 +1,3 @@
+# power for the east shops/homes when the factory strip x110-114 is still empty: join column x109 to column x116 along y56
+line 109 55 109 56
+line 110 56 115 56

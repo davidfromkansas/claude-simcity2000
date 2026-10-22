@@ -1,0 +1,9 @@
+# Attempt 7 Dec 2023: spare water 6% -> pumps on true shoreline: x70 y103-107 (line y105 from line x77 across road x76),
+# x51 y117-121 (line y118 from line x44 across road x48)
+line 71 105 76 105
+pump 70 103 70 107
+pipe 71 103 71 107
+pipe 72 105 79 105
+line 45 118 50 118
+pump 51 117 51 121
+pipe 49 118 50 118

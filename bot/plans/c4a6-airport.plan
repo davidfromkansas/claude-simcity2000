@@ -1,0 +1,9 @@
+# Attempt 6: attempt 5's north-east airport moved one row in from the map edge (attempt 5's top row never developed).
+road 116 20 122 20
+road 122 1 122 19
+line 115 22 121 22
+line 121 5 121 21
+line 118 5 120 5
+airport 116 1 121 4
+line 118 1 118 4
+fire 119 7

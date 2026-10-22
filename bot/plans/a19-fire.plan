@@ -1,0 +1,9 @@
+# Attempt 19 Feb 2038 (loan #26): "Fire Protection Demanded" after the Dec 2036 fire; only two fire stations (from
+# day one). Four on the free 3x3 spots by the newer districts, each with a short power link across a road.
+fire 103 116
+line 104 115 104 115
+fire 17 66
+line 20 67 20 67
+fire 10 88
+line 13 88 13 88
+fire 102 9

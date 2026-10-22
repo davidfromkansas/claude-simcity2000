@@ -1,0 +1,16 @@
+# Attempt 6 Feb 2013: spare water 7% -> 12 pumps around the pond x111-113 y63-65 (fresh water), corners line tiles,
+# power from the zoo (x110-113 y56-59) down line x111; pipe ring joined to the y65 pipe at x107.
+line 111 60 111 61
+pump 111 62 113 62
+line 110 62 110 62
+line 114 62 114 62
+pump 110 63 110 65
+pump 114 63 114 65
+line 110 66 110 66
+line 114 66 114 66
+pump 111 66 113 66
+pipe 108 65 109 65
+pipe 109 61 109 67
+pipe 110 61 115 61
+pipe 110 67 115 67
+pipe 115 62 115 66

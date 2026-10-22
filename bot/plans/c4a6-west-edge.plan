@@ -1,0 +1,13 @@
+# Attempt 6 Nov 2041: factory demand 901 with no factory land -> dense factory strips x3-5 / x7-8 y28-61 along the west
+# edge beside the homes x10-12 (trips). Roads x2/x6 joined by road y27 across line x9 to road x13; power: line x9,
+# line x4 joined by line y44.
+road 2 27 12 27
+road 2 28 2 61
+road 6 28 6 61
+line 4 28 4 61
+line 3 44 8 44
+zone I 3 28 5 61
+zone I 7 28 8 61
+pipe 5 31 10 31
+pipe 4 32 4 61
+pipe 7 32 7 61
