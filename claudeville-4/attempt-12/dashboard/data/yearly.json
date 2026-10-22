@@ -324,5 +324,38 @@
    "jammed": 0,
    "bonds": 10
   }
+ },
+ {
+  "year": 2010,
+  "tone": "good",
+  "title": "Lake pumps, south bands",
+  "moves": [
+   "Loan 11: lake pumps, south bands",
+   "Home tax 8-9%"
+  ],
+  "happened": "Dec 2010: ~35,000. Loan 11 paid for lake pumps and the south and south-west bands; home tax 7 -> 9% with home demand +1,100.",
+  "watching": "Power; river crossing",
+  "start": {
+   "date": "Feb 2010",
+   "population": 33120,
+   "money": -380,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 47,
+   "jammed": 0,
+   "bonds": 10
+  },
+  "end": {
+   "date": "Feb 2011",
+   "population": 36480,
+   "money": 1202,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 41,
+   "jammed": 1,
+   "bonds": 11
+  }
  }
 ]
