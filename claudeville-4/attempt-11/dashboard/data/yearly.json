@@ -1347,5 +1347,127 @@
    "jammed": 0,
    "bonds": 29
   }
+ },
+ {
+  "year": 2042,
+  "tone": "steady",
+  "title": "Factory tax back to 8-9%",
+  "moves": [
+   "Factory tax 8%"
+  ],
+  "happened": "Dec 2042: ~102,500. Factory demand rose to +1,000 with no land; factory tax 7 -> 9% (controller).",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2042",
+   "population": 103250,
+   "money": -21119,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2043",
+   "population": 101690,
+   "money": -26632,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 65,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2043,
+  "tone": "good",
+  "title": "104,390 - new high",
+  "moves": [],
+  "happened": "Dec 2043: 104,390 people.",
+  "watching": "Cash -$27k",
+  "start": {
+   "date": "Feb 2043",
+   "population": 101690,
+   "money": -26632,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 65,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2044",
+   "population": 104160,
+   "money": -31388,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 72,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2044,
+  "tone": "steady",
+  "title": "Holding near 104,000",
+  "moves": [],
+  "happened": "Land full; ~103-104k people; cash falling ~$4.6k a year.",
+  "watching": "Cash vs -$100k",
+  "start": {
+   "date": "Feb 2044",
+   "population": 104160,
+   "money": -31388,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 72,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2045",
+   "population": 103570,
+   "money": -36006,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2045,
+  "tone": "steady",
+  "title": "Holding near 104,000",
+  "moves": [],
+  "happened": "Land full; ~103-104k people; cash falling ~$4.6k a year.",
+  "watching": "Cash vs -$100k",
+  "start": {
+   "date": "Feb 2045",
+   "population": 103570,
+   "money": -36006,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 80,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2046",
+   "population": 103040,
+   "money": -40620,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 99,
+   "jammed": 0,
+   "bonds": 29
+  }
  }
 ]
