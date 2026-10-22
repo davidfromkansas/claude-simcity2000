@@ -1,0 +1,26 @@
+# Attempt 11 Jun 2024: c4a10-nstrip trimmed to y>=12 (north edge y<12 is unsafe for clicks): shops/homes cells x44-57 y12-22,
+# line x48 down to the fire station at (48,28), road/pipe link to road and pipe x40 at y20
+line 48 12 48 22
+road 44 12 56 12
+road 44 19 57 19
+road 44 12 44 22
+road 52 12 52 22
+road 57 13 57 22
+zone C 45 13 47 15
+zone C 49 13 51 15
+zone C 53 13 55 15
+zone R 45 16 47 18
+zone R 49 16 51 18
+zone R 53 16 56 18
+zone C 45 20 47 22
+zone C 49 20 51 22
+zone C 53 20 56 22
+pipe 44 12 56 12
+pipe 44 19 57 19
+pipe 44 12 44 22
+pipe 52 12 52 22
+pipe 57 13 57 22
+road 41 20 43 20
+line 48 23 48 27
+pipe 41 20 43 20
+pipe 40 20 40 20
