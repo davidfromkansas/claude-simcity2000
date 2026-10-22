@@ -1,0 +1,27 @@
+# Attempt 11 Jul 2023: shops 1,002 demand with 6 empty while homes have 226 empty (south rows) -> empty south-row segments to dense shops
+dezone 9 121 12 121
+zone C 9 121 12 121
+dezone 9 122 12 122
+zone C 9 122 12 122
+dezone 9 123 12 123
+zone C 9 123 12 123
+dezone 19 122 22 122
+zone C 19 122 22 122
+dezone 19 123 22 123
+zone C 19 123 22 123
+dezone 29 120 32 120
+zone C 29 120 32 120
+dezone 29 122 32 122
+zone C 29 122 32 122
+dezone 29 123 32 123
+zone C 29 123 32 123
+dezone 39 119 42 119
+zone C 39 119 42 119
+dezone 39 120 42 120
+zone C 39 120 42 120
+dezone 39 121 42 121
+zone C 39 121 42 121
+dezone 39 122 42 122
+zone C 39 122 42 122
+dezone 39 123 42 123
+zone C 39 123 42 123
