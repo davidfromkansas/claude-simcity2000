@@ -1257,5 +1257,65 @@
    "jammed": 0,
    "bonds": 29
   }
+ },
+ {
+  "year": 2039,
+  "tone": "steady",
+  "title": "Holding near 101,000",
+  "moves": [],
+  "happened": "Land full; population 100-102k; cash falling ~$5k a year.",
+  "watching": "Cash vs the -$100k limit",
+  "start": {
+   "date": "Feb 2039",
+   "population": 100720,
+   "money": -4183,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 132,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2040",
+   "population": 101930,
+   "money": -9905,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2040,
+  "tone": "steady",
+  "title": "Holding near 101,000",
+  "moves": [],
+  "happened": "Land full; population 100-102k; cash falling ~$5k a year.",
+  "watching": "Cash vs the -$100k limit",
+  "start": {
+   "date": "Feb 2040",
+   "population": 101930,
+   "money": -9905,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2041",
+   "population": 102460,
+   "money": -15525,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 109,
+   "jammed": 0,
+   "bonds": 29
+  }
  }
 ]
