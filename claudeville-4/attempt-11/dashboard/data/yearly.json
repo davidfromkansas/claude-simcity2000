@@ -1069,5 +1069,130 @@
    "jammed": 0,
    "bonds": 25
   }
+ },
+ {
+  "year": 2033,
+  "tone": "setback",
+  "title": "Alien ship, contained",
+  "moves": [
+   "Loan 26: river shop block",
+   "Home tax 9%",
+   "Disaster response + road y69 rebuild",
+   "Loan 27"
+  ],
+  "happened": "Feb-Mar 2033: an alien ship crossed the city; firefighters were dispatched on every burst and ~160 tiles burned (attempt 9 lost half its city). The ship cut road y69 (the west bank link), rebuilt with loan 27. Loan 26 had paid for a river shop block; home tax 9%.",
+  "watching": "Recovery",
+  "start": {
+   "date": "Feb 2033",
+   "population": 96870,
+   "money": -8861,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 87,
+   "jammed": 0,
+   "bonds": 25
+  },
+  "end": {
+   "date": "Jul 2034",
+   "population": 97560,
+   "money": 5241,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2034,
+  "tone": "steady",
+  "title": "Recovery",
+  "moves": [],
+  "happened": "Dec 2034: 97,980 people. Burned land regrew.",
+  "watching": "100,000",
+  "start": {
+   "date": "Jul 2034",
+   "population": 97560,
+   "money": 5241,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2035",
+   "population": 98300,
+   "money": 784,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2035,
+  "tone": "steady",
+  "title": "Near 100,000",
+  "moves": [],
+  "happened": "Dec 2035: 99,140. Shops stalled with positive demand (few empty lots).",
+  "watching": "100,000",
+  "start": {
+   "date": "Feb 2035",
+   "population": 98300,
+   "money": 784,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2036",
+   "population": 98960,
+   "money": -3485,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 117,
+   "jammed": 0,
+   "bonds": 27
+  }
+ },
+ {
+  "year": 2036,
+  "tone": "milestone",
+  "title": "Past 100,000",
+  "moves": [],
+  "happened": "Jun 2036: 100,150 people (attempt 10 passed 100,000 in Nov 2032).",
+  "watching": "Recreation cap ~105k; cash -$7.6k",
+  "start": {
+   "date": "Feb 2036",
+   "population": 98960,
+   "money": -3485,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 117,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Feb 2037",
+   "population": 100570,
+   "money": -7586,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 116,
+   "jammed": 0,
+   "bonds": 27
+  }
  }
 ]
