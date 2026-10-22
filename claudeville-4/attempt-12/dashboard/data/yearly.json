@@ -128,5 +128,61 @@
    "jammed": 0,
    "bonds": 6
   }
+ },
+ {
+  "year": 2004,
+  "tone": "good",
+  "title": "Pumps, district 5, stadium",
+  "moves": [
+   "South pumps",
+   "District 5 + power",
+   "Loan 7: stadium + fire stations"
+  ],
+  "happened": "Dec 2004: 16,360 people (attempt 11: 15,100). Water 4% -> south pumps; district 5, stadium and fire stations (loan 7).",
+  "watching": "Power",
+  "start": {
+   "date": "Feb 2004",
+   "population": 13290,
+   "money": 9516,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 101,
+   "jammed": 0,
+   "bonds": 6
+  },
+  "end": {
+   "date": "Feb 2005",
+   "population": 16790,
+   "money": 2578,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 7
+  }
+ },
+ {
+  "year": 2005,
+  "tone": "good",
+  "title": "18,710 people",
+  "moves": [
+   "Loan 8: east coal plant + fire station"
+  ],
+  "happened": "Dec 2005: 18,710 (attempt 11: 18,350). Power 9% -> east coal plant (loan 8).",
+  "watching": "Water and land",
+  "start": {
+   "date": "Feb 2005",
+   "population": 16790,
+   "money": 2578,
+   "unemployment": 6,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 7
+  },
+  "end": null
  }
 ]
