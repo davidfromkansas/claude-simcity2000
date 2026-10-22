@@ -1,0 +1,10 @@
+# Attempt 12 Feb 2023: factory land on the free west-bank block x41-53 y33-44 (factories 1,793 with no land); roads y36 and y41
+# from road x40, y41 also joins the stray bridge (x54 y41-45) to the network; line x47 through the rows; pipes under the roads
+road 41 36 53 36
+road 41 41 53 41
+zone I 46 33 53 35
+zone I 41 37 53 40
+zone I 41 42 53 44
+line 47 33 47 44
+pipe 41 36 53 36
+pipe 41 41 53 41
