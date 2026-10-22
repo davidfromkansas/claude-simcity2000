@@ -83,6 +83,11 @@ def vis(*xy):
         print(out.strip().splitlines()[-2] if len(out.strip().splitlines()) > 1 else out.strip())
     if "AUTOCAL ZOOM" in out:   # attempt 19: half-scale build after the zoom-in failed
         print(out.strip()); print("BUILD: stopped - wrong zoom"); sys.exit(3)
+    # C4 attempt 12 (Jul 2019): autocal refused a view over water but the build went on with no calibration and the
+    # bulldozer hit roads 100 tiles away - stop on every calibration failure
+    for bad in ("AUTOCAL VIEW OVER WATER", "AUTOCAL BRIDGE"):
+        if bad in out:
+            print(out.strip()); print("BUILD: stopped - calibration failed (%s)" % bad.lower()); sys.exit(3)
 
 
 def tool(name):

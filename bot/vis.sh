@@ -3,7 +3,7 @@
 cd "$(dirname "$0")"
 ok() { for ((i=1;i<=$#;i+=2)); do j=$((i+1)); read sx sy < <(python3 -I tile.py ${!i} ${!j});
   [ "$sx" -ge 100 ] && [ "$sx" -le 600 ] && [ "$sy" -ge 64 ] && [ "$sy" -le 440 ] || return 1; done; }
-cal() { ./autocal.sh >/tmp/sc/autocal.log; [ $? = 3 ] && { cat /tmp/sc/autocal.log; exit 3; }; }
+cal() { ./autocal.sh >/tmp/sc/autocal.log; r=$?; [ $r = 3 ] || [ $r = 2 ] && { cat /tmp/sc/autocal.log; exit 3; }; }
 grep -q alt /tmp/sc/cal.json || cal
 ok "$@" && exit 0
 # centre on the midpoint

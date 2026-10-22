@@ -21,12 +21,12 @@ PY
 # skip spots that show water: a test road there would build a bridge (attempt 9 left one on the lake)
 # (attempt 11: a click on a shore tile built a bridge, so look 24 px around the spot too)
 wet1() { convert /tmp/sc/calview.png -format "%[fx:(p{$1,$2}.b-p{$1,$2}.r>0.25 && p{$1,$2}.b-p{$1,$2}.g>0.15)?1:0]" info:; }
-wet() { for d in "0 0" "24 0" "-24 0" "0 12" "0 -12" "16 8" "-16 -8" "16 -8" "-16 8"; do set -- $1 $2 $d
+wet() { for d in "0 0" "24 0" "-24 0" "0 12" "0 -12" "16 8" "-16 -8" "16 -8" "-16 8" "48 0" "-48 0" "0 24" "0 -24" "32 16" "-32 -16" "32 -16" "-32 16"; do set -- $1 $2 $d
   [ "$(wet1 $(($1+$3)) $(($2+$4)))" = 1 ] && { echo 1; return; }; done; echo 0; }
 # C4 attempt 12 (Jun 2017): with the view centred over the river every "dry" spot was a shore tile; test roads built a
 # $975 suspension bridge and opened the bridge dialog, which swallowed later clicks. Refuse a view that is mostly water.
 wetshare=$(convert /tmp/sc/calview.png -crop 400x260+120+110 -fx "(b-r>0.25 && b-g>0.15)?1:0" -format "%[fx:mean]" info:)
-if python3 -I -c "import sys; sys.exit(0 if float('$wetshare')>0.25 else 1)"; then
+if python3 -I -c "import sys; sys.exit(0 if float('$wetshare')>0.40 else 1)"; then
   echo "AUTOCAL VIEW OVER WATER (${wetshare} of the centre is water) - centre the view on built land first"; rm -f /tmp/sc/cal.json; exit 3; fi
 for pt in "330 250" "450 360" "200 360" "470 150" "200 160" "560 260" "130 260" "400 300" "260 300" "400 200" "260 200" "520 400" "150 400" "520 100" "150 100" "330 400" "330 110" "580 350" "580 150"; do
   set -- $pt; [ "$(wet $1 $2)" = 1 ] && continue
