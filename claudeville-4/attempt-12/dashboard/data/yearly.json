@@ -227,5 +227,28 @@
    "jammed": 0,
    "bonds": 8
   }
+ },
+ {
+  "year": 2007,
+  "tone": "good",
+  "title": "South and SE districts",
+  "moves": [
+   "Loan 9: south + SE districts",
+   "Road links"
+  ],
+  "happened": "Dec 2007: 25,820 (attempt 11: 26,020). Loan 9 paid for the south and SE districts; road links from cash.",
+  "watching": "Power, seaport 2",
+  "start": {
+   "date": "Feb 2007",
+   "population": 22630,
+   "money": 70,
+   "unemployment": 4,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 8
+  },
+  "end": null
  }
 ]
