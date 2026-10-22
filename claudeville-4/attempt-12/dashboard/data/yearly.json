@@ -357,5 +357,28 @@
    "jammed": 1,
    "bonds": 11
   }
+ },
+ {
+  "year": 2011,
+  "tone": "good",
+  "title": "Across the river",
+  "moves": [
+   "Loans 12-13: west district, coal plant",
+   "West district 2"
+  ],
+  "happened": "Dec 2011: 40,180 people (attempt 11: 48,740). Loans 12-13 paid for the river crossing (west district, causeway, power) and the west coal plant; west district 2 from cash.",
+  "watching": "Recreation cap ~45,000",
+  "start": {
+   "date": "Feb 2011",
+   "population": 36480,
+   "money": 1202,
+   "unemployment": 1,
+   "watered_pct": 99,
+   "powered_pct": 100,
+   "abandoned": 41,
+   "jammed": 1,
+   "bonds": 11
+  },
+  "end": null
  }
 ]
