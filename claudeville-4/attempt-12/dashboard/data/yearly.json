@@ -411,6 +411,139 @@
    "jammed": 0,
    "bonds": 13
   },
-  "end": null
+  "end": {
+   "date": "Feb 2013",
+   "population": 46210,
+   "money": 6836,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 48,
+   "jammed": 0,
+   "bonds": 14
+  }
+ },
+ {
+  "year": 2013,
+  "tone": "good",
+  "title": "Zoo #2, coal plant",
+  "moves": [
+   "Loan 14: zoo #2, west 3",
+   "Coal plant x67-70 y70-73"
+  ],
+  "happened": "Dec 2013: ~50,000. Loan 14 paid for zoo #2 and the west shop cells; a coal plant from cash.",
+  "watching": "Land",
+  "start": {
+   "date": "Feb 2013",
+   "population": 46210,
+   "money": 6836,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 48,
+   "jammed": 0,
+   "bonds": 14
+  },
+  "end": {
+   "date": "Jan 2014",
+   "population": 52710,
+   "money": 1604,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 14
+  }
+ },
+ {
+  "year": 2014,
+  "tone": "good",
+  "title": "Growing to 55,000",
+  "moves": [],
+  "happened": "Dec 2014: ~54,000 people on the land built.",
+  "watching": "Land full",
+  "start": {
+   "date": "Jan 2014",
+   "population": 52710,
+   "money": 1604,
+   "unemployment": 1,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 58,
+   "jammed": 0,
+   "bonds": 14
+  },
+  "end": {
+   "date": "Jan 2015",
+   "population": 54270,
+   "money": 1488,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 0,
+   "bonds": 14
+  }
+ },
+ {
+  "year": 2015,
+  "tone": "setback",
+  "title": "Stalled near 55,000",
+  "moves": [],
+  "happened": "Dec 2015: 55,010. Land full; shop demand fell negative (tax controller lowered shop tax).",
+  "watching": "Homes",
+  "start": {
+   "date": "Jan 2015",
+   "population": 54270,
+   "money": 1488,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 77,
+   "jammed": 0,
+   "bonds": 14
+  },
+  "end": {
+   "date": "Feb 2016",
+   "population": 55260,
+   "money": 1552,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 108,
+   "jammed": 0,
+   "bonds": 14
+  }
+ },
+ {
+  "year": 2016,
+  "tone": "setback",
+  "title": "Stalled; homes wanted",
+  "moves": [],
+  "happened": "Dec 2016: 56,440. Home demand +700 with no empty home land.",
+  "watching": "Home land",
+  "start": {
+   "date": "Feb 2016",
+   "population": 55260,
+   "money": 1552,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 108,
+   "jammed": 0,
+   "bonds": 14
+  },
+  "end": {
+   "date": "Jan 2017",
+   "population": 56900,
+   "money": 1524,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 103,
+   "jammed": 0,
+   "bonds": 14
+  }
  }
 ]
