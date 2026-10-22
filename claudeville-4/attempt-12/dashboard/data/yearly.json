@@ -249,6 +249,48 @@
    "jammed": 0,
    "bonds": 8
   },
-  "end": null
+  "end": {
+   "date": "Feb 2008",
+   "population": 26170,
+   "money": -87,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 35,
+   "jammed": 0,
+   "bonds": 9
+  }
+ },
+ {
+  "year": 2008,
+  "tone": "good",
+  "title": "Road links; 30,000",
+  "moves": [
+   "Road links"
+  ],
+  "happened": "Dec 2008: ~30,000 people. Road links from cash.",
+  "watching": "Power; shop and factory land",
+  "start": {
+   "date": "Feb 2008",
+   "population": 26170,
+   "money": -87,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 35,
+   "jammed": 0,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Feb 2009",
+   "population": 30730,
+   "money": -1747,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 52,
+   "jammed": 0,
+   "bonds": 9
+  }
  }
 ]
