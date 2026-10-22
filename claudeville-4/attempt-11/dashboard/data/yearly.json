@@ -1194,5 +1194,68 @@
    "jammed": 0,
    "bonds": 27
   }
+ },
+ {
+  "year": 2037,
+  "tone": "steady",
+  "title": "Zoo #5, coal plant",
+  "moves": [
+   "Loans 28-29",
+   "Zoo #5 + coal plant"
+  ],
+  "happened": "Dec 2037: ~100,600 people with land full. Loans 28-29 (late loans are cash-positive by 2050) paid for zoo #5 and a coal plant.",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2037",
+   "population": 100570,
+   "money": -7586,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 116,
+   "jammed": 0,
+   "bonds": 27
+  },
+  "end": {
+   "date": "Jan 2038",
+   "population": 101120,
+   "money": 1256,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 113,
+   "jammed": 0,
+   "bonds": 29
+  }
+ },
+ {
+  "year": 2038,
+  "tone": "steady",
+  "title": "Holding near 101,000",
+  "moves": [],
+  "happened": "Land full; population 100-102k; cash falling ~$5k a year.",
+  "watching": "Cash vs the -$100k limit",
+  "start": {
+   "date": "Jan 2038",
+   "population": 101120,
+   "money": 1256,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 113,
+   "jammed": 0,
+   "bonds": 29
+  },
+  "end": {
+   "date": "Feb 2039",
+   "population": 100720,
+   "money": -4183,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 132,
+   "jammed": 0,
+   "bonds": 29
+  }
  }
 ]
