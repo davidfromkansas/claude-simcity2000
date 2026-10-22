@@ -95,5 +95,38 @@
    "jammed": 0,
    "bonds": 4
   }
+ },
+ {
+  "year": 2003,
+  "tone": "good",
+  "title": "Seaport, airport, east homes",
+  "moves": [
+   "Loans 5-6",
+   "Seaport strip, airport, east homes + power"
+  ],
+  "happened": "Dec 2003: 13,220 people (attempt 11: 13,010). Loans 5-6 paid for the seaport job strip, airport and east homes.",
+  "watching": "Water 4%; jobs (unemployment 8%)",
+  "start": {
+   "date": "Feb 2003",
+   "population": 11200,
+   "money": 4407,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 51,
+   "jammed": 0,
+   "bonds": 4
+  },
+  "end": {
+   "date": "Feb 2004",
+   "population": 13290,
+   "money": 9516,
+   "unemployment": 8,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 101,
+   "jammed": 0,
+   "bonds": 6
+  }
  }
 ]
