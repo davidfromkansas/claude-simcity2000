@@ -775,6 +775,140 @@
    "jammed": 0,
    "bonds": 20
   },
-  "end": null
+  "end": {
+   "date": "Feb 2024",
+   "population": 80580,
+   "money": -2372,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 0,
+   "bonds": 21
+  }
+ },
+ {
+  "year": 2024,
+  "tone": "steady",
+  "title": "North strip, shop tax",
+  "moves": [
+   "Loan 22: north strip",
+   "Coal plant x49-52 y23-26",
+   "Shop tax 10%"
+  ],
+  "happened": "Dec 2024: ~82,000 people. Loan 22 paid for the north strip (trimmed off the north edge) and a coal plant; shop tax raised to 10 then (controller) 11%.",
+  "watching": "Shop demand",
+  "start": {
+   "date": "Feb 2024",
+   "population": 80580,
+   "money": -2372,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 94,
+   "jammed": 0,
+   "bonds": 21
+  },
+  "end": {
+   "date": "Jul 2025",
+   "population": 83310,
+   "money": -1057,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 92,
+   "jammed": 0,
+   "bonds": 22
+  }
+ },
+ {
+  "year": 2025,
+  "tone": "setback",
+  "title": "Shop demand collapses",
+  "moves": [],
+  "happened": "Dec 2025: 84,330. With the shop tax at 11% shop demand fell from +1,373 to about 0 and then negative (strategy slip: research said shops turn negative above ~9%).",
+  "watching": "Cash slipping (~-$3k/yr)",
+  "start": {
+   "date": "Jul 2025",
+   "population": 83310,
+   "money": -1057,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 92,
+   "jammed": 0,
+   "bonds": 22
+  },
+  "end": {
+   "date": "Feb 2026",
+   "population": 84320,
+   "money": -3809,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 122,
+   "jammed": 0,
+   "bonds": 22
+  }
+ },
+ {
+  "year": 2026,
+  "tone": "setback",
+  "title": "Flat year",
+  "moves": [],
+  "happened": "Dec 2026: ~84,000. Shop demand -800, unemployment 6%; the controller lowered the shop tax back toward 8%. No builds (cash negative).",
+  "watching": "Cash",
+  "start": {
+   "date": "Feb 2026",
+   "population": 84320,
+   "money": -3809,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 122,
+   "jammed": 0,
+   "bonds": 22
+  },
+  "end": {
+   "date": "Feb 2027",
+   "population": 83770,
+   "money": -6412,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 144,
+   "jammed": 0,
+   "bonds": 22
+  }
+ },
+ {
+  "year": 2027,
+  "tone": "steady",
+  "title": "Recovering",
+  "moves": [],
+  "happened": "Dec 2027: 85,050. Shop tax back at 8-9%, demand recovering; cash -$9k.",
+  "watching": "Recreation cap; land",
+  "start": {
+   "date": "Feb 2027",
+   "population": 83770,
+   "money": -6412,
+   "unemployment": 6,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 144,
+   "jammed": 0,
+   "bonds": 22
+  },
+  "end": {
+   "date": "Feb 2028",
+   "population": 85440,
+   "money": -9348,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 143,
+   "jammed": 3,
+   "bonds": 22
+  }
  }
 ]
