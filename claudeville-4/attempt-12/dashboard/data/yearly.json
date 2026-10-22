@@ -292,5 +292,37 @@
    "jammed": 0,
    "bonds": 9
   }
+ },
+ {
+  "year": 2009,
+  "tone": "steady",
+  "title": "South coal, seaport 2 - land short",
+  "moves": [
+   "Loan 10: south coal plant, seaport 2"
+  ],
+  "happened": "Dec 2009: 32,960 people (attempt 11: 36,380). Loan 10 paid for the south coal plant and the second seaport (after a worker restart and a reload); shop and factory land stayed short all year.",
+  "watching": "Land; water",
+  "start": {
+   "date": "Feb 2009",
+   "population": 30730,
+   "money": -1747,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 52,
+   "jammed": 0,
+   "bonds": 9
+  },
+  "end": {
+   "date": "Feb 2010",
+   "population": 33120,
+   "money": -380,
+   "unemployment": 2,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 47,
+   "jammed": 0,
+   "bonds": 10
+  }
  }
 ]
