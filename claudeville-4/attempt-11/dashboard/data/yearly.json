@@ -625,5 +625,122 @@
    "jammed": 2,
    "bonds": 19
   }
+ },
+ {
+  "year": 2019,
+  "tone": "steady",
+  "title": "Slow growth on full land",
+  "moves": [
+   "8 shore pumps"
+  ],
+  "happened": "Dec 2019: 73,660 people. 8 more shore pumps; stalls in shops and factories with little free land.",
+  "watching": "Cash below zero",
+  "start": {
+   "date": "Feb 2019",
+   "population": 69970,
+   "money": 1991,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 98,
+   "jammed": 2,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Feb 2020",
+   "population": 72470,
+   "money": -358,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2020,
+  "tone": "steady",
+  "title": "Slow growth, cash slipping",
+  "moves": [],
+  "happened": "No builds: cash fell below zero (about -$1,200 a year) while land was nearly full; the city grew ~1,000 a year.",
+  "watching": "Water; cash",
+  "start": {
+   "date": "Feb 2020",
+   "population": 72470,
+   "money": -358,
+   "unemployment": 5,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 85,
+   "jammed": 0,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Feb 2021",
+   "population": 73630,
+   "money": -1650,
+   "unemployment": 5,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 119,
+   "jammed": 0,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2021,
+  "tone": "steady",
+  "title": "Slow growth, cash slipping",
+  "moves": [],
+  "happened": "No builds: cash fell below zero (about -$1,200 a year) while land was nearly full; the city grew ~1,000 a year.",
+  "watching": "Water; cash",
+  "start": {
+   "date": "Feb 2021",
+   "population": 73630,
+   "money": -1650,
+   "unemployment": 5,
+   "watered_pct": 97,
+   "powered_pct": 100,
+   "abandoned": 119,
+   "jammed": 0,
+   "bonds": 19
+  },
+  "end": {
+   "date": "Feb 2022",
+   "population": 76430,
+   "money": -2812,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 126,
+   "jammed": 0,
+   "bonds": 19
+  }
+ },
+ {
+  "year": 2022,
+  "tone": "steady",
+  "title": "Loan 20: south rows, pocket B, lake pumps",
+  "moves": [
+   "Loan 20",
+   "Lake pumps",
+   "South rows + pipes",
+   "Pocket B + road/pipe joins"
+  ],
+  "happened": "Dec 2022: 77,830 people (attempt 10: 70,800). Water at 9% and land full: loan 20 paid for 4 lake pumps, south home rows and pocket B. A cash-negative build looped 30 minutes (control fix: build.py refuses while cash < 0).",
+  "watching": "Growth on the new land",
+  "start": {
+   "date": "Feb 2022",
+   "population": 76430,
+   "money": -2812,
+   "unemployment": 3,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 126,
+   "jammed": 0,
+   "bonds": 19
+  },
+  "end": null
  }
 ]
