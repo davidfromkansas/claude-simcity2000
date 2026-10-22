@@ -741,6 +741,40 @@
    "jammed": 0,
    "bonds": 19
   },
+  "end": {
+   "date": "Feb 2023",
+   "population": 78120,
+   "money": 1228,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 20
+  }
+ },
+ {
+  "year": 2023,
+  "tone": "steady",
+  "title": "Fire stations, shop rezoning, water",
+  "moves": [
+   "Loan 21: 14 fire stations",
+   "South-row shops",
+   "25 shore pumps"
+  ],
+  "happened": "Dec 2023: 79,210 people. Loan 21 paid for 14 fire stations (26 total); 52 empty south-row home tiles rezoned to shops; 25 shore pumps from cash.",
+  "watching": "Water; cash near zero",
+  "start": {
+   "date": "Feb 2023",
+   "population": 78120,
+   "money": 1228,
+   "unemployment": 4,
+   "watered_pct": 100,
+   "powered_pct": 100,
+   "abandoned": 105,
+   "jammed": 0,
+   "bonds": 20
+  },
   "end": null
  }
 ]
